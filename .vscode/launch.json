@@ -1,0 +1,106 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "EdenUniverseBuilder (Debug)",
+			"request": "launch",
+			"preLaunchTask": "EdenUniverseBuilder Linux Debug Build",
+			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "EdenUniverseBuilder (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "EdenUniverseBuilder Linux DebugGame Build",
+			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "EdenUniverseBuilder (Development)",
+			"request": "launch",
+			"preLaunchTask": "EdenUniverseBuilder Linux Development Build",
+			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "EdenUniverseBuilder (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "EdenUniverseBuilder Linux Shipping Build",
+			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "EdenUniverseBuilder (Test)",
+			"request": "launch",
+			"preLaunchTask": "EdenUniverseBuilder Linux Test Build",
+			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder-Linux-Test",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "EdenUniverseBuilderEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "EdenUniverseBuilderEditor Linux Debug Build",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject",
+				"-debug"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "EdenUniverseBuilderEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "EdenUniverseBuilderEditor Linux DebugGame Build",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject",
+				"-debug"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "EdenUniverseBuilderEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "EdenUniverseBuilderEditor Linux Development Build",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/opt/unreal-engine"
+		}
+	]
+}

@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "EdenUniverseBuilder Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Mac",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"IOS",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"HTML5",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"Linux",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Shipping",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilder TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilder TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilder",
+				"TVOS",
+				"Test",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Linux",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Linux",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilderEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Linux",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Linux",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Linux",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilderEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Linux",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Linux",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Linux",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilderEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Linux",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Mac",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Mac",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilderEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Mac",
+				"Debug",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Mac",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Mac",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilderEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Mac",
+				"DebugGame",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Mac",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Mac",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EdenUniverseBuilderEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		},
+		{
+			"label": "EdenUniverseBuilderEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"EdenUniverseBuilderEditor",
+				"Mac",
+				"Development",
+				"'/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/opt/unreal-engine"
+			}
+		}
+	]
+}

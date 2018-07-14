@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="EdenUniverseBuilder">
+  <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" />
+  <VirtualDirectory Name="Source">
+    <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder.Target.cs" />
+    <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilderEditor.Target.cs" />
+    <VirtualDirectory Name="EdenUniverseBuilder">
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilder.Build.cs" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilder.cpp" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilder.h" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderGameModeBase.cpp" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderGameModeBase.h" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/FileBlueprintFunctionLibrary.cpp" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/FileBlueprintFunctionLibrary.h" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/PrimeCalculator.cpp" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/PrimeCalculator.h" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldConverter.cpp" />
+      <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldConverter.h" />
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Config">
+    <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Config/DefaultEditor.ini" />
+    <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Config/DefaultEngine.ini" />
+    <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Config/DefaultGame.ini" />
+    <File Name="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Config/DefaultInput.ini" />
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General CommandArguments=" -debug" WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder-Linux-Debug" />
+      <General CommandArguments=" -debug" WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilder Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Debug -serverconfig=Debug -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Debug -serverconfig=Debug -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Debug -serverconfig=Debug -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General CommandArguments=" -debug" WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder-Linux-DebugGame" />
+      <General CommandArguments=" -debug" WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilder Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=DebugGame -serverconfig=DebugGame -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=DebugGame -serverconfig=DebugGame -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=DebugGame -serverconfig=DebugGame -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder" />
+      <General WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilder Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Development -serverconfig=Development -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Development -serverconfig=Development -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Development -serverconfig=Development -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder-Linux-Shipping" />
+      <General WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilder Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Shipping -serverconfig=Shipping -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Shipping -serverconfig=Shipping -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Shipping -serverconfig=Shipping -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder-Linux-Test" />
+      <General WorkingDirectory="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux" Command="./EdenUniverseBuilder-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilder Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilder Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <Target Name="Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Test -serverconfig=Test -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cook</Target>
+        <Target Name="Cook Game on the fly">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Test -serverconfig=Test -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -cookonthefly</Target>
+        <Target Name="Skip Cook Game">mono AutomationTool.exe BuildCookRun -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -noP4 -nokill -clientconfig=Test -serverconfig=Test -platform=Linux -targetplatform=Linux -nocompile -compressed -stage -deploy -skipcook</Target>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

@@ -1,0 +1,11 @@
+{
+	"files.exclude": {
+		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/.idea": true,
+		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/.kdev4": true,
+		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/.vscode": true,
+		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Content": true,
+		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/DerivedDataCache": true,
+		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Intermediate": true,
+		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Saved": true
+	}
+}
