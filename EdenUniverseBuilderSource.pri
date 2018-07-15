@@ -7492,5 +7492,8 @@ SOURCES += \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FileBlueprintFunctionLibrary.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/PrimeCalculator.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/WorldConverter.cpp" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonCharacter.cpp" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonGameMode.cpp" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonHUD.cpp" \
  
 

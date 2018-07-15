@@ -30,6 +30,15 @@
   <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/PrimeCalculator.h" />
   <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/WorldConverter.cpp" />
   <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/WorldConverter.h" />
+  <VirtualDirectory Name="FP_FirstPerson">
+    <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPerson.h" />
+    <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonCharacter.cpp" />
+    <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonCharacter.h" />
+    <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonGameMode.cpp" />
+    <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonGameMode.h" />
+    <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonHUD.cpp" />
+    <File Name="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonHUD.h" />
+  </VirtualDirectory>
   <Settings>
     <Configuration Name="Debug">
       <General CommandArguments="&quot;/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject&quot; -game -debug" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Debug" />

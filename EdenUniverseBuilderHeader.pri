@@ -9680,5 +9680,9 @@ HEADERS += \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FileBlueprintFunctionLibrary.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/PrimeCalculator.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/WorldConverter.h" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPerson.h" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonCharacter.h" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonGameMode.h" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonHUD.h" \
  
 

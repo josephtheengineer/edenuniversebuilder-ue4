@@ -1,0 +1,40 @@
+Generating report for minidump
+
+Application version 4.19.2.0
+ ... built from changelist 0
+
+OS version Linux 4.17.3-1-ARCH (network name: Axius)
+Running 4 x86_64 processors (4 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x00000000000002e1"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+Unknown!FLinuxPlatformStackWalk::CaptureStackBackTrace(unsigned long long*, unsigned int, void*) + some bytes
+Unknown!FGenericPlatformStackWalk::StackWalkAndDump(char*, unsigned long, int, void*) + some bytes
+Unknown!FLinuxCrashContext::CaptureStackTrace() + some bytes
+Unknown!CommonLinuxCrashHandler(FGenericCrashContext const&) + some bytes
+Unknown!PlatformCrashHandler(int, siginfo_t*, void*) + some bytes
+Unknown!/usr/lib/libpthread.so.0(+0x11a80) [0x7fc7acb5aa80] + some bytes
+Unknown!UPrimitiveComponent::SetOnlyOwnerSee(bool) + some bytes
+Unknown!AFP_FirstPersonCharacter::AFP_FirstPersonCharacter() + some bytes
+Unknown!UClass::CreateDefaultObject() + some bytes
+Unknown!ProcessNewlyLoadedUObjects() + some bytes
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!TBaseStaticDelegateInstance<void ()>::ExecuteIfSafe() const + some bytes [Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:788]
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!TBaseMulticastDelegate<void>::Broadcast() const + some bytes [Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:937]
+Unknown!FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&) + some bytes
+Unknown!FModuleDescriptor::LoadModulesForPhase(ELoadingPhase::Type, TArray<FModuleDescriptor, FDefaultAllocator> const&, TMap<FName, EModuleLoadResult, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FName, EModuleLoadResult, false> >&) + some bytes
+Unknown!FProjectManager::LoadModulesForProject(ELoadingPhase::Type) + some bytes
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!FEngineLoop::LoadStartupModules() + some bytes [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:2610]
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!FEngineLoop::PreInit(wchar_t const*) + some bytes [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:2027]
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!GuardedMain(wchar_t const*) + some bytes [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/Launch.cpp:42]
+Unknown!CommonLinuxMain(int, char**, int (*)(wchar_t const*)) + some bytes
+Unknown!/usr/lib/libc.so.6(__libc_start_main+0xeb) [0x7fc7a028606b] + some bytes
+Unknown!/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor(_start+0x2a) [0x416a6a] + some bytes
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

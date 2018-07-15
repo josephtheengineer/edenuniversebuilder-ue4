@@ -1,0 +1,50 @@
+Generating report for minidump
+
+Application version 4.19.2.0
+ ... built from changelist 0
+
+OS version Linux 4.17.3-1-ARCH (network name: Axius)
+Running 4 x86_64 processors (4 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x00000000000002e1"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+Unknown!FLinuxPlatformStackWalk::CaptureStackBackTrace(unsigned long long*, unsigned int, void*) + some bytes
+Unknown!FGenericPlatformStackWalk::StackWalkAndDump(char*, unsigned long, int, void*) + some bytes
+Unknown!FLinuxCrashContext::CaptureStackTrace() + some bytes
+Unknown!CommonLinuxCrashHandler(FGenericCrashContext const&) + some bytes
+Unknown!PlatformCrashHandler(int, siginfo_t*, void*) + some bytes
+Unknown!/usr/lib/libpthread.so.0(+0x11a80) [0x7fa0ff9dca80] + some bytes
+Unknown!UPrimitiveComponent::SetOnlyOwnerSee(bool) + some bytes
+Unknown!AFP_FirstPersonCharacter::AFP_FirstPersonCharacter() + some bytes
+Unknown!FHotReloadClassReinstancer::ReconstructClassDefaultObject(UClass*, UObject*, FName, EObjectFlags) + some bytes
+Unknown!FHotReloadClassReinstancer::RecreateCDOAndSetupOldClassReinstancing(UClass*) + some bytes
+Unknown!FHotReloadClassReinstancer::FHotReloadClassReinstancer(UClass*, UClass*, TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&, TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> >&, TSet<UBlueprint*, DefaultKeyFuncs<UBlueprint*, false>, FDefaultSetAllocator>&, TSet<UBlueprint*, DefaultKeyFuncs<UBlueprint*, false>, FDefaultSetAllocator>&) + some bytes
+Unknown!FHotReloadClassReinstancer::Create(UClass*, UClass*, TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&, TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> >&, TSet<UBlueprint*, DefaultKeyFuncs<UBlueprint*, false>, FDefaultSetAllocator>&, TSet<UBlueprint*, DefaultKeyFuncs<UBlueprint*, false>, FDefaultSetAllocator>&) + some bytes
+Unknown!FHotReloadModule::ReinstanceClass(UClass*, UClass*, TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&) + some bytes
+Unknown!FHotReloadModule::ReinstanceClasses() + some bytes
+Unknown!TBaseRawMethodDelegateInstance<false, FHotReloadModule, void ()>::ExecuteIfSafe() const + some bytes
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!TBaseMulticastDelegate<void>::Broadcast() const + some bytes [Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:937]
+Unknown!UClassReplaceHotReloadClasses() + some bytes
+Unknown!ProcessNewlyLoadedUObjects() + some bytes
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!TBaseStaticDelegateInstance<void ()>::ExecuteIfSafe() const + some bytes [Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:788]
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!TBaseMulticastDelegate<void>::Broadcast() const + some bytes [Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:937]
+Unknown!FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&) + some bytes
+Unknown!FModuleManager::LoadModule(FName) + some bytes
+Unknown!FHotReloadModule::DoHotReloadInternal(TMap<FString, FString, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FString, FString, false> > const&, TArray<UPackage*, FDefaultAllocator> const&, TArray<FName, FDefaultAllocator> const&, FOutputDevice&) + some bytes
+Unknown!FHotReloadModule::CheckForFinishedModuleDLLCompile(EHotReloadFlags, bool&, bool&, FOutputDevice&, bool) + some bytes
+Unknown!FHotReloadModule::Tick(float) + some bytes
+Unknown!FTicker::Tick(float) + some bytes
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!FEngineLoop::Tick() + some bytes [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:3505]
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!GuardedMain(wchar_t const*) + some bytes [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/Launch.cpp:62]
+Unknown!CommonLinuxMain(int, char**, int (*)(wchar_t const*)) + some bytes
+Unknown!/usr/lib/libc.so.6(__libc_start_main+0xeb) [0x7fa0f310806b] + some bytes
+Unknown!/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor(_start+0x2a) [0x416a6a] + some bytes
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
