@@ -2585,8 +2585,8 @@ include_directories(
 	"/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/RHI"
 	"/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BootstrapPackagedGame/Inc/BootstrapPackagedGame"
 	"/opt/unreal-engine/Engine/Source/Programs/Windows/BootstrapPackagedGame"
-	"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source"
-	"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder"
-	"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder"
+	"/home/josephtheengineer/workspace/EdenProject/Engine/Source"
+	"/home/josephtheengineer/workspace/EdenProject/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder"
+	"/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder"
  )
 

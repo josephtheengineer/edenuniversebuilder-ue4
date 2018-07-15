@@ -2,7 +2,7 @@
 # *DO NOT EDIT*
 
 UNREALROOTPATH = /opt/unreal-engine
-GAMEPROJECTFILE =/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject
+GAMEPROJECTFILE =/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject
 
 TARGETS = \
 	UE4Client-Linux-Debug  \

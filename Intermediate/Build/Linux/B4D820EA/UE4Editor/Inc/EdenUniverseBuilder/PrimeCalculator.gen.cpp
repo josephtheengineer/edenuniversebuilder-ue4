@@ -33,14 +33,14 @@ void EmptyLinkFunctionForGeneratedCodePrimeCalculator() {}
 	{
 		struct PrimeCalculator_eventRunPrimeTask_Parms
 		{
-			int32 NumPrimes;
+			int32 Layer;
 		};
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			static const UE4CodeGen_Private::FIntPropertyParams NewProp_NumPrimes = { UE4CodeGen_Private::EPropertyClass::Int, "NumPrimes", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(PrimeCalculator_eventRunPrimeTask_Parms, NumPrimes), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FIntPropertyParams NewProp_Layer = { UE4CodeGen_Private::EPropertyClass::Int, "Layer", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(PrimeCalculator_eventRunPrimeTask_Parms, Layer), METADATA_PARAMS(nullptr, 0) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_NumPrimes,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Layer,
 			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -56,14 +56,14 @@ void EmptyLinkFunctionForGeneratedCodePrimeCalculator() {}
 	{
 		struct PrimeCalculator_eventRunPrimeTaskOnMain_Parms
 		{
-			int32 NumPrimes;
+			int32 Layer;
 		};
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			static const UE4CodeGen_Private::FIntPropertyParams NewProp_NumPrimes = { UE4CodeGen_Private::EPropertyClass::Int, "NumPrimes", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(PrimeCalculator_eventRunPrimeTaskOnMain_Parms, NumPrimes), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FIntPropertyParams NewProp_Layer = { UE4CodeGen_Private::EPropertyClass::Int, "Layer", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(PrimeCalculator_eventRunPrimeTaskOnMain_Parms, Layer), METADATA_PARAMS(nullptr, 0) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_NumPrimes,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Layer,
 			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -89,8 +89,8 @@ void EmptyLinkFunctionForGeneratedCodePrimeCalculator() {}
 				(UObject* (*)())Z_Construct_UPackage__Script_EdenUniverseBuilder,
 			};
 			static const FClassFunctionLinkInfo FuncInfo[] = {
-				{ &Z_Construct_UFunction_APrimeCalculator_RunPrimeTask, "RunPrimeTask" }, // 3776952433
-				{ &Z_Construct_UFunction_APrimeCalculator_RunPrimeTaskOnMain, "RunPrimeTaskOnMain" }, // 344705705
+				{ &Z_Construct_UFunction_APrimeCalculator_RunPrimeTask, "RunPrimeTask" }, // 808769085
+				{ &Z_Construct_UFunction_APrimeCalculator_RunPrimeTaskOnMain, "RunPrimeTaskOnMain" }, // 347713459
 			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodePrimeCalculator() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APrimeCalculator, 3125058490);
+	IMPLEMENT_CLASS(APrimeCalculator, 2233691503);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APrimeCalculator(Z_Construct_UClass_APrimeCalculator, &APrimeCalculator::StaticClass, TEXT("/Script/EdenUniverseBuilder"), TEXT("APrimeCalculator"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APrimeCalculator);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,5 +1,8 @@
 #!/bin/sh
 
-echo WOAH > .txt
+ > /home/josephtheengineer/workspace/EdenProject/Engine/Converter/world.out
 
-/home/josephtheengineer/Unreal\ Projects/EdenUniverseBuilder/locus-amoenus /home/josephtheengineer/Unreal\ Projects/EdenUniverseBuilder/DirectCity.eden srs 'slice 30' q
+for i in {20..50}
+do
+   /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden w "slice $i" q
+done

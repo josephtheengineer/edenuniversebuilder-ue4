@@ -5,7 +5,7 @@
 			"name": "EdenUniverseBuilder (Debug)",
 			"request": "launch",
 			"preLaunchTask": "EdenUniverseBuilder Linux Debug Build",
-			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder-Linux-Debug",
+			"program": "/home/josephtheengineer/workspace/EdenProject/Engine/Binaries/Linux/EdenUniverseBuilder-Linux-Debug",
 			"args": [
 			],
 			"cwd": "/opt/unreal-engine",
@@ -15,7 +15,7 @@
 			"name": "EdenUniverseBuilder (DebugGame)",
 			"request": "launch",
 			"preLaunchTask": "EdenUniverseBuilder Linux DebugGame Build",
-			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder-Linux-DebugGame",
+			"program": "/home/josephtheengineer/workspace/EdenProject/Engine/Binaries/Linux/EdenUniverseBuilder-Linux-DebugGame",
 			"args": [
 			],
 			"cwd": "/opt/unreal-engine",
@@ -25,7 +25,7 @@
 			"name": "EdenUniverseBuilder (Development)",
 			"request": "launch",
 			"preLaunchTask": "EdenUniverseBuilder Linux Development Build",
-			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder",
+			"program": "/home/josephtheengineer/workspace/EdenProject/Engine/Binaries/Linux/EdenUniverseBuilder",
 			"args": [
 			],
 			"cwd": "/opt/unreal-engine",
@@ -35,7 +35,7 @@
 			"name": "EdenUniverseBuilder (Shipping)",
 			"request": "launch",
 			"preLaunchTask": "EdenUniverseBuilder Linux Shipping Build",
-			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder-Linux-Shipping",
+			"program": "/home/josephtheengineer/workspace/EdenProject/Engine/Binaries/Linux/EdenUniverseBuilder-Linux-Shipping",
 			"args": [
 			],
 			"cwd": "/opt/unreal-engine",
@@ -45,7 +45,7 @@
 			"name": "EdenUniverseBuilder (Test)",
 			"request": "launch",
 			"preLaunchTask": "EdenUniverseBuilder Linux Test Build",
-			"program": "/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Binaries/Linux/EdenUniverseBuilder-Linux-Test",
+			"program": "/home/josephtheengineer/workspace/EdenProject/Engine/Binaries/Linux/EdenUniverseBuilder-Linux-Test",
 			"args": [
 			],
 			"cwd": "/opt/unreal-engine",
@@ -57,7 +57,7 @@
 			"preLaunchTask": "EdenUniverseBuilderEditor Linux Debug Build",
 			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
 			"args": [
-				"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject",
+				"/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject",
 				"-debug"
 			],
 			"cwd": "/opt/unreal-engine",
@@ -69,7 +69,7 @@
 			"preLaunchTask": "EdenUniverseBuilderEditor Linux DebugGame Build",
 			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor",
 			"args": [
-				"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject",
+				"/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject",
 				"-debug"
 			],
 			"cwd": "/opt/unreal-engine",
@@ -81,7 +81,7 @@
 			"preLaunchTask": "EdenUniverseBuilderEditor Linux Development Build",
 			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor",
 			"args": [
-				"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"
+				"/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"
 			],
 			"cwd": "/opt/unreal-engine",
 			"type": "lldb"
@@ -95,7 +95,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=\"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject\"",
+				"-project=\"/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject\"",
 				"-game",
 				"-engine"
 			],

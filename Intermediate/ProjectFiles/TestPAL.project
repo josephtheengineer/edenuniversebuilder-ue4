@@ -16,10 +16,10 @@
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./TestPAL-Linux-Debug" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe TestPAL Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux Debug -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux Debug -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux Debug -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe TestPAL Linux Debug -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <Configuration Name="DebugGame">
@@ -27,10 +27,10 @@ mono UnrealBuildTool.exe TestPAL Linux Debug -project="/home/josephtheengineer/U
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./TestPAL-Linux-DebugGame" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe TestPAL Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux DebugGame -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux DebugGame -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux DebugGame -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe TestPAL Linux DebugGame -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <Configuration Name="Development">
@@ -38,10 +38,10 @@ mono UnrealBuildTool.exe TestPAL Linux DebugGame -project="/home/josephtheengine
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./TestPAL" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe TestPAL Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux Development -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux Development -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux Development -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe TestPAL Linux Development -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <Configuration Name="Shipping">
@@ -49,10 +49,10 @@ mono UnrealBuildTool.exe TestPAL Linux Development -project="/home/josephtheengi
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./TestPAL-Linux-Shipping" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe TestPAL Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux Shipping -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux Shipping -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux Shipping -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe TestPAL Linux Shipping -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <Configuration Name="Test">
@@ -60,10 +60,10 @@ mono UnrealBuildTool.exe TestPAL Linux Shipping -project="/home/josephtheenginee
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./TestPAL-Linux-Test" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe TestPAL Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe TestPAL Linux Test -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe TestPAL Linux Test -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe TestPAL Linux Test -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe TestPAL Linux Test -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <GlobalSettings />

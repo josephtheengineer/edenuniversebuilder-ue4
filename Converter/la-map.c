@@ -1427,17 +1427,17 @@ void scan_name(char * dst, int fnum, int verbose,
   A header typically looks like this example (taken from world
 1316353956.eden "__FOOTBALL_STADIUM_by_MATTHEW"):
   0000: ab c1 01 00 ae fc 7f 47 66 66 c7 41 fe 2d 80 47          Gff A - G
-  0010: 00 04 80 47 00 00 58 42 00 04 80 47 00 00 bf c2      G  XB   G    
+  0010: 00 04 80 47 00 00 58 42 00 04 80 47 00 00 bf c2      G  XB   G
   0020: c0 00 ff 00 00 00 00 00 20 20 46 4f 4f 54 42 41             FOOTBA
   0030: 4c 4c 20 53 54 41 44 49 55 4d 20 62 79 20 4d 41   LL STADIUM by MA
-  0040: 54 54 48 45 57 00 2f 00 49 00 4d 00 47 00 5f 00   TTHEW / I M G _ 
-  0050: 30 00 30 00 34 00 31 00 2e 00 4a 00 02 00 00 00   0 0 4 1 . J     
+  0040: 54 54 48 45 57 00 2f 00 49 00 4d 00 47 00 5f 00   TTHEW / I M G _
+  0050: 30 00 30 00 34 00 31 00 2e 00 4a 00 02 00 00 00   0 0 4 1 . J
   0060: 65 31 36 33 37 63 61 66 32 34 61 31 61 63 33 34   e1637caf24a1ac34
   0070: 33 65 39 39 31 66 38 35 65 61 39 66 63 31 64 35   3e991f85ea9fc1d5
-  0080: 00 00 65 00 64 00 69 00 61 00 2f 00 44 00 43 00     e d i a / D C 
-  0090: 49 00 4d 00 2f 00 31 00 30 00 30 00 41 00 50 00   I M / 1 0 0 A P 
-  00a0: 50 00 4c 00 45 00 2f 00 2e 00 4d 00 49 00 53 00   P L E / . M I S 
-  00b0: 43 00 00 00 00 00 00 00 00 00 00 00 00 00 0c 00   C               
+  0080: 00 00 65 00 64 00 69 00 61 00 2f 00 44 00 43 00     e d i a / D C
+  0090: 49 00 4d 00 2f 00 31 00 30 00 30 00 41 00 50 00   I M / 1 0 0 A P
+  00a0: 50 00 4c 00 45 00 2f 00 2e 00 4d 00 49 00 53 00   P L E / . M I S
+  00b0: 43 00 00 00 00 00 00 00 00 00 00 00 00 00 0c 00   C
 Known fields include:
   0000: "ab c1 01 00": unknown, presumed to be terrain seed (32-bit
 unsigned integer, 0001c1ab = 115115)
@@ -3686,6 +3686,21 @@ void srs_top3(int fnum, int clnum)
 using a suitable single-block or short column of blocks. */
 void srs_1s(int fnum, int clnum, int level)
 {
+  ////////////////// EDEN v3.0.0 PATCH
+
+    FILE *f = fopen("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/world.out", "a");
+    if (f == NULL)
+    {
+      printf("Error opening file!\n");
+      exit(1);
+    }
+
+    fprintf(f, "LAYERBREAK|");
+
+    fclose(f);
+
+  ////////////////////////// PATCH END
+
   int ns, we, c;
   int tti, tryp;
   int tfil[3];
@@ -3791,14 +3806,14 @@ void srs_1s(int fnum, int clnum, int level)
             /* NOTE: This will only be seen in non-triptych modes */
             ansicol = d3_blk(fnum, g_diffmode_fnum, g_diffmode_f2,
                                                                 ns, we, level);
-                        			  
+
           } else {
             /* just show the block's natural colour using ANSI colour */
             ansicol = blansi(b);
-            
+
 				////////////////// EDEN v3.0.0 PATCH
-  
-					FILE *f = fopen("world.out", "a");
+
+					FILE *f = fopen("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/world.out", "a");
 					if (f == NULL)
 					{
 						printf("Error opening file!\n");
@@ -3809,7 +3824,7 @@ void srs_1s(int fnum, int clnum, int level)
 					fprintf(f, "%d|", b);
 
 					fclose(f);
-			  
+
 				////////////////////////// PATCH END
           }
           ansiset(ansicol);
@@ -3828,14 +3843,14 @@ void srs_1s(int fnum, int clnum, int level)
     }
     ansiset(0);
     printf("\n");
-    
-    				FILE *f = fopen("world.out", "a");
+
+    				FILE *f = fopen("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/world.out", "a");
 					if (f == NULL)
 					{
 						printf("Error opening file!\n");
 						exit(1);
 					}
-					
+
 					/* print some text */
 					fprintf(f, "LINEBREAK|");
 
@@ -4212,12 +4227,12 @@ void cmd_fmg(int fnum, int mode, int mag)
           cr = fr;
           cg = fg;
           cb = fb;
-    
+
           /* Clip RGB components to the range 0..255 */
           cr = minmax(cr, 0, 255);
           cg = minmax(cg, 0, 255);
           cb = minmax(cb, 0, 255);
-    
+
           fprintf(ofile, "%d %d %d\n", cr, cg, cb);
 
           pixcol++;
@@ -4585,7 +4600,7 @@ int cmdloop(int one_only)
               printf("Triptych mode cancelled.\n");
               g_triptych = 0;
             }
-            printf("colour will show diffs from %c to %c\n", 
+            printf("colour will show diffs from %c to %c\n",
               fnum_to_char(g_cur_file), fnum_to_char(p1));
             g_fmg_mode = g_colormode = CM_DIFF;
             g_diffmode_fnum = p1;
@@ -4601,13 +4616,13 @@ int cmdloop(int one_only)
           g_fmg_mode = g_colormode = CM_NORMAL;
           srs_dispatch(g_cur_file, 0);
         } else if ((g_diffmode_fnum >= 0) && (g_diffmode_f2 >= 0)) {
-          printf("Back to three-way diff mode, %c vs. %c and %c\n", 
+          printf("Back to three-way diff mode, %c vs. %c and %c\n",
               fnum_to_char(g_cur_file), fnum_to_char(g_diffmode_fnum),
               fnum_to_char(g_diffmode_f2));
           g_fmg_mode = g_colormode = CM_DIF3;
           srs_dispatch(g_cur_file, 0);
         } else if (g_diffmode_fnum >= 0) {
-          printf("Resuming diff display of %c against %c\n", 
+          printf("Resuming diff display of %c against %c\n",
             fnum_to_char(g_cur_file), fnum_to_char(g_diffmode_fnum));
           g_fmg_mode = g_colormode = CM_DIFF;
           srs_dispatch(g_cur_file, 0);

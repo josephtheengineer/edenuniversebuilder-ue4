@@ -26,14 +26,14 @@ void APrimeCalculator::Tick(float DeltaTime)
 
 }
 
-void APrimeCalculator::RunPrimeTask(int32 NumPrimes)
+void APrimeCalculator::RunPrimeTask(int32 Layer)
 {
-	(new FAutoDeleteAsyncTask<PrimeSearchTask>(NumPrimes))->StartBackgroundTask();
+	(new FAutoDeleteAsyncTask<PrimeSearchTask>(Layer))->StartBackgroundTask();
 }
 
-void RunPrimeTaskOnMain(int32 NumPrimes)
+void RunPrimeTaskOnMain(int32 Layer)
 {
-		PrimeSearchTask* task = new PrimeSearchTask(NumPrimes);
+		PrimeSearchTask* task = new PrimeSearchTask(Layer);
 
 		task->DoWorkMain();
 		delete task;
@@ -47,41 +47,36 @@ PrimeSearchTask::PrimeSearchTask(int32 _primeCount)
 PrimeSearchTask::~PrimeSearchTask()
 {
 		UE_LOG(LogTemp, Warning, TEXT("Task Finished!"));
+
+		//execl("sh", "-c", "/home/josephtheengineer/Unreal\\ Projects/EdenUniverseBuilder/locus-amoenus /home/josephtheengineer/Unreal\\ Projects/EdenUniverseBuilder/DirectCity.eden srs 'slice 30' q");
+		//system("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus.sh");
+		//const char * SLayer = UTF8_TO_TCHAR(PrimeCount.c_str();
+
+		//FString str = path + "locus-amoenus";
+		//str = path + "DirectCity.eden srs 'slice ";
+		//str = str + SLayer + "' q";
 }
 
 void PrimeSearchTask::DoWork()
 {
+	//system(" > /home/josephtheengineer/workspace/EdenProject/Engine/Converter/world.out");
+	//FString path = "/home/josephtheengineer/workspace/EdenProject/Engine/Converter/";
+/*
+	FString thingo = FString::FromInt(PrimeCount);
+	std::string MyStdString(TCHAR_TO_UTF8(*thingo));
 
-	//execl("sh", "-c", "/home/josephtheengineer/Unreal\\ Projects/EdenUniverseBuilder/locus-amoenus /home/josephtheengineer/Unreal\\ Projects/EdenUniverseBuilder/DirectCity.eden srs 'slice 30' q");
-	system("/home/josephtheengineer/Unreal\\ Projects/EdenUniverseBuilder/locus.sh");
+	FString myString(MyStdString.c_str());
 
-	/*
-	int primesFound = 0;
-	int currentTestNumber = 2;
+	FString command = path + "locus-amoenus " + path + "DirectCity.eden srs 'slice " + myString;
+	command = command + "' q";
+	const char* commands(TCHAR_TO_UTF8(*command));
 
-	while (primesFound < PrimeCount)
-	{
-		bool isPrime = true;
-
-		for (int i = 2; i < currentTestNumber / 2; i++)
-		{
-				if (currentTestNumber % i == 0)
-				{
-					isPrime = false;
-					break;
-				}
-		}
-
-		if (isPrime)
-		{
-				primesFound++;
-
-				if (primesFound % 1000 == 0)
-				{
-					UE_LOG(LogTemp, Warning, TEXT("Primes found: %i"), primesFound);
-				}
-		}
-	}*/
+	UE_LOG(LogTemp, Warning, TEXT("Int %d"), PrimeCount );
+	UE_LOG(LogTemp, Warning, TEXT("Woah %s"), *command);
+	UE_LOG(LogTemp, Warning, TEXT("%s"), *commands);
+	//system(commands);*/
+	//system("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q");
+	//system("echo woah > /home/josephtheengineer/workspace/EdenProject/Engine/Converter/world.out");
 }
 
 void PrimeSearchTask::DoWorkMain()

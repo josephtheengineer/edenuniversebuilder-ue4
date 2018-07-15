@@ -4139,9 +4139,9 @@
 /opt/unreal-engine/Engine/Source/Programs/Windows/BootstrapPackagedGame
 /usr/include
 /opt/unreal-engine/Engine/Source
-/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source
-/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder
-/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder
+/home/josephtheengineer/workspace/EdenProject/Engine/Source
+/home/josephtheengineer/workspace/EdenProject/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder
+/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder
 /opt/unreal-engine/Engine/Source/Runtime/Core/Public
 /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Internationalization
 /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Async

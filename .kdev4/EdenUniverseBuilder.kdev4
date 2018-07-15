@@ -3531,21 +3531,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilder-Linux-Debug
 
 [CustomBuildSystem][BuildConfig141][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig141][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig141][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Debug -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Debug -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3556,21 +3556,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilder-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig142][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig142][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig142][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux DebugGame -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3581,21 +3581,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilder-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig143][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig143][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig143][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Shipping -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3606,21 +3606,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilder-Linux-Test
 
 [CustomBuildSystem][BuildConfig144][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig144][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig144][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Test -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Test -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3631,21 +3631,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilder
 
 [CustomBuildSystem][BuildConfig145][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig145][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilder Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig145][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Development -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilder Linux Development -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3656,21 +3656,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilderEditor-Linux-Debug
 
 [CustomBuildSystem][BuildConfig146][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig146][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig146][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Debug -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Debug -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3681,21 +3681,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilderEditor-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig147][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig147][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig147][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux DebugGame -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3706,21 +3706,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilderEditor-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig148][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig148][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig148][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Shipping -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3731,21 +3731,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilderEditor-Linux-Test
 
 [CustomBuildSystem][BuildConfig149][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig149][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig149][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Test -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Test -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3756,21 +3756,21 @@ BuildDir=file:///opt/unreal-engine
 Title=EdenUniverseBuilderEditor
 
 [CustomBuildSystem][BuildConfig150][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig150][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -game -engine  EdenUniverseBuilderEditor Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig150][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Development -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" EdenUniverseBuilderEditor Linux Development -clean
 Enabled=true
 Environment=
 Executable=mono

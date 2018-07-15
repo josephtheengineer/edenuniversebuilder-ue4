@@ -70,10 +70,10 @@
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UnrealHeaderTool-Linux-Debug" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe UnrealHeaderTool Linux Debug -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Debug -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Debug -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Debug -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe UnrealHeaderTool Linux Debug -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <Configuration Name="DebugGame">
@@ -81,10 +81,10 @@ mono UnrealBuildTool.exe UnrealHeaderTool Linux Debug -project="/home/josephthee
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UnrealHeaderTool-Linux-DebugGame" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe UnrealHeaderTool Linux DebugGame -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux DebugGame -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux DebugGame -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux DebugGame -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe UnrealHeaderTool Linux DebugGame -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <Configuration Name="Development">
@@ -92,10 +92,10 @@ mono UnrealBuildTool.exe UnrealHeaderTool Linux DebugGame -project="/home/joseph
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UnrealHeaderTool" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe UnrealHeaderTool Linux Development -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Development -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Development -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Development -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe UnrealHeaderTool Linux Development -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <Configuration Name="Shipping">
@@ -103,10 +103,10 @@ mono UnrealBuildTool.exe UnrealHeaderTool Linux Development -project="/home/jose
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UnrealHeaderTool-Linux-Shipping" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe UnrealHeaderTool Linux Shipping -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Shipping -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Shipping -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Shipping -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe UnrealHeaderTool Linux Shipping -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <Configuration Name="Test">
@@ -114,10 +114,10 @@ mono UnrealBuildTool.exe UnrealHeaderTool Linux Shipping -project="/home/josepht
       <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UnrealHeaderTool-Linux-Test" />
       <CustomBuild Enabled="yes">
         <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
-        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
-        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
-        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
-mono UnrealBuildTool.exe UnrealHeaderTool Linux Test -project="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+        <BuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Test -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Test -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe UnrealHeaderTool Linux Test -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe UnrealHeaderTool Linux Test -project="/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"</RebuildCommand>
       </CustomBuild>
     </Configuration>
     <GlobalSettings />

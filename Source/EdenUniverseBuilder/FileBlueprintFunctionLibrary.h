@@ -7,13 +7,13 @@
 #include "FileBlueprintFunctionLibrary.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class EDENUNIVERSEBUILDER_API UFileBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-	
+
 	public:
 
 		UFUNCTION(BlueprintCallable, Category = "save")
@@ -21,6 +21,6 @@ class EDENUNIVERSEBUILDER_API UFileBlueprintFunctionLibrary : public UBlueprintF
 
 		UFUNCTION(BlueprintPure, Category = "save")
 			static bool FileLoadString(FString FileNameA, FString& SaveTextA);
-	
-	
+
+
 };

@@ -24,10 +24,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable)
-	void RunPrimeTask(int32 NumPrimes);
+	void RunPrimeTask(int32 Layer);
 
 	UFUNCTION(BlueprintCallable)
-	void RunPrimeTaskOnMain(int32 NumPrimes);
+	void RunPrimeTaskOnMain(int32 Layer);
 };
 
 class PrimeSearchTask : public FNonAbandonableTask

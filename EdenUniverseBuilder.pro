@@ -10,9 +10,9 @@ CONFIG -= qt
 TARGET = UE4 
 
 unrealRootPath=/opt/unreal-engine
-EdenUniverseBuilderRootPath=/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder
+EdenUniverseBuilderRootPath=/home/josephtheengineer/workspace/EdenProject/Engine
 
-gameProjectFile=/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/EdenUniverseBuilder.uproject
+gameProjectFile=/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject
 build=mono $$unrealRootPath/Engine/Binaries/DotNET/UnrealBuildTool.exe
 
 args=$(ARGS)

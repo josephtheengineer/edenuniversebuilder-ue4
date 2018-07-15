@@ -1,11 +1,13 @@
 {
 	"files.exclude": {
-		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/.idea": true,
-		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/.kdev4": true,
-		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/.vscode": true,
-		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Content": true,
-		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/DerivedDataCache": true,
-		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Intermediate": true,
-		"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Saved": true
+		"/home/josephtheengineer/workspace/EdenProject/Engine/.git": true,
+		"/home/josephtheengineer/workspace/EdenProject/Engine/.idea": true,
+		"/home/josephtheengineer/workspace/EdenProject/Engine/.kdev4": true,
+		"/home/josephtheengineer/workspace/EdenProject/Engine/.vscode": true,
+		"/home/josephtheengineer/workspace/EdenProject/Engine/Content": true,
+		"/home/josephtheengineer/workspace/EdenProject/Engine/Converter": true,
+		"/home/josephtheengineer/workspace/EdenProject/Engine/DerivedDataCache": true,
+		"/home/josephtheengineer/workspace/EdenProject/Engine/Intermediate": true,
+		"/home/josephtheengineer/workspace/EdenProject/Engine/Saved": true
 	}
 }

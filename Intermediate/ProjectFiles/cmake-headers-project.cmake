@@ -1,8 +1,8 @@
 set(PROJECT_HEADER_FILES 
-	"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilder.h"
-	"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderGameModeBase.h"
-	"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/FileBlueprintFunctionLibrary.h"
-	"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/PrimeCalculator.h"
-	"/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldConverter.h"
+	"/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/EdenUniverseBuilder.h"
+	"/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/EdenUniverseBuilderGameModeBase.h"
+	"/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FileBlueprintFunctionLibrary.h"
+	"/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/PrimeCalculator.h"
+	"/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/WorldConverter.h"
  )
 

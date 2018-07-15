@@ -1,0 +1,1518 @@
+﻿Log file open, 07/14/18 20:57:12
+LogInit: Display: Running engine for game: EdenUniverseBuilder
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(1968672907) SRandInit(1968672907).
+LogInit: Read version file with build ID 'e95881c0-816a-4794-b2da-b8469e9c0afa'
+LogInit: Registered custom module enumerator with build ID 'e95881c0-816a-4794-b2da-b8469e9c0afa'
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.046749
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +10:00, Platform Override: ''
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AppleARKit
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogStreaming: Display: Took  0.227s to configure plugins.
+LogModuleManager: Display: Found up-to-date module file ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Binaries/Linux/libUE4Editor-EdenUniverseBuilder-9583.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/ActorSequence/Binaries/Linux/libUE4Editor-ActorSequence.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/LevelSequenceEditor/Binaries/Linux/libUE4Editor-LevelSequenceEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Linux/libUE4Editor-MatineeToLevelSequence.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Binaries/Linux/libUE4Editor-LinuxDeviceProfileSelector.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Linux/libUE4Editor-PhysXVehicles.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Linux/libUE4Editor-PhysXVehiclesEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/RuntimePhysXCooking/Binaries/Linux/libUE4Editor-RuntimePhysXCooking.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CustomMeshComponent/Binaries/Linux/libUE4Editor-CustomMeshComponent.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LocationServicesBPLibrary/Binaries/Linux/libUE4Editor-LocationServicesBPLibrary.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Linux/libUE4Editor-ProceduralMeshComponent.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Linux/libUE4Editor-ProceduralMeshComponentEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Linux/libUE4Editor-ImmediatePhysics.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Linux/libUE4Editor-ImmediatePhysicsEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/MobilePatchingUtils/Binaries/Linux/libUE4Editor-MobilePatchingUtils.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidPermission/Binaries/Linux/libUE4Editor-AndroidPermission.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Binaries/Linux/libUE4Editor-AndroidDeviceProfileSelector.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ArchVisCharacter/Binaries/Linux/libUE4Editor-ArchVisCharacter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CableComponent/Binaries/Linux/libUE4Editor-CableComponent.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Linux/libUE4Editor-ExampleDeviceProfileSelector.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Linux/libUE4Editor-SteamVR.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Linux/libUE4Editor-SteamVRController.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Enterprise/DatasmithContent/Binaries/Linux/libUE4Editor-DatasmithContent.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/TcpMessaging/Binaries/Linux/libUE4Editor-TcpMessaging.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/UdpMessaging/Binaries/Linux/libUE4Editor-UdpMessaging.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Linux/libUE4Editor-LiveLink.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Linux/libUE4Editor-LiveLinkEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/DataValidation/Binaries/Linux/libUE4Editor-DataValidation.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Linux/libUE4Editor-CryptoKeys.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Linux/libUE4Editor-CryptoKeysOpenSSL.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/MobileLauncherProfileWizard/Binaries/Linux/libUE4Editor-MobileLauncherProfileWizard.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Linux/libUE4Editor-FacialAnimation.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Linux/libUE4Editor-FacialAnimationEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/PluginBrowser/Binaries/Linux/libUE4Editor-PluginBrowser.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/GameplayTagsEditor/Binaries/Linux/libUE4Editor-GameplayTagsEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AssetManagerEditor/Binaries/Linux/libUE4Editor-AssetManagerEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/SpeedTreeImporter/Binaries/Linux/libUE4Editor-SpeedTreeImporter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Binaries/Linux/libUE4Editor-NUTUnrealEngine4.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Binaries/Linux/libUE4Editor-NetcodeUnitTest.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Linux/libUE4Editor-LightPropagationVolumeRuntime.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Linux/libUE4Editor-LightPropagationVolumeEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-Paper2D.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-Paper2DEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-PaperSpriteSheetImporter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-PaperTiledImporter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-SmartSnapping.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/KDevelopSourceCodeAccess/Binaries/Linux/libUE4Editor-KDevelopSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Binaries/Linux/libUE4Editor-VisualStudioCodeSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/NullSourceCodeAccess/Binaries/Linux/libUE4Editor-NullSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/SubversionSourceControl/Binaries/Linux/libUE4Editor-SubversionSourceControl.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/GitSourceControl/Binaries/Linux/libUE4Editor-GitSourceControl.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/PerforceSourceControl/Binaries/Linux/libUE4Editor-PerforceSourceControl.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/CodeLiteSourceCodeAccess/Binaries/Linux/libUE4Editor-CodeLiteSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/UObjectPlugin/Binaries/Linux/libUE4Editor-UObjectPlugin.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/CLionSourceCodeAccess/Binaries/Linux/libUE4Editor-CLionSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Linux/libUE4Editor-AlembicImporter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Linux/libUE4Editor-AlembicLibrary.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/CharacterAI/Binaries/Linux/libUE4Editor-CharacterAI.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Linux/libUE4Editor-WmfMediaEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Linux/libUE4Editor-WmfMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Linux/libUE4Editor-WmfMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/LinearTimecode/Binaries/Linux/libUE4Editor-LinearTimecode.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Linux/libUE4Editor-MediaCompositing.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Linux/libUE4Editor-MediaCompositingEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Linux/libUE4Editor-AndroidMediaEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Linux/libUE4Editor-AndroidMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Linux/libUE4Editor-ImgMedia.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Linux/libUE4Editor-ImgMediaEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Linux/libUE4Editor-ImgMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Linux/libUE4Editor-ImgMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaPlayerEditor/Binaries/Linux/libUE4Editor-MediaPlayerEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Linux/libUE4Editor-AvfMediaEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Linux/libUE4Editor-AvfMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Linux/libUE4Editor-AvfMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Linux/libUE4Editor-OnlineSubsystemUtils.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Linux/libUE4Editor-OnlineBlueprintSupport.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystem/Binaries/Linux/libUE4Editor-OnlineSubsystem.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemNull/Binaries/Linux/libUE4Editor-OnlineSubsystemNull.so (API version 0).
+LogInit: Using libcurl 7.57.0
+LogInit:  - built for x86_64-pc-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  Libcurl: checking if '/etc/pki/tls/certs/ca-bundle.crt' exists
+LogInit:  Libcurl: checking if '/etc/ssl/certs/ca-certificates.crt' exists
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = /etc/ssl/certs/ca-certificates.crt  - Libcurl will set CURLOPT_CAINFO to it
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit: Build: ++UE4+Release-4.19-CL-0
+LogInit: Engine Version: 4.19.2-0+++UE4+Release-4.19
+LogInit: Compatible Engine Version: 4.19.0-0+++UE4+Release-4.19
+LogInit: Net CL: 0
+LogDevObjectVersion: Number of dev versions registered: 18
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 23
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 33
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 25
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 6
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 1
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 2
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 16
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogInit: Compiled (64-bit): Jul 12 2018 11:20:43
+LogInit: Compiled with Clang: 3.8.0 (tags/RELEASE_380/final)
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.19
+LogInit: Command Line: 
+LogInit: Base Directory: /opt/unreal-engine/Engine/Binaries/Linux/
+LogInit: Installed Engine Build: 0
+LogStreaming: Display: Took  0.005s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.07.14-10.57.13:590][  0]LogInit: Initializing SDL.
+[2018.07.14-10.57.13:761][  0]LogInit: Using SDL_WINDOW_OPENGL
+[2018.07.14-10.57.13:762][  0]LogInit: Initialized SDL 2.0.5 revision: 11184 (hg-11184:04063928c4a8 with EpicExtensions) (compiled against 2.0.5)
+[2018.07.14-10.57.13:762][  0]LogInit: Display metrics:
+[2018.07.14-10.57.13:762][  0]LogInit:   PrimaryDisplayWidth: 1366
+[2018.07.14-10.57.13:762][  0]LogInit:   PrimaryDisplayHeight: 768
+[2018.07.14-10.57.13:762][  0]LogInit:   PrimaryDisplayWorkAreaRect:
+[2018.07.14-10.57.13:762][  0]LogInit:     Left=0, Top=0, Right=1366, Bottom=768
+[2018.07.14-10.57.13:762][  0]LogInit:   VirtualDisplayRect:
+[2018.07.14-10.57.13:762][  0]LogInit:     Left=0, Top=0, Right=1366, Bottom=768
+[2018.07.14-10.57.13:762][  0]LogInit:   TitleSafePaddingSize: X=0.000 Y=0.000 Z=0.000 W=0.000
+[2018.07.14-10.57.13:762][  0]LogInit:   ActionSafePaddingSize: X=0.000 Y=0.000 Z=0.000 W=0.000
+[2018.07.14-10.57.13:762][  0]LogInit:   Number of monitors: 1
+[2018.07.14-10.57.13:762][  0]LogInit:     Monitor 0
+[2018.07.14-10.57.13:762][  0]LogInit:       Name: ASUS VH192 19"
+[2018.07.14-10.57.13:762][  0]LogInit:       ID: display0
+[2018.07.14-10.57.13:762][  0]LogInit:       NativeWidth: 1366
+[2018.07.14-10.57.13:762][  0]LogInit:       NativeHeight: 768
+[2018.07.14-10.57.13:762][  0]LogInit:       bIsPrimary: true
+[2018.07.14-10.57.13:762][  0]LogLinux: Selected Device Profile: [Linux]
+[2018.07.14-10.57.13:762][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Linux]
+[2018.07.14-10.57.13:773][  0]LogInit: Linux hardware info:
+[2018.07.14-10.57.13:773][  0]LogInit:  - we are not the first instance of this executable
+[2018.07.14-10.57.13:773][  0]LogInit:  - this process' id (pid) is 6645, parent process' id (ppid) is 4301
+[2018.07.14-10.57.13:773][  0]LogInit:  - we are not running under debugger
+[2018.07.14-10.57.13:773][  0]LogInit:  - machine network name is 'Axius'
+[2018.07.14-10.57.13:773][  0]LogInit:  - user name is 'josephtheengineer' (josephtheengineer)
+[2018.07.14-10.57.13:773][  0]LogInit:  - we're logged in locally
+[2018.07.14-10.57.13:773][  0]LogInit:  - we're running with rendering
+[2018.07.14-10.57.13:773][  0]LogInit:  - CPU: GenuineIntel 'Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz' (signature: 0x906E9)
+[2018.07.14-10.57.13:773][  0]LogInit:  - Number of physical cores available for the process: 4
+[2018.07.14-10.57.13:773][  0]LogInit:  - Number of logical cores available for the process: 4
+[2018.07.14-10.57.13:773][  0]LogInit:  - Cache line size: 64
+[2018.07.14-10.57.13:773][  0]LogInit:  - Memory allocator used: binned2
+[2018.07.14-10.57.13:773][  0]LogLinux: Benchmarking clocks:
+[2018.07.14-10.57.13:773][  0]LogLinux:  - CLOCK_REALTIME (id=0) can sustain 49389823 (49390K, 49M) calls per second without zero deltas.
+[2018.07.14-10.57.13:773][  0]LogLinux:  - CLOCK_MONOTONIC (id=1) can sustain 49087532 (49088K, 49M) calls per second without zero deltas.
+[2018.07.14-10.57.13:773][  0]LogLinux:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 3420703 (3421K, 3M) calls per second without zero deltas.
+[2018.07.14-10.57.13:773][  0]LogLinux:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 174121123 (174121K, 174M) calls per second with 99.999822% zero deltas.
+[2018.07.14-10.57.13:773][  0]LogLinux: Selected clock_id 0 (CLOCK_REALTIME) since it is the fastest support clock without zero deltas.
+[2018.07.14-10.57.13:773][  0]LogInit: Linux-specific commandline switches:
+[2018.07.14-10.57.13:773][  0]LogInit:  -nodwarf (currently OFF): suppress parsing of DWARF debug info (callstacks will be generated faster, but won't have line numbers)
+[2018.07.14-10.57.13:773][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2018.07.14-10.57.13:773][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2018.07.14-10.57.13:773][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2018.07.14-10.57.13:773][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2018.07.14-10.57.13:773][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2018.07.14-10.57.13:773][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2018.07.14-10.57.13:774][  0]LogInit:  - Physical RAM available (not considering process quota): 8 GB (7943 MB, 8134468 KB, 8329695232 bytes)
+[2018.07.14-10.57.13:874][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2018.07.14-10.57.13:874][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2018.07.14-10.57.13:880][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2018.07.14-10.57.14:391][  0]LogStreaming: Display: Took  0.517s to EndInitTextLocalization.
+[2018.07.14-10.57.14:440][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.07.14-10.57.14:440][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.07.14-10.57.15:300][  0]LogRHI: Initializing OpenGL RHI
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_VENDOR: NVIDIA Corporation
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_RENDERER: GeForce GTX 950/PCIe/SSE2
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_VERSION: 4.3.0 NVIDIA 396.24
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_SHADING_LANGUAGE_VERSION: 4.30 NVIDIA via Cg compiler
+[2018.07.14-10.57.15:300][  0]LogRHI: OpenGL Extensions:
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_AMD_multi_draw_indirect
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_AMD_seamless_cubemap_per_texture
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_AMD_vertex_shader_viewport_index
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_AMD_vertex_shader_layer
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_arrays_of_arrays
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_base_instance
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_bindless_texture
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_blend_func_extended
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_buffer_storage
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_clear_buffer_object
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_clear_texture
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_clip_control
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_color_buffer_float
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_compressed_texture_pixel_storage
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_conservative_depth
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_compute_shader
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_compute_variable_group_size
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_conditional_render_inverted
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_copy_buffer
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_copy_image
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_cull_distance
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_debug_output
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_depth_buffer_float
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_depth_clamp
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_depth_texture
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_derivative_control
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_direct_state_access
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_draw_buffers
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_draw_buffers_blend
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_draw_indirect
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_draw_elements_base_vertex
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_draw_instanced
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_enhanced_layouts
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_ES2_compatibility
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_ES3_compatibility
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_ES3_1_compatibility
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_ES3_2_compatibility
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_explicit_attrib_location
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_explicit_uniform_location
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_fragment_coord_conventions
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_fragment_layer_viewport
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_fragment_program
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_fragment_program_shadow
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_fragment_shader
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_fragment_shader_interlock
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_framebuffer_no_attachments
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_framebuffer_object
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_framebuffer_sRGB
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_geometry_shader4
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_get_program_binary
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_get_texture_sub_image
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_gl_spirv
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_gpu_shader5
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_gpu_shader_fp64
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_gpu_shader_int64
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_half_float_pixel
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_half_float_vertex
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_imaging
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_indirect_parameters
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_instanced_arrays
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_internalformat_query
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_internalformat_query2
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_invalidate_subdata
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_map_buffer_alignment
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_map_buffer_range
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_multi_bind
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_multi_draw_indirect
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_multisample
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_multitexture
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_occlusion_query
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_occlusion_query2
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_parallel_shader_compile
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_pipeline_statistics_query
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_pixel_buffer_object
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_point_parameters
+[2018.07.14-10.57.15:300][  0]LogRHI:   GL_ARB_point_sprite
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_polygon_offset_clamp
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_post_depth_coverage
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_program_interface_query
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_provoking_vertex
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_query_buffer_object
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_robust_buffer_access_behavior
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_robustness
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_sample_locations
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_sample_shading
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_sampler_objects
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_seamless_cube_map
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_seamless_cubemap_per_texture
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_separate_shader_objects
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_atomic_counter_ops
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_atomic_counters
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_ballot
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_bit_encoding
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_clock
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_draw_parameters
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_group_vote
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_image_load_store
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_image_size
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_objects
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_precision
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_storage_buffer_object
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_subroutine
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_texture_image_samples
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_texture_lod
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shading_language_100
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shader_viewport_layer_array
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shading_language_420pack
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shading_language_include
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shading_language_packing
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_shadow
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_sparse_buffer
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_sparse_texture
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_sparse_texture2
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_sparse_texture_clamp
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_spirv_extensions
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_stencil_texturing
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_sync
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_tessellation_shader
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_barrier
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_border_clamp
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_buffer_object
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_buffer_object_rgb32
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_buffer_range
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_compression
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_compression_bptc
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_compression_rgtc
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_cube_map
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_cube_map_array
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_env_add
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_env_combine
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_env_crossbar
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_env_dot3
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_filter_anisotropic
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_filter_minmax
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_float
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_gather
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_mirror_clamp_to_edge
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_mirrored_repeat
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_multisample
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_non_power_of_two
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_query_levels
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_query_lod
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_rectangle
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_rg
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_rgb10_a2ui
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_stencil8
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_storage
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_storage_multisample
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_swizzle
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_texture_view
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_timer_query
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_transform_feedback2
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_transform_feedback3
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_transform_feedback_instanced
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_transform_feedback_overflow_query
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_transpose_matrix
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_uniform_buffer_object
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_vertex_array_bgra
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_vertex_array_object
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_vertex_attrib_64bit
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_vertex_attrib_binding
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_vertex_buffer_object
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_vertex_program
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_vertex_shader
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_vertex_type_10f_11f_11f_rev
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_vertex_type_2_10_10_10_rev
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_viewport_array
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ARB_window_pos
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ATI_draw_buffers
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ATI_texture_float
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_ATI_texture_mirror_once
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_S3_s3tc
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_texture_env_add
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_abgr
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_bgra
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_bindable_uniform
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_blend_color
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_blend_equation_separate
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_blend_func_separate
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_blend_minmax
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_blend_subtract
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_compiled_vertex_array
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_Cg_shader
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_depth_bounds_test
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_direct_state_access
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_draw_buffers2
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_draw_instanced
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_draw_range_elements
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_fog_coord
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_framebuffer_blit
+[2018.07.14-10.57.15:301][  0]LogRHI:   GL_EXT_framebuffer_multisample
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXTX_framebuffer_mixed_formats
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_framebuffer_multisample_blit_scaled
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_framebuffer_object
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_framebuffer_sRGB
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_geometry_shader4
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_gpu_program_parameters
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_gpu_shader4
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_multi_draw_arrays
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_packed_depth_stencil
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_packed_float
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_packed_pixels
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_pixel_buffer_object
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_point_parameters
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_polygon_offset_clamp
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_post_depth_coverage
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_provoking_vertex
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_raster_multisample
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_rescale_normal
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_secondary_color
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_separate_shader_objects
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_separate_specular_color
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_shader_image_load_formatted
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_shader_image_load_store
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_shader_integer_mix
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_shadow_funcs
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_sparse_texture2
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_stencil_two_side
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_stencil_wrap
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture3D
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_array
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_buffer_object
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_compression_dxt1
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_compression_latc
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_compression_rgtc
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_compression_s3tc
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_cube_map
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_edge_clamp
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_env_combine
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_env_dot3
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_filter_anisotropic
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_filter_minmax
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_integer
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_lod
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_lod_bias
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_mirror_clamp
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_object
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_shared_exponent
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_sRGB
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_sRGB_decode
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_storage
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_texture_swizzle
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_timer_query
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_transform_feedback2
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_vertex_array
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_vertex_array_bgra
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_vertex_attrib_64bit
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_window_rectangles
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_x11_sync_object
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_import_sync_object
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_robustness_video_memory_purge
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_IBM_rasterpos_clip
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_IBM_texture_mirrored_repeat
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_KHR_context_flush_control
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_KHR_debug
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_memory_object
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_memory_object_fd
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_KHR_parallel_shader_compile
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_KHR_no_error
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_KHR_robust_buffer_access_behavior
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_KHR_robustness
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_semaphore
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_EXT_semaphore_fd
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_KTX_buffer_region
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_alpha_to_coverage_dither_control
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_bindless_multi_draw_indirect
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_bindless_multi_draw_indirect_count
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_bindless_texture
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_blend_equation_advanced
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_blend_equation_advanced_coherent
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_blend_minmax_factor
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_blend_square
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_command_list
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_compute_program5
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_conditional_render
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_conservative_raster
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_conservative_raster_dilate
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_copy_depth_to_color
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_copy_image
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_depth_buffer_float
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_depth_clamp
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_draw_texture
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_draw_vulkan_image
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_ES1_1_compatibility
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_ES3_1_compatibility
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_explicit_multisample
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_feature_query
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_fence
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_fill_rectangle
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_float_buffer
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_fog_distance
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_fragment_coverage_to_color
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_fragment_program
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_fragment_program_option
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_fragment_program2
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_fragment_shader_interlock
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_framebuffer_mixed_samples
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_framebuffer_multisample_coverage
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_geometry_shader4
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_geometry_shader_passthrough
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_gpu_program4
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_internalformat_sample_query
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_gpu_program4_1
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_gpu_program5
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_gpu_program5_mem_extended
+[2018.07.14-10.57.15:302][  0]LogRHI:   GL_NV_gpu_program_fp64
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_gpu_shader5
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_half_float
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_light_max_exponent
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_multisample_coverage
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_multisample_filter_hint
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_occlusion_query
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_packed_depth_stencil
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_parameter_buffer_object
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_parameter_buffer_object2
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_path_rendering
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_path_rendering_shared_edge
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_pixel_data_range
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_point_sprite
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_primitive_restart
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_query_resource
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_query_resource_tag
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_register_combiners
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_register_combiners2
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_sample_locations
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_sample_mask_override_coverage
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_shader_atomic_counters
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_shader_atomic_float
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_shader_atomic_fp16_vector
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_shader_atomic_int64
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_shader_buffer_load
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_shader_storage_buffer_object
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texgen_reflection
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texture_barrier
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texture_compression_vtc
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texture_env_combine4
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texture_multisample
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texture_rectangle
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texture_rectangle_compressed
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texture_shader
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texture_shader2
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_texture_shader3
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_transform_feedback
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_transform_feedback2
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_uniform_buffer_unified_memory
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vdpau_interop
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vertex_array_range
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vertex_array_range2
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vertex_attrib_integer_64bit
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vertex_buffer_unified_memory
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vertex_program
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vertex_program1_1
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vertex_program2
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vertex_program2_option
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_vertex_program3
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_viewport_array2
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_viewport_swizzle
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NVX_conditional_render
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NVX_gpu_memory_info
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NVX_nvenc_interop
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_shader_thread_group
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_NV_shader_thread_shuffle
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_KHR_blend_equation_advanced
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_KHR_blend_equation_advanced_coherent
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_SGIS_generate_mipmap
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_SGIS_texture_lod
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_SGIX_depth_texture
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_SGIX_shadow
+[2018.07.14-10.57.15:303][  0]LogRHI:   GL_SUN_slice_accum
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_TEXTURE_SIZE: 16384
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_CUBE_MAP_TEXTURE_SIZE: 16384
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_ARRAY_TEXTURE_LAYERS: 2048
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_3D_TEXTURE_SIZE: 2048
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_RENDERBUFFER_SIZE: 16384
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_DRAW_BUFFERS: 8
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_COLOR_ATTACHMENTS: 8
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_SAMPLES: 32
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_COLOR_TEXTURE_SAMPLES: 32
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_DEPTH_TEXTURE_SAMPLES: 32
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_INTEGER_SAMPLES: 32
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 192
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_VERTEX_ATTRIBS: 16
+[2018.07.14-10.57.15:305][  0]LogRHI:   GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16
+[2018.07.14-10.57.15:305][  0]LogRHI: OpenGL MajorVersion = 4, MinorVersion = 3, ShaderPlatform = GLSL_430, FeatureLevel = SM5
+[2018.07.14-10.57.15:314][  0]LogRHI: Texture pool is 1433 MB (70% of 2048 MB)
+[2018.07.14-10.57.15:314][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Intermediate/Shaders/WorkingDirectory/6645/).
+[2018.07.14-10.57.15:314][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Intermediate/Shaders/tmp/0003700F0F07140E0039013A759063E8/'.
+[2018.07.14-10.57.15:314][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.07.14-10.57.16:906][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.07.14-10.57.16:981][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.07.14-10.57.17:058][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.07.14-10.57.17:143][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.07.14-10.57.17:211][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.07.14-10.57.17:288][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.07.14-10.57.17:372][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.07.14-10.57.17:448][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.07.14-10.57.17:524][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
+[2018.07.14-10.57.17:607][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.07.14-10.57.17:683][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.07.14-10.57.17:833][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.07.14-10.57.17:843][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.07.14-10.57.17:918][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.07.14-10.57.17:992][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.07.14-10.57.17:992][  0]LogTargetPlatformManager: Display: Building Assets For Linux
+[2018.07.14-10.57.18:277][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.07.14-10.57.18:364][  0]LogDerivedDataCache: Loaded boot cache 0.09s 89MB ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/DerivedDataCache/Boot.ddc.
+[2018.07.14-10.57.18:364][  0]LogDerivedDataCache: Display: Loaded Boot cache: ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/DerivedDataCache/Boot.ddc
+[2018.07.14-10.57.18:365][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.07.14-10.57.18:365][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.07.14-10.57.18:365][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.07.14-10.57.18:365][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2018.07.14-10.57.18:371][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2018.07.14-10.57.18:371][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.07.14-10.57.18:371][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.07.14-10.57.18:385][  0]LogMaterial: Verifying Global Shaders for GLSL_430
+[2018.07.14-10.57.18:394][  0]LogSlate: Using Freetype 2.6.0
+[2018.07.14-10.57.18:395][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 0
+[2018.07.14-10.57.18:395][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 0
+[2018.07.14-10.57.18:493][  0]LogAssetRegistry: FAssetRegistry took 0.0049 seconds to start up
+[2018.07.14-10.57.18:982][  0]LogLinux: Selected Device Profile: [Linux]
+[2018.07.14-10.57.19:212][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.07.14-10.57.19:212][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.07.14-10.57.19:212][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.07.14-10.57.19:212][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2018.07.14-10.57.19:212][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.07.14-10.57.19:212][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2018.07.14-10.57.19:391][  0]LogNetVersion: EdenUniverseBuilder , NetCL: 0, EngineNetVer: 2, GameNetVer: 0 (Checksum: 729575976)
+[2018.07.14-10.57.20:166][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 2 prioritized culture(s) in 0.043284 seconds
+[2018.07.14-10.57.20:175][  0]LogUObjectArray: 36073 objects as part of root set at end of initial load.
+[2018.07.14-10.57.20:175][  0]LogUObjectAllocator: 7176912 out of 0 bytes used by permanent object pool.
+[2018.07.14-10.57.20:175][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.07.14-10.57.20:194][  0]LogModuleManager: Warning: No filename provided for module ALAudio
+[2018.07.14-10.57.20:194][  0]LogModuleManager: Warning: ModuleManager: Unable to load module 'ALAudio' because the file '/opt/unreal-engine/Engine/Binaries/Linux/' was not found.
+[2018.07.14-10.57.20:301][  0]LogHAL: Linux SourceCodeAccessSettings: NullSourceCodeAccessor
+[2018.07.14-10.57.21:067][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.07.14-10.57.21:067][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.07.14-10.57.21:067][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.14-10.57.21:067][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.14-10.57.21:067][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.14-10.57.21:067][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.14-10.57.21:067][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.07.14-10.57.21:067][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.07.14-10.57.21:068][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.14-10.57.21:068][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.14-10.57.21:068][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.14-10.57.21:068][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.14-10.57.21:068][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.07.14-10.57.21:068][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.07.14-10.57.21:068][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.14-10.57.21:068][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.14-10.57.21:069][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.14-10.57.21:069][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.14-10.57.21:069][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.07.14-10.57.21:069][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.07.14-10.57.21:069][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.14-10.57.21:069][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.14-10.57.21:069][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.14-10.57.21:069][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.14-10.57.21:072][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.07.14-10.57.21:072][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.07.14-10.57.21:073][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:073][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:073][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:073][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:073][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.07.14-10.57.21:073][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.07.14-10.57.21:073][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:073][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:074][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:074][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:074][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png' error.
+[2018.07.14-10.57.21:074][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png
+[2018.07.14-10.57.21:074][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:074][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:074][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:074][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:074][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png' error.
+[2018.07.14-10.57.21:074][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png
+[2018.07.14-10.57.21:075][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:075][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:075][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:075][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:075][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.07.14-10.57.21:075][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.07.14-10.57.21:075][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:075][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:075][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:075][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:076][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.07.14-10.57.21:076][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.07.14-10.57.21:076][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:076][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:076][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:076][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:076][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.07.14-10.57.21:076][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.07.14-10.57.21:077][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:077][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:077][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:077][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:077][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png' error.
+[2018.07.14-10.57.21:077][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png
+[2018.07.14-10.57.21:077][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:077][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:077][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:077][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:078][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png' error.
+[2018.07.14-10.57.21:078][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png
+[2018.07.14-10.57.21:078][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:078][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.21:078][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.14-10.57.21:078][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.14-10.57.24:256][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.07.14-10.57.24:268][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.07.14-10.57.26:337][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.07.14-10.57.28:248][  0]SourceControl: Source control is disabled
+[2018.07.14-10.57.28:248][  0]SourceControl: Source control is disabled
+[2018.07.14-10.57.28:326][  0]SourceControl: Source control is disabled
+[2018.07.14-10.57.28:415][  0]SourceControl: Source control is disabled
+[2018.07.14-10.57.29:470][  0]LogEngine: Initializing Engine...
+[2018.07.14-10.57.29:471][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.07.14-10.57.29:473][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.07.14-10.57.29:473][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.07.14-10.57.30:332][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.07.14-10.57.30:344][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-10.57.30:344][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-10.57.30:344][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-10.57.30:344][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-10.57.30:344][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-10.57.30:344][  0]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-10.57.30:344][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-10.57.30:344][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-10.57.30:355][  0]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-10.57.30:422][  0]LogInit: FAudioDevice initialized.
+[2018.07.14-10.57.30:514][  0]LogDerivedDataCache: Saved boot cache 0.09s 89MB ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/DerivedDataCache/Boot.ddc.
+[2018.07.14-10.57.30:543][  0]LogInit: Texture streaming: Enabled
+[2018.07.14-10.57.30:722][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.07.14-10.57.31:033][  0]LogInit: Transaction tracking system initialized
+[2018.07.14-10.57.31:540][  0]BlueprintLog: New page: Editor Load
+[2018.07.14-10.57.32:834][  0]LocalizationService: Localization service is disabled
+[2018.07.14-10.57.33:681][  0]LogConsoleResponse: Display: 
+[2018.07.14-10.57.33:969][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/EdenProject/Engine/Content/' took 0.00s
+[2018.07.14-10.57.33:969][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.07.14-10.57.33:969][  0]LogCook: Display: Mobile HDR setting 1
+[2018.07.14-10.57.33:969][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.07.14-10.57.33:969][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.07.14-10.57.33:969][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.07.14-10.57.35:591][  0]SourceControl: Source control is disabled
+[2018.07.14-10.57.35:591][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.14-10.57.35:604][  0]LightingResults: New page: Lighting Build
+[2018.07.14-10.57.35:653][  0]MapCheck: New page: Map Check
+[2018.07.14-10.57.35:653][  0]LightingResults: New page: Lighting Build
+[2018.07.14-10.57.36:136][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2018.07.14-10.57.36:155][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.14-10.57.36:237][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.14-10.57.36:280][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 42.217255ms to complete.
+[2018.07.14-10.57.36:280][  0]LogFileHelpers: Loading map 'Template_Default' took 0.689
+[2018.07.14-10.57.36:314][  0]LogLinux: Scale at X=716.000000, Y=29.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.57.36:314][  0]LogLinux: Scale at X=1033.000000, Y=390.500000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.57.36:320][  0]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.57.36:425][  0]LogCollectionManager: Loaded 0 collections in 0.000956 seconds
+[2018.07.14-10.57.36:446][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Collections/' took 0.00s
+[2018.07.14-10.57.36:446][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/EdenProject/Engine/Content/Developers/josephtheengineer/Collections/' took 0.00s
+[2018.07.14-10.57.36:446][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/EdenProject/Engine/Content/Collections/' took 0.00s
+[2018.07.14-10.57.36:446][  0]LogContentBrowser: Native class hierarchy populated in 0.0173 seconds. Added 2426 classes and 538 folders.
+[2018.07.14-10.57.36:453][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2018.07.14-10.57.36:577][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.07.14-10.57.36:601][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2018.07.14-10.57.36:690][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2018.07.14-10.57.36:810][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.07.14-10.57.36:810][  0]LogLoad: (Engine Initialization) Total time: 25.27 seconds
+[2018.07.14-10.57.36:810][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.07.14-10.57.37:145][  0]LogSlate: Took 0.000124 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.07.14-10.57.37:149][  0]LogSlate: Took 0.000172 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.07.14-10.57.37:160][  0]LogSlate: Took 0.000090 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.07.14-10.57.37:160][  0]LogSlate: Took 0.000054 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2018.07.14-10.57.37:390][  0]LogRenderer: Reallocating scene render targets to support 404x304 Format 10 NumSamples 1 (Frame:1).
+[2018.07.14-10.57.37:536][  0]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-10.57.37:541][  0]LogInit: Adding external input plugin.
+[2018.07.14-10.57.37:561][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.07.14-10.57.37:581][  0]LogSlate: Took 0.000077 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.07.14-10.57.37:695][  2]LogAssetRegistry: Asset discovery search completed in 19.2024 seconds
+[2018.07.14-10.57.37:697][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.07.14-10.57.37:697][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000252 seconds (updated 0 objects)
+[2018.07.14-10.57.37:835][ 11]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.57.37:836][ 11]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.57.37:837][ 11]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.57.37:854][ 11]LogSlate: Took 0.000059 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.07.14-10.57.38:043][ 25]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-10.57.39:223][140]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.07.14-10.57.40:018][202]LogRenderer: Reallocating scene render targets to support 804x304 Format 10 NumSamples 1 (Frame:112).
+[2018.07.14-10.57.46:576][310]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-10.57.46:710][317]LogUObjectGlobals: Created PersistentFrame Addr=0x00007fb5e0a06370, Size=72, Default__BP_BlockSpawner_C Function /Game/BP_BlockSpawner.BP_BlockSpawner_C:ExecuteUbergraph_BP_BlockSpawner
+[2018.07.14-10.57.46:730][317]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007fb5e0a06370, Size=72
+[2018.07.14-10.57.46:730][317]LogUObjectGlobals: Created PersistentFrame Addr=0x00007fb5e0a06370, Size=72, Default__BP_BlockSpawner_C Function /Engine/Transient.REINST_BP_BlockSpawner_C_5:ExecuteUbergraph_BP_BlockSpawner
+[2018.07.14-10.57.46:749][317]LogUObjectGlobals: Created PersistentFrame Addr=0x00007fb5e7567040, Size=72, Default__BP_BlockSpawner_C Function /Game/BP_BlockSpawner.BP_BlockSpawner_C:ExecuteUbergraph_BP_BlockSpawner
+[2018.07.14-10.57.47:008][317]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.57.47:008][317]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.57.47:009][317]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.57.47:036][317]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-10.58.04:022][317]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0011 seconds. Added 116 classes and 0 folders.
+[2018.07.14-10.58.04:369][317]LogUObjectGlobals: Created PersistentFrame Addr=0x00007fb5e92eaae0, Size=4, Default__SKEL_PROTO_BP_AnimBlueprint_0_C Function /Engine/Transient.SKEL_PROTO_BP_AnimBlueprint_0_C:ExecuteUbergraph_PROTO_BP_AnimBlueprint_0
+[2018.07.14-10.58.04:372][317]LogUObjectGlobals: Created PersistentFrame Addr=0x00007fb5e92eab00, Size=4, Default__PROTO_BP_AnimBlueprint_0_C Function /Engine/Transient.PROTO_BP_AnimBlueprint_0_C:ExecuteUbergraph_PROTO_BP_AnimBlueprint_0
+[2018.07.14-10.58.05:769][317]LogUObjectGlobals: Created PersistentFrame Addr=0x00007fb5ed321580, Size=224, Default__BP_PrimeCalc_C Function /Game/BP_PrimeCalc.BP_PrimeCalc_C:ExecuteUbergraph_BP_PrimeCalc
+[2018.07.14-10.58.05:774][317]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007fb5ed321580, Size=224
+[2018.07.14-10.58.05:775][317]LogUObjectGlobals: Created PersistentFrame Addr=0x00007fb5ed321580, Size=224, Default__BP_PrimeCalc_C Function /Engine/Transient.REINST_BP_PrimeCalc_C_19:ExecuteUbergraph_BP_PrimeCalc
+[2018.07.14-10.58.05:778][317]LogUObjectGlobals: Created PersistentFrame Addr=0x00007fb5ed323c00, Size=224, Default__BP_PrimeCalc_C Function /Game/BP_PrimeCalc.BP_PrimeCalc_C:ExecuteUbergraph_BP_PrimeCalc
+[2018.07.14-10.58.05:810][317]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.05:811][317]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.05:811][317]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.05:833][317]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-10.58.05:841][317]LogLinux: Scale at X=12.000000, Y=29.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.05:841][317]LogLinux: Scale at X=356.000000, Y=390.500000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.06:325][317]LogSlate: Took 0.000053 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.07.14-10.58.06:558][318]LogSlate: Took 0.000069 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.07.14-10.58.06:614][319]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-10.58.07:981][431]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.07:982][431]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.07:982][431]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.08:111][438]LogLinux: Scale at X=12.000000, Y=29.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.09:067][496]LogSlate: Window 'BP_PrimeCalc' being destroyed
+[2018.07.14-10.58.11:708][720]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.11:708][720]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.11:720][720]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.11:746][720]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-10.58.11:764][720]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-10.58.11:797][720]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007fb5e0a06370, Size=72
+[2018.07.14-10.58.11:798][720]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007fb5ed321580, Size=224
+[2018.07.14-10.58.11:802][720]Cmd: MAP LOAD FILE="../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/TestLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.14-10.58.11:802][720]LightingResults: New page: Lighting Build
+[2018.07.14-10.58.11:803][720]LoadErrors: New page: Loading map: TestLevel.umap
+[2018.07.14-10.58.11:806][720]MapCheck: New page: Map Check
+[2018.07.14-10.58.11:806][720]LightingResults: New page: Lighting Build
+[2018.07.14-10.58.11:829][720]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.14-10.58.11:859][720]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.14-10.58.11:878][720]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 18.985033ms to complete.
+[2018.07.14-10.58.11:879][720]LogFileHelpers: Loading map 'TestLevel' took 0.078
+[2018.07.14-10.58.19:861][547]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.14-10.58.21:601][716]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-10.58.21:627][716]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-10.58.21:627][716]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 6:58:21 AM)
+[2018.07.14-10.58.21:628][716]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-10.58.21:630][716]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002496s)
+[2018.07.14-10.58.21:631][716]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-10.58.21:631][716]LogPlayLevel: PIE: World Init took: (0.000752s)
+[2018.07.14-10.58.21:631][716]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.003771s)
+[2018.07.14-10.58.21:656][716]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-10.58.21:656][716]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-10.58.21:656][716]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-10.58.21:656][716]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-10.58.21:656][716]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-10.58.21:656][716]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-10.58.21:657][716]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-10.58.21:657][716]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-10.58.21:657][716]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-10.58.21:725][716]LogInit: FAudioDevice initialized.
+[2018.07.14-10.58.21:828][716]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-10.58.21:842][716]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-20.58.21
+[2018.07.14-10.58.21:845][716]LogWorld: Bringing up level for play took: 0.008858
+[2018.07.14-10.58.21:953][716]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0008 seconds. Added 11 classes and 0 folders.
+[2018.07.14-10.58.21:980][716]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -50.019192
+[2018.07.14-10.58.23:459][872]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-10.58.23:502][873]LogTemp: Warning: Int 12
+[2018.07.14-10.58.23:502][873]LogTemp: Warning: Woah 12
+[2018.07.14-10.58.23:502][873]LogTemp: Warning: /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q
+[2018.07.14-10.58.23:522][874]LogTemp: Warning: Task Finished!
+[2018.07.14-10.58.25:573][ 86]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.14-10.58.42:971][ 98]LogLinux: Scale at X=504.500000, Y=589.500000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.58.42:998][100]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-10.59.31:425][486]LogHotReload: New module detected: libUE4Editor-EdenUniverseBuilder-9582.so
+[2018.07.14-10.59.32:187][489]LogHotReload: Starting Hot-Reload from IDE
+[2018.07.14-10.59.32:188][489]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.59.32:189][489]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.59.32:189][489]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.59.32:219][489]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-10.59.32:310][489]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0006 seconds. Added 3 classes and 2 folders.
+[2018.07.14-10.59.32:313][489]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2018.07.14-10.59.32:697][489]LogContentBrowser: Native class hierarchy populated in 0.0159 seconds. Added 2427 classes and 540 folders.
+[2018.07.14-10.59.32:698][489]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.59.32:698][489]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.59.32:699][489]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-10.59.32:711][489]Display: HotReload took  0.5s.
+[2018.07.14-10.59.32:743][490]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-10.59.36:657][902]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-10.59.36:666][902]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-10.59.36:666][902]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 6:59:36 AM)
+[2018.07.14-10.59.36:667][902]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-10.59.36:671][902]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004122s)
+[2018.07.14-10.59.36:672][902]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-10.59.36:673][902]LogPlayLevel: PIE: World Init took: (0.001458s)
+[2018.07.14-10.59.36:673][902]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.006372s)
+[2018.07.14-10.59.36:722][902]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-10.59.36:722][902]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-10.59.36:722][902]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-10.59.36:723][902]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-10.59.36:723][902]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-10.59.36:723][902]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-10.59.36:723][902]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-10.59.36:724][902]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-10.59.36:724][902]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-10.59.36:797][902]LogInit: FAudioDevice initialized.
+[2018.07.14-10.59.36:886][902]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-10.59.36:892][902]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-20.59.36
+[2018.07.14-10.59.36:895][902]LogWorld: Bringing up level for play took: 0.005318
+[2018.07.14-10.59.36:963][902]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 24.963713
+[2018.07.14-10.59.39:114][115]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-10.59.39:165][116]LogTemp: Warning: Int 12
+[2018.07.14-10.59.39:165][116]LogTemp: Warning: Woah 12
+[2018.07.14-10.59.39:165][116]LogTemp: Warning: /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q
+[2018.07.14-10.59.39:209][118]LogTemp: Warning: Task Finished!
+[2018.07.14-10.59.41:697][375]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.14-11.00.11:738][955]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.00.11:747][955]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.00.11:747][955]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:00:11 AM)
+[2018.07.14-11.00.11:747][955]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.00.11:750][955]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002468s)
+[2018.07.14-11.00.11:751][955]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.00.11:751][955]LogPlayLevel: PIE: World Init took: (0.001359s)
+[2018.07.14-11.00.11:752][955]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.004399s)
+[2018.07.14-11.00.11:777][955]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.00.11:778][955]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.00.11:778][955]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.00.11:778][955]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.00.11:778][955]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.00.11:778][955]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.00.11:778][955]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.00.11:779][955]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.00.11:779][955]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.00.11:845][955]LogInit: FAudioDevice initialized.
+[2018.07.14-11.00.11:892][955]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.00.11:895][955]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.00.11
+[2018.07.14-11.00.11:896][955]LogWorld: Bringing up level for play took: 0.002295
+[2018.07.14-11.00.11:941][955]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 59.941896
+[2018.07.14-11.00.13:385][105]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.00.13:428][106]LogTemp: Warning: Int 12
+[2018.07.14-11.00.13:428][106]LogTemp: Warning: Woah 12
+[2018.07.14-11.00.13:429][106]LogTemp: Warning: /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q
+[2018.07.14-11.00.13:452][108]LogTemp: Warning: Task Finished!
+[2018.07.14-11.00.14:612][240]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.00.14:657][241]LogTemp: Warning: Int 12
+[2018.07.14-11.00.14:658][241]LogTemp: Warning: Woah 12
+[2018.07.14-11.00.14:658][241]LogTemp: Warning: /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q
+[2018.07.14-11.00.14:680][243]LogTemp: Warning: Task Finished!
+[2018.07.14-11.00.20:266][445]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.01.17:467][366]LogHotReload: New module detected: libUE4Editor-EdenUniverseBuilder-9582.so
+[2018.07.14-11.01.18:558][370]LogHotReload: Starting Hot-Reload from IDE
+[2018.07.14-11.01.18:559][370]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.01.18:559][370]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.01.18:560][370]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.01.18:583][370]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.01.18:619][370]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0010 seconds. Added 3 classes and 2 folders.
+[2018.07.14-11.01.18:624][370]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.07.14-11.01.18:953][370]LogContentBrowser: Native class hierarchy populated in 0.0165 seconds. Added 2427 classes and 540 folders.
+[2018.07.14-11.01.18:954][370]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.01.18:954][370]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.01.18:955][370]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.01.18:963][370]Display: HotReload took  0.4s.
+[2018.07.14-11.01.18:995][371]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.01.23:469][837]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.01.23:482][837]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.01.23:482][837]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:01:23 AM)
+[2018.07.14-11.01.23:483][837]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.01.23:487][837]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003805s)
+[2018.07.14-11.01.23:488][837]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.01.23:489][837]LogPlayLevel: PIE: World Init took: (0.001744s)
+[2018.07.14-11.01.23:489][837]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.006233s)
+[2018.07.14-11.01.23:562][837]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.01.23:562][837]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.01.23:563][837]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.01.23:563][837]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.01.23:563][837]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.01.23:563][837]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.01.23:563][837]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.01.23:564][837]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.01.23:564][837]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.01.23:648][837]LogInit: FAudioDevice initialized.
+[2018.07.14-11.01.23:736][837]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.01.23:744][837]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.01.23
+[2018.07.14-11.01.23:746][837]LogWorld: Bringing up level for play took: 0.005433
+[2018.07.14-11.01.23:815][837]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 3.815441
+[2018.07.14-11.01.26:067][ 55]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.01.26:113][ 56]LogTemp: Warning: Int 12
+[2018.07.14-11.01.26:114][ 56]LogTemp: Warning: Woah 12
+[2018.07.14-11.01.26:114][ 56]LogTemp: Warning: /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q
+[2018.07.14-11.01.26:142][ 58]LogTemp: Warning: Task Finished!
+[2018.07.14-11.01.28:621][316]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.14-11.01.58:396][758]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.01.58:407][758]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.01.58:407][758]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:01:58 AM)
+[2018.07.14-11.01.58:408][758]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.01.58:410][758]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002326s)
+[2018.07.14-11.01.58:411][758]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.01.58:411][758]LogPlayLevel: PIE: World Init took: (0.000685s)
+[2018.07.14-11.01.58:411][758]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.003488s)
+[2018.07.14-11.01.58:438][758]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.01.58:438][758]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.01.58:439][758]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.01.58:439][758]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.01.58:439][758]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.01.58:439][758]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.01.58:439][758]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.01.58:440][758]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.01.58:440][758]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.01.58:496][758]LogInit: FAudioDevice initialized.
+[2018.07.14-11.01.58:536][758]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.01.58:539][758]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.01.58
+[2018.07.14-11.01.58:540][758]LogWorld: Bringing up level for play took: 0.002495
+[2018.07.14-11.01.58:582][758]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 38.582854
+[2018.07.14-11.02.01:303][ 54]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.02.01:347][ 55]LogTemp: Warning: Int 12
+[2018.07.14-11.02.01:348][ 55]LogTemp: Warning: Woah 12
+[2018.07.14-11.02.01:348][ 55]LogTemp: Warning: /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q
+[2018.07.14-11.02.01:375][ 57]LogTemp: Warning: Task Finished!
+[2018.07.14-11.02.08:710][343]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.02.09:064][376]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2018.07.14-11.02.09:757][433]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.14-11.02.09:817][439]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.02.09:827][439]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.02.09:827][439]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:02:09 AM)
+[2018.07.14-11.02.09:827][439]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.02.09:830][439]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002418s)
+[2018.07.14-11.02.09:831][439]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.02.09:831][439]LogPlayLevel: PIE: World Init took: (0.000621s)
+[2018.07.14-11.02.09:831][439]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.003520s)
+[2018.07.14-11.02.09:859][439]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.02.09:859][439]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.02.09:859][439]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.02.09:859][439]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.02.09:860][439]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.02.09:860][439]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.02.09:860][439]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.02.09:860][439]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.02.09:860][439]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.02.09:926][439]LogInit: FAudioDevice initialized.
+[2018.07.14-11.02.09:969][439]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.02.09:973][439]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.02.09
+[2018.07.14-11.02.09:974][439]LogWorld: Bringing up level for play took: 0.002757
+[2018.07.14-11.02.10:028][439]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 50.028202
+[2018.07.14-11.02.10:979][540]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.02.11:024][541]LogTemp: Warning: Int 12
+[2018.07.14-11.02.11:025][541]LogTemp: Warning: Woah 12
+[2018.07.14-11.02.11:025][541]LogTemp: Warning: /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q
+[2018.07.14-11.02.11:048][543]LogTemp: Warning: Task Finished!
+[2018.07.14-11.02.15:179][695]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.02.51:563][328]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.02.51:574][328]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.02.51:574][328]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:02:51 AM)
+[2018.07.14-11.02.51:574][328]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.02.51:577][328]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002536s)
+[2018.07.14-11.02.51:578][328]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.02.51:578][328]LogPlayLevel: PIE: World Init took: (0.000720s)
+[2018.07.14-11.02.51:578][328]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.003778s)
+[2018.07.14-11.02.51:605][328]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.02.51:606][328]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.02.51:606][328]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.02.51:606][328]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.02.51:606][328]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.02.51:606][328]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.02.51:606][328]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.02.51:607][328]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.02.51:607][328]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.02.51:690][328]LogInit: FAudioDevice initialized.
+[2018.07.14-11.02.51:770][328]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.02.51:777][328]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.02.51
+[2018.07.14-11.02.51:779][328]LogWorld: Bringing up level for play took: 0.005419
+[2018.07.14-11.02.51:876][328]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -36.123926
+[2018.07.14-11.02.53:547][506]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.02.53:592][507]LogTemp: Warning: Int 12
+[2018.07.14-11.02.53:593][507]LogTemp: Warning: Woah 12
+[2018.07.14-11.02.53:593][507]LogTemp: Warning: /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q
+[2018.07.14-11.02.53:617][509]LogTemp: Warning: Task Finished!
+[2018.07.14-11.03.04:561][697]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.06.51:312][944]LogHotReload: New module detected: libUE4Editor-EdenUniverseBuilder-9582.so
+[2018.07.14-11.06.52:417][948]LogHotReload: Starting Hot-Reload from IDE
+[2018.07.14-11.06.52:418][948]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.06.52:418][948]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.06.52:420][948]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.06.52:446][948]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.06.52:491][948]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0006 seconds. Added 3 classes and 2 folders.
+[2018.07.14-11.06.52:495][948]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.07.14-11.06.52:826][948]LogContentBrowser: Native class hierarchy populated in 0.0161 seconds. Added 2427 classes and 540 folders.
+[2018.07.14-11.06.52:826][948]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.06.52:827][948]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.06.52:827][948]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.06.52:839][948]Display: HotReload took  0.4s.
+[2018.07.14-11.06.52:865][949]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.06.56:632][283]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.06.56:644][283]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.06.56:644][283]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:06:56 AM)
+[2018.07.14-11.06.56:644][283]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.06.56:647][283]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002552s)
+[2018.07.14-11.06.56:648][283]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.06.56:648][283]LogPlayLevel: PIE: World Init took: (0.000776s)
+[2018.07.14-11.06.56:648][283]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.003789s)
+[2018.07.14-11.06.56:723][283]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.06.56:723][283]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.06.56:724][283]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.06.56:724][283]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.06.56:724][283]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.06.56:724][283]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.06.56:724][283]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.06.56:725][283]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.06.56:725][283]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.06.56:792][283]LogInit: FAudioDevice initialized.
+[2018.07.14-11.06.56:830][283]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.06.56:832][283]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.06.56
+[2018.07.14-11.06.56:832][283]LogWorld: Bringing up level for play took: 0.001840
+[2018.07.14-11.06.56:864][283]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -47.135187
+[2018.07.14-11.06.58:250][419]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.06.58:302][420]LogTemp: Warning: Int 12
+[2018.07.14-11.06.58:302][420]LogTemp: Warning: Woah 12
+[2018.07.14-11.06.58:303][420]LogTemp: Warning: /home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q
+[2018.07.14-11.06.58:332][422]LogTemp: Warning: Task Finished!
+[2018.07.14-11.08.30:608][977]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.08.30:610][977]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.08.30:614][977]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.08.30:941][978]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.08.39:268][818]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.08.39:269][818]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.08.39:272][818]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.08.39:289][818]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.08.39:311][818]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.08.39:336][818]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TestLevel' took 0.024
+[2018.07.14-11.08.39:338][818]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/BP_PrimeCalc] ([1] browsable assets)...
+[2018.07.14-11.08.39:356][818]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/BP_PrimeCalc.BP_PrimeCalc]
+[2018.07.14-11.08.39:356][818]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_PrimeCalc]
+[2018.07.14-11.08.39:357][818]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_PrimeCalc" FILE="../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Saved/Autosaves/Game/BP_PrimeCalc_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2018.07.14-11.08.39:398][818]LogSavePackage: Save=37.84ms
+[2018.07.14-11.08.39:398][818]LogSavePackage: Moving '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Saved/BP_PrimeCalc_Auto1D3A453682707150E000801689E561BED.tmp' to '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Saved/Autosaves/Game/BP_PrimeCalc_Auto1.uasset'
+[2018.07.14-11.08.39:399][818]LogSavePackage: Display: Finished SavePackage ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Saved/Autosaves/Game/BP_PrimeCalc_Auto1.uasset
+[2018.07.14-11.08.39:399][818]LogFileHelpers: Auto-saving content packages took 0.062
+[2018.07.14-11.09.02:080][772]LogLinux: Scale at X=142.500000, Y=396.200012: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.09.02:118][773]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.09.02:673][824]LogLinux: Scale at X=340.500000, Y=528.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.09.02:702][826]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.09.02:811][834]LogLinux: Scale at X=351.500000, Y=618.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.09.02:835][836]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.09.02:881][838]LogLinux: Scale at X=305.500000, Y=643.500000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.09.02:907][840]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.09.03:007][847]LogLinux: Scale at X=335.500000, Y=672.500000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.09.03:030][849]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.09.05:002][ 33]LogLinux: Scale at X=335.500000, Y=672.500000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.09.05:026][ 35]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.09.08:307][382]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.09.08:307][382]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.09.08:308][382]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.09.08:319][382]Candidate modules for hot reload:
+[2018.07.14-11.09.08:320][382]  EdenUniverseBuilder
+[2018.07.14-11.09.08:320][382]Building UnrealBuildTool...
+[2018.07.14-11.09.08:320][382]Building UnrealBuildTool in /opt/unreal-engine/...
+[2018.07.14-11.09.08:320][382]Running: /bin/bash "/opt/unreal-engine/Engine/Build/BatchFiles/Linux/RunXBuild.sh" /property:Configuration=Development /property:TargetFrameworkVersion=v4.0 /opt/unreal-engine/Engine/Source/Programs/UnrealBuildTool/UnrealBuildTool.csproj
+[2018.07.14-11.09.09:287][382]Launching UnrealBuildTool... [/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe EdenUniverseBuilder -ModuleWithSuffix=EdenUniverseBuilder,8122 Linux Development -editorrecompile -canskiplink "/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"  -progress]
+[2018.07.14-11.09.09:288][382]Warning: Starting HotReload took  1.0s.
+[2018.07.14-11.09.09:318][383]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.09.17:027][ 65]CompilerResultsLog: New page: Compilation - Jul 15, 2018, 7:09:17 AM
+[2018.07.14-11.09.17:027][ 65]CompilerResultsLog: 
+[2018.07.14-11.09.17:027][ 65]CompilerResultsLog: Running Mono...
+[2018.07.14-11.09.17:028][ 65]CompilerResultsLog: 
+[2018.07.14-11.09.17:028][ 65]CompilerResultsLog: /opt/unreal-engine/Engine /opt/unreal-engine
+[2018.07.14-11.09.17:028][ 65]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.07.14-11.09.17:028][ 65]CompilerResultsLog: Compiling game modules for hot reload
+[2018.07.14-11.09.17:028][ 65]CompilerResultsLog: @progress push 5%
+[2018.07.14-11.09.17:028][ 65]CompilerResultsLog: @progress 'Generating code...' 0%
+[2018.07.14-11.09.17:028][ 65]CompilerResultsLog: @progress 'Generating code...' 67%
+[2018.07.14-11.09.17:028][ 65]CompilerResultsLog: @progress 'Generating code...' 100%
+[2018.07.14-11.09.17:028][ 65]CompilerResultsLog: @progress pop
+[2018.07.14-11.09.17:029][ 65]CompilerResultsLog: Performing 2 actions (4 in parallel)
+[2018.07.14-11.09.17:029][ 65]CompilerResultsLog: @progress 'Compiling C++ source code...' 0%
+[2018.07.14-11.09.17:029][ 65]CompilerResultsLog: [1/2] Compile PrimeCalculator.cpp
+[2018.07.14-11.09.17:029][ 65]CompilerResultsLog: @progress 'Compiling C++ source code...' 33%
+[2018.07.14-11.09.17:029][ 65]CompilerResultsLog: [2/2] Link (ld) libUE4Editor-EdenUniverseBuilder-8122.so
+[2018.07.14-11.09.17:029][ 65]CompilerResultsLog: @progress 'Compiling C++ source code...' 67%
+[2018.07.14-11.09.17:029][ 65]CompilerResultsLog: Total build time: 7.43 seconds (Local executor: 6.72 seconds)
+[2018.07.14-11.09.17:030][ 65]LogMainFrame: MainFrame: Module compiling took 8.723 seconds
+[2018.07.14-11.09.17:114][ 65]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0005 seconds. Added 3 classes and 2 folders.
+[2018.07.14-11.09.17:117][ 65]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2018.07.14-11.09.17:507][ 65]LogContentBrowser: Native class hierarchy populated in 0.0160 seconds. Added 2427 classes and 540 folders.
+[2018.07.14-11.09.17:508][ 65]Display: HotReload took  9.2s.
+[2018.07.14-11.09.20:796][404]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.09.20:807][404]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.09.20:807][404]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:09:20 AM)
+[2018.07.14-11.09.20:807][404]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.09.20:810][404]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002403s)
+[2018.07.14-11.09.20:811][404]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.09.20:811][404]LogPlayLevel: PIE: World Init took: (0.000748s)
+[2018.07.14-11.09.20:811][404]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.003676s)
+[2018.07.14-11.09.20:883][404]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.09.20:883][404]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.09.20:883][404]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.09.20:883][404]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.09.20:883][404]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.09.20:883][404]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.09.20:883][404]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.09.20:884][404]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.09.20:885][404]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.09.20:952][404]LogInit: FAudioDevice initialized.
+[2018.07.14-11.09.20:996][404]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.09.20:998][404]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.09.20
+[2018.07.14-11.09.20:999][404]LogWorld: Bringing up level for play took: 0.002375
+[2018.07.14-11.09.21:037][404]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -30.963122
+[2018.07.14-11.09.22:501][541]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.09.22:998][571]LogTemp: Warning: Task Finished!
+[2018.07.14-11.09.29:978][863]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.09.30:989][963]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.09.30:998][963]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.09.30:998][963]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:09:30 AM)
+[2018.07.14-11.09.30:998][963]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.09.31:002][963]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003061s)
+[2018.07.14-11.09.31:002][963]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.09.31:003][963]LogPlayLevel: PIE: World Init took: (0.001166s)
+[2018.07.14-11.09.31:003][963]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.004971s)
+[2018.07.14-11.09.31:029][963]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.09.31:029][963]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.09.31:029][963]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.09.31:029][963]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.09.31:029][963]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.09.31:030][963]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.09.31:030][963]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.09.31:030][963]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.09.31:030][963]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.09.31:108][963]LogInit: FAudioDevice initialized.
+[2018.07.14-11.09.31:181][963]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.09.31:188][963]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.09.31
+[2018.07.14-11.09.31:190][963]LogWorld: Bringing up level for play took: 0.007115
+[2018.07.14-11.09.31:269][963]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -20.731071
+[2018.07.14-11.09.33:125][165]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.09.33:697][207]LogTemp: Warning: Task Finished!
+[2018.07.14-11.10.17:849][475]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.10.20:104][716]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.10.20:105][716]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.10.20:105][716]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.10.20:114][716]Candidate modules for hot reload:
+[2018.07.14-11.10.20:114][716]  EdenUniverseBuilder
+[2018.07.14-11.10.20:115][716]Launching UnrealBuildTool... [/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe EdenUniverseBuilder -ModuleWithSuffix=EdenUniverseBuilder,5120 Linux Development -editorrecompile -canskiplink "/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"  -progress]
+[2018.07.14-11.10.20:115][716]Warning: Starting HotReload took  0.0s.
+[2018.07.14-11.10.20:338][733]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.10.27:216][121]CompilerResultsLog: New page: Compilation - Jul 15, 2018, 7:10:27 AM
+[2018.07.14-11.10.27:216][121]CompilerResultsLog: 
+[2018.07.14-11.10.27:216][121]CompilerResultsLog: Running Mono...
+[2018.07.14-11.10.27:216][121]CompilerResultsLog: 
+[2018.07.14-11.10.27:216][121]CompilerResultsLog: /opt/unreal-engine/Engine /opt/unreal-engine
+[2018.07.14-11.10.27:216][121]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.07.14-11.10.27:217][121]CompilerResultsLog: Compiling game modules for hot reload
+[2018.07.14-11.10.27:217][121]CompilerResultsLog: @progress push 5%
+[2018.07.14-11.10.27:217][121]CompilerResultsLog: @progress 'Generating code...' 0%
+[2018.07.14-11.10.27:217][121]CompilerResultsLog: @progress 'Generating code...' 67%
+[2018.07.14-11.10.27:217][121]CompilerResultsLog: @progress 'Generating code...' 100%
+[2018.07.14-11.10.27:217][121]CompilerResultsLog: @progress pop
+[2018.07.14-11.10.27:217][121]CompilerResultsLog: Performing 2 actions (4 in parallel)
+[2018.07.14-11.10.27:217][121]CompilerResultsLog: @progress 'Compiling C++ source code...' 0%
+[2018.07.14-11.10.27:218][121]CompilerResultsLog: [1/2] Compile PrimeCalculator.cpp
+[2018.07.14-11.10.27:218][121]CompilerResultsLog: @progress 'Compiling C++ source code...' 33%
+[2018.07.14-11.10.27:218][121]CompilerResultsLog: [2/2] Link (ld) libUE4Editor-EdenUniverseBuilder-5120.so
+[2018.07.14-11.10.27:218][121]CompilerResultsLog: @progress 'Compiling C++ source code...' 67%
+[2018.07.14-11.10.27:218][121]CompilerResultsLog: Total build time: 6.81 seconds (Local executor: 6.23 seconds)
+[2018.07.14-11.10.27:218][121]LogMainFrame: MainFrame: Module compiling took 7.114 seconds
+[2018.07.14-11.10.27:311][121]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0005 seconds. Added 3 classes and 2 folders.
+[2018.07.14-11.10.27:315][121]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2018.07.14-11.10.27:723][121]LogContentBrowser: Native class hierarchy populated in 0.0172 seconds. Added 2427 classes and 540 folders.
+[2018.07.14-11.10.27:724][121]Display: HotReload took  7.6s.
+[2018.07.14-11.10.31:120][473]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.10.31:129][473]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.10.31:130][473]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:10:31 AM)
+[2018.07.14-11.10.31:130][473]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.10.31:133][473]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002510s)
+[2018.07.14-11.10.31:133][473]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.10.31:134][473]LogPlayLevel: PIE: World Init took: (0.001114s)
+[2018.07.14-11.10.31:134][473]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.004127s)
+[2018.07.14-11.10.31:212][473]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.10.31:213][473]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.10.31:213][473]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.10.31:213][473]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.10.31:213][473]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.10.31:213][473]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.10.31:213][473]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.10.31:214][473]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.10.31:214][473]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.10.31:291][473]LogInit: FAudioDevice initialized.
+[2018.07.14-11.10.31:344][473]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.10.31:347][473]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.10.31
+[2018.07.14-11.10.31:348][473]LogWorld: Bringing up level for play took: 0.002651
+[2018.07.14-11.10.31:380][473]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 39.38074
+[2018.07.14-11.10.32:776][606]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.10.32:859][610]LogTemp: Warning: Task Finished!
+[2018.07.14-11.10.40:356][901]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.10.41:936][ 64]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.10.41:945][ 64]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.10.41:945][ 64]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:10:41 AM)
+[2018.07.14-11.10.41:945][ 64]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.10.41:948][ 64]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002393s)
+[2018.07.14-11.10.41:949][ 64]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.10.41:949][ 64]LogPlayLevel: PIE: World Init took: (0.000721s)
+[2018.07.14-11.10.41:949][ 64]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.003624s)
+[2018.07.14-11.10.41:976][ 64]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.10.41:976][ 64]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.10.41:976][ 64]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.10.41:976][ 64]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.10.41:977][ 64]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.10.41:977][ 64]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.10.41:977][ 64]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.10.41:977][ 64]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.10.41:977][ 64]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.10.42:044][ 64]LogInit: FAudioDevice initialized.
+[2018.07.14-11.10.42:083][ 64]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.10.42:087][ 64]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.10.42
+[2018.07.14-11.10.42:089][ 64]LogWorld: Bringing up level for play took: 0.003515
+[2018.07.14-11.10.42:126][ 64]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 50.126559
+[2018.07.14-11.10.43:413][198]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.10.43:482][201]LogTemp: Warning: Task Finished!
+[2018.07.14-11.10.57:612][362]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.10.58:557][455]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.10.58:558][455]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.10.58:558][455]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.10.58:570][455]Candidate modules for hot reload:
+[2018.07.14-11.10.58:570][455]  EdenUniverseBuilder
+[2018.07.14-11.10.58:570][455]Launching UnrealBuildTool... [/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe EdenUniverseBuilder -ModuleWithSuffix=EdenUniverseBuilder,2211 Linux Development -editorrecompile -canskiplink "/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"  -progress]
+[2018.07.14-11.10.58:571][455]Warning: Starting HotReload took  0.0s.
+[2018.07.14-11.10.58:783][470]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.11.05:861][890]CompilerResultsLog: New page: Compilation - Jul 15, 2018, 7:11:05 AM
+[2018.07.14-11.11.05:862][890]CompilerResultsLog: 
+[2018.07.14-11.11.05:862][890]CompilerResultsLog: Running Mono...
+[2018.07.14-11.11.05:862][890]CompilerResultsLog: 
+[2018.07.14-11.11.05:862][890]CompilerResultsLog: /opt/unreal-engine/Engine /opt/unreal-engine
+[2018.07.14-11.11.05:862][890]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.07.14-11.11.05:862][890]CompilerResultsLog: Compiling game modules for hot reload
+[2018.07.14-11.11.05:862][890]CompilerResultsLog: @progress push 5%
+[2018.07.14-11.11.05:862][890]CompilerResultsLog: @progress 'Generating code...' 0%
+[2018.07.14-11.11.05:863][890]CompilerResultsLog: @progress 'Generating code...' 67%
+[2018.07.14-11.11.05:863][890]CompilerResultsLog: @progress 'Generating code...' 100%
+[2018.07.14-11.11.05:863][890]CompilerResultsLog: @progress pop
+[2018.07.14-11.11.05:863][890]CompilerResultsLog: Performing 2 actions (4 in parallel)
+[2018.07.14-11.11.05:863][890]CompilerResultsLog: @progress 'Compiling C++ source code...' 0%
+[2018.07.14-11.11.05:863][890]CompilerResultsLog: [1/2] Compile PrimeCalculator.cpp
+[2018.07.14-11.11.05:863][890]CompilerResultsLog: @progress 'Compiling C++ source code...' 33%
+[2018.07.14-11.11.05:863][890]CompilerResultsLog: [2/2] Link (ld) libUE4Editor-EdenUniverseBuilder-2211.so
+[2018.07.14-11.11.05:864][890]CompilerResultsLog: @progress 'Compiling C++ source code...' 67%
+[2018.07.14-11.11.05:864][890]CompilerResultsLog: Total build time: 7.00 seconds (Local executor: 6.43 seconds)
+[2018.07.14-11.11.05:864][890]LogMainFrame: MainFrame: Module compiling took 7.307 seconds
+[2018.07.14-11.11.05:953][890]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0006 seconds. Added 3 classes and 2 folders.
+[2018.07.14-11.11.05:958][890]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2018.07.14-11.11.06:358][890]LogContentBrowser: Native class hierarchy populated in 0.0158 seconds. Added 2427 classes and 540 folders.
+[2018.07.14-11.11.06:359][890]Display: HotReload took  7.8s.
+[2018.07.14-11.11.08:127][ 72]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.11.08:139][ 72]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.11.08:139][ 72]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:11:08 AM)
+[2018.07.14-11.11.08:139][ 72]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.11.08:142][ 72]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002414s)
+[2018.07.14-11.11.08:142][ 72]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.11.08:143][ 72]LogPlayLevel: PIE: World Init took: (0.000768s)
+[2018.07.14-11.11.08:143][ 72]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.003628s)
+[2018.07.14-11.11.08:217][ 72]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.11.08:218][ 72]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.11.08:218][ 72]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.11.08:218][ 72]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.11.08:218][ 72]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.11.08:218][ 72]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.11.08:219][ 72]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.11.08:219][ 72]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.11.08:220][ 72]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.11.08:289][ 72]LogInit: FAudioDevice initialized.
+[2018.07.14-11.11.08:326][ 72]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.11.08:329][ 72]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.11.08
+[2018.07.14-11.11.08:330][ 72]LogWorld: Bringing up level for play took: 0.002283
+[2018.07.14-11.11.08:365][ 72]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -51.63429
+[2018.07.14-11.11.20:181][315]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello
+[2018.07.14-11.11.20:228][316]LogTemp: Warning: Int 12
+[2018.07.14-11.11.20:257][318]LogTemp: Warning: Task Finished!
+[2018.07.14-11.11.48:669][738]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.14-11.11.50:107][884]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.11.50:115][884]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.11.50:116][884]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:11:50 AM)
+[2018.07.14-11.11.50:116][884]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.11.50:119][884]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003379s)
+[2018.07.14-11.11.50:120][884]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.11.50:121][884]LogPlayLevel: PIE: World Init took: (0.001554s)
+[2018.07.14-11.11.50:121][884]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.005589s)
+[2018.07.14-11.11.50:146][884]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.11.50:146][884]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.11.50:146][884]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.11.50:146][884]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.11.50:146][884]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.11.50:147][884]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.11.50:147][884]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.11.50:147][884]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.11.50:147][884]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.11.50:213][884]LogInit: FAudioDevice initialized.
+[2018.07.14-11.11.50:250][884]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.11.50:254][884]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.11.50
+[2018.07.14-11.11.50:256][884]LogWorld: Bringing up level for play took: 0.004122
+[2018.07.14-11.11.50:290][884]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -9.709481
+[2018.07.14-11.11.53:774][234]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.14-11.11.53:861][243]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.11.53:862][243]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.11.53:862][243]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.14-11.11.53:874][243]Candidate modules for hot reload:
+[2018.07.14-11.11.53:874][243]  EdenUniverseBuilder
+[2018.07.14-11.11.53:874][243]Launching UnrealBuildTool... [/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe EdenUniverseBuilder -ModuleWithSuffix=EdenUniverseBuilder,8806 Linux Development -editorrecompile -canskiplink "/home/josephtheengineer/workspace/EdenProject/Engine/EdenUniverseBuilder.uproject"  -progress]
+[2018.07.14-11.11.53:875][243]Warning: Starting HotReload took  0.0s.
+[2018.07.14-11.11.54:096][260]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.14-11.12.01:658][916]CompilerResultsLog: New page: Compilation - Jul 15, 2018, 7:12:01 AM
+[2018.07.14-11.12.01:659][916]CompilerResultsLog: 
+[2018.07.14-11.12.01:659][916]CompilerResultsLog: Running Mono...
+[2018.07.14-11.12.01:659][916]CompilerResultsLog: 
+[2018.07.14-11.12.01:659][916]CompilerResultsLog: /opt/unreal-engine/Engine /opt/unreal-engine
+[2018.07.14-11.12.01:659][916]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.07.14-11.12.01:659][916]CompilerResultsLog: Compiling game modules for hot reload
+[2018.07.14-11.12.01:659][916]CompilerResultsLog: @progress push 5%
+[2018.07.14-11.12.01:659][916]CompilerResultsLog: @progress 'Generating code...' 0%
+[2018.07.14-11.12.01:660][916]CompilerResultsLog: @progress 'Generating code...' 67%
+[2018.07.14-11.12.01:660][916]CompilerResultsLog: @progress 'Generating code...' 100%
+[2018.07.14-11.12.01:660][916]CompilerResultsLog: @progress pop
+[2018.07.14-11.12.01:660][916]CompilerResultsLog: Performing 2 actions (4 in parallel)
+[2018.07.14-11.12.01:660][916]CompilerResultsLog: @progress 'Compiling C++ source code...' 0%
+[2018.07.14-11.12.01:660][916]CompilerResultsLog: [1/2] Compile PrimeCalculator.cpp
+[2018.07.14-11.12.01:660][916]CompilerResultsLog: @progress 'Compiling C++ source code...' 33%
+[2018.07.14-11.12.01:660][916]CompilerResultsLog: [2/2] Link (ld) libUE4Editor-EdenUniverseBuilder-8806.so
+[2018.07.14-11.12.01:661][916]CompilerResultsLog: @progress 'Compiling C++ source code...' 67%
+[2018.07.14-11.12.01:661][916]CompilerResultsLog: Total build time: 7.47 seconds (Local executor: 6.92 seconds)
+[2018.07.14-11.12.01:661][916]LogMainFrame: MainFrame: Module compiling took 7.800 seconds
+[2018.07.14-11.12.01:759][916]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0005 seconds. Added 3 classes and 2 folders.
+[2018.07.14-11.12.01:763][916]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2018.07.14-11.12.02:160][916]LogContentBrowser: Native class hierarchy populated in 0.0164 seconds. Added 2427 classes and 540 folders.
+[2018.07.14-11.12.02:161][916]Display: HotReload took  8.3s.
+[2018.07.14-11.12.04:550][167]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.14-11.12.04:560][167]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.14-11.12.04:560][167]PIE: New page: PIE session: TestLevel (Jul 15, 2018, 7:12:04 AM)
+[2018.07.14-11.12.04:560][167]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.07.14-11.12.04:563][167]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002498s)
+[2018.07.14-11.12.04:564][167]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.14-11.12.04:564][167]LogPlayLevel: PIE: World Init took: (0.000705s)
+[2018.07.14-11.12.04:564][167]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.003653s)
+[2018.07.14-11.12.04:641][167]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.14-11.12.04:641][167]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.14-11.12.04:641][167]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.14-11.12.04:641][167]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.14-11.12.04:642][167]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.14-11.12.04:642][167]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.14-11.12.04:642][167]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.14-11.12.04:642][167]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.14-11.12.04:642][167]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.14-11.12.04:726][167]LogInit: FAudioDevice initialized.
+[2018.07.14-11.12.04:829][167]LogLoad: Game class is 'GameModeBase'
+[2018.07.14-11.12.04:838][167]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.07.14-21.12.04
+[2018.07.14-11.12.04:841][167]LogWorld: Bringing up level for play took: 0.009105
+[2018.07.14-11.12.04:922][167]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 4.921946
+[2018.07.14-11.12.06:515][331]LogBlueprintUserMessages: [BP_PrimeCalc_358] Hello

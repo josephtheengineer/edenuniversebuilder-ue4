@@ -4142,9 +4142,9 @@
     <Include Path="/opt/unreal-engine/Engine/Source/Programs/Windows/BootstrapPackagedGame" />
     <Include Path="/usr/include" />
     <Include Path="/opt/unreal-engine/Engine/Source" />
-    <Include Path="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source" />
-    <Include Path="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder" />
-    <Include Path="/home/josephtheengineer/Unreal Projects/EdenUniverseBuilder/Source/EdenUniverseBuilder" />
+    <Include Path="/home/josephtheengineer/workspace/EdenProject/Engine/Source" />
+    <Include Path="/home/josephtheengineer/workspace/EdenProject/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder" />
+    <Include Path="/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder" />
     <Include Path="/opt/unreal-engine/Engine/Source/Runtime/Core/Public" />
     <Include Path="/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Internationalization" />
     <Include Path="/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Async" />
