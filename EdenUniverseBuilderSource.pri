@@ -7489,6 +7489,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Private/ScreenshotTools.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilder.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderGameModeBase.cpp" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderMainMenuMode.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FileBlueprintFunctionLibrary.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/PrimeCalculator.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/WorldConverter.cpp" \

@@ -9677,6 +9677,7 @@ HEADERS += \
 	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Public/ScreenshotTools.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilder.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderGameModeBase.h" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderMainMenuMode.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/FileBlueprintFunctionLibrary.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/PrimeCalculator.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/WorldConverter.h" \
