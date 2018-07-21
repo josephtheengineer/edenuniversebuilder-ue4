@@ -10,6 +10,8 @@ using namespace std;
 
 int LoadWorld()
 {
+  //map<vector<int>, int> blocks;
+
   // Used this to store the map in a raw hex format
   vector <int> bytes;
   const char *filename = "DirectCity.eden";
@@ -26,6 +28,8 @@ int LoadWorld()
 
   // Nobody really knows how this works
   int chunkPointerStartIndex = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
+
+  cout << " ChunkPointerStartIndex: " << chunkPointerStartIndex << endl;
 
   vector <char> nameArray;
 
@@ -44,37 +48,113 @@ int LoadWorld()
   }
   cout << endl;
 
-  cout << " ChunkPointerStartIndex: " << chunkPointerStartIndex << endl;
+  map<int, vector<int>> chunks;
+  int currentChunkPointerIndex = chunkPointerStartIndex;
 
-/*
+  int worldAreaWidthTemp = 0;
+  int worldAreaHeightTemp = 0;
+
+  // Get the min X value by finding the last value in chunks
+  int worldAreaX = 0;
+
+  // Get the min Y value by finding the last value in chunks
+  int worldAreaY = 0;
+
+  // Associate the chunk position with the chunk address in the map (chunks)
   do
   {
-      chunks.Add(
-          bytes[currentChunkPointerIndex + 11] * 256 * 256 * 256 + bytes[currentChunkPointerIndex + 10] * 256 * 256 + bytes[currentChunkPointerIndex + 9] * 256 + bytes[currentChunkPointerIndex + 8],//Adress
-          new Point(bytes[currentChunkPointerIndex + 1] * 256 + bytes[currentChunkPointerIndex], bytes[currentChunkPointerIndex + 5] * 256 + bytes[currentChunkPointerIndex + 4])); //Position
-  } while ((currentChunkPointerIndex += 16) < bytes.Length);
-*/
+    // Find chunk address
+    int address = bytes[currentChunkPointerIndex + 11] * 256 * 256 * 256 + bytes[currentChunkPointerIndex + 10] * 256 * 256 + bytes[currentChunkPointerIndex + 9] * 256 + bytes[currentChunkPointerIndex + 8];
 
+    // Find the position of the chunk
+    int x = bytes[currentChunkPointerIndex + 1] * 256 + bytes[currentChunkPointerIndex];
+    int y = bytes[currentChunkPointerIndex + 5] * 256 + bytes[currentChunkPointerIndex + 4];
+
+    if (worldAreaX > x){
+      worldAreaX = x;
+    }
+    if (worldAreaY > y){
+      worldAreaY = y;
+    }
+
+    if (worldAreaWidthTemp < x){
+      worldAreaWidthTemp = x;
+    }
+    if (worldAreaHeightTemp < y){
+      worldAreaHeightTemp = y;
+    }
+
+    vector<int> position;
+    position.push_back(x);
+    position.push_back(y);
+
+    cout << address << ": " << endl;
+    cout << x << endl;
+    cout << y << endl;
+
+    chunks[address] = position;
+  } while ((currentChunkPointerIndex += 16) < bytes.size());
+
+  cout << "Chunks size: " << chunks.size() << endl;
+
+  // Get the total world width | max - min + 1
+  int worldAreaWidth = worldAreaWidthTemp - worldAreaX + 1;
+
+  // Get the total world height | max - min + 1
+  int worldAreaHeight = worldAreaHeightTemp - worldAreaY + 1;
+
+  //vector <int> map = worldAreaWidth * 16, worldAreaHeight * 16, 64, 2;
+  map<vector<int>, int> blocks;
+
+  //std::vector<int> woah = chunks[0];
+
+  //int joe = woah[0];
+
+/*
+  // Grab block info
+  for (int i = 0; i < chunks.size(); i++)
+  {
+    // Whatever this does
+    int baseX = (chunks[i][0] - worldAreaX) * 16, baseY = (chunks[i][1] - worldAreaY) * 16;
+    for (int baseHeight = 0; baseHeight < 4; baseHeight++)
+    {
+      for (int x = 0; x < 16; x++)
+      {
+        for (int y = 0; y < 16; y++)
+        {
+          for (int z = 0; z < 16; z++)
+          {
+          // Get block id
+          vector<int> id;
+          id.push_back(baseX + x);
+          id.push_back(baseY + y);
+          id.push_back(baseHeight * 16 + z);
+          id.push_back(0);
+
+          blocks[id] = bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z];
+
+          // Get block color
+          vector<int> color;
+          color.push_back(baseX + x);
+          color.push_back(baseY + y);
+          color.push_back(baseHeight * 16 + z);
+          color.push_back(1);
+
+          blocks[color] = bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
+          }
+        }
+      }
+    }
+  }
+
+*/
   return 0;
 }
 
 
 int main()
 {
-    cout<<"Bootup inititated!"<<endl;
-
-  // Used this to store the map in a raw hex format
-  char Map;
-
-  // Name of the world
-  string Name;
-
-  // Used to associate chuck pointers with chunks
-  std::map<int, std::string> Chunks;
-
-  //Rectangle WorldArea = default(Rectangle);
-
-  char otherBytes; //Header, 12000 creature bytes, chunk pointers
+  cout<<"Bootup inititated!"<<endl;
 
   LoadWorld();
 
