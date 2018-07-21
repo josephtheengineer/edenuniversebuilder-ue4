@@ -1,0 +1,41 @@
+Generating report for minidump
+
+Application version 4.19.2.0
+ ... built from changelist 0
+
+OS version Linux 4.17.3-1-ARCH (network name: Axius)
+Running 4 x86_64 processors (4 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x000000000000008c"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+Unknown!FLinuxPlatformStackWalk::CaptureStackBackTrace(unsigned long long*, unsigned int, void*) + some bytes
+Unknown!FGenericPlatformStackWalk::StackWalkAndDump(char*, unsigned long, int, void*) + some bytes
+Unknown!FLinuxCrashContext::CaptureStackTrace() + some bytes
+Unknown!CommonLinuxCrashHandler(FGenericCrashContext const&) + some bytes
+Unknown!PlatformCrashHandler(int, siginfo_t*, void*) + some bytes
+Unknown!/usr/lib/libpthread.so.0(+0x11a80) [0x7f31aec7da80] + some bytes
+Unknown!AWorldConverter::BeginPlay() + some bytes
+Unknown!AActor::DispatchBeginPlay() + some bytes
+Unknown!AWorldSettings::NotifyBeginPlay() + some bytes
+Unknown!AGameStateBase::HandleBeginPlay() + some bytes
+Unknown!UWorld::BeginPlay() + some bytes
+Unknown!UGameInstance::StartPlayInEditorGameInstance(ULocalPlayer*, FGameInstancePIEParameters const&) + some bytes
+Unknown!UEditorEngine::CreatePIEGameInstance(int, bool, bool, bool, bool, float) + some bytes
+Unknown!UEditorEngine::PlayInEditor(UWorld*, bool) + some bytes
+Unknown!UEditorEngine::StartQueuedPlayMapRequest() + some bytes
+Unknown!UEditorEngine::Tick(float, bool) + some bytes
+Unknown!UUnrealEdEngine::Tick(float, bool) + some bytes
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!FEngineLoop::Tick() + some bytes [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:3339]
+/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor!GuardedMain(wchar_t const*) + some bytes [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/Launch.cpp:62]
+Unknown!CommonLinuxMain(int, char**, int (*)(wchar_t const*)) + some bytes
+Unknown!/usr/lib/libc.so.6(__libc_start_main+0xeb) [0x7f31a23a906b] + some bytes
+Unknown!/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor(_start+0x2a) [0x416a6a] + some bytes
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
