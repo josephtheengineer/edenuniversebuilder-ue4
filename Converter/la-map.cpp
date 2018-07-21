@@ -1,5 +1,5 @@
 // Based on code from Vuenctools for Eden || http://forum.edengame.net/index.php?/topic/295-vuenctools-for-eden-eden-world-manipulation-tool/
-// with help from Robert Munafo || http://www.mrob.com/pub/vidgames/eden-file-format.html#vuenc
+// with help from Robert Munafo || http://www.mrob.com/pub/vidgames/eden-file-format.html
 
 #include <iostream>
 #include <map>
@@ -48,7 +48,8 @@ int LoadWorld()
   }
   cout << endl;
 
-  map<int, vector<int>> chunks;
+  map<int, int> chunksX;
+  map<int, int> chunksY;
   int currentChunkPointerIndex = chunkPointerStartIndex;
 
   int worldAreaWidthTemp = 0;
@@ -84,18 +85,17 @@ int LoadWorld()
       worldAreaHeightTemp = y;
     }
 
-    vector<int> position;
-    position.push_back(x);
-    position.push_back(y);
+    string position = x + "|" + y;
 
     cout << address << ": " << endl;
     cout << x << endl;
     cout << y << endl;
 
-    chunks[address] = position;
+    chunksX[address] = x;
+    chunksY[address] = y;
   } while ((currentChunkPointerIndex += 16) < bytes.size());
 
-  cout << "Chunks size: " << chunks.size() << endl;
+  cout << "Chunks size: " << chunksX.size() << endl;
 
   // Get the total world width | max - min + 1
   int worldAreaWidth = worldAreaWidthTemp - worldAreaX + 1;
@@ -106,16 +106,11 @@ int LoadWorld()
   //vector <int> map = worldAreaWidth * 16, worldAreaHeight * 16, 64, 2;
   map<vector<int>, int> blocks;
 
-  //std::vector<int> woah = chunks[0];
-
-  //int joe = woah[0];
-
-/*
   // Grab block info
-  for (int i = 0; i < chunks.size(); i++)
+  for (int i = 0; i < chunksX.size(); i++)
   {
     // Whatever this does
-    int baseX = (chunks[i][0] - worldAreaX) * 16, baseY = (chunks[i][1] - worldAreaY) * 16;
+    int baseX = (chunksX[i] - worldAreaX) * 16, baseY = (chunksY[i] - worldAreaY) * 16;
     for (int baseHeight = 0; baseHeight < 4; baseHeight++)
     {
       for (int x = 0; x < 16; x++)
@@ -124,6 +119,7 @@ int LoadWorld()
         {
           for (int z = 0; z < 16; z++)
           {
+            cout << " ===== " << x << " | " << y << " | " << z << " ===== " << endl;
           // Get block id
           vector<int> id;
           id.push_back(baseX + x);
@@ -133,6 +129,8 @@ int LoadWorld()
 
           blocks[id] = bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z];
 
+          cout << "Block id: " << bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z] << endl;
+
           // Get block color
           vector<int> color;
           color.push_back(baseX + x);
@@ -141,13 +139,15 @@ int LoadWorld()
           color.push_back(1);
 
           blocks[color] = bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
+
+          cout << "Color id: " << bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z + 4096] << endl;
           }
         }
       }
     }
   }
 
-*/
+
   return 0;
 }
 
