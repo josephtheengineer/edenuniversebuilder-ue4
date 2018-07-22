@@ -13,9 +13,31 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define EDENUNIVERSEBUILDER_WorldConverter_generated_h
 
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_RPC_WRAPPERS
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_INCLASS_NO_PURE_DECLS \
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGrabChunkInfo) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_chunk); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FString>*)Z_Param__Result=P_THIS->GrabChunkInfo(Z_Param_chunk); \
+		P_NATIVE_END; \
+	}
+
+
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGrabChunkInfo) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_chunk); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FString>*)Z_Param__Result=P_THIS->GrabChunkInfo(Z_Param_chunk); \
+		P_NATIVE_END; \
+	}
+
+
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWorldConverter(); \
 	friend EDENUNIVERSEBUILDER_API class UClass* Z_Construct_UClass_AWorldConverter(); \
@@ -25,7 +47,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_INCLASS \
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesAWorldConverter(); \
 	friend EDENUNIVERSEBUILDER_API class UClass* Z_Construct_UClass_AWorldConverter(); \
@@ -35,7 +57,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_STANDARD_CONSTRUCTORS \
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWorldConverter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWorldConverter) \
@@ -48,7 +70,7 @@ private: \
 public:
 
 
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_ENHANCED_CONSTRUCTORS \
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AWorldConverter(AWorldConverter&&); \
@@ -59,26 +81,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWorldConverter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AWorldConverter)
 
 
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_PRIVATE_PROPERTY_OFFSET
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_9_PROLOG
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_GENERATED_BODY_LEGACY \
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_PRIVATE_PROPERTY_OFFSET
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_15_PROLOG
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_PRIVATE_PROPERTY_OFFSET \
-	Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_RPC_WRAPPERS \
-	Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_INCLASS \
-	Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_STANDARD_CONSTRUCTORS \
+	Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_PRIVATE_PROPERTY_OFFSET \
+	Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_RPC_WRAPPERS \
+	Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_INCLASS \
+	Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_GENERATED_BODY \
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_PRIVATE_PROPERTY_OFFSET \
-	Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_INCLASS_NO_PURE_DECLS \
-	Engine_Source_EdenUniverseBuilder_WorldConverter_h_12_ENHANCED_CONSTRUCTORS \
+	Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_PRIVATE_PROPERTY_OFFSET \
+	Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_INCLASS_NO_PURE_DECLS \
+	Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

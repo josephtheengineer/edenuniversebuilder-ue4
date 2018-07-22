@@ -4,13 +4,6 @@
 // with help from Robert Munafo || http://www.mrob.com/pub/vidgames/eden-file-format.html
 
 #include "WorldConverter.h"
-#include <iostream>
-#include <map>
-#include <fstream>
-#include <vector>
-
-using namespace std;
-
 
 // Sets default values
 AWorldConverter::AWorldConverter()
@@ -28,7 +21,6 @@ void AWorldConverter::BeginPlay()
 	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
 
 	// Used this to store the map in a raw hex format
-	vector <int> bytes;
 	const char *filename = "/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden";
 
 	// Stores a single hex symbols
@@ -66,20 +58,9 @@ void AWorldConverter::BeginPlay()
 //	cout << endl;
 
 
-	UE_LOG(LogTemp,Log,TEXT("World file is vaid. all systems are go for launch."));
+	UE_LOG(LogTemp,Log,TEXT("World file is vaid. All systems are go for launch."));
 
-	map<int, int> chunksX;
-	map<int, int> chunksY;
 	int currentChunkPointerIndex = chunkPointerStartIndex;
-
-	int worldAreaWidthTemp = 0;
-	int worldAreaHeightTemp = 0;
-
-	// Get the min X value by finding the last value in chunks
-	int worldAreaX = 0;
-
-	// Get the min Y value by finding the last value in chunks
-	int worldAreaY = 0;
 
 	// Associate the chunk position with the chunk address in the map (chunks)
 	do
@@ -124,11 +105,32 @@ void AWorldConverter::BeginPlay()
 	int worldAreaHeight = worldAreaHeightTemp - worldAreaY + 1;
 
 	//vector <int> map = worldAreaWidth * 16, worldAreaHeight * 16, 64, 2;
-	map<vector<int>, int> blocks;
-
-	// Grab block info
-	for (int i = 0; i < chunksX.size(); i++)
+}
+/*
+// Grab block info
+for (int i = 0; i < chunksX.size(); i++)
+{
+	// Whatever this does
+	int baseX = (chunksX[i] - worldAreaX) * 16, baseY = (chunksY[i] - worldAreaY) * 16;
+	for (int baseHeight = 0; baseHeight < 4; baseHeight++)
 	{
+		for (int x = 0; x < 16; x++)
+		{
+			for (int y = 0; y < 16; y++)
+			{
+				for (int z = 0; z < 16; z++)
+				{
+
+				}
+			}
+		}
+	}
+}*/
+
+TArray<FString> AWorldConverter::GrabChunkInfo(int chunk)
+{
+	TArray<FString> chunkFinal;
+	for (int i = 0; i < chunk; i++){
 		// Whatever this does
 		int baseX = (chunksX[i] - worldAreaX) * 16, baseY = (chunksY[i] - worldAreaY) * 16;
 		for (int baseHeight = 0; baseHeight < 4; baseHeight++)
@@ -148,6 +150,8 @@ void AWorldConverter::BeginPlay()
 					id.push_back(0);
 
 					blocks[id] = bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z];
+					chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
+					chunkFinal.Add(FString::FromInt(bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z]));
 
 					UE_LOG(LogTemp,Log,TEXT("Block id: %d"), bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z]);
 
@@ -166,6 +170,7 @@ void AWorldConverter::BeginPlay()
 			}
 		}
 	}
+	return chunkFinal;
 }
 
 // Called every frame

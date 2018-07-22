@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeEdenUniverseBuilder_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/EdenUniverseBuilder",
 				PKG_CompiledIn | 0x00000000,
-				0x46052A2A,
-				0x6529D062,
+				0xD8714C8B,
+				0x42527652,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

@@ -4,7 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include <iostream>
+#include <map>
+#include <fstream>
+#include <vector>
 #include "WorldConverter.generated.h"
+
+using namespace std;
 
 UCLASS()
 class EDENUNIVERSEBUILDER_API AWorldConverter : public AActor
@@ -23,6 +29,22 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintCallable)
+	TArray<FString> GrabChunkInfo(int32 chunk);
 
+	map<int, int> chunksX;
+	map<int, int> chunksY;
 
+	// Get the min X value by finding the last value in chunks
+	int worldAreaX = 0;
+
+	// Get the min Y value by finding the last value in chunks
+	int worldAreaY = 0;
+
+	int worldAreaWidthTemp = 0;
+	int worldAreaHeightTemp = 0;
+
+	map<vector<int>, int> blocks;
+
+	vector <int> bytes;
 };
