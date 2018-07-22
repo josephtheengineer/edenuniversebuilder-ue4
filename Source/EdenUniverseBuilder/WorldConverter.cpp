@@ -29,7 +29,7 @@ void AWorldConverter::BeginPlay()
 
 	// Used this to store the map in a raw hex format
 	vector <int> bytes;
-	const char *filename = "Converter/DirectCity.eden";
+	const char *filename = "/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden";
 
 	// Stores a single hex symbols
 	unsigned char x;
@@ -41,13 +41,15 @@ void AWorldConverter::BeginPlay()
 		bytes.push_back((int)x);
 	}
 
+	// ^^^ EVERYTHING ABOVE HERE WORKS ^^^
+
 	// Nobody really knows how this works
 	int chunkPointerStartIndex = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
 
-	UE_LOG(LogTemp,Log,TEXT("ChunkPointerStartIndex: %i"), chunkPointerStartIndex);
+	//UE_LOG(LogTemp,Log,TEXT("ChunkPointerStartIndex: %d"), chunkPointerStartIndex);
 
 	vector <char> nameArray;
-/*
+
 	//cout << "World Name (decimal): ";
 	for (int i = 35; i < 35+50; i++)
 	{
@@ -56,13 +58,16 @@ void AWorldConverter::BeginPlay()
 	}
 	//cout << endl;
 
-	UE_LOG(LogTemp,Log,TEXT("Fetching world Name (ASCII)..."));*/
-/*for (int i = 0; i < nameArray.size(); i++)
-	{
-			cout << nameArray[i];
-	}
-	cout << endl;*/
-/*
+	UE_LOG(LogTemp,Log,TEXT("Fetching world Name (ASCII)..."));
+//for (int i = 0; i < nameArray.size(); i++)
+//	{
+//			cout << nameArray[i];
+//	}
+//	cout << endl;
+
+
+	UE_LOG(LogTemp,Log,TEXT("World file is vaid. all systems are go for launch."));
+
 	map<int, int> chunksX;
 	map<int, int> chunksY;
 	int currentChunkPointerIndex = chunkPointerStartIndex;
@@ -110,7 +115,7 @@ void AWorldConverter::BeginPlay()
 		chunksY[address] = y;
 	} while ((currentChunkPointerIndex += 16) < bytes.size());
 
-	UE_LOG(LogTemp,Log,TEXT("Chunks size: %i"), chunksX.size());
+	//UE_LOG(LogTemp,Log,TEXT("Chunks size: %d"), chunksX.size());
 
 	// Get the total world width | max - min + 1
 	int worldAreaWidth = worldAreaWidthTemp - worldAreaX + 1;
@@ -134,7 +139,7 @@ void AWorldConverter::BeginPlay()
 				{
 					for (int z = 0; z < 16; z++)
 					{
-						UE_LOG(LogTemp,Log,TEXT(" ===== %i | %i | %i ===== "), x, y, z);
+					UE_LOG(LogTemp,Log,TEXT(" ===== %d | %d | %d ===== "), x, y, z);
 					// Get block id
 					vector<int> id;
 					id.push_back(baseX + x);
@@ -144,7 +149,7 @@ void AWorldConverter::BeginPlay()
 
 					blocks[id] = bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z];
 
-					UE_LOG(LogTemp,Log,TEXT("Block id: %i"), bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z]);
+					UE_LOG(LogTemp,Log,TEXT("Block id: %d"), bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z]);
 
 					// Get block color
 					vector<int> color;
@@ -155,13 +160,12 @@ void AWorldConverter::BeginPlay()
 
 					blocks[color] = bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
 
-					UE_LOG(LogTemp,Log,TEXT("Color id: %i"), bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z + 4096]);
+					UE_LOG(LogTemp,Log,TEXT("Color id: %d"), bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z + 4096]);
 					}
 				}
 			}
 		}
 	}
-	*/
 }
 
 // Called every frame
