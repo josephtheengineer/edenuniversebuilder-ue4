@@ -1,5 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+/*
 
 #include "PrimeCalculator.h"
 
@@ -26,14 +26,15 @@ void APrimeCalculator::Tick(float DeltaTime)
 
 }
 
-void APrimeCalculator::RunPrimeTask(int32 Layer)
+void APrimeCalculator::RunPrimeTask(int32 chunk)
 {
-	(new FAutoDeleteAsyncTask<PrimeSearchTask>(Layer))->StartBackgroundTask();
+	chunks = chunk;
+	(new FAutoDeleteAsyncTask<PrimeSearchTask>(chunk))->StartBackgroundTask();
 }
 
-void RunPrimeTaskOnMain(int32 Layer)
+void RunPrimeTaskOnMain(int32 chunk)
 {
-		PrimeSearchTask* task = new PrimeSearchTask(Layer);
+		PrimeSearchTask* task = new PrimeSearchTask(chunk);
 
 		task->DoWorkMain();
 		delete task;
@@ -47,21 +48,16 @@ PrimeSearchTask::PrimeSearchTask(int32 _primeCount)
 PrimeSearchTask::~PrimeSearchTask()
 {
 		UE_LOG(LogTemp, Warning, TEXT("Task Finished!"));
-
-		//execl("sh", "-c", "/home/josephtheengineer/Unreal\\ Projects/EdenUniverseBuilder/locus-amoenus /home/josephtheengineer/Unreal\\ Projects/EdenUniverseBuilder/DirectCity.eden srs 'slice 30' q");
-		//system("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus.sh");
-		//const char * SLayer = UTF8_TO_TCHAR(PrimeCount.c_str();
-
-		//FString str = path + "locus-amoenus";
-		//str = path + "DirectCity.eden srs 'slice ";
-		//str = str + SLayer + "' q";
 }
 
 void PrimeSearchTask::DoWork()
 {
+	//CurrentWorldConverter = ObjectInitializer.CreateDefaultSubobject<AWorldConverter>(this, TEXT("WorldConverter"));
+	//ChunkInfo(chunks);
+
 	//system(" > /home/josephtheengineer/workspace/EdenProject/Engine/Converter/world.out");
 	//FString path = "/home/josephtheengineer/workspace/EdenProject/Engine/Converter/";
-/*
+
 	FString thingo = FString::FromInt(PrimeCount);
 	std::string MyStdString(TCHAR_TO_UTF8(*thingo));
 
@@ -74,7 +70,7 @@ void PrimeSearchTask::DoWork()
 	UE_LOG(LogTemp, Warning, TEXT("Int %d"), PrimeCount );
 	UE_LOG(LogTemp, Warning, TEXT("Woah %s"), *command);
 	UE_LOG(LogTemp, Warning, TEXT("%s"), *commands);
-	//system(commands);*/
+	//system(commands);
 	//system("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/locus-amoenus /home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden srs 'slice 12' q");
 	//system("echo woah > /home/josephtheengineer/workspace/EdenProject/Engine/Converter/world.out");
 }
@@ -83,3 +79,4 @@ void PrimeSearchTask::DoWorkMain()
 {
 	DoWork();
 }
+*/

@@ -32,6 +32,14 @@ public:
 	UFUNCTION(BlueprintCallable)
 	TArray<FString> GrabChunkInfo(int32 chunk);
 
+	void SubTask(int32 chunk);
+
+	UFUNCTION(BlueprintCallable)
+	TArray<int32> getChunkAddress();
+
+	UFUNCTION(BlueprintCallable)
+	TArray<FString> getChunkPosition();
+
 	map<int, int> chunksX;
 	map<int, int> chunksY;
 
@@ -47,4 +55,29 @@ public:
 	map<vector<int>, int> blocks;
 
 	vector <int> bytes;
+
+	TArray<int32> chunkAddress;
+	TArray<FString> chunkPosition;
+
+	TArray<FString> chunkFinal;
+};
+
+class PrimeSearchTask : public FNonAbandonableTask
+{
+public:
+
+	PrimeSearchTask(int32 _primeCount);
+
+	~PrimeSearchTask();
+
+	FORCEINLINE TStatId GetStatId() const
+	{
+			RETURN_QUICK_DECLARE_CYCLE_STAT(PrimeSearchTask, STATGROUP_ThreadPoolAsyncTasks);
+	}
+
+	int32 PrimeCount;
+
+	void DoWork();
+
+	void DoWorkMain();
 };

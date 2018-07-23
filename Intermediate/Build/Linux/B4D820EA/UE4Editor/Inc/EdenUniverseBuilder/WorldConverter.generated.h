@@ -15,6 +15,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execgetChunkPosition) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FString>*)Z_Param__Result=P_THIS->getChunkPosition(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execgetChunkAddress) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<int32>*)Z_Param__Result=P_THIS->getChunkAddress(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGrabChunkInfo) \
 	{ \
 		P_GET_PROPERTY(UIntProperty,Z_Param_chunk); \
@@ -26,6 +42,22 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execgetChunkPosition) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FString>*)Z_Param__Result=P_THIS->getChunkPosition(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execgetChunkAddress) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<int32>*)Z_Param__Result=P_THIS->getChunkAddress(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGrabChunkInfo) \
 	{ \

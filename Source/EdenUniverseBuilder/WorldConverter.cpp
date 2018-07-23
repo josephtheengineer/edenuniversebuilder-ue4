@@ -87,6 +87,13 @@ void AWorldConverter::BeginPlay()
 		}
 
 		string position = std::to_string(x) + "|" + std::to_string(y);
+		FString positionS = FString::FromInt(x) + "|" + FString::FromInt(y);
+
+		UE_LOG(LogTemp,Log,TEXT("Chunk address: %d"), address);
+		UE_LOG(LogTemp,Log,TEXT("Chunk position: %d | %d"), x, y);
+
+		chunkAddress.Add(address);
+		chunkPosition.Add(positionS);
 
 		cout << address << ": " << endl;
 		cout << x << endl;
@@ -96,7 +103,7 @@ void AWorldConverter::BeginPlay()
 		chunksY[address] = y;
 	} while ((currentChunkPointerIndex += 16) < bytes.size());
 
-	//UE_LOG(LogTemp,Log,TEXT("Chunks size: %d"), chunksX.size());
+	UE_LOG(LogTemp,Log,TEXT("Chunks size: %d"), chunksX.size());
 
 	// Get the total world width | max - min + 1
 	int worldAreaWidth = worldAreaWidthTemp - worldAreaX + 1;
@@ -127,50 +134,62 @@ for (int i = 0; i < chunksX.size(); i++)
 	}
 }*/
 
+TArray<int32> AWorldConverter::getChunkAddress(){
+	return chunkAddress;
+}
+
+TArray<FString> AWorldConverter::getChunkPosition(){
+	return chunkPosition;
+}
+
 TArray<FString> AWorldConverter::GrabChunkInfo(int chunk)
 {
-	TArray<FString> chunkFinal;
-	for (int i = 0; i < chunk; i++){
-		// Whatever this does
-		int baseX = (chunksX[i] - worldAreaX) * 16, baseY = (chunksY[i] - worldAreaY) * 16;
-		for (int baseHeight = 0; baseHeight < 4; baseHeight++)
+	(new FAutoDeleteAsyncTask<PrimeSearchTask>(chunk))->StartBackgroundTask();
+	return chunkFinal;
+}
+
+void AWorldConverter::SubTask(int chunk)
+{
+	UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
+	//for (int i = 0; i < chunk; i++){
+	// Whatever this does
+	int baseX = (chunksX[chunk] - worldAreaX) * 16, baseY = (chunksY[chunk] - worldAreaY) * 16;
+	for (int baseHeight = 0; baseHeight < 4; baseHeight++)
+	{
+		for (int x = 16; x > 0; x--)
 		{
-			for (int x = 0; x < 16; x++)
+			for (int y = 16; y > 0; y--)
 			{
-				for (int y = 0; y < 16; y++)
+				for (int z = 16; z > 0; z--)
 				{
-					for (int z = 0; z < 16; z++)
-					{
-					UE_LOG(LogTemp,Log,TEXT(" ===== %d | %d | %d ===== "), x, y, z);
-					// Get block id
-					vector<int> id;
-					id.push_back(baseX + x);
-					id.push_back(baseY + y);
-					id.push_back(baseHeight * 16 + z);
-					id.push_back(0);
+				//UE_LOG(LogTemp,Log,TEXT(" ===== %d | %d | %d ===== "), x, y, z);
+				// Get block id
+				vector<int> id;
+				id.push_back(baseX + x);
+				id.push_back(baseY + y);
+				id.push_back(baseHeight * 16 + z);
+				id.push_back(0);
 
-					blocks[id] = bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z];
-					chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
-					chunkFinal.Add(FString::FromInt(bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z]));
+				blocks[id] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
+				chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
+				chunkFinal.Add(FString::FromInt(bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]));
 
-					UE_LOG(LogTemp,Log,TEXT("Block id: %d"), bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z]);
+				//UE_LOG(LogTemp,Log,TEXT("Block id: %d"), bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]);
 
-					// Get block color
-					vector<int> color;
-					color.push_back(baseX + x);
-					color.push_back(baseY + y);
-					color.push_back(baseHeight * 16 + z);
-					color.push_back(1);
+				// Get block color
+				vector<int> color;
+				color.push_back(baseX + x);
+				color.push_back(baseY + y);
+				color.push_back(baseHeight * 16 + z);
+				color.push_back(1);
 
-					blocks[color] = bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
+				blocks[color] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
 
-					UE_LOG(LogTemp,Log,TEXT("Color id: %d"), bytes[i + baseHeight * 8192 + x * 256 + y * 16 + z + 4096]);
-					}
+				//UE_LOG(LogTemp,Log,TEXT("Color id: %d"), bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096]);
 				}
 			}
 		}
 	}
-	return chunkFinal;
 }
 
 // Called every frame

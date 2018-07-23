@@ -1,9 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+/*
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "WorldConverter.h"
 #include "PrimeCalculator.generated.h"
 
 UCLASS()
@@ -24,10 +25,12 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable)
-	void RunPrimeTask(int32 Layer);
+	void RunPrimeTask(int32 chunk);
 
-	UFUNCTION(BlueprintCallable)
-	void RunPrimeTaskOnMain(int32 Layer);
+	//UFUNCTION(BlueprintCallable)
+	//void RunPrimeTaskOnMain(int32 Layer);
+
+	int chunks;
 };
 
 class PrimeSearchTask : public FNonAbandonableTask
@@ -48,4 +51,4 @@ public:
 	void DoWork();
 
 	void DoWorkMain();
-};
+};*/
