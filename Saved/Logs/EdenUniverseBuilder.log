@@ -1,0 +1,1259 @@
+﻿Log file open, 07/24/18 18:57:41
+LogInit: Display: Running engine for game: EdenUniverseBuilder
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(-195683461) SRandInit(-195683461).
+LogInit: Read version file with build ID 'e95881c0-816a-4794-b2da-b8469e9c0afa'
+LogInit: Registered custom module enumerator with build ID 'e95881c0-816a-4794-b2da-b8469e9c0afa'
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.048848
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +10:00, Platform Override: ''
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AppleARKit
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogStreaming: Display: Took  0.291s to configure plugins.
+LogModuleManager: Display: Found up-to-date module file ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Binaries/Linux/libUE4Editor-EdenUniverseBuilder-9589.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/ActorSequence/Binaries/Linux/libUE4Editor-ActorSequence.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/LevelSequenceEditor/Binaries/Linux/libUE4Editor-LevelSequenceEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Linux/libUE4Editor-MatineeToLevelSequence.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Binaries/Linux/libUE4Editor-LinuxDeviceProfileSelector.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Linux/libUE4Editor-PhysXVehicles.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Linux/libUE4Editor-PhysXVehiclesEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/RuntimePhysXCooking/Binaries/Linux/libUE4Editor-RuntimePhysXCooking.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CustomMeshComponent/Binaries/Linux/libUE4Editor-CustomMeshComponent.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LocationServicesBPLibrary/Binaries/Linux/libUE4Editor-LocationServicesBPLibrary.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Linux/libUE4Editor-ProceduralMeshComponent.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Linux/libUE4Editor-ProceduralMeshComponentEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Linux/libUE4Editor-ImmediatePhysics.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Linux/libUE4Editor-ImmediatePhysicsEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/MobilePatchingUtils/Binaries/Linux/libUE4Editor-MobilePatchingUtils.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidPermission/Binaries/Linux/libUE4Editor-AndroidPermission.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Binaries/Linux/libUE4Editor-AndroidDeviceProfileSelector.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ArchVisCharacter/Binaries/Linux/libUE4Editor-ArchVisCharacter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CableComponent/Binaries/Linux/libUE4Editor-CableComponent.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Linux/libUE4Editor-ExampleDeviceProfileSelector.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Linux/libUE4Editor-SteamVR.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Linux/libUE4Editor-SteamVRController.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Enterprise/DatasmithContent/Binaries/Linux/libUE4Editor-DatasmithContent.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/TcpMessaging/Binaries/Linux/libUE4Editor-TcpMessaging.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/UdpMessaging/Binaries/Linux/libUE4Editor-UdpMessaging.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Linux/libUE4Editor-LiveLink.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Linux/libUE4Editor-LiveLinkEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/DataValidation/Binaries/Linux/libUE4Editor-DataValidation.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Linux/libUE4Editor-CryptoKeys.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Linux/libUE4Editor-CryptoKeysOpenSSL.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/MobileLauncherProfileWizard/Binaries/Linux/libUE4Editor-MobileLauncherProfileWizard.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Linux/libUE4Editor-FacialAnimation.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Linux/libUE4Editor-FacialAnimationEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/PluginBrowser/Binaries/Linux/libUE4Editor-PluginBrowser.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/GameplayTagsEditor/Binaries/Linux/libUE4Editor-GameplayTagsEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AssetManagerEditor/Binaries/Linux/libUE4Editor-AssetManagerEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/SpeedTreeImporter/Binaries/Linux/libUE4Editor-SpeedTreeImporter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Binaries/Linux/libUE4Editor-NUTUnrealEngine4.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Binaries/Linux/libUE4Editor-NetcodeUnitTest.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Linux/libUE4Editor-LightPropagationVolumeRuntime.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Linux/libUE4Editor-LightPropagationVolumeEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-Paper2D.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-Paper2DEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-PaperSpriteSheetImporter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-PaperTiledImporter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Linux/libUE4Editor-SmartSnapping.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/KDevelopSourceCodeAccess/Binaries/Linux/libUE4Editor-KDevelopSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Binaries/Linux/libUE4Editor-VisualStudioCodeSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/NullSourceCodeAccess/Binaries/Linux/libUE4Editor-NullSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/SubversionSourceControl/Binaries/Linux/libUE4Editor-SubversionSourceControl.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/GitSourceControl/Binaries/Linux/libUE4Editor-GitSourceControl.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/PerforceSourceControl/Binaries/Linux/libUE4Editor-PerforceSourceControl.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/CodeLiteSourceCodeAccess/Binaries/Linux/libUE4Editor-CodeLiteSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/UObjectPlugin/Binaries/Linux/libUE4Editor-UObjectPlugin.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/CLionSourceCodeAccess/Binaries/Linux/libUE4Editor-CLionSourceCodeAccess.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Linux/libUE4Editor-AlembicImporter.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Linux/libUE4Editor-AlembicLibrary.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/CharacterAI/Binaries/Linux/libUE4Editor-CharacterAI.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Linux/libUE4Editor-WmfMediaEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Linux/libUE4Editor-WmfMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Linux/libUE4Editor-WmfMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/LinearTimecode/Binaries/Linux/libUE4Editor-LinearTimecode.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Linux/libUE4Editor-MediaCompositing.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Linux/libUE4Editor-MediaCompositingEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Linux/libUE4Editor-AndroidMediaEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Linux/libUE4Editor-AndroidMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Linux/libUE4Editor-ImgMedia.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Linux/libUE4Editor-ImgMediaEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Linux/libUE4Editor-ImgMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Linux/libUE4Editor-ImgMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaPlayerEditor/Binaries/Linux/libUE4Editor-MediaPlayerEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Linux/libUE4Editor-AvfMediaEditor.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Linux/libUE4Editor-AvfMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Linux/libUE4Editor-AvfMediaFactory.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Linux/libUE4Editor-OnlineSubsystemUtils.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Linux/libUE4Editor-OnlineBlueprintSupport.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystem/Binaries/Linux/libUE4Editor-OnlineSubsystem.so (API version 0).
+LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemNull/Binaries/Linux/libUE4Editor-OnlineSubsystemNull.so (API version 0).
+LogInit: Using libcurl 7.57.0
+LogInit:  - built for x86_64-pc-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  Libcurl: checking if '/etc/pki/tls/certs/ca-bundle.crt' exists
+LogInit:  Libcurl: checking if '/etc/ssl/certs/ca-certificates.crt' exists
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = /etc/ssl/certs/ca-certificates.crt  - Libcurl will set CURLOPT_CAINFO to it
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit: Build: ++UE4+Release-4.19-CL-0
+LogInit: Engine Version: 4.19.2-0+++UE4+Release-4.19
+LogInit: Compatible Engine Version: 4.19.0-0+++UE4+Release-4.19
+LogInit: Net CL: 0
+LogDevObjectVersion: Number of dev versions registered: 18
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 23
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 33
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 25
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 6
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 1
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 2
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 16
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogInit: Compiled (64-bit): Jul 12 2018 11:20:43
+LogInit: Compiled with Clang: 3.8.0 (tags/RELEASE_380/final)
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.19
+LogInit: Command Line: 
+LogInit: Base Directory: /opt/unreal-engine/Engine/Binaries/Linux/
+LogInit: Installed Engine Build: 0
+LogStreaming: Display: Took  0.001s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.07.24-08.57.42:818][  0]LogInit: Initializing SDL.
+[2018.07.24-08.57.43:066][  0]LogInit: Using SDL_WINDOW_OPENGL
+[2018.07.24-08.57.43:066][  0]LogInit: Initialized SDL 2.0.5 revision: 11184 (hg-11184:04063928c4a8 with EpicExtensions) (compiled against 2.0.5)
+[2018.07.24-08.57.43:066][  0]LogInit: Display metrics:
+[2018.07.24-08.57.43:066][  0]LogInit:   PrimaryDisplayWidth: 1366
+[2018.07.24-08.57.43:066][  0]LogInit:   PrimaryDisplayHeight: 768
+[2018.07.24-08.57.43:066][  0]LogInit:   PrimaryDisplayWorkAreaRect:
+[2018.07.24-08.57.43:066][  0]LogInit:     Left=0, Top=0, Right=1366, Bottom=768
+[2018.07.24-08.57.43:066][  0]LogInit:   VirtualDisplayRect:
+[2018.07.24-08.57.43:066][  0]LogInit:     Left=0, Top=0, Right=1366, Bottom=768
+[2018.07.24-08.57.43:066][  0]LogInit:   TitleSafePaddingSize: X=0.000 Y=0.000 Z=0.000 W=0.000
+[2018.07.24-08.57.43:066][  0]LogInit:   ActionSafePaddingSize: X=0.000 Y=0.000 Z=0.000 W=0.000
+[2018.07.24-08.57.43:066][  0]LogInit:   Number of monitors: 1
+[2018.07.24-08.57.43:066][  0]LogInit:     Monitor 0
+[2018.07.24-08.57.43:066][  0]LogInit:       Name: ASUS VH192 19"
+[2018.07.24-08.57.43:066][  0]LogInit:       ID: display0
+[2018.07.24-08.57.43:066][  0]LogInit:       NativeWidth: 1366
+[2018.07.24-08.57.43:066][  0]LogInit:       NativeHeight: 768
+[2018.07.24-08.57.43:066][  0]LogInit:       bIsPrimary: true
+[2018.07.24-08.57.43:066][  0]LogLinux: Selected Device Profile: [Linux]
+[2018.07.24-08.57.43:066][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Linux]
+[2018.07.24-08.57.43:080][  0]LogInit: Linux hardware info:
+[2018.07.24-08.57.43:080][  0]LogInit:  - we are the first instance of this executable
+[2018.07.24-08.57.43:080][  0]LogInit:  - this process' id (pid) is 11201, parent process' id (ppid) is 1
+[2018.07.24-08.57.43:080][  0]LogInit:  - we are not running under debugger
+[2018.07.24-08.57.43:080][  0]LogInit:  - machine network name is 'Axius'
+[2018.07.24-08.57.43:080][  0]LogInit:  - user name is 'josephtheengineer' (josephtheengineer)
+[2018.07.24-08.57.43:080][  0]LogInit:  - we're logged in locally
+[2018.07.24-08.57.43:080][  0]LogInit:  - we're running with rendering
+[2018.07.24-08.57.43:080][  0]LogInit:  - CPU: GenuineIntel 'Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz' (signature: 0x906E9)
+[2018.07.24-08.57.43:080][  0]LogInit:  - Number of physical cores available for the process: 4
+[2018.07.24-08.57.43:080][  0]LogInit:  - Number of logical cores available for the process: 4
+[2018.07.24-08.57.43:080][  0]LogInit:  - Cache line size: 64
+[2018.07.24-08.57.43:080][  0]LogInit:  - Memory allocator used: binned2
+[2018.07.24-08.57.43:080][  0]LogLinux: Benchmarking clocks:
+[2018.07.24-08.57.43:080][  0]LogLinux:  - CLOCK_REALTIME (id=0) can sustain 48939824 (48940K, 49M) calls per second without zero deltas.
+[2018.07.24-08.57.43:080][  0]LogLinux:  - CLOCK_MONOTONIC (id=1) can sustain 48500007 (48500K, 49M) calls per second without zero deltas.
+[2018.07.24-08.57.43:080][  0]LogLinux:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 3343604 (3344K, 3M) calls per second without zero deltas.
+[2018.07.24-08.57.43:080][  0]LogLinux:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 175041612 (175042K, 175M) calls per second with 99.999823% zero deltas.
+[2018.07.24-08.57.43:080][  0]LogLinux: Selected clock_id 0 (CLOCK_REALTIME) since it is the fastest support clock without zero deltas.
+[2018.07.24-08.57.43:080][  0]LogInit: Linux-specific commandline switches:
+[2018.07.24-08.57.43:080][  0]LogInit:  -nodwarf (currently OFF): suppress parsing of DWARF debug info (callstacks will be generated faster, but won't have line numbers)
+[2018.07.24-08.57.43:080][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2018.07.24-08.57.43:080][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2018.07.24-08.57.43:080][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2018.07.24-08.57.43:080][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2018.07.24-08.57.43:080][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2018.07.24-08.57.43:080][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2018.07.24-08.57.43:081][  0]LogInit:  - Physical RAM available (not considering process quota): 8 GB (7943 MB, 8134476 KB, 8329703424 bytes)
+[2018.07.24-08.57.43:175][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2018.07.24-08.57.43:175][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2018.07.24-08.57.43:182][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2018.07.24-08.57.43:687][  0]LogStreaming: Display: Took  0.512s to EndInitTextLocalization.
+[2018.07.24-08.57.43:796][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.07.24-08.57.43:796][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.07.24-08.57.44:736][  0]LogRHI: Initializing OpenGL RHI
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_VENDOR: NVIDIA Corporation
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_RENDERER: GeForce GTX 950/PCIe/SSE2
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_VERSION: 4.3.0 NVIDIA 396.24
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_SHADING_LANGUAGE_VERSION: 4.30 NVIDIA via Cg compiler
+[2018.07.24-08.57.44:736][  0]LogRHI: OpenGL Extensions:
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_AMD_multi_draw_indirect
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_AMD_seamless_cubemap_per_texture
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_AMD_vertex_shader_viewport_index
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_AMD_vertex_shader_layer
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_arrays_of_arrays
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_base_instance
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_bindless_texture
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_blend_func_extended
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_buffer_storage
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_clear_buffer_object
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_clear_texture
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_clip_control
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_color_buffer_float
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_compressed_texture_pixel_storage
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_conservative_depth
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_compute_shader
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_compute_variable_group_size
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_conditional_render_inverted
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_copy_buffer
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_copy_image
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_cull_distance
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_debug_output
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_depth_buffer_float
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_depth_clamp
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_depth_texture
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_derivative_control
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_direct_state_access
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_draw_buffers
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_draw_buffers_blend
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_draw_indirect
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_draw_elements_base_vertex
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_draw_instanced
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_enhanced_layouts
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_ES2_compatibility
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_ES3_compatibility
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_ES3_1_compatibility
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_ES3_2_compatibility
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_explicit_attrib_location
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_explicit_uniform_location
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_fragment_coord_conventions
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_fragment_layer_viewport
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_fragment_program
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_fragment_program_shadow
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_fragment_shader
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_fragment_shader_interlock
+[2018.07.24-08.57.44:736][  0]LogRHI:   GL_ARB_framebuffer_no_attachments
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_framebuffer_object
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_framebuffer_sRGB
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_geometry_shader4
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_get_program_binary
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_get_texture_sub_image
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_gl_spirv
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_gpu_shader5
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_gpu_shader_fp64
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_gpu_shader_int64
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_half_float_pixel
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_half_float_vertex
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_imaging
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_indirect_parameters
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_instanced_arrays
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_internalformat_query
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_internalformat_query2
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_invalidate_subdata
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_map_buffer_alignment
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_map_buffer_range
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_multi_bind
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_multi_draw_indirect
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_multisample
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_multitexture
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_occlusion_query
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_occlusion_query2
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_parallel_shader_compile
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_pipeline_statistics_query
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_pixel_buffer_object
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_point_parameters
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_point_sprite
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_polygon_offset_clamp
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_post_depth_coverage
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_program_interface_query
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_provoking_vertex
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_query_buffer_object
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_robust_buffer_access_behavior
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_robustness
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_sample_locations
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_sample_shading
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_sampler_objects
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_seamless_cube_map
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_seamless_cubemap_per_texture
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_separate_shader_objects
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_atomic_counter_ops
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_atomic_counters
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_ballot
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_bit_encoding
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_clock
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_draw_parameters
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_group_vote
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_image_load_store
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_image_size
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_objects
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_precision
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_storage_buffer_object
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_subroutine
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_texture_image_samples
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_texture_lod
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shading_language_100
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shader_viewport_layer_array
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shading_language_420pack
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shading_language_include
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shading_language_packing
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_shadow
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_sparse_buffer
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_sparse_texture
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_sparse_texture2
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_sparse_texture_clamp
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_spirv_extensions
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_stencil_texturing
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_sync
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_tessellation_shader
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_barrier
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_border_clamp
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_buffer_object
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_buffer_object_rgb32
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_buffer_range
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_compression
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_compression_bptc
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_compression_rgtc
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_cube_map
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_cube_map_array
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_env_add
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_env_combine
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_env_crossbar
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_env_dot3
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_filter_anisotropic
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_filter_minmax
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_float
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_gather
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_mirror_clamp_to_edge
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_mirrored_repeat
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_multisample
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_non_power_of_two
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_query_levels
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_query_lod
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_rectangle
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_rg
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_rgb10_a2ui
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_stencil8
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_storage
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_storage_multisample
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_swizzle
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_texture_view
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_timer_query
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_transform_feedback2
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_transform_feedback3
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_transform_feedback_instanced
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_transform_feedback_overflow_query
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_transpose_matrix
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_uniform_buffer_object
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_vertex_array_bgra
+[2018.07.24-08.57.44:737][  0]LogRHI:   GL_ARB_vertex_array_object
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ARB_vertex_attrib_64bit
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ARB_vertex_attrib_binding
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ARB_vertex_buffer_object
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ARB_vertex_program
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ARB_vertex_shader
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ARB_vertex_type_10f_11f_11f_rev
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ARB_vertex_type_2_10_10_10_rev
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ARB_viewport_array
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ARB_window_pos
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ATI_draw_buffers
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ATI_texture_float
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_ATI_texture_mirror_once
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_S3_s3tc
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_env_add
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_abgr
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_bgra
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_bindable_uniform
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_blend_color
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_blend_equation_separate
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_blend_func_separate
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_blend_minmax
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_blend_subtract
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_compiled_vertex_array
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_Cg_shader
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_depth_bounds_test
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_direct_state_access
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_draw_buffers2
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_draw_instanced
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_draw_range_elements
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_fog_coord
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_framebuffer_blit
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_framebuffer_multisample
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXTX_framebuffer_mixed_formats
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_framebuffer_multisample_blit_scaled
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_framebuffer_object
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_framebuffer_sRGB
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_geometry_shader4
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_gpu_program_parameters
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_gpu_shader4
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_multi_draw_arrays
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_packed_depth_stencil
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_packed_float
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_packed_pixels
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_pixel_buffer_object
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_point_parameters
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_polygon_offset_clamp
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_post_depth_coverage
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_provoking_vertex
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_raster_multisample
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_rescale_normal
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_secondary_color
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_separate_shader_objects
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_separate_specular_color
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_shader_image_load_formatted
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_shader_image_load_store
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_shader_integer_mix
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_shadow_funcs
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_sparse_texture2
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_stencil_two_side
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_stencil_wrap
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture3D
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_array
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_buffer_object
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_compression_dxt1
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_compression_latc
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_compression_rgtc
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_compression_s3tc
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_cube_map
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_edge_clamp
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_env_combine
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_env_dot3
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_filter_anisotropic
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_filter_minmax
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_integer
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_lod
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_lod_bias
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_mirror_clamp
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_object
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_shared_exponent
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_sRGB
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_sRGB_decode
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_storage
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_texture_swizzle
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_timer_query
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_transform_feedback2
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_vertex_array
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_vertex_array_bgra
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_vertex_attrib_64bit
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_window_rectangles
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_x11_sync_object
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_import_sync_object
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_NV_robustness_video_memory_purge
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_IBM_rasterpos_clip
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_IBM_texture_mirrored_repeat
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_KHR_context_flush_control
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_KHR_debug
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_memory_object
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_memory_object_fd
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_KHR_parallel_shader_compile
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_KHR_no_error
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_KHR_robust_buffer_access_behavior
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_KHR_robustness
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_semaphore
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_EXT_semaphore_fd
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_KTX_buffer_region
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_NV_alpha_to_coverage_dither_control
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_NV_bindless_multi_draw_indirect
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_NV_bindless_multi_draw_indirect_count
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_NV_bindless_texture
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_NV_blend_equation_advanced
+[2018.07.24-08.57.44:738][  0]LogRHI:   GL_NV_blend_equation_advanced_coherent
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_blend_minmax_factor
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_blend_square
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_command_list
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_compute_program5
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_conditional_render
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_conservative_raster
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_conservative_raster_dilate
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_copy_depth_to_color
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_copy_image
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_depth_buffer_float
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_depth_clamp
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_draw_texture
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_draw_vulkan_image
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_ES1_1_compatibility
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_ES3_1_compatibility
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_explicit_multisample
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_feature_query
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_fence
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_fill_rectangle
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_float_buffer
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_fog_distance
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_fragment_coverage_to_color
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_fragment_program
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_fragment_program_option
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_fragment_program2
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_fragment_shader_interlock
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_framebuffer_mixed_samples
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_framebuffer_multisample_coverage
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_geometry_shader4
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_geometry_shader_passthrough
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_gpu_program4
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_internalformat_sample_query
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_gpu_program4_1
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_gpu_program5
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_gpu_program5_mem_extended
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_gpu_program_fp64
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_gpu_shader5
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_half_float
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_light_max_exponent
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_multisample_coverage
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_multisample_filter_hint
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_occlusion_query
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_packed_depth_stencil
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_parameter_buffer_object
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_parameter_buffer_object2
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_path_rendering
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_path_rendering_shared_edge
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_pixel_data_range
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_point_sprite
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_primitive_restart
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_query_resource
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_query_resource_tag
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_register_combiners
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_register_combiners2
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_sample_locations
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_sample_mask_override_coverage
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_shader_atomic_counters
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_shader_atomic_float
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_shader_atomic_fp16_vector
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_shader_atomic_int64
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_shader_buffer_load
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_shader_storage_buffer_object
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texgen_reflection
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texture_barrier
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texture_compression_vtc
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texture_env_combine4
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texture_multisample
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texture_rectangle
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texture_rectangle_compressed
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texture_shader
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texture_shader2
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_texture_shader3
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_transform_feedback
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_transform_feedback2
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_uniform_buffer_unified_memory
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vdpau_interop
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vertex_array_range
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vertex_array_range2
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vertex_attrib_integer_64bit
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vertex_buffer_unified_memory
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vertex_program
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vertex_program1_1
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vertex_program2
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vertex_program2_option
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_vertex_program3
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_viewport_array2
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_viewport_swizzle
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NVX_conditional_render
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NVX_gpu_memory_info
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NVX_nvenc_interop
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_shader_thread_group
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_NV_shader_thread_shuffle
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_KHR_blend_equation_advanced
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_KHR_blend_equation_advanced_coherent
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_SGIS_generate_mipmap
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_SGIS_texture_lod
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_SGIX_depth_texture
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_SGIX_shadow
+[2018.07.24-08.57.44:739][  0]LogRHI:   GL_SUN_slice_accum
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_TEXTURE_SIZE: 16384
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_CUBE_MAP_TEXTURE_SIZE: 16384
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_ARRAY_TEXTURE_LAYERS: 2048
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_3D_TEXTURE_SIZE: 2048
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_RENDERBUFFER_SIZE: 16384
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_DRAW_BUFFERS: 8
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_COLOR_ATTACHMENTS: 8
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_SAMPLES: 32
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_COLOR_TEXTURE_SAMPLES: 32
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_DEPTH_TEXTURE_SAMPLES: 32
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_INTEGER_SAMPLES: 32
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 192
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_VERTEX_ATTRIBS: 16
+[2018.07.24-08.57.44:741][  0]LogRHI:   GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16
+[2018.07.24-08.57.44:741][  0]LogRHI: OpenGL MajorVersion = 4, MinorVersion = 3, ShaderPlatform = GLSL_430, FeatureLevel = SM5
+[2018.07.24-08.57.44:750][  0]LogRHI: Texture pool is 1433 MB (70% of 2048 MB)
+[2018.07.24-08.57.44:750][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Intermediate/Shaders/WorkingDirectory/11201/).
+[2018.07.24-08.57.44:751][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Intermediate/Shaders/tmp/0003DC592C071218003902EEF494019F/'.
+[2018.07.24-08.57.44:751][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.07.24-08.57.46:418][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.07.24-08.57.46:494][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.07.24-08.57.46:570][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.07.24-08.57.46:656][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.07.24-08.57.46:724][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.07.24-08.57.46:801][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.07.24-08.57.46:887][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.07.24-08.57.46:963][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.07.24-08.57.47:043][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
+[2018.07.24-08.57.47:129][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.07.24-08.57.47:206][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.07.24-08.57.47:359][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.07.24-08.57.47:368][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.07.24-08.57.47:444][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.07.24-08.57.47:517][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.07.24-08.57.47:517][  0]LogTargetPlatformManager: Display: Building Assets For Linux
+[2018.07.24-08.57.47:795][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.07.24-08.57.48:052][  0]LogDerivedDataCache: Loaded boot cache 0.25s 89MB ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/DerivedDataCache/Boot.ddc.
+[2018.07.24-08.57.48:053][  0]LogDerivedDataCache: Display: Loaded Boot cache: ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/DerivedDataCache/Boot.ddc
+[2018.07.24-08.57.48:053][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.07.24-08.57.48:053][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.07.24-08.57.48:053][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.07.24-08.57.48:053][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2018.07.24-08.57.48:053][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2018.07.24-08.57.48:054][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.07.24-08.57.48:054][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.07.24-08.57.48:071][  0]LogMaterial: Verifying Global Shaders for GLSL_430
+[2018.07.24-08.57.48:080][  0]LogSlate: Using Freetype 2.6.0
+[2018.07.24-08.57.48:081][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 0
+[2018.07.24-08.57.48:082][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 0
+[2018.07.24-08.57.48:169][  0]LogAssetRegistry: FAssetRegistry took 0.0047 seconds to start up
+[2018.07.24-08.57.48:723][  0]LogLinux: Selected Device Profile: [Linux]
+[2018.07.24-08.57.48:957][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.07.24-08.57.48:957][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.07.24-08.57.48:957][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.07.24-08.57.48:957][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2018.07.24-08.57.48:957][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.07.24-08.57.48:957][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2018.07.24-08.57.49:150][  0]LogNetVersion: EdenUniverseBuilder , NetCL: 0, EngineNetVer: 2, GameNetVer: 0 (Checksum: 729575976)
+[2018.07.24-08.57.49:972][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 2 prioritized culture(s) in 0.056433 seconds
+[2018.07.24-08.57.49:982][  0]LogUObjectArray: 36073 objects as part of root set at end of initial load.
+[2018.07.24-08.57.49:982][  0]LogUObjectAllocator: 7176912 out of 0 bytes used by permanent object pool.
+[2018.07.24-08.57.49:982][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.07.24-08.57.50:002][  0]LogModuleManager: Warning: No filename provided for module ALAudio
+[2018.07.24-08.57.50:002][  0]LogModuleManager: Warning: ModuleManager: Unable to load module 'ALAudio' because the file '/opt/unreal-engine/Engine/Binaries/Linux/' was not found.
+[2018.07.24-08.57.50:111][  0]LogHAL: Linux SourceCodeAccessSettings: NullSourceCodeAccessor
+[2018.07.24-08.57.50:880][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.07.24-08.57.50:880][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.07.24-08.57.50:880][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.24-08.57.50:880][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.24-08.57.50:881][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.24-08.57.50:881][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.24-08.57.50:881][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.07.24-08.57.50:881][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.07.24-08.57.50:881][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.24-08.57.50:881][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.24-08.57.50:881][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.24-08.57.50:881][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.24-08.57.50:881][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.07.24-08.57.50:881][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.07.24-08.57.50:882][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.24-08.57.50:882][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.24-08.57.50:882][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.24-08.57.50:882][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.24-08.57.50:882][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.07.24-08.57.50:882][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.07.24-08.57.50:882][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.24-08.57.50:882][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.24-08.57.50:882][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.07.24-08.57.50:882][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.07.24-08.57.50:885][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.07.24-08.57.50:885][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.07.24-08.57.50:885][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:885][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:886][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:886][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:886][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.07.24-08.57.50:886][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.07.24-08.57.50:886][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:886][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:886][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:886][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:886][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png' error.
+[2018.07.24-08.57.50:887][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png
+[2018.07.24-08.57.50:887][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:887][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:887][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:887][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:887][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png' error.
+[2018.07.24-08.57.50:887][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png
+[2018.07.24-08.57.50:887][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:887][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:888][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:888][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:888][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.07.24-08.57.50:888][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.07.24-08.57.50:888][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:888][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:888][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:888][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:888][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.07.24-08.57.50:888][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.07.24-08.57.50:889][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:889][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:889][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:889][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:889][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.07.24-08.57.50:889][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.07.24-08.57.50:889][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:889][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:890][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:890][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:890][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png' error.
+[2018.07.24-08.57.50:890][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png
+[2018.07.24-08.57.50:890][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:890][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:890][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:890][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:890][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png' error.
+[2018.07.24-08.57.50:890][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png
+[2018.07.24-08.57.50:890][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:890][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.50:891][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.07.24-08.57.50:891][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.07.24-08.57.54:204][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.07.24-08.57.54:219][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.07.24-08.57.55:885][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd1a72770, Size=72, Default__FirstPerson_AnimBP_C Function /Game/FirstPerson/Animations/FirstPerson_animBP.FirstPerson_AnimBP_C:ExecuteUbergraph_FirstPerson_AnimBP
+[2018.07.24-08.57.55:897][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd1a72770, Size=72
+[2018.07.24-08.57.55:897][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd1a72770, Size=72, Default__FirstPerson_AnimBP_C Function /Engine/Transient.REINST_FirstPerson_AnimBP_C_0:ExecuteUbergraph_FirstPerson_AnimBP
+[2018.07.24-08.57.55:908][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd1a74250, Size=72, Default__FirstPerson_AnimBP_C Function /Game/FirstPerson/Animations/FirstPerson_animBP.FirstPerson_AnimBP_C:ExecuteUbergraph_FirstPerson_AnimBP
+[2018.07.24-08.57.56:318][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.07.24-08.57.58:191][  0]SourceControl: Source control is disabled
+[2018.07.24-08.57.58:191][  0]SourceControl: Source control is disabled
+[2018.07.24-08.57.58:264][  0]SourceControl: Source control is disabled
+[2018.07.24-08.57.58:352][  0]SourceControl: Source control is disabled
+[2018.07.24-08.57.59:353][  0]LogEngine: Initializing Engine...
+[2018.07.24-08.57.59:353][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.07.24-08.57.59:355][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.07.24-08.57.59:355][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.07.24-08.58.00:102][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.07.24-08.58.00:115][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.07.24-08.58.00:115][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.07.24-08.58.00:115][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.07.24-08.58.00:115][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.07.24-08.58.00:115][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.07.24-08.58.00:115][  0]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.07.24-08.58.00:115][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.07.24-08.58.00:116][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2018.07.24-08.58.00:129][  0]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2018.07.24-08.58.00:217][  0]LogInit: FAudioDevice initialized.
+[2018.07.24-08.58.00:355][  0]LogDerivedDataCache: Saved boot cache 0.14s 89MB ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/DerivedDataCache/Boot.ddc.
+[2018.07.24-08.58.00:430][  0]LogInit: Texture streaming: Enabled
+[2018.07.24-08.58.00:861][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.07.24-08.58.01:201][  0]LogInit: Transaction tracking system initialized
+[2018.07.24-08.58.01:699][  0]BlueprintLog: New page: Editor Load
+[2018.07.24-08.58.03:066][  0]LocalizationService: Localization service is disabled
+[2018.07.24-08.58.03:897][  0]LogConsoleResponse: Display: 
+[2018.07.24-08.58.04:176][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/EdenProject/Engine/Content/' took 0.00s
+[2018.07.24-08.58.04:176][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.07.24-08.58.04:176][  0]LogCook: Display: Mobile HDR setting 1
+[2018.07.24-08.58.04:176][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.07.24-08.58.04:176][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.07.24-08.58.04:176][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.07.24-08.58.05:740][  0]SourceControl: Source control is disabled
+[2018.07.24-08.58.05:746][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.24-08.58.05:754][  0]LightingResults: New page: Lighting Build
+[2018.07.24-08.58.05:817][  0]MapCheck: New page: Map Check
+[2018.07.24-08.58.05:817][  0]LightingResults: New page: Lighting Build
+[2018.07.24-08.58.05:838][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd1a72770, Size=72
+[2018.07.24-08.58.06:156][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2018.07.24-08.58.06:174][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.24-08.58.06:205][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.24-08.58.06:224][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 18.665075ms to complete.
+[2018.07.24-08.58.06:224][  0]LogFileHelpers: Loading map 'Template_Default' took 0.479
+[2018.07.24-08.58.06:261][  0]LogLinux: Scale at X=12.000000, Y=29.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-08.58.06:262][  0]LogLinux: Scale at X=681.000000, Y=390.500000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-08.58.06:283][  0]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-08.58.06:399][  0]LogCollectionManager: Loaded 0 collections in 0.003495 seconds
+[2018.07.24-08.58.06:428][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Collections/' took 0.00s
+[2018.07.24-08.58.06:428][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/EdenProject/Engine/Content/Developers/josephtheengineer/Collections/' took 0.00s
+[2018.07.24-08.58.06:428][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/EdenProject/Engine/Content/Collections/' took 0.00s
+[2018.07.24-08.58.06:429][  0]LogContentBrowser: Native class hierarchy populated in 0.0192 seconds. Added 2430 classes and 539 folders.
+[2018.07.24-08.58.06:440][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.07.24-08.58.06:571][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.07.24-08.58.06:684][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.07.24-08.58.06:768][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2018.07.24-08.58.07:091][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.07.24-08.58.07:091][  0]LogLoad: (Engine Initialization) Total time: 26.44 seconds
+[2018.07.24-08.58.07:091][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.07.24-08.58.07:430][  0]LogSlate: Took 0.000587 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.07.24-08.58.07:437][  0]LogSlate: Took 0.000484 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.07.24-08.58.07:453][  0]LogSlate: Took 0.000965 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.07.24-08.58.07:454][  0]LogSlate: Took 0.000551 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2018.07.24-08.58.07:641][  0]LogSlate: Took 0.000592 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.07.24-08.58.07:692][  0]LogRenderer: Reallocating scene render targets to support 404x364 Format 10 NumSamples 1 (Frame:1).
+[2018.07.24-08.58.07:824][  0]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-08.58.07:838][  0]LogInit: Adding external input plugin.
+[2018.07.24-08.58.07:858][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.07.24-08.58.07:905][  1]LogAssetRegistry: Asset discovery search completed in 19.7357 seconds
+[2018.07.24-08.58.07:907][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.07.24-08.58.07:907][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000254 seconds (updated 0 objects)
+[2018.07.24-08.58.08:121][ 14]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-08.58.08:121][ 14]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-08.58.08:121][ 14]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-08.58.08:173][ 14]LogSlate: Took 0.000063 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.07.24-08.58.08:358][ 26]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-08.58.13:956][638]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.24-08.58.14:538][693]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd6e612a0, Size=96, Default__BP_BlockSpawner_C Function /Game/Blueprints/BP_BlockSpawner.BP_BlockSpawner_C:ExecuteUbergraph_BP_BlockSpawner
+[2018.07.24-08.58.14:571][693]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd6e612a0, Size=96
+[2018.07.24-08.58.14:571][693]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd6e62b60, Size=96, Default__BP_BlockSpawner_C Function /Engine/Transient.REINST_BP_BlockSpawner_C_6:ExecuteUbergraph_BP_BlockSpawner
+[2018.07.24-08.58.14:598][693]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd6e63e80, Size=96, Default__BP_BlockSpawner_C Function /Game/Blueprints/BP_BlockSpawner.BP_BlockSpawner_C:ExecuteUbergraph_BP_BlockSpawner
+[2018.07.24-08.58.14:916][693]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-08.58.14:917][693]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-08.58.14:918][693]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-08.58.15:011][693]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-08.58.15:572][693]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0012 seconds. Added 116 classes and 0 folders.
+[2018.07.24-08.58.15:924][693]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd9533370, Size=4, Default__SKEL_PROTO_BP_AnimBlueprint_0_C Function /Engine/Transient.SKEL_PROTO_BP_AnimBlueprint_0_C:ExecuteUbergraph_PROTO_BP_AnimBlueprint_0
+[2018.07.24-08.58.15:925][693]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd9533390, Size=4, Default__PROTO_BP_AnimBlueprint_0_C Function /Engine/Transient.PROTO_BP_AnimBlueprint_0_C:ExecuteUbergraph_PROTO_BP_AnimBlueprint_0
+[2018.07.24-08.58.16:669][693]LogSlate: Took 0.000943 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.07.24-08.58.16:838][694]LogSlate: Took 0.001003 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.07.24-09.14.57:801][115]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.14.57:810][115]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.14.57:818][115]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.14.58:159][115]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.14.58:218][115]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_BlockSpawner" FILE="../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/Blueprints/BP_BlockSpawner.uasset" SILENT=true
+[2018.07.24-09.14.58:560][115]LogSavePackage: Save=321.89ms
+[2018.07.24-09.14.58:561][115]LogSavePackage: Moving '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Saved/BP_BlockSpawnerAE1FF9123A071318000E00EF322DC864.tmp' to '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/Blueprints/BP_BlockSpawner.uasset'
+[2018.07.24-09.14.58:568][115]LogSavePackage: Display: Finished SavePackage ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/Blueprints/BP_BlockSpawner.uasset
+[2018.07.24-09.15.04:162][741]LogLinux: Scale at X=841.000000, Y=513.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.15.04:241][743]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.23.15:152][730]LogHotReload: New module detected: libUE4Editor-EdenUniverseBuilder-9589.so
+[2018.07.24-09.23.16:569][735]LogHotReload: Starting Hot-Reload from IDE
+[2018.07.24-09.23.16:591][735]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.23.16:592][735]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.23.16:610][735]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.23.16:891][735]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.23.17:025][735]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd6e62b60, Size=96
+[2018.07.24-09.23.17:069][735]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0075 seconds. Added 7 classes and 3 folders.
+[2018.07.24-09.23.17:077][735]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.07.24-09.23.17:501][735]LogContentBrowser: Native class hierarchy populated in 0.0153 seconds. Added 2431 classes and 541 folders.
+[2018.07.24-09.23.17:510][735]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.23.17:511][735]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.23.17:511][735]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.23.17:562][735]Display: HotReload took  1.0s.
+[2018.07.24-09.23.17:661][736]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.30.43:241][852]LogLinux: Scale at X=205.000000, Y=557.500000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.30.43:285][854]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.30.56:193][691]BlueprintLog: New page: Compile BP_BlockSpawner
+[2018.07.24-09.30.56:555][691]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd6e63e80, Size=96
+[2018.07.24-09.30.56:555][691]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bdcead1e0, Size=96, Default__BP_BlockSpawner_C Function /Engine/Transient.REINST_BP_BlockSpawner_C_22:ExecuteUbergraph_BP_BlockSpawner
+[2018.07.24-09.30.56:589][691]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bdcead0c0, Size=96, Default__BP_BlockSpawner_C Function /Game/Blueprints/BP_BlockSpawner.BP_BlockSpawner_C:ExecuteUbergraph_BP_BlockSpawner
+[2018.07.24-09.30.59:846][972]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.30.59:848][972]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.30.59:850][972]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.30.59:950][972]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.30.59:983][972]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_BlockSpawner" FILE="../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/Blueprints/BP_BlockSpawner.uasset" SILENT=true
+[2018.07.24-09.31.00:296][972]LogSavePackage: Save=296.14ms
+[2018.07.24-09.31.00:296][972]LogSavePackage: Moving '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Saved/BP_BlockSpawner1C71DE3C3B071318001E03E76B811B53.tmp' to '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/Blueprints/BP_BlockSpawner.uasset'
+[2018.07.24-09.31.00:302][972]LogSavePackage: Display: Finished SavePackage ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/Blueprints/BP_BlockSpawner.uasset
+[2018.07.24-09.31.01:114][ 42]LogRenderer: Reallocating scene render targets to support 796x364 Format 10 NumSamples 1 (Frame:608).
+[2018.07.24-09.31.02:266][159]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.02:267][159]LogLinux: Scale at X=102.000000, Y=43.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.02:268][159]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.02:384][159]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.31.04:106][159]LogSlate: Window 'Save Level As' being destroyed
+[2018.07.24-09.31.06:244][354]LogLinux: Scale at X=669.000000, Y=339.400024: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.06:340][356]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.31.08:947][645]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.08:948][645]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.08:949][645]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.09:044][645]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.31.09:100][645]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd7824c80, Size=52, Default__BP_SkyController_C Function /Game/Blueprints/BP_SkyController.BP_SkyController_C:ExecuteUbergraph_BP_SkyController
+[2018.07.24-09.31.09:105][645]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd7824c80, Size=52
+[2018.07.24-09.31.09:105][645]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd7824340, Size=52, Default__BP_SkyController_C Function /Engine/Transient.REINST_BP_SkyController_C_24:ExecuteUbergraph_BP_SkyController
+[2018.07.24-09.31.09:109][645]LogUObjectGlobals: Created PersistentFrame Addr=0x00007f1bd7826a80, Size=52, Default__BP_SkyController_C Function /Game/Blueprints/BP_SkyController.BP_SkyController_C:ExecuteUbergraph_BP_SkyController
+[2018.07.24-09.31.09:162][645]LogAIModule: Creating AISystem for world TestLevel
+[2018.07.24-09.31.09:205][645]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bdcead1e0, Size=96
+[2018.07.24-09.31.09:206][645]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd7824340, Size=52
+[2018.07.24-09.31.09:219][645]Cmd: MAP LOAD FILE="../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/TestLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.24-09.31.09:219][645]LightingResults: New page: Lighting Build
+[2018.07.24-09.31.09:223][645]LoadErrors: New page: Loading map: TestLevel.umap
+[2018.07.24-09.31.09:238][645]MapCheck: New page: Map Check
+[2018.07.24-09.31.09:238][645]LightingResults: New page: Lighting Build
+[2018.07.24-09.31.09:391][645]LogEditorServer: Finished looking for orphan Actors (0.001 secs)
+[2018.07.24-09.31.09:457][645]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.24-09.31.09:606][645]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 148.862362ms to complete.
+[2018.07.24-09.31.09:607][645]LogFileHelpers: Loading map 'TestLevel' took 0.392
+[2018.07.24-09.31.31:907][401]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.31:908][401]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.31:915][401]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.32:029][401]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.31.32:077][401]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel" FILE="../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/TestLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.24-09.31.32:251][401]LogSavePackage: Save=115.78ms
+[2018.07.24-09.31.32:251][401]LogSavePackage: Moving '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Saved/TestLevel1DA2375A20071318001F00E26D6CDEC3.tmp' to '../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/TestLevel.umap'
+[2018.07.24-09.31.32:252][401]LogSavePackage: Display: Finished SavePackage ../../../../../home/josephtheengineer/workspace/EdenProject/Engine/Content/TestLevel.umap
+[2018.07.24-09.31.33:604][529]LogLinux: Scale at X=142.500000, Y=396.200012: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.31.33:699][530]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.32.45:389][ 36]LogHotReload: New module detected: libUE4Editor-EdenUniverseBuilder-9590.so
+[2018.07.24-09.32.46:826][ 41]LogHotReload: Starting Hot-Reload from IDE
+[2018.07.24-09.32.46:852][ 41]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.32.46:852][ 41]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.32.46:870][ 41]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.32.47:212][ 41]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.32.47:519][ 41]LogClass: Could not find existing class WorldConverter in package /Script/EdenUniverseBuilder for HotReload, assuming new class
+[2018.07.24-09.32.47:520][ 41]LogClass: Function getChunkAddress is new.
+[2018.07.24-09.32.47:521][ 41]LogClass: Function getChunkPosition is new.
+[2018.07.24-09.32.47:521][ 41]LogClass: Function GrabChunkInfo is new.
+[2018.07.24-09.32.47:558][ 41]LogHotReload: Re-instancing WorldConverter after hot-reload.
+[2018.07.24-09.32.47:764][ 41]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0074 seconds. Added 7 classes and 3 folders.
+[2018.07.24-09.32.47:772][ 41]Display: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2018.07.24-09.32.48:293][ 41]LogContentBrowser: Native class hierarchy populated in 0.0164 seconds. Added 2431 classes and 541 folders.
+[2018.07.24-09.32.48:298][ 41]LogLinux: Scale at X=0.000000, Y=0.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.32.48:299][ 41]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.32.48:299][ 41]LogLinux: Scale at X=683.000000, Y=384.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.32.48:343][ 41]Display: HotReload took  1.5s.
+[2018.07.24-09.32.48:429][ 42]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.40.57:097][543]LogLinux: Scale at X=142.500000, Y=396.200012: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.40.57:466][544]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.40.58:188][593]LogLinux: Scale at X=340.500000, Y=528.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.40.58:308][595]LogLinux: Setting swap interval to 'Immediate'
+[2018.07.24-09.40.59:893][715]Cmd: CLOSE_SLATE_MAINFRAME
+[2018.07.24-09.41.00:046][715]LogLinux: Scale at X=12.000000, Y=29.000000: 1.000000 (monitor=#0, HDPI=84.625359 (horz scale: 0.881514), VDPI=84.813911 (vert scale: 0.883478))
+[2018.07.24-09.41.00:474][715]LogSlate: Window 'EdenUniverseBuilder - Unreal Editor' being destroyed
+[2018.07.24-09.41.00:951][716]Cmd: QUIT_EDITOR
+[2018.07.24-09.41.01:013][716]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2018.07.24-09.41.01:017][716]LogExit: Preparing to exit.
+[2018.07.24-09.41.01:555][716]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd1a74250, Size=72
+[2018.07.24-09.41.01:563][716]LogExit: Editor shut down
+[2018.07.24-09.41.01:563][716]LogExit: Transaction tracking system shut down
+[2018.07.24-09.41.01:573][716]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd9533370, Size=4
+[2018.07.24-09.41.01:573][716]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd9533390, Size=4
+[2018.07.24-09.41.01:576][716]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bd7826a80, Size=52
+[2018.07.24-09.41.01:576][716]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00007f1bdcead0c0, Size=96
+[2018.07.24-09.41.02:068][716]LogExit: Object subsystem successfully closed.
+[2018.07.24-09.41.02:136][716]LogShaderCompilers: Display: Shaders left to compile 0
+[2018.07.24-09.41.02:277][716]LogModuleManager: Shutting down and abandoning module EdenUniverseBuilder (529)
+[2018.07.24-09.41.02:277][716]LogModuleManager: Shutting down and abandoning module BlueprintGraph (527)
+[2018.07.24-09.41.02:278][716]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (525)
+[2018.07.24-09.41.02:280][716]LogModuleManager: Shutting down and abandoning module DesktopPlatform (523)
+[2018.07.24-09.41.02:282][716]LogModuleManager: Shutting down and abandoning module SceneOutliner (521)
+[2018.07.24-09.41.02:288][716]LogModuleManager: Shutting down and abandoning module AddContentDialog (519)
+[2018.07.24-09.41.02:295][716]LogModuleManager: Shutting down and abandoning module WidgetCarousel (518)
+[2018.07.24-09.41.02:295][716]LogModuleManager: Shutting down and abandoning module EditorWidgets (515)
+[2018.07.24-09.41.02:295][716]LogModuleManager: Shutting down and abandoning module CollectionManager (513)
+[2018.07.24-09.41.02:296][716]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (511)
+[2018.07.24-09.41.02:296][716]LogModuleManager: Shutting down and abandoning module StatsViewer (509)
+[2018.07.24-09.41.02:297][716]LogModuleManager: Shutting down and abandoning module FoliageEdit (507)
+[2018.07.24-09.41.02:300][716]LogModuleManager: Shutting down and abandoning module LandscapeEditor (505)
+[2018.07.24-09.41.02:303][716]LogModuleManager: Shutting down and abandoning module MeshPaintMode (503)
+[2018.07.24-09.41.02:306][716]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (501)
+[2018.07.24-09.41.02:306][716]LogModuleManager: Shutting down and abandoning module ActorPickerMode (499)
+[2018.07.24-09.41.02:306][716]LogModuleManager: Shutting down and abandoning module GeometryMode (497)
+[2018.07.24-09.41.02:306][716]LogModuleManager: Shutting down and abandoning module TextureAlignMode (495)
+[2018.07.24-09.41.02:306][716]LogModuleManager: Shutting down and abandoning module BspMode (493)
+[2018.07.24-09.41.02:308][716]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (491)
+[2018.07.24-09.41.02:308][716]LogModuleManager: Shutting down and abandoning module HardwareSurvey (489)
+[2018.07.24-09.41.02:308][716]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (487)
+[2018.07.24-09.41.02:308][716]LogModuleManager: Shutting down and abandoning module SequenceRecorder (485)
+[2018.07.24-09.41.02:309][716]LogModuleManager: Shutting down and abandoning module AutomationWorker (483)
+[2018.07.24-09.41.02:310][716]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (481)
+[2018.07.24-09.41.02:310][716]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (479)
+[2018.07.24-09.41.02:310][716]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (477)
+[2018.07.24-09.41.02:315][716]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (475)
+[2018.07.24-09.41.02:315][716]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (473)
+[2018.07.24-09.41.02:315][716]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (471)
+[2018.07.24-09.41.02:315][716]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (469)
+[2018.07.24-09.41.02:315][716]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (467)
+[2018.07.24-09.41.02:315][716]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (465)
+[2018.07.24-09.41.02:315][716]LogModuleManager: Shutting down and abandoning module CharacterAI (463)
+[2018.07.24-09.41.02:315][716]LogModuleManager: Shutting down and abandoning module SmartSnapping (461)
+[2018.07.24-09.41.02:315][716]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (459)
+[2018.07.24-09.41.02:316][716]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (457)
+[2018.07.24-09.41.02:317][716]LogModuleManager: Shutting down and abandoning module PlacementMode (456)
+[2018.07.24-09.41.02:317][716]LogModuleManager: Shutting down and abandoning module MaterialEditor (455)
+[2018.07.24-09.41.02:320][716]LogModuleManager: Shutting down and abandoning module SessionServices (451)
+[2018.07.24-09.41.02:320][716]LogModuleManager: Shutting down and abandoning module ViewportSnapping (449)
+[2018.07.24-09.41.02:320][716]LogModuleManager: Shutting down and abandoning module ViewportInteraction (447)
+[2018.07.24-09.41.02:320][716]LogModuleManager: Shutting down and abandoning module ClothPainter (445)
+[2018.07.24-09.41.02:324][716]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (444)
+[2018.07.24-09.41.02:325][716]LogModuleManager: Shutting down and abandoning module LogVisualizer (441)
+[2018.07.24-09.41.02:328][716]LogModuleManager: Shutting down and abandoning module IntroTutorials (439)
+[2018.07.24-09.41.02:334][716]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (438)
+[2018.07.24-09.41.02:334][716]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (435)
+[2018.07.24-09.41.02:334][716]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (433)
+[2018.07.24-09.41.02:335][716]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (432)
+[2018.07.24-09.41.02:477][716]LogModuleManager: Shutting down and abandoning module LinuxPlatformEditor (429)
+[2018.07.24-09.41.02:477][716]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (427)
+[2018.07.24-09.41.02:477][716]LogModuleManager: Shutting down and abandoning module InputBindingEditor (425)
+[2018.07.24-09.41.02:478][716]LogModuleManager: Shutting down and abandoning module MergeActors (423)
+[2018.07.24-09.41.02:481][716]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (421)
+[2018.07.24-09.41.02:484][716]LogModuleManager: Shutting down and abandoning module LocalizationService (420)
+[2018.07.24-09.41.02:485][716]LogModuleManager: Shutting down and abandoning module HardwareTargeting (417)
+[2018.07.24-09.41.02:485][716]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (415)
+[2018.07.24-09.41.02:487][716]LogModuleManager: Shutting down and abandoning module UndoHistory (413)
+[2018.07.24-09.41.02:488][716]LogModuleManager: Shutting down and abandoning module XmlParser (411)
+[2018.07.24-09.41.02:488][716]LogModuleManager: Shutting down and abandoning module Blutility (409)
+[2018.07.24-09.41.02:488][716]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (407)
+[2018.07.24-09.41.02:488][716]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (406)
+[2018.07.24-09.41.02:488][716]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (403)
+[2018.07.24-09.41.02:488][716]LogModuleManager: Shutting down and abandoning module SettingsEditor (401)
+[2018.07.24-09.41.02:491][716]LogModuleManager: Shutting down and abandoning module ProjectLauncher (399)
+[2018.07.24-09.41.02:496][716]LogModuleManager: Shutting down and abandoning module SessionFrontend (397)
+[2018.07.24-09.41.02:499][716]LogModuleManager: Shutting down and abandoning module ProfilerClient (395)
+[2018.07.24-09.41.02:500][716]LogModuleManager: Shutting down and abandoning module DeviceManager (393)
+[2018.07.24-09.41.02:502][716]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (392)
+[2018.07.24-09.41.02:524][716]LogModuleManager: Shutting down and abandoning module AutomationController (389)
+[2018.07.24-09.41.02:526][716]LogModuleManager: Shutting down and abandoning module AutomationWindow (387)
+[2018.07.24-09.41.02:529][716]LogModuleManager: Shutting down and abandoning module Layers (385)
+[2018.07.24-09.41.02:531][716]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (383)
+[2018.07.24-09.41.02:532][716]LogModuleManager: Shutting down and abandoning module DetailCustomizations (381)
+[2018.07.24-09.41.02:534][716]LogModuleManager: Shutting down and abandoning module PackagesDialog (379)
+[2018.07.24-09.41.02:536][716]LogModuleManager: Shutting down and abandoning module Persona (377)
+[2018.07.24-09.41.02:542][716]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (376)
+[2018.07.24-09.41.02:542][716]LogModuleManager: Shutting down and abandoning module AnimGraph (374)
+[2018.07.24-09.41.02:542][716]LogModuleManager: Shutting down and abandoning module Kismet (371)
+[2018.07.24-09.41.02:568][716]LogModuleManager: Shutting down and abandoning module GraphEditor (369)
+[2018.07.24-09.41.02:570][716]LogModuleManager: Shutting down and abandoning module ClassViewer (367)
+[2018.07.24-09.41.02:571][716]LogModuleManager: Shutting down and abandoning module Toolbox (365)
+[2018.07.24-09.41.02:571][716]LogModuleManager: Shutting down and abandoning module ModuleUI (363)
+[2018.07.24-09.41.02:573][716]LogModuleManager: Shutting down and abandoning module MovieSceneTools (361)
+[2018.07.24-09.41.02:576][716]LogModuleManager: Shutting down and abandoning module OutputLog (359)
+[2018.07.24-09.41.02:576][716]LogModuleManager: Shutting down and abandoning module GammaUI (357)
+[2018.07.24-09.41.02:576][716]LogModuleManager: Shutting down and abandoning module Documentation (355)
+[2018.07.24-09.41.02:577][716]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (353)
+[2018.07.24-09.41.02:578][716]LogModuleManager: Shutting down and abandoning module MovieScene (351)
+[2018.07.24-09.41.02:578][716]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (349)
+[2018.07.24-09.41.02:578][716]LogModuleManager: Shutting down and abandoning module LauncherPlatform (347)
+[2018.07.24-09.41.02:578][716]LogModuleManager: Shutting down and abandoning module AnalyticsET (345)
+[2018.07.24-09.41.02:578][716]LogModuleManager: Shutting down and abandoning module PortalServices (343)
+[2018.07.24-09.41.02:578][716]LogModuleManager: Shutting down and abandoning module PortalRpc (341)
+[2018.07.24-09.41.02:578][716]LogModuleManager: Shutting down and abandoning module MessagingRpc (339)
+[2018.07.24-09.41.02:578][716]LogModuleManager: Shutting down and abandoning module AIModule (337)
+[2018.07.24-09.41.02:580][716]LogModuleManager: Shutting down and abandoning module GameplayDebugger (336)
+[2018.07.24-09.41.02:581][716]LogModuleManager: Shutting down and abandoning module AITestSuite (334)
+[2018.07.24-09.41.02:581][716]LogModuleManager: Shutting down and abandoning module ProfilerService (331)
+[2018.07.24-09.41.02:752][716]LogModuleManager: Shutting down and abandoning module TaskGraph (329)
+[2018.07.24-09.41.02:755][716]LogModuleManager: Shutting down and abandoning module ImgMedia (325)
+[2018.07.24-09.41.02:755][716]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (323)
+[2018.07.24-09.41.02:756][716]LogModuleManager: Shutting down and abandoning module MediaCompositing (321)
+[2018.07.24-09.41.02:756][716]LogModuleManager: Shutting down and abandoning module Media (320)
+[2018.07.24-09.41.02:761][716]LogModuleManager: Shutting down and abandoning module LinearTimecode (317)
+[2018.07.24-09.41.02:761][716]LogModuleManager: Shutting down and abandoning module AlembicImporter (315)
+[2018.07.24-09.41.02:761][716]LogModuleManager: Shutting down and abandoning module AlembicLibrary (314)
+[2018.07.24-09.41.02:763][716]LogModuleManager: Shutting down and abandoning module GeometryCache (313)
+[2018.07.24-09.41.02:763][716]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (312)
+[2018.07.24-09.41.02:763][716]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (307)
+[2018.07.24-09.41.02:763][716]LogModuleManager: Shutting down and abandoning module UObjectPlugin (305)
+[2018.07.24-09.41.02:763][716]LogModuleManager: Shutting down and abandoning module CodeLiteSourceCodeAccess (303)
+[2018.07.24-09.41.02:763][716]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (301)
+[2018.07.24-09.41.02:768][716]LogModuleManager: Shutting down and abandoning module GitSourceControl (299)
+[2018.07.24-09.41.02:770][716]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (297)
+[2018.07.24-09.41.02:771][716]LogModuleManager: Shutting down and abandoning module SourceControl (296)
+[2018.07.24-09.41.02:772][716]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (293)
+[2018.07.24-09.41.02:772][716]LogModuleManager: Shutting down and abandoning module KDevelopSourceCodeAccess (291)
+[2018.07.24-09.41.02:772][716]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (289)
+[2018.07.24-09.41.02:772][716]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (287)
+[2018.07.24-09.41.02:772][716]LogModuleManager: Shutting down and abandoning module Paper2DEditor (285)
+[2018.07.24-09.41.02:773][716]LogModuleManager: Shutting down and abandoning module MeshPaint (284)
+[2018.07.24-09.41.02:774][716]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (281)
+[2018.07.24-09.41.02:774][716]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (279)
+[2018.07.24-09.41.02:775][716]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (277)
+[2018.07.24-09.41.02:775][716]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (275)
+[2018.07.24-09.41.02:775][716]LogModuleManager: Shutting down and abandoning module PluginBrowser (273)
+[2018.07.24-09.41.02:778][716]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (271)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (269)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module CryptoKeys (267)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module DatasmithContent (265)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module SteamVRController (263)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module CableComponent (261)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (259)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module AndroidPermission (257)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (255)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (253)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (251)
+[2018.07.24-09.41.02:781][716]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (249)
+[2018.07.24-09.41.02:782][716]LogModuleManager: Shutting down and abandoning module NullSourceCodeAccess (245)
+[2018.07.24-09.41.02:782][716]LogModuleManager: Shutting down and abandoning module Paper2D (243)
+[2018.07.24-09.41.02:782][716]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (241)
+[2018.07.24-09.41.02:782][716]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (239)
+[2018.07.24-09.41.02:782][716]LogModuleManager: Shutting down and abandoning module TreeMap (238)
+[2018.07.24-09.41.02:783][716]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (235)
+[2018.07.24-09.41.02:784][716]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (233)
+[2018.07.24-09.41.02:784][716]LogModuleManager: Shutting down and abandoning module FacialAnimation (231)
+[2018.07.24-09.41.02:784][716]LogModuleManager: Shutting down and abandoning module DataValidation (229)
+[2018.07.24-09.41.02:784][716]LogModuleManager: Shutting down and abandoning module LevelEditor (228)
+[2018.07.24-09.41.02:786][716]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (227)
+[2018.07.24-09.41.02:788][716]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (225)
+[2018.07.24-09.41.02:788][716]LogModuleManager: Shutting down and abandoning module MainFrame (223)
+[2018.07.24-09.41.02:788][716]LogModuleManager: Shutting down and abandoning module HotReload (222)
+[2018.07.24-09.41.02:796][716]LogModuleManager: Shutting down and abandoning module ContentBrowser (218)
+[2018.07.24-09.41.02:799][716]LogModuleManager: Shutting down and abandoning module LiveLinkEditor (215)
+[2018.07.24-09.41.02:799][716]LogModuleManager: Shutting down and abandoning module LiveLink (213)
+[2018.07.24-09.41.03:604][716]LogModuleManager: Shutting down and abandoning module UdpMessaging (211)
+[2018.07.24-09.41.03:704][716]LogModuleManager: Shutting down and abandoning module TcpMessaging (209)
+[2018.07.24-09.41.03:805][716]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (207)
+[2018.07.24-09.41.03:805][716]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (205)
+[2018.07.24-09.41.03:811][716]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (203)
+[2018.07.24-09.41.03:811][716]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (201)
+[2018.07.24-09.41.03:815][716]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (199)
+[2018.07.24-09.41.03:816][716]LogModuleManager: Shutting down and abandoning module PhysXVehicles (197)
+[2018.07.24-09.41.03:816][716]LogModuleManager: Shutting down and abandoning module ActorSequence (195)
+[2018.07.24-09.41.03:816][716]LogModuleManager: Shutting down and abandoning module PacketHandler (193)
+[2018.07.24-09.41.03:816][716]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (191)
+[2018.07.24-09.41.03:816][716]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (189)
+[2018.07.24-09.41.03:817][716]LogModuleManager: Shutting down and abandoning module MediaAssets (187)
+[2018.07.24-09.41.03:817][716]LogModuleManager: Shutting down and abandoning module Overlay (185)
+[2018.07.24-09.41.03:817][716]LogModuleManager: Shutting down and abandoning module OverlayEditor (184)
+[2018.07.24-09.41.03:817][716]LogModuleManager: Shutting down and abandoning module VREditor (181)
+[2018.07.24-09.41.03:817][716]LogModuleManager: Shutting down and abandoning module StringTableEditor (179)
+[2018.07.24-09.41.03:818][716]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (177)
+[2018.07.24-09.41.03:818][716]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (175)
+[2018.07.24-09.41.03:820][716]LogModuleManager: Shutting down and abandoning module FunctionalTesting (173)
+[2018.07.24-09.41.03:820][716]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (171)
+[2018.07.24-09.41.03:823][716]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (170)
+[2018.07.24-09.41.03:823][716]LogModuleManager: Shutting down and abandoning module UMG (167)
+[2018.07.24-09.41.03:823][716]LogModuleManager: Shutting down and abandoning module UMGEditor (166)
+[2018.07.24-09.41.03:824][716]LogModuleManager: Shutting down and abandoning module Sequencer (165)
+[2018.07.24-09.41.03:825][716]LogModuleManager: Shutting down and abandoning module MessageLog (162)
+[2018.07.24-09.41.03:825][716]LogModuleManager: Shutting down and abandoning module SlateReflector (157)
+[2018.07.24-09.41.03:830][716]LogModuleManager: Shutting down and abandoning module Slate (155)
+[2018.07.24-09.41.03:830][716]LogModuleManager: Shutting down and abandoning module EditorStyle (153)
+[2018.07.24-09.41.03:835][716]LogModuleManager: Shutting down and abandoning module MRMesh (151)
+[2018.07.24-09.41.03:835][716]LogModuleManager: Shutting down and abandoning module Messaging (149)
+[2018.07.24-09.41.03:835][716]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (147)
+[2018.07.24-09.41.03:835][716]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (145)
+[2018.07.24-09.41.03:835][716]LogModuleManager: Shutting down and abandoning module AudioMixerSDL (143)
+[2018.07.24-09.41.03:835][716]LogModuleManager: Shutting down and abandoning module Networking (140)
+[2018.07.24-09.41.03:835][716]LogModuleManager: Shutting down and abandoning module Core (136)
+[2018.07.24-09.41.03:835][716]LogModuleManager: Shutting down and abandoning module LevelSequence (134)
+[2018.07.24-09.41.03:835][716]LogModuleManager: Shutting down and abandoning module KismetCompiler (132)
+[2018.07.24-09.41.03:836][716]LogModuleManager: Shutting down and abandoning module MeshUtilities (130)
+[2018.07.24-09.41.03:838][716]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (129)
+[2018.07.24-09.41.03:839][716]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (128)
+[2018.07.24-09.41.03:839][716]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (127)
+[2018.07.24-09.41.03:839][716]LogModuleManager: Shutting down and abandoning module MaterialBaking (123)
+[2018.07.24-09.41.03:839][716]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (119)
+[2018.07.24-09.41.03:943][716]LogModuleManager: Shutting down and abandoning module DerivedDataCache (116)
+[2018.07.24-09.41.03:973][716]LogDerivedDataCache: Shutdown
+[2018.07.24-09.41.03:973][716]LogModuleManager: Shutting down and abandoning module TargetPlatform (114)
+[2018.07.24-09.41.03:973][716]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (113)
+[2018.07.24-09.41.03:975][716]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (111)
+[2018.07.24-09.41.03:977][716]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (109)
+[2018.07.24-09.41.03:979][716]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (107)
+[2018.07.24-09.41.03:979][716]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (105)
+[2018.07.24-09.41.03:979][716]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (103)
+[2018.07.24-09.41.03:979][716]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (101)
+[2018.07.24-09.41.03:979][716]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (99)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module ImageWrapper (98)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (95)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (93)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (91)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (87)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (85)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (83)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (81)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (79)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module Android_ETC1aTargetPlatform (77)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (75)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (73)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (71)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (69)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (67)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (65)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (63)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (61)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module InputCore (58)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module Settings (56)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module PhysXCooking (54)
+[2018.07.24-09.41.03:980][716]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (52)
+[2018.07.24-09.41.03:981][716]LogModuleManager: Shutting down and abandoning module XMPP (51)
+[2018.07.24-09.41.03:986][716]LogModuleManager: Shutting down and abandoning module HTTP (49)
+[2018.07.24-09.41.03:986][716]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.07.24-09.41.03:986][716]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B0DF982B5-0007-1218-003A-02F7F5884A26%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.19.2-0%2B%2B%2BUE4%2BRelease-4.19&UserID=00024c9b19071102002b02c5bc0e9c37%7C%7C70ff3a3413454a2aab538658307c7e19&AppEnvironment=datacollector-source&UploadType=eteventstream] status=Processing
+[2018.07.24-09.41.04:008][716]LogModuleManager: Shutting down and abandoning module SSL (48)
+[2018.07.24-09.41.04:010][716]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (44)
+[2018.07.24-09.41.04:011][716]LogModuleManager: Shutting down and abandoning module SteamVR (40)
+[2018.07.24-09.41.04:011][716]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (38)
+[2018.07.24-09.41.04:011][716]LogModuleManager: Shutting down and abandoning module LinuxDeviceProfileSelector (36)
+[2018.07.24-09.41.04:011][716]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2018.07.24-09.41.04:013][716]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2018.07.24-09.41.04:016][716]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2018.07.24-09.41.04:018][716]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2018.07.24-09.41.04:018][716]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2018.07.24-09.41.04:018][716]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2018.07.24-09.41.04:018][716]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2018.07.24-09.41.04:021][716]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2018.07.24-09.41.04:021][716]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.07.24-09.41.04:021][716]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.07.24-09.41.04:022][716]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.07.24-09.41.04:022][716]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.07.24-09.41.04:022][716]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.07.24-09.41.04:022][716]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.07.24-09.41.04:022][716]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.07.24-09.41.04:022][716]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.07.24-09.41.04:022][716]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.07.24-09.41.04:029][716]LogExit: Exiting.
+[2018.07.24-09.41.04:029][716]LogInit: Tearing down SDL.
+[2018.07.24-09.41.04:068][716]Log file closed, 07/24/18 19:41:04

@@ -23,7 +23,6 @@ void AWorldConverter::BeginPlay()
 	// Used this to store the map in a raw hex format
 	const char *filename = "/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden";
 
-	// Stores a single hex symbols
 	unsigned char x;
 	std::ifstream input(filename, std::ios::binary);
 	input >> std::noskipws;
@@ -33,29 +32,16 @@ void AWorldConverter::BeginPlay()
 		bytes.push_back((int)x);
 	}
 
-	// ^^^ EVERYTHING ABOVE HERE WORKS ^^^
-
 	// Nobody really knows how this works
 	int chunkPointerStartIndex = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
 
-	//UE_LOG(LogTemp,Log,TEXT("ChunkPointerStartIndex: %d"), chunkPointerStartIndex);
-
 	vector <char> nameArray;
 
-	//cout << "World Name (decimal): ";
+	UE_LOG(LogTemp,Log,TEXT("Fetching world Name (ASCII)..."));
 	for (int i = 35; i < 35+50; i++)
 	{
-		//cout << bytes[i] << " ";
 		nameArray.push_back(static_cast<char>(bytes[i]));
 	}
-	//cout << endl;
-
-	UE_LOG(LogTemp,Log,TEXT("Fetching world Name (ASCII)..."));
-//for (int i = 0; i < nameArray.size(); i++)
-//	{
-//			cout << nameArray[i];
-//	}
-//	cout << endl;
 
 
 	UE_LOG(LogTemp,Log,TEXT("World file is vaid. All systems are go for launch."));
@@ -113,47 +99,31 @@ void AWorldConverter::BeginPlay()
 
 	//vector <int> map = worldAreaWidth * 16, worldAreaHeight * 16, 64, 2;
 }
-/*
-// Grab block info
-for (int i = 0; i < chunksX.size(); i++)
-{
-	// Whatever this does
-	int baseX = (chunksX[i] - worldAreaX) * 16, baseY = (chunksY[i] - worldAreaY) * 16;
-	for (int baseHeight = 0; baseHeight < 4; baseHeight++)
-	{
-		for (int x = 0; x < 16; x++)
-		{
-			for (int y = 0; y < 16; y++)
-			{
-				for (int z = 0; z < 16; z++)
-				{
 
-				}
-			}
-		}
-	}
-}*/
-
+// Used in blueprints
 TArray<int32> AWorldConverter::getChunkAddress(){
 	return chunkAddress;
 }
 
+// Used in blueprints
 TArray<FString> AWorldConverter::getChunkPosition(){
 	return chunkPosition;
 }
 
+// Used in blueprints
 TArray<FString> AWorldConverter::GrabChunkInfo(int chunk)
 {
 	(new FAutoDeleteAsyncTask<PrimeSearchTask>(chunk))->StartBackgroundTask();
 	return chunkFinal;
 }
 
+// Runs on a different thread
 void AWorldConverter::SubTask(int chunk)
 {
 	UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
-	//for (int i = 0; i < chunk; i++){
 	// Whatever this does
 	int baseX = (chunksX[chunk] - worldAreaX) * 16, baseY = (chunksY[chunk] - worldAreaY) * 16;
+
 	for (int baseHeight = 0; baseHeight < 4; baseHeight++)
 	{
 		for (int x = 16; x > 0; x--)
@@ -162,7 +132,6 @@ void AWorldConverter::SubTask(int chunk)
 			{
 				for (int z = 16; z > 0; z--)
 				{
-				//UE_LOG(LogTemp,Log,TEXT(" ===== %d | %d | %d ===== "), x, y, z);
 				// Get block id
 				vector<int> id;
 				id.push_back(baseX + x);
@@ -174,8 +143,6 @@ void AWorldConverter::SubTask(int chunk)
 				chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
 				chunkFinal.Add(FString::FromInt(bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]));
 
-				//UE_LOG(LogTemp,Log,TEXT("Block id: %d"), bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]);
-
 				// Get block color
 				vector<int> color;
 				color.push_back(baseX + x);
@@ -184,12 +151,16 @@ void AWorldConverter::SubTask(int chunk)
 				color.push_back(1);
 
 				blocks[color] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
-
-				//UE_LOG(LogTemp,Log,TEXT("Color id: %d"), bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096]);
 				}
 			}
 		}
 	}
+}
+
+// Port of BlockSpawner::ScanBlocks blueprint
+void AWorldConverter::LoadBlocks()
+{
+
 }
 
 // Called every frame

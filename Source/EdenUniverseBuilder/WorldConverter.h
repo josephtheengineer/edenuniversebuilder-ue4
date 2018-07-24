@@ -40,6 +40,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	TArray<FString> getChunkPosition();
 
+	void LoadBlocks();
+
 	map<int, int> chunksX;
 	map<int, int> chunksY;
 
