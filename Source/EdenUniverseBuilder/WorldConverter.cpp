@@ -4,24 +4,91 @@
 // with help from Robert Munafo || http://www.mrob.com/pub/vidgames/eden-file-format.html
 
 #include "WorldConverter.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/BoxComponent.h"
+#include "Components/InstancedStaticMeshComponent.h"
+#include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
+#include "Runtime/Core/Public/Misc/Paths.h"
 
-// Sets default values
+//==============================================================================
+// AWorldConverter::AWorldConverter() | Sets default values
+//==============================================================================
 AWorldConverter::AWorldConverter()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	ISMComp = CreateDefaultSubobject<UInstancedStaticMeshComponent>(TEXT("UInstancedStaticMeshComponent"));//NewObject<UInstancedStaticMeshComponent>(this);
+  ISMComp->RegisterComponent();
+  ISMComp->SetStaticMesh(SMAsset_Cube);
+  //ISMComp->SetFlags(RF_Transactional);
+	//InstancedStaticMeshComponent->SetStaticMesh(SMAsset_Cube);
+  //this->AddInstanceComponent(ISMComp);
 
+	FTransform newT = GetTransform();
+	newT.SetLocation(FVector(0,0,0));
+	ISMComp->AddInstance(newT);
+
+
+	//this->GetWorld()->SpawnActor<AActor>(AActor::StaticClass());
+
+/*
+	//Attach to component
+	InstancedStaticMeshComponent->SetStaticMesh(SMAsset_Cube);
+
+	//Add Core Instance
+	FTransform newT = GetTransform();
+	newT.SetLocation(FVector(0,0,0));
+	InstancedStaticMeshComponent->AddInstance(newT);
+*/
+	//Scale
+	//NewVertex->SetActorRelativeScale3D(CurrentVerticiesScale);
+/*
+	Mesh = CreateDefaultSubobject<UInstancedStaticMeshComponent>(TEXT("Mesh"));
+	RootComponent = Mesh;
+
+	MyBoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
+
+	MyBoxComponent->SetupAttachment(RootComponent);
+
+	grass = CreateDefaultSubobject<UMaterialInterface>(TEXT("grass material"));
+
+	grass = LoadMaterialReference("MaterialInterface'/Content/Materials/Blocks/MAT_GrassSide.uasset'");
+
+	Mesh->SetMaterial(0, grass);*/
 }
 
-// Called when the game starts or when spawned
+UMaterialInterface * AWorldConverter::LoadMaterialReference(const FString& materialPath)
+{
+		FStringAssetReference assetRef(materialPath);
+		return Cast<UMaterialInterface>(assetRef.TryLoad());
+}
+
+//==============================================================================
+// AWorldConverter::BeginPlay() | Called when the game starts or when spawned
+//==============================================================================
 void AWorldConverter::BeginPlay()
 {
 	Super::BeginPlay();
 
 	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
 
-	// Used this to store the map in a raw hex format
-	const char *filename = "/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden";
+	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
+
+	GetWorldName(bytes);
+
+	// Nobody really knows how this works
+	int chunkPointer = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
+
+	CreateChunkMap(bytes, chunkPointer);
+
+	LoadBlocks();
+}
+
+//==============================================================================
+// AWorldConverter::OpenFile() | Returns a hex world file to a decimal array
+//==============================================================================
+vector <int> AWorldConverter::OpenFile(const char *filename)
+{
+	UE_LOG(LogTemp,Log,TEXT("Loading file: %s"), filename);
+	vector <int> worldData;
 
 	unsigned char x;
 	std::ifstream input(filename, std::ios::binary);
@@ -29,34 +96,43 @@ void AWorldConverter::BeginPlay()
 	while (input >> x)
 	{
 		// We'll store the hex symbol in decimal format
-		bytes.push_back((int)x);
+		worldData.push_back((int)x);
 	}
-
-	// Nobody really knows how this works
-	int chunkPointerStartIndex = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
-
-	vector <char> nameArray;
-
-	UE_LOG(LogTemp,Log,TEXT("Fetching world Name (ASCII)..."));
-	for (int i = 35; i < 35+50; i++)
-	{
-		nameArray.push_back(static_cast<char>(bytes[i]));
-	}
-
 
 	UE_LOG(LogTemp,Log,TEXT("World file is vaid. All systems are go for launch."));
+	return worldData;
+}
 
-	int currentChunkPointerIndex = chunkPointerStartIndex;
+//==============================================================================
+// AWorldConverter::GetWorldName() | Returns the world name
+//==============================================================================
+FString AWorldConverter::GetWorldName(vector <int> worldData)
+{
+	UE_LOG(LogTemp,Log,TEXT("Fetching world Name..."));
+	FString worldName;
 
-	// Associate the chunk position with the chunk address in the map (chunks)
+	for (int i = 35; i < 35+50; i++)
+	{
+		worldName += static_cast<char>(worldData[i]);
+	}
+
+	UE_LOG(LogTemp,Log,TEXT("World name is: %s"), *worldName);
+	return worldName;
+}
+
+//==============================================================================
+// AWorldConverter::CreateChunkMap() | Associate the chunk pos with the address
+//==============================================================================
+void AWorldConverter::CreateChunkMap(vector <int> worldData, int chunkPointer)
+{
 	do
 	{
 		// Find chunk address
-		int address = bytes[currentChunkPointerIndex + 11] * 256 * 256 * 256 + bytes[currentChunkPointerIndex + 10] * 256 * 256 + bytes[currentChunkPointerIndex + 9] * 256 + bytes[currentChunkPointerIndex + 8];
+		int address = worldData[chunkPointer + 11] * 256 * 256 * 256 + worldData[chunkPointer + 10] * 256 * 256 + worldData[chunkPointer + 9] * 256 + worldData[chunkPointer + 8];
 
 		// Find the position of the chunk
-		int x = bytes[currentChunkPointerIndex + 1] * 256 + bytes[currentChunkPointerIndex];
-		int y = bytes[currentChunkPointerIndex + 5] * 256 + bytes[currentChunkPointerIndex + 4];
+		int x = worldData[chunkPointer + 1] * 256 + worldData[chunkPointer];
+		int y = worldData[chunkPointer + 5] * 256 + worldData[chunkPointer + 4];
 
 		if (worldAreaX > x){
 			worldAreaX = x;
@@ -87,7 +163,7 @@ void AWorldConverter::BeginPlay()
 
 		chunksX[address] = x;
 		chunksY[address] = y;
-	} while ((currentChunkPointerIndex += 16) < bytes.size());
+	} while ((chunkPointer += 16) < worldData.size());
 
 	UE_LOG(LogTemp,Log,TEXT("Chunks size: %d"), chunksX.size());
 
@@ -96,29 +172,12 @@ void AWorldConverter::BeginPlay()
 
 	// Get the total world height | max - min + 1
 	int worldAreaHeight = worldAreaHeightTemp - worldAreaY + 1;
-
-	//vector <int> map = worldAreaWidth * 16, worldAreaHeight * 16, 64, 2;
 }
 
-// Used in blueprints
-TArray<int32> AWorldConverter::getChunkAddress(){
-	return chunkAddress;
-}
-
-// Used in blueprints
-TArray<FString> AWorldConverter::getChunkPosition(){
-	return chunkPosition;
-}
-
-// Used in blueprints
-TArray<FString> AWorldConverter::GrabChunkInfo(int chunk)
-{
-	(new FAutoDeleteAsyncTask<PrimeSearchTask>(chunk))->StartBackgroundTask();
-	return chunkFinal;
-}
-
-// Runs on a different thread
-void AWorldConverter::SubTask(int chunk)
+//==============================================================================
+// AWorldConverter::GetChunkInfo() | Gets block info for specific blocks
+//==============================================================================
+void AWorldConverter::GetChunkInfo(int chunk)
 {
 	UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
 	// Whatever this does
@@ -157,15 +216,17 @@ void AWorldConverter::SubTask(int chunk)
 	}
 }
 
-// Port of BlockSpawner::ScanBlocks blueprint
+//==============================================================================
+// AWorldConverter::LoadBlocks() | Port of BlockSpawner::ScanBlocks blueprint
+//==============================================================================
 void AWorldConverter::LoadBlocks()
-{
+{/*
+	blockData EdenBlockData[] = {
 
-}
+	{0, "air"},
+	{1, "bedrock"))}
 
-// Called every frame
-void AWorldConverter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
+	};
 
+	UE_LOG(LogTemp,Log,TEXT("BLOCK DATA: %d"), EdenBlockData[0].id);*/
 }

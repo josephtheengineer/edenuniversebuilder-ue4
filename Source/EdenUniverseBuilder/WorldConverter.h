@@ -26,22 +26,28 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
 
-	UFUNCTION(BlueprintCallable)
-	TArray<FString> GrabChunkInfo(int32 chunk);
+	//==============================================================================
+	// Functions
+	//==============================================================================
 
-	void SubTask(int32 chunk);
+	vector <int> OpenFile(const char *filename);
 
-	UFUNCTION(BlueprintCallable)
-	TArray<int32> getChunkAddress();
+	FString GetWorldName(vector <int> bytes);
 
-	UFUNCTION(BlueprintCallable)
-	TArray<FString> getChunkPosition();
+	void CreateChunkMap(vector <int> worldData, int chunkPointer);
+
+	void GetChunkInfo(int chunk);
 
 	void LoadBlocks();
 
+	// Load a material from the corresponding path
+	UFUNCTION(BlueprintCallable, Category = "Asset Loading")
+	UMaterialInterface * LoadMaterialReference(const FString& materialPath);
+
+	//==============================================================================
+	// Variables
+	//==============================================================================
 	map<int, int> chunksX;
 	map<int, int> chunksY;
 
@@ -56,30 +62,45 @@ public:
 
 	map<vector<int>, int> blocks;
 
-	vector <int> bytes;
-
 	TArray<int32> chunkAddress;
 	TArray<FString> chunkPosition;
 
 	TArray<FString> chunkFinal;
-};
+	vector <int> bytes;
 
-class PrimeSearchTask : public FNonAbandonableTask
-{
-public:
+	UPROPERTY()
+	USceneComponent* Root;
 
-	PrimeSearchTask(int32 _primeCount);
+	UPROPERTY(VisibleAnywhere)
+	class UInstancedStaticMeshComponent* Mesh;
 
-	~PrimeSearchTask();
+	UPROPERTY(EditAnywhere)
+	class UMaterialInterface* grass;
 
-	FORCEINLINE TStatId GetStatId() const
+	UPROPERTY(EditAnywhere)
+	class UMaterialInterface* dirt;
+
+	//UPROPERTY()
+	//class UBoxComponent* MyBoxComponent;
+
+	//UFUNCTION(BlueprintCallable, Category="Components|InstancedStaticMesh")
+	//virtual void AddInstance(const FTransform& InstanceTransform);
+
+	struct blockData
 	{
-			RETURN_QUICK_DECLARE_CYCLE_STAT(PrimeSearchTask, STATGROUP_ThreadPoolAsyncTasks);
-	}
 
-	int32 PrimeCount;
+	int id;    /* The block type, as a value found in the blocks[] chunk */
 
-	void DoWork();
+	FString longname; /* Human-readable name */
 
-	void DoWorkMain();
+	UMaterialInterface* dirt;
+
+	};
+
+	// Add StaticMeshComponent
+	UPROPERTY()
+	UInstancedStaticMeshComponent* ISMComp;
+
+	UPROPERTY()
+	UStaticMesh* SMAsset_Cube;
 };

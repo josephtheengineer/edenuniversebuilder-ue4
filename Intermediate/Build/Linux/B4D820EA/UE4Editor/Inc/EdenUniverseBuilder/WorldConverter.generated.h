@@ -8,6 +8,7 @@
 #include "ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UMaterialInterface;
 #ifdef EDENUNIVERSEBUILDER_WorldConverter_generated_h
 #error "WorldConverter.generated.h already included, missing '#pragma once' in WorldConverter.h"
 #endif
@@ -15,56 +16,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execgetChunkPosition) \
+	DECLARE_FUNCTION(execLoadMaterialReference) \
 	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_materialPath); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=P_THIS->getChunkPosition(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execgetChunkAddress) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<int32>*)Z_Param__Result=P_THIS->getChunkAddress(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGrabChunkInfo) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_chunk); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=P_THIS->GrabChunkInfo(Z_Param_chunk); \
+		*(UMaterialInterface**)Z_Param__Result=P_THIS->LoadMaterialReference(Z_Param_materialPath); \
 		P_NATIVE_END; \
 	}
 
 
 #define Engine_Source_EdenUniverseBuilder_WorldConverter_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execgetChunkPosition) \
+	DECLARE_FUNCTION(execLoadMaterialReference) \
 	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_materialPath); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=P_THIS->getChunkPosition(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execgetChunkAddress) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<int32>*)Z_Param__Result=P_THIS->getChunkAddress(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGrabChunkInfo) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_chunk); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FString>*)Z_Param__Result=P_THIS->GrabChunkInfo(Z_Param_chunk); \
+		*(UMaterialInterface**)Z_Param__Result=P_THIS->LoadMaterialReference(Z_Param_materialPath); \
 		P_NATIVE_END; \
 	}
 

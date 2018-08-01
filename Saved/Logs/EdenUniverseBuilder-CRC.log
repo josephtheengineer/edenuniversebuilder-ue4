@@ -1,104 +1,104 @@
-﻿Log file open, 07/22/18 17:54:00
+﻿Log file open, 08/01/18 20:18:24
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(-721806231) SRandInit(-721806231).
+LogInit: Display: RandInit(62965645) SRandInit(62965645).
 LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
 LogInit: Build: ++UE4+Release-4.19-CL-0
 LogInit: Engine Version: 4.19.2-0+++UE4+Release-4.19
 LogInit: Compatible Engine Version: 4.19.0-0+++UE4+Release-4.19
 LogInit: Net CL: 0
-LogInit: Compiled (64-bit): Jul 12 2018 11:26:32
-LogInit: Compiled with Clang: 3.8.0 (tags/RELEASE_380/final)
+LogInit: Compiled (64-bit): Jul 29 2018 08:51:08
+LogInit: Compiled with Clang: 4.0.1 (tags/RELEASE_401/final)
 LogInit: Build Configuration: Shipping
 LogInit: Branch Name: ++UE4+Release-4.19
-LogInit: Command Line:  -Abslog=/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Logs/EdenUniverseBuilder-CRC.log /home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/crashinfo-EdenUniverseBuilder-pid-13986-05A20F78000711160036034CD4F91068/
+LogInit: Command Line:  -Abslog=/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Logs/EdenUniverseBuilder-CRC.log -Unattended /home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/ensureinfo-EdenUniverseBuilder-pid-28158-0C9D583C18081401001200227D6539D9/
 LogInit: Base Directory: /opt/unreal-engine/Engine/Binaries/Linux/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 100000 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.07.22-07.54.01:003][  0]LogInit: Linux hardware info:
-[2018.07.22-07.54.01:003][  0]LogInit:  - we are the first instance of this executable
-[2018.07.22-07.54.01:003][  0]LogInit:  - this process' id (pid) is 27424, parent process' id (ppid) is 13986
-[2018.07.22-07.54.01:003][  0]LogInit:  - we are not running under debugger
-[2018.07.22-07.54.01:003][  0]LogInit:  - machine network name is 'Axius'
-[2018.07.22-07.54.01:003][  0]LogInit:  - user name is 'josephtheengineer' (josephtheengineer)
-[2018.07.22-07.54.01:003][  0]LogInit:  - we're logged in locally
-[2018.07.22-07.54.01:003][  0]LogInit:  - we're running with rendering
-[2018.07.22-07.54.01:003][  0]LogInit:  - CPU: GenuineIntel 'Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz' (signature: 0x906E9)
-[2018.07.22-07.54.01:003][  0]LogInit:  - Number of physical cores available for the process: 4
-[2018.07.22-07.54.01:003][  0]LogInit:  - Number of logical cores available for the process: 4
-[2018.07.22-07.54.01:003][  0]LogInit:  - Cache line size: 64
-[2018.07.22-07.54.01:003][  0]LogInit:  - Memory allocator used: binned2
-[2018.07.22-07.54.01:003][  0]LogLinux: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_REALTIME will be used.
-[2018.07.22-07.54.01:003][  0]LogInit: Linux-specific commandline switches:
-[2018.07.22-07.54.01:003][  0]LogInit:  -nodwarf (currently OFF): suppress parsing of DWARF debug info (callstacks will be generated faster, but won't have line numbers)
-[2018.07.22-07.54.01:003][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
-[2018.07.22-07.54.01:003][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
-[2018.07.22-07.54.01:003][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
-[2018.07.22-07.54.01:003][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
-[2018.07.22-07.54.01:003][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
-[2018.07.22-07.54.01:003][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
-[2018.07.22-07.54.01:003][  0]LogInit:  - Physical RAM available (not considering process quota): 8 GB (7943 MB, 8134476 KB, 8329703424 bytes)
-[2018.07.22-07.54.01:006][  0]LogUObjectArray: 149 objects as part of root set at end of initial load.
-[2018.07.22-07.54.01:006][  0]LogUObjectAllocator: 22184 out of 0 bytes used by permanent object pool.
-[2018.07.22-07.54.01:006][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.07.22-07.54.01:006][  0]LogInit: Using OS detected language ().
-[2018.07.22-07.54.01:006][  0]LogInit: Using OS detected locale ().
-[2018.07.22-07.54.01:006][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the language.
-[2018.07.22-07.54.01:006][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the locale.
-[2018.07.22-07.54.01:009][  0]CrashReportClientLog: CrashReportClientVersion=1.0
-[2018.07.22-07.54.01:009][  0]CrashReportClientLog: CrashReportReceiver disabled
-[2018.07.22-07.54.01:009][  0]CrashReportClientLog: DataRouterUrl: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data
-[2018.07.22-07.54.01:011][  0]CrashReportClientLog: Initial state = Unknown UploadState value
-[2018.07.22-07.54.01:011][  0]CrashReportClientLog: Initial state = Unknown UploadState value
-[2018.07.22-07.54.01:011][  0]LogCrashDebugHelper: DepotName: //UE4/Release-4.19
-[2018.07.22-07.54.01:011][  0]LogCrashDebugHelper: BuiltFromCL: 0
-[2018.07.22-07.54.01:011][  0]LogCrashDebugHelper: EngineVersion: 4.19.2-0+++UE4+Release-4.19
-[2018.07.22-07.54.01:011][  0]LogCrashDebugHelper: BuildVersion: ++UE4+Release-4.19-CL-0
-[2018.07.22-07.54.01:011][  0]LogCrashDebugHelper: Warning: CrashDebugHelperConfig invalid
-[2018.07.22-07.54.01:011][  0]LogCrashDebugHelper: Warning: PDB Cache disabled
-[2018.07.22-07.54.01:988][  0]CrashReportClientLog: Got 5 pending files to upload from 'crashinfo-EdenUniverseBuilder-pid-13986-05A20F78000711160036034CD4F91068'
-[2018.07.22-07.54.01:988][  0]CrashReportClientLog: State change from Ready to SendingFiles
-[2018.07.22-07.54.01:988][  0]CrashReportClientLog: CompressAndSendData have 5 pending files
-[2018.07.22-07.54.01:989][  0]CrashReportClientLog: CompressAndSendData compressing 108 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/crashinfo-EdenUniverseBuilder-pid-13986-05A20F78000711160036034CD4F91068/CrashReportClient.ini')
-[2018.07.22-07.54.01:989][  0]CrashReportClientLog: CompressAndSendData compressing 4 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/crashinfo-EdenUniverseBuilder-pid-13986-05A20F78000711160036034CD4F91068/minidump.dmp')
-[2018.07.22-07.54.01:989][  0]CrashReportClientLog: CompressAndSendData compressing 13509 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/crashinfo-EdenUniverseBuilder-pid-13986-05A20F78000711160036034CD4F91068/CrashContext.runtime-xml')
-[2018.07.22-07.54.01:989][  0]CrashReportClientLog: CompressAndSendData compressing 97716 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/crashinfo-EdenUniverseBuilder-pid-13986-05A20F78000711160036034CD4F91068/EdenUniverseBuilder.log')
-[2018.07.22-07.54.01:989][  0]CrashReportClientLog: CompressAndSendData compressing 2178 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/crashinfo-EdenUniverseBuilder-pid-13986-05A20F78000711160036034CD4F91068/Diagnostics.txt')
-[2018.07.22-07.54.02:024][  0]LogInit: Using libcurl 7.57.0
-[2018.07.22-07.54.02:024][  0]LogInit:  - built for x86_64-pc-linux-gnu
-[2018.07.22-07.54.02:024][  0]LogInit:  - supports SSL with OpenSSL/1.0.2h
-[2018.07.22-07.54.02:024][  0]LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
-[2018.07.22-07.54.02:024][  0]LogInit:  - other features:
-[2018.07.22-07.54.02:024][  0]LogInit:      CURL_VERSION_SSL
-[2018.07.22-07.54.02:024][  0]LogInit:      CURL_VERSION_LIBZ
-[2018.07.22-07.54.02:024][  0]LogInit:      CURL_VERSION_IPV6
-[2018.07.22-07.54.02:024][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2018.07.22-07.54.02:024][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2018.07.22-07.54.02:024][  0]LogInit:      CURL_VERSION_TLSAUTH_SRP
-[2018.07.22-07.54.02:024][  0]LogInit:  Libcurl: checking if '/etc/pki/tls/certs/ca-bundle.crt' exists
-[2018.07.22-07.54.02:024][  0]LogInit:  Libcurl: checking if '/etc/ssl/certs/ca-certificates.crt' exists
-[2018.07.22-07.54.02:025][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2018.07.22-07.54.02:025][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2018.07.22-07.54.02:025][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2018.07.22-07.54.02:025][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2018.07.22-07.54.02:025][  0]LogInit:  - CertBundlePath = /etc/ssl/certs/ca-certificates.crt  - Libcurl will set CURLOPT_CAINFO to it
-[2018.07.22-07.54.02:025][  0]LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
-[2018.07.22-07.54.02:025][  0]LogInit:  - LocalHostAddr = Default
-[2018.07.22-07.54.02:025][  0]CrashReportClientLog: Sending HTTP request: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?AppID=CrashReporter&AppVersion=4.19.2-0%2B%2B%2BUE4%2BRelease-4.19&AppEnvironment=Release&UploadType=crashreports&UserID=00024c9b19071102002b02c5bc0e9c37%7C%7C70ff3a3413454a2aab538658307c7e19
-[2018.07.22-07.54.03:529][  0]CrashReportClientLog: OnProcessRequestComplete(), State=SendingFiles bSucceeded=1
-[2018.07.22-07.54.03:529][  0]CrashReportClientLog: State change from SendingFiles to SendingFiles
-[2018.07.22-07.54.03:529][  0]CrashReportClientLog: All uploads done
-[2018.07.22-07.54.03:529][  0]CrashReportClientLog: State change from SendingFiles to Finished
-[2018.07.22-07.54.03:998][  0]LogLinux: FLinuxPlatformMisc::RequestExit(0)
-[2018.07.22-07.54.03:998][  0]LogGenericPlatformMisc: FPlatformMisc::RequestExit(0)
-[2018.07.22-07.54.04:030][  0]CrashReportClientLog: Final state (Receiver) = Finished
-[2018.07.22-07.54.04:030][  0]CrashReportClientLog: Final state (Receiver) = Unknown UploadState value
-[2018.07.22-07.54.04:030][  0]LogExit: Preparing to exit.
-[2018.07.22-07.54.04:032][  0]LogExit: Object subsystem successfully closed.
-[2018.07.22-07.54.04:036][  0]LogModuleManager: Shutting down and abandoning module HTTP (10)
-[2018.07.22-07.54.04:043][  0]LogModuleManager: Shutting down and abandoning module SSL (9)
-[2018.07.22-07.54.04:044][  0]LogModuleManager: Shutting down and abandoning module CrashDebugHelper (6)
-[2018.07.22-07.54.04:044][  0]LogModuleManager: Shutting down and abandoning module CoreUObject (4)
-[2018.07.22-07.54.04:044][  0]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2018.07.22-07.54.04:045][  0]LogExit: Exiting.
-[2018.07.22-07.54.04:046][  0]Log file closed, 07/22/18 17:54:04
+[2018.08.01-10.18.24:118][  0]LogInit: Linux hardware info:
+[2018.08.01-10.18.24:118][  0]LogInit:  - we are the first instance of this executable
+[2018.08.01-10.18.24:118][  0]LogInit:  - this process' id (pid) is 29687, parent process' id (ppid) is 28158
+[2018.08.01-10.18.24:118][  0]LogInit:  - we are not running under debugger
+[2018.08.01-10.18.24:118][  0]LogInit:  - machine network name is 'Axius'
+[2018.08.01-10.18.24:119][  0]LogInit:  - user name is 'josephtheengineer' (josephtheengineer)
+[2018.08.01-10.18.24:119][  0]LogInit:  - we're logged in locally
+[2018.08.01-10.18.24:119][  0]LogInit:  - we're running with rendering
+[2018.08.01-10.18.24:119][  0]LogInit:  - CPU: GenuineIntel 'Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz' (signature: 0x906E9)
+[2018.08.01-10.18.24:119][  0]LogInit:  - Number of physical cores available for the process: 4
+[2018.08.01-10.18.24:119][  0]LogInit:  - Number of logical cores available for the process: 4
+[2018.08.01-10.18.24:119][  0]LogInit:  - Cache line size: 64
+[2018.08.01-10.18.24:119][  0]LogInit:  - Memory allocator used: binned2
+[2018.08.01-10.18.24:119][  0]LogLinux: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_REALTIME will be used.
+[2018.08.01-10.18.24:119][  0]LogInit: Linux-specific commandline switches:
+[2018.08.01-10.18.24:119][  0]LogInit:  -nodwarf (currently OFF): suppress parsing of DWARF debug info (callstacks will be generated faster, but won't have line numbers)
+[2018.08.01-10.18.24:119][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2018.08.01-10.18.24:119][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2018.08.01-10.18.24:119][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2018.08.01-10.18.24:119][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2018.08.01-10.18.24:119][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2018.08.01-10.18.24:119][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2018.08.01-10.18.24:119][  0]LogInit:  - Physical RAM available (not considering process quota): 8 GB (7943 MB, 8134476 KB, 8329703424 bytes)
+[2018.08.01-10.18.24:120][  0]LogUObjectArray: 149 objects as part of root set at end of initial load.
+[2018.08.01-10.18.24:120][  0]LogUObjectAllocator: 22184 out of 0 bytes used by permanent object pool.
+[2018.08.01-10.18.24:120][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.08.01-10.18.24:120][  0]LogInit: Using OS detected language ().
+[2018.08.01-10.18.24:120][  0]LogInit: Using OS detected locale ().
+[2018.08.01-10.18.24:120][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the language.
+[2018.08.01-10.18.24:120][  0]LogTextLocalizationManager: No localization for '' exists, so 'en' will be used for the locale.
+[2018.08.01-10.18.24:122][  0]CrashReportClientLog: CrashReportClientVersion=1.0
+[2018.08.01-10.18.24:122][  0]CrashReportClientLog: CrashReportReceiver disabled
+[2018.08.01-10.18.24:122][  0]CrashReportClientLog: DataRouterUrl: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data
+[2018.08.01-10.18.24:123][  0]CrashReportClientLog: Initial state = Unknown UploadState value
+[2018.08.01-10.18.24:123][  0]CrashReportClientLog: Initial state = Unknown UploadState value
+[2018.08.01-10.18.24:123][  0]LogCrashDebugHelper: DepotName: //UE4/Release-4.19
+[2018.08.01-10.18.24:123][  0]LogCrashDebugHelper: BuiltFromCL: 0
+[2018.08.01-10.18.24:123][  0]LogCrashDebugHelper: EngineVersion: 4.19.2-0+++UE4+Release-4.19
+[2018.08.01-10.18.24:123][  0]LogCrashDebugHelper: BuildVersion: ++UE4+Release-4.19-CL-0
+[2018.08.01-10.18.24:123][  0]LogCrashDebugHelper: Warning: CrashDebugHelperConfig invalid
+[2018.08.01-10.18.24:123][  0]LogCrashDebugHelper: Warning: PDB Cache disabled
+[2018.08.01-10.18.25:093][  0]CrashReportClientLog: Got 5 pending files to upload from 'ensureinfo-EdenUniverseBuilder-pid-28158-0C9D583C18081401001200227D6539D9'
+[2018.08.01-10.18.25:093][  0]CrashReportClientLog: State change from Ready to SendingFiles
+[2018.08.01-10.18.25:093][  0]CrashReportClientLog: CompressAndSendData have 5 pending files
+[2018.08.01-10.18.25:093][  0]CrashReportClientLog: CompressAndSendData compressing 108 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/ensureinfo-EdenUniverseBuilder-pid-28158-0C9D583C18081401001200227D6539D9/CrashReportClient.ini')
+[2018.08.01-10.18.25:093][  0]CrashReportClientLog: CompressAndSendData compressing 4 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/ensureinfo-EdenUniverseBuilder-pid-28158-0C9D583C18081401001200227D6539D9/minidump.dmp')
+[2018.08.01-10.18.25:093][  0]CrashReportClientLog: CompressAndSendData compressing 3501 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/ensureinfo-EdenUniverseBuilder-pid-28158-0C9D583C18081401001200227D6539D9/CrashContext.runtime-xml')
+[2018.08.01-10.18.25:093][  0]CrashReportClientLog: CompressAndSendData compressing 75524 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/ensureinfo-EdenUniverseBuilder-pid-28158-0C9D583C18081401001200227D6539D9/EdenUniverseBuilder.log')
+[2018.08.01-10.18.25:093][  0]CrashReportClientLog: CompressAndSendData compressing 2339 bytes ('/home/josephtheengineer/workspace/EdenProject/Engine/Saved/Crashes/ensureinfo-EdenUniverseBuilder-pid-28158-0C9D583C18081401001200227D6539D9/Diagnostics.txt')
+[2018.08.01-10.18.25:101][  0]LogInit: Using libcurl 7.57.0
+[2018.08.01-10.18.25:101][  0]LogInit:  - built for x86_64-pc-linux-gnu
+[2018.08.01-10.18.25:101][  0]LogInit:  - supports SSL with OpenSSL/1.0.2h
+[2018.08.01-10.18.25:101][  0]LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+[2018.08.01-10.18.25:101][  0]LogInit:  - other features:
+[2018.08.01-10.18.25:101][  0]LogInit:      CURL_VERSION_SSL
+[2018.08.01-10.18.25:101][  0]LogInit:      CURL_VERSION_LIBZ
+[2018.08.01-10.18.25:101][  0]LogInit:      CURL_VERSION_IPV6
+[2018.08.01-10.18.25:101][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2018.08.01-10.18.25:101][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2018.08.01-10.18.25:101][  0]LogInit:      CURL_VERSION_TLSAUTH_SRP
+[2018.08.01-10.18.25:102][  0]LogInit:  Libcurl: checking if '/etc/pki/tls/certs/ca-bundle.crt' exists
+[2018.08.01-10.18.25:102][  0]LogInit:  Libcurl: checking if '/etc/ssl/certs/ca-certificates.crt' exists
+[2018.08.01-10.18.25:102][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2018.08.01-10.18.25:102][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2018.08.01-10.18.25:102][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2018.08.01-10.18.25:102][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2018.08.01-10.18.25:102][  0]LogInit:  - CertBundlePath = /etc/ssl/certs/ca-certificates.crt  - Libcurl will set CURLOPT_CAINFO to it
+[2018.08.01-10.18.25:102][  0]LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+[2018.08.01-10.18.25:102][  0]LogInit:  - LocalHostAddr = Default
+[2018.08.01-10.18.25:102][  0]CrashReportClientLog: Sending HTTP request: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?AppID=CrashReporter&AppVersion=4.19.2-0%2B%2B%2BUE4%2BRelease-4.19&AppEnvironment=Release&UploadType=crashreports&UserID=00024c9b19071102002b02c5bc0e9c37%7C%7C70ff3a3413454a2aab538658307c7e19
+[2018.08.01-10.18.26:495][  0]CrashReportClientLog: OnProcessRequestComplete(), State=SendingFiles bSucceeded=1
+[2018.08.01-10.18.26:495][  0]CrashReportClientLog: State change from SendingFiles to SendingFiles
+[2018.08.01-10.18.26:495][  0]CrashReportClientLog: All uploads done
+[2018.08.01-10.18.26:495][  0]CrashReportClientLog: State change from SendingFiles to Finished
+[2018.08.01-10.18.27:097][  0]LogLinux: FLinuxPlatformMisc::RequestExit(0)
+[2018.08.01-10.18.27:097][  0]LogGenericPlatformMisc: FPlatformMisc::RequestExit(0)
+[2018.08.01-10.18.27:130][  0]CrashReportClientLog: Final state (Receiver) = Finished
+[2018.08.01-10.18.27:130][  0]CrashReportClientLog: Final state (Receiver) = Unknown UploadState value
+[2018.08.01-10.18.27:130][  0]LogExit: Preparing to exit.
+[2018.08.01-10.18.27:130][  0]LogExit: Object subsystem successfully closed.
+[2018.08.01-10.18.27:131][  0]LogModuleManager: Shutting down and abandoning module HTTP (10)
+[2018.08.01-10.18.27:133][  0]LogModuleManager: Shutting down and abandoning module SSL (9)
+[2018.08.01-10.18.27:134][  0]LogModuleManager: Shutting down and abandoning module CrashDebugHelper (6)
+[2018.08.01-10.18.27:134][  0]LogModuleManager: Shutting down and abandoning module CoreUObject (4)
+[2018.08.01-10.18.27:134][  0]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2018.08.01-10.18.27:136][  0]LogExit: Exiting.
+[2018.08.01-10.18.27:137][  0]Log file closed, 08/01/18 20:18:27
