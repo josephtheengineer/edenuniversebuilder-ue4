@@ -24,25 +24,8 @@ void AWorldConverter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
-
-	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
-
-	GetWorldName(bytes);
-
-	// Nobody really knows how this works
-	int chunkPointer = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
-
-	CreateChunkMap(bytes, chunkPointer);
-
-	CreateMesh();
-
-	//FTransform newT = GetTransform();
-	//newT.SetLocation(FVector(0,0,0));
-
-	//dirt->AddInstance(newT);
-
-	//GetChunkInfo(chunkAddress[1]);
+	LoadChunk();
+	//RunPrimeTask(20000);
 }
 
 //==============================================================================
@@ -142,100 +125,7 @@ void AWorldConverter::CreateChunkMap(vector <int> worldData, int chunkPointer)
 // AWorldConverter::GetChunkInfo() | Gets block info for specific blocks
 //==============================================================================
 void AWorldConverter::GetChunkInfo(int chunk)
-{/*
-	blockData EdenBlockData[] = {
-	 //ID  Name              Top              Bottom              Front              Back              Right              Left
-//	{   0, "air",         	 null,    				null,           		null,     				 null,    				 null,     				  null              },
-	{   1, bedrock,        MAT_Bedrock,    	MAT_Bedrock,       	MAT_Bedrock,     	 MAT_Bedrock,    	 MAT_Bedrock,       MAT_Bedrock       },
-	{   2, stone,          MAT_Stone,    		MAT_Stone,          MAT_Stone,     		 MAT_Stone,    		 MAT_Stone,     		MAT_Stone         },
-	{   3, dirt,           MAT_Dirt,    		MAT_Dirt,           MAT_Dirt,     		 MAT_Dirt,         MAT_Dirt,     			MAT_Dirt          },
-	{   4, sand,           MAT_Sand,    		MAT_Sand,           MAT_Sand,     		 MAT_Sand,    		 MAT_Sand,     			MAT_Sand          },
-	{   5, leaves,         MAT_Leaves,    	MAT_Leaves,         MAT_Leaves,     	 MAT_Leaves,    	 MAT_Leaves,     		MAT_Leaves        },
-	{   6, trunk,          MAT_TrunkTop,    MAT_TrunkTop,       MAT_TrunkSide,     MAT_TrunkSide,    MAT_TrunkSide,     MAT_TrunkSide     },
-	{   7, wood,           MAT_Wood,    		MAT_Wood,           MAT_Wood,     		 MAT_Wood,    		 MAT_Wood,     			MAT_Wood          },
-	{   8, grass,          MAT_GrassTop,    MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
-	{   9, TNT,            MAT_TNTTop,    	MAT_TNTTop,         MAT_TNTSide,     	 MAT_TNTSide,      MAT_TNTSide,       MAT_TNTSide       },
-	{  10, rock,           MAT_Rock,        MAT_Rock,           MAT_Rock,          MAT_Rock,         MAT_Rock,          MAT_Rock          },
-	{  11, weeds,          MAT_WeedsTop,    MAT_Dirt,           MAT_WeedsSide,     MAT_WeedsSide,    MAT_WeedsSide,     MAT_WeedsSide     },
-	{  12, flowers,        MAT_FlowersTop,  MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
-	{  13, brick,          MAT_Brick,       MAT_Brick,          MAT_Brick,         MAT_Brick,        MAT_Brick,         MAT_Brick         },
-	{  14, slate,          MAT_Roof,        MAT_Roof,           MAT_Roof,          MAT_Roof,         MAT_Roof,          MAT_Roof          },
-	{  15, ice,          	 MAT_Ice,    			MAT_Ice,            MAT_Ice,     			 MAT_Ice,          MAT_Ice,           MAT_Ice           },
-	{  16, wallpaper,      MAT_Wallpaper,   MAT_Wallpaper,      MAT_Wallpaper,     MAT_Wallpaper,    MAT_Wallpaper,     MAT_Wallpaper     },
-	{  17, bouncy,         MAT_Trampoline,  MAT_Trampoline,     MAT_Trampoline,    MAT_Trampoline,   MAT_Trampoline,    MAT_Trampoline    },
-	{  18, ladder,         MAT_Wood,    	  MAT_Wood,           MAT_LadderSide,    MAT_LadderSide,   MAT_LadderSide,    MAT_LadderSide    },
-	{  19, cloud,          MAT_Cloud,    		MAT_Cloud,          MAT_Cloud,     		 MAT_Cloud,    		 MAT_Cloud,     		MAT_Cloud         },
-	{  20, water,          MAT_Water,    		MAT_Water,          MAT_Water,     		 MAT_Water,    		 MAT_Water,     		MAT_Water         },
-	{  21, fence,          MAT_Fence,    		MAT_Fence,          MAT_Fence,     		 MAT_Fence,    		 MAT_Fence,     		MAT_Fence         },
-	{  22, ivy,            MAT_Vines,    		MAT_Vines,          MAT_Vines,     		 MAT_Vines,    		 MAT_Vines,     		MAT_Vines         },
-	{  23, lava,           MAT_Lava,    		MAT_Lava,           MAT_Lava,     		 MAT_Lava,    		 MAT_Lava,     		  MAT_Lava          },
-	{  56, shingles,       MAT_Roof,    		MAT_Roof,           MAT_Roof,     		 MAT_Roof,    		 MAT_Roof,     		  MAT_Roof          },
-	{  57, tile,           MAT_Tiles,    		MAT_Tiles,          MAT_Tiles,     		 MAT_Tiles,    		 MAT_Tiles,     		MAT_Tiles         },
-	{  58, glass,          MAT_Glass,    		MAT_Glass,          MAT_Glass,     		 MAT_Glass,    		 MAT_Glass,     		MAT_Glass         },
-	{  65, fireworks,      MAT_TNTTop,    	MAT_TNTTop,         MAT_FireworksSide, MAT_FireworksSide,MAT_FireworksSide, MAT_FireworksSide },
-	{  71, transcube,     MAT_TNTTop,    	MAT_TNTTop,         MAT_BlockTNTSide,  MAT_BlockTNTSide, MAT_BlockTNTSide,  MAT_BlockTNTSide  },
-	{  72, light,          MAT_Light,    		MAT_Light,          MAT_Light,     		 MAT_Light,    		 MAT_Light,     		MAT_Light         },
-	{  73, newflower,     MAT_FlowersTop,  MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
-	{  74, steel,          MAT_Steel,    		MAT_Steel,          MAT_Steel,     		 MAT_Steel,    		 MAT_Steel,     		MAT_Steel         }
-	};
-
-
-	UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
-	// Whatever this does
-	int baseX = (chunksX[chunk] - worldAreaX) * 16, baseY = (chunksY[chunk] - worldAreaY) * 16;
-	FTransform newTrans = GetTransform();;
-
-	for (int baseHeight = 0; baseHeight < 4; baseHeight++)
-	{
-		for (int x = 16; x > 0; x--)
-		{
-			for (int y = 16; y > 0; y--)
-			{
-				for (int z = 16; z > 0; z--)
-				{
-				// Get block id
-				vector<int> id;
-				id.push_back(baseX + x);
-				id.push_back(baseY + y);
-				id.push_back(baseHeight * 16 + z);
-				id.push_back(0);
-
-				blocks[id] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-				chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
-				chunkFinal.Add(FString::FromInt(bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]));
-
-				int blockId = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-
-				int newX = x * 100;
-				int newY = y * 100;
-				int newZ = z * 100;
-
-				newTrans.SetLocation(FVector(newX, newY, newZ));
-
-				//UE_LOG(LogTemp,Log,TEXT("Attempting to spawn block ID: %d"), blockId);
-
-				UE_LOG(LogTemp,Log,TEXT("X: %d"), newX);
-				UE_LOG(LogTemp,Log,TEXT("Y: %d"), newY);
-				UE_LOG(LogTemp,Log,TEXT("Z: %d"), newZ);
-
-				if (blockId <= 23 && blockId >= 1)
-				{
-					dirt->AddInstance(newTrans);
-					//EdenBlockData[blockId].name->AddInstance(newTrans);
-				}
-
-				// Get block color
-				vector<int> color;
-				color.push_back(baseX + x);
-				color.push_back(baseY + y);
-				color.push_back(baseHeight * 16 + z);
-				color.push_back(1);
-
-				blocks[color] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
-				}
-			}
-		}
-	}*/
+{
 }
 
 //==============================================================================
@@ -243,49 +133,12 @@ void AWorldConverter::GetChunkInfo(int chunk)
 //==============================================================================
 void AWorldConverter::LoadBlocks()
 {
-	//blockData EdenBlockData[] = {
-	/* ID  Name              Top              Bottom              Front              Back              Right              Left              */
-//	{   0, "air",         	 null,    				null,           		null,     				 null,    				 null,     				  null              },
-/*	{   1, bedrock,        MAT_Bedrock,    	MAT_Bedrock,       	MAT_Bedrock,     	 MAT_Bedrock,    	 MAT_Bedrock,       MAT_Bedrock       },
-	{   2, stone,          MAT_Stone,    		MAT_Stone,          MAT_Stone,     		 MAT_Stone,    		 MAT_Stone,     		MAT_Stone         },
-	{   3, dirt,           MAT_Dirt,    		MAT_Dirt,           MAT_Dirt,     		 MAT_Dirt,         MAT_Dirt,     			MAT_Dirt          },
-	{   4, sand,           MAT_Sand,    		MAT_Sand,           MAT_Sand,     		 MAT_Sand,    		 MAT_Sand,     			MAT_Sand          },
-	{   5, leaves,         MAT_Leaves,    	MAT_Leaves,         MAT_Leaves,     	 MAT_Leaves,    	 MAT_Leaves,     		MAT_Leaves        },
-	{   6, trunk,          MAT_TrunkTop,    MAT_TrunkTop,       MAT_TrunkSide,     MAT_TrunkSide,    MAT_TrunkSide,     MAT_TrunkSide     },
-	{   7, wood,           MAT_Wood,    		MAT_Wood,           MAT_Wood,     		 MAT_Wood,    		 MAT_Wood,     			MAT_Wood          },
-	{   8, grass,          MAT_GrassTop,    MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
-	{   9, TNT,            MAT_TNTTop,    	MAT_TNTTop,         MAT_TNTSide,     	 MAT_TNTSide,      MAT_TNTSide,       MAT_TNTSide       },
-	{  10, rock,           MAT_Rock,        MAT_Rock,           MAT_Rock,          MAT_Rock,         MAT_Rock,          MAT_Rock          },
-	{  11, weeds,          MAT_WeedsTop,    MAT_Dirt,           MAT_WeedsSide,     MAT_WeedsSide,    MAT_WeedsSide,     MAT_WeedsSide     },
-	{  12, flowers,        MAT_FlowersTop,  MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
-	{  13, brick,          MAT_Brick,       MAT_Brick,          MAT_Brick,         MAT_Brick,        MAT_Brick,         MAT_Brick         },
-	{  14, slate,          MAT_Roof,        MAT_Roof,           MAT_Roof,          MAT_Roof,         MAT_Roof,          MAT_Roof          },
-	{  15, ice,          	 MAT_Ice,    			MAT_Ice,            MAT_Ice,     			 MAT_Ice,          MAT_Ice,           MAT_Ice           },
-	{  16, wallpaper,      MAT_Wallpaper,   MAT_Wallpaper,      MAT_Wallpaper,     MAT_Wallpaper,    MAT_Wallpaper,     MAT_Wallpaper     },
-	{  17, bouncy,         MAT_Trampoline,  MAT_Trampoline,     MAT_Trampoline,    MAT_Trampoline,   MAT_Trampoline,    MAT_Trampoline    },
-	{  18, ladder,         MAT_Wood,    	  MAT_Wood,           MAT_LadderSide,    MAT_LadderSide,   MAT_LadderSide,    MAT_LadderSide    },
-	{  19, cloud,          MAT_Cloud,    		MAT_Cloud,          MAT_Cloud,     		 MAT_Cloud,    		 MAT_Cloud,     		MAT_Cloud         },
-	{  20, water,          MAT_Water,    		MAT_Water,          MAT_Water,     		 MAT_Water,    		 MAT_Water,     		MAT_Water         },
-	{  21, fence,          MAT_Fence,    		MAT_Fence,          MAT_Fence,     		 MAT_Fence,    		 MAT_Fence,     		MAT_Fence         },
-	{  22, ivy,            MAT_Vines,    		MAT_Vines,          MAT_Vines,     		 MAT_Vines,    		 MAT_Vines,     		MAT_Vines         },
-	{  23, lava,           MAT_Lava,    		MAT_Lava,           MAT_Lava,     		 MAT_Lava,    		 MAT_Lava,     		  MAT_Lava          },
-	{  56, shingles,       MAT_Roof,    		MAT_Roof,           MAT_Roof,     		 MAT_Roof,    		 MAT_Roof,     		  MAT_Roof          },
-	{  57, tile,           MAT_Tiles,    		MAT_Tiles,          MAT_Tiles,     		 MAT_Tiles,    		 MAT_Tiles,     		MAT_Tiles         },
-	{  58, glass,          MAT_Glass,    		MAT_Glass,          MAT_Glass,     		 MAT_Glass,    		 MAT_Glass,     		MAT_Glass         },
-	{  65, fireworks,      MAT_TNTTop,    	MAT_TNTTop,         MAT_FireworksSide, MAT_FireworksSide,MAT_FireworksSide, MAT_FireworksSide },
-	{  71, transcube,     MAT_TNTTop,    	MAT_TNTTop,         MAT_BlockTNTSide,  MAT_BlockTNTSide, MAT_BlockTNTSide,  MAT_BlockTNTSide  },
-	{  72, light,          MAT_Light,    		MAT_Light,          MAT_Light,     		 MAT_Light,    		 MAT_Light,     		MAT_Light         },
-	{  73, newflower,     MAT_FlowersTop,  MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
-	{  74, steel,          MAT_Steel,    		MAT_Steel,          MAT_Steel,     		 MAT_Steel,    		 MAT_Steel,     		MAT_Steel         }
-};*/
-
-	//UE_LOG(LogTemp,Log,TEXT("BLOCK DATA: %d"), EdenBlockData[0].id);
 }
 
 //==============================================================================
 // AWorldConverter::CreateMesh() | Creates the mesh for the current chunk
 //==============================================================================
-void AWorldConverter::CreateMesh()
+void AWorldConverter::CreateMesh(int totalRenderDistance)
 {
 	FTransform newT = GetTransform();
 
@@ -351,7 +204,7 @@ void AWorldConverter::CreateMesh()
 
 	}
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < totalRenderDistance; i++)
 	{
 		int chunk = chunkAddress[i];
 		UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
@@ -429,13 +282,85 @@ void AWorldConverter::CreateMesh()
 	}
 
 	UE_LOG(LogTemp,Log,TEXT("Done!"));
-/*
-	FTransform newT = GetTransform();
-	newT.SetLocation(FVector(0,0,0));
-	UE_LOG(LogTemp,Log,TEXT("Created vector. Spawing block..."));
+}
 
-	AActor::FindComponentByClass<UInstancedStaticMeshComponent>()->AddInstance(newT);
+void AWorldConverter::LoadChunk(){
+	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
 
-	TArray<UActorComponent*> currentICs = this->GetInstanceComponents();
-	AActor::FindComponentByClass<UInstancedStaticMeshComponent>()->AddInstance(newT);*/
+	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
+
+	GetWorldName(bytes);
+
+	// Nobody really knows how this works
+	int chunkPointer = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
+
+	CreateChunkMap(bytes, chunkPointer);
+
+	CreateMesh(30);
+}
+
+// ========================= MULTI-THREADING ==========================
+
+void AWorldConverter::RunPrimeTask(int32 NumPrimes)
+{
+	(new FAutoDeleteAsyncTask<PrimeSearchTask>(NumPrimes))->StartBackgroundTask();
+}
+
+void AWorldConverter::RunPrimeTaskOnMain(int32 NumPrimes)
+{
+	PrimeSearchTask* task = new PrimeSearchTask(NumPrimes);
+
+	task -> DoWorkOnMain();
+
+	delete task;
+}
+
+PrimeSearchTask::PrimeSearchTask(int32 _primeCount)
+{
+	PrimeCount = _primeCount;
+}
+
+PrimeSearchTask::~PrimeSearchTask()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Test finished"));
+}
+
+void PrimeSearchTask::DoWork()
+{/*
+	int primesFound = 0;
+	int currentTestNumber = 2;
+
+	while(primesFound < PrimeCount)
+	{
+		bool isPrime = true;
+
+		for (int i = 2; i < currentTestNumber / 2; i++)
+		{
+			if (currentTestNumber % i == 0)
+			{
+				isPrime = false;
+				break;
+			}
+		}
+
+		if(isPrime)
+		{
+			primesFound++;
+
+			if (primesFound % 1000 == 0)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("Primes Found: %i"), primesFound);
+			}
+		}
+
+		currentTestNumber++;
+	}*/
+
+	//AWorldConverter mainClass;
+	//mainClass.LoadChunk();
+}
+
+void PrimeSearchTask::DoWorkOnMain()
+{
+	DoWork();
 }

@@ -56,6 +56,8 @@ public:
 	// Functions
 	//============================================================================
 
+	void LoadChunk();
+
 	vector <int> OpenFile(const char *filename);
 
 	FString GetWorldName(vector <int> bytes);
@@ -70,7 +72,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Asset Loading")
 	UMaterialInterface * LoadMaterialReference(const FString& materialPath);
 
-	void CreateMesh();
+	void CreateMesh(int totalRenderDistance);
 
 	//============================================================================
 	// Variables
@@ -309,4 +311,29 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	UStaticMesh* SMAsset_Cube;
+
+	// ======================== MULTI-THREADING ========================
+
+	void RunPrimeTask(int32 NumPrimes);
+
+	void RunPrimeTaskOnMain(int32 NumPrimes);
+};
+
+class PrimeSearchTask : public FNonAbandonableTask
+{
+public:
+	PrimeSearchTask(int32 _primeCount);
+
+	~PrimeSearchTask();
+
+	//Required by UE4
+	FORCEINLINE TStatId GetStatId() const
+	{
+		RETURN_QUICK_DECLARE_CYCLE_STAT(PrimeSearchTask, STATGROUP_ThreadPoolAsyncTasks);
+	}
+
+	int32 PrimeCount;
+
+	void DoWork();
+	void DoWorkOnMain();
 };
