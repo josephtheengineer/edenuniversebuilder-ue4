@@ -8,36 +8,13 @@
 #include "ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UMaterialInterface;
 #ifdef EDENUNIVERSEBUILDER_WorldConverter_generated_h
 #error "WorldConverter.generated.h already included, missing '#pragma once' in WorldConverter.h"
 #endif
 #define EDENUNIVERSEBUILDER_WorldConverter_generated_h
 
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_19_RPC_WRAPPERS \
- \
-	DECLARE_FUNCTION(execLoadMaterialReference) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_materialPath); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UMaterialInterface**)Z_Param__Result=P_THIS->LoadMaterialReference(Z_Param_materialPath); \
-		P_NATIVE_END; \
-	}
-
-
-#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execLoadMaterialReference) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_materialPath); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UMaterialInterface**)Z_Param__Result=P_THIS->LoadMaterialReference(Z_Param_materialPath); \
-		P_NATIVE_END; \
-	}
-
-
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_19_RPC_WRAPPERS
+#define Engine_Source_EdenUniverseBuilder_WorldConverter_h_19_RPC_WRAPPERS_NO_PURE_DECLS
 #define Engine_Source_EdenUniverseBuilder_WorldConverter_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWorldConverter(); \

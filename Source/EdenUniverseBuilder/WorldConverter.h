@@ -69,8 +69,8 @@ public:
 	void LoadBlocks();
 
 	// Load a material from the corresponding path
-	UFUNCTION(BlueprintCallable, Category = "Asset Loading")
-	UMaterialInterface * LoadMaterialReference(const FString& materialPath);
+/*	UFUNCTION(BlueprintCallable, Category = "Asset Loading")
+	UMaterialInterface * LoadMaterialReference(const FString& materialPath);*/
 
 	void CreateMesh(int totalRenderDistance);
 

@@ -143,26 +143,26 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 	FTransform newT = GetTransform();
 
 	blockData EdenBlockData[] = {
-	/* ID  Name              Top              Bottom              Front              Back              Right              Left              */
+	/* ID  Name              Front              Left              Right              Back              Top              Bottom              */
 	{   0, air,            MAT_Dirt,    		MAT_Dirt,           MAT_Dirt,     		 MAT_Dirt,    		 MAT_Dirt,     			MAT_Dirt          },
 	{   1, bedrock,        MAT_Bedrock,    	MAT_Bedrock,       	MAT_Bedrock,     	 MAT_Bedrock,    	 MAT_Bedrock,       MAT_Bedrock       },
 	{   2, stone,          MAT_Stone,    		MAT_Stone,          MAT_Stone,     		 MAT_Stone,    		 MAT_Stone,     		MAT_Stone         },
 	{   3, dirt,           MAT_Dirt,    		MAT_Dirt,           MAT_Dirt,     		 MAT_Dirt,         MAT_Dirt,     			MAT_Dirt          },
 	{   4, sand,           MAT_Sand,    		MAT_Sand,           MAT_Sand,     		 MAT_Sand,    		 MAT_Sand,     			MAT_Sand          },
 	{   5, leaves,         MAT_Leaves,    	MAT_Leaves,         MAT_Leaves,     	 MAT_Leaves,    	 MAT_Leaves,     		MAT_Leaves        },
-	{   6, trunk,          MAT_TrunkTop,    MAT_TrunkTop,       MAT_TrunkSide,     MAT_TrunkSide,    MAT_TrunkSide,     MAT_TrunkSide     },
+	{   6, trunk,          MAT_TrunkSide,   MAT_TrunkSide,      MAT_TrunkSide,     MAT_TrunkSide,    MAT_TrunkTop,      MAT_TrunkTop      },
 	{   7, wood,           MAT_Wood,    		MAT_Wood,           MAT_Wood,     		 MAT_Wood,    		 MAT_Wood,     			MAT_Wood          },
-	{   8, grass,          MAT_GrassTop,    MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
-	{   9, TNT,            MAT_TNTTop,    	MAT_TNTTop,         MAT_TNTSide,     	 MAT_TNTSide,      MAT_TNTSide,       MAT_TNTSide       },
+	{   8, grass,          MAT_GrassSide,   MAT_GrassSide,      MAT_GrassSide,     MAT_GrassSide,    MAT_GrassTop,      MAT_Dirt          },
+	{   9, TNT,            MAT_TNTSide,    	MAT_TNTSide,        MAT_TNTSide,     	 MAT_TNTSide,      MAT_TNTTop,        MAT_TNTTop        },
 	{  10, rock,           MAT_Rock,        MAT_Rock,           MAT_Rock,          MAT_Rock,         MAT_Rock,          MAT_Rock          },
-	{  11, weeds,          MAT_WeedsTop,    MAT_Dirt,           MAT_WeedsSide,     MAT_WeedsSide,    MAT_WeedsSide,     MAT_WeedsSide     },
-	{  12, flowers,        MAT_FlowersTop,  MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
+	{  11, weeds,          MAT_WeedsSide,   MAT_WeedsSide,      MAT_WeedsSide,     MAT_WeedsSide,    MAT_WeedsTop,      MAT_WeedsTop      },
+	{  12, flowers,        MAT_GrassSide,   MAT_GrassSide,      MAT_GrassSide,     MAT_GrassSide,    MAT_FlowersTop,    MAT_FlowersTop    },
 	{  13, brick,          MAT_Brick,       MAT_Brick,          MAT_Brick,         MAT_Brick,        MAT_Brick,         MAT_Brick         },
 	{  14, slate,          MAT_Roof,        MAT_Roof,           MAT_Roof,          MAT_Roof,         MAT_Roof,          MAT_Roof          },
 	{  15, ice,          	 MAT_Ice,    			MAT_Ice,            MAT_Ice,     			 MAT_Ice,          MAT_Ice,           MAT_Ice           },
 	{  16, wallpaper,      MAT_Wallpaper,   MAT_Wallpaper,      MAT_Wallpaper,     MAT_Wallpaper,    MAT_Wallpaper,     MAT_Wallpaper     },
 	{  17, bouncy,         MAT_Trampoline,  MAT_Trampoline,     MAT_Trampoline,    MAT_Trampoline,   MAT_Trampoline,    MAT_Trampoline    },
-	{  18, ladder,         MAT_Wood,    	  MAT_Wood,           MAT_LadderSide,    MAT_LadderSide,   MAT_LadderSide,    MAT_LadderSide    },
+	{  18, ladder,         MAT_LadderSide,  MAT_LadderSide,     MAT_LadderSide,    MAT_LadderSide,   MAT_Wood,          MAT_Wood          },
 	{  19, cloud,          MAT_Cloud,    		MAT_Cloud,          MAT_Cloud,     		 MAT_Cloud,    		 MAT_Cloud,     		MAT_Cloud         },
 	{  20, water,          MAT_Water,    		MAT_Water,          MAT_Water,     		 MAT_Water,    		 MAT_Water,     		MAT_Water         },
 	{  21, fence,          MAT_Fence,    		MAT_Fence,          MAT_Fence,     		 MAT_Fence,    		 MAT_Fence,     		MAT_Fence         },
@@ -171,8 +171,8 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 	{  56, shingles,       MAT_Roof,    		MAT_Roof,           MAT_Roof,     		 MAT_Roof,    		 MAT_Roof,     		  MAT_Roof          },
 	{  57, tile,           MAT_Tiles,    		MAT_Tiles,          MAT_Tiles,     		 MAT_Tiles,    		 MAT_Tiles,     		MAT_Tiles         },
 	{  58, glass,          MAT_Glass,    		MAT_Glass,          MAT_Glass,     		 MAT_Glass,    		 MAT_Glass,     		MAT_Glass         },
-	{  65, fireworks,      MAT_TNTTop,    	MAT_TNTTop,         MAT_FireworksSide, MAT_FireworksSide,MAT_FireworksSide, MAT_FireworksSide },
-	{  71, transcube,      MAT_TNTTop,    	MAT_TNTTop,         MAT_BlockTNTSide,  MAT_BlockTNTSide, MAT_BlockTNTSide,  MAT_BlockTNTSide  },
+	{  65, fireworks,      MAT_FireworksSide,MAT_FireworksSide, MAT_FireworksSide, MAT_FireworksSide,MAT_TNTTop,        MAT_TNTTop        },
+	{  71, transcube,      MAT_BlockTNTSide,MAT_BlockTNTSide,   MAT_BlockTNTSide,  MAT_BlockTNTSide, MAT_TNTTop,        MAT_TNTTop        },
 	{  72, light,          MAT_Light,    		MAT_Light,          MAT_Light,     		 MAT_Light,    		 MAT_Light,     		MAT_Light         },
 	{  73, newflower,      MAT_FlowersTop,  MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
 	{  74, steel,          MAT_Steel,    		MAT_Steel,          MAT_Steel,     		 MAT_Steel,    		 MAT_Steel,     		MAT_Steel         }
@@ -213,11 +213,11 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 
 		for (int baseHeight = 0; baseHeight < 4; baseHeight++)
 		{
-			for (int x = 16; x > 0; x--)
+			for (int x = 0; x < 16; x++)
 			{
-				for (int y = 16; y > 0; y--)
+				for (int y = 0; y < 16; y++)
 				{
-					for (int z = 16; z > 0; z--)
+					for (int z = 0; z < 16; z++)
 					{
 					// Get block id
 					vector<int> id;
@@ -231,12 +231,6 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 					chunkFinal.Add(FString::FromInt(bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]));
 
 					int blockId = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-	/*
-					bool half = false;
-					TArray<FString> Parsed;
-					chunkPosition[chunk].ParseIntoArray(Parsed, TEXT("|"), false);
-					FString sglobalChunkPosX = Parsed[0];
-					FString sglobalChunkPosY = Parsed[1];*/
 
 					int32 globalChunkPosX = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
 					int32 globalChunkPosY = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
@@ -250,12 +244,6 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 
 					newT.SetLocation(FVector(newX, newY, newZ));
 					newT.SetScale3D(FVector(0.5, 0.5, 0.5));
-
-					//UE_LOG(LogTemp,Log,TEXT("Attempting to spawn block ID: %d"), bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]);
-
-					//UE_LOG(LogTemp,Log,TEXT("X: %d"), newX);
-					//UE_LOG(LogTemp,Log,TEXT("Y: %d"), newY);
-					//UE_LOG(LogTemp,Log,TEXT("Z: %d"), newZ);
 
 					if (blockId != 0){
 						if (bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] <= 23 && bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] >= 1)
@@ -287,7 +275,7 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 void AWorldConverter::LoadChunk(){
 	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
 
-	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
+	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/testWorld.eden");
 
 	GetWorldName(bytes);
 
@@ -296,7 +284,7 @@ void AWorldConverter::LoadChunk(){
 
 	CreateChunkMap(bytes, chunkPointer);
 
-	CreateMesh(30);
+	CreateMesh(5);
 }
 
 // ========================= MULTI-THREADING ==========================
