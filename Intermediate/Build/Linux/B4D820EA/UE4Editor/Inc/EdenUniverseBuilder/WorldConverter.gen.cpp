@@ -562,6 +562,14 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 			};
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Root = { UE4CodeGen_Private::EPropertyClass::Object, "Root", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080008, 1, nullptr, STRUCT_OFFSET(AWorldConverter, Root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(NewProp_Root_MetaData, ARRAY_COUNT(NewProp_Root_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_totalRenderDistanceG_MetaData[] = {
+				{ "Category", "WorldConverter" },
+				{ "ModuleRelativePath", "WorldConverter.h" },
+				{ "ToolTip", "Variables" },
+			};
+#endif
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_totalRenderDistanceG = { UE4CodeGen_Private::EPropertyClass::Int, "totalRenderDistanceG", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, totalRenderDistanceG), METADATA_PARAMS(NewProp_totalRenderDistanceG_MetaData, ARRAY_COUNT(NewProp_totalRenderDistanceG_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SMAsset_Cube,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_steel,
@@ -632,6 +640,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MAT_Bedrock,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Mesh,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Root,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_totalRenderDistanceG,
 			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 				TCppClassTypeTraits<AWorldConverter>::IsAbstract,
@@ -651,7 +660,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWorldConverter, 2264518009);
+	IMPLEMENT_CLASS(AWorldConverter, 984441208);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWorldConverter(Z_Construct_UClass_AWorldConverter, &AWorldConverter::StaticClass, TEXT("/Script/EdenUniverseBuilder"), TEXT("AWorldConverter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWorldConverter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

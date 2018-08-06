@@ -56,6 +56,10 @@ public:
 	// Functions
 	//============================================================================
 
+
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
 	void LoadChunk();
 
 	vector <int> OpenFile(const char *filename);
@@ -77,6 +81,10 @@ public:
 	//============================================================================
 	// Variables
 	//============================================================================
+
+	UPROPERTY(EditAnywhere)
+	int totalRenderDistanceG = 5;
+
 	vector <UInstancedStaticMeshComponent> MeshArray;
 
 	map<int, int> chunksX;

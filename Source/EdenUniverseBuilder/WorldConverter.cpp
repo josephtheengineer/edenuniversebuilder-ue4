@@ -8,6 +8,8 @@
 #include "Components/BoxComponent.h"
 #include "Components/InstancedStaticMeshComponent.h"
 #include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
+#include "Kismet/GameplayStatics.h"
+#include "Runtime/Engine/Classes/GameFramework/Character.h"
 #include "Runtime/Core/Public/Misc/Paths.h"
 
 //==============================================================================
@@ -15,6 +17,8 @@
 //==============================================================================
 AWorldConverter::AWorldConverter()
 {
+	 	// Set this actor to call Tick() every frame.
+		PrimaryActorTick.bCanEverTick = true;
 }
 
 //==============================================================================
@@ -27,6 +31,29 @@ void AWorldConverter::BeginPlay()
 	LoadChunk();
 	//RunPrimeTask(20000);
 }
+
+// Called every frame
+void AWorldConverter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+/*
+	for (TObjectIterator<ACharacter> Itr; Itr; ++Itr)
+	{
+    // Filter out objects not contained in the target world.
+    //if (Itr->GetWorld() != YourGameWorld)
+    //{
+       //continue;
+    //}
+    // Do stuff
+
+		UE_LOG(LogTemp,Log,TEXT("Player location X: %d"), Itr->GetActorLocation().X);
+		UE_LOG(LogTemp,Log,TEXT("Player location Y: %d"), Itr->GetActorLocation().Y);
+		UE_LOG(LogTemp,Log,TEXT("Player location Z: %d"), Itr->GetActorLocation().Z);
+	}*/
+
+	//ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+}
+
 
 //==============================================================================
 // AWorldConverter::OpenFile() | Returns a hex world file to a decimal array
@@ -208,6 +235,7 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 	{
 		int chunk = chunkAddress[i];
 		UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
+		UE_LOG(LogTemp,Log,TEXT("(%d of %d)"), i, totalRenderDistance);
 		// Whatever this does
 		int baseX = (chunksX[chunk] - worldAreaX) * 16, baseY = (chunksY[chunk] - worldAreaY) * 16;
 
@@ -238,9 +266,12 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 					//UE_LOG(LogTemp,Log,TEXT("Chunk pos x: %d"), globalChunkPosX);
 					//UE_LOG(LogTemp,Log,TEXT("Chunk pos y: %d"), globalChunkPosY);
 
-					int newX = (x + globalChunkPosX) * 100;
-					int newY = (y + globalChunkPosY) * 100;
-					int newZ = (z + (16 * baseHeight)) * 100 ;
+					int newX = (x + (globalChunkPosX*16)) * 100;
+					int newY = (y + (globalChunkPosY*16)) * 100;
+					int newZ = (z + (16 * baseHeight)) * 100;
+
+					//UE_LOG(LogTemp,Log,TEXT("Chunk pos x: %d"), newX);
+					//UE_LOG(LogTemp,Log,TEXT("Chunk pos y: %d"), newY);
 
 					newT.SetLocation(FVector(newX, newY, newZ));
 					newT.SetScale3D(FVector(0.5, 0.5, 0.5));
@@ -275,7 +306,7 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 void AWorldConverter::LoadChunk(){
 	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
 
-	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/testWorld.eden");
+	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
 
 	GetWorldName(bytes);
 
@@ -284,7 +315,10 @@ void AWorldConverter::LoadChunk(){
 
 	CreateChunkMap(bytes, chunkPointer);
 
-	CreateMesh(5);
+	//CreateMesh(totalRenderDistanceG);
+
+	//ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+	//myCharacter->GetActorLocation();
 }
 
 // ========================= MULTI-THREADING ==========================
