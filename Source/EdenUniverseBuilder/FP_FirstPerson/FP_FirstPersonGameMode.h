@@ -13,7 +13,7 @@ class AFP_FirstPersonGameMode : public AGameModeBase
 
 public:
 	AFP_FirstPersonGameMode();
+
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 };
-
-
-

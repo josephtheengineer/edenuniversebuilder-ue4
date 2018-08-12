@@ -36,22 +36,6 @@ void AWorldConverter::BeginPlay()
 void AWorldConverter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-/*
-	for (TObjectIterator<ACharacter> Itr; Itr; ++Itr)
-	{
-    // Filter out objects not contained in the target world.
-    //if (Itr->GetWorld() != YourGameWorld)
-    //{
-       //continue;
-    //}
-    // Do stuff
-
-		UE_LOG(LogTemp,Log,TEXT("Player location X: %d"), Itr->GetActorLocation().X);
-		UE_LOG(LogTemp,Log,TEXT("Player location Y: %d"), Itr->GetActorLocation().Y);
-		UE_LOG(LogTemp,Log,TEXT("Player location Z: %d"), Itr->GetActorLocation().Z);
-	}*/
-
-	//ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
 }
 
 
@@ -231,74 +215,102 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 
 	}
 
-	for (int i = 0; i < totalRenderDistance; i++)
+	int chunkToLoad = 0;
+	TArray<int32> loadedChunks;
+	for (int i = 0; i < chunksX.size() ; i++)
 	{
-		int chunk = chunkAddress[i];
-		UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
-		UE_LOG(LogTemp,Log,TEXT("(%d of %d)"), i, totalRenderDistance);
-		// Whatever this does
-		int baseX = (chunksX[chunk] - worldAreaX) * 16, baseY = (chunksY[chunk] - worldAreaY) * 16;
+		int32 globalChunkPosXp = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
+		int32 globalChunkPosYp = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
 
-		for (int baseHeight = 0; baseHeight < 4; baseHeight++)
+		UE_LOG(LogTemp,Log,TEXT("=== Checking chunk number %d ==="), i);
+		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosX: %d"), globalChunkPosXp);
+		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosY: %d"), globalChunkPosYp);
+
+		if (globalChunkPosXp <= renderThingo && globalChunkPosXp <= renderThingoNeg)
 		{
-			for (int x = 0; x < 16; x++)
+			if (globalChunkPosYp <= renderThingo && globalChunkPosYp <= renderThingoNeg)
 			{
-				for (int y = 0; y < 16; y++)
+				UE_LOG(LogTemp,Log,TEXT(" ================================== Loading mesh %d =============================== "), i);
+				UE_LOG(LogTemp,Log,TEXT("globalChunkPosX: %d"), globalChunkPosXp);
+				UE_LOG(LogTemp,Log,TEXT("globalChunkPosY: %d"), globalChunkPosYp);
+
+				// =========================================================================
+
+				//int i = totalRenderDistance;
+				int chunk = chunkAddress[i];
+				UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
+				//UE_LOG(LogTemp,Log,TEXT("(%d of %d)"), i, totalRenderDistance);
+				// Whatever this does
+				int baseX = (chunksX[chunk] - worldAreaX) * 16, baseY = (chunksY[chunk] - worldAreaY) * 16;
+
+				for (int baseHeight = 0; baseHeight < 4; baseHeight++)
 				{
-					for (int z = 0; z < 16; z++)
+					for (int x = 0; x < 16; x++)
 					{
-					// Get block id
-					vector<int> id;
-					id.push_back(baseX + x);
-					id.push_back(baseY + y);
-					id.push_back(baseHeight * 16 + z);
-					id.push_back(0);
-
-					blocks[id] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-					chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
-					chunkFinal.Add(FString::FromInt(bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]));
-
-					int blockId = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-
-					int32 globalChunkPosX = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
-					int32 globalChunkPosY = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
-
-					//UE_LOG(LogTemp,Log,TEXT("Chunk pos x: %d"), globalChunkPosX);
-					//UE_LOG(LogTemp,Log,TEXT("Chunk pos y: %d"), globalChunkPosY);
-
-					int newX = (x + (globalChunkPosX*16)) * 100;
-					int newY = (y + (globalChunkPosY*16)) * 100;
-					int newZ = (z + (16 * baseHeight)) * 100;
-
-					//UE_LOG(LogTemp,Log,TEXT("Chunk pos x: %d"), newX);
-					//UE_LOG(LogTemp,Log,TEXT("Chunk pos y: %d"), newY);
-
-					newT.SetLocation(FVector(newX, newY, newZ));
-					newT.SetScale3D(FVector(0.5, 0.5, 0.5));
-
-					if (blockId != 0){
-						if (bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] <= 23 && bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] >= 1)
+						for (int y = 0; y < 16; y++)
 						{
-							//dirt->AddInstance(newT);
-							EdenBlockData[blockId].name->AddInstance(newT);
-						} else {
-							EdenBlockData[19].name->AddInstance(newT);
+							for (int z = 0; z < 16; z++)
+							{
+							// Get block id
+							vector<int> id;
+							id.push_back(baseX + x);
+							id.push_back(baseY + y);
+							id.push_back(baseHeight * 16 + z);
+							id.push_back(0);
+
+							blocks[id] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
+							chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
+							chunkFinal.Add(FString::FromInt(bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]));
+
+							int blockId = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
+
+							int32 globalChunkPosX = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
+							int32 globalChunkPosY = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
+
+							//UE_LOG(LogTemp,Log,TEXT("Chunk pos x: %d"), globalChunkPosX);
+							//UE_LOG(LogTemp,Log,TEXT("Chunk pos y: %d"), globalChunkPosY);
+
+							int newX = (x + (globalChunkPosX*16)) * 100;
+							int newY = (y + (globalChunkPosY*16)) * 100;
+							int newZ = (z + (16 * baseHeight)) * 100;
+
+							//UE_LOG(LogTemp,Log,TEXT("Chunk pos x: %d"), newX);
+							//UE_LOG(LogTemp,Log,TEXT("Chunk pos y: %d"), newY);
+
+							newT.SetLocation(FVector(newX, newY, newZ));
+							newT.SetScale3D(FVector(0.5, 0.5, 0.5));
+
+							if (blockId != 0){
+								if (bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] <= 23 && bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] >= 1)
+								{
+									//dirt->AddInstance(newT);
+									EdenBlockData[blockId].name->AddInstance(newT);
+								} else {
+									EdenBlockData[19].name->AddInstance(newT);
+								}
+							}
+
+							// Get block color
+							vector<int> color;
+							color.push_back(baseX + x);
+							color.push_back(baseY + y);
+							color.push_back(baseHeight * 16 + z);
+							color.push_back(1);
+
+							blocks[color] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
+							}
 						}
 					}
-
-					// Get block color
-					vector<int> color;
-					color.push_back(baseX + x);
-					color.push_back(baseY + y);
-					color.push_back(baseHeight * 16 + z);
-					color.push_back(1);
-
-					blocks[color] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
-					}
 				}
+
+				// ===================================================================
 			}
 		}
 	}
+
+	//for (int i = 0; i < totalRenderDistance; i++)
+	//{
+	//}
 
 	UE_LOG(LogTemp,Log,TEXT("Done!"));
 }
@@ -315,7 +327,7 @@ void AWorldConverter::LoadChunk(){
 
 	CreateChunkMap(bytes, chunkPointer);
 
-	//CreateMesh(totalRenderDistanceG);
+	CreateMesh(0);
 
 	//ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
 	//myCharacter->GetActorLocation();

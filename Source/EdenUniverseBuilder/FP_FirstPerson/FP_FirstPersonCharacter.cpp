@@ -221,6 +221,10 @@ void AFP_FirstPersonCharacter::MoveForward(float Value)
 	{
 		// Add movement in that direction
 		AddMovementInput(GetActorForwardVector(), Value);
+		//UE_LOG(LogTemp,Log,TEXT("Player movement forward: %d"), Value);
+		//UE_LOG(LogTemp,Log,TEXT("Facing vector X: %d"), FirstPersonCameraComponent->GetComponentLocation().X);
+		//UE_LOG(LogTemp,Log,TEXT("Facing vector Y: %d"), FirstPersonCameraComponent->GetComponentLocation().Y);
+		//UE_LOG(LogTemp,Log,TEXT("Facing vector Z: %d"), FirstPersonCameraComponent->GetComponentLocation().Z);
 	}
 }
 
@@ -230,6 +234,12 @@ void AFP_FirstPersonCharacter::MoveRight(float Value)
 	{
 		// Add movement in that direction
 		AddMovementInput(GetActorRightVector(), Value);
+
+		//FVector PlayerLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
+		UE_LOG(LogTemp,Log,TEXT("Player movement right: %d"), Value);
+		UE_LOG(LogTemp,Log,TEXT("Facing vector X: %d"), GetWorld()->GetFirstPlayerController()->GetPawn()->GetNavAgentLocation().X);
+		UE_LOG(LogTemp,Log,TEXT("Facing vector Y: %d"), GetWorld()->GetFirstPlayerController()->GetPawn()->GetNavAgentLocation().Y);
+		UE_LOG(LogTemp,Log,TEXT("Facing vector Z: %d"), GetWorld()->GetFirstPlayerController()->GetPawn()->GetNavAgentLocation().Z);
 	}
 }
 
@@ -263,4 +273,19 @@ void AFP_FirstPersonCharacter::TryEnableTouchscreenMovement(UInputComponent* Pla
 	PlayerInputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AFP_FirstPersonCharacter::BeginTouch);
 	PlayerInputComponent->BindTouch(EInputEvent::IE_Released, this, &AFP_FirstPersonCharacter::EndTouch);
 	PlayerInputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AFP_FirstPersonCharacter::TouchUpdate);
+}
+
+void AFP_FirstPersonCharacter::Tick(float DeltaTime)
+{
+		Super::Tick(DeltaTime);
+
+		//APlayerCharacter* Pawn = Cast(GetCharacter());
+
+		//ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+		//myCharacter->GetActorLocation();
+		//UE_LOG(LogTemp,Log,TEXT("Player location X: %d"), GetLastMovementInputVector().X);
+
+		//UE_LOG(LogTemp,Log,TEXT("Player location X: %d"), GetLastMovementInputVector().X);
+		//UE_LOG(LogTemp,Log,TEXT("Player location Y: %d"), GetLastMovementInputVector().Y);
+		//UE_LOG(LogTemp,Log,TEXT("Player location Z: %d"), GetLastMovementInputVector().Z);
 }

@@ -14,3 +14,8 @@ AFP_FirstPersonGameMode::AFP_FirstPersonGameMode()
 	// Use our custom HUD class
 	HUDClass = AFP_FirstPersonHUD::StaticClass();
 }
+
+void AFP_FirstPersonGameMode::Tick(float DeltaTime)
+{
+
+}

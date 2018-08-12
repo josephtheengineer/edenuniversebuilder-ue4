@@ -556,6 +556,20 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Mesh = { UE4CodeGen_Private::EPropertyClass::Object, "Mesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, Mesh), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_Mesh_MetaData, ARRAY_COUNT(NewProp_Mesh_MetaData)) };
 #if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_renderThingoNeg_MetaData[] = {
+				{ "Category", "WorldConverter" },
+				{ "ModuleRelativePath", "WorldConverter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_renderThingoNeg = { UE4CodeGen_Private::EPropertyClass::Int, "renderThingoNeg", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, renderThingoNeg), METADATA_PARAMS(NewProp_renderThingoNeg_MetaData, ARRAY_COUNT(NewProp_renderThingoNeg_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_renderThingo_MetaData[] = {
+				{ "Category", "WorldConverter" },
+				{ "ModuleRelativePath", "WorldConverter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_renderThingo = { UE4CodeGen_Private::EPropertyClass::Int, "renderThingo", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, renderThingo), METADATA_PARAMS(NewProp_renderThingo_MetaData, ARRAY_COUNT(NewProp_renderThingo_MetaData)) };
+#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Root_MetaData[] = {
 				{ "EditInline", "true" },
 				{ "ModuleRelativePath", "WorldConverter.h" },
@@ -639,6 +653,8 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MAT_BlockTNTSide,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MAT_Bedrock,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Mesh,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_renderThingoNeg,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_renderThingo,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Root,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_totalRenderDistanceG,
 			};
@@ -660,7 +676,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWorldConverter, 984441208);
+	IMPLEMENT_CLASS(AWorldConverter, 1168017280);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWorldConverter(Z_Construct_UClass_AWorldConverter, &AWorldConverter::StaticClass, TEXT("/Script/EdenUniverseBuilder"), TEXT("AWorldConverter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWorldConverter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

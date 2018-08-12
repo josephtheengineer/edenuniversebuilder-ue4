@@ -111,6 +111,12 @@ public:
 	UPROPERTY()
 	USceneComponent* Root;
 
+	UPROPERTY(EditAnywhere)
+	int renderThingo = 4055;
+
+	UPROPERTY(EditAnywhere)
+	int renderThingoNeg = 4055;
+
 	UPROPERTY(VisibleAnywhere)
 	class UInstancedStaticMeshComponent* Mesh;
 
