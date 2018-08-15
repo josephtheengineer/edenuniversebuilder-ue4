@@ -219,6 +219,10 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 	TArray<int32> loadedChunks;
 	for (int i = 0; i < chunksX.size() ; i++)
 	{
+
+		//renderThingo = 4055;
+		//renderThingoNeg = 4055;
+
 		int32 globalChunkPosXp = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
 		int32 globalChunkPosYp = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
 
@@ -327,7 +331,7 @@ void AWorldConverter::LoadChunk(){
 
 	CreateChunkMap(bytes, chunkPointer);
 
-	CreateMesh(0);
+	//CreateMesh(0);
 
 	//ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
 	//myCharacter->GetActorLocation();

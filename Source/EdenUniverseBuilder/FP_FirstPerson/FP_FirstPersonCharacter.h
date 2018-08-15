@@ -153,7 +153,8 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	FTransform playLocation = GetTransform();
+
+	float facingDirection = 0;
 
 };

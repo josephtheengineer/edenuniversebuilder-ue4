@@ -200,6 +200,7 @@ void AFP_FirstPersonCharacter::TouchUpdate(const ETouchIndex::Type FingerIndex, 
 				{
 					TouchItem.bMoved = true;
 					float Value = ScaledDelta.X * BaseTurnRate;
+					UE_LOG(LogTemp, Log, TEXT("We are rotating, value is %f"), Value);
 					AddControllerYawInput(Value);
 				}
 				if (FMath::Abs(ScaledDelta.Y) >= (4.0f / ScreenSize.Y))
@@ -217,14 +218,18 @@ void AFP_FirstPersonCharacter::TouchUpdate(const ETouchIndex::Type FingerIndex, 
 
 void AFP_FirstPersonCharacter::MoveForward(float Value)
 {
-	if (Value != 0.0f)
+	if (Value != 0.0f) // We are not moving
 	{
+		if (Value == 1) // Trigger when W is pressed (positive y)
+		{
+					//playLocation.SetLocation(FVector(x,0,0));
+		}
+		else // Trigger when S is pressed (negitive y)
+		{
+
+		}
 		// Add movement in that direction
 		AddMovementInput(GetActorForwardVector(), Value);
-		//UE_LOG(LogTemp,Log,TEXT("Player movement forward: %d"), Value);
-		//UE_LOG(LogTemp,Log,TEXT("Facing vector X: %d"), FirstPersonCameraComponent->GetComponentLocation().X);
-		//UE_LOG(LogTemp,Log,TEXT("Facing vector Y: %d"), FirstPersonCameraComponent->GetComponentLocation().Y);
-		//UE_LOG(LogTemp,Log,TEXT("Facing vector Z: %d"), FirstPersonCameraComponent->GetComponentLocation().Z);
 	}
 }
 
@@ -232,21 +237,48 @@ void AFP_FirstPersonCharacter::MoveRight(float Value)
 {
 	if (Value != 0.0f)
 	{
+		if (Value == 1) // Trigger when D is pressed (postive x)
+		{
+
+		}
+		else // Trigger when A is pressed (negitive x)
+		{
+
+		}
+
+		UE_LOG(LogTemp, Log, TEXT("We are moving, value is %f"), Value);
+
 		// Add movement in that direction
 		AddMovementInput(GetActorRightVector(), Value);
-
-		//FVector PlayerLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
-		UE_LOG(LogTemp,Log,TEXT("Player movement right: %d"), Value);
-		UE_LOG(LogTemp,Log,TEXT("Facing vector X: %d"), GetWorld()->GetFirstPlayerController()->GetPawn()->GetNavAgentLocation().X);
-		UE_LOG(LogTemp,Log,TEXT("Facing vector Y: %d"), GetWorld()->GetFirstPlayerController()->GetPawn()->GetNavAgentLocation().Y);
-		UE_LOG(LogTemp,Log,TEXT("Facing vector Z: %d"), GetWorld()->GetFirstPlayerController()->GetPawn()->GetNavAgentLocation().Z);
 	}
 }
 
 void AFP_FirstPersonCharacter::TurnAtRate(float Rate)
 {
-	// Calculate delta for this frame from the rate information
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+	if (Rate != 0.0f)
+	{
+		// Calculate delta for this frame from the rate information
+		AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+		UE_LOG(LogTemp, Log, TEXT("We are rotating in function 2 and the value is %f"), Rate);
+
+
+		UE_LOG(LogTemp, Log, TEXT("Cool thing: %f"), Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+
+		if (facingDirection >= -140 && facingDirection <= 140)
+		{
+			if (Rate > 0) // Turning right
+			{
+				facingDirection += Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds();
+			}
+			else // Turning left
+			{
+				facingDirection += Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds();
+			}
+		} else {
+			facingDirection = 0;
+		}
+		UE_LOG(LogTemp, Log, TEXT("We are facing %f"), facingDirection);
+	}
 }
 
 void AFP_FirstPersonCharacter::LookUpAtRate(float Rate)
@@ -273,19 +305,4 @@ void AFP_FirstPersonCharacter::TryEnableTouchscreenMovement(UInputComponent* Pla
 	PlayerInputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AFP_FirstPersonCharacter::BeginTouch);
 	PlayerInputComponent->BindTouch(EInputEvent::IE_Released, this, &AFP_FirstPersonCharacter::EndTouch);
 	PlayerInputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AFP_FirstPersonCharacter::TouchUpdate);
-}
-
-void AFP_FirstPersonCharacter::Tick(float DeltaTime)
-{
-		Super::Tick(DeltaTime);
-
-		//APlayerCharacter* Pawn = Cast(GetCharacter());
-
-		//ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
-		//myCharacter->GetActorLocation();
-		//UE_LOG(LogTemp,Log,TEXT("Player location X: %d"), GetLastMovementInputVector().X);
-
-		//UE_LOG(LogTemp,Log,TEXT("Player location X: %d"), GetLastMovementInputVector().X);
-		//UE_LOG(LogTemp,Log,TEXT("Player location Y: %d"), GetLastMovementInputVector().Y);
-		//UE_LOG(LogTemp,Log,TEXT("Player location Z: %d"), GetLastMovementInputVector().Z);
 }
