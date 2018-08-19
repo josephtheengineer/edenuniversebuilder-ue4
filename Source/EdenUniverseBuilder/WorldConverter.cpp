@@ -331,7 +331,7 @@ void AWorldConverter::LoadChunk(){
 
 	CreateChunkMap(bytes, chunkPointer);
 
-	//CreateMesh(0);
+	CreateMesh(0);
 
 	//ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
 	//myCharacter->GetActorLocation();

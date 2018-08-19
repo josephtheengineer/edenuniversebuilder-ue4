@@ -226,6 +226,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	class UMaterialInterface* MAT_Wood;
 
+	UPROPERTY(EditAnywhere)
+	class UBoxComponent* ChunkBoundary;
+
 	// Add StaticMeshComponent
 	UPROPERTY(EditAnywhere)
 	UInstancedStaticMeshComponent* air;
