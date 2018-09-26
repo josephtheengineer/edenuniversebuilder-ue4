@@ -17,8 +17,6 @@
 //==============================================================================
 AWorldConverter::AWorldConverter()
 {
-	 	// Set this actor to call Tick() every frame.
-		PrimaryActorTick.bCanEverTick = true;
 }
 
 //==============================================================================
@@ -29,15 +27,26 @@ void AWorldConverter::BeginPlay()
 	Super::BeginPlay();
 
 	LoadChunk();
-	//RunPrimeTask(20000);
 }
 
-// Called every frame
-void AWorldConverter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-}
+//==============================================================================
+// AWorldConverter::LoadChunk() | Main code for the class
+//==============================================================================
+void AWorldConverter::LoadChunk(){
+	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
 
+	UE_LOG(LogTemp,Verbose,TEXT("Opening file..."));
+	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
+
+	GetWorldName(bytes);
+
+	// Nobody really knows how this works
+	int chunkPointer = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
+
+	CreateChunkMap(bytes, chunkPointer);
+
+	CreateMesh(0);
+}
 
 //==============================================================================
 // AWorldConverter::OpenFile() | Returns a hex world file to a decimal array
@@ -108,9 +117,6 @@ void AWorldConverter::CreateChunkMap(vector <int> worldData, int chunkPointer)
 		string position = std::to_string(x) + "|" + std::to_string(y);
 		FString positionS = FString::FromInt(x) + "|" + FString::FromInt(y);
 
-		//UE_LOG(LogTemp,Log,TEXT("Chunk address: %d"), address);
-		//UE_LOG(LogTemp,Log,TEXT("Chunk position: %d | %d"), x, y);
-
 		chunkAddress.Add(address);
 		chunkPositionX.Add(x);
 		chunkPositionY.Add(y);
@@ -130,20 +136,6 @@ void AWorldConverter::CreateChunkMap(vector <int> worldData, int chunkPointer)
 
 	// Get the total world height | max - min + 1
 	int worldAreaHeight = worldAreaHeightTemp - worldAreaY + 1;
-}
-
-//==============================================================================
-// AWorldConverter::GetChunkInfo() | Gets block info for specific blocks
-//==============================================================================
-void AWorldConverter::GetChunkInfo(int chunk)
-{
-}
-
-//==============================================================================
-// AWorldConverter::LoadBlocks() | Defines the materials used for blocks
-//==============================================================================
-void AWorldConverter::LoadBlocks()
-{
 }
 
 //==============================================================================
@@ -189,11 +181,17 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 	{  74, steel,          MAT_Steel,    		MAT_Steel,          MAT_Steel,     		 MAT_Steel,    		 MAT_Steel,     		MAT_Steel         }
 	};
 
+	/* We are creating a single InstancedStaticMesh for every block in the game
+	 * in the below if statement
+	 * This should be all blocks (meanwhile for debuging I'm using 23 :P)
+	 */
 	for (int i = 1; i <= 23; i++){
 		UE_LOG(LogTemp,Log,TEXT("Creating mesh %d..."), i);
 
-		EdenBlockData[i].name = NewObject<UInstancedStaticMeshComponent>(this);//(TEXT("%d"), i);
+		EdenBlockData[i].name = NewObject<UInstancedStaticMeshComponent>(this);
 		EdenBlockData[i].name->RegisterComponent();
+
+		//Set the block type to Cube
 		EdenBlockData[i].name->SetStaticMesh(SMAsset_Cube);
 		EdenBlockData[i].name->SetFlags(RF_Transactional);
 
@@ -206,23 +204,22 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 
 		this->AddInstanceComponent(EdenBlockData[i].name);
 
-		//MeshArray.Add(EdenBlockData[i].name);
-
 		newT.SetLocation(FVector(0,0,0));
-		//UE_LOG(LogTemp,Log,TEXT("Created vector. Spawing block..."));
-
-		//EdenBlockData[i].name->AddInstance(newT);
-
 	}
 
-	int chunkToLoad = 0;
-	TArray<int32> loadedChunks;
-	for (int i = 0; i < chunksX.size() ; i++)
+	/* Everything is setup now and we can begin to read from the world file and
+	 * place blocks in the world.
+	 * The below if statement should go through all chunks in the world.
+	 * Probably a bad idea and we should of used a foreach statement instead.
+	 */
+	for (int i = 0; i < chunksX.size(); i++)
 	{
 
+		// This is our bounds. We are loading all chunks located between these cords
 		//renderThingo = 4055;
 		//renderThingoNeg = 4055;
 
+		// Grabbing the chunk position
 		int32 globalChunkPosXp = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
 		int32 globalChunkPosYp = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
 
@@ -230,6 +227,8 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosX: %d"), globalChunkPosXp);
 		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosY: %d"), globalChunkPosYp);
 
+		// Now heres some spaghetti code :P
+		// IF the chunk position is less then or greater then bounds
 		if (globalChunkPosXp <= renderThingo && globalChunkPosXp <= renderThingoNeg)
 		{
 			if (globalChunkPosYp <= renderThingo && globalChunkPosYp <= renderThingoNeg)
@@ -317,88 +316,4 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 	//}
 
 	UE_LOG(LogTemp,Log,TEXT("Done!"));
-}
-
-void AWorldConverter::LoadChunk(){
-	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
-
-	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
-
-	GetWorldName(bytes);
-
-	// Nobody really knows how this works
-	int chunkPointer = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
-
-	CreateChunkMap(bytes, chunkPointer);
-
-	CreateMesh(0);
-
-	//ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
-	//myCharacter->GetActorLocation();
-}
-
-// ========================= MULTI-THREADING ==========================
-
-void AWorldConverter::RunPrimeTask(int32 NumPrimes)
-{
-	(new FAutoDeleteAsyncTask<PrimeSearchTask>(NumPrimes))->StartBackgroundTask();
-}
-
-void AWorldConverter::RunPrimeTaskOnMain(int32 NumPrimes)
-{
-	PrimeSearchTask* task = new PrimeSearchTask(NumPrimes);
-
-	task -> DoWorkOnMain();
-
-	delete task;
-}
-
-PrimeSearchTask::PrimeSearchTask(int32 _primeCount)
-{
-	PrimeCount = _primeCount;
-}
-
-PrimeSearchTask::~PrimeSearchTask()
-{
-	UE_LOG(LogTemp, Warning, TEXT("Test finished"));
-}
-
-void PrimeSearchTask::DoWork()
-{/*
-	int primesFound = 0;
-	int currentTestNumber = 2;
-
-	while(primesFound < PrimeCount)
-	{
-		bool isPrime = true;
-
-		for (int i = 2; i < currentTestNumber / 2; i++)
-		{
-			if (currentTestNumber % i == 0)
-			{
-				isPrime = false;
-				break;
-			}
-		}
-
-		if(isPrime)
-		{
-			primesFound++;
-
-			if (primesFound % 1000 == 0)
-			{
-				UE_LOG(LogTemp, Warning, TEXT("Primes Found: %i"), primesFound);
-			}
-		}
-
-		currentTestNumber++;
-	}*/
-
-	//AWorldConverter mainClass;
-	//mainClass.LoadChunk();
-}
-
-void PrimeSearchTask::DoWorkOnMain()
-{
-	DoWork();
 }
