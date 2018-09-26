@@ -228,7 +228,82 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosY: %d"), globalChunkPosYp);
 
 		// Now heres some spaghetti code :P
-		// IF the chunk position is less then or greater then bounds
+
+		// =========== REDENR DISTANCE ALGORITHM ===========
+/*
+    // I am at 0(x) 0(y)
+    player[0] = 0;
+    player[1] = 0;
+
+    // Lets set the render distance to 2 chunks
+    render_distance = 1;
+
+    bool again = true;
+
+    int i = 0;
+    for (int i = 0; i <= 10; i++) {
+
+        vector<int> current_chunk = chunks[address[i]];
+
+        // Convert to positive number
+        if(current_chunk[0] < 0) {
+            current_chunk[0] = -current_chunk[0];
+        }
+
+        if(current_chunk[1] < 0) {
+            current_chunk[1] = -current_chunk[1];
+        }
+
+        again = true;
+        for (int a = 0; a <= 10; a++){
+            if (address_sorted[a] == address[i]){
+                again = false;
+            }
+        }
+
+        int in_bounds = 0;
+        //cout<<"==========="<<endl;
+
+        if (again){
+            // Handles x
+            if (current_chunk[0] <= player[0] && current_chunk[0] >= player[0] - render_distance){
+                // Handles left side
+
+                //cout<<"left"<<endl;
+                in_bounds++;
+            } else if (current_chunk[0] >= player[0] && current_chunk[0] <= player[0] + render_distance){
+                // Handles right side
+
+                //cout<<"right"<<endl;
+                in_bounds++;
+            }
+
+            // Handles y
+            if (current_chunk[1] <= player[1] && current_chunk[1] >= player[1] - render_distance){
+                // Handles down direction
+
+                //cout<<"down"<<endl;
+                in_bounds++;
+            } else if (current_chunk[1] >= player[1] && current_chunk[1] <= player[1] + render_distance){
+                // Handles up direction
+
+                //cout<<"up"<<endl;
+                in_bounds++;
+            }
+        }
+
+        if (in_bounds >= 2){
+            address_sorted[sorted_count] = address[i];
+                sorted_count++;
+
+                cout<<"==== "<<address[i]<<" ===="<<endl;
+                cout<<"x: "<<current_chunk[0]<<endl;
+                cout<<"y: "<<current_chunk[1]<<endl;
+        }
+    }
+*/
+			// =========== RENDER DISTANCE ALGORITHM ===========
+
 		if (globalChunkPosXp <= renderThingo && globalChunkPosXp <= renderThingoNeg)
 		{
 			if (globalChunkPosYp <= renderThingo && globalChunkPosYp <= renderThingoNeg)

@@ -58,7 +58,7 @@ public:
 
 
 	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	//virtual void Tick(float DeltaTime) override;
 
 	void LoadChunk();
 
@@ -67,10 +67,6 @@ public:
 	FString GetWorldName(vector <int> bytes);
 
 	void CreateChunkMap(vector <int> worldData, int chunkPointer);
-
-	void GetChunkInfo(int chunk);
-
-	void LoadBlocks();
 
 	// Load a material from the corresponding path
 /*	UFUNCTION(BlueprintCallable, Category = "Asset Loading")
