@@ -17,10 +17,9 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 	EDENUNIVERSEBUILDER_API UClass* Z_Construct_UClass_AWorldConverter();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_EdenUniverseBuilder();
-	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 // End Cross Module References
 	void AWorldConverter::StaticRegisterNativesAWorldConverter()
@@ -45,270 +44,6 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 				{ "ModuleRelativePath", "WorldConverter.h" },
 			};
 #endif
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SMAsset_Cube_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SMAsset_Cube = { UE4CodeGen_Private::EPropertyClass::Object, "SMAsset_Cube", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, SMAsset_Cube), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(NewProp_SMAsset_Cube_MetaData, ARRAY_COUNT(NewProp_SMAsset_Cube_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_steel_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_steel = { UE4CodeGen_Private::EPropertyClass::Object, "steel", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, steel), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_steel_MetaData, ARRAY_COUNT(NewProp_steel_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_newflower_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_newflower = { UE4CodeGen_Private::EPropertyClass::Object, "newflower", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, newflower), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_newflower_MetaData, ARRAY_COUNT(NewProp_newflower_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_light_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_light = { UE4CodeGen_Private::EPropertyClass::Object, "light", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, light), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_light_MetaData, ARRAY_COUNT(NewProp_light_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_transcube_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_transcube = { UE4CodeGen_Private::EPropertyClass::Object, "transcube", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, transcube), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_transcube_MetaData, ARRAY_COUNT(NewProp_transcube_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_fireworks_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_fireworks = { UE4CodeGen_Private::EPropertyClass::Object, "fireworks", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, fireworks), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_fireworks_MetaData, ARRAY_COUNT(NewProp_fireworks_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_glass_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_glass = { UE4CodeGen_Private::EPropertyClass::Object, "glass", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, glass), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_glass_MetaData, ARRAY_COUNT(NewProp_glass_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_tile_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_tile = { UE4CodeGen_Private::EPropertyClass::Object, "tile", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, tile), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_tile_MetaData, ARRAY_COUNT(NewProp_tile_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_shingles_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_shingles = { UE4CodeGen_Private::EPropertyClass::Object, "shingles", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, shingles), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_shingles_MetaData, ARRAY_COUNT(NewProp_shingles_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_lava_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_lava = { UE4CodeGen_Private::EPropertyClass::Object, "lava", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, lava), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_lava_MetaData, ARRAY_COUNT(NewProp_lava_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ivy_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ivy = { UE4CodeGen_Private::EPropertyClass::Object, "ivy", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, ivy), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_ivy_MetaData, ARRAY_COUNT(NewProp_ivy_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_fence_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_fence = { UE4CodeGen_Private::EPropertyClass::Object, "fence", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, fence), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_fence_MetaData, ARRAY_COUNT(NewProp_fence_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_water_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_water = { UE4CodeGen_Private::EPropertyClass::Object, "water", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, water), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_water_MetaData, ARRAY_COUNT(NewProp_water_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cloud_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_cloud = { UE4CodeGen_Private::EPropertyClass::Object, "cloud", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, cloud), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_cloud_MetaData, ARRAY_COUNT(NewProp_cloud_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ladder_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ladder = { UE4CodeGen_Private::EPropertyClass::Object, "ladder", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, ladder), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_ladder_MetaData, ARRAY_COUNT(NewProp_ladder_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bouncy_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_bouncy = { UE4CodeGen_Private::EPropertyClass::Object, "bouncy", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, bouncy), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_bouncy_MetaData, ARRAY_COUNT(NewProp_bouncy_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_wallpaper_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_wallpaper = { UE4CodeGen_Private::EPropertyClass::Object, "wallpaper", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, wallpaper), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_wallpaper_MetaData, ARRAY_COUNT(NewProp_wallpaper_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ice_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ice = { UE4CodeGen_Private::EPropertyClass::Object, "ice", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, ice), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_ice_MetaData, ARRAY_COUNT(NewProp_ice_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_slate_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_slate = { UE4CodeGen_Private::EPropertyClass::Object, "slate", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, slate), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_slate_MetaData, ARRAY_COUNT(NewProp_slate_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_brick_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_brick = { UE4CodeGen_Private::EPropertyClass::Object, "brick", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, brick), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_brick_MetaData, ARRAY_COUNT(NewProp_brick_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_flowers_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_flowers = { UE4CodeGen_Private::EPropertyClass::Object, "flowers", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, flowers), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_flowers_MetaData, ARRAY_COUNT(NewProp_flowers_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_weeds_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_weeds = { UE4CodeGen_Private::EPropertyClass::Object, "weeds", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, weeds), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_weeds_MetaData, ARRAY_COUNT(NewProp_weeds_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_rock_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_rock = { UE4CodeGen_Private::EPropertyClass::Object, "rock", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, rock), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_rock_MetaData, ARRAY_COUNT(NewProp_rock_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TNT_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TNT = { UE4CodeGen_Private::EPropertyClass::Object, "TNT", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, TNT), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_TNT_MetaData, ARRAY_COUNT(NewProp_TNT_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_grass_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_grass = { UE4CodeGen_Private::EPropertyClass::Object, "grass", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, grass), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_grass_MetaData, ARRAY_COUNT(NewProp_grass_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_wood_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_wood = { UE4CodeGen_Private::EPropertyClass::Object, "wood", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, wood), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_wood_MetaData, ARRAY_COUNT(NewProp_wood_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_trunk_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_trunk = { UE4CodeGen_Private::EPropertyClass::Object, "trunk", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, trunk), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_trunk_MetaData, ARRAY_COUNT(NewProp_trunk_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_leaves_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_leaves = { UE4CodeGen_Private::EPropertyClass::Object, "leaves", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, leaves), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_leaves_MetaData, ARRAY_COUNT(NewProp_leaves_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_sand_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_sand = { UE4CodeGen_Private::EPropertyClass::Object, "sand", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, sand), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_sand_MetaData, ARRAY_COUNT(NewProp_sand_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_dirt_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_dirt = { UE4CodeGen_Private::EPropertyClass::Object, "dirt", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, dirt), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_dirt_MetaData, ARRAY_COUNT(NewProp_dirt_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_stone_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_stone = { UE4CodeGen_Private::EPropertyClass::Object, "stone", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, stone), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_stone_MetaData, ARRAY_COUNT(NewProp_stone_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bedrock_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_bedrock = { UE4CodeGen_Private::EPropertyClass::Object, "bedrock", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, bedrock), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_bedrock_MetaData, ARRAY_COUNT(NewProp_bedrock_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_air_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-				{ "ToolTip", "Add StaticMeshComponent" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_air = { UE4CodeGen_Private::EPropertyClass::Object, "air", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, air), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_air_MetaData, ARRAY_COUNT(NewProp_air_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ChunkBoundary_MetaData[] = {
 				{ "Category", "WorldConverter" },
@@ -565,19 +300,12 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Mesh = { UE4CodeGen_Private::EPropertyClass::Object, "Mesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(AWorldConverter, Mesh), Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_Mesh_MetaData, ARRAY_COUNT(NewProp_Mesh_MetaData)) };
 #if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_renderThingoNeg_MetaData[] = {
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_render_distance_MetaData[] = {
 				{ "Category", "WorldConverter" },
 				{ "ModuleRelativePath", "WorldConverter.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_renderThingoNeg = { UE4CodeGen_Private::EPropertyClass::Int, "renderThingoNeg", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, renderThingoNeg), METADATA_PARAMS(NewProp_renderThingoNeg_MetaData, ARRAY_COUNT(NewProp_renderThingoNeg_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_renderThingo_MetaData[] = {
-				{ "Category", "WorldConverter" },
-				{ "ModuleRelativePath", "WorldConverter.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_renderThingo = { UE4CodeGen_Private::EPropertyClass::Int, "renderThingo", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, renderThingo), METADATA_PARAMS(NewProp_renderThingo_MetaData, ARRAY_COUNT(NewProp_renderThingo_MetaData)) };
+			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_render_distance = { UE4CodeGen_Private::EPropertyClass::Int, "render_distance", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, render_distance), METADATA_PARAMS(NewProp_render_distance_MetaData, ARRAY_COUNT(NewProp_render_distance_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Root_MetaData[] = {
 				{ "EditInline", "true" },
@@ -594,39 +322,6 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 #endif
 			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_totalRenderDistanceG = { UE4CodeGen_Private::EPropertyClass::Int, "totalRenderDistanceG", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, totalRenderDistanceG), METADATA_PARAMS(NewProp_totalRenderDistanceG_MetaData, ARRAY_COUNT(NewProp_totalRenderDistanceG_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SMAsset_Cube,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_steel,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_newflower,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_light,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_transcube,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_fireworks,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_glass,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_tile,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_shingles,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_lava,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ivy,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_fence,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_water,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_cloud,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ladder,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bouncy,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_wallpaper,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ice,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_slate,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_brick,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_flowers,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_weeds,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_rock,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_TNT,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_grass,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_wood,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_trunk,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_leaves,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_sand,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_dirt,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_stone,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bedrock,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_air,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ChunkBoundary,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MAT_Wood,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MAT_WeedsTop,
@@ -663,8 +358,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MAT_BlockTNTSide,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MAT_Bedrock,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Mesh,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_renderThingoNeg,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_renderThingo,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_render_distance,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Root,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_totalRenderDistanceG,
 			};
@@ -686,7 +380,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWorldConverter, 3342253453);
+	IMPLEMENT_CLASS(AWorldConverter, 3422344606);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWorldConverter(Z_Construct_UClass_AWorldConverter, &AWorldConverter::StaticClass, TEXT("/Script/EdenUniverseBuilder"), TEXT("AWorldConverter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWorldConverter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

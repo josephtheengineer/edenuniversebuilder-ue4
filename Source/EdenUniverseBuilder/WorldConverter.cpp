@@ -97,8 +97,8 @@ void AWorldConverter::CreateChunkMap(vector <int> worldData, int chunkPointer)
 		int address = worldData[chunkPointer + 11] * 256 * 256 * 256 + worldData[chunkPointer + 10] * 256 * 256 + worldData[chunkPointer + 9] * 256 + worldData[chunkPointer + 8];
 
 		// Find the position of the chunk
-		int x = worldData[chunkPointer + 1] * 256 + worldData[chunkPointer];
-		int y = worldData[chunkPointer + 5] * 256 + worldData[chunkPointer + 4];
+		int x = (worldData[chunkPointer + 1] * 256 + worldData[chunkPointer    ]) - 4000;
+		int y = (worldData[chunkPointer + 5] * 256 + worldData[chunkPointer + 4]) - 4000;
 
 		if (worldAreaX > x){
 			worldAreaX = x;
@@ -143,252 +143,217 @@ void AWorldConverter::CreateChunkMap(vector <int> worldData, int chunkPointer)
 //==============================================================================
 void AWorldConverter::CreateMesh(int totalRenderDistance)
 {
-	FTransform newT = GetTransform();
-
-	blockData EdenBlockData[] = {
-	/* ID  Name              Front              Left              Right              Back              Top              Bottom              */
-	{   0, air,            MAT_Dirt,    		MAT_Dirt,           MAT_Dirt,     		 MAT_Dirt,    		 MAT_Dirt,     			MAT_Dirt          },
-	{   1, bedrock,        MAT_Bedrock,    	MAT_Bedrock,       	MAT_Bedrock,     	 MAT_Bedrock,    	 MAT_Bedrock,       MAT_Bedrock       },
-	{   2, stone,          MAT_Stone,    		MAT_Stone,          MAT_Stone,     		 MAT_Stone,    		 MAT_Stone,     		MAT_Stone         },
-	{   3, dirt,           MAT_Dirt,    		MAT_Dirt,           MAT_Dirt,     		 MAT_Dirt,         MAT_Dirt,     			MAT_Dirt          },
-	{   4, sand,           MAT_Sand,    		MAT_Sand,           MAT_Sand,     		 MAT_Sand,    		 MAT_Sand,     			MAT_Sand          },
-	{   5, leaves,         MAT_Leaves,    	MAT_Leaves,         MAT_Leaves,     	 MAT_Leaves,    	 MAT_Leaves,     		MAT_Leaves        },
-	{   6, trunk,          MAT_TrunkSide,   MAT_TrunkSide,      MAT_TrunkSide,     MAT_TrunkSide,    MAT_TrunkTop,      MAT_TrunkTop      },
-	{   7, wood,           MAT_Wood,    		MAT_Wood,           MAT_Wood,     		 MAT_Wood,    		 MAT_Wood,     			MAT_Wood          },
-	{   8, grass,          MAT_GrassSide,   MAT_GrassSide,      MAT_GrassSide,     MAT_GrassSide,    MAT_GrassTop,      MAT_Dirt          },
-	{   9, TNT,            MAT_TNTSide,    	MAT_TNTSide,        MAT_TNTSide,     	 MAT_TNTSide,      MAT_TNTTop,        MAT_TNTTop        },
-	{  10, rock,           MAT_Rock,        MAT_Rock,           MAT_Rock,          MAT_Rock,         MAT_Rock,          MAT_Rock          },
-	{  11, weeds,          MAT_WeedsSide,   MAT_WeedsSide,      MAT_WeedsSide,     MAT_WeedsSide,    MAT_WeedsTop,      MAT_WeedsTop      },
-	{  12, flowers,        MAT_GrassSide,   MAT_GrassSide,      MAT_GrassSide,     MAT_GrassSide,    MAT_FlowersTop,    MAT_FlowersTop    },
-	{  13, brick,          MAT_Brick,       MAT_Brick,          MAT_Brick,         MAT_Brick,        MAT_Brick,         MAT_Brick         },
-	{  14, slate,          MAT_Roof,        MAT_Roof,           MAT_Roof,          MAT_Roof,         MAT_Roof,          MAT_Roof          },
-	{  15, ice,          	 MAT_Ice,    			MAT_Ice,            MAT_Ice,     			 MAT_Ice,          MAT_Ice,           MAT_Ice           },
-	{  16, wallpaper,      MAT_Wallpaper,   MAT_Wallpaper,      MAT_Wallpaper,     MAT_Wallpaper,    MAT_Wallpaper,     MAT_Wallpaper     },
-	{  17, bouncy,         MAT_Trampoline,  MAT_Trampoline,     MAT_Trampoline,    MAT_Trampoline,   MAT_Trampoline,    MAT_Trampoline    },
-	{  18, ladder,         MAT_LadderSide,  MAT_LadderSide,     MAT_LadderSide,    MAT_LadderSide,   MAT_Wood,          MAT_Wood          },
-	{  19, cloud,          MAT_Cloud,    		MAT_Cloud,          MAT_Cloud,     		 MAT_Cloud,    		 MAT_Cloud,     		MAT_Cloud         },
-	{  20, water,          MAT_Water,    		MAT_Water,          MAT_Water,     		 MAT_Water,    		 MAT_Water,     		MAT_Water         },
-	{  21, fence,          MAT_Fence,    		MAT_Fence,          MAT_Fence,     		 MAT_Fence,    		 MAT_Fence,     		MAT_Fence         },
-	{  22, ivy,            MAT_Vines,    		MAT_Vines,          MAT_Vines,     		 MAT_Vines,    		 MAT_Vines,     		MAT_Vines         },
-	{  23, lava,           MAT_Lava,    		MAT_Lava,           MAT_Lava,     		 MAT_Lava,    		 MAT_Lava,     		  MAT_Lava          },
-	{  56, shingles,       MAT_Roof,    		MAT_Roof,           MAT_Roof,     		 MAT_Roof,    		 MAT_Roof,     		  MAT_Roof          },
-	{  57, tile,           MAT_Tiles,    		MAT_Tiles,          MAT_Tiles,     		 MAT_Tiles,    		 MAT_Tiles,     		MAT_Tiles         },
-	{  58, glass,          MAT_Glass,    		MAT_Glass,          MAT_Glass,     		 MAT_Glass,    		 MAT_Glass,     		MAT_Glass         },
-	{  65, fireworks,      MAT_FireworksSide,MAT_FireworksSide, MAT_FireworksSide, MAT_FireworksSide,MAT_TNTTop,        MAT_TNTTop        },
-	{  71, transcube,      MAT_BlockTNTSide,MAT_BlockTNTSide,   MAT_BlockTNTSide,  MAT_BlockTNTSide, MAT_TNTTop,        MAT_TNTTop        },
-	{  72, light,          MAT_Light,    		MAT_Light,          MAT_Light,     		 MAT_Light,    		 MAT_Light,     		MAT_Light         },
-	{  73, newflower,      MAT_FlowersTop,  MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
-	{  74, steel,          MAT_Steel,    		MAT_Steel,          MAT_Steel,     		 MAT_Steel,    		 MAT_Steel,     		MAT_Steel         }
-	};
-
-	/* We are creating a single InstancedStaticMesh for every block in the game
-	 * in the below if statement
-	 * This should be all blocks (meanwhile for debuging I'm using 23 :P)
-	 */
-	for (int i = 1; i <= 23; i++){
-		UE_LOG(LogTemp,Log,TEXT("Creating mesh %d..."), i);
-
-		EdenBlockData[i].name = NewObject<UInstancedStaticMeshComponent>(this);
-		EdenBlockData[i].name->RegisterComponent();
-
-		//Set the block type to Cube
-		EdenBlockData[i].name->SetStaticMesh(SMAsset_Cube);
-		EdenBlockData[i].name->SetFlags(RF_Transactional);
-
-		EdenBlockData[i].name->SetMaterial(0, EdenBlockData[i].topMaterial);
-		EdenBlockData[i].name->SetMaterial(1, EdenBlockData[i].bottomMaterial);
-		EdenBlockData[i].name->SetMaterial(2, EdenBlockData[i].frontMaterial);
-		EdenBlockData[i].name->SetMaterial(3, EdenBlockData[i].backMaterial);
-		EdenBlockData[i].name->SetMaterial(4, EdenBlockData[i].rightMaterial);
-		EdenBlockData[i].name->SetMaterial(5, EdenBlockData[i].leftMaterial);
-
-		this->AddInstanceComponent(EdenBlockData[i].name);
-
-		newT.SetLocation(FVector(0,0,0));
-	}
-
 	/* Everything is setup now and we can begin to read from the world file and
 	 * place blocks in the world.
 	 * The below if statement should go through all chunks in the world.
 	 * Probably a bad idea and we should of used a foreach statement instead.
 	 */
-	for (int i = 0; i < chunksX.size(); i++)
+
+	int player [2]  = { 0, 0 };
+	int sorted_count = 0;
+
+
+	// Player is at 0(x) 0(y)
+	player[0] = 0;
+	player[1] = 0;
+
+	//bool again = true;
+
+	for (int i = 0; i < (chunksX.size() - 1); i++)
 	{
 
-		// This is our bounds. We are loading all chunks located between these cords
-		//renderThingo = 4055;
-		//renderThingoNeg = 4055;
-
 		// Grabbing the chunk position
-		int32 globalChunkPosXp = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
-		int32 globalChunkPosYp = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
+		int32 globalChunkPosX = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
+		int32 globalChunkPosY = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
 
-		UE_LOG(LogTemp,Log,TEXT("=== Checking chunk number %d ==="), i);
-		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosX: %d"), globalChunkPosXp);
-		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosY: %d"), globalChunkPosYp);
+		//UE_LOG(LogTemp,Log,TEXT("=== Checking chunk number %d ==="), i);
+		//UE_LOG(LogTemp,Log,TEXT("    globalChunkPosX: %d"), globalChunkPosX);
+		//UE_LOG(LogTemp,Log,TEXT("    globalChunkPosY: %d"), globalChunkPosY);
 
-		// Now heres some spaghetti code :P
+		// =========== RENDER DISTANCE ALGORITHM ===========
 
-		// =========== REDENR DISTANCE ALGORITHM ===========
-/*
-    // I am at 0(x) 0(y)
-    player[0] = 0;
-    player[1] = 0;
+    //vector<int> current_chunk = chunks[address[i]];
 
-    // Lets set the render distance to 2 chunks
-    render_distance = 1;
-
-    bool again = true;
-
-    int i = 0;
-    for (int i = 0; i <= 10; i++) {
-
-        vector<int> current_chunk = chunks[address[i]];
-
-        // Convert to positive number
-        if(current_chunk[0] < 0) {
-            current_chunk[0] = -current_chunk[0];
-        }
-
-        if(current_chunk[1] < 0) {
-            current_chunk[1] = -current_chunk[1];
-        }
-
-        again = true;
-        for (int a = 0; a <= 10; a++){
-            if (address_sorted[a] == address[i]){
-                again = false;
-            }
-        }
-
-        int in_bounds = 0;
-        //cout<<"==========="<<endl;
-
-        if (again){
-            // Handles x
-            if (current_chunk[0] <= player[0] && current_chunk[0] >= player[0] - render_distance){
-                // Handles left side
-
-                //cout<<"left"<<endl;
-                in_bounds++;
-            } else if (current_chunk[0] >= player[0] && current_chunk[0] <= player[0] + render_distance){
-                // Handles right side
-
-                //cout<<"right"<<endl;
-                in_bounds++;
-            }
-
-            // Handles y
-            if (current_chunk[1] <= player[1] && current_chunk[1] >= player[1] - render_distance){
-                // Handles down direction
-
-                //cout<<"down"<<endl;
-                in_bounds++;
-            } else if (current_chunk[1] >= player[1] && current_chunk[1] <= player[1] + render_distance){
-                // Handles up direction
-
-                //cout<<"up"<<endl;
-                in_bounds++;
-            }
-        }
-
-        if (in_bounds >= 2){
-            address_sorted[sorted_count] = address[i];
-                sorted_count++;
-
-                cout<<"==== "<<address[i]<<" ===="<<endl;
-                cout<<"x: "<<current_chunk[0]<<endl;
-                cout<<"y: "<<current_chunk[1]<<endl;
-        }
+    // Convert to positive number
+    if(globalChunkPosX < 0) {
+        globalChunkPosX = -globalChunkPosX;
     }
-*/
-			// =========== RENDER DISTANCE ALGORITHM ===========
 
-		if (globalChunkPosXp <= renderThingo && globalChunkPosXp <= renderThingoNeg)
-		{
-			if (globalChunkPosYp <= renderThingo && globalChunkPosYp <= renderThingoNeg)
+    if(globalChunkPosY < 0) {
+        globalChunkPosY = -globalChunkPosY;
+    }
+		/*
+    again = true;
+    for (int a = 0; a <= 10; a++){
+        if (address_sorted[a] == address[i]){
+            again = false;
+        }
+    }*/
+
+    int in_bounds = 0;
+
+    //if (again){
+        // Handles x
+        if (globalChunkPosX <= player[0] && globalChunkPosX >= player[0] - render_distance){
+            // Handles left side
+
+            //cout<<"left"<<endl;
+            in_bounds++;
+        } else if (globalChunkPosX >= player[0] && globalChunkPosX <= player[0] + render_distance){
+            // Handles right side
+
+            //cout<<"right"<<endl;
+            in_bounds++;
+        }
+
+        // Handles y
+        if (globalChunkPosY <= player[1] && globalChunkPosY >= player[1] - render_distance){
+            // Handles down direction
+
+            //cout<<"down"<<endl;
+            in_bounds++;
+        } else if (globalChunkPosY >= player[1] && globalChunkPosY <= player[1] + render_distance){
+            // Handles up direction
+
+            //cout<<"up"<<endl;
+            in_bounds++;
+        }
+    //}
+
+    if (in_bounds >= 2){
+			//chunks_to_load.Add(i);
+
+			UE_LOG(LogTemp,Log,TEXT(" ==================== PREPARING TO LOAD CHUNK %d ==================== "), i);
+			UE_LOG(LogTemp,Log,TEXT("       x: %d "), globalChunkPosX);
+			UE_LOG(LogTemp,Log,TEXT("       y: %d "), globalChunkPosY);
+
+
+			UE_LOG(LogTemp,Log,TEXT("Loading mesh %d... "), i);
+
+			FTransform newT = GetTransform();
+
+			blockData EdenBlockData[] = {
+			/* ID  Name              Front              Left              Right              Back              Top              Bottom              */
+			{   0, air[i],         MAT_Dirt,    		MAT_Dirt,           MAT_Dirt,     		 MAT_Dirt,    		 MAT_Dirt,     			MAT_Dirt          },
+			{   1, bedrock[i],     MAT_Bedrock,    	MAT_Bedrock,       	MAT_Bedrock,     	 MAT_Bedrock,    	 MAT_Bedrock,       MAT_Bedrock       },
+			{   2, stone[i],       MAT_Stone,    		MAT_Stone,          MAT_Stone,     		 MAT_Stone,    		 MAT_Stone,     		MAT_Stone         },
+			{   3, dirt[i],        MAT_Dirt,    		MAT_Dirt,           MAT_Dirt,     		 MAT_Dirt,         MAT_Dirt,     			MAT_Dirt          },
+			{   4, sand[i],        MAT_Sand,    		MAT_Sand,           MAT_Sand,     		 MAT_Sand,    		 MAT_Sand,     			MAT_Sand          },
+			{   5, leaves[i],      MAT_Leaves,    	MAT_Leaves,         MAT_Leaves,     	 MAT_Leaves,    	 MAT_Leaves,     		MAT_Leaves        },
+			{   6, trunk[i],       MAT_TrunkSide,   MAT_TrunkSide,      MAT_TrunkSide,     MAT_TrunkSide,    MAT_TrunkTop,      MAT_TrunkTop      },
+			{   7, wood[i],        MAT_Wood,    		MAT_Wood,           MAT_Wood,     		 MAT_Wood,    		 MAT_Wood,     			MAT_Wood          },
+			{   8, grass[i],       MAT_GrassSide,   MAT_GrassSide,      MAT_GrassSide,     MAT_GrassSide,    MAT_GrassTop,      MAT_Dirt          },
+			{   9, TNT[i],         MAT_TNTSide,    	MAT_TNTSide,        MAT_TNTSide,     	 MAT_TNTSide,      MAT_TNTTop,        MAT_TNTTop        },
+			{  10, rock[i],        MAT_Rock,        MAT_Rock,           MAT_Rock,          MAT_Rock,         MAT_Rock,          MAT_Rock          },
+			{  11, weeds[i],       MAT_WeedsSide,   MAT_WeedsSide,      MAT_WeedsSide,     MAT_WeedsSide,    MAT_WeedsTop,      MAT_WeedsTop      },
+			{  12, flowers[i],     MAT_GrassSide,   MAT_GrassSide,      MAT_GrassSide,     MAT_GrassSide,    MAT_FlowersTop,    MAT_FlowersTop    },
+			{  13, brick[i],       MAT_Brick,       MAT_Brick,          MAT_Brick,         MAT_Brick,        MAT_Brick,         MAT_Brick         },
+			{  14, slate[i],       MAT_Roof,        MAT_Roof,           MAT_Roof,          MAT_Roof,         MAT_Roof,          MAT_Roof          },
+			{  15, ice[i],         MAT_Ice,    			MAT_Ice,            MAT_Ice,     			 MAT_Ice,          MAT_Ice,           MAT_Ice           },
+			{  16, wallpaper[i],   MAT_Wallpaper,   MAT_Wallpaper,      MAT_Wallpaper,     MAT_Wallpaper,    MAT_Wallpaper,     MAT_Wallpaper     },
+			{  17, bouncy[i],      MAT_Trampoline,  MAT_Trampoline,     MAT_Trampoline,    MAT_Trampoline,   MAT_Trampoline,    MAT_Trampoline    },
+			{  18, ladder[i],      MAT_LadderSide,  MAT_LadderSide,     MAT_LadderSide,    MAT_LadderSide,   MAT_Wood,          MAT_Wood          },
+			{  19, cloud[i],       MAT_Cloud,    		MAT_Cloud,          MAT_Cloud,     		 MAT_Cloud,    		 MAT_Cloud,     		MAT_Cloud         },
+			{  20, water[i],       MAT_Water,    		MAT_Water,          MAT_Water,     		 MAT_Water,    		 MAT_Water,     		MAT_Water         },
+			{  21, fence[i],       MAT_Fence,    		MAT_Fence,          MAT_Fence,     		 MAT_Fence,    		 MAT_Fence,     		MAT_Fence         },
+			{  22, ivy[i],         MAT_Vines,    		MAT_Vines,          MAT_Vines,     		 MAT_Vines,    		 MAT_Vines,     		MAT_Vines         },
+			{  23, lava[i],        MAT_Lava,    		MAT_Lava,           MAT_Lava,     		 MAT_Lava,    		 MAT_Lava,     		  MAT_Lava          },
+			{  56, shingles[i],    MAT_Roof,    		MAT_Roof,           MAT_Roof,     		 MAT_Roof,    		 MAT_Roof,     		  MAT_Roof          },
+			{  57, tile[i],        MAT_Tiles,    		MAT_Tiles,          MAT_Tiles,     		 MAT_Tiles,    		 MAT_Tiles,     		MAT_Tiles         },
+			{  58, glass[i],       MAT_Glass,    		MAT_Glass,          MAT_Glass,     		 MAT_Glass,    		 MAT_Glass,     		MAT_Glass         },
+			{  65, fireworks[i],   MAT_FireworksSide,MAT_FireworksSide, MAT_FireworksSide, MAT_FireworksSide,MAT_TNTTop,        MAT_TNTTop        },
+			{  71, transcube[i],   MAT_BlockTNTSide,MAT_BlockTNTSide,   MAT_BlockTNTSide,  MAT_BlockTNTSide, MAT_TNTTop,        MAT_TNTTop        },
+			{  72, light[i],       MAT_Light,    		MAT_Light,          MAT_Light,     		 MAT_Light,    		 MAT_Light,     		MAT_Light         },
+			{  73, newflower[i],   MAT_FlowersTop,  MAT_Dirt,           MAT_GrassSide,     MAT_GrassSide,    MAT_GrassSide,     MAT_GrassSide     },
+			{  74, steel[i],       MAT_Steel,    		MAT_Steel,          MAT_Steel,     		 MAT_Steel,    		 MAT_Steel,     		MAT_Steel         }
+			};
+
+			/* We are creating a single InstancedStaticMesh for every block in the game
+			 * in the below if statement
+			 * This should be all blocks (meanwhile for debuging I'm using 23 :P)
+			 */
+			for (int b = 1; b <= 23; b++){
+				UE_LOG(LogTemp,Log,TEXT("Creating mesh %d..."), b);
+
+				EdenBlockData[i].name = NewObject<UInstancedStaticMeshComponent>(this);
+				EdenBlockData[i].name->RegisterComponent();
+
+				//Set the block type to Cube
+				EdenBlockData[i].name->SetStaticMesh(SMAsset_Cube);
+				EdenBlockData[i].name->SetFlags(RF_Transactional);
+
+				EdenBlockData[i].name->SetMaterial(0, EdenBlockData[b].topMaterial);
+				EdenBlockData[i].name->SetMaterial(1, EdenBlockData[b].bottomMaterial);
+				EdenBlockData[i].name->SetMaterial(2, EdenBlockData[b].frontMaterial);
+				EdenBlockData[i].name->SetMaterial(3, EdenBlockData[b].backMaterial);
+				EdenBlockData[i].name->SetMaterial(4, EdenBlockData[b].rightMaterial);
+				EdenBlockData[i].name->SetMaterial(5, EdenBlockData[b].leftMaterial);
+
+				this->AddInstanceComponent(EdenBlockData[i].name);
+
+				newT.SetLocation(FVector(0,0,0));
+			}
+
+			int chunk = chunkAddress[i];
+			UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
+
+			// Whatever this does ¯\_(ツ)_/¯
+			int baseX = (chunksX[chunk] - worldAreaX) * 16, baseY = (chunksY[chunk] - worldAreaY) * 16;
+
+			for (int baseHeight = 0; baseHeight < 4; baseHeight++)
 			{
-				UE_LOG(LogTemp,Log,TEXT(" ================================== Loading mesh %d =============================== "), i);
-				UE_LOG(LogTemp,Log,TEXT("globalChunkPosX: %d"), globalChunkPosXp);
-				UE_LOG(LogTemp,Log,TEXT("globalChunkPosY: %d"), globalChunkPosYp);
-
-				// =========================================================================
-
-				//int i = totalRenderDistance;
-				int chunk = chunkAddress[i];
-				UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
-				//UE_LOG(LogTemp,Log,TEXT("(%d of %d)"), i, totalRenderDistance);
-				// Whatever this does
-				int baseX = (chunksX[chunk] - worldAreaX) * 16, baseY = (chunksY[chunk] - worldAreaY) * 16;
-
-				for (int baseHeight = 0; baseHeight < 4; baseHeight++)
+				for (int x = 0; x < 16; x++)
 				{
-					for (int x = 0; x < 16; x++)
+					for (int y = 0; y < 16; y++)
 					{
-						for (int y = 0; y < 16; y++)
+						for (int z = 0; z < 16; z++)
 						{
-							for (int z = 0; z < 16; z++)
+						// Get block id
+						vector<int> id;
+						id.push_back(baseX + x);
+						id.push_back(baseY + y);
+						id.push_back(baseHeight * 16 + z);
+						id.push_back(0);
+
+						blocks[id] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
+						chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
+						chunkFinal.Add(FString::FromInt(bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]));
+
+						int blockId = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
+
+						int newX = (x + (globalChunkPosX*16)) * 100;
+						int newY = (y + (globalChunkPosY*16)) * 100;
+						int newZ = (z + (16 * baseHeight)) * 100;
+
+						UE_LOG(LogTemp,Log,TEXT("Chunk pos x: %d"), newX);
+						UE_LOG(LogTemp,Log,TEXT("Chunk pos y: %d"), newY);
+
+						newT.SetLocation(FVector(newX, newY, newZ));
+						newT.SetScale3D(FVector(0.5, 0.5, 0.5));
+
+						if (blockId != 0){
+							if (bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] <= 23 && bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] >= 1)
 							{
-							// Get block id
-							vector<int> id;
-							id.push_back(baseX + x);
-							id.push_back(baseY + y);
-							id.push_back(baseHeight * 16 + z);
-							id.push_back(0);
-
-							blocks[id] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-							chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
-							chunkFinal.Add(FString::FromInt(bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]));
-
-							int blockId = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-
-							int32 globalChunkPosX = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
-							int32 globalChunkPosY = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
-
-							//UE_LOG(LogTemp,Log,TEXT("Chunk pos x: %d"), globalChunkPosX);
-							//UE_LOG(LogTemp,Log,TEXT("Chunk pos y: %d"), globalChunkPosY);
-
-							int newX = (x + (globalChunkPosX*16)) * 100;
-							int newY = (y + (globalChunkPosY*16)) * 100;
-							int newZ = (z + (16 * baseHeight)) * 100;
-
-							//UE_LOG(LogTemp,Log,TEXT("Chunk pos x: %d"), newX);
-							//UE_LOG(LogTemp,Log,TEXT("Chunk pos y: %d"), newY);
-
-							newT.SetLocation(FVector(newX, newY, newZ));
-							newT.SetScale3D(FVector(0.5, 0.5, 0.5));
-
-							if (blockId != 0){
-								if (bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] <= 23 && bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] >= 1)
-								{
-									//dirt->AddInstance(newT);
-									EdenBlockData[blockId].name->AddInstance(newT);
-								} else {
-									EdenBlockData[19].name->AddInstance(newT);
-								}
+								//dirt->AddInstance(newT);
+								EdenBlockData[blockId].name->AddInstance(newT);
+							} else {
+								EdenBlockData[19].name->AddInstance(newT);
 							}
+						}
 
-							// Get block color
-							vector<int> color;
-							color.push_back(baseX + x);
-							color.push_back(baseY + y);
-							color.push_back(baseHeight * 16 + z);
-							color.push_back(1);
+						// Get block color
+						vector<int> color;
+						color.push_back(baseX + x);
+						color.push_back(baseY + y);
+						color.push_back(baseHeight * 16 + z);
+						color.push_back(1);
 
-							blocks[color] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
-							}
+						blocks[color] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
 						}
 					}
 				}
-
-				// ===================================================================
 			}
-		}
+    }
 	}
-
-	//for (int i = 0; i < totalRenderDistance; i++)
-	//{
-	//}
-
 	UE_LOG(LogTemp,Log,TEXT("Done!"));
 }

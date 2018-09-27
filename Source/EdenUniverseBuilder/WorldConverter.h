@@ -108,10 +108,7 @@ public:
 	USceneComponent* Root;
 
 	UPROPERTY(EditAnywhere)
-	int renderThingo = 4055;
-
-	UPROPERTY(EditAnywhere)
-	int renderThingoNeg = 4055;
+	int render_distance = 2;
 
 	UPROPERTY(VisibleAnywhere)
 	class UInstancedStaticMeshComponent* Mesh;
@@ -226,127 +223,47 @@ public:
 	class UBoxComponent* ChunkBoundary;
 
 	// Add StaticMeshComponent
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* air;
+	map<int32, UInstancedStaticMeshComponent*> air;
+	map<int32, UInstancedStaticMeshComponent*> bedrock;
+	map<int32, UInstancedStaticMeshComponent*> stone;
+	map<int32, UInstancedStaticMeshComponent*> dirt;
 
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* bedrock;
+	map<int32, UInstancedStaticMeshComponent*> sand;
+	map<int32, UInstancedStaticMeshComponent*> leaves;
+	map<int32, UInstancedStaticMeshComponent*> trunk;
+	map<int32, UInstancedStaticMeshComponent*> wood;
 
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* stone;
+	map<int32, UInstancedStaticMeshComponent*> grass;
+	map<int32, UInstancedStaticMeshComponent*> TNT;
+	map<int32, UInstancedStaticMeshComponent*> rock;
+	map<int32, UInstancedStaticMeshComponent*> weeds;
 
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* dirt;
+	map<int32, UInstancedStaticMeshComponent*> flowers;
+	map<int32, UInstancedStaticMeshComponent*> brick;
+	map<int32, UInstancedStaticMeshComponent*> slate;
+	map<int32, UInstancedStaticMeshComponent*> ice;
 
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* sand;
+	map<int32, UInstancedStaticMeshComponent*> wallpaper;
+	map<int32, UInstancedStaticMeshComponent*> bouncy;
+	map<int32, UInstancedStaticMeshComponent*> ladder;
+	map<int32, UInstancedStaticMeshComponent*> cloud;
 
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* leaves;
+	map<int32, UInstancedStaticMeshComponent*> water;
+	map<int32, UInstancedStaticMeshComponent*> fence;
+	map<int32, UInstancedStaticMeshComponent*> ivy;
+	map<int32, UInstancedStaticMeshComponent*> lava;
 
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* trunk;
+	map<int32, UInstancedStaticMeshComponent*> shingles;
+	map<int32, UInstancedStaticMeshComponent*> tile;
+	map<int32, UInstancedStaticMeshComponent*> glass;
+	map<int32, UInstancedStaticMeshComponent*> fireworks;
 
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* wood;
+	map<int32, UInstancedStaticMeshComponent*> transcube;
+	map<int32, UInstancedStaticMeshComponent*> light;
+	map<int32, UInstancedStaticMeshComponent*> newflower;
+	map<int32, UInstancedStaticMeshComponent*> steel;
 
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* grass;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* TNT;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* rock;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* weeds;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* flowers;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* brick;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* slate;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* ice;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* wallpaper;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* bouncy;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* ladder;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* cloud;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* water;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* fence;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* ivy;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* lava;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* shingles;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* tile;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* glass;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* fireworks;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* transcube;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* light;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* newflower;
-
-	UPROPERTY(EditAnywhere)
-	UInstancedStaticMeshComponent* steel;
-
-	UPROPERTY(EditAnywhere)
 	UStaticMesh* SMAsset_Cube;
 
-	// ======================== MULTI-THREADING ========================
-
-	void RunPrimeTask(int32 NumPrimes);
-
-	void RunPrimeTaskOnMain(int32 NumPrimes);
-};
-
-class PrimeSearchTask : public FNonAbandonableTask
-{
-public:
-	PrimeSearchTask(int32 _primeCount);
-
-	~PrimeSearchTask();
-
-	//Required by UE4
-	FORCEINLINE TStatId GetStatId() const
-	{
-		RETURN_QUICK_DECLARE_CYCLE_STAT(PrimeSearchTask, STATGROUP_ThreadPoolAsyncTasks);
-	}
-
-	int32 PrimeCount;
-
-	void DoWork();
-	void DoWorkOnMain();
+	TArray<int32> chunks_to_load;
 };
