@@ -35,7 +35,8 @@ public:
 
 	//FString name; // Human-readable name
 
-	UInstancedStaticMeshComponent* name;
+	//UInstancedStaticMeshComponent* name;
+	string name;
 
 	UMaterialInterface* topMaterial;
 
@@ -222,47 +223,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	class UBoxComponent* ChunkBoundary;
 
-	// Add StaticMeshComponent
-	map<int32, UInstancedStaticMeshComponent*> air;
-	map<int32, UInstancedStaticMeshComponent*> bedrock;
-	map<int32, UInstancedStaticMeshComponent*> stone;
-	map<int32, UInstancedStaticMeshComponent*> dirt;
+	map<int32, map<int32, UInstancedStaticMeshComponent*>> mesh_array;
 
-	map<int32, UInstancedStaticMeshComponent*> sand;
-	map<int32, UInstancedStaticMeshComponent*> leaves;
-	map<int32, UInstancedStaticMeshComponent*> trunk;
-	map<int32, UInstancedStaticMeshComponent*> wood;
-
-	map<int32, UInstancedStaticMeshComponent*> grass;
-	map<int32, UInstancedStaticMeshComponent*> TNT;
-	map<int32, UInstancedStaticMeshComponent*> rock;
-	map<int32, UInstancedStaticMeshComponent*> weeds;
-
-	map<int32, UInstancedStaticMeshComponent*> flowers;
-	map<int32, UInstancedStaticMeshComponent*> brick;
-	map<int32, UInstancedStaticMeshComponent*> slate;
-	map<int32, UInstancedStaticMeshComponent*> ice;
-
-	map<int32, UInstancedStaticMeshComponent*> wallpaper;
-	map<int32, UInstancedStaticMeshComponent*> bouncy;
-	map<int32, UInstancedStaticMeshComponent*> ladder;
-	map<int32, UInstancedStaticMeshComponent*> cloud;
-
-	map<int32, UInstancedStaticMeshComponent*> water;
-	map<int32, UInstancedStaticMeshComponent*> fence;
-	map<int32, UInstancedStaticMeshComponent*> ivy;
-	map<int32, UInstancedStaticMeshComponent*> lava;
-
-	map<int32, UInstancedStaticMeshComponent*> shingles;
-	map<int32, UInstancedStaticMeshComponent*> tile;
-	map<int32, UInstancedStaticMeshComponent*> glass;
-	map<int32, UInstancedStaticMeshComponent*> fireworks;
-
-	map<int32, UInstancedStaticMeshComponent*> transcube;
-	map<int32, UInstancedStaticMeshComponent*> light;
-	map<int32, UInstancedStaticMeshComponent*> newflower;
-	map<int32, UInstancedStaticMeshComponent*> steel;
-
+	UPROPERTY(EditAnywhere)
 	UStaticMesh* SMAsset_Cube;
 
 	TArray<int32> chunks_to_load;

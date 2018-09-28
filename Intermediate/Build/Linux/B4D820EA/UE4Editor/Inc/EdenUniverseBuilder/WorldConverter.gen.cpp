@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 	EDENUNIVERSEBUILDER_API UClass* Z_Construct_UClass_AWorldConverter();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_EdenUniverseBuilder();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UInstancedStaticMeshComponent_NoRegister();
@@ -44,6 +45,13 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 				{ "ModuleRelativePath", "WorldConverter.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SMAsset_Cube_MetaData[] = {
+				{ "Category", "WorldConverter" },
+				{ "ModuleRelativePath", "WorldConverter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SMAsset_Cube = { UE4CodeGen_Private::EPropertyClass::Object, "SMAsset_Cube", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, SMAsset_Cube), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(NewProp_SMAsset_Cube_MetaData, ARRAY_COUNT(NewProp_SMAsset_Cube_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ChunkBoundary_MetaData[] = {
 				{ "Category", "WorldConverter" },
@@ -322,6 +330,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 #endif
 			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_totalRenderDistanceG = { UE4CodeGen_Private::EPropertyClass::Int, "totalRenderDistanceG", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, totalRenderDistanceG), METADATA_PARAMS(NewProp_totalRenderDistanceG_MetaData, ARRAY_COUNT(NewProp_totalRenderDistanceG_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SMAsset_Cube,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ChunkBoundary,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MAT_Wood,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MAT_WeedsTop,
@@ -380,7 +389,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWorldConverter, 3422344606);
+	IMPLEMENT_CLASS(AWorldConverter, 1532761807);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWorldConverter(Z_Construct_UClass_AWorldConverter, &AWorldConverter::StaticClass, TEXT("/Script/EdenUniverseBuilder"), TEXT("AWorldConverter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWorldConverter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

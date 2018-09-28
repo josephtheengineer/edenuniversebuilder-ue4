@@ -220,8 +220,10 @@ void AFP_FirstPersonCharacter::MoveForward(float Value)
 {
 	if (Value != 0.0f) // We are not moving
 	{
+		UE_LOG(LogTemp, Log, TEXT("Moving forward!"));
 		if (Value == 1) // Trigger when W is pressed (positive y)
 		{
+			//UE_LOG(LogTemp, Log, TEXT("Moving forward!"));
 					//playLocation.SetLocation(FVector(x,0,0));
 		}
 		else // Trigger when S is pressed (negitive y)
