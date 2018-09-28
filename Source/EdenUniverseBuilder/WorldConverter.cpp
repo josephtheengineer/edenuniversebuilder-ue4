@@ -114,9 +114,6 @@ void AWorldConverter::CreateChunkMap(vector <int> worldData, int chunkPointer)
 			worldAreaHeightTemp = y;
 		}
 
-		string position = std::to_string(x) + "|" + std::to_string(y);
-		FString positionS = FString::FromInt(x) + "|" + FString::FromInt(y);
-
 		chunkAddress.Add(address);
 		chunkPositionX.Add(x);
 		chunkPositionY.Add(y);
@@ -287,7 +284,9 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 				mesh_array[b][chunk]->SetStaticMesh(SMAsset_Cube);
 				//UE_LOG(LogTemp,Log,TEXT("STAGE 2"));
 				mesh_array[b][chunk]->SetFlags(RF_Transactional);
-				mesh_array[b][chunk]->KeepInstanceBufferCPUAccess = false;
+
+				// TODO: Change this line to the new API in UE4 4.20
+				//mesh_array[b][chunk]->KeepInstanceBufferCPUAccess = false;
 
 				//UE_LOG(LogTemp,Log,TEXT("STAGE 3"));
 				mesh_array[b][chunk]->SetMaterial(0, EdenBlockData[b].topMaterial);
