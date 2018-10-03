@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+//This file is licensed under the Apache License, See attached LICENSE.md.
 
 // Based on code from Vuenctools for Eden || http://forum.edengame.net/index.php?/topic/295-vuenctools-for-eden-eden-world-manipulation-tool/
 // with help from Robert Munafo || http://www.mrob.com/pub/vidgames/eden-file-format.html
@@ -100,6 +100,9 @@ void AWorldConverter::CreateChunkMap(vector <int> worldData, int chunkPointer)
 		int x = (worldData[chunkPointer + 1] * 256 + worldData[chunkPointer    ]) - 4000;
 		int y = (worldData[chunkPointer + 5] * 256 + worldData[chunkPointer + 4]) - 4000;
 
+		int x = worldData[chunkPointer + 1] * 256 + worldData[chunkPointer]
+		int y = worldData[chunkPointer + 5] * 256 + worldData[chunkPointer + 4]
+
 		if (worldAreaX > x){
 			worldAreaX = x;
 		}
@@ -164,9 +167,9 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 		int32 globalChunkPosX = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
 		int32 globalChunkPosY = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
 
-		//UE_LOG(LogTemp,Log,TEXT("=== Checking chunk number %d ==="), i);
-		//UE_LOG(LogTemp,Log,TEXT("    globalChunkPosX: %d"), globalChunkPosX);
-		//UE_LOG(LogTemp,Log,TEXT("    globalChunkPosY: %d"), globalChunkPosY);
+		UE_LOG(LogTemp,Log,TEXT("=== Checking chunk number %d ==="), i);
+		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosX: %d"), globalChunkPosX);
+		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosY: %d"), globalChunkPosY);
 
 		// =========== RENDER DISTANCE ALGORITHM ===========
 
