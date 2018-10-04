@@ -222,7 +222,7 @@ void AFP_FirstPersonCharacter::MoveForward(float Value)
 {
 	if (Value != 0.0f) // We are not moving
 	{
-		UE_LOG(LogTemp, Log, TEXT("Moving forward!"));
+		//UE_LOG(LogTemp, Log, TEXT("Moving forward!"));
 		if (Value == 1) // Trigger when W is pressed (positive y)
 		{
 			//UE_LOG(LogTemp, Log, TEXT("Moving forward!"));
@@ -250,7 +250,7 @@ void AFP_FirstPersonCharacter::MoveRight(float Value)
 
 		}
 
-		UE_LOG(LogTemp, Log, TEXT("We are moving, value is %f"), Value);
+		//UE_LOG(LogTemp, Log, TEXT("We are moving, value is %f"), Value);
 
 		// Add movement in that direction
 		AddMovementInput(GetActorRightVector(), Value);
@@ -263,10 +263,10 @@ void AFP_FirstPersonCharacter::TurnAtRate(float Rate)
 	{
 		// Calculate delta for this frame from the rate information
 		AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
-		UE_LOG(LogTemp, Log, TEXT("We are rotating in function 2 and the value is %f"), Rate);
+		//UE_LOG(LogTemp, Log, TEXT("We are rotating in function 2 and the value is %f"), Rate);
 
 
-		UE_LOG(LogTemp, Log, TEXT("Cool thing: %f"), Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+		//UE_LOG(LogTemp, Log, TEXT("Cool thing: %f"), Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
 
 		if (facingDirection >= -140 && facingDirection <= 140)
 		{
@@ -281,7 +281,7 @@ void AFP_FirstPersonCharacter::TurnAtRate(float Rate)
 		} else {
 			facingDirection = 0;
 		}
-		UE_LOG(LogTemp, Log, TEXT("We are facing %f"), facingDirection);
+		//UE_LOG(LogTemp, Log, TEXT("We are facing %f"), facingDirection);
 	}
 }
 

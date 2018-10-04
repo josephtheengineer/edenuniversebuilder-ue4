@@ -36,7 +36,8 @@ void AWorldConverter::LoadChunk(){
 	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
 
 	UE_LOG(LogTemp,Verbose,TEXT("Opening file..."));
-	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
+	//bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
+	bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/SPK.eden");
 
 	GetWorldName(bytes);
 
