@@ -28,6 +28,8 @@ protected:
 
 public:
 
+	//void ReloadChunks();
+
 	typedef struct blockData
 	{
 
@@ -109,7 +111,7 @@ public:
 	USceneComponent* Root;
 
 	UPROPERTY(EditAnywhere)
-	int render_distance = 2;
+	float render_distance = 2.0;
 
 	UPROPERTY(VisibleAnywhere)
 	class UInstancedStaticMeshComponent* Mesh;

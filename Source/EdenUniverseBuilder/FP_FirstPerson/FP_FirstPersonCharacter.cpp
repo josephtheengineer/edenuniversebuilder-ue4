@@ -86,6 +86,8 @@ void AFP_FirstPersonCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	PlayerInputComponent->BindAxis("TurnRate", this, &AFP_FirstPersonCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AFP_FirstPersonCharacter::LookUpAtRate);
+
+	//PlayerInputComponent->BindAction("ReloadChunks", IE_Pressed, &AWorldConverter::ReloadChunks);
 }
 /*
 void AFP_FirstPersonCharacter::OnFire()

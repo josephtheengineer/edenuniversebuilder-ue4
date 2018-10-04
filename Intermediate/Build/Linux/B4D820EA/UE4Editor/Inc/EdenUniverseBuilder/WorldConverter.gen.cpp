@@ -313,7 +313,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 				{ "ModuleRelativePath", "WorldConverter.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_render_distance = { UE4CodeGen_Private::EPropertyClass::Int, "render_distance", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, render_distance), METADATA_PARAMS(NewProp_render_distance_MetaData, ARRAY_COUNT(NewProp_render_distance_MetaData)) };
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_render_distance = { UE4CodeGen_Private::EPropertyClass::Float, "render_distance", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AWorldConverter, render_distance), METADATA_PARAMS(NewProp_render_distance_MetaData, ARRAY_COUNT(NewProp_render_distance_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Root_MetaData[] = {
 				{ "EditInline", "true" },
@@ -389,7 +389,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldConverter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWorldConverter, 1532761807);
+	IMPLEMENT_CLASS(AWorldConverter, 895364986);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWorldConverter(Z_Construct_UClass_AWorldConverter, &AWorldConverter::StaticClass, TEXT("/Script/EdenUniverseBuilder"), TEXT("AWorldConverter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWorldConverter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

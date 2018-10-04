@@ -97,11 +97,8 @@ void AWorldConverter::CreateChunkMap(vector <int> worldData, int chunkPointer)
 		int address = worldData[chunkPointer + 11] * 256 * 256 * 256 + worldData[chunkPointer + 10] * 256 * 256 + worldData[chunkPointer + 9] * 256 + worldData[chunkPointer + 8];
 
 		// Find the position of the chunk
-		int x = (worldData[chunkPointer + 1] * 256 + worldData[chunkPointer    ]) - 4000;
-		int y = (worldData[chunkPointer + 5] * 256 + worldData[chunkPointer + 4]) - 4000;
-
-		int x = worldData[chunkPointer + 1] * 256 + worldData[chunkPointer]
-		int y = worldData[chunkPointer + 5] * 256 + worldData[chunkPointer + 4]
+		int x = worldData[chunkPointer + 1] * 256 + worldData[chunkPointer];
+		int y = worldData[chunkPointer + 5] * 256 + worldData[chunkPointer + 4];
 
 		if (worldAreaX > x){
 			worldAreaX = x;
@@ -150,13 +147,13 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 	 * Probably a bad idea and we should of used a foreach statement instead.
 	 */
 
-	int player [2]  = { 0, 0 };
+	int player [2]  = { 6521600, 6591907 };
 	int sorted_count = 0;
 
 
 	// Player is at 0(x) 0(y)
-	player[0] = 0;
-	player[1] = 0;
+	//player[0] = 0;
+	//player[1] = 0;
 
 	//bool again = true;
 
@@ -167,67 +164,44 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 		int32 globalChunkPosX = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
 		int32 globalChunkPosY = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
 
-		UE_LOG(LogTemp,Log,TEXT("=== Checking chunk number %d ==="), i);
-		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosX: %d"), globalChunkPosX);
-		UE_LOG(LogTemp,Log,TEXT("    globalChunkPosY: %d"), globalChunkPosY);
+		int realChunkPosX = (globalChunkPosX*16) * 100;
+		int realChunkPosY = (globalChunkPosY*16) * 100;
 
-		// =========== RENDER DISTANCE ALGORITHM ===========
+		UE_LOG(LogTemp,Log,TEXT("=== Checking chunk number %d ==="), i);
+		//UE_LOG(LogTemp,Log,TEXT("    realChunkPosX: %d"), realChunkPosX);
+		//UE_LOG(LogTemp,Log,TEXT("    realChunkPosY: %d"), realChunkPosY);
 
     //vector<int> current_chunk = chunks[address[i]];
 
-    // Convert to positive number
-    if(globalChunkPosX < 0) {
-        globalChunkPosX = -globalChunkPosX;
-    }
+		float formula = ((player[0] - realChunkPosX)*(player[0] - realChunkPosX)) + ((player[1] - realChunkPosY)*(player[1] - realChunkPosY));
+		//UE_LOG(LogTemp,Log,TEXT("  == Formula: %f ==   "), formula);
 
-    if(globalChunkPosY < 0) {
-        globalChunkPosY = -globalChunkPosY;
-    }
-		/*
-    again = true;
-    for (int a = 0; a <= 10; a++){
-        if (address_sorted[a] == address[i]){
-            again = false;
-        }
-    }*/
+		float distance = sqrt(formula);
 
-    int in_bounds = 0;
+		if (distance != distance) {
+			formula = formula * -1.0;
+			//UE_LOG(LogTemp,Log,TEXT("NEGATIVE"));
+			distance = sqrt(formula);
+		} else {
+			//UE_LOG(LogTemp,Log,TEXT("POSITIVE"));
+		}
 
-    //if (again){
-        // Handles x
-        if (globalChunkPosX <= player[0] && globalChunkPosX >= player[0] - render_distance){
-            // Handles left side
+		//UE_LOG(LogTemp,Log,TEXT("  == Formula 2: %f ==   "), formula);
 
-            //cout<<"left"<<endl;
-            in_bounds++;
-        } else if (globalChunkPosX >= player[0] && globalChunkPosX <= player[0] + render_distance){
-            // Handles right side
+		UE_LOG(LogTemp,Log,TEXT("((============================))"));
+		UE_LOG(LogTemp,Log,TEXT("    distance: %f"), distance);
+		UE_LOG(LogTemp,Log,TEXT("    realChunkPosX: %f"), realChunkPosX);
+		UE_LOG(LogTemp,Log,TEXT("    realChunkPosY: %f"), realChunkPosY);
+		UE_LOG(LogTemp,Log,TEXT("((============================))"));
+		//UE_LOG(LogTemp,Log,TEXT("  == RENDER DISTANCE %f ==   "), render_distance);
 
-            //cout<<"right"<<endl;
-            in_bounds++;
-        }
-
-        // Handles y
-        if (globalChunkPosY <= player[1] && globalChunkPosY >= player[1] - render_distance){
-            // Handles down direction
-
-            //cout<<"down"<<endl;
-            in_bounds++;
-        } else if (globalChunkPosY >= player[1] && globalChunkPosY <= player[1] + render_distance){
-            // Handles up direction
-
-            //cout<<"up"<<endl;
-            in_bounds++;
-        }
-    //}
-
-    if (in_bounds >= 2){
+    if (distance <= render_distance){
 			//chunks_to_load.Add(i);
 
-			UE_LOG(LogTemp,Log,TEXT(" ==================== PREPARING TO LOAD CHUNK %d ==================== "), i);
+			UE_LOG(LogTemp,Log,TEXT("Chunk %d is in bounds!"), i);
 			loaded_chunks++;
-			UE_LOG(LogTemp,Log,TEXT("       x: %d "), globalChunkPosX);
-			UE_LOG(LogTemp,Log,TEXT("       y: %d "), globalChunkPosY);
+			//UE_LOG(LogTemp,Log,TEXT("       x: %d "), globalChunkPosX);
+			//UE_LOG(LogTemp,Log,TEXT("       y: %d "), globalChunkPosY);
 
 
 			UE_LOG(LogTemp,Log,TEXT("Loading mesh %d... "), i);
@@ -372,3 +346,9 @@ void AWorldConverter::CreateMesh(int totalRenderDistance)
 	UE_LOG(LogTemp,Log,TEXT("Done!"));
 	UE_LOG(LogTemp,Log,TEXT("%d chunks loaded!"), loaded_chunks);
 }
+/*
+void AWorldConverter::ReloadChunks()
+{
+	UE_LOG(LogTemp,Log,TEXT("Reloading chunks..."));
+}
+*/
