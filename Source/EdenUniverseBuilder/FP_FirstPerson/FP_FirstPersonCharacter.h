@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 //#include "WorldConverter.h"
+#include "DrawDebugHelpers.h"
 #include "FP_FirstPersonCharacter.generated.h"
 
 class UInputComponent;
@@ -157,5 +158,8 @@ public:
 	FTransform playLocation = GetTransform();
 
 	float facingDirection = 0;
+
+	void PerformRaycast();
+	void ReloadChunks();
 
 };

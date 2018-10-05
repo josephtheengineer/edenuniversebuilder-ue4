@@ -69,6 +69,9 @@ void AFP_FirstPersonCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
+	PlayerInputComponent->BindAction("ReloadChunks", IE_Pressed, this, &AFP_FirstPersonCharacter::ReloadChunks);
+	PlayerInputComponent->BindAction("Raycast", IE_Pressed, this, &AFP_FirstPersonCharacter::PerformRaycast);
+
 	// Bind fire event
 	//PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AFP_FirstPersonCharacter::OnFire);
 
@@ -86,8 +89,6 @@ void AFP_FirstPersonCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	PlayerInputComponent->BindAxis("TurnRate", this, &AFP_FirstPersonCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AFP_FirstPersonCharacter::LookUpAtRate);
-
-	//PlayerInputComponent->BindAction("ReloadChunks", IE_Pressed, &AWorldConverter::ReloadChunks);
 }
 /*
 void AFP_FirstPersonCharacter::OnFire()
@@ -202,7 +203,7 @@ void AFP_FirstPersonCharacter::TouchUpdate(const ETouchIndex::Type FingerIndex, 
 				{
 					TouchItem.bMoved = true;
 					float Value = ScaledDelta.X * BaseTurnRate;
-					UE_LOG(LogTemp, Log, TEXT("We are rotating, value is %f"), Value);
+					//UE_LOG(LogTemp, Log, TEXT("We are rotating, value is %f"), Value);
 					AddControllerYawInput(Value);
 				}
 				if (FMath::Abs(ScaledDelta.Y) >= (4.0f / ScreenSize.Y))
@@ -309,4 +310,26 @@ void AFP_FirstPersonCharacter::TryEnableTouchscreenMovement(UInputComponent* Pla
 	PlayerInputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AFP_FirstPersonCharacter::BeginTouch);
 	PlayerInputComponent->BindTouch(EInputEvent::IE_Released, this, &AFP_FirstPersonCharacter::EndTouch);
 	PlayerInputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AFP_FirstPersonCharacter::TouchUpdate);
+}
+
+void AFP_FirstPersonCharacter::PerformRaycast()
+{
+	UE_LOG(LogTemp, Log, TEXT("Casting ray..."));
+	FHitResult* HitResult = new FHitResult();
+	FVector StartTrace = FirstPersonCameraComponent->GetComponentLocation();
+	FVector ForwardVector = FirstPersonCameraComponent->GetForwardVector();
+	FVector EndTrace = ((ForwardVector * 5000.f) + StartTrace);
+	FCollisionQueryParams* TraceParams = new FCollisionQueryParams();
+
+	if (GetWorld()->LineTraceSingleByChannel(*HitResult, StartTrace, EndTrace, ECC_Visibility, *TraceParams))
+	{
+		DrawDebugLine(GetWorld(), StartTrace, EndTrace, FColor(255, 0, 0), true);
+
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("You hit: %s"), *HitResult->Actor->GetName()));
+	}
+}
+
+void AFP_FirstPersonCharacter::ReloadChunks()
+{
+	UE_LOG(LogTemp,Log,TEXT("Reloading Chunks..."));
 }

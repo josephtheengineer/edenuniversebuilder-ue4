@@ -41,6 +41,8 @@ void AWorldConverter::LoadChunk(){
 
 	GetWorldName(bytes);
 
+	GetWorldName(bytes);
+
 	// Nobody really knows how this works
 	int chunkPointer = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
 
@@ -71,6 +73,27 @@ vector <int> AWorldConverter::OpenFile(const char *filename)
 }
 
 //==============================================================================
+// AWorldConverter::GetPlayerLocation() | Returns the player location from the loaded file
+//==============================================================================
+FVector AWorldConverter::GetPlayerLocation(vector <int> worldData)
+{
+	UE_LOG(LogTemp,Log,TEXT("Fetching player position from last save..."));
+	//FVector playerLocation = FVector(0,0,0)
+	int x = 0
+	int y = 0
+	int z = 0
+
+	for (int i = 35; i < 35+50; i++)
+	{
+		worldName += static_cast<char>(worldData[i]);
+	}
+
+	UE_LOG(LogTemp,Log,TEXT("World name is: %s"), *worldName);
+
+	return worldName;
+}
+
+//==============================================================================
 // AWorldConverter::GetWorldName() | Returns the world name
 //==============================================================================
 FString AWorldConverter::GetWorldName(vector <int> worldData)
@@ -84,6 +107,7 @@ FString AWorldConverter::GetWorldName(vector <int> worldData)
 	}
 
 	UE_LOG(LogTemp,Log,TEXT("World name is: %s"), *worldName);
+
 	return worldName;
 }
 
