@@ -1,5 +1,6 @@
-/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonCharacter.h
-/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonGameMode.h
-/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/FP_FirstPerson/FP_FirstPersonHUD.h
-/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/EdenUniverseBuilderGameModeBase.h
-/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/WorldConverter.h
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderCharacter.h
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderGameMode.h
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderHUD.h
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderProjectile.h
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/VoxelTerrainActor.h
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.h

@@ -1,3 +1,3 @@
-/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder/EdenUniverseBuilder.Build.cs
-/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilder.Target.cs
-/home/josephtheengineer/workspace/EdenProject/Engine/Source/EdenUniverseBuilderEditor.Target.cs
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilder.Build.cs
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder.Target.cs
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilderEditor.Target.cs

@@ -1,54 +1,13 @@
 INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source \
-	/opt/unreal-engine/Engine/Source/Runtime/Launch/Private \
-	/opt/unreal-engine/Engine/Source/Developer/DerivedDataCache/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Launch/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Launch \
-	/opt/unreal-engine/Engine/Source/Runtime/Launch \
-	/opt/unreal-engine/Engine/Source/Runtime/SessionServices/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SessionServices \
-	/opt/unreal-engine/Engine/Source/Runtime/SessionServices \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Internationalization \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Async \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Concurrency \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Containers \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/GenericPlatform \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/HAL \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Logging \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Math \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Misc \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Modules \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Modules/Boilerplate \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/ProfilingDebugging \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Serialization \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Serialization/Csv \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Stats \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Templates \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/UObject \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Linux \
-	/opt/unreal-engine/Engine/Source/Runtime/Core \
-	/opt/unreal-engine/Engine/Source/Developer/ProfilerService/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProfilerService \
-	/opt/unreal-engine/Engine/Source/Developer/ProfilerService \
-	/opt/unreal-engine/Engine/Source/Developer/ProfilerClient/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProfilerClient \
-	/opt/unreal-engine/Engine/Source/Developer/ProfilerClient \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Blueprint \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Internationalization \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Misc \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Serialization \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Serialization/Formatters \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Templates \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Engine \
+	/opt/unreal-engine/Engine/Source/Runtime \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Classes \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/AI \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/AI/Navigation \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Analytics \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Animation \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Curves \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EdGraph \
@@ -57,53 +16,97 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/PacketHandlers \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Performance \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Physics \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Physics/Experimental \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Physics/ImmediatePhysics \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/ProfilingDebugging \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Rendering \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Slate \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Tests \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/VisualLogger \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Engine \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Core \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Linux \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Core \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Algo \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Algo/Impl \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Async \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Clang \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Containers \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Features \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/FramePro \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/GenericPlatform \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/HAL \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/HAL/Allocators \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Hash \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Internationalization \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Logging \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Math \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Misc \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Modules \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Modules/Boilerplate \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/ProfilingDebugging \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Serialization \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Serialization/Csv \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Serialization/Formatters \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Stats \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Templates \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Traits \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/UObject \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Unix \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject \
+	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Blueprint \
+	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Internationalization \
+	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Misc \
+	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Serialization \
+	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Serialization/Formatters \
+	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Templates \
+	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ApplicationCore \
 	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore \
 	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore/Public/GenericPlatform \
 	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore/Public/HAL \
 	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore/Public/Linux \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore \
+	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore/Public/Unix \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/RHI \
 	/opt/unreal-engine/Engine/Source/Runtime/RHI/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RHI \
 	/opt/unreal-engine/Engine/Source/Runtime/RHI \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Json \
 	/opt/unreal-engine/Engine/Source/Runtime/Json/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Json \
 	/opt/unreal-engine/Engine/Source/Runtime/Json/Public/Dom \
 	/opt/unreal-engine/Engine/Source/Runtime/Json/Public/Policies \
 	/opt/unreal-engine/Engine/Source/Runtime/Json/Public/Serialization \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Json \
-	/opt/unreal-engine/Engine/Source/Runtime/Json \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/SlateCore \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/SlateCore \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Animation \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Application \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Brushes \
+	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Debugging \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Fonts \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Input \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Layout \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Logging \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Rendering \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Sound \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Stats \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Styling \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Textures \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Types \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Public/Widgets \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateCore \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateCore \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/InputCore \
 	/opt/unreal-engine/Engine/Source/Runtime/InputCore/Classes \
 	/opt/unreal-engine/Engine/Source/Runtime/InputCore/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/InputCore \
 	/opt/unreal-engine/Engine/Source/Runtime/InputCore/Public/GenericPlatform \
 	/opt/unreal-engine/Engine/Source/Runtime/InputCore/Public/HAL \
 	/opt/unreal-engine/Engine/Source/Runtime/InputCore/Public/Linux \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InputCore \
-	/opt/unreal-engine/Engine/Source/Runtime/InputCore \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Slate \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Slate \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Public/Framework \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Public/Framework/Application \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Public/Framework/Commands \
@@ -126,71 +129,76 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Public/Widgets/Notifications \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Public/Widgets/Text \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Public/Widgets/Views \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Slate \
-	/opt/unreal-engine/Engine/Source/Runtime/Slate \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ImageWrapper \
 	/opt/unreal-engine/Engine/Source/Runtime/ImageWrapper/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImageWrapper \
 	/opt/unreal-engine/Engine/Source/Runtime/ImageWrapper \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Messaging \
 	/opt/unreal-engine/Engine/Source/Runtime/Messaging/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Messaging \
 	/opt/unreal-engine/Engine/Source/Runtime/Messaging \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/MessagingCommon \
 	/opt/unreal-engine/Engine/Source/Runtime/MessagingCommon/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MessagingCommon \
 	/opt/unreal-engine/Engine/Source/Runtime/MessagingCommon \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/RenderCore \
 	/opt/unreal-engine/Engine/Source/Runtime/RenderCore/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RenderCore \
 	/opt/unreal-engine/Engine/Source/Runtime/RenderCore \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ShaderCore \
 	/opt/unreal-engine/Engine/Source/Runtime/ShaderCore/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ShaderCore \
 	/opt/unreal-engine/Engine/Source/Runtime/ShaderCore \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Sockets \
+	/opt/unreal-engine/Engine/Source/Runtime/Sockets/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Sockets \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/UtilityShaders \
 	/opt/unreal-engine/Engine/Source/Runtime/UtilityShaders/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UtilityShaders \
 	/opt/unreal-engine/Engine/Source/Runtime/UtilityShaders \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/AssetRegistry \
 	/opt/unreal-engine/Engine/Source/Runtime/AssetRegistry/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AssetRegistry \
 	/opt/unreal-engine/Engine/Source/Runtime/AssetRegistry \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/EngineMessages \
 	/opt/unreal-engine/Engine/Source/Runtime/EngineMessages/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EngineMessages \
 	/opt/unreal-engine/Engine/Source/Runtime/EngineMessages \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/EngineSettings \
 	/opt/unreal-engine/Engine/Source/Runtime/EngineSettings/Classes \
 	/opt/unreal-engine/Engine/Source/Runtime/EngineSettings/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EngineSettings \
 	/opt/unreal-engine/Engine/Source/Runtime/EngineSettings \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/SynthBenchmark \
 	/opt/unreal-engine/Engine/Source/Runtime/SynthBenchmark/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SynthBenchmark \
 	/opt/unreal-engine/Engine/Source/Runtime/SynthBenchmark \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Renderer \
 	/opt/unreal-engine/Engine/Source/Runtime/Renderer/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Renderer \
 	/opt/unreal-engine/Engine/Source/Runtime/Renderer \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/GameplayTags \
 	/opt/unreal-engine/Engine/Source/Runtime/GameplayTags/Classes \
 	/opt/unreal-engine/Engine/Source/Runtime/GameplayTags/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTags \
 	/opt/unreal-engine/Engine/Source/Runtime/GameplayTags \
-	/opt/unreal-engine/Engine/Source/Runtime/AIModule/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/AIModule/Classes \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AIModule \
-	/opt/unreal-engine/Engine/Source/Runtime/AIModule \
-	/opt/unreal-engine/Engine/Source/Runtime/GameplayTasks/Classes \
-	/opt/unreal-engine/Engine/Source/Runtime/GameplayTasks/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTasks \
-	/opt/unreal-engine/Engine/Source/Runtime/GameplayTasks \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/DatabaseSupport \
 	/opt/unreal-engine/Engine/Source/Runtime/DatabaseSupport/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DatabaseSupport \
 	/opt/unreal-engine/Engine/Source/Runtime/DatabaseSupport \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/PacketHandler \
+	/opt/unreal-engine/Engine/Source/Runtime/PacketHandlers \
 	/opt/unreal-engine/Engine/Source/Runtime/PacketHandlers/PacketHandler/Classes \
 	/opt/unreal-engine/Engine/Source/Runtime/PacketHandlers/PacketHandler/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PacketHandler \
 	/opt/unreal-engine/Engine/Source/Runtime/PacketHandlers/PacketHandler \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ReliabilityHandlerComponent \
 	/opt/unreal-engine/Engine/Source/Runtime/PacketHandlers/ReliabilityHandlerComponent/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ReliabilityHandlerComponent \
 	/opt/unreal-engine/Engine/Source/Runtime/PacketHandlers/ReliabilityHandlerComponent \
-	/opt/unreal-engine/Engine/Source/Runtime/HardwareSurvey/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HardwareSurvey \
-	/opt/unreal-engine/Engine/Source/Runtime/HardwareSurvey \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/AudioPlatformConfiguration \
+	/opt/unreal-engine/Engine/Source/Runtime/AudioPlatformConfiguration/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/AudioPlatformConfiguration \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/MeshDescription \
+	/opt/unreal-engine/Engine/Source/Runtime/MeshDescription/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/MeshDescription \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/PakFile \
+	/opt/unreal-engine/Engine/Source/Runtime/PakFile/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/PakFile \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/UnrealEd \
+	/opt/unreal-engine/Engine/Source/Editor \
 	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Public \
+	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidDeviceDetection/Public/Interfaces \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Public \
+	/opt/unreal-engine/Engine/Source/Editor/UnrealEd \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Public/AutoReimport \
+	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Public/Bookmarks \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Public/Commandlets \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Public/Dialogs \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Public/DragAndDrop \
@@ -200,531 +208,1025 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Public/Settings \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Public/Tests \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Public/Toolkits \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnrealEd \
-	/opt/unreal-engine/Engine/Source/Editor/UnrealEd \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/BspMode \
 	/opt/unreal-engine/Engine/Source/Editor/BspMode/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BspMode \
 	/opt/unreal-engine/Engine/Source/Editor/BspMode \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/DirectoryWatcher \
+	/opt/unreal-engine/Engine/Source/Developer \
 	/opt/unreal-engine/Engine/Source/Developer/DirectoryWatcher/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DirectoryWatcher \
 	/opt/unreal-engine/Engine/Source/Developer/DirectoryWatcher \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Documentation \
 	/opt/unreal-engine/Engine/Source/Editor/Documentation/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Documentation \
 	/opt/unreal-engine/Engine/Source/Editor/Documentation \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Projects \
 	/opt/unreal-engine/Engine/Source/Runtime/Projects/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Projects/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Projects \
 	/opt/unreal-engine/Engine/Source/Runtime/Projects \
+	/opt/unreal-engine/Engine/Source/Runtime/Projects/Public/Interfaces \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/SandboxFile \
 	/opt/unreal-engine/Engine/Source/Runtime/SandboxFile/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SandboxFile \
 	/opt/unreal-engine/Engine/Source/Runtime/SandboxFile \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/EditorStyle \
 	/opt/unreal-engine/Engine/Source/Editor/EditorStyle/Public \
+	/opt/unreal-engine/Engine/Source/Editor/EditorStyle \
 	/opt/unreal-engine/Engine/Source/Editor/EditorStyle/Public/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/EditorStyle/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorStyle \
-	/opt/unreal-engine/Engine/Source/Editor/EditorStyle \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/SourceControl \
 	/opt/unreal-engine/Engine/Source/Developer/SourceControl/Public \
-	/opt/unreal-engine/Engine/Source/Developer/SourceControl/Public/Tests \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SourceControl \
 	/opt/unreal-engine/Engine/Source/Developer/SourceControl \
+	/opt/unreal-engine/Engine/Source/Developer/SourceControl/Public/Tests \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/UnrealEdMessages \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEdMessages/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEdMessages/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnrealEdMessages \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEdMessages \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/GameplayDebugger \
 	/opt/unreal-engine/Engine/Source/Developer/GameplayDebugger/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayDebugger \
 	/opt/unreal-engine/Engine/Source/Developer/GameplayDebugger \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/BlueprintGraph \
 	/opt/unreal-engine/Engine/Source/Editor/BlueprintGraph/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/BlueprintGraph/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintGraph \
 	/opt/unreal-engine/Engine/Source/Editor/BlueprintGraph \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/HTTP \
+	/opt/unreal-engine/Engine/Source/Runtime/Online \
 	/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP \
 	/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP/Public/GenericPlatform \
 	/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP/Public/Interfaces \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP/Public/Linux \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTTP \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP/Public/Unix \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/UnrealAudio \
 	/opt/unreal-engine/Engine/Source/Runtime/UnrealAudio/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnrealAudio \
 	/opt/unreal-engine/Engine/Source/Runtime/UnrealAudio \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/FunctionalTesting \
 	/opt/unreal-engine/Engine/Source/Developer/FunctionalTesting/Classes \
 	/opt/unreal-engine/Engine/Source/Developer/FunctionalTesting/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FunctionalTesting \
 	/opt/unreal-engine/Engine/Source/Developer/FunctionalTesting \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/AutomationController \
 	/opt/unreal-engine/Engine/Source/Developer/AutomationController/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AutomationController \
 	/opt/unreal-engine/Engine/Source/Developer/AutomationController \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Localization \
 	/opt/unreal-engine/Engine/Source/Developer/Localization/Public \
-	/opt/unreal-engine/Engine/Source/Developer/Localization/Public/Serialization \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Localization \
 	/opt/unreal-engine/Engine/Source/Developer/Localization \
+	/opt/unreal-engine/Engine/Source/Developer/Localization/Public/Serialization \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/AudioEditor \
 	/opt/unreal-engine/Engine/Source/Editor/AudioEditor/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/AudioEditor/Public \
-	/opt/unreal-engine/Engine/Source/Editor/AudioEditor/Public/AssetTypeActions \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioEditor \
 	/opt/unreal-engine/Engine/Source/Editor/AudioEditor \
+	/opt/unreal-engine/Engine/Source/Editor/AudioEditor/Public/AssetTypeActions \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/LevelEditor \
 	/opt/unreal-engine/Engine/Source/Editor/LevelEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LevelEditor \
 	/opt/unreal-engine/Engine/Source/Editor/LevelEditor \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Settings \
 	/opt/unreal-engine/Engine/Source/Developer/Settings/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Settings \
 	/opt/unreal-engine/Engine/Source/Developer/Settings \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/IntroTutorials \
 	/opt/unreal-engine/Engine/Source/Editor/IntroTutorials/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/IntroTutorials \
 	/opt/unreal-engine/Engine/Source/Editor/IntroTutorials \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/HeadMountedDisplay \
 	/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HeadMountedDisplay \
 	/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay \
-	/opt/unreal-engine/Engine/Source/Editor/VREditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VREditor \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/VREditor \
 	/opt/unreal-engine/Engine/Source/Editor/VREditor \
+	/opt/unreal-engine/Engine/Source/Editor/VREditor/Public \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/CommonMenuExtensions \
 	/opt/unreal-engine/Engine/Source/Editor/CommonMenuExtensions/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CommonMenuExtensions \
 	/opt/unreal-engine/Engine/Source/Editor/CommonMenuExtensions \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Landscape \
 	/opt/unreal-engine/Engine/Source/Runtime/Landscape/Classes \
 	/opt/unreal-engine/Engine/Source/Runtime/Landscape/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Landscape \
 	/opt/unreal-engine/Engine/Source/Runtime/Landscape \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/PropertyEditor \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PropertyEditor \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ActorPickerMode \
 	/opt/unreal-engine/Engine/Source/Editor/ActorPickerMode/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ActorPickerMode \
 	/opt/unreal-engine/Engine/Source/Editor/ActorPickerMode \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/SceneDepthPickerMode \
 	/opt/unreal-engine/Engine/Source/Editor/SceneDepthPickerMode/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SceneDepthPickerMode \
 	/opt/unreal-engine/Engine/Source/Editor/SceneDepthPickerMode \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/DetailCustomizations \
 	/opt/unreal-engine/Engine/Source/Editor/DetailCustomizations/Public \
-	/opt/unreal-engine/Engine/Source/Editor/DetailCustomizations/Public/Customizations \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DetailCustomizations \
 	/opt/unreal-engine/Engine/Source/Editor/DetailCustomizations \
+	/opt/unreal-engine/Engine/Source/Editor/DetailCustomizations/Public/Customizations \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ClassViewer \
 	/opt/unreal-engine/Engine/Source/Editor/ClassViewer/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClassViewer \
 	/opt/unreal-engine/Engine/Source/Editor/ClassViewer \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/GraphEditor \
 	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/GraphEditor \
 	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Public/KismetNodes \
 	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Public/KismetPins \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GraphEditor \
-	/opt/unreal-engine/Engine/Source/Editor/GraphEditor \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ContentBrowser \
 	/opt/unreal-engine/Engine/Source/Editor/ContentBrowser/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ContentBrowser \
 	/opt/unreal-engine/Engine/Source/Editor/ContentBrowser \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/NetworkFileSystem \
 	/opt/unreal-engine/Engine/Source/Runtime/NetworkFileSystem/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkFileSystem/Public/Interfaces \
-	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetworkFileSystem \
 	/opt/unreal-engine/Engine/Source/Runtime/NetworkFileSystem \
-	/opt/unreal-engine/Engine/Source/Runtime/Sockets/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Sockets \
-	/opt/unreal-engine/Engine/Source/Runtime/Sockets \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/UMG \
 	/opt/unreal-engine/Engine/Source/Runtime/UMG/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/UMG \
 	/opt/unreal-engine/Engine/Source/Runtime/UMG/Public/Animation \
 	/opt/unreal-engine/Engine/Source/Runtime/UMG/Public/Binding \
 	/opt/unreal-engine/Engine/Source/Runtime/UMG/Public/Blueprint \
 	/opt/unreal-engine/Engine/Source/Runtime/UMG/Public/Components \
 	/opt/unreal-engine/Engine/Source/Runtime/UMG/Public/Slate \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UMG \
-	/opt/unreal-engine/Engine/Source/Runtime/UMG \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/MovieScene \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieScene/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/MovieScene \
+	/opt/unreal-engine/Engine/Source/Runtime/MovieScene/Public/Channels \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieScene/Public/Compilation \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieScene/Public/Evaluation \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieScene/Public/Evaluation/Blending \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieScene/Public/Generators \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieScene/Public/Sections \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieScene/Public/Tracks \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieScene \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieScene \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/TimeManagement \
+	/opt/unreal-engine/Engine/Source/Runtime/TimeManagement/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/TimeManagement \
+	/opt/unreal-engine/Engine/Source/Runtime/TimeManagement/Public/Widgets \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/MovieSceneTracks \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks \
+	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Public/Channels \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Public/Evaluation \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Public/Sections \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Public/Tracks \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieSceneTracks \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/AnimationCore \
+	/opt/unreal-engine/Engine/Source/Runtime/AnimationCore/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/AnimationCore \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/PropertyPath \
+	/opt/unreal-engine/Engine/Source/Runtime/PropertyPath/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/PropertyPath \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/NavigationSystem \
+	/opt/unreal-engine/Engine/Source/Runtime/NavigationSystem/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/NavigationSystem \
+	/opt/unreal-engine/Engine/Source/Runtime/NavigationSystem/Public/NavAreas \
+	/opt/unreal-engine/Engine/Source/Runtime/NavigationSystem/Public/NavFilters \
+	/opt/unreal-engine/Engine/Source/Runtime/NavigationSystem/Public/NavGraph \
+	/opt/unreal-engine/Engine/Source/Runtime/NavigationSystem/Public/NavMesh \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/MeshBuilder \
+	/opt/unreal-engine/Engine/Source/Developer/MeshBuilder/Public \
+	/opt/unreal-engine/Engine/Source/Developer/MeshBuilder \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/MaterialShaderQualitySettings \
+	/opt/unreal-engine/Engine/Source/Runtime/MaterialShaderQualitySettings/Classes \
+	/opt/unreal-engine/Engine/Source/Runtime/MaterialShaderQualitySettings \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/CollectionManager \
 	/opt/unreal-engine/Engine/Source/Developer/CollectionManager/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CollectionManager \
 	/opt/unreal-engine/Engine/Source/Developer/CollectionManager \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/AddContentDialog \
 	/opt/unreal-engine/Engine/Source/Editor/AddContentDialog/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AddContentDialog \
 	/opt/unreal-engine/Engine/Source/Editor/AddContentDialog \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/MeshUtilities \
 	/opt/unreal-engine/Engine/Source/Developer/MeshUtilities/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshUtilities \
 	/opt/unreal-engine/Engine/Source/Developer/MeshUtilities \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/MeshMergeUtilities \
 	/opt/unreal-engine/Engine/Source/Developer/MeshMergeUtilities/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshMergeUtilities \
 	/opt/unreal-engine/Engine/Source/Developer/MeshMergeUtilities \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/HierarchicalLODUtilities \
 	/opt/unreal-engine/Engine/Source/Developer/HierarchicalLODUtilities/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HierarchicalLODUtilities \
 	/opt/unreal-engine/Engine/Source/Developer/HierarchicalLODUtilities \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/MeshReductionInterface \
 	/opt/unreal-engine/Engine/Source/Developer/MeshReductionInterface/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshReductionInterface \
 	/opt/unreal-engine/Engine/Source/Developer/MeshReductionInterface \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/AssetTools \
 	/opt/unreal-engine/Engine/Source/Developer/AssetTools/Public \
-	/opt/unreal-engine/Engine/Source/Developer/AssetTools/Public/AssetTypeActions \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AssetTools \
 	/opt/unreal-engine/Engine/Source/Developer/AssetTools \
+	/opt/unreal-engine/Engine/Source/Developer/AssetTools/Public/AssetTypeActions \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/KismetCompiler \
 	/opt/unreal-engine/Engine/Source/Editor/KismetCompiler/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/KismetCompiler \
 	/opt/unreal-engine/Engine/Source/Editor/KismetCompiler \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/GameplayTasks \
+	/opt/unreal-engine/Engine/Source/Runtime/GameplayTasks/Classes \
+	/opt/unreal-engine/Engine/Source/Runtime/GameplayTasks/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/GameplayTasks \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/AIModule \
+	/opt/unreal-engine/Engine/Source/Runtime/AIModule/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/AIModule/Classes \
+	/opt/unreal-engine/Engine/Source/Runtime/AIModule \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Kismet \
 	/opt/unreal-engine/Engine/Source/Editor/Kismet/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/Kismet/Public \
+	/opt/unreal-engine/Engine/Source/Editor/Kismet \
 	/opt/unreal-engine/Engine/Source/Editor/Kismet/Public/Nodes \
 	/opt/unreal-engine/Engine/Source/Editor/Kismet/Public/WorkflowOrientedApp \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Kismet \
-	/opt/unreal-engine/Engine/Source/Editor/Kismet \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ClothingSystemRuntimeInterface \
 	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothingSystemRuntimeInterface \
 	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntimeInterface \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/NetworkReplayStreaming \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming \
 	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetworkReplayStreaming \
 	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/AudioMixer \
 	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Classes \
 	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer \
 	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Public/Components \
 	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Public/DSP \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioMixer \
-	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer \
-	/opt/unreal-engine/Engine/Source/Runtime/MoviePlayer/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MoviePlayer \
-	/opt/unreal-engine/Engine/Source/Runtime/MoviePlayer \
-	/opt/unreal-engine/Engine/Source/Runtime/Networking/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Networking/Public/Common \
-	/opt/unreal-engine/Engine/Source/Runtime/Networking/Public/Interfaces \
-	/opt/unreal-engine/Engine/Source/Runtime/Networking/Public/Interfaces/IPv4 \
-	/opt/unreal-engine/Engine/Source/Runtime/Networking/Public/Interfaces/Steam \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Networking \
-	/opt/unreal-engine/Engine/Source/Runtime/Networking \
-	/opt/unreal-engine/Engine/Source/Runtime/PakFile/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PakFile \
-	/opt/unreal-engine/Engine/Source/Runtime/PakFile \
-	/opt/unreal-engine/Engine/Source/Runtime/Serialization/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Serialization/Public/Backends \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Serialization \
-	/opt/unreal-engine/Engine/Source/Runtime/Serialization \
-	/opt/unreal-engine/Engine/Source/Runtime/Overlay/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Overlay \
-	/opt/unreal-engine/Engine/Source/Runtime/Overlay \
-	/opt/unreal-engine/Engine/Source/Runtime/MRMesh/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MRMesh \
-	/opt/unreal-engine/Engine/Source/Runtime/MRMesh \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/EdenUniverseBuilder \
+	Source \
+	Source/EdenUniverseBuilder \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ProceduralMeshComponent \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent \
+	/opt/unreal-engine/Engine/Source/Runtime/Launch/Private \
+	/opt/unreal-engine/Engine/Source/Programs/BlankProgram/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/BlankProgram \
+	/opt/unreal-engine/Engine/Source/Programs \
+	/opt/unreal-engine/Engine/Source/Runtime/Launch/Public \
+	/opt/unreal-engine/Engine/Source/Programs/BuildPatchTool/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/BuildPatchServices \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/BuildPatchServices/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/PakFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/SandboxFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/NetworkFile \
 	/opt/unreal-engine/Engine/Source/Runtime/NetworkFile/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetworkFile \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/StreamingFile \
 	/opt/unreal-engine/Engine/Source/Runtime/StreamingFile/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StreamingFile \
-	/opt/unreal-engine/Engine/Source/Runtime/StreamingFile \
-	/opt/unreal-engine/Engine/Source/Runtime/CookedIterativeFile/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CookedIterativeFile \
-	/opt/unreal-engine/Engine/Source/Runtime/CookedIterativeFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/Sockets \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/Messaging \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/AutomationWorker \
 	/opt/unreal-engine/Engine/Source/Runtime/AutomationWorker/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AutomationWorker \
-	/opt/unreal-engine/Engine/Source/Runtime/AutomationWorker \
-	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime/Public/Assets \
-	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime/Public/Utils \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothingSystemRuntime \
-	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/AutomationController \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/BuildPatchTool \
+	/opt/unreal-engine/Engine/Source/Programs/BuildPatchTool/Public \
+	/opt/unreal-engine/Engine/Source/Programs/CrashReportClient/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/CrashDebugHelper \
+	/opt/unreal-engine/Engine/Source/Developer/CrashDebugHelper/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/SourceControl \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/InputCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/HTTP \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/PakFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/XmlParser \
+	/opt/unreal-engine/Engine/Source/Runtime/XmlParser/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/Analytics \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/Analytics/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/AnalyticsET \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsET/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/DesktopPlatform \
 	/opt/unreal-engine/Engine/Source/Developer/DesktopPlatform/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DesktopPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/DesktopPlatform \
-	/opt/unreal-engine/Engine/Source/Editor/PIEPreviewDeviceProfileSelector/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PIEPreviewDeviceProfileSelector \
-	/opt/unreal-engine/Engine/Source/Editor/PIEPreviewDeviceProfileSelector \
-	/opt/unreal-engine/Engine/Source/Runtime/Linux/LinuxCommonStartup/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LinuxCommonStartup \
-	/opt/unreal-engine/Engine/Source/Runtime/Linux/LinuxCommonStartup \
-	/opt/unreal-engine/Engine/Source/Runtime/Media/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Media \
-	/opt/unreal-engine/Engine/Source/Runtime/Media \
-	/opt/unreal-engine/Engine/Source/Runtime/MediaUtils/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/LauncherPlatform \
+	/opt/unreal-engine/Engine/Source/Runtime/Portal \
+	/opt/unreal-engine/Engine/Source/Runtime/Portal/LauncherPlatform/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/Slate \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/SlateCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/ImageWrapper \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/StandaloneRenderer \
+	/opt/unreal-engine/Engine/Source/Developer/StandaloneRenderer/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/MessageLog \
+	/opt/unreal-engine/Engine/Source/Developer/MessageLog/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/SlateReflector \
+	/opt/unreal-engine/Engine/Source/Developer/SlateReflector/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/CrashReportClient \
+	/opt/unreal-engine/Engine/Source/Programs/CrashReportClient/Public \
+	/opt/unreal-engine/Engine/Source/Programs/IOS/UnrealLaunchDaemon/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/NetworkFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/StreamingFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Sockets \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Slate \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/InputCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/SlateCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/ImageWrapper \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/EditorStyle \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/StandaloneRenderer \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/LaunchDaemonMessages \
+	/opt/unreal-engine/Engine/Source/Runtime/IOS \
+	/opt/unreal-engine/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Classes \
+	/opt/unreal-engine/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Messaging \
+	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/UdpMessaging \
+	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Source \
+	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/UnrealLaunchDaemon \
+	/opt/unreal-engine/Engine/Source/Programs/IOS \
+	/opt/unreal-engine/Engine/Source/Programs/Mac/DsymExporter/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/Launch \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/ProfilerService \
+	/opt/unreal-engine/Engine/Source/Developer/ProfilerService/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/DsymExporter \
+	/opt/unreal-engine/Engine/Source/Programs/Mac \
+	/opt/unreal-engine/Engine/Source/Programs/Mac/DsymExporter/Public \
+	/opt/unreal-engine/Engine/Source/Programs/Mac/UE4EditorServices/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/DesktopPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/UE4EditorServices \
+	/opt/unreal-engine/Engine/Source/Programs/Mac/UnrealAtoS/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/Launch \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/ProfilerService \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/UnrealAtoS \
+	/opt/unreal-engine/Engine/Source/Programs/Mac/UnrealAtoS/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/Json \
+	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/UdpMessaging \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/LiveLinkInterface \
+	/opt/unreal-engine/Engine/Source/Runtime/LiveLinkInterface/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/LiveLinkMessageBusFramework \
+	/opt/unreal-engine/Engine/Source/Runtime/LiveLinkMessageBusFramework/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/MayaLiveLinkPlugin2016 \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/Json \
+	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/UdpMessaging \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/LiveLinkInterface \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/LiveLinkMessageBusFramework \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/MayaLiveLinkPlugin2017 \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/Json \
+	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/UdpMessaging \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/LiveLinkInterface \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/LiveLinkMessageBusFramework \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/MayaLiveLinkPlugin2018 \
+	/opt/unreal-engine/Engine/Source/Programs/MinidumpDiagnostics/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/CrashDebugHelper \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/SourceControl \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/InputCore \
+	/opt/unreal-engine/Engine/Plugins/Developer/PerforceSourceControl/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/PerforceSourceControl \
+	/opt/unreal-engine/Engine/Plugins/Developer/PerforceSourceControl/Source \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/Launch \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/ProfilerService \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/MinidumpDiagnostics \
+	/opt/unreal-engine/Engine/Source/Programs/MinidumpDiagnostics/Public \
+	/opt/unreal-engine/Engine/Source/Programs/ShaderCompileWorker/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/ShaderCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/RenderCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/SandboxFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/TargetPlatform \
+	/opt/unreal-engine/Engine/Source/Developer/TargetPlatform/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/AudioPlatformConfiguration \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/DesktopPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/LauncherPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/NetworkFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/PakFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/StreamingFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/Sockets \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/Launch \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/ProfilerService \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/ShaderCompileWorker \
+	/opt/unreal-engine/Engine/Source/Programs/SlateViewer/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/AppFramework \
+	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/Slate \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/InputCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/SlateCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/ImageWrapper \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/StandaloneRenderer \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/SourceCodeAccess \
+	/opt/unreal-engine/Engine/Source/Developer/SourceCodeAccess/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/Settings \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/WebBrowser \
+	/opt/unreal-engine/Engine/Source/Runtime/WebBrowser/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/UnixCommonStartup \
+	/opt/unreal-engine/Engine/Source/Runtime/Unix \
+	/opt/unreal-engine/Engine/Source/Runtime/Unix/UnixCommonStartup/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/SlateReflector \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/SlateViewer \
+	/opt/unreal-engine/Engine/Source/Programs/SlateViewer/Public \
+	/opt/unreal-engine/Engine/Source/Programs/SymbolDebugger/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/Slate \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/InputCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/SlateCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/ImageWrapper \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/EditorStyle \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/StandaloneRenderer \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/DesktopPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/CrashDebugHelper \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/SourceControl \
+	/opt/unreal-engine/Engine/Plugins/Developer/PerforceSourceControl/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/PerforceSourceControl \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/MessageLog \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/SymbolDebugger \
+	/opt/unreal-engine/Engine/Source/Programs/SymbolDebugger/Public \
+	/opt/unreal-engine/Engine/Source/Programs/TestPAL/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/DirectoryWatcher \
+	/opt/unreal-engine/Engine/Source/ThirdParty \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/TestPAL \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealCEFSubProcess/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/CEF3Utils \
+	/opt/unreal-engine/Engine/Source/Runtime/CEF3Utils/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/UnrealCEFSubProcess \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealFileServer/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/DirectoryWatcher \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/NetworkFileSystem \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/Sockets \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/SandboxFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/UnrealFileServer \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealFrontend/Private \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealFrontend/Private/Commands \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/AutomationController \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/DeviceManager \
+	/opt/unreal-engine/Engine/Source/Developer/DeviceManager/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/TargetDeviceServices \
+	/opt/unreal-engine/Engine/Source/Developer/TargetDeviceServices/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/LauncherServices \
+	/opt/unreal-engine/Engine/Source/Developer/LauncherServices/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Messaging \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/OutputLog \
+	/opt/unreal-engine/Engine/Source/Developer/OutputLog/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Profiler \
+	/opt/unreal-engine/Engine/Source/Developer/Profiler/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/InputCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/RenderCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Slate \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SlateCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ImageWrapper \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/EditorStyle \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ProfilerClient \
+	/opt/unreal-engine/Engine/Source/Developer/ProfilerClient/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ProfilerService \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/DesktopPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ProjectLauncher \
+	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/TargetPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/AudioPlatformConfiguration \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/LauncherPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SessionFrontend \
+	/opt/unreal-engine/Engine/Source/Developer/SessionFrontend/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SessionServices \
+	/opt/unreal-engine/Engine/Source/Runtime/SessionServices/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SourceCodeAccess \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Settings \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/StandaloneRenderer \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/UnixCommonStartup \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Networking \
+	/opt/unreal-engine/Engine/Source/Runtime/Networking/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Sockets \
+	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/UdpMessaging \
+	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/TcpMessaging \
+	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Source \
+	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SlateReflector \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/UnrealFrontend \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealHeaderTool/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/UnrealHeaderTool \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealHeaderTool/Public \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/Launch \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/ImportExport \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/CPUSolver \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/Lighting \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Misc \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Math \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Templates \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/SwarmInterface \
+	/opt/unreal-engine/Engine/Source/Editor/SwarmInterface/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Sockets \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Networking \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Messaging \
+	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/UdpMessaging \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/UnrealLightmass \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealPak/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/PakFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/PakFileUtilities \
+	/opt/unreal-engine/Engine/Source/Developer/PakFileUtilities/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/UnrealPak \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealVersionSelector/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/DesktopPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/Slate \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/InputCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/SlateCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/ImageWrapper \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/StandaloneRenderer \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/SlateFileDialogs \
+	/opt/unreal-engine/Engine/Source/Developer/SlateFileDialogs/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/UnixCommonStartup \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/UnrealVersionSelector \
+	/opt/unreal-engine/Engine/Source/Programs/UnrealWatchdog/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/Analytics \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/AnalyticsET \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/UnrealWatchdog \
+	/opt/unreal-engine/Engine/Source/Programs/Windows/BootstrapPackagedGame/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BootstrapPackagedGame/Inc/BootstrapPackagedGame \
+	/opt/unreal-engine/Engine/Source/Programs/Windows \
+	/opt/unreal-engine/Engine/Source/Developer/DerivedDataCache/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CoreUObject \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Engine \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ApplicationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RHI \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Json \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InputCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Slate \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImageWrapper \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Messaging \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MessagingCommon \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RenderCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ShaderCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Sockets \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UtilityShaders \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AssetRegistry \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EngineMessages \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EngineSettings \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SynthBenchmark \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Renderer \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTags \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DatabaseSupport \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PacketHandler \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ReliabilityHandlerComponent \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioPlatformConfiguration \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshDescription \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PakFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnrealEd \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BspMode \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DirectoryWatcher \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Documentation \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Projects \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SandboxFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorStyle \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SourceControl \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnrealEdMessages \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayDebugger \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintGraph \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTTP \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnrealAudio \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FunctionalTesting \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AutomationController \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Localization \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioEditor \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LevelEditor \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Settings \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/IntroTutorials \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HeadMountedDisplay \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VREditor \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CommonMenuExtensions \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Landscape \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PropertyEditor \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ActorPickerMode \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SceneDepthPickerMode \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DetailCustomizations \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClassViewer \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GraphEditor \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ContentBrowser \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetworkFileSystem \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UMG \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieScene \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TimeManagement \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieSceneTracks \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimationCore \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PropertyPath \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NavigationSystem \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshBuilder \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MaterialShaderQualitySettings \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CollectionManager \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AddContentDialog \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshUtilities \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshMergeUtilities \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HierarchicalLODUtilities \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshReductionInterface \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AssetTools \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/KismetCompiler \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTasks \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AIModule \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Kismet \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothingSystemRuntimeInterface \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetworkReplayStreaming \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioMixer \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MoviePlayer \
+	/opt/unreal-engine/Engine/Source/Runtime/MoviePlayer/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Networking \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Serialization \
+	/opt/unreal-engine/Engine/Source/Runtime/Serialization/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Cbor \
+	/opt/unreal-engine/Engine/Source/Runtime/Cbor/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Overlay \
+	/opt/unreal-engine/Engine/Source/Runtime/Overlay/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PreLoadScreen \
+	/opt/unreal-engine/Engine/Source/Runtime/PreLoadScreen/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaUtils \
-	/opt/unreal-engine/Engine/Source/Runtime/MediaUtils \
-	/opt/unreal-engine/Engine/Source/Developer/TaskGraph/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/MediaUtils/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Media \
+	/opt/unreal-engine/Engine/Source/Runtime/Media/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MRMesh \
+	/opt/unreal-engine/Engine/Source/Runtime/MRMesh/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetworkFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StreamingFile \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CookedIterativeFile \
+	/opt/unreal-engine/Engine/Source/Runtime/CookedIterativeFile/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AutomationWorker \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothingSystemRuntime \
+	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DesktopPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PIEPreviewDeviceProfileSelector \
+	/opt/unreal-engine/Engine/Source/Editor/PIEPreviewDeviceProfileSelector/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UnixCommonStartup \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TaskGraph \
-	/opt/unreal-engine/Engine/Source/Developer/TaskGraph \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateNullRenderer/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateNullRenderer/Public/Interfaces \
+	/opt/unreal-engine/Engine/Source/Developer/TaskGraph/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateNullRenderer \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateNullRenderer \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateRHIRenderer/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateRHIRenderer/Public/Interfaces \
+	/opt/unreal-engine/Engine/Source/Runtime/SlateNullRenderer/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateRHIRenderer \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateRHIRenderer \
-	/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/Misc \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaAssets \
-	/opt/unreal-engine/Engine/Source/Runtime/MediaAssets \
+	/opt/unreal-engine/Engine/Source/Runtime/SlateRHIRenderer/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Launch \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SessionServices \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProfilerService \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProfilerClient \
 	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private \
+	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Paper2D \
+	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source \
 	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/Paper2D/Classes \
 	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/Paper2D/Public \
-	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Paper2D \
-	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/Paper2D \
-	/opt/unreal-engine/Engine/Source/Runtime/MaterialShaderQualitySettings/Classes \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MaterialShaderQualitySettings \
-	/opt/unreal-engine/Engine/Source/Runtime/MaterialShaderQualitySettings \
 	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/Paper2DEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/KismetWidgets \
+	/opt/unreal-engine/Engine/Source/Editor/KismetWidgets/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WorkspaceMenuStructure \
+	/opt/unreal-engine/Engine/Source/Editor/WorkspaceMenuStructure/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshPaint \
+	/opt/unreal-engine/Engine/Source/Editor/MeshPaint/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorWidgets \
+	/opt/unreal-engine/Engine/Source/Editor/EditorWidgets/Public \
+	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Paper2DEditor \
 	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/Paper2DEditor/Classes \
 	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/Paper2DEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Paper2DEditor \
-	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/Paper2DEditor \
-	/opt/unreal-engine/Engine/Source/Editor/KismetWidgets/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/KismetWidgets \
-	/opt/unreal-engine/Engine/Source/Editor/KismetWidgets \
-	/opt/unreal-engine/Engine/Source/Editor/WorkspaceMenuStructure/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WorkspaceMenuStructure \
-	/opt/unreal-engine/Engine/Source/Editor/WorkspaceMenuStructure \
-	/opt/unreal-engine/Engine/Source/Editor/MeshPaint/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshPaint \
-	/opt/unreal-engine/Engine/Source/Editor/MeshPaint \
-	/opt/unreal-engine/Engine/Source/Editor/EditorWidgets/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorWidgets \
-	/opt/unreal-engine/Engine/Source/Editor/EditorWidgets \
+	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/PaperSpriteSheetImporter/Private \
 	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PaperSpriteSheetImporter \
-	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/PaperSpriteSheetImporter \
-	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/PaperTiledImporter/Classes \
+	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/PaperTiledImporter/Private \
 	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PaperTiledImporter \
-	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/PaperTiledImporter \
-	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SmartSnapping \
-	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/SmartSnapping \
-	/opt/unreal-engine/Engine/Source/Editor/ViewportSnapping/Public \
+	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/PaperTiledImporter/Classes \
+	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Source/SmartSnapping/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ViewportSnapping \
-	/opt/unreal-engine/Engine/Source/Editor/ViewportSnapping \
-	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeRuntime/Public \
+	/opt/unreal-engine/Engine/Source/Editor/ViewportSnapping/Public \
+	/opt/unreal-engine/Engine/Plugins/2D/Paper2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SmartSnapping \
+	/opt/unreal-engine/Engine/Plugins/AI/AISupport/Source/AISupportModule/Private \
+	/opt/unreal-engine/Engine/Plugins/AI/AISupport/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AISupportModule \
+	/opt/unreal-engine/Engine/Plugins/AI/AISupport/Source \
+	/opt/unreal-engine/Engine/Plugins/AI/AISupport/Source/AISupportModule/Public \
+	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeRuntime/Private \
 	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LightPropagationVolumeRuntime \
-	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeRuntime \
-	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeEditor/Classes \
+	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Source \
+	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeRuntime/Public \
+	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeEditor/Private \
 	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LightPropagationVolumeEditor \
-	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeEditor \
-	/opt/unreal-engine/Engine/Plugins/Developer/CLionSourceCodeAccess/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CLionSourceCodeAccess \
-	/opt/unreal-engine/Engine/Plugins/Developer/CLionSourceCodeAccess/Source/CLionSourceCodeAccess \
-	/opt/unreal-engine/Engine/Source/Developer/SourceCodeAccess/Public \
+	/opt/unreal-engine/Engine/Plugins/Blendables/LightPropagationVolume/Source/LightPropagationVolumeEditor/Classes \
+	/opt/unreal-engine/Engine/Plugins/Developer/ActorLayerUtilities/Source/ActorLayerUtilities/Private \
+	/opt/unreal-engine/Engine/Plugins/Developer/ActorLayerUtilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ActorLayerUtilities \
+	/opt/unreal-engine/Engine/Plugins/Developer/ActorLayerUtilities/Source \
+	/opt/unreal-engine/Engine/Plugins/Developer/ActorLayerUtilities/Source/ActorLayerUtilities/Public \
+	/opt/unreal-engine/Engine/Plugins/Developer/ActorLayerUtilities/Source/ActorLayerUtilitiesEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Layers \
+	/opt/unreal-engine/Engine/Source/Editor/Layers/Public \
+	/opt/unreal-engine/Engine/Plugins/Developer/ActorLayerUtilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ActorLayerUtilitiesEditor \
+	/opt/unreal-engine/Engine/Plugins/Developer/CLionSourceCodeAccess/Source/CLionSourceCodeAccess/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SourceCodeAccess \
-	/opt/unreal-engine/Engine/Source/Developer/SourceCodeAccess \
-	/opt/unreal-engine/Engine/Source/Developer/HotReload/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HotReload \
-	/opt/unreal-engine/Engine/Source/Developer/HotReload \
+	/opt/unreal-engine/Engine/Source/Developer/HotReload/Public \
+	/opt/unreal-engine/Engine/Plugins/Developer/CLionSourceCodeAccess/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CLionSourceCodeAccess \
+	/opt/unreal-engine/Engine/Plugins/Developer/CLionSourceCodeAccess/Source \
+	/opt/unreal-engine/Engine/Plugins/Developer/CodeLiteSourceCodeAccess/Source/CodeLiteSourceCodeAccess/Private \
 	/opt/unreal-engine/Engine/Plugins/Developer/CodeLiteSourceCodeAccess/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CodeLiteSourceCodeAccess \
-	/opt/unreal-engine/Engine/Plugins/Developer/CodeLiteSourceCodeAccess/Source/CodeLiteSourceCodeAccess \
+	/opt/unreal-engine/Engine/Plugins/Developer/CodeLiteSourceCodeAccess/Source \
+	/opt/unreal-engine/Engine/Plugins/Developer/GitSourceControl/Source/GitSourceControl/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DesktopWidgets \
+	/opt/unreal-engine/Engine/Source/Developer/DesktopWidgets/Public \
 	/opt/unreal-engine/Engine/Plugins/Developer/GitSourceControl/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GitSourceControl \
-	/opt/unreal-engine/Engine/Plugins/Developer/GitSourceControl/Source/GitSourceControl \
+	/opt/unreal-engine/Engine/Plugins/Developer/GitSourceControl/Source \
+	/opt/unreal-engine/Engine/Plugins/Developer/KDevelopSourceCodeAccess/Source/KDevelopSourceCodeAccess/Private \
 	/opt/unreal-engine/Engine/Plugins/Developer/KDevelopSourceCodeAccess/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/KDevelopSourceCodeAccess \
-	/opt/unreal-engine/Engine/Plugins/Developer/KDevelopSourceCodeAccess/Source/KDevelopSourceCodeAccess \
+	/opt/unreal-engine/Engine/Plugins/Developer/KDevelopSourceCodeAccess/Source \
+	/opt/unreal-engine/Engine/Plugins/Developer/NullSourceCodeAccess/Source/NullSourceCodeAccess/Private \
 	/opt/unreal-engine/Engine/Plugins/Developer/NullSourceCodeAccess/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NullSourceCodeAccess \
-	/opt/unreal-engine/Engine/Plugins/Developer/NullSourceCodeAccess/Source/NullSourceCodeAccess \
+	/opt/unreal-engine/Engine/Plugins/Developer/NullSourceCodeAccess/Source \
+	/opt/unreal-engine/Engine/Plugins/Developer/PerforceSourceControl/Source/PerforceSourceControl/Private \
 	/opt/unreal-engine/Engine/Plugins/Developer/PerforceSourceControl/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PerforceSourceControl \
-	/opt/unreal-engine/Engine/Plugins/Developer/PerforceSourceControl/Source/PerforceSourceControl \
-	/opt/unreal-engine/Engine/Plugins/Developer/SubversionSourceControl/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SubversionSourceControl \
-	/opt/unreal-engine/Engine/Plugins/Developer/SubversionSourceControl/Source/SubversionSourceControl \
-	/opt/unreal-engine/Engine/Source/Editor/XmlParser/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/XmlParser/Public \
+	/opt/unreal-engine/Engine/Plugins/Developer/SubversionSourceControl/Source/SubversionSourceControl/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/XmlParser \
-	/opt/unreal-engine/Engine/Source/Runtime/XmlParser \
-	/opt/unreal-engine/Engine/Plugins/Developer/UObjectPlugin/Source/Developer/UObjectPlugin/Private \
+	/opt/unreal-engine/Engine/Plugins/Developer/SubversionSourceControl/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SubversionSourceControl \
+	/opt/unreal-engine/Engine/Plugins/Developer/SubversionSourceControl/Source \
+	/opt/unreal-engine/Engine/Plugins/Developer/UObjectPlugin/Source/UObjectPlugin/Private \
+	/opt/unreal-engine/Engine/Plugins/Developer/UObjectPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UObjectPlugin \
+	/opt/unreal-engine/Engine/Plugins/Developer/UObjectPlugin/Source \
 	/opt/unreal-engine/Engine/Plugins/Developer/UObjectPlugin/Source/UObjectPlugin/Classes \
 	/opt/unreal-engine/Engine/Plugins/Developer/UObjectPlugin/Source/UObjectPlugin/Public \
-	/opt/unreal-engine/Engine/Plugins/Developer/UObjectPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UObjectPlugin \
-	/opt/unreal-engine/Engine/Plugins/Developer/UObjectPlugin/Source/UObjectPlugin \
+	/opt/unreal-engine/Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Source/VisualStudioCodeSourceCodeAccess/Private \
 	/opt/unreal-engine/Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VisualStudioCodeSourceCodeAccess \
-	/opt/unreal-engine/Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Source/VisualStudioCodeSourceCodeAccess \
+	/opt/unreal-engine/Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Source \
 	/opt/unreal-engine/Engine/Plugins/Editor/AssetManagerEditor/Source/AssetManagerEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Editor/AssetManagerEditor/Source/AssetManagerEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/AssetManagerEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AssetManagerEditor \
-	/opt/unreal-engine/Engine/Plugins/Editor/AssetManagerEditor/Source/AssetManagerEditor \
-	/opt/unreal-engine/Engine/Source/Developer/TargetPlatform/Public \
-	/opt/unreal-engine/Engine/Source/Developer/TargetPlatform/Public/Common \
-	/opt/unreal-engine/Engine/Source/Developer/TargetPlatform/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/TargetPlatform \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/LauncherPlatform/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LauncherPlatform \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/LauncherPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/TreeMap/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TreeMap \
-	/opt/unreal-engine/Engine/Source/Developer/TreeMap \
+	/opt/unreal-engine/Engine/Source/Developer/TreeMap/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/AssetManagerEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AssetManagerEditor \
+	/opt/unreal-engine/Engine/Plugins/Editor/AssetManagerEditor/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/AssetManagerEditor/Source/AssetManagerEditor/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TargetPlatform \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LauncherPlatform \
 	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source/CryptoKeys/Classes \
-	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source/CryptoKeys/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CryptoKeys \
-	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source/CryptoKeys \
-	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source/CryptoKeysOpenSSL/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source/CryptoKeys/Private \
 	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CryptoKeysOpenSSL \
-	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source/CryptoKeysOpenSSL \
+	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source/CryptoKeysOpenSSL/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameProjectGeneration \
 	/opt/unreal-engine/Engine/Source/Editor/GameProjectGeneration/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/GameProjectGeneration/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameProjectGeneration \
-	/opt/unreal-engine/Engine/Source/Editor/GameProjectGeneration \
-	/opt/unreal-engine/Engine/Source/Editor/HardwareTargeting/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HardwareTargeting \
-	/opt/unreal-engine/Engine/Source/Editor/HardwareTargeting \
-	/opt/unreal-engine/Engine/Plugins/Editor/DataValidation/Source/DataValidation/Public \
+	/opt/unreal-engine/Engine/Source/Editor/HardwareTargeting/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CryptoKeys \
+	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source/CryptoKeys/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/CryptoKeys/Source/CryptoKeysOpenSSL/Private \
+	/opt/unreal-engine/Engine/Plugins/Editor/DataValidation/Source/DataValidation/Private \
 	/opt/unreal-engine/Engine/Plugins/Editor/DataValidation/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DataValidation \
-	/opt/unreal-engine/Engine/Plugins/Editor/DataValidation/Source/DataValidation \
-	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimation/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/DataValidation/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/DataValidation/Source/DataValidation/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimation/Private \
 	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FacialAnimation \
-	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimation \
-	/opt/unreal-engine/Engine/Source/Source/FacialAnimationEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimationEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FacialAnimationEditor \
-	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimationEditor \
-	/opt/unreal-engine/Engine/Source/Editor/Persona/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimation/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimationEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Persona \
-	/opt/unreal-engine/Engine/Source/Editor/Persona \
-	/opt/unreal-engine/Engine/Source/Editor/AdvancedPreviewScene/Public \
+	/opt/unreal-engine/Engine/Source/Editor/Persona/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AdvancedPreviewScene \
-	/opt/unreal-engine/Engine/Source/Editor/AdvancedPreviewScene \
-	/opt/unreal-engine/Engine/Source/Editor/SkeletonEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/AdvancedPreviewScene/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SkeletonEditor \
-	/opt/unreal-engine/Engine/Source/Editor/SkeletonEditor \
-	/opt/unreal-engine/Engine/Plugins/Editor/GameplayTagsEditor/Source/Editor/GameplayTagsEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Editor/GameplayTagsEditor/Source/Developer/AssetTools/Private \
+	/opt/unreal-engine/Engine/Source/Editor/SkeletonEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FacialAnimationEditor \
+	/opt/unreal-engine/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimationEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MainFrame \
+	/opt/unreal-engine/Engine/Source/Editor/MainFrame/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/GameplayTagsEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTagsEditor \
+	/opt/unreal-engine/Engine/Plugins/Editor/GameplayTagsEditor/Source \
 	/opt/unreal-engine/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Classes \
 	/opt/unreal-engine/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/GameplayTagsEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTagsEditor \
-	/opt/unreal-engine/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor \
-	/opt/unreal-engine/Engine/Source/Editor/MainFrame/Public \
-	/opt/unreal-engine/Engine/Source/Editor/MainFrame/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MainFrame \
-	/opt/unreal-engine/Engine/Source/Editor/MainFrame \
-	/opt/unreal-engine/Engine/Plugins/Editor/MobileLauncherProfileWizard/Source/MobileLauncherProfileWizard/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/MobileLauncherProfileWizard/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MobileLauncherProfileWizard \
-	/opt/unreal-engine/Engine/Plugins/Editor/MobileLauncherProfileWizard/Source/MobileLauncherProfileWizard \
-	/opt/unreal-engine/Engine/Source/Developer/LauncherServices/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/EditableMesh/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditableMesh \
+	/opt/unreal-engine/Engine/Plugins/Runtime/EditableMesh/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/EditableMesh/Source/EditableMesh/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ViewportInteraction \
+	/opt/unreal-engine/Engine/Source/Editor/ViewportInteraction/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/MeshEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshEditor \
+	/opt/unreal-engine/Engine/Plugins/Editor/MeshEditor/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/MeshEditor/Source/MeshEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/MeshEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PolygonModeling \
+	/opt/unreal-engine/Engine/Plugins/Editor/MeshEditor/Source/PolygonModeling/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/MobileLauncherProfileWizard/Source/MobileLauncherProfileWizard/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LauncherServices \
-	/opt/unreal-engine/Engine/Source/Developer/LauncherServices \
-	/opt/unreal-engine/Engine/Source/Developer/TargetDeviceServices/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TargetDeviceServices \
-	/opt/unreal-engine/Engine/Source/Developer/TargetDeviceServices \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Public/Widgets \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Public/Widgets/Colors \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Public/Widgets/Testing \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Public/Widgets/Views \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Public/Widgets/Workflow \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AppFramework \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework \
-	/opt/unreal-engine/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/PluginBrowser/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PluginBrowser \
-	/opt/unreal-engine/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser \
-	/opt/unreal-engine/Engine/Source/Developer/SharedSettingsWidgets/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/MobileLauncherProfileWizard/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MobileLauncherProfileWizard \
+	/opt/unreal-engine/Engine/Plugins/Editor/MobileLauncherProfileWizard/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/MobileLauncherProfileWizard/Source/MobileLauncherProfileWizard/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SharedSettingsWidgets \
-	/opt/unreal-engine/Engine/Source/Developer/SharedSettingsWidgets \
-	/opt/unreal-engine/Engine/Source/Developer/ExternalImagePicker/Public \
+	/opt/unreal-engine/Engine/Source/Developer/SharedSettingsWidgets/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ExternalImagePicker \
-	/opt/unreal-engine/Engine/Source/Developer/ExternalImagePicker \
-	/opt/unreal-engine/Engine/Source/Editor/UATHelper/Public \
+	/opt/unreal-engine/Engine/Source/Developer/ExternalImagePicker/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UATHelper \
-	/opt/unreal-engine/Engine/Source/Editor/UATHelper \
-	/opt/unreal-engine/Engine/Plugins/Editor/SpeedTreeImporter/Source/MainFrame \
-	/opt/unreal-engine/Engine/Plugins/Editor/SpeedTreeImporter/Source/Editor/SpeedTreeImporter/Private \
+	/opt/unreal-engine/Engine/Source/Editor/UATHelper/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/PluginBrowser/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PluginBrowser \
+	/opt/unreal-engine/Engine/Plugins/Editor/PluginBrowser/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter/Private \
+	/opt/unreal-engine/Engine/Plugins/Editor/SpeedTreeImporter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SpeedTreeImporter \
+	/opt/unreal-engine/Engine/Plugins/Editor/SpeedTreeImporter/Source \
 	/opt/unreal-engine/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter/Classes \
 	/opt/unreal-engine/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/SpeedTreeImporter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SpeedTreeImporter \
-	/opt/unreal-engine/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter \
-	/opt/unreal-engine/Engine/Source/Developer/RawMesh/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RawMesh \
-	/opt/unreal-engine/Engine/Source/Developer/RawMesh \
-	/opt/unreal-engine/Engine/Plugins/Enterprise/DatasmithContent/Source/DatasmithContent/Public \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/DatasmithContent/Source/DatasmithContent/Private \
 	/opt/unreal-engine/Engine/Plugins/Enterprise/DatasmithContent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DatasmithContent \
-	/opt/unreal-engine/Engine/Plugins/Enterprise/DatasmithContent/Source/DatasmithContent \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/DatasmithContent/Source \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/DatasmithContent/Source/DatasmithContent/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CinematicCamera \
+	/opt/unreal-engine/Engine/Source/Runtime/CinematicCamera/Public \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/DatasmithContent/Source/DatasmithContentEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/DatasmithContent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DatasmithContentEditor \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/DatasmithContent/Source/DatasmithContentEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/VariantManagerContent/Source/VariantManagerContent/Private \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/VariantManagerContent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VariantManagerContent \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/VariantManagerContent/Source \
+	/opt/unreal-engine/Engine/Plugins/Enterprise/VariantManagerContent/Source/VariantManagerContent/Public \
 	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicImporter/Private \
-	/opt/unreal-engine/Engine/Source/AlembicImporter/Public \
-	/opt/unreal-engine/Engine/Source/AlembicImporter/Classes \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AlembicImporter \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source \
 	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicImporter/Classes \
 	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicImporter/Public \
-	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AlembicImporter \
-	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicImporter \
-	/opt/unreal-engine/Engine/Source/AlembicLibrary/Public \
-	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Public \
 	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AlembicLibrary \
-	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary \
-	/opt/unreal-engine/Engine/Source/Runtime/GeometryCache/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/GeometryCache/Classes \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCache \
-	/opt/unreal-engine/Engine/Source/Runtime/GeometryCache \
-	/opt/unreal-engine/Engine/Source/Runtime/GeometryCacheEd/Classes \
-	/opt/unreal-engine/Engine/Source/Runtime/GeometryCacheEd/Public \
-	/opt/unreal-engine/Engine/Source/Editor/GeometryCacheEd/Classes \
-	/opt/unreal-engine/Engine/Source/Editor/GeometryCacheEd/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCacheEd \
-	/opt/unreal-engine/Engine/Source/Editor/GeometryCacheEd \
-	/opt/unreal-engine/Engine/Source/Developer/MaterialUtilities/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCache \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCache/Classes \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCache/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCacheEd \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCacheEd/Classes \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCacheEd/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source/ThirdParty \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MaterialUtilities \
-	/opt/unreal-engine/Engine/Source/Developer/MaterialUtilities \
+	/opt/unreal-engine/Engine/Source/Developer/MaterialUtilities/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RawMesh \
+	/opt/unreal-engine/Engine/Source/Developer/RawMesh/Public \
 	/opt/unreal-engine/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshDescriptionOperations \
+	/opt/unreal-engine/Engine/Source/Developer/MeshDescriptionOperations/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCache/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshUtilitiesCommon \
+	/opt/unreal-engine/Engine/Source/Developer/MeshUtilitiesCommon/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCacheTracks/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimGraphRuntime \
+	/opt/unreal-engine/Engine/Source/Runtime/AnimGraphRuntime/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCacheTracks \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCacheTracks/Classes \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCacheTracks/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCacheSequencer \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCacheSequencer/Classes \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCacheSequencer/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Sequencer \
+	/opt/unreal-engine/Engine/Source/Editor/Sequencer/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SceneOutliner \
+	/opt/unreal-engine/Engine/Source/Editor/SceneOutliner/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CurveEditor \
+	/opt/unreal-engine/Engine/Source/Editor/CurveEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleImageUtils/Source/AppleImageUtils/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleImageUtils/Source/AppleImageUtils/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleImageUtils/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AppleImageUtils \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleImageUtils/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleImageUtils/Source/AppleImageUtilsBlueprintSupport/Classes \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleImageUtils/Source/AppleImageUtilsBlueprintSupport/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleImageUtils/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AppleImageUtilsBlueprintSupport \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleVision/Source/AppleVision/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleVision/Source/AppleVision/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleVision/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AppleVision \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleVision/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleVision/Source/AppleVisionBlueprintSupport/Classes \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleVision/Source/AppleVisionBlueprintSupport/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/AppleVision/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AppleVisionBlueprintSupport \
+	/opt/unreal-engine/Engine/Plugins/Experimental/BackChannel/Source/BackChannel/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/BackChannel/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BackChannel \
+	/opt/unreal-engine/Engine/Plugins/Experimental/BackChannel/Source \
 	/opt/unreal-engine/Engine/Plugins/Experimental/CharacterAI/Source/CharacterAI/Private \
-	/opt/unreal-engine/Engine/Plugins/Experimental/CharacterAI/Source/CharacterAI/Public \
 	/opt/unreal-engine/Engine/Plugins/Experimental/CharacterAI/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CharacterAI \
-	/opt/unreal-engine/Engine/Plugins/Experimental/CharacterAI/Source/CharacterAI \
+	/opt/unreal-engine/Engine/Plugins/Experimental/CharacterAI/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/CharacterAI/Source/CharacterAI/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProceduralMeshComponent \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponentEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProceduralMeshComponentEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponentEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Lumin/MagicLeapMedia/Source/MagicLeapMediaEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaAssets \
+	/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public \
+	/opt/unreal-engine/Engine/Plugins/Lumin/MagicLeapMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MagicLeapMediaEditor \
+	/opt/unreal-engine/Engine/Plugins/Lumin/MagicLeapMedia/Source \
 	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source/AndroidMediaEditor/Private \
 	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidMediaEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source/AndroidMediaEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source \
 	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source/AndroidMediaFactory/Private \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source/AndroidMediaFactory/Public \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidMediaFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source/AndroidMediaFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source/AndroidMedia/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidMedia \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source/AndroidMedia \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source/AndroidMedia/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidMediaFactory \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidMedia/Source/AndroidMediaFactory/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source/AvfMediaEditor/Private \
 	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AvfMediaEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source/AvfMediaEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source \
 	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source/AvfMediaFactory/Private \
-	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source/AvfMediaFactory/Public \
-	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AvfMediaFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source/AvfMediaFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source/AvfMedia/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AvfMedia \
-	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source/AvfMedia \
+	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source/AvfMedia/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AvfMediaFactory \
+	/opt/unreal-engine/Engine/Plugins/Media/AvfMedia/Source/AvfMediaFactory/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMedia/Private \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMedia/Private/Assets \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMedia/Private/Loader \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMedia/Private/Player \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMedia/Private/Readers \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMedia/Private/Scheduler \
-	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMedia/Public \
-	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImgMedia \
-	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMedia \
-	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMediaFactory/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImgMediaFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMediaFactory \
+	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMediaFactory/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OpenExrWrapper \
+	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/OpenExrWrapper/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImgMedia \
+	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMedia/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMediaEditor/Private \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMediaEditor/Private/Customizations \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMediaEditor/Private/Factories \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImgMediaEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMediaEditor \
-	/opt/unreal-engine/Engine/Source/Developer/DesktopWidgets/Public \
-	/opt/unreal-engine/Engine/Source/Developer/DesktopWidgets/Public/Widgets \
-	/opt/unreal-engine/Engine/Source/Developer/DesktopWidgets/Public/Widgets/Input \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DesktopWidgets \
-	/opt/unreal-engine/Engine/Source/Developer/DesktopWidgets \
 	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/ImgMediaFactory/Private \
 	/opt/unreal-engine/Engine/Plugins/Media/LinearTimecode/Source/LinearTimecode/Private \
-	/opt/unreal-engine/Engine/Plugins/Media/LinearTimecode/Source/LinearTimecode/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/LinearTimecode/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LinearTimecode \
-	/opt/unreal-engine/Engine/Plugins/Media/LinearTimecode/Source/LinearTimecode \
+	/opt/unreal-engine/Engine/Plugins/Media/LinearTimecode/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/LinearTimecode/Source/LinearTimecode/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositing/Private \
-	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositing/Private/Actors \
-	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositing/Private/Components \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositing/Private/MovieScene \
-	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositing/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaCompositing \
-	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositing \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositing/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositingEditor/Private \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositingEditor/Private/Sequencer \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositingEditor/Private/Shared \
-	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaCompositingEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Source/MediaCompositingEditor \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Public \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Public/Sections \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Public/TrackEditorThumbnail \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Public/TrackEditors \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Public/TrackEditors/PropertyTrackEditors \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieSceneTools \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools \
-	/opt/unreal-engine/Engine/Source/Editor/Sequencer/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Sequencer \
-	/opt/unreal-engine/Engine/Source/Editor/Sequencer \
-	/opt/unreal-engine/Engine/Source/Editor/SceneOutliner/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SceneOutliner \
-	/opt/unreal-engine/Engine/Source/Editor/SceneOutliner \
+	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieSceneCapture \
+	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LevelSequence \
+	/opt/unreal-engine/Engine/Source/Runtime/LevelSequence/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SequenceRecorder \
+	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorder/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaCompositing/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaCompositingEditor \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/AssetTools \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Customizations \
@@ -733,665 +1235,187 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Shared \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Toolkits \
 	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets \
-	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaPlayerEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ComponentVisualizers \
+	/opt/unreal-engine/Engine/Source/Editor/ComponentVisualizers/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureEditor \
 	/opt/unreal-engine/Engine/Source/Editor/TextureEditor/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/TextureEditor/Public \
-	/opt/unreal-engine/Engine/Source/Editor/TextureEditor/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureEditor \
-	/opt/unreal-engine/Engine/Source/Editor/TextureEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaPlayerEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaPlayerEditor/Source \
 	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source/WmfMediaEditor/Private \
 	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WmfMediaEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source/WmfMediaEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source \
 	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source/WmfMediaFactory/Private \
-	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source/WmfMediaFactory/Public \
-	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WmfMediaFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source/WmfMediaFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Public \
 	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WmfMedia \
-	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source/WmfMedia \
+	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WmfMediaFactory \
+	/opt/unreal-engine/Engine/Plugins/Media/WmfMedia/Source/WmfMediaFactory/Public \
 	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Private \
 	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Private/Settings \
 	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Private/Transport \
-	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Public \
 	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TcpMessaging \
-	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging \
 	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private \
 	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Shared \
 	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Transport \
-	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Transport/Tests \
 	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Tunnel \
-	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Public \
 	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UdpMessaging \
-	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging \
 	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequence/Source/ActorSequence/Private \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequence/Source/ActorSequence/Public \
 	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequence/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ActorSequence \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequence/Source/ActorSequence \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequence/Source \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequence/Source/ActorSequence/Public \
 	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private \
 	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/AssetTools \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Customizations \
 	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Factories \
 	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Misc \
 	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Styles \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LevelSequenceEditor \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor \
-	/opt/unreal-engine/Engine/Source/Runtime/LevelSequence/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LevelSequence \
-	/opt/unreal-engine/Engine/Source/Runtime/LevelSequence \
-	/opt/unreal-engine/Engine/Source/Runtime/CinematicCamera/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CinematicCamera \
-	/opt/unreal-engine/Engine/Source/Runtime/CinematicCamera \
-	/opt/unreal-engine/Engine/Source/Editor/ViewportInteraction/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ViewportInteraction \
-	/opt/unreal-engine/Engine/Source/Editor/ViewportInteraction \
-	/opt/unreal-engine/Engine/Source/Editor/PlacementMode/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PlacementMode \
-	/opt/unreal-engine/Engine/Source/Editor/PlacementMode \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneCaptureDialog/Public \
+	/opt/unreal-engine/Engine/Source/Editor/PlacementMode/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieSceneCaptureDialog \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneCaptureDialog \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/MatineeToLevelSequence/Source/LevelSequenceEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/MatineeToLevelSequence/Source/MatineeToLevelSequence/Public \
+	/opt/unreal-engine/Engine/Source/Editor/MovieSceneCaptureDialog/Public \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LevelSequenceEditor \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/LevelSequenceEditor/Source \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/MatineeToLevelSequence/Source/MatineeToLevelSequence/Private \
 	/opt/unreal-engine/Engine/Plugins/MovieScene/MatineeToLevelSequence/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MatineeToLevelSequence \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/MatineeToLevelSequence/Source/MatineeToLevelSequence \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/MatineeToLevelSequence/Source \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/MatineeToLevelSequence/Source/MatineeToLevelSequence/Public \
 	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4/Private \
+	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NUTUnrealEngine4 \
+	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source \
 	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4/Classes \
 	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4/Public \
-	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NUTUnrealEngine4 \
-	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4 \
+	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetcodeUnitTest \
+	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source \
 	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Classes \
 	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Public \
-	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Public/Net \
-	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Public/UI \
-	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetcodeUnitTest \
-	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest \
 	/opt/unreal-engine/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private \
-	/opt/unreal-engine/Engine/Source/Developer/StandaloneRenderer/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StandaloneRenderer \
-	/opt/unreal-engine/Engine/Source/Developer/StandaloneRenderer \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Source/OnlineSubsystem/Private \
-	/opt/unreal-engine/Engine/Source/OnlineSubsystem/Public/Interfaces \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Source/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Source/Public/Interfaces \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystem \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Source \
-	/opt/unreal-engine/Engine/Source/Runtime/ImageCore/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Source/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImageCore \
-	/opt/unreal-engine/Engine/Source/Runtime/ImageCore \
-	/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/ImageCore/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/JsonUtilities \
-	/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemNull/Source/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemNull/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemNull \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemNull/Source \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Classes \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemUtils \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/Voice/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/Voice/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Voice \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/Voice \
-	/opt/unreal-engine/Engine/Source/AndroidPermission/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystem \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Source \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidPermission/Source/AndroidPermission/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidPermission/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidPermission \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidPermission/Source \
 	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidPermission/Source/AndroidPermission/Classes \
 	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidPermission/Source/AndroidPermission/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidPermission/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidPermission \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidPermission/Source/AndroidPermission \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Classes \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemNull/Source/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemNull/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemNull \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemNull \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemNull/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemUtils \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Classes \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Voice \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/Voice/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Private \
 	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineBlueprintSupport \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Source/Runtime/AndroidDeviceProfileSelector/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/AndroidDeviceProfileSelector/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Source/AndroidDeviceProfileSelector/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Classes \
+	/opt/unreal-engine/Engine/Plugins/Portal/LauncherChunkInstaller/Source/LauncherChunkInstaller/Private \
+	/opt/unreal-engine/Engine/Plugins/Portal/LauncherChunkInstaller/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LauncherChunkInstaller \
+	/opt/unreal-engine/Engine/Plugins/Portal/LauncherChunkInstaller/Source \
+	/opt/unreal-engine/Engine/Plugins/Portal/LauncherChunkInstaller/Source/LauncherChunkInstaller/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Source/AndroidDeviceProfileSelector/Private \
 	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidDeviceProfileSelector \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Source/AndroidDeviceProfileSelector \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidPermission/Source/AndroidPermission/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Private \
-	/opt/unreal-engine/Engine/Source/ProceduralMeshComponent/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProceduralMeshComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponentEditor/Private \
-	/opt/unreal-engine/Engine/Source/ProceduralMeshComponentEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponentEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProceduralMeshComponentEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponentEditor \
-	/LiveLink/Private \
-	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Source/LiveLink/Public \
-	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LiveLink \
-	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Source/LiveLink \
-	/opt/unreal-engine/Engine/Source/Runtime/LiveLinkInterface/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LiveLinkInterface \
-	/opt/unreal-engine/Engine/Source/Runtime/LiveLinkInterface \
-	/opt/unreal-engine/Engine/Source/Runtime/LiveLinkMessageBusFramework/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LiveLinkMessageBusFramework \
-	/opt/unreal-engine/Engine/Source/Runtime/LiveLinkMessageBusFramework \
-	/LiveLinkEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LiveLinkEditor \
-	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Source/LiveLinkEditor \
-	/opt/unreal-engine/Engine/Source/Editor/AnimGraph/Classes \
-	/opt/unreal-engine/Engine/Source/Editor/AnimGraph/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimGraph \
-	/opt/unreal-engine/Engine/Source/Editor/AnimGraph \
-	/opt/unreal-engine/Engine/Source/Runtime/AnimGraphRuntime/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/AnimGraphRuntime/Public/AnimNodes \
-	/opt/unreal-engine/Engine/Source/Runtime/AnimGraphRuntime/Public/AnimNotifies \
-	/opt/unreal-engine/Engine/Source/Runtime/AnimGraphRuntime/Public/BoneControllers \
-	/opt/unreal-engine/Engine/Source/Runtime/AnimGraphRuntime/Public/RBF \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimGraphRuntime \
-	/opt/unreal-engine/Engine/Source/Runtime/AnimGraphRuntime \
-	/opt/unreal-engine/Engine/Source/Runtime/AnimationCore/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimationCore \
-	/opt/unreal-engine/Engine/Source/Runtime/AnimationCore \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Source/AndroidDeviceProfileSelector/Public \
 	/opt/unreal-engine/Engine/Plugins/Runtime/ArchVisCharacter/Source/ArchVisCharacter/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ArchVisCharacter/Source/ArchVisCharacter/Public \
 	/opt/unreal-engine/Engine/Plugins/Runtime/ArchVisCharacter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ArchVisCharacter \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ArchVisCharacter/Source/ArchVisCharacter \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ArchVisCharacter/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ArchVisCharacter/Source/ArchVisCharacter/Public \
 	/opt/unreal-engine/Engine/Plugins/Runtime/CableComponent/Source/CableComponent/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/CableComponent/Source/CableComponent/Classes \
 	/opt/unreal-engine/Engine/Plugins/Runtime/CableComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CableComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/CableComponent/Source/CableComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustommeshComponent/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/CableComponent/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/CableComponent/Source/CableComponent/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustomMeshComponent/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/CustomMeshComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CustomMeshComponent \
+	/opt/unreal-engine/Engine/Plugins/Runtime/CustomMeshComponent/Source \
 	/opt/unreal-engine/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustomMeshComponent/Classes \
 	/opt/unreal-engine/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustomMeshComponent/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/CustomMeshComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CustomMeshComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustomMeshComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source/Runtime/ExampleDeviceProfileSelector/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/ExampleDeviceProfileSelector/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source/ExampleDeviceProfileSelector/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source/ExampleDeviceProfileSelector/Private \
 	/opt/unreal-engine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ExampleDeviceProfileSelector \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source/ExampleDeviceProfileSelector \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ImmediatePhysics/Source/Runtime/ImmediatePhysics/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ImmediatePhysics/Source/ImmediatePhysics/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ImmediatePhysics/Source/ImmediatePhysics/Public/BoneControllers \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ImmediatePhysics/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImmediatePhysics \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ImmediatePhysics/Source/ImmediatePhysics \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ImmediatePhysics/Source/Runtime/ImmediatePhysicsEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ImmediatePhysics/Source/ImmediatePhysicsEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ImmediatePhysics/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImmediatePhysicsEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ImmediatePhysics/Source/ImmediatePhysicsEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Source/Runtime/LinuxDeviceProfileSelector/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/LinuxDeviceProfileSelector/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Source/LinuxDeviceProfileSelector/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source/ExampleDeviceProfileSelector/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Source/LinuxDeviceProfileSelector/Private \
 	/opt/unreal-engine/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LinuxDeviceProfileSelector \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Source/LinuxDeviceProfileSelector \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Source/LinuxDeviceProfileSelector/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesBPLibrary/Source/LocationServicesBPLibrary/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesBPLibrary/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocationServicesBPLibrary \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesBPLibrary/Source \
 	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesBPLibrary/Source/LocationServicesBPLibrary/Classes \
 	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesBPLibrary/Source/LocationServicesBPLibrary/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesBPLibrary/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocationServicesBPLibrary \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesBPLibrary/Source/LocationServicesBPLibrary \
 	/opt/unreal-engine/Engine/Plugins/Runtime/MobilePatchingUtils/Source/MobilePatchingUtils/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MobilePatchingUtils/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MobilePatchingUtils \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MobilePatchingUtils/Source/MobilePatchingUtils \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/BuildPatchServices/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/BuildPatchServices/Public/Interfaces \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BuildPatchServices \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/BuildPatchServices \
+	/opt/unreal-engine/Engine/Plugins/Runtime/MobilePatchingUtils/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MobilePatchingUtils \
+	/opt/unreal-engine/Engine/Plugins/Runtime/MobilePatchingUtils/Source \
 	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private \
-	/opt/unreal-engine/Engine/Source/PhysXVehicles/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public \
 	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PhysXVehicles \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source/ThirdParty \
 	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehiclesEditor/Private \
-	/opt/unreal-engine/Engine/Source/PhysXVehiclesEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehiclesEditor/Public \
 	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PhysXVehiclesEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehiclesEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/RuntimePhysXCooking/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RuntimePhysXCooking \
-	/opt/unreal-engine/Engine/Plugins/Runtime/RuntimePhysXCooking/Source/RuntimePhysXCooking \
-	/opt/unreal-engine/Engine/Source/Runtime/PhysXCooking/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehiclesEditor/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimGraph \
+	/opt/unreal-engine/Engine/Source/Editor/AnimGraph/Classes \
+	/opt/unreal-engine/Engine/Source/Editor/AnimGraph/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/RuntimePhysXCooking/Source/RuntimePhysXCooking/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PhysXCooking \
-	/opt/unreal-engine/Engine/Source/Runtime/PhysXCooking \
+	/opt/unreal-engine/Engine/Source/Runtime/PhysXCooking/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/RuntimePhysXCooking/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RuntimePhysXCooking \
+	/opt/unreal-engine/Engine/Plugins/Runtime/RuntimePhysXCooking/Source \
 	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVR/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Renderer/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/VulkanRHI/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/VulkanRHI/Private/Linux \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OpenGLDrv \
+	/opt/unreal-engine/Engine/Source/Runtime/OpenGLDrv/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VulkanRHI \
+	/opt/unreal-engine/Engine/Source/Runtime/VulkanRHI/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SteamVR \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Source \
 	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVR/Classes \
 	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVR/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SteamVR \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVR \
-	/opt/unreal-engine/Engine/Source/Runtime/OpenGLDrv/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OpenGLDrv \
-	/opt/unreal-engine/Engine/Source/Runtime/OpenGLDrv \
-	/opt/unreal-engine/Engine/Source/Runtime/VulkanRHI/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VulkanRHI \
-	/opt/unreal-engine/Engine/Source/Runtime/VulkanRHI \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVRController/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InputDevice \
+	/opt/unreal-engine/Engine/Source/Runtime/InputDevice/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SteamVRController \
 	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVRController/Classes \
 	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVRController/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SteamVRController \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVRController \
-	/opt/unreal-engine/Engine/Source/Runtime/InputDevice/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InputDevice \
-	/opt/unreal-engine/Engine/Source/Runtime/InputDevice \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/FX/Composure/Private \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/Composure/Classes \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/Composure/Public \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/Composure/Public/MovieScene \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Composure \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/Composure \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/ComposureEditorEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/ComposureEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ComposureEditor \
-	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/ComposureEditor \
-	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Source/FX/LensDistortion/Private \
-	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Source/LensDistortion/Classes \
-	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Source/LensDistortion/Public \
-	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LensDistortion \
-	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Source/LensDistortion \
-	/opt/unreal-engine/Engine/Plugins/Developer/BlankPlugin/Source/Developer/BlankPlugin/Private \
-	/opt/unreal-engine/Engine/Plugins/Developer/BlankPlugin/Source/BlankPlugin/Public \
-	/opt/unreal-engine/Engine/Plugins/Developer/BlankPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlankPlugin \
-	/opt/unreal-engine/Engine/Plugins/Developer/BlankPlugin/Source/BlankPlugin \
-	/opt/unreal-engine/Engine/Plugins/Developer/OneSkyLocalizationService/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OneSkyLocalizationService \
-	/opt/unreal-engine/Engine/Plugins/Developer/OneSkyLocalizationService/Source/OneSkyLocalizationService \
-	/opt/unreal-engine/Engine/Source/Developer/LocalizationService/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocalizationService \
-	/opt/unreal-engine/Engine/Source/Developer/LocalizationService \
-	/opt/unreal-engine/Engine/Source/Editor/LocalizationCommandletExecution/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocalizationCommandletExecution \
-	/opt/unreal-engine/Engine/Source/Editor/LocalizationCommandletExecution \
-	/opt/unreal-engine/Engine/Plugins/Editor/BlueprintMaterialTextureNodes/Source/BlueprintMaterialTextureNodes/Private \
-	/opt/unreal-engine/Engine/Source/BlueprintMaterialTextureNodes/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Classes/Materials \
-	/opt/unreal-engine/Engine/Plugins/Editor/BlueprintMaterialTextureNodes/Source/BlueprintMaterialTextureNodes/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/BlueprintMaterialTextureNodes/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintMaterialTextureNodes \
-	/opt/unreal-engine/Engine/Plugins/Editor/BlueprintMaterialTextureNodes/Source/BlueprintMaterialTextureNodes \
-	/opt/unreal-engine/Engine/Source/Editor/StaticMeshEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StaticMeshEditor \
-	/opt/unreal-engine/Engine/Source/Editor/StaticMeshEditor \
-	/opt/unreal-engine/Engine/Plugins/Editor/GLTFImporter/Source/Editor/GLTFImporter/Private \
-	/opt/unreal-engine/Engine/Plugins/Editor/GLTFImporter/Source/GLTFImporter/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/GLTFImporter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GLTFImporter \
-	/opt/unreal-engine/Engine/Plugins/Editor/GLTFImporter/Source/GLTFImporter \
-	/opt/unreal-engine/Engine/Source/Developer/MessageLog/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MessageLog \
-	/opt/unreal-engine/Engine/Source/Developer/MessageLog \
-	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Source/Editor/USDImporter/Private \
-	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Source/UnrealUSDWrapper/Source/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Source/USDImporter/Public \
-	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/USDImporter \
-	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Source/USDImporter \
-	/opt/unreal-engine/Engine/Plugins/Experimental/BlueprintStats/Source/BlueprintStats/Public \
-	/opt/unreal-engine/Engine/Plugins/Experimental/BlueprintStats/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintStats \
-	/opt/unreal-engine/Engine/Plugins/Experimental/BlueprintStats/Source/BlueprintStats \
-	/opt/unreal-engine/Engine/Plugins/Experimental/CodeEditor/Source/Developer/CodeEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Experimental/CodeEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CodeEditor \
-	/opt/unreal-engine/Engine/Plugins/Experimental/CodeEditor/Source/CodeEditor \
-	/opt/unreal-engine/Engine/Plugins/Experimental/CodeView/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CodeView \
-	/opt/unreal-engine/Engine/Plugins/Experimental/CodeView/Source/CodeView \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Private \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Private/Controllers \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Private/Sequencer \
-	/opt/unreal-engine/Engine/Source/ControlRig/Private/Controllers \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Public \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Public/Rigs \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Public/Sequencer \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ControlRig \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Private/InputOutput \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Private/Sequencer \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Private/EditMode \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ControlRigEditor \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Source/Runtime/ImagePlate/Private \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Source/ImagePlate/Public \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImagePlate \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Source/ImagePlate \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Source/Runtime/ImagePlateEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImagePlateEditor \
-	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Source/ImagePlateEditor \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/Experimental/PlatformCrypto/Private \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/PlatformCrypto/Public \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PlatformCrypto \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/PlatformCrypto \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/PlatformCryptoOpenSSL/Public \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PlatformCryptoOpenSSL \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/PlatformCryptoOpenSSL \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/PlatformCryptoOpenSSL/Private \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PythonScriptPluginPreload \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Source/PythonScriptPluginPreload \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PythonScriptPlugin \
-	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Source/PythonScriptPlugin \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/Analytics/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/Analytics/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Analytics \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/Analytics \
-	/opt/unreal-engine/Engine/Plugins/Experimental/SimpleHMD/Source/SimpleHMD/Private \
-	/opt/unreal-engine/Engine/Plugins/Experimental/SimpleHMD/Source/SimpleHMD/Public \
-	/opt/unreal-engine/Engine/Plugins/Experimental/SimpleHMD/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SimpleHMD \
-	/opt/unreal-engine/Engine/Plugins/Experimental/SimpleHMD/Source/SimpleHMD \
-	/opt/unreal-engine/Engine/Plugins/Experimental/StructBox/Source/StructBox/Classes \
-	/opt/unreal-engine/Engine/Plugins/Experimental/StructBox/Source/StructBox/Public \
-	/opt/unreal-engine/Engine/Plugins/Experimental/StructBox/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StructBox \
-	/opt/unreal-engine/Engine/Plugins/Experimental/StructBox/Source/StructBox \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidCameraEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraFactory/Private \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraFactory/Public \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidCameraFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCamera/Public \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidCamera \
-	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCamera \
-	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source/MfMediaEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MfMediaEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source/MfMediaEditor \
-	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source/MfMediaFactory/Private \
-	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MfMediaFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source/MfMediaFactory \
-	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source/MfMedia/Public \
-	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MfMedia \
-	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source/MfMedia \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Models \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Styles \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Breakpoints \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/EndpointDetails \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Endpoints \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Graph \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/History \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Interceptors \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/MessageData \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/MessageDetails \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Types \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Toolbar \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MessagingDebugger \
-	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequenceEditor/Source/ActorSequenceEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequenceEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ActorSequenceEditor \
-	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequenceEditor/Source/ActorSequenceEditor \
-	/opt/unreal-engine/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/GameCircleRuntimeSettings/Classes \
-	/opt/unreal-engine/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameCircleRuntimeSettings \
-	/opt/unreal-engine/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/GameCircleRuntimeSettings \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Android \
-	/opt/unreal-engine/Engine/Source/Developer/Android/Android_MultiTargetPlatform/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android_MultiTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Android/Android_MultiTargetPlatform \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Private \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Qos/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Qos \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Qos \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/ICMP/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Icmp \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/ICMP \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Party/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Party \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Party \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Lobby/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Lobby \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Lobby \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Hotfix/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Hotfix \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Hotfix \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Rejoin/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Rejoin \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Rejoin \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Runtime/LoginFlow/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/LoginFlow/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/LoginFlow/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LoginFlow \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/LoginFlow \
-	/opt/unreal-engine/Engine/Source/Runtime/WebBrowser/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebBrowser \
-	/opt/unreal-engine/Engine/Source/Runtime/WebBrowser \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsET/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsET \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsET \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemAmazon/Source/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemAmazon/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemAmazon \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemAmazon/Source \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Classes \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemSteam/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemSteam \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemSteam/Source \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemTwitch/Source/Private \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemTwitch/Source/Public \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemTwitch/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemTwitch \
-	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemTwitch/Source \
-	/opt/unreal-engine/Engine/Plugins/Performance/PerformanceMonitor/Source/PerformanceMonitor/Private \
-	/opt/unreal-engine/Engine/Plugins/Performance/PerformanceMonitor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PerformanceMonitor \
-	/opt/unreal-engine/Engine/Plugins/Performance/PerformanceMonitor/Source/PerformanceMonitor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Source/AdjustEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Source/AdjustEditor/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Source/AdjustEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AdjustEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Source/AdjustEditor \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsVisualEditing/Classes \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsVisualEditing/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsVisualEditing \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsVisualEditing \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsBlueprintLibrary \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnalyticsMulticastEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnaltyicsMulticastEditor/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnaltyicsMulticastEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsMulticastEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnaltyicsMulticastEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnalyticsMulticast/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsMulticast \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnalyticsMulticast \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Source/ApsalarEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Source/ApsalarEditor/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Source/ApsalarEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ApsalarEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Source/ApsalarEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/FileLogging/Source/FileLogging/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/FileLogging/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FileLogging \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/FileLogging/Source/FileLogging \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Source/FlurryEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Source/FlurryEditor/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Source/FlurryEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FlurryEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Source/FlurryEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AnimDistanceMatching/Source/AnimDistanceMatching/Private \
-	/opt/unreal-engine/Engine/Source/AnimDistanceMatching/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AnimDistanceMatching/Source/AnimDistanceMatching/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AnimDistanceMatching/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimDistanceMatching \
-	/opt/unreal-engine/Engine/Plugins/Runtime/AnimDistanceMatching/Source/AnimDistanceMatching \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Source/ApexDestruction/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ApexDestruction \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Source/ApexDestruction \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ApexDestructionEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Source/ApexDestructionEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities/Tasks \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayAbilities \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities \
-	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorder/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SequenceRecorder \
-	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorder \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private \
-	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Private \
-	/opt/unreal-engine/Engine/Source/Editor/Kismet/Private \
-	/opt/unreal-engine/Engine/Source/Developer/AssetTools/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayAbilitiesEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor \
-	/opt/unreal-engine/Engine/Source/Editor/GameplayTasksEditor/Classes \
-	/opt/unreal-engine/Engine/Source/Editor/GameplayTasksEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTasksEditor \
-	/opt/unreal-engine/Engine/Source/Editor/GameplayTasksEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreBase/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreBase/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GoogleARCoreBase \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreBase \
-	/opt/unreal-engine/Engine/Source/Runtime/AugmentedReality/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AugmentedReality \
-	/opt/unreal-engine/Engine/Source/Runtime/AugmentedReality \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreRendering/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GoogleARCoreRendering \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreRendering \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreRendering/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Source/GoogleVRTransition2D/Private \
-	/opt/unreal-engine/Engine/Source/GoogleVRTransition2D/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Source/GoogleVRTransition2D/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Source/GoogleVRTransition2D/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GoogleVRTransition2D \
-	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Source/GoogleVRTransition2D \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Source/Runtime/AIModule/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Source/Runtime/AIModule/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Source/Runtime/Engine/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/HTNPlanner/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Source/HTNPlanner/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Source/HTNPlanner/Public/AI \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Source/HTNPlanner/Public/Debug \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTNPlanner \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Source/HTNPlanner \
-	/opt/unreal-engine/Engine/Source/Runtime/HTNTestSuite/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Source/HTNTestSuite/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTNTestSuite \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTNPlanner/Source/HTNTestSuite \
-	/opt/unreal-engine/Engine/Source/Developer/AITestSuite/Classes \
-	/opt/unreal-engine/Engine/Source/Developer/AITestSuite/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AITestSuite \
-	/opt/unreal-engine/Engine/Source/Developer/AITestSuite \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTTPChunkInstaller/Source/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTTPChunkInstaller/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTTPChunkInstaller \
-	/opt/unreal-engine/Engine/Plugins/Runtime/HTTPChunkInstaller/Source \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidEditor/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocationServicesAndroidEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSEditor/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSEditor/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocationServicesIOSEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MIDIDevice/Source/MIDIDevice/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MIDIDevice/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MIDIDevice \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MIDIDevice/Source/MIDIDevice \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityFramework/Source/MixedRealityFramework/Private \
-	/opt/unreal-engine/Engine/Source/MixedRealityFramework/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityFramework/Source/MixedRealityFramework/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MixedRealityFramework \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityFramework/Source/MixedRealityFramework \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityFramework/Source/MixedRealityCalibration/Private \
-	/opt/unreal-engine/Engine/Source/MixedRealityCalibration/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityFramework/Source/MixedRealityCalibration/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MixedRealityCalibration \
-	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityFramework/Source/MixedRealityCalibration \
-	/opt/unreal-engine/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Source/OptionalMobileFeaturesBPLibrary/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Source/OptionalMobileFeaturesBPLibrary/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OptionalMobileFeaturesBPLibrary \
-	/opt/unreal-engine/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Source/OptionalMobileFeaturesBPLibrary \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/AESHandlerComponent/Source/AESHandlerComponent/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/AESHandlerComponent/Source/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/AESHandlerComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AESHandlerComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/AESHandlerComponent/Source \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OodleHandlerComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudio/Private \
-	/opt/unreal-engine/Engine/Source/ResonanceAudio/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudio/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ResonanceAudio \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudio \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudioEditor/Private \
-	/opt/unreal-engine/Engine/Source/ResonanceAudioEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudioEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ResonanceAudioEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudioEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SignificanceManager/Source/SignificanceManager/Private \
-	/opt/unreal-engine/Engine/Source/SignificanceManager/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SignificanceManager/Source/SignificanceManager/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SignificanceManager/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SignificanceManager \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SignificanceManager/Source/SignificanceManager \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundModImporter/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundModImporter \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundModImporter \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundMod \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundMod \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Source/SoundUtilities/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundUtilities \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Source/SoundUtilities \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Source/SoundUtilitiesEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundUtilitiesEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Source/SoundUtilitiesEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations/Private \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundVisualizations \
-	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamController/Source/SteamController/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamController/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SteamController \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamController/Source/SteamController \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/Synthesis/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/Synthesis/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/Synthesis/Public/UI \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Synthesis \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/Synthesis \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/SynthesisEditor/Classes \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/SynthesisEditor/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SynthesisEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/SynthesisEditor \
-	/opt/unreal-engine/Engine/Plugins/Runtime/WebBrowserWidget/Source/WebBrowserWidget/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/WebBrowserWidget/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebBrowserWidget \
-	/opt/unreal-engine/Engine/Plugins/Runtime/WebBrowserWidget/Source/WebBrowserWidget \
-	/opt/unreal-engine/Engine/Source/Runtime/WebBrowserTexture/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebBrowserTexture \
-	/opt/unreal-engine/Engine/Source/Runtime/WebBrowserTexture \
-	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private \
-	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private/Server \
-	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private/Shared \
-	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateRemote \
-	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote \
-	/opt/unreal-engine/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private \
-	/opt/unreal-engine/Engine/Source/EditorTests/Public \
-	/opt/unreal-engine/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Public \
-	/opt/unreal-engine/Engine/Plugins/Tests/EditorTests/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorTests \
-	/opt/unreal-engine/Engine/Plugins/Tests/EditorTests/Source/EditorTests \
-	/opt/unreal-engine/Engine/Source/Editor/MaterialEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MaterialEditor \
-	/opt/unreal-engine/Engine/Source/Editor/MaterialEditor \
-	/opt/unreal-engine/Engine/Source/Developer/MaterialBaking/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MaterialBaking \
-	/opt/unreal-engine/Engine/Source/Developer/MaterialBaking \
-	/opt/unreal-engine/Engine/Plugins/Tests/FbxAutomationTestBuilder/Source/FbxAutomationTestBuilder/Public \
-	/opt/unreal-engine/Engine/Plugins/Tests/FbxAutomationTestBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FbxAutomationTestBuilder \
-	/opt/unreal-engine/Engine/Plugins/Tests/FbxAutomationTestBuilder/Source/FbxAutomationTestBuilder \
-	/opt/unreal-engine/Engine/Plugins/Tests/FunctionalTestingEditor/Source/Public \
-	/opt/unreal-engine/Engine/Plugins/Tests/FunctionalTestingEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FunctionalTestingEditor \
-	/opt/unreal-engine/Engine/Plugins/Tests/FunctionalTestingEditor/Source \
-	/opt/unreal-engine/Engine/Source/Developer/SessionFrontend/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SessionFrontend \
-	/opt/unreal-engine/Engine/Source/Developer/SessionFrontend \
-	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparisonTools/Public \
-	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparisonTools/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ScreenShotComparisonTools \
-	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparisonTools \
-	/opt/unreal-engine/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private \
-	/opt/unreal-engine/Engine/Source/RuntimeTests/Public \
-	/opt/unreal-engine/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Public \
-	/opt/unreal-engine/Engine/Plugins/Tests/RuntimeTests/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RuntimeTests \
-	/opt/unreal-engine/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests \
-	/opt/unreal-engine/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Private \
-	/opt/unreal-engine/Engine/Source/ScreenshotTools/Public \
-	/opt/unreal-engine/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Public \
-	/opt/unreal-engine/Engine/Plugins/Tests/ScreenshotTools/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ScreenshotTools \
-	/opt/unreal-engine/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools \
+	/opt/unreal-engine/Engine/Plugins/Runtime/WebMMoviePlayer/Source/WebMMoviePlayer/Private/Audio/Unix \
+	/opt/unreal-engine/Engine/Plugins/Runtime/WebMMoviePlayer/Source/WebMMoviePlayer/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/WebMMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebMMedia \
+	/opt/unreal-engine/Engine/Plugins/Media/WebMMedia/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/WebMMedia/Source/WebMMedia/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/WebMMedia/Source/ThirdParty \
+	/opt/unreal-engine/Engine/Plugins/Runtime/WebMMoviePlayer/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebMMoviePlayer \
+	/opt/unreal-engine/Engine/Plugins/Runtime/WebMMoviePlayer/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/WebMMedia/Source/WebMMedia/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/WebMMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebMMediaFactory \
+	/opt/unreal-engine/Engine/Plugins/Media/WebMMedia/Source/WebMMediaEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/WebMMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebMMediaEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/WebMMedia/Source/WebMMediaFactory/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/UE4Game/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UE4Game \
-	/opt/unreal-engine/Engine/Source/Runtime/UE4Game \
+	/opt/unreal-engine/Engine/Source/Runtime/BuildSettings/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BuildSettings \
+	/opt/unreal-engine/Engine/Source/Runtime/BuildSettings/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/Json/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Projects/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Analytics \
+	/opt/unreal-engine/Engine/Source/Runtime/InputCore/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Private/Animation \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Private/Application \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Private/Brushes \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Private/Commands \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Private/Fonts \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Private/Input \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateCore/Private/Layout \
@@ -1413,325 +1437,267 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Framework/MultiBox \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Framework/Notifications \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Framework/Styling \
-	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Framework/Testing \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Framework/Text \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Framework/Text/IOS \
-	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Framework/Text/Tests \
-	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Framework/Widgets \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Colors \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Docking \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Images \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Input \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Layout \
-	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Navigation \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Notifications \
-	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Testing \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Text \
-	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Tutorials \
 	/opt/unreal-engine/Engine/Source/Runtime/Slate/Private/Widgets/Views \
 	/opt/unreal-engine/Engine/Source/Runtime/Toolbox/Public \
 	/opt/unreal-engine/Engine/Source/Developer/Settings/Private \
 	/opt/unreal-engine/Engine/Source/Developer/SourceCodeAccess/Private \
 	/opt/unreal-engine/Engine/Source/Developer/DirectoryWatcher/Private \
+	/opt/unreal-engine/Engine/Source/Developer/DerivedDataCache/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DerivedDataCache \
-	/opt/unreal-engine/Engine/Source/Developer/DerivedDataCache \
 	/opt/unreal-engine/Engine/Source/Runtime/Core/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Core/Private/Misc \
-	/opt/unreal-engine/Engine/Source/Runtime/Core/Private/Serialization/Json \
 	/opt/unreal-engine/Engine/Source/Runtime/Core/Private/Internationalization \
 	/opt/unreal-engine/Engine/Source/Runtime/Core/Private/Internationalization/Cultures \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/Public \
 	/opt/unreal-engine/Engine/Source/Developer/SlateFileDialogs/Private \
-	/opt/unreal-engine/Engine/Source/Developer/SlateFileDialogs/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateFileDialogs \
-	/opt/unreal-engine/Engine/Source/Developer/SlateFileDialogs \
 	/opt/unreal-engine/Engine/Source/Developer/DesktopPlatform/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Messaging/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Messaging/Private/Bus \
-	/opt/unreal-engine/Engine/Source/Runtime/Messaging/Private/Bridge \
-	/opt/unreal-engine/Engine/Source/Runtime/Messaging/Private/Serialization \
-	/opt/unreal-engine/Engine/Source/Runtime/EngineMessages/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/SessionMessages/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/SessionMessages/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SessionMessages \
-	/opt/unreal-engine/Engine/Source/Runtime/SessionMessages \
-	/opt/unreal-engine/Engine/Source/Developer/SlateReflector/Private \
-	/opt/unreal-engine/Engine/Source/Developer/SlateReflector/Private/Models \
-	/opt/unreal-engine/Engine/Source/Developer/SlateReflector/Private/Widgets \
-	/opt/unreal-engine/Engine/Source/Developer/SlateReflector/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateReflector \
-	/opt/unreal-engine/Engine/Source/Developer/SlateReflector \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Framework \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Framework/Testing \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Widgets \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Widgets/Colors \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Widgets/Input \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Widgets/Testing \
-	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Widgets/Workflow \
-	/opt/unreal-engine/Engine/Source/Runtime/Sockets/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Networking/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/NullDrv/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/NullDrv/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NullDrv \
-	/opt/unreal-engine/Engine/Source/Runtime/NullDrv \
+	/opt/unreal-engine/Engine/Source/Editor/EditorStyle/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/AssetRegistry/Private \
+	/opt/unreal-engine/Engine/Source/Editor/ActorPickerMode/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/TimeManagement/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/MovieScene/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/AnimationCore/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/AnimGraphRuntime/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Private/Sections \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/SSL/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/SSL/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/SSL/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SSL \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/SSL \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/SlateRHIRenderer/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/UMG/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/LevelSequence/Private \
-	/opt/unreal-engine/Engine/Source/Editor/WorkspaceMenuStructure/Private \
-	/opt/unreal-engine/Engine/Source/Editor/CurveAssetEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CurveAssetEditor \
-	/opt/unreal-engine/Engine/Source/Editor/CurveAssetEditor \
+	/opt/unreal-engine/Engine/Source/Runtime/CinematicCamera/Private \
+	/opt/unreal-engine/Engine/Source/Editor/CurveEditor/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Private \
 	/opt/unreal-engine/Engine/Source/Developer/MessageLog/Private \
 	/opt/unreal-engine/Engine/Source/Developer/MessageLog/Private/Presentation \
 	/opt/unreal-engine/Engine/Source/Developer/MessageLog/Private/UserInterface \
 	/opt/unreal-engine/Engine/Source/Developer/MessageLog/Private/Model \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MessageLog \
+	/opt/unreal-engine/Engine/Source/Editor/WorkspaceMenuStructure/Private \
+	/opt/unreal-engine/Engine/Source/Editor/CurveAssetEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CurveAssetEditor \
+	/opt/unreal-engine/Engine/Source/Editor/CurveAssetEditor/Public \
 	/opt/unreal-engine/Engine/Source/Developer/SourceControl/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/EngineSettings/Private \
-	/opt/unreal-engine/Engine/Source/Editor/SourceControlWindows/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SourceControlWindows \
-	/opt/unreal-engine/Engine/Source/Editor/SourceControlWindows \
+	/opt/unreal-engine/Engine/Source/Runtime/AudioPlatformConfiguration/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Portal/LauncherPlatform/Private \
-	/opt/unreal-engine/Engine/Source/Developer/ShaderPreprocessor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ShaderPreprocessor \
-	/opt/unreal-engine/Engine/Source/Developer/ShaderPreprocessor \
-	/opt/unreal-engine/Engine/Source/Developer/ShaderCompilerCommon/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ShaderCompilerCommon \
-	/opt/unreal-engine/Engine/Source/Developer/ShaderCompilerCommon \
+	/opt/unreal-engine/Engine/Source/Runtime/NullDrv/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NullDrv \
+	/opt/unreal-engine/Engine/Source/Runtime/NullDrv/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/UtilityShaders/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/ImageWriteQueue/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImageWriteQueue \
+	/opt/unreal-engine/Engine/Source/Runtime/ImageWriteQueue/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/MaterialShaderQualitySettings/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Renderer/Private/CompositionLighting \
+	/opt/unreal-engine/Engine/Source/Runtime/Renderer/Private/PostProcess \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/Analytics/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/EngineSettings/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/SandboxFile/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Sockets/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/SSL/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SSL \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/SSL/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsET/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsET \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/BuildPatchServices/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/PreLoadScreen/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/OpenGLDrv/Private \
-	/opt/unreal-engine/Engine/Source/Developer/ShaderFormatOpenGL/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/RHI/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/ShaderCore/Private \
+	/opt/unreal-engine/Engine/Source/Developer/ShaderPreprocessor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ShaderPreprocessor \
+	/opt/unreal-engine/Engine/Source/Developer/ShaderPreprocessor/Public \
+	/opt/unreal-engine/Engine/Source/Developer/ShaderCompilerCommon/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ShaderCompilerCommon \
+	/opt/unreal-engine/Engine/Source/Developer/ShaderCompilerCommon/Public \
+	/opt/unreal-engine/Engine/Source/Developer/ShaderFormatOpenGL/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ShaderFormatOpenGL \
-	/opt/unreal-engine/Engine/Source/Developer/ShaderFormatOpenGL \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureFormatDXT \
-	/opt/unreal-engine/Engine/Source/Developer/TextureFormatDXT \
-	/opt/unreal-engine/Engine/Source/Developer/TextureCompressor/Public \
+	/opt/unreal-engine/Engine/Source/Developer/ShaderFormatOpenGL/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/ImageCore/Private \
+	/opt/unreal-engine/Engine/Source/Developer/TextureFormatDXT/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureCompressor \
-	/opt/unreal-engine/Engine/Source/Developer/TextureCompressor \
+	/opt/unreal-engine/Engine/Source/Developer/TextureCompressor/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureFormatDXT \
+	/opt/unreal-engine/Engine/Source/Developer/TextureFormatPVR/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureFormatPVR \
-	/opt/unreal-engine/Engine/Source/Developer/TextureFormatPVR \
+	/opt/unreal-engine/Engine/Source/Developer/TextureFormatIntelISPCTexComp/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureFormatIntelISPCTexComp \
-	/opt/unreal-engine/Engine/Source/Developer/TextureFormatIntelISPCTexComp \
+	/opt/unreal-engine/Engine/Source/Developer/TextureFormatASTC/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureFormatASTC \
-	/opt/unreal-engine/Engine/Source/Developer/TextureFormatASTC \
+	/opt/unreal-engine/Engine/Source/Developer/TextureFormatUncompressed/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureFormatUncompressed \
-	/opt/unreal-engine/Engine/Source/Developer/TextureFormatUncompressed \
+	/opt/unreal-engine/Engine/Source/Developer/AudioFormatOgg/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioFormatOgg \
-	/opt/unreal-engine/Engine/Source/Developer/AudioFormatOgg \
+	/opt/unreal-engine/Engine/Source/Developer/AudioFormatOpus/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioFormatOpus \
-	/opt/unreal-engine/Engine/Source/Developer/AudioFormatOpus \
+	/opt/unreal-engine/Engine/Source/Developer/AudioFormatADPCM/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioFormatADPCM \
+	/opt/unreal-engine/Engine/Source/Editor/PIEPreviewDeviceSpecification/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PIEPreviewDeviceSpecification \
+	/opt/unreal-engine/Engine/Source/Editor/PIEPreviewDeviceSpecification/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Networking/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Cbor/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Serialization/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Messaging/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Messaging/Private/Bus \
+	/opt/unreal-engine/Engine/Source/Runtime/Messaging/Private/Bridge \
+	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidDeviceDetection/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android/AndroidDeviceDetection \
+	/opt/unreal-engine/Engine/Source/Developer/Android \
+	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Android \
 	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidDeviceDetection/Public \
-	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidDeviceDetection/Public/Interfaces \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidDeviceDetection \
-	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidDeviceDetection \
-	/opt/unreal-engine/Engine/Source/Developer/AndroidTargetPlatform/Classes \
-	/opt/unreal-engine/Engine/Source/SessionServices \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidTargetPlatform \
 	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidTargetPlatform/Private \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android_PVRTCTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Android/Android_PVRTCTargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android_ATCTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Android/Android_ATCTargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android_DXTTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Android/Android_DXTTargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android_ETC1TargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Android/Android_ETC1TargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android_ETC1aTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Android/Android_ETC1aTargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android_ETC2TargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Android/Android_ETC2TargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android_ASTCTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Android/Android_ASTCTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/HTML5TargetPlatform/Classes \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android/AndroidTargetPlatform \
+	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidTargetPlatform/Public \
+	/opt/unreal-engine/Engine/Source/Developer/HTML5/HTML5TargetPlatform/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTML5/HTML5TargetPlatform \
+	/opt/unreal-engine/Engine/Source/Developer/HTML5 \
 	/opt/unreal-engine/Engine/Source/Developer/HTML5/HTML5TargetPlatform/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTML5TargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/HTML5/HTML5TargetPlatform \
+	/opt/unreal-engine/Engine/Source/Developer/VulkanShaderFormat/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VulkanShaderFormat \
-	/opt/unreal-engine/Engine/Source/Developer/VulkanShaderFormat \
-	/opt/unreal-engine/Engine/Source/Developer/WidgetCarousel/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/WidgetCarousel/Public \
+	/opt/unreal-engine/Engine/Source/Developer/TargetPlatform/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/RenderCore/Private \
+	/opt/unreal-engine/Engine/Source/Editor/SourceControlWindows/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SourceControlWindows \
+	/opt/unreal-engine/Engine/Source/Editor/SourceControlWindows/Public \
+	/opt/unreal-engine/Engine/Source/Editor/HardwareTargeting/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/PakFile/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/WidgetCarousel/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WidgetCarousel \
-	/opt/unreal-engine/Engine/Source/Runtime/WidgetCarousel \
+	/opt/unreal-engine/Engine/Source/Runtime/WidgetCarousel/Public \
 	/opt/unreal-engine/Engine/Source/Editor/AddContentDialog/Private \
 	/opt/unreal-engine/Engine/Source/Editor/AddContentDialog/Private/ViewModels \
-	/opt/unreal-engine/Engine/Source/Editor/AddContentDialog/Private/ContentSourceProviders/AssetPack \
 	/opt/unreal-engine/Engine/Source/Editor/AddContentDialog/Private/ContentSourceProviders/FeaturePack \
 	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Private \
-	/opt/unreal-engine/Engine/Source/Editor/PackagesDialog/Public \
+	/opt/unreal-engine/Engine/Source/Editor/PackagesDialog/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PackagesDialog \
-	/opt/unreal-engine/Engine/Source/Editor/PackagesDialog \
-	/opt/unreal-engine/Engine/Source/Developer/Documentation/Private \
-	/opt/unreal-engine/Engine/Source/GameProjectGeneration/Private \
-	/opt/unreal-engine/Engine/Source/GameProjectGeneration/Public \
-	/opt/unreal-engine/Engine/Source/GameProjectGeneration/Classes \
+	/opt/unreal-engine/Engine/Source/Editor/PackagesDialog/Public \
+	/opt/unreal-engine/Engine/Source/Developer/CollectionManager/Private \
+	/opt/unreal-engine/Engine/Source/Editor/ContentBrowser/Private \
+	/opt/unreal-engine/Engine/Source/Editor/Documentation/Private \
+	/opt/unreal-engine/Engine/Source/Editor/GameProjectGeneration/Private \
+	/opt/unreal-engine/Engine/Source/Developer/Localization/Private \
+	/opt/unreal-engine/Engine/Source/Editor/LocalizationCommandletExecution/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocalizationCommandletExecution \
+	/opt/unreal-engine/Engine/Source/Editor/LocalizationCommandletExecution/Public \
 	/opt/unreal-engine/Engine/Source/Developer/LocalizationService/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocalizationService \
+	/opt/unreal-engine/Engine/Source/Developer/LocalizationService/Public \
 	/opt/unreal-engine/Engine/Source/Editor/TranslationEditor/Private \
-	/opt/unreal-engine/Engine/Source/Editor/TranslationEditor/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TranslationEditor \
-	/opt/unreal-engine/Engine/Source/Editor/TranslationEditor \
-	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Private \
-	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Private/StatsPages \
-	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Private/StatsEntries \
-	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Classes \
-	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StatsViewer \
-	/opt/unreal-engine/Engine/Source/Editor/StatsViewer \
-	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileServices/Private \
-	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileServices/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DeviceProfileServices \
-	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileServices \
+	/opt/unreal-engine/Engine/Source/Editor/TranslationEditor/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Foliage/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Foliage \
+	/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public \
+	/opt/unreal-engine/Engine/Source/Developer/RawMesh/Private \
+	/opt/unreal-engine/Engine/Source/Developer/MaterialBaking/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MaterialBaking \
+	/opt/unreal-engine/Engine/Source/Developer/MaterialBaking/Public \
 	/opt/unreal-engine/Engine/Source/Developer/Merge/Private \
-	/opt/unreal-engine/Engine/Source/Kismet \
-	/opt/unreal-engine/Engine/Source/Developer/Merge/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Merge \
-	/opt/unreal-engine/Engine/Source/Developer/Merge \
-	/opt/unreal-engine/Engine/Source/Runtime/CinematicCamera/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/AVIWriter/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/AVIWriter/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AVIWriter \
-	/opt/unreal-engine/Engine/Source/Runtime/AVIWriter \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/Protocols \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MovieSceneCapture \
-	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture \
-	/opt/unreal-engine/Engine/Source/Editor/PinnedCommandList/Private \
-	/opt/unreal-engine/Engine/Source/Editor/PinnedCommandList/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PinnedCommandList \
-	/opt/unreal-engine/Engine/Source/Editor/PinnedCommandList \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming/Private \
-	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorder/Private \
-	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorder/Private/Sections \
-	/opt/unreal-engine/Engine/Source/Editor/AnimationEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimationEditor \
-	/opt/unreal-engine/Engine/Source/Editor/AnimationEditor \
-	/opt/unreal-engine/Engine/Source/Editor/AnimationModifiers/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimationModifiers \
-	/opt/unreal-engine/Engine/Source/Editor/AnimationModifiers \
-	/opt/unreal-engine/Engine/Source/Developer/MeshBoneReduction/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshBoneReduction \
-	/opt/unreal-engine/Engine/Source/Developer/MeshBoneReduction \
-	/opt/unreal-engine/Engine/Source/MeshMergeUtilities \
-	/opt/unreal-engine/Engine/Source/MeshReductionInterface \
-	/opt/unreal-engine/Engine/Source/Editor/AnimationBlueprintEditor/Private \
-	/opt/unreal-engine/Engine/Source/Editor/AnimationBlueprintEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimationBlueprintEditor \
-	/opt/unreal-engine/Engine/Source/Editor/AnimationBlueprintEditor \
-	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemEditorInterface/Private \
-	/opt/unreal-engine/Engine/Source/Editor/ClothingSystemEditorInterface/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothingSystemEditorInterface \
-	/opt/unreal-engine/Engine/Source/Editor/ClothingSystemEditorInterface \
-	/opt/unreal-engine/Engine/Source/Editor/SkeletalMeshEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SkeletalMeshEditor \
-	/opt/unreal-engine/Engine/Source/Editor/SkeletalMeshEditor \
-	/opt/unreal-engine/Engine/Source/Developer/GraphColor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GraphColor \
-	/opt/unreal-engine/Engine/Source/Developer/GraphColor \
-	/opt/unreal-engine/Engine/Source/Developer/MeshSimplifier/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/QuadricMeshReduction \
-	/opt/unreal-engine/Engine/Source/Developer/MeshSimplifier \
-	/opt/unreal-engine/Engine/Source/Editor/MaterialEditor/Private \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneCaptureDialog/Private \
-	/opt/unreal-engine/Engine/Source/Editor/SequencerWidgets/Private \
-	/opt/unreal-engine/Engine/Source/Editor/SequencerWidgets/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SequencerWidgets \
-	/opt/unreal-engine/Engine/Source/Editor/SequencerWidgets \
-	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorderSections/Private \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SequenceRecorderSections \
-	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorderSections \
-	/opt/unreal-engine/Engine/Source/Editor/Sequencer/Private \
-	/opt/unreal-engine/Engine/Source/Editor/Sequencer/Private/DisplayNodes \
-	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Private \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyEditors \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/TrackEditorThumbnail \
-	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/Sections \
-	/opt/unreal-engine/Engine/Source/Runtime/GameplayTasks/Private \
-	/opt/unreal-engine/Engine/Source/Developer/AITestSuite/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Navmesh/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Navmesh/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Navmesh/Public/DebugUtils \
-	/opt/unreal-engine/Engine/Source/Runtime/Navmesh/Public/Detour \
-	/opt/unreal-engine/Engine/Source/Runtime/Navmesh/Public/DetourCrowd \
-	/opt/unreal-engine/Engine/Source/Runtime/Navmesh/Public/DetourTileCache \
-	/opt/unreal-engine/Engine/Source/Runtime/Navmesh/Public/Recast \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Navmesh \
-	/opt/unreal-engine/Engine/Source/Runtime/Navmesh \
-	/opt/unreal-engine/Engine/Source/Developer/GameplayDebugger/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/GameplayTags/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/AIModule/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Private \
-	/opt/unreal-engine/Engine/Source/Editor/AutomationMessages/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/AutomationMessages/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AutomationMessages \
-	/opt/unreal-engine/Engine/Source/Runtime/AutomationMessages \
-	/opt/unreal-engine/Engine/Source/Editor/UnrealEdMessages/Private \
-	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparisonTools/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/AutomationController/Private \
-	/opt/unreal-engine/Engine/Source/MessageLog/Public \
-	/opt/unreal-engine/Engine/Source/Stats/Public \
-	/opt/unreal-engine/Engine/Source/Developer/FunctionalTesting/Private \
-	/opt/unreal-engine/Engine/Source/Editor/BlueprintGraph/Private \
+	/opt/unreal-engine/Engine/Source/Developer/Merge/Public \
 	/opt/unreal-engine/Engine/Source/Editor/KismetWidgets/Private \
+	/opt/unreal-engine/Engine/Source/Editor/AnimGraph/Private \
+	/opt/unreal-engine/Engine/Source/Developer/ExternalImagePicker/Private \
+	/opt/unreal-engine/Engine/Source/Developer/SharedSettingsWidgets/Private \
+	/opt/unreal-engine/Engine/Source/Developer/HotReload/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/PropertyPath/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/SlateRHIRenderer/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/UMG/Private \
 	/opt/unreal-engine/Engine/Source/Developer/BlueprintCompilerCppBackend/Private \
-	/opt/unreal-engine/Engine/Source/Developer/BlueprintCompilerCppBackend/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintCompilerCppBackend \
-	/opt/unreal-engine/Engine/Source/Developer/BlueprintCompilerCppBackend \
+	/opt/unreal-engine/Engine/Source/Developer/BlueprintCompilerCppBackend/Public \
 	/opt/unreal-engine/Engine/Source/Developer/DesktopWidgets/Private \
 	/opt/unreal-engine/Engine/Source/Developer/DesktopWidgets/Private/Widgets \
 	/opt/unreal-engine/Engine/Source/Developer/DesktopWidgets/Private/Widgets/Input \
-	/opt/unreal-engine/Engine/Source/BlueprintNativeCodeGen/Private \
-	/opt/unreal-engine/Engine/Source/Developer/BlueprintNativeCodeGen/Public \
+	/opt/unreal-engine/Engine/Source/Developer/BlueprintNativeCodeGen/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintNativeCodeGen \
-	/opt/unreal-engine/Engine/Source/Developer/BlueprintNativeCodeGen \
+	/opt/unreal-engine/Engine/Source/Developer/BlueprintNativeCodeGen/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/AVIWriter/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AVIWriter \
+	/opt/unreal-engine/Engine/Source/Runtime/AVIWriter/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/EngineMessages/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/SessionMessages/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SessionMessages \
+	/opt/unreal-engine/Engine/Source/Runtime/SessionMessages/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/SessionServices/Private \
+	/opt/unreal-engine/Engine/Source/Editor/MovieSceneCaptureDialog/Private \
+	/opt/unreal-engine/Engine/Source/Editor/SequencerWidgets/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SequencerWidgets \
+	/opt/unreal-engine/Engine/Source/Editor/SequencerWidgets/Public \
+	/opt/unreal-engine/Engine/Source/Editor/ViewportInteraction \
+	/opt/unreal-engine/Engine/Source/Editor/SceneOutliner/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime/Private \
+	/opt/unreal-engine/Engine/Source/Editor/ClothingSystemEditorInterface/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothingSystemEditorInterface \
+	/opt/unreal-engine/Engine/Source/Editor/ClothingSystemEditorInterface/Public \
+	/opt/unreal-engine/Engine/Source/Developer/MeshReductionInterface/Private \
+	/opt/unreal-engine/Engine/Source/Developer/HierarchicalLODUtilities/Private \
+	/opt/unreal-engine/Engine/Source/Editor/HierarchicalLODOutliner/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HierarchicalLODOutliner \
+	/opt/unreal-engine/Engine/Source/Editor/HierarchicalLODOutliner/Public \
+	/opt/unreal-engine/Engine/Source/Editor/CommonMenuExtensions/Private \
+	/opt/unreal-engine/Engine/Source/Editor/PinnedCommandList/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PinnedCommandList \
+	/opt/unreal-engine/Engine/Source/Editor/PinnedCommandList/Public \
+	/opt/unreal-engine/Engine/Source/Editor/AdvancedPreviewScene/Private \
+	/opt/unreal-engine/Engine/Source/Editor/SkeletonEditor/Private \
+	/opt/unreal-engine/Engine/Source/Editor/AnimationEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimationEditor \
+	/opt/unreal-engine/Engine/Source/Editor/AnimationEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/Persona/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/LiveLinkInterface/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LiveLinkInterface \
+	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorder/Private \
+	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorder/Private/Sections \
+	/opt/unreal-engine/Engine/Source/Editor/SequenceRecorderSections/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SequenceRecorderSections \
+	/opt/unreal-engine/Engine/Source/Editor/Sequencer/Private \
+	/opt/unreal-engine/Engine/Source/Editor/Sequencer/Private/DisplayNodes \
+	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/MoviePlayer/Private \
 	/opt/unreal-engine/Engine/Source/Developer/SettingsEditor/Private \
 	/opt/unreal-engine/Engine/Source/Developer/SettingsEditor/Private/Models \
 	/opt/unreal-engine/Engine/Source/Developer/SettingsEditor/Private/Widgets \
-	/opt/unreal-engine/Engine/Source/Developer/SettingsEditor/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SettingsEditor \
-	/opt/unreal-engine/Engine/Source/Developer/SettingsEditor \
+	/opt/unreal-engine/Engine/Source/Developer/SettingsEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/InternationalizationSettings/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InternationalizationSettings \
 	/opt/unreal-engine/Engine/Source/Editor/InternationalizationSettings/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/InternationalizationSettings/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InternationalizationSettings \
-	/opt/unreal-engine/Engine/Source/Editor/InternationalizationSettings \
+	/opt/unreal-engine/Engine/Source/Runtime/Navmesh/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Navmesh \
+	/opt/unreal-engine/Engine/Source/Runtime/Navmesh/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/NavigationSystem/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/GameplayTasks/Private \
+	/opt/unreal-engine/Engine/Source/Developer/AITestSuite/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AITestSuite \
+	/opt/unreal-engine/Engine/Source/Developer/AITestSuite/Classes \
+	/opt/unreal-engine/Engine/Source/Developer/AITestSuite/Public \
+	/opt/unreal-engine/Engine/Source/Developer/GameplayDebugger/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/GameplayTags/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/AIModule/Private \
 	/opt/unreal-engine/Engine/Source/Editor/ConfigEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/ConfigEditor/Private/PropertyVisualization \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ConfigEditor \
 	/opt/unreal-engine/Engine/Source/Editor/ConfigEditor/Public \
 	/opt/unreal-engine/Engine/Source/Editor/ConfigEditor/Public/PropertyVisualization \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ConfigEditor \
-	/opt/unreal-engine/Engine/Source/Editor/ConfigEditor \
 	/opt/unreal-engine/Engine/Source/Editor/ComponentVisualizers/Private \
-	/opt/unreal-engine/Engine/Source/Editor/ComponentVisualizers/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ComponentVisualizers \
-	/opt/unreal-engine/Engine/Source/Editor/ComponentVisualizers \
-	/opt/unreal-engine/Engine/Source/Developer/AudioSettingsEditor/Public \
+	/opt/unreal-engine/Engine/Source/Developer/AudioSettingsEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioSettingsEditor \
-	/opt/unreal-engine/Engine/Source/Developer/AudioSettingsEditor \
-	/opt/unreal-engine/Engine/Source/Editor/Layers/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Layers \
-	/opt/unreal-engine/Engine/Source/Editor/Layers \
+	/opt/unreal-engine/Engine/Source/Developer/AudioSettingsEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/Layers/Private \
 	/opt/unreal-engine/Engine/Source/Editor/DetailCustomizations/Private \
-	/opt/unreal-engine/Engine/Source/Editor/LandscapeEditor/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LandscapeEditor \
-	/opt/unreal-engine/Engine/Source/Editor/LandscapeEditor \
+	/opt/unreal-engine/Engine/Source/Editor/LandscapeEditor/Public \
 	/opt/unreal-engine/Engine/Source/Editor/UMGEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/UMGEditor/Private/Templates \
 	/opt/unreal-engine/Engine/Source/Editor/UMGEditor/Private/Extensions \
@@ -1744,26 +1710,55 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Editor/UMGEditor/Private/Details \
 	/opt/unreal-engine/Engine/Source/Editor/UMGEditor/Private/DragDrop \
 	/opt/unreal-engine/Engine/Source/Editor/UMGEditor/Private/Utility \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UMGEditor \
 	/opt/unreal-engine/Engine/Source/Editor/UMGEditor/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/UMGEditor/Public \
-	/opt/unreal-engine/Engine/Source/Editor/UMGEditor/Public/Settings \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UMGEditor \
-	/opt/unreal-engine/Engine/Source/Editor/UMGEditor \
 	/opt/unreal-engine/Engine/Source/Runtime/BlueprintRuntime/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/BlueprintRuntime/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintRuntime \
-	/opt/unreal-engine/Engine/Source/Runtime/BlueprintRuntime \
-	/opt/unreal-engine/Engine/Source/Editor/HierarchicalLODOutliner/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HierarchicalLODOutliner \
-	/opt/unreal-engine/Engine/Source/Editor/HierarchicalLODOutliner \
-	/opt/unreal-engine/Engine/Source/Editor/Persona/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Foliage/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Foliage \
-	/opt/unreal-engine/Engine/Source/Runtime/Foliage \
-	/opt/unreal-engine/Engine/Source/Editor/PixelInspector/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/BlueprintRuntime/Public \
+	/opt/unreal-engine/Engine/Source/Editor/Kismet/Private \
+	/opt/unreal-engine/Engine/Source/Editor/AnimationModifiers/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimationModifiers \
+	/opt/unreal-engine/Engine/Source/Editor/AnimationModifiers/Public \
+	/opt/unreal-engine/Engine/Source/Developer/MeshBoneReduction/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshBoneReduction \
+	/opt/unreal-engine/Engine/Source/Developer/MeshBoneReduction/Public \
+	/opt/unreal-engine/Engine/Source/Editor/AnimationBlueprintEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimationBlueprintEditor \
+	/opt/unreal-engine/Engine/Source/Editor/AnimationBlueprintEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/SceneDepthPickerMode/Private \
+	/opt/unreal-engine/Engine/Source/Editor/SkeletalMeshEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SkeletalMeshEditor \
+	/opt/unreal-engine/Engine/Source/Editor/SkeletalMeshEditor/Public \
+	/opt/unreal-engine/Engine/Source/Developer/GraphColor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GraphColor \
+	/opt/unreal-engine/Engine/Source/Developer/GraphColor/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/MeshDescription/Private \
+	/opt/unreal-engine/Engine/Source/Developer/MeshUtilitiesCommon/Private \
+	/opt/unreal-engine/Engine/Source/Developer/MeshDescriptionOperations/Private \
+	/opt/unreal-engine/Engine/Source/Developer/MeshSimplifier/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/QuadricMeshReduction \
+	/opt/unreal-engine/Engine/Source/Developer/MeshBuilder/Private \
+	/opt/unreal-engine/Engine/Source/Developer/MeshUtilities/Private \
+	/opt/unreal-engine/Engine/Source/Editor/StaticMeshEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StaticMeshEditor \
+	/opt/unreal-engine/Engine/Source/Editor/StaticMeshEditor/Public \
+	/opt/unreal-engine/Engine/Source/Developer/MeshMergeUtilities/Private \
+	/opt/unreal-engine/Engine/Source/Developer/MaterialUtilities/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/PhysXCooking/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Landscape/Private \
+	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Private \
+	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Private/StatsPages \
+	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Private/StatsEntries \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StatsViewer \
+	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Classes \
+	/opt/unreal-engine/Engine/Source/Editor/StatsViewer/Public \
+	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileServices/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DeviceProfileServices \
+	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileServices/Public \
+	/opt/unreal-engine/Engine/Source/Editor/PixelInspector/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PixelInspectorModule \
-	/opt/unreal-engine/Engine/Source/Editor/PixelInspector \
+	/opt/unreal-engine/Engine/Source/Editor/PixelInspector/Public \
 	/opt/unreal-engine/Engine/Source/Developer/DeviceManager/Private \
 	/opt/unreal-engine/Engine/Source/Developer/DeviceManager/Private/Models \
 	/opt/unreal-engine/Engine/Source/Developer/DeviceManager/Private/Widgets \
@@ -1773,161 +1768,166 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Developer/DeviceManager/Private/Widgets/Processes \
 	/opt/unreal-engine/Engine/Source/Developer/DeviceManager/Private/Widgets/Shared \
 	/opt/unreal-engine/Engine/Source/Developer/DeviceManager/Private/Widgets/Toolbar \
-	/opt/unreal-engine/Engine/Source/Developer/DeviceManager/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DeviceManager \
-	/opt/unreal-engine/Engine/Source/Developer/DeviceManager \
-	/opt/unreal-engine/Engine/Source/Developer/AutomationWindow/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/AutomationMessages/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AutomationMessages \
+	/opt/unreal-engine/Engine/Source/Runtime/AutomationMessages/Public \
+	/opt/unreal-engine/Engine/Source/Editor/UnrealEdMessages/Private \
+	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparisonTools/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ScreenShotComparisonTools \
+	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparisonTools/Public \
+	/opt/unreal-engine/Engine/Source/Developer/AutomationController/Private \
+	/opt/unreal-engine/Engine/Source/Developer/AutomationWindow/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AutomationWindow \
-	/opt/unreal-engine/Engine/Source/Developer/AutomationWindow \
+	/opt/unreal-engine/Engine/Source/Developer/AutomationWindow/Public \
 	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparison/Private \
 	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparison/Private/Widgets \
 	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparison/Private/Models \
-	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparison/Public \
-	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparison/Public/Interfaces \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ScreenShotComparison \
-	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparison \
-	/opt/unreal-engine/Engine/Source/Editor/ProfilerMessages/Private \
-	/opt/unreal-engine/Engine/Source/Developer/ProfilerMessages/Public \
+	/opt/unreal-engine/Engine/Source/Developer/ScreenShotComparison/Public \
+	/opt/unreal-engine/Engine/Source/Developer/ProfilerMessages/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProfilerMessages \
-	/opt/unreal-engine/Engine/Source/Developer/ProfilerMessages \
+	/opt/unreal-engine/Engine/Source/Developer/ProfilerMessages/Public \
+	/opt/unreal-engine/Engine/Source/Developer/ProfilerClient/Private \
 	/opt/unreal-engine/Engine/Source/Developer/Profiler/Private \
 	/opt/unreal-engine/Engine/Source/Developer/Profiler/Private/Widgets \
-	/opt/unreal-engine/Engine/Source/Developer/Profiler/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Profiler \
-	/opt/unreal-engine/Engine/Source/Developer/Profiler \
 	/opt/unreal-engine/Engine/Source/Developer/SessionFrontend/Private \
 	/opt/unreal-engine/Engine/Source/Developer/SessionFrontend/Private/Models \
 	/opt/unreal-engine/Engine/Source/Developer/SessionFrontend/Private/Widgets \
 	/opt/unreal-engine/Engine/Source/Developer/SessionFrontend/Private/Widgets/Browser \
 	/opt/unreal-engine/Engine/Source/Developer/SessionFrontend/Private/Widgets/Console \
-	/opt/unreal-engine/Engine/Source/Editor/VREditor/Gizmo \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SessionFrontend \
+	/opt/unreal-engine/Engine/Source/Editor/PlacementMode/Private \
 	/opt/unreal-engine/Engine/Source/Editor/VREditor/UI \
 	/opt/unreal-engine/Engine/Source/Editor/VREditor/Teleporter \
-	/opt/unreal-engine/Engine/Source/Editor/VREditor/Interactables \
-	/opt/unreal-engine/Engine/Source/Editor/FoliageEdit/Public \
+	/opt/unreal-engine/Engine/Source/Editor/LandscapeEditor/Private \
+	/opt/unreal-engine/Engine/Source/Editor/FoliageEdit/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FoliageEdit \
-	/opt/unreal-engine/Engine/Source/Editor/FoliageEdit \
+	/opt/unreal-engine/Engine/Source/Editor/FoliageEdit/Public \
 	/opt/unreal-engine/Engine/Source/Editor/WorldBrowser/Private \
-	/opt/unreal-engine/Engine/Source/Editor/WorldBrowser/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WorldBrowser \
-	/opt/unreal-engine/Engine/Source/Editor/WorldBrowser \
-	/opt/unreal-engine/Engine/Source/Editor/NewLevelDialog/Public \
+	/opt/unreal-engine/Engine/Source/Editor/WorldBrowser/Public \
+	/opt/unreal-engine/Engine/Source/Editor/NewLevelDialog/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NewLevelDialog \
-	/opt/unreal-engine/Engine/Source/Editor/NewLevelDialog \
+	/opt/unreal-engine/Engine/Source/Editor/NewLevelDialog/Public \
 	/opt/unreal-engine/Engine/Source/Developer/LauncherServices/Private \
-	/opt/unreal-engine/Engine/Source/Developer/LauncherServices/Private/Devices \
-	/opt/unreal-engine/Engine/Source/Developer/LauncherServices/Private/Games \
 	/opt/unreal-engine/Engine/Source/Developer/LauncherServices/Private/Launcher \
 	/opt/unreal-engine/Engine/Source/Developer/LauncherServices/Private/Profiles \
 	/opt/unreal-engine/Engine/Source/Editor/IntroTutorials/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Services/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Services/Public/Account \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Services/Public/Application \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Services/Public/Package \
+	/opt/unreal-engine/Engine/Source/Editor/LevelEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateReflector \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PortalServices \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Services \
+	/opt/unreal-engine/Engine/Source/Runtime/Portal/Services/Public \
 	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileEditor/Private/DetailsPanel \
-	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileEditor/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DeviceProfileEditor \
-	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileEditor \
+	/opt/unreal-engine/Engine/Source/Editor/DeviceProfileEditor/Public \
 	/opt/unreal-engine/Engine/Source/Editor/UndoHistory/Private \
 	/opt/unreal-engine/Engine/Source/Editor/UndoHistory/Private/Widgets \
-	/opt/unreal-engine/Engine/Source/Editor/UndoHistory/Public \
-	/opt/unreal-engine/Engine/Source/Editor/UndoHistory/Public/Interfaces \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/UndoHistory \
-	/opt/unreal-engine/Engine/Source/Editor/UndoHistory \
+	/opt/unreal-engine/Engine/Source/Editor/UndoHistory/Public \
 	/opt/unreal-engine/Engine/Source/Editor/ProjectTargetPlatformEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/ProjectTargetPlatformEditor/Private/Widgets \
-	/opt/unreal-engine/Engine/Source/Editor/ProjectTargetPlatformEditor/Public \
-	/opt/unreal-engine/Engine/Source/Editor/ProjectTargetPlatformEditor/Public/Interfaces \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProjectTargetPlatformEditor \
-	/opt/unreal-engine/Engine/Source/Editor/ProjectTargetPlatformEditor \
-	/opt/unreal-engine/Engine/Source/Developer/OutputLog/Public \
+	/opt/unreal-engine/Engine/Source/Editor/ProjectTargetPlatformEditor/Public \
+	/opt/unreal-engine/Engine/Source/Developer/OutputLog/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OutputLog \
-	/opt/unreal-engine/Engine/Source/Developer/OutputLog \
 	/opt/unreal-engine/Engine/Source/Editor/LocalizationDashboard/Private \
-	/opt/unreal-engine/Engine/Source/Editor/LocalizationDashboard/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocalizationDashboard \
-	/opt/unreal-engine/Engine/Source/Editor/LocalizationDashboard \
+	/opt/unreal-engine/Engine/Source/Editor/LocalizationDashboard/Public \
 	/opt/unreal-engine/Engine/Source/Editor/MainFrame/Private \
 	/opt/unreal-engine/Engine/Source/Editor/MainFrame/Private/Frame \
 	/opt/unreal-engine/Engine/Source/Editor/MainFrame/Private/Menus \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Toolbox \
-	/opt/unreal-engine/Engine/Source/Runtime/Toolbox \
 	/opt/unreal-engine/Engine/Source/Editor/TextureEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/TextureEditor/Private/Menus \
 	/opt/unreal-engine/Engine/Source/Editor/TextureEditor/Private/Models \
 	/opt/unreal-engine/Engine/Source/Editor/TextureEditor/Private/Widgets \
-	/opt/unreal-engine/Engine/Source/Editor/CurveTableEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/CurveTableEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CurveTableEditor \
-	/opt/unreal-engine/Engine/Source/Editor/CurveTableEditor \
-	/opt/unreal-engine/Engine/Source/Editor/DataTableEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/CurveTableEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/DataTableEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DataTableEditor \
-	/opt/unreal-engine/Engine/Source/Editor/DataTableEditor \
-	/opt/unreal-engine/Engine/Source/Editor/FontEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/DataTableEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/MaterialEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MaterialEditor \
+	/opt/unreal-engine/Engine/Source/Editor/MaterialEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/FontEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FontEditor \
-	/opt/unreal-engine/Engine/Source/Editor/FontEditor \
+	/opt/unreal-engine/Engine/Source/Editor/FontEditor/Public \
 	/opt/unreal-engine/Engine/Source/Editor/AudioEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/AudioEditor/Private/Factories \
 	/opt/unreal-engine/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions \
+	/opt/unreal-engine/Engine/Source/Developer/AssetTools/Private \
+	/opt/unreal-engine/Engine/Source/Editor/ClassViewer/Private \
+	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Private/KismetNodes \
 	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Private/KismetPins \
 	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Private/MaterialNodes \
 	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Private/MaterialPins \
-	/opt/unreal-engine/Engine/Source/Editor/GraphEditor/Private/SoundNodes \
-	/opt/unreal-engine/Engine/Source/Editor/AnimGraph/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/XmlParser/Private \
+	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private \
+	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyEditors \
+	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors \
+	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors \
+	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/TrackEditorThumbnail \
+	/opt/unreal-engine/Engine/Source/Editor/MovieSceneTools/Private/Sections \
+	/opt/unreal-engine/Engine/Source/Editor/KismetCompiler/Private \
+	/opt/unreal-engine/Engine/Source/Editor/BlueprintGraph/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Private/Sections \
+	/opt/unreal-engine/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks \
+	/opt/unreal-engine/Engine/Source/Runtime/LevelSequence/Private \
 	/opt/unreal-engine/Engine/Source/Editor/InputBindingEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/InputBindingEditor/Private/Widgets \
-	/opt/unreal-engine/Engine/Source/Editor/InputBindingEditor/Public \
-	/opt/unreal-engine/Engine/Source/Editor/InputBindingEditor/Public/Interfaces \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InputBindingEditor \
-	/opt/unreal-engine/Engine/Source/Editor/InputBindingEditor \
-	/opt/unreal-engine/Engine/Source/Editor/SwarmInterface/Public \
+	/opt/unreal-engine/Engine/Source/Editor/InputBindingEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/SwarmInterface/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SwarmInterface \
-	/opt/unreal-engine/Engine/Source/Editor/SwarmInterface \
 	/opt/unreal-engine/Engine/Source/Developer/TargetDeviceServices/Private \
 	/opt/unreal-engine/Engine/Source/Developer/TargetDeviceServices/Private/Proxies \
 	/opt/unreal-engine/Engine/Source/Developer/TargetDeviceServices/Private/Services \
-	/opt/unreal-engine/Engine/Source/Editor/MeshPaintMode/Public \
+	/opt/unreal-engine/Engine/Source/Editor/MeshPaint/Private \
+	/opt/unreal-engine/Engine/Source/Editor/MeshPaintMode/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MeshPaintMode \
-	/opt/unreal-engine/Engine/Source/Editor/MeshPaintMode \
+	/opt/unreal-engine/Engine/Source/Editor/MeshPaintMode/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/Engine/Classes/Curves \
-	/opt/unreal-engine/Engine/Source/Runtime/VectorVM/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/VectorVM/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VectorVM \
-	/opt/unreal-engine/Engine/Source/Runtime/VectorVM \
-	/opt/unreal-engine/Engine/Source/Editor/PluginWarden/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/VectorVM/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Portal/Services/Private \
+	/opt/unreal-engine/Engine/Source/Editor/PluginWarden/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PluginWarden \
-	/opt/unreal-engine/Engine/Source/Editor/PluginWarden \
-	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemEditor/Private \
-	/opt/unreal-engine/Engine/Source/Editor/ClothingSystemEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/PluginWarden/Public \
+	/opt/unreal-engine/Engine/Source/Editor/ClothingSystemEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothingSystemEditor \
-	/opt/unreal-engine/Engine/Source/Editor/ClothingSystemEditor \
+	/opt/unreal-engine/Engine/Source/Editor/ClothingSystemEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/PIEPreviewDeviceProfileSelector/Private \
+	/opt/unreal-engine/Engine/Source/Developer/PakFileUtilities/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PakFileUtilities \
+	/opt/unreal-engine/Engine/Source/Editor/BspMode/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/UnrealAudio/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/UnrealAudio/Private/Tests \
+	/opt/unreal-engine/Engine/Source/Developer/FunctionalTesting/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/NetworkFileSystem/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkFileSystem/Private/Simple \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkFileSystem/Private/Streaming \
-	/opt/unreal-engine/Engine/Source/Editor/DistCurveEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/DistCurveEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/DistCurveEditor \
-	/opt/unreal-engine/Engine/Source/Editor/DistCurveEditor \
+	/opt/unreal-engine/Engine/Source/Editor/DistCurveEditor/Public \
 	/opt/unreal-engine/Engine/Source/Editor/Cascade/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Cascade \
 	/opt/unreal-engine/Engine/Source/Editor/Cascade/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/Cascade/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Cascade \
-	/opt/unreal-engine/Engine/Source/Editor/Cascade \
+	/opt/unreal-engine/Engine/Source/Editor/Matinee/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Matinee \
 	/opt/unreal-engine/Engine/Source/Editor/Matinee/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/Matinee/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Matinee \
-	/opt/unreal-engine/Engine/Source/Editor/Matinee \
 	/opt/unreal-engine/Engine/Source/Editor/EditorSettingsViewer/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorSettingsViewer \
-	/opt/unreal-engine/Engine/Source/Editor/EditorSettingsViewer \
 	/opt/unreal-engine/Engine/Source/Editor/PhysicsAssetEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/PhysicsAssetEditor/Private/PhysicsAssetGraph \
-	/opt/unreal-engine/Engine/Source/Editor/PhysicsAssetEditor/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PhysicsAssetEditor \
-	/opt/unreal-engine/Engine/Source/Editor/PhysicsAssetEditor \
+	/opt/unreal-engine/Engine/Source/Editor/PhysicsAssetEditor/Public \
 	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher/Private \
 	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher/Private/Models \
 	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher/Private/Widgets \
@@ -1942,574 +1942,732 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Project \
 	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Settings \
 	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Shared \
-	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Toolbar \
-	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProjectLauncher \
-	/opt/unreal-engine/Engine/Source/Developer/ProjectLauncher \
-	/opt/unreal-engine/Engine/Source/Editor/StringTableEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/StringTableEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StringTableEditor \
-	/opt/unreal-engine/Engine/Source/Editor/StringTableEditor \
+	/opt/unreal-engine/Engine/Source/Editor/StringTableEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/GeometryMode/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryMode \
 	/opt/unreal-engine/Engine/Source/Editor/GeometryMode/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/GeometryMode/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryMode \
-	/opt/unreal-engine/Engine/Source/Editor/GeometryMode \
-	/opt/unreal-engine/Engine/Source/Editor/TextureAlignMode/Public \
+	/opt/unreal-engine/Engine/Source/Editor/TextureAlignMode/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureAlignMode \
-	/opt/unreal-engine/Engine/Source/Editor/TextureAlignMode \
+	/opt/unreal-engine/Engine/Source/Editor/TextureAlignMode/Public \
 	/opt/unreal-engine/Engine/Source/Editor/Blutility/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Blutility \
 	/opt/unreal-engine/Engine/Source/Editor/Blutility/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/Blutility/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Blutility \
-	/opt/unreal-engine/Engine/Source/Editor/Blutility \
 	/opt/unreal-engine/Engine/Source/Editor/MergeActors/Private \
 	/opt/unreal-engine/Engine/Source/Editor/MergeActors/Private/MeshMergingTool \
 	/opt/unreal-engine/Engine/Source/Editor/MergeActors/Private/MeshProxyTool \
-	/opt/unreal-engine/Engine/Source/Editor/MergeActors/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MergeActors \
-	/opt/unreal-engine/Engine/Source/Editor/MergeActors \
+	/opt/unreal-engine/Engine/Source/Editor/MergeActors/Public \
 	/opt/unreal-engine/Engine/Source/Editor/ProjectSettingsViewer/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProjectSettingsViewer \
-	/opt/unreal-engine/Engine/Source/Editor/ProjectSettingsViewer \
-	/opt/unreal-engine/Engine/Source/Editor/PListEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/PListEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PListEditor \
-	/opt/unreal-engine/Engine/Source/Editor/PListEditor \
+	/opt/unreal-engine/Engine/Source/Editor/PListEditor/Public \
 	/opt/unreal-engine/Engine/Source/Editor/AIGraph/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AIGraph \
 	/opt/unreal-engine/Engine/Source/Editor/AIGraph/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/AIGraph/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AIGraph \
-	/opt/unreal-engine/Engine/Source/Editor/AIGraph \
 	/opt/unreal-engine/Engine/Source/Editor/BehaviorTreeEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BehaviorTreeEditor \
 	/opt/unreal-engine/Engine/Source/Editor/BehaviorTreeEditor/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/BehaviorTreeEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BehaviorTreeEditor \
-	/opt/unreal-engine/Engine/Source/Editor/BehaviorTreeEditor \
 	/opt/unreal-engine/Engine/Source/Editor/EnvironmentQueryEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EnvironmentQueryEditor \
 	/opt/unreal-engine/Engine/Source/Editor/EnvironmentQueryEditor/Classes \
 	/opt/unreal-engine/Engine/Source/Editor/EnvironmentQueryEditor/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EnvironmentQueryEditor \
-	/opt/unreal-engine/Engine/Source/Editor/EnvironmentQueryEditor \
+	/opt/unreal-engine/Engine/Source/Editor/ViewportSnapping/Private \
 	/opt/unreal-engine/Engine/Source/Editor/GameplayTasksEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayTasksEditor \
+	/opt/unreal-engine/Engine/Source/Editor/GameplayTasksEditor/Classes \
+	/opt/unreal-engine/Engine/Source/Editor/GameplayTasksEditor/Public \
+	/opt/unreal-engine/Engine/Source/Developer/HTML5/HTML5PlatformEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTML5/HTML5PlatformEditor \
 	/opt/unreal-engine/Engine/Source/Developer/HTML5/HTML5PlatformEditor/Classes \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTML5PlatformEditor \
-	/opt/unreal-engine/Engine/Source/Developer/HTML5/HTML5PlatformEditor \
 	/opt/unreal-engine/Engine/Source/Runtime/MessagingRpc/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/MessagingRpc/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MessagingRpc \
-	/opt/unreal-engine/Engine/Source/Runtime/MessagingRpc \
+	/opt/unreal-engine/Engine/Source/Runtime/MessagingRpc/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/Portal/Messages/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Messages/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PortalMessages \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Messages \
+	/opt/unreal-engine/Engine/Source/Runtime/Portal/Messages/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/Portal/Proxies/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Portal/Proxies/Private/Account \
 	/opt/unreal-engine/Engine/Source/Runtime/Portal/Proxies/Private/Application \
 	/opt/unreal-engine/Engine/Source/Runtime/Portal/Proxies/Private/Package \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PortalProxies \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Proxies \
-	/opt/unreal-engine/Engine/Source/Runtime/GeometryCache/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/GeometryCacheEd/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Overlay/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Overlay/Private/Assets \
 	/opt/unreal-engine/Engine/Source/Runtime/Overlay/Private/Factories \
 	/opt/unreal-engine/Engine/Source/Editor/OverlayEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/OverlayEditor/Private/Factories \
-	/opt/unreal-engine/Engine/Source/Editor/OverlayEditor/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OverlayEditor \
-	/opt/unreal-engine/Engine/Source/Editor/OverlayEditor \
-	/opt/unreal-engine/Engine/Source/Editor/ClothPainter/Public \
+	/opt/unreal-engine/Engine/Source/Editor/OverlayEditor/Public \
+	/opt/unreal-engine/Engine/Source/Editor/ClothPainter/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothPainter \
-	/opt/unreal-engine/Engine/Source/Editor/ClothPainter \
+	/opt/unreal-engine/Engine/Source/Editor/ClothPainter/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Media/Private \
+	/opt/unreal-engine/Engine/Source/Editor/TimeManagementEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TimeManagementEditor \
+	/opt/unreal-engine/Engine/Source/Editor/TimeManagementEditor/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Android/AndroidRuntimeSettings/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android/AndroidRuntimeSettings \
+	/opt/unreal-engine/Engine/Source/Runtime/Android \
 	/opt/unreal-engine/Engine/Source/Runtime/Android/AndroidRuntimeSettings/Classes \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidRuntimeSettings \
-	/opt/unreal-engine/Engine/Source/Runtime/Android/AndroidRuntimeSettings \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidPlatformEditor \
-	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidPlatformEditor \
+	/opt/unreal-engine/Engine/Source/Developer/Android/AndroidPlatformEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android/AndroidPlatformEditor \
 	/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Private/Settings \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Rpc/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PortalRpc \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Rpc \
+	/opt/unreal-engine/Engine/Source/Runtime/Portal/Rpc/Public \
+	/opt/unreal-engine/Engine/Source/Editor/EditorWidgets/Private \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private/Presentation \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private/Presentation/PropertyTable \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private/Presentation/PropertyEditor \
-	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private/Presentation/PropertyDetails \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private/UserInterface \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyTable \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyTree \
 	/opt/unreal-engine/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyDetails \
-	/opt/unreal-engine/Engine/Source/Runtime/Renderer/Private/CompositionLighting \
-	/opt/unreal-engine/Engine/Source/Runtime/Renderer/Private/PostProcess \
-	/opt/unreal-engine/Engine/Source/Runtime/Vulkan/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/RHI/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Landscape/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/Rpc/PortalRpc/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/PerfCounters/Public \
+	/opt/unreal-engine/Engine/Source/Developer/SlateReflector/Private \
+	/opt/unreal-engine/Engine/Source/Developer/SlateReflector/Private/Models \
+	/opt/unreal-engine/Engine/Source/Developer/SlateReflector/Private/Widgets \
+	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Framework \
+	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Framework/Testing \
+	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Widgets \
+	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Widgets/Colors \
+	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Widgets/Testing \
+	/opt/unreal-engine/Engine/Source/Runtime/AppFramework/Private/Widgets/Workflow \
+	/opt/unreal-engine/Engine/Source/Runtime/Portal/Rpc/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/PerfCounters/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PerfCounters \
-	/opt/unreal-engine/Engine/Source/Runtime/PerfCounters \
-	/opt/unreal-engine/Engine/Source/Developer/CollisionAnalyzer/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/PerfCounters/Public \
+	/opt/unreal-engine/Engine/Source/Developer/CollisionAnalyzer/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CollisionAnalyzer \
-	/opt/unreal-engine/Engine/Source/Developer/CollisionAnalyzer \
-	/opt/unreal-engine/Engine/Source/Developer/LogVisualizer/Public \
+	/opt/unreal-engine/Engine/Source/Developer/CollisionAnalyzer/Public \
+	/opt/unreal-engine/Engine/Source/Developer/LogVisualizer/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LogVisualizer \
-	/opt/unreal-engine/Engine/Source/Developer/LogVisualizer \
+	/opt/unreal-engine/Engine/Source/Developer/LogVisualizer/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/MessagingCommon/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/SynthBenchmark/Private \
-	/opt/unreal-engine/Engine/Source/DatabaseSupport/Private \
-	/opt/unreal-engine/Engine/Source/PacketHandler/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/HardwareSurvey/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/DatabaseSupport/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/PacketHandlers/ReliabilityHandlerComponent/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/PacketHandlers/PacketHandler/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/EyeTracker/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EyeTracker \
+	/opt/unreal-engine/Engine/Source/Runtime/EyeTracker/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/MRMesh/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/StreamingPauseRendering/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/StreamingPauseRendering/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StreamingPauseRendering \
-	/opt/unreal-engine/Engine/Source/Runtime/StreamingPauseRendering \
+	/opt/unreal-engine/Engine/Source/Runtime/StreamingPauseRendering/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/SlateNullRenderer/Private \
 	/opt/unreal-engine/Engine/Source/Developer/BlankModule/Private \
-	/opt/unreal-engine/Engine/Source/Developer/BlankModule/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlankModule \
-	/opt/unreal-engine/Engine/Source/Developer/BlankModule \
-	/opt/unreal-engine/Engine/Source/Developer/LinuxTargetPlatform/Classes \
-	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxTargetPlatform/Classes \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LinuxTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxTargetPlatform \
+	/opt/unreal-engine/Engine/Source/Developer/BlankModule/Public \
 	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxTargetPlatform/Private \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LinuxNoEditorTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxNoEditorTargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LinuxServerTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxServerTargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LinuxClientTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxClientTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Classes \
-	/opt/unreal-engine/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Linux/LinuxTargetPlatform \
+	/opt/unreal-engine/Engine/Source/Developer/Linux \
+	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxTargetPlatform/Classes \
+	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxNoEditorTargetPlatform/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Linux/LinuxNoEditorTargetPlatform \
+	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxServerTargetPlatform/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Linux/LinuxServerTargetPlatform \
+	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxClientTargetPlatform/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Linux/LinuxClientTargetPlatform \
+	/opt/unreal-engine/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LaunchDaemonMessages \
-	/opt/unreal-engine/Engine/Source/Runtime/IOS/LaunchDaemonMessages \
+	/opt/unreal-engine/Engine/Source/Developer/AllDesktopTargetPlatform/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AllDesktopTargetPlatform \
-	/opt/unreal-engine/Engine/Source/Developer/AllDesktopTargetPlatform \
+	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxPlatformEditor/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LinuxPlatformEditor \
-	/opt/unreal-engine/Engine/Source/Developer/Linux/LinuxPlatformEditor \
 	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/NullNetworkReplayStreaming/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/NullNetworkReplayStreaming/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NullNetworkReplayStreaming \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/NullNetworkReplayStreaming \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/HttpNetworkReplayStreaming/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/NullNetworkReplayStreaming/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/HttpNetworkReplayStreaming/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HttpNetworkReplayStreaming \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/HttpNetworkReplayStreaming \
-	/opt/unreal-engine/Engine/Source/Runtime/Advertising/Advertising/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Advertising/Advertising/Public/Interfaces \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/HttpNetworkReplayStreaming/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Advertising/Advertising/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Advertising \
-	/opt/unreal-engine/Engine/Source/Runtime/Advertising/Advertising \
-	/opt/unreal-engine/Engine/Source/Runtime/AutomationWorker/Private \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioMixerSDL \
-	/opt/unreal-engine/Engine/Source/Runtime/Linux/AudioMixerSDL \
-	/opt/unreal-engine/Engine/Source/Runtime/Media/Private \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RealtimeProfiler \
-	/opt/unreal-engine/Engine/Source/Developer/RealtimeProfiler \
-	/opt/unreal-engine/Engine/Source/Developer/GammaUI/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GammaUI \
-	/opt/unreal-engine/Engine/Source/Developer/GammaUI \
-	/opt/unreal-engine/Engine/Source/Developer/ModuleUI/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ModuleUI \
-	/opt/unreal-engine/Engine/Source/Developer/ModuleUI \
+	/opt/unreal-engine/Engine/Source/Runtime/Advertising \
+	/opt/unreal-engine/Engine/Source/Runtime/Advertising/Advertising/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/MediaUtils/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkFile/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/StreamingFile/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/CookedIterativeFile/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/AutomationWorker/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Unix/UnixCommonStartup/Private \
+	/opt/unreal-engine/Engine/Source/Runtime/Linux/AudioMixerSDL/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioMixerSDL \
+	/opt/unreal-engine/Engine/Source/Runtime/Linux \
 	/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Private/Assets \
 	/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Private/Misc \
-	/opt/unreal-engine/Engine/Source/Developer/StandaloneRenderer/Private \
+	/opt/unreal-engine/Engine/Source/Developer/TaskGraph/Private \
+	/opt/unreal-engine/Engine/Source/Developer/RealtimeProfiler/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RealtimeProfiler \
+	/opt/unreal-engine/Engine/Source/Developer/ProfilerService/Private \
+	/opt/unreal-engine/Engine/Source/Developer/GammaUI/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GammaUI \
+	/opt/unreal-engine/Engine/Source/Developer/GammaUI/Public \
+	/opt/unreal-engine/Engine/Source/Developer/ModuleUI/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ModuleUI \
+	/opt/unreal-engine/Engine/Source/Developer/ModuleUI/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Toolbox/Private \
+	/opt/unreal-engine/Engine/Source/Developer/TextureCompressor/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCacheEd/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCache/Source/GeometryCacheSequencer/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/ImgMedia/Source/OpenExrWrapper/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Online/Voice/Private \
-	/opt/unreal-engine/Engine/Source/LiveLinkInterface/Private \
-	/opt/unreal-engine/Engine/Source/LiveLinkMessageBusFramework/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/BuildPatchServices/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/Icmp/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/CEF3Utils/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/CEF3Utils/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CEF3Utils \
-	/opt/unreal-engine/Engine/Source/Runtime/CEF3Utils \
-	/opt/unreal-engine/Engine/Source/Runtime/WebBrowser/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/AugmentedReality/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/WebBrowserTexture/Private \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AudioFormatADPCM \
-	/opt/unreal-engine/Engine/Source/Developer/AudioFormatADPCM \
+	/opt/unreal-engine/Engine/Source/Runtime/InputDevice/Private \
 	/opt/unreal-engine/Engine/Source/Developer/AutomationDriver/Private \
 	/opt/unreal-engine/Engine/Source/Developer/AutomationDriver/Private/Locators \
 	/opt/unreal-engine/Engine/Source/Developer/AutomationDriver/Private/Specs \
 	/opt/unreal-engine/Engine/Source/Developer/AutomationDriver/Private/MetaData \
-	/opt/unreal-engine/Engine/Source/Developer/AutomationDriver/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AutomationDriver \
-	/opt/unreal-engine/Engine/Source/Developer/AutomationDriver \
+	/opt/unreal-engine/Engine/Source/Developer/AutomationDriver/Public \
 	/opt/unreal-engine/Engine/Source/Developer/CrashDebugHelper/Private \
 	/opt/unreal-engine/Engine/Source/Developer/CrashDebugHelper/Private/Linux \
 	/opt/unreal-engine/Engine/Source/Developer/CrashDebugHelper/Private/Mac \
 	/opt/unreal-engine/Engine/Source/Developer/CrashDebugHelper/Private/Windows \
 	/opt/unreal-engine/Engine/Source/Developer/CrashDebugHelper/Private/IOS \
-	/opt/unreal-engine/Engine/Source/Developer/CrashDebugHelper/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CrashDebugHelper \
-	/opt/unreal-engine/Engine/Source/Developer/CrashDebugHelper \
-	/opt/unreal-engine/Engine/Source/Developer/ShaderFormatVectorVM/Public \
+	/opt/unreal-engine/Engine/Source/Developer/ShaderFormatVectorVM/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ShaderFormatVectorVM \
-	/opt/unreal-engine/Engine/Source/Developer/ShaderFormatVectorVM \
+	/opt/unreal-engine/Engine/Source/Developer/ShaderFormatVectorVM/Public \
 	/opt/unreal-engine/Engine/Source/Developer/SlackIntegrations/Private \
-	/opt/unreal-engine/Engine/Source/Developer/SlackIntegrations/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlackIntegrations \
-	/opt/unreal-engine/Engine/Source/Developer/SlackIntegrations \
-	/opt/unreal-engine/Engine/Source/Private \
-	/opt/unreal-engine/Engine/Source/Public \
-	/opt/unreal-engine/Engine/Source/Developer/XGEController/Public \
+	/opt/unreal-engine/Engine/Source/Developer/SlackIntegrations/Public \
+	/opt/unreal-engine/Engine/Source/Developer/StandaloneRenderer/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StandaloneRenderer \
+	/opt/unreal-engine/Engine/Source/Developer/TextureFormatAndroid/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TextureFormatAndroid \
+	/opt/unreal-engine/Engine/Source/Developer/XGEController/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/XGEController \
-	/opt/unreal-engine/Engine/Source/Developer/XGEController \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsSwrve/Public \
+	/opt/unreal-engine/Engine/Source/Developer/XGEController/Public \
+	/opt/unreal-engine/Engine/Source/Editor/VirtualTexturingEditor/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VirtualTexturingEditor \
+	/opt/unreal-engine/Engine/Source/Editor/VirtualTexturingEditor/Classes \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsSwrve/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsSwrve \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsSwrve \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/QoSReporter/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsSwrve/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsVisualEditing/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsVisualEditing \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsVisualEditing/Classes \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/AnalyticsVisualEditing/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/QoSReporter/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/QoSReporter \
-	/opt/unreal-engine/Engine/Source/Runtime/Analytics/QoSReporter \
+	/opt/unreal-engine/Engine/Source/Runtime/Analytics/QoSReporter/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/AugmentedReality/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AugmentedReality \
+	/opt/unreal-engine/Engine/Source/Runtime/AugmentedReality/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/CEF3Utils/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CEF3Utils \
+	/opt/unreal-engine/Engine/Source/Runtime/ClientPilot/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClientPilot \
+	/opt/unreal-engine/Engine/Source/Runtime/ClientPilot/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/CrunchCompression/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CrunchCompression \
+	/opt/unreal-engine/Engine/Source/Runtime/CrunchCompression/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Experimental/Apeiron/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Apeiron \
+	/opt/unreal-engine/Engine/Source/Runtime/Experimental \
+	/opt/unreal-engine/Engine/Source/Runtime/Experimental/Apeiron/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/FriendsAndChat/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/FriendsAndChat/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/FriendsAndChat/Public/Interfaces \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FriendsAndChat \
-	/opt/unreal-engine/Engine/Source/Runtime/FriendsAndChat \
+	/opt/unreal-engine/Engine/Source/Runtime/FriendsAndChat/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/GameMenuBuilder/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/GameMenuBuilder/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameMenuBuilder \
-	/opt/unreal-engine/Engine/Source/Runtime/GameMenuBuilder \
-	/opt/unreal-engine/Engine/Source/Runtime/IPC/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/GameMenuBuilder/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/HardwareSurvey/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HardwareSurvey \
+	/opt/unreal-engine/Engine/Source/Runtime/HardwareSurvey/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/IPC/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/IPC \
-	/opt/unreal-engine/Engine/Source/Runtime/IPC \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/InMemoryNetworkReplayStreaming/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/IPC/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/LiveLinkMessageBusFramework/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LiveLinkMessageBusFramework \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/InMemoryNetworkReplayStreaming/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/InMemoryNetworkReplayStreaming \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/InMemoryNetworkReplayStreaming \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/LocalFileNetworkReplayStreaming/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/InMemoryNetworkReplayStreaming/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/LocalFileNetworkReplayStreaming/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocalFileNetworkReplayStreaming \
-	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/LocalFileNetworkReplayStreaming \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/ImageDownload/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/LocalFileNetworkReplayStreaming/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/SaveGameNetworkReplayStreaming/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SaveGameNetworkReplayStreaming \
+	/opt/unreal-engine/Engine/Source/Runtime/NetworkReplayStreaming/SaveGameNetworkReplayStreaming/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/ICMP/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Icmp \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/ICMP/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/ImageDownload/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImageDownload \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/ImageDownload \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/ImageDownload/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/Online/Stomp/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/Stomp/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Stomp \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/Stomp \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/WebSockets/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebSockets \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/WebSockets \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/WebSockets/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Stomp \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/Stomp/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/Online/WebSockets/Private \
 	/opt/unreal-engine/Engine/Source/Runtime/Online/XMPP/Private \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/XMPP/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/XMPP \
-	/opt/unreal-engine/Engine/Source/Runtime/Online/XMPP \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/LauncherCheck/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Online/XMPP/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Portal/LauncherCheck/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LauncherCheck \
-	/opt/unreal-engine/Engine/Source/Runtime/Portal/LauncherCheck \
-	/opt/unreal-engine/Engine/Source/Runtime/RuntimeAssetCache/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Portal/LauncherCheck/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/RuntimeAssetCache/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RuntimeAssetCache \
-	/opt/unreal-engine/Engine/Source/Runtime/RuntimeAssetCache \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/BlankProgram \
-	/opt/unreal-engine/Engine/Source/Programs/BlankProgram \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/Json \
-	/opt/unreal-engine/Engine/Source/Programs/BuildPatchTool/Private \
-	/opt/unreal-engine/Engine/Source/Programs/BuildPatchTool/Public \
-	/opt/unreal-engine/Engine/Source/Programs/BuildPatchTool/Public/Interfaces \
-	/opt/unreal-engine/Engine/Source/Programs/BuildPatchTool/Public/ToolModes \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/BuildPatchTool \
-	/opt/unreal-engine/Engine/Source/Programs/BuildPatchTool \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/BuildPatchServices \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/PakFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/SandboxFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/NetworkFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/StreamingFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/Sockets \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/Messaging \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/AutomationWorker \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BuildPatchTool/Inc/AutomationController \
-	/opt/unreal-engine/Engine/Source/Programs/CrashReportClient/Private \
-	/opt/unreal-engine/Engine/Source/Programs/CrashReportClient/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/CrashReportClient \
-	/opt/unreal-engine/Engine/Source/Programs/CrashReportClient \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/CrashDebugHelper \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/SourceControl \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/InputCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/HTTP \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/XmlParser \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/Analytics \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/AnalyticsET \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/DesktopPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/CrashReportClient/Inc/LauncherPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/UnrealLaunchDaemon \
-	/opt/unreal-engine/Engine/Source/Programs/IOS/UnrealLaunchDaemon \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/NetworkFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/StreamingFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Sockets \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Slate \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/InputCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/SlateCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/ImageWrapper \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/EditorStyle \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/StandaloneRenderer \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/LaunchDaemonMessages \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/Messaging \
-	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/UnrealLaunchDaemon/Inc/UdpMessaging \
-	/opt/unreal-engine/Engine/Source/Programs/Mac/DsymExporter/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/DsymExporter \
-	/opt/unreal-engine/Engine/Source/Programs/Mac/DsymExporter \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/Launch \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/DsymExporter/Inc/ProfilerService \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/UE4EditorServices \
-	/opt/unreal-engine/Engine/Source/Programs/Mac/UE4EditorServices \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/DesktopPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4EditorServices/Inc/Projects \
-	/opt/unreal-engine/Engine/Source/Programs/Mac/UnrealAtoS/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/UnrealAtoS \
-	/opt/unreal-engine/Engine/Source/Programs/Mac/UnrealAtoS \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/Launch \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealAtoS/Inc/ProfilerService \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/MayaLiveLinkPlugin2016 \
-	/opt/unreal-engine/Engine/Source/Programs/MayaLiveLinkPlugin \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/Json \
-	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/UdpMessaging \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/LiveLinkInterface \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2016/Inc/LiveLinkMessageBusFramework \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/MayaLiveLinkPlugin2017 \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/Json \
-	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/UdpMessaging \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/LiveLinkInterface \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2017/Inc/LiveLinkMessageBusFramework \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/MayaLiveLinkPlugin2018 \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/Json \
-	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/UdpMessaging \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/LiveLinkInterface \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MayaLiveLinkPlugin2018/Inc/LiveLinkMessageBusFramework \
-	/opt/unreal-engine/Engine/Source/Programs/MinidumpDiagnostics/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/MinidumpDiagnostics \
-	/opt/unreal-engine/Engine/Source/Programs/MinidumpDiagnostics \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/CrashDebugHelper \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/SourceControl \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/InputCore \
-	/opt/unreal-engine/Engine/Plugins/Developer/PerforceSourceControl/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/PerforceSourceControl \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/Launch \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/MinidumpDiagnostics/Inc/ProfilerService \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/ShaderCompileWorker \
-	/opt/unreal-engine/Engine/Source/Programs/ShaderCompileWorker \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/ShaderCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/RenderCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/SandboxFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/TargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/DesktopPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/LauncherPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/NetworkFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/PakFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/StreamingFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/Sockets \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/Launch \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/ShaderCompileWorker/Inc/ProfilerService \
-	/opt/unreal-engine/Engine/Source/Programs/SlateViewer/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/SlateViewer \
-	/opt/unreal-engine/Engine/Source/Programs/SlateViewer \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/AppFramework \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/Slate \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/InputCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/SlateCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/ImageWrapper \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/StandaloneRenderer \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/SourceCodeAccess \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/Settings \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/WebBrowser \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/LinuxCommonStartup \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SlateViewer/Inc/SlateReflector \
-	/opt/unreal-engine/Engine/Source/Programs/SymbolDebugger/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/SymbolDebugger \
-	/opt/unreal-engine/Engine/Source/Programs/SymbolDebugger \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/Slate \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/InputCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/SlateCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/ImageWrapper \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/EditorStyle \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/StandaloneRenderer \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/DesktopPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/CrashDebugHelper \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/SourceControl \
-	/opt/unreal-engine/Engine/Plugins/Developer/PerforceSourceControl/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/PerforceSourceControl \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/MessageLog \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/SymbolDebugger/Inc/Projects \
-	/opt/unreal-engine/Engine/Source/Programs/TestPAL/Private \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/TestPAL \
-	/opt/unreal-engine/Engine/Source/Programs/TestPAL \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/TestPAL/Inc/DirectoryWatcher \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealCEFSubProcess/Private \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/UnrealCEFSubProcess \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealCEFSubProcess \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealCEFSubProcess/Inc/CEF3Utils \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/UnrealFileServer \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealFileServer \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/DirectoryWatcher \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/NetworkFileSystem \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/Sockets \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/SandboxFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFileServer/Inc/Json \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealFrontend/Private \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealFrontend/Private/Commands \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/UnrealFrontend \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealFrontend \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/AutomationController \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/DeviceManager \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/TargetDeviceServices \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/LauncherServices \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Messaging \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Profiler \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/InputCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/RenderCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Slate \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SlateCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ImageWrapper \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/EditorStyle \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ProfilerClient \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ProfilerService \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/DesktopPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/ProjectLauncher \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/TargetPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/LauncherPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SessionFrontend \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SessionServices \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SourceCodeAccess \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Settings \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/StandaloneRenderer \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/LinuxCommonStartup \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Networking \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/Sockets \
-	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/UdpMessaging \
-	/opt/unreal-engine/Engine/Plugins/Messaging/TcpMessaging/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/TcpMessaging \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealFrontend/Inc/SlateReflector \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealHeaderTool/Private \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealHeaderTool/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/UnrealHeaderTool \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealHeaderTool \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealHeaderTool/Inc/RHI \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/Launch \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/ImportExport \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/CPUSolver \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/Lighting \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Misc \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Math \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Templates \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass/Private/LightmassCore/Types \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/UnrealLightmass \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealLightmass \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/SwarmInterface \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Sockets \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Networking \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/Messaging \
-	/opt/unreal-engine/Engine/Plugins/Messaging/UdpMessaging/Intermediate/Build/Linux/B4D820EA/UnrealLightmass/Inc/UdpMessaging \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/UnrealPak \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealPak \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/CoreUObject \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/PakFile \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealPak/Inc/AssetRegistry \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/UnrealVersionSelector \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealVersionSelector \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/DesktopPlatform \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealVersionSelector/Inc/RHI \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealWatchdog/Private \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/UnrealWatchdog \
-	/opt/unreal-engine/Engine/Source/Programs/UnrealWatchdog \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/Analytics \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/AnalyticsET \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/Projects \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/Json \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/ApplicationCore \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UnrealWatchdog/Inc/RHI \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BootstrapPackagedGame/Inc/BootstrapPackagedGame \
-	/opt/unreal-engine/Engine/Source/Programs/Windows/BootstrapPackagedGame \
-	Source \
-	Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder \
-	Source/EdenUniverseBuilder \
+	/opt/unreal-engine/Engine/Source/Runtime/RuntimeAssetCache/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/WebBrowser/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebBrowser \
+	/opt/unreal-engine/Engine/Source/Runtime/WebBrowserTexture/Private \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebBrowserTexture \
+	/opt/unreal-engine/Engine/Source/Runtime/WebBrowserTexture/Public \
+	/opt/unreal-engine/Engine/Plugins/AI/HTNPlanner/Source/HTNPlanner/Private \
+	/opt/unreal-engine/Engine/Plugins/AI/HTNPlanner/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTNPlanner \
+	/opt/unreal-engine/Engine/Plugins/AI/HTNPlanner/Source \
+	/opt/unreal-engine/Engine/Plugins/AI/HTNPlanner/Source/HTNPlanner/Public \
+	/opt/unreal-engine/Engine/Plugins/AI/HTNPlanner/Source/HTNTestSuite/Private \
+	/opt/unreal-engine/Engine/Plugins/AI/HTNPlanner/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTNTestSuite \
+	/opt/unreal-engine/Engine/Plugins/AI/HTNPlanner/Source/HTNTestSuite/Public \
+	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Source/LiveLink/Private \
+	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LiveLink \
+	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Source \
+	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Source/LiveLink/Public \
+	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Source/LiveLinkEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Animation/LiveLink/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LiveLinkEditor \
+	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/Composure/Private \
+	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Composure \
+	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source \
+	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/Composure/Classes \
+	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/Composure/Public \
+	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/ComposureEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ComposureEditor \
+	/opt/unreal-engine/Engine/Plugins/Compositing/Composure/Source/ComposureEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Source/LensDistortion/Private \
+	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LensDistortion \
+	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Source \
+	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Source/LensDistortion/Classes \
+	/opt/unreal-engine/Engine/Plugins/Compositing/LensDistortion/Source/LensDistortion/Public \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Source/OpenCVLensCalibration/Private \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OpenCVHelper \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Source \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Source/OpenCVHelper/Public \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Source/ThirdParty \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OpenCVLensDistortion \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Source/OpenCVLensDistortion/Public \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OpenCVLensCalibration \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Source/OpenCVLensCalibration/Public \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Source/OpenCVLensDistortion/Private \
+	/opt/unreal-engine/Engine/Plugins/Compositing/OpenCVLensDistortion/Source/OpenCVHelper/Private \
+	/opt/unreal-engine/Engine/Plugins/Developer/BlankPlugin/Source/BlankPlugin/Private \
+	/opt/unreal-engine/Engine/Plugins/Developer/BlankPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlankPlugin \
+	/opt/unreal-engine/Engine/Plugins/Developer/BlankPlugin/Source \
+	/opt/unreal-engine/Engine/Plugins/Developer/BlankPlugin/Source/BlankPlugin/Public \
+	/opt/unreal-engine/Engine/Plugins/Developer/OneSkyLocalizationService/Source/OneSkyLocalizationService/Private \
+	/opt/unreal-engine/Engine/Plugins/Developer/OneSkyLocalizationService/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OneSkyLocalizationService \
+	/opt/unreal-engine/Engine/Plugins/Developer/OneSkyLocalizationService/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/BlueprintMaterialTextureNodes/Source/BlueprintMaterialTextureNodes/Private \
+	/opt/unreal-engine/Engine/Plugins/Editor/BlueprintMaterialTextureNodes/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintMaterialTextureNodes \
+	/opt/unreal-engine/Engine/Plugins/Editor/BlueprintMaterialTextureNodes/Source \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Classes/Materials \
+	/opt/unreal-engine/Engine/Plugins/Editor/BlueprintMaterialTextureNodes/Source/BlueprintMaterialTextureNodes/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/EditorScriptingUtilities/Source/EditorScriptingUtilities/Private \
+	/opt/unreal-engine/Engine/Plugins/Editor/EditorScriptingUtilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorScriptingUtilities \
+	/opt/unreal-engine/Engine/Plugins/Editor/EditorScriptingUtilities/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/EditorScriptingUtilities/Source/EditorScriptingUtilities/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/GLTFImporter/Source/GLTFImporter/Private \
+	/opt/unreal-engine/Engine/Plugins/Editor/GLTFImporter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GLTFImporter \
+	/opt/unreal-engine/Engine/Plugins/Editor/GLTFImporter/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/GLTFImporter/Source/GLTFImporter/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Source/UnrealUSDWrapper/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Source/USDImporter/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PythonScriptPlugin \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Source/PythonScriptPlugin/Public \
+	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/USDImporter \
+	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Source \
+	/opt/unreal-engine/Engine/Plugins/Editor/USDImporter/Source/USDImporter/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/BlueprintStats/Source/BlueprintStats/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/BlueprintStats/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/BlueprintStats \
+	/opt/unreal-engine/Engine/Plugins/Experimental/BlueprintStats/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/BlueprintStats/Source/BlueprintStats/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/CodeEditor/Source/CodeEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/CodeEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CodeEditor \
+	/opt/unreal-engine/Engine/Plugins/Experimental/CodeEditor/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/CodeView/Source/CodeView/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/CodeView/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CodeView \
+	/opt/unreal-engine/Engine/Plugins/Experimental/CodeView/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Private/Sequencer \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Private/Units \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ControlRig \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRig/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Private/Sequencer \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Private/EditMode \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Private/Graph \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Private/Editor \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ControlRigEditor \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ControlRig/Source/ControlRigEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/Gauntlet/Source/Gauntlet/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/Gauntlet/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Gauntlet \
+	/opt/unreal-engine/Engine/Plugins/Experimental/Gauntlet/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/Gauntlet/Source/Gauntlet/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCollectionPlugin/Source/GeometryCollectionComponent/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCollectionPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCollectionComponent \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCollectionPlugin/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCollectionPlugin/Source/GeometryCollectionComponent/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCollectionPlugin/Source/GeometryCollectionComponentEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCollectionPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GeometryCollectionComponentEditor \
+	/opt/unreal-engine/Engine/Plugins/Experimental/GeometryCollectionPlugin/Source/GeometryCollectionComponentEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Source/ImagePlate/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImagePlate \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Source/ImagePlate/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Source/ImagePlateEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/ImagePlate/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImagePlateEditor \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/PlatformCrypto/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PlatformCrypto \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/PlatformCrypto/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PlatformCryptoOpenSSL \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/PlatformCryptoOpenSSL/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PlatformCrypto/Source/PlatformCryptoOpenSSL/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Source/PythonScriptPluginPreload/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PythonScriptPluginPreload \
+	/opt/unreal-engine/Engine/Plugins/Experimental/PythonScriptPlugin/Source/PythonScriptPlugin/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/RemoteSession/Source/RemoteSession/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/RemoteSession/Source/RemoteSession \
+	/opt/unreal-engine/Engine/Plugins/Experimental/RemoteSession/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RemoteSession \
+	/opt/unreal-engine/Engine/Plugins/Experimental/RemoteSession/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/SimpleHMD/Source/SimpleHMD/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/SimpleHMD/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SimpleHMD \
+	/opt/unreal-engine/Engine/Plugins/Experimental/SimpleHMD/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/SimpleHMD/Source/SimpleHMD/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/StructBox/Source/StructBox/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/StructBox/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/StructBox \
+	/opt/unreal-engine/Engine/Plugins/Experimental/StructBox/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/StructBox/Source/StructBox/Classes \
+	/opt/unreal-engine/Engine/Plugins/Experimental/StructBox/Source/StructBox/Public \
+	/opt/unreal-engine/Engine/Plugins/Experimental/VirtualCamera/Source/VirtualCamera/Private \
+	/opt/unreal-engine/Engine/Plugins/Experimental/VirtualCamera/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/VirtualCamera \
+	/opt/unreal-engine/Engine/Plugins/Experimental/VirtualCamera/Source \
+	/opt/unreal-engine/Engine/Plugins/Experimental/VirtualCamera/Source/VirtualCamera/Public \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraCore/Private \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NiagaraCore \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraCore/Public \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/Niagara/Private \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NiagaraShader \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraShader/Public \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Niagara \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/Niagara/Classes \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/Niagara/Public \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NiagaraVertexFactories \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraVertexFactories/Public \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraShader/Private \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraVertexFactories/Private \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraEditor/Private/Toolkits \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraEditor/Private/Widgets \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraEditor/Private/Sequencer/NiagaraSequence \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraEditor/Private/ViewModels \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraEditor/Private/TypeEditorUtilities \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NiagaraEditor \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraEditorWidgets/Private \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NiagaraEditorWidgets \
+	/opt/unreal-engine/Engine/Plugins/FX/Niagara/Source/NiagaraEditorWidgets/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidCameraEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraFactory/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidCamera \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCamera/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AndroidCameraFactory \
+	/opt/unreal-engine/Engine/Plugins/Media/AndroidCamera/Source/AndroidCameraFactory/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaFrameworkUtilities/Source/MediaFrameworkUtilities/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaIOFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaIOCore \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaIOFramework/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaIOFramework/Source/MediaIOCore/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaFrameworkUtilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaFrameworkUtilities \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaFrameworkUtilities/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaFrameworkUtilities/Source/MediaFrameworkUtilities/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaFrameworkUtilities/Source/MediaFrameworkUtilitiesEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaFrameworkUtilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaFrameworkUtilitiesEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaIOFramework/Source/MediaIOCore/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaIOFramework/Source/MediaIOEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaIOFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MediaIOEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/MediaIOFramework/Source/MediaIOEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source/MfMediaEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MfMediaEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source/MfMediaFactory/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MfMedia \
+	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Source/MfMedia/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/MfMedia/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MfMediaFactory \
+	/opt/unreal-engine/Engine/Plugins/Media/TimecodeSynchronizer/Source/TimecodeSynchronizer/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/TimecodeSynchronizer/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TimecodeSynchronizer \
+	/opt/unreal-engine/Engine/Plugins/Media/TimecodeSynchronizer/Source \
+	/opt/unreal-engine/Engine/Plugins/Media/TimecodeSynchronizer/Source/TimecodeSynchronizer/Public \
+	/opt/unreal-engine/Engine/Plugins/Media/TimecodeSynchronizer/Source/TimecodeSynchronizerEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Media/TimecodeSynchronizer/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TimecodeSynchronizerEditor \
+	/opt/unreal-engine/Engine/Plugins/Media/TimecodeSynchronizer/Source/TimecodeSynchronizerEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Models \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Styles \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Breakpoints \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/EndpointDetails \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Endpoints \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Graph \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/History \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Interceptors \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/MessageData \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/MessageDetails \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Types \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Toolbar \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MessagingDebugger \
+	/opt/unreal-engine/Engine/Plugins/Messaging/MessagingDebugger/Source \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequenceEditor/Source/ActorSequenceEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequenceEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ActorSequenceEditor \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/ActorSequenceEditor/Source \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/SequencerScripting/Source/SequencerScripting/Private \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/SequencerScripting/Source/SequencerScripting/Private/ExtensionLibraries \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/SequencerScripting/Source/SequencerScripting/Private/KeysAndChannels \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/SequencerScripting/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SequencerScripting \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/SequencerScripting/Source \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/SequencerScripting/Source/SequencerScripting/Public \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/SequencerScripting/Source/SequencerScriptingEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/SequencerScripting/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SequencerScriptingEditor \
+	/opt/unreal-engine/Engine/Plugins/MovieScene/SequencerScripting/Source/SequencerScriptingEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/GameCircleRuntimeSettings/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Android/GameCircleRuntimeSettings \
+	/opt/unreal-engine/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source \
+	/opt/unreal-engine/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/GameCircleRuntimeSettings/Classes \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Qos/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Qos \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Qos/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Party/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Party \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Party/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Lobby/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Lobby \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Lobby/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Hotfix/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Hotfix \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Hotfix/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Rejoin/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Rejoin \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/Rejoin/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/PlayTimeLimit/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PlayTimeLimit \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/PlayTimeLimit/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/LoginFlow/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LoginFlow \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineFramework/Source/LoginFlow/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemAmazon/Source/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemAmazon/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemAmazon \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemAmazon \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemAmazon/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemSteam/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemSteam \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemSteam \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Classes \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemTwitch/Source/Private \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemTwitch/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystemTwitch \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemTwitch \
+	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystemTwitch/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Performance/PerformanceMonitor/Source/PerformanceMonitor/Private \
+	/opt/unreal-engine/Engine/Plugins/Performance/PerformanceMonitor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/PerformanceMonitor \
+	/opt/unreal-engine/Engine/Plugins/Performance/PerformanceMonitor/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Source/AdjustEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AdjustEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Source/AdjustEditor/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Adjust/Source/AdjustEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsBlueprintLibrary \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnaltyicsMulticastEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsMulticastEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnaltyicsMulticastEditor/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnaltyicsMulticastEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnalyticsMulticast/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnalyticsMulticast \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnalyticsMulticast/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Source/ApsalarEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ApsalarEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Source/ApsalarEditor/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Apsalar/Source/ApsalarEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/FileLogging/Source/FileLogging/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/FileLogging/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FileLogging \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/FileLogging/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/FileLogging/Source/FileLogging/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Source/FlurryEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FlurryEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Source/FlurryEditor/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Analytics/Flurry/Source/FlurryEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AnimDistanceMatching/Source/AnimDistanceMatching/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AnimDistanceMatching/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AnimDistanceMatching \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AnimDistanceMatching/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/AnimDistanceMatching/Source/AnimDistanceMatching/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Source/ApexDestruction/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Source/ThirdParty \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ApexDestruction \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Source/ApexDestruction/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Source/ApexDestructionEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ApexDestruction/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ApexDestructionEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayAbilities \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GameplayAbilitiesEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreBase/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GoogleARCoreRendering \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreRendering/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GoogleARCoreBase \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreBase/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCore/Source/GoogleARCoreRendering/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCoreServices/Source/GoogleARCoreServices/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCoreServices/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GoogleARCoreServices \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCoreServices/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleARCoreServices/Source/GoogleARCoreServices/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Source/GoogleVRTransition2D/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GoogleVRTransition2D \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Source/GoogleVRTransition2D/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/GoogleVR/GoogleVRTransition2D/Source/GoogleVRTransition2D/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/HTTPChunkInstaller/Source/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/HTTPChunkInstaller/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/HTTPChunkInstaller \
+	/opt/unreal-engine/Engine/Plugins/Runtime/HTTPChunkInstaller \
+	/opt/unreal-engine/Engine/Plugins/Runtime/HTTPChunkInstaller/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocationServicesAndroidEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidEditor/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/LocationServicesIOSEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSEditor/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/MIDIDevice/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MIDIDevice \
+	/opt/unreal-engine/Engine/Plugins/Runtime/MIDIDevice/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/MIDIDevice/Source/MIDIDevice/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityCaptureFramework/Source/MixedRealityCaptureFramework/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityCaptureFramework/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/MixedRealityCaptureFramework \
+	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityCaptureFramework/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/MixedRealityCaptureFramework/Source/MixedRealityCaptureFramework/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Source/OptionalMobileFeaturesBPLibrary/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OptionalMobileFeaturesBPLibrary \
+	/opt/unreal-engine/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Source/OptionalMobileFeaturesBPLibrary/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Source/OptionalMobileFeaturesBPLibrary/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/AESHandlerComponent/Source/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/AESHandlerComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AESHandlerComponent \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/AESHandlerComponent \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/AESHandlerComponent/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NotForLicensees/OodleHandlerComponent \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ReplicationGraph/Source/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ReplicationGraph/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ReplicationGraph \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ReplicationGraph \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ReplicationGraph/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudio/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ResonanceAudio \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudio/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudioEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ResonanceAudioEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ResonanceAudio/Source/ResonanceAudioEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SignificanceManager/Source/SignificanceManager/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SignificanceManager/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SignificanceManager \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SignificanceManager/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SignificanceManager/Source/SignificanceManager/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundMod \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundModImporter/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundModImporter \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundMod/Source/SoundModImporter/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Source/SoundUtilities/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundUtilities \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Source/SoundUtilities/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Source/SoundUtilitiesEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundUtilitiesEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundUtilities/Source/SoundUtilitiesEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SoundVisualizations \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SoundVisualizations/Source/SoundVisualizations/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamController/Source/SteamController/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamController/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SteamController \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamController/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Steam/SteamController/Source/SteamController/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SunPosition/Source/SunPosition/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SunPosition/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SunPosition \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SunPosition/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/SunPosition/Source/SunPosition/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/Synthesis/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Synthesis \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/Synthesis/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/Synthesis/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/SynthesisEditor/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SynthesisEditor \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/SynthesisEditor/Classes \
+	/opt/unreal-engine/Engine/Plugins/Runtime/Synthesis/Source/SynthesisEditor/Public \
+	/opt/unreal-engine/Engine/Plugins/Runtime/WebBrowserWidget/Source/WebBrowserWidget/Private \
+	/opt/unreal-engine/Engine/Plugins/Runtime/WebBrowserWidget/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/WebBrowserWidget \
+	/opt/unreal-engine/Engine/Plugins/Runtime/WebBrowserWidget/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/WebBrowserWidget/Source/WebBrowserWidget/Public \
+	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private \
+	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private/Server \
+	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private/Shared \
+	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/SlateRemote \
+	/opt/unreal-engine/Engine/Plugins/Slate/SlateRemote/Source \
+	/opt/unreal-engine/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private \
+	/opt/unreal-engine/Engine/Plugins/Tests/EditorTests/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EditorTests \
+	/opt/unreal-engine/Engine/Plugins/Tests/EditorTests/Source \
+	/opt/unreal-engine/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Public \
+	/opt/unreal-engine/Engine/Plugins/Tests/FbxAutomationTestBuilder/Source/FbxAutomationTestBuilder/Private \
+	/opt/unreal-engine/Engine/Plugins/Tests/FbxAutomationTestBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FbxAutomationTestBuilder \
+	/opt/unreal-engine/Engine/Plugins/Tests/FbxAutomationTestBuilder/Source \
+	/opt/unreal-engine/Engine/Plugins/Tests/FbxAutomationTestBuilder/Source/FbxAutomationTestBuilder/Public \
+	/opt/unreal-engine/Engine/Plugins/Tests/FunctionalTestingEditor/Source/Private \
+	/opt/unreal-engine/Engine/Plugins/Tests/FunctionalTestingEditor/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/FunctionalTestingEditor \
+	/opt/unreal-engine/Engine/Plugins/Tests/FunctionalTestingEditor \
+	/opt/unreal-engine/Engine/Plugins/Tests/FunctionalTestingEditor/Source/Public \
+	/opt/unreal-engine/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private \
+	/opt/unreal-engine/Engine/Plugins/Tests/RuntimeTests/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/RuntimeTests \
+	/opt/unreal-engine/Engine/Plugins/Tests/RuntimeTests/Source \
+	/opt/unreal-engine/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Public \
+	/opt/unreal-engine/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Private \
+	/opt/unreal-engine/Engine/Plugins/Tests/ScreenshotTools/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ScreenshotTools \
+	/opt/unreal-engine/Engine/Plugins/Tests/ScreenshotTools/Source \
+	/opt/unreal-engine/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Public \
 	/usr/include \
 

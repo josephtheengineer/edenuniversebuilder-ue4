@@ -4,24 +4,30 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "GeneratedCppIncludes.h"
+#include "UObject/GeneratedCppIncludes.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
 #endif
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeEdenUniverseBuilder_init() {}
+	EDENUNIVERSEBUILDER_API UFunction* Z_Construct_UDelegateFunction_EdenUniverseBuilder_OnResult__DelegateSignature();
+	EDENUNIVERSEBUILDER_API UFunction* Z_Construct_UDelegateFunction_EdenUniverseBuilder_OnProgress__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_EdenUniverseBuilder()
 	{
 		static UPackage* ReturnPackage = nullptr;
 		if (!ReturnPackage)
 		{
+			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_EdenUniverseBuilder_OnResult__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_EdenUniverseBuilder_OnProgress__DelegateSignature,
+			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/EdenUniverseBuilder",
 				PKG_CompiledIn | 0x00000000,
-				0x6B0AB3D6,
-				0x290D3008,
-				nullptr, 0,
+				0x606421F3,
+				0x08CD2886,
+				SingletonFuncArray, ARRAY_COUNT(SingletonFuncArray),
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
