@@ -10904,6 +10904,7 @@ HEADERS += \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Public/RuntimeTests.h" \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Public/ShaderComparisonTests.h" \
 	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Public/ScreenshotTools.h" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenGameInstance.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilder.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderCharacter.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderGameMode.h" \

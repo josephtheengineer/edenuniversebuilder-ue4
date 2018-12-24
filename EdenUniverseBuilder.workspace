@@ -429,6 +429,9 @@
     <Include Path="/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source" />
     <Include Path="/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Public" />
     <Include Path="/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent" />
+    <Include Path="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/JsonUtilities" />
+    <Include Path="/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Public" />
+    <Include Path="/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities" />
     <Include Path="/usr/include" />
     <Include Path="/opt/unreal-engine/Engine/Source" />
     <Include Path="/opt/unreal-engine/Engine/Source/Runtime/Launch/Private" />

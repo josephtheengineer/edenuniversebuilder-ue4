@@ -8412,6 +8412,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private/Shaders/ShaderComparisonTests.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private/Slate/RichTextMarkupProcessingTest.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Private/ScreenshotTools.cpp" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenGameInstance.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilder.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderCharacter.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderGameMode.cpp" \

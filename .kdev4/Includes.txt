@@ -426,6 +426,9 @@
 /opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source 
 /opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Public 
 /opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent 
+/opt/unreal-engine/Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/JsonUtilities 
+/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Public 
+/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities 
 /usr/include 
 /opt/unreal-engine/Engine/Source/Runtime/Launch/Private 
 /opt/unreal-engine/Engine/Source/Programs/BlankProgram/Private 
@@ -1292,7 +1295,6 @@
 /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImageCore 
 /opt/unreal-engine/Engine/Source/Runtime/ImageCore/Public 
 /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/JsonUtilities 
-/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Public 
 /opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystem 
 /opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem 
 /opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Source 

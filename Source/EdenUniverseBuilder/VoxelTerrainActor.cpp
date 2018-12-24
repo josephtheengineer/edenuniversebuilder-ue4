@@ -7,8 +7,7 @@
 
 #include "VoxelIndexer.h"
 #include "EdenWorldDecoder.h"
-
-#include "EdenWorldDecoder.h"
+#include "EdenGameInstance.h"
 
 //==============================================================================
 // Constructor
@@ -126,7 +125,11 @@ AVoxelTerrainActor::AVoxelTerrainActor()
 //==============================================================================
 void AVoxelTerrainActor::BeginPlay()
 {
-
+        UEdenGameInstance* GameInstance = Cast<UEdenGameInstance>(GetGameInstance());
+        if(GameInstance)
+        {
+                LoadWorld(GameInstance->WorldPath);
+        }
 }
 
 void AVoxelTerrainActor::LoadWorld(FString path)
@@ -134,7 +137,11 @@ void AVoxelTerrainActor::LoadWorld(FString path)
         VoxelIndexer Indexer;
         EdenWorldDecoder WorldDecoder;
         //Data world = WorldDecoder.LoadWorld("/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/Worlds/testWorld.eden");
-        UE_LOG(LogTemp, Warning, TEXT("Loading world %f"), path);
+
+        // Test World = /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/Worlds/testWorld.eden
+        //
+
+        UE_LOG(LogTemp, Warning, TEXT("Loading world %s"), *path);
         Data world = WorldDecoder.LoadWorld(TCHAR_TO_UTF8(*path));
         WorldDecoder.FetchChunkData(0.f, 0.f);
 

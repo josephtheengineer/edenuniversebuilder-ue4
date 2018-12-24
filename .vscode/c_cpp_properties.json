@@ -346,6 +346,8 @@
 				"/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source",
 				"/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Public",
 				"/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent",
+				"/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Public",
+				"/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities",
 				"/usr/include",
 				"/usr/local/include"
 			],

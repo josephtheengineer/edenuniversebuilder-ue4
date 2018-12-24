@@ -426,6 +426,9 @@
 /opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source
 /opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Public
 /opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent
+/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/JsonUtilities
+/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Public
+/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities
 /usr/include
 /opt/unreal-engine/Engine/Source
 /opt/unreal-engine/Engine/Source/Runtime/Launch/Private

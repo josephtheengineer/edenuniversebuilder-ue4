@@ -1,5 +1,6 @@
 {
 	"files.exclude": {
+		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/.git": true,
 		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/.idea": true,
 		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/.kdev4": true,
 		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/.vscode": true,
