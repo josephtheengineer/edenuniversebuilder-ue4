@@ -319,11 +319,11 @@ void AEdenUniverseBuilderCharacter::Raycast()
                 {
                         int index = HitResult->Item;
                         FVector location = HitResult->Location;
-			UE_LOG(LogTemp,Log,TEXT("Hit result: %d"), index);
+			UE_LOG(LogTemp,Warning,TEXT("Hit result: %d"), index);
 
-                        UE_LOG(LogTemp,Log,TEXT("X: %f"), location.X);
-                        UE_LOG(LogTemp,Log,TEXT("Y: %f"), location.Y);
-                        UE_LOG(LogTemp,Log,TEXT("Z: %f"), location.Z);
+                        UE_LOG(LogTemp,Warning,TEXT("X: %f"), location.X);
+                        UE_LOG(LogTemp,Warning,TEXT("Y: %f"), location.Y);
+                        UE_LOG(LogTemp,Warning,TEXT("Z: %f"), location.Z);
 
                         //AVoxelTerrainActor TerrainActor;
                         FVector Location(0.0f, 0.0f, 0.0f);

@@ -139,7 +139,7 @@ void AVoxelTerrainActor::LoadWorld(FString path)
         //Data world = WorldDecoder.LoadWorld("/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/Worlds/testWorld.eden");
 
         // Test World = /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/Worlds/testWorld.eden
-        //
+        // Direct City = /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/Worlds/DirectCity.eden
 
         UE_LOG(LogTemp, Warning, TEXT("Loading world %s"), *path);
         Data world = WorldDecoder.LoadWorld(TCHAR_TO_UTF8(*path));
@@ -186,12 +186,12 @@ void AVoxelTerrainActor::LoadWorld(FString path)
                         // Can we see this block?
                         // If block is touching on all sides don't place
                         //if (Indexer.CheckBlock(x-100, y, z)){
-                        //if(z > 1000){
+                        if(z > heightLimit){
                                 if (id <= 79){
                                         CreateBlock(id, 0, x, y, z);
                                         LoadedBlocks++;
                                 }
-                        //}
+                        }
 
                         //}
                 }

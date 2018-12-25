@@ -80,6 +80,9 @@ public:
         UPROPERTY(EditAnywhere)
         UStaticMesh* Cube;
 
+        UPROPERTY(EditAnywhere)
+        int heightLimit;
+
         //============================================================================
         // Materials
         //============================================================================
