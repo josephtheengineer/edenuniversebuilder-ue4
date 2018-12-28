@@ -2,46 +2,28 @@
 
 #pragma once
 
-// Polyvox
-//#include "PolyVox/PagedVolume.h"
-//#include "PolyVox/MaterialDensityPair.h"
-//#include "PolyVox/Vector.h"
-
 #include "ProceduralMeshComponent.h"
 #include "Components/InstancedStaticMeshComponent.h"
 #include "ConstructorHelpers.h"
 #include <map>
 
+#include "EdenWorldDecoder.h"
+
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "VoxelTerrainActor.generated.h"
-
-/*
-struct Data {
-    TArray<FVector> Position;
-    TArray<int> id;
-    TArray<int> chunkId;
-};*/
 
 USTRUCT()
 struct FBlockData
 {
         GENERATED_BODY()
-
-        int id;    // The block type, as a value found in the blocks[] chunk
-
+        int id;
         FString name;
-
         UMaterialInterface* topMaterial;
-
         UMaterialInterface* bottomMaterial;
-
         UMaterialInterface* frontMaterial;
-
         UMaterialInterface* backMaterial;
-
         UMaterialInterface* rightMaterial;
-
         UMaterialInterface* leftMaterial;
 };
 
@@ -73,7 +55,7 @@ public:
         void GetBlockMaterials();
 
         UFUNCTION(BlueprintCallable)
-        void LoadWorld(FString path);
+        void LoadWorld(FString Path);
 
         std::map<int, std::map<int, UInstancedStaticMeshComponent*>> MeshArray;
 

@@ -58,7 +58,15 @@ void VoxelIndexer::RegisterBlock(int id, float x, float y, float z, int chunk, i
 //==============================================================================
 void VoxelIndexer::RegisterChunk(int chunk, float x, float y, float z)
 {
-        chunkIndex.Add(FVector(x, y, z), chunk);
+        //chunkIndex.Add(FVector(x, y, z), chunk);
+}
+
+void VoxelIndexer::RegisterChunks(TArray<EdenChunkMetadata> Metadata)
+{
+        for (int i = 0; i < Metadata.Num(); i++)
+        {
+                chunkIndex.Add(FVector2D(Metadata[i].X, Metadata[i].Y), Metadata[i].Address);
+        }
 }
 
 //==============================================================================

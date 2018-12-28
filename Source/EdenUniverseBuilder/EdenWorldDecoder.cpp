@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings. ¯\_(ツ)_/¯
 
 
 #include "EdenWorldDecoder.h"
@@ -16,7 +16,7 @@ EdenWorldDecoder::EdenWorldDecoder()
 //==============================================================================
 // Main code for the class
 //==============================================================================
-Data EdenWorldDecoder::LoadWorld(const char *path)
+void EdenWorldDecoder::LoadWorld(const char *path)
 {
 	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
 
@@ -31,9 +31,7 @@ Data EdenWorldDecoder::LoadWorld(const char *path)
 	// Nobody really knows how this works
 	int chunkPointer = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
 
-	CreateChunkMap(bytes, chunkPointer);
-
-	return CreateMesh(0);
+	GetWorldMetadata(bytes, chunkPointer);
 }
 
 //==============================================================================
@@ -123,9 +121,9 @@ FVector EdenWorldDecoder::GetPlayerPosition(std::vector <int> worldData)
 }
 
 //==============================================================================
-// Associate the chunk pos with the address
+// Associate the chunk pos with the address + get world area
 //==============================================================================
-void EdenWorldDecoder::CreateChunkMap(std::vector <int> worldData, int chunkPointer)
+void EdenWorldDecoder::GetWorldMetadata(std::vector <int> worldData, int chunkPointer)
 {
 	do
 	{
@@ -154,11 +152,14 @@ void EdenWorldDecoder::CreateChunkMap(std::vector <int> worldData, int chunkPoin
 		chunkPositionX.Add(x);
 		chunkPositionY.Add(y);
 
-		chunksX[address] = x;
-		chunksY[address] = y;
+                ChunkLocations.Add(address, FVector2D(x, y));
+
+                EdenChunkMetadata TempChunkData {address, x, y};
+                ChunkMetadata.Add(TempChunkData);
+
 	} while ((chunkPointer += 16) < worldData.size());
 
-	UE_LOG(LogTemp,Log,TEXT("Chunks size: %d"), chunksX.size());
+	UE_LOG(LogTemp,Log,TEXT("Chunks size: %d"), ChunkLocations.Num());
 
 	// Get the total world width | max - min + 1
 	int worldAreaWidth = worldAreaWidthTemp - worldAreaX + 1;
@@ -168,109 +169,66 @@ void EdenWorldDecoder::CreateChunkMap(std::vector <int> worldData, int chunkPoin
 }
 
 //==============================================================================
-// Fetches chunk data
+// Creates the mesh for the current chunk
 //==============================================================================
-ChunkData EdenWorldDecoder::FetchChunkData(float x, float y)
+TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
 {
-        ChunkData Result;
-        for (int i = 0; i < (chunksX.size() - 1); i++)
+        TArray<EdenChunkData> ChunkData;
+
+	// Grabbing the chunk position
+	int32 globalChunkPosX = ChunkLocations[chunk].X;
+	int32 globalChunkPosY = ChunkLocations[chunk].Y;
+
+	int realChunkPosX = (globalChunkPosX*16) * 100;
+	int realChunkPosY = (globalChunkPosY*16) * 100;
+
+        //int chunk = chunkAddress[i];
+
+        UE_LOG(LogTemp,Log,TEXT("Loading chunk %d..."), chunk);
+
+        // Gets the staring point for placing blocks in the chunk
+        int baseX = (ChunkLocations[chunk].X - worldAreaX) * 16;
+        int baseY = (ChunkLocations[chunk].Y - worldAreaY) * 16;
+
+        for (int baseHeight = 0; baseHeight < 4; baseHeight++)
         {
-                UE_LOG(LogTemp,Log,TEXT("CHUNK X: %d"), chunkPositionX[i]);
-                UE_LOG(LogTemp,Log,TEXT("CHUNK Y: %d"), chunkPositionY[i]);
-                UE_LOG(LogTemp,Log,TEXT(" "));
+        	for (int x = 0; x < 16; x++)
+        	{
+        		for (int y = 0; y < 16; y++)
+        		{
+        			for (int z = 0; z < 16; z++)
+        			{
+                			int Id = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
+                                        int Color = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
+
+                			float RealX = (x + (globalChunkPosX*16)) * 100;
+                			float RealY = (y + (globalChunkPosY*16)) * 100;
+                			float RealZ = (z + (16 * baseHeight)) * 100;
+
+                                        FVector Position = FVector(RealX, RealY, RealZ);
+
+                			if (Id != 0 && Id <= 79){
+                                                EdenChunkData BlockData {Position, Id, Color, chunk};
+                                                ChunkData.Add(BlockData);
+                			}
+        			}
+        		}
+        	}
         }
-        return Result;
+        return ChunkData;
 }
 
 //==============================================================================
-// Creates the mesh for the current chunk
+// Returns the chunk address attached to the x and y cord of the chunk
 //==============================================================================
-Data EdenWorldDecoder::CreateMesh(int totalRenderDistance)
+TArray<EdenChunkMetadata> EdenWorldDecoder::GetChunkMetadata()
 {
-        TArray<FVector> Position;
-        TArray<int32> idArray;
-        TArray<int32> chunkId;
-        int loaded_chunks = 0;
+        return ChunkMetadata;
+}
 
-        for (int i = 0; i < (chunksX.size() - 1); i++)
-        {
-        	// Grabbing the chunk position
-        	int32 globalChunkPosX = chunkPositionX[i]; // USE CHUNK INDEX *NOT ADDRESS*
-        	int32 globalChunkPosY = chunkPositionY[i]; // USE CHUNK INDEX *NOT ADDRESS*
-
-        	int realChunkPosX = (globalChunkPosX*16) * 100;
-        	int realChunkPosY = (globalChunkPosY*16) * 100;
-
-
-                UE_LOG(LogTemp,Log,TEXT("Loading mesh %d... "), i);
-
-                int chunk = chunkAddress[i];
-
-                UE_LOG(LogTemp,Log,TEXT("Converting chunk %d..."), chunk);
-
-                // Whatever this does ¯\_(ツ)_/¯
-                int baseX = (chunksX[chunk] - worldAreaX) * 16, baseY = (chunksY[chunk] - worldAreaY) * 16;
-
-                for (int baseHeight = 0; baseHeight < 4; baseHeight++)
-                {
-                	for (int x = 0; x < 16; x++)
-                	{
-                		for (int y = 0; y < 16; y++)
-                		{
-                			for (int z = 0; z < 16; z++)
-                			{
-                			// Get block id
-                			std::vector<int> id;
-                			id.push_back(baseX + x);
-                			id.push_back(baseY + y);
-                			id.push_back(baseHeight * 16 + z);
-                			id.push_back(0);
-
-                			blocks[id] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-                			chunkFinal.Add(FString::FromInt(x) + "|" + FString::FromInt(y) + "|" + FString::FromInt(z));
-                			chunkFinal.Add(FString::FromInt(bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z]));
-
-                			int blockId = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-
-                			float newX = (x + (globalChunkPosX*16)) * 100;
-                			float newY = (y + (globalChunkPosY*16)) * 100;
-                			float newZ = (z + (16 * baseHeight)) * 100;
-
-                			if (blockId != 0){
-                				if (bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] <= 23 && bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z] >= 1)
-                				{
-                                                        idArray.Add(blockId);
-                                                        chunkId.Add(chunk);
-                                                        Position.Add(FVector(newX, newY, newZ));
-                				} else {
-                                                        idArray.Add(blockId);
-                                                        chunkId.Add(chunk);
-                                                        Position.Add(FVector(newX, newY, newZ));
-                				}
-                			}
-
-                			// Get block color
-                			std::vector<int> color;
-                			color.push_back(baseX + x);
-                			color.push_back(baseY + y);
-                			color.push_back(baseHeight * 16 + z);
-                			color.push_back(1);
-
-                			blocks[color] = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
-                			}
-                		}
-                	}
-                }
-        loaded_chunks++;
-        }
-	UE_LOG(LogTemp,Log,TEXT("Done!"));
-	UE_LOG(LogTemp,Log,TEXT("%d chunks loaded!"), loaded_chunks);
-        Data Result;
-        Result.Position = Position;
-        Result.id = idArray;
-        Result.chunkId = chunkId;
-        Result.chunksX = chunksX;
-        return Result;
+TMap<int, FVector2D> EdenWorldDecoder::GetChunkLocations()
+{
+        return ChunkLocations;
 }
 
 //==============================================================================

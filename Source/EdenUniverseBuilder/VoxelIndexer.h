@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "EdenWorldDecoder.h"
 #include <map>
 
 struct LocationStruct {
@@ -25,7 +26,7 @@ public:
 	//============================================================================
 	TMap<FVector, int> blockIdIndex;
 
-        TMap<FVector, int> chunkIndex;
+        TMap<FVector2D, int> chunkIndex;
 
         TMap<FVector, FVector> BlockLocationIndex;
 
@@ -37,6 +38,7 @@ public:
 	int GetBlockId(float x, float y, float z);
         FVector GetBlockLocation(int id, int chunk, int index);
         void RegisterChunk(int chunk, float x, float y, float z);
+        void RegisterChunks(TArray<EdenChunkMetadata> Metadata);
         bool CheckBlock(float x, float y, float z);
         bool CheckChunk(int chunk);
 };
