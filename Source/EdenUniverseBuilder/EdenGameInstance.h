@@ -15,6 +15,15 @@ public:
         UEdenGameInstance(const FObjectInitializer& ObjectInitializer);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=MainMenu)
-	FString WorldPath = "/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/Worlds/testWorld.eden";
+	FString WorldPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir()) + "/Worlds/testWorld.eden";
+
+        UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=MainMenu)
+        TMap<FString, bool> Options;
+
+        UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+        int Tool = 0;
+
+        UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+        int BlockToPlace = 13;
 
 };

@@ -1,0 +1,36 @@
+Generating report for minidump
+
+Application version 4.21.0.0
+ ... built from changelist 0
+
+OS version Linux 4.19.4-arch1-1-ARCH (network name: Yoshi)
+Running 2 x86_64 processors (4 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x0000000000000000"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUE4Editor-EdenUniverseBuilder-9645.so!AVoxelTerrainActor::CreateBlock(int, int, float, float, float) [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/VoxelTerrainActor.cpp:330]
+libUE4Editor-EdenUniverseBuilder-9645.so!AVoxelTerrainActor::LoadWorld(FString) [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/VoxelTerrainActor.cpp:179]
+libUE4Editor-EdenUniverseBuilder-9645.so!AVoxelTerrainActor::BeginPlay() [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/VoxelTerrainActor.cpp:125]
+libUE4Editor-Engine.so!AActor::DispatchBeginPlay() [/opt/unreal-engine/Engine/Source/Runtime/Engine/Private/Actor.cpp:3225]
+libUE4Editor-Engine.so!AWorldSettings::NotifyBeginPlay() [/opt/unreal-engine/Engine/Source/Runtime/Engine/Private/WorldSettings.cpp:251]
+libUE4Editor-Engine.so!AGameStateBase::HandleBeginPlay() [/opt/unreal-engine/Engine/Source/Runtime/Engine/Private/GameStateBase.cpp:176]
+libUE4Editor-Engine.so!UWorld::BeginPlay() [/opt/unreal-engine/Engine/Source/Runtime/Engine/Private/World.cpp:3736]
+libUE4Editor-Engine.so!UEngine::LoadMap(FWorldContext&, FURL, UPendingNetGame*, FString&) [/opt/unreal-engine/Engine/Source/Runtime/Engine/Private/UnrealEngine.cpp:12296]
+libUE4Editor-Engine.so!UEngine::Browse(FWorldContext&, FURL, FString&) [/opt/unreal-engine/Engine/Source/Runtime/Engine/Private/UnrealEngine.cpp:11527]
+libUE4Editor-Engine.so!UEngine::TickWorldTravel(FWorldContext&, float) [/opt/unreal-engine/Engine/Source/Runtime/Engine/Private/UnrealEngine.cpp:11725]
+libUE4Editor-UnrealEd.so!UEditorEngine::Tick(float, bool) [/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Private/EditorEngine.cpp:1695]
+libUE4Editor-UnrealEd.so!UUnrealEdEngine::Tick(float, bool) [/opt/unreal-engine/Engine/Source/Editor/UnrealEd/Private/UnrealEdEngine.cpp:400]
+UE4Editor!FEngineLoop::Tick() [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:3693]
+UE4Editor!GuardedMain(char16_t const*) [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/Launch.cpp:176]
+libUE4Editor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*)) [/opt/unreal-engine/Engine/Source/Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:245]
+libc.so.6!__libc_start_main(+0xf2)
+UE4Editor!_start(+0x2d)
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

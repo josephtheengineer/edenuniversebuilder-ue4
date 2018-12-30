@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="EdenUniverseBuilderEditor">
+  <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" />
+  <VirtualDirectory Name="Source">
+    <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder.Target.cs" />
+    <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilderEditor.Target.cs" />
+    <VirtualDirectory Name="EdenUniverseBuilder">
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenGameInstance.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenGameInstance.h" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilder.Build.cs" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilder.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilder.h" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderCharacter.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderCharacter.h" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderGameMode.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderGameMode.h" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderHUD.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderHUD.h" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderProjectile.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenUniverseBuilderProjectile.h" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenWorldDecoder.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/EdenWorldDecoder.h" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/VoxelIndexer.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/VoxelIndexer.h" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/VoxelTerrainActor.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/VoxelTerrainActor.h" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp" />
+      <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.h" />
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Config">
+    <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Config/DefaultEditor.ini" />
+    <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Config/DefaultEditorPerProjectUserSettings.ini" />
+    <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Config/DefaultEngine.ini" />
+    <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Config/DefaultGame.ini" />
+    <File Name="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Config/DefaultInput.ini" />
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Debug" />
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Debug -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Debug -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Debug -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Debug -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor" />
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux DebugGame -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux DebugGame -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux DebugGame -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux DebugGame -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor" />
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Development -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Development -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Development -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Development -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Shipping" />
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Shipping -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Shipping -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Shipping -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Shipping -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Test" />
+      <General CommandArguments="&quot;/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject&quot; -game" WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Test -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Test -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Test -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe EdenUniverseBuilderEditor Linux Test -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

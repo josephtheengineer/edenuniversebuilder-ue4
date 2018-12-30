@@ -1,0 +1,3 @@
+/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime/Public/Assets/ClothingAsset.h
+/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime/Public/ClothingSimulationFactory.h
+/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntime/Public/ClothingSimulationInteractorNv.h

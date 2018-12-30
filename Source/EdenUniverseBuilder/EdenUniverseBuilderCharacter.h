@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "VoxelTerrainActor.h"
 #include "EdenUniverseBuilderCharacter.generated.h"
 
 class UInputComponent;
@@ -141,4 +142,5 @@ public:
 private:
 
         void Raycast();
+        AVoxelTerrainActor* TerrainActor;
 };

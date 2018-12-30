@@ -1,0 +1,12 @@
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/Protocols/AudioCaptureProtocol.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/Protocols/CompositionGraphCaptureProtocol.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/Protocols/FrameGrabberProtocol.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/Protocols/ImageSequenceProtocol.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/Protocols/UserDefinedCaptureProtocol.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/Protocols/VideoCaptureProtocol.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/IMovieSceneCapture.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/LevelCapture.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/MovieSceneCapture.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/MovieSceneCaptureEnvironment.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/MovieSceneCaptureProtocolBase.h
+/opt/unreal-engine/Engine/Source/Runtime/MovieSceneCapture/Public/MovieSceneCaptureSettings.h

@@ -1,0 +1,35 @@
+Generating report for minidump
+
+Application version 4.21.0.0
+ ... built from changelist 0
+
+OS version Linux 4.19.4-arch1-1-ARCH (network name: Yoshi)
+Running 2 x86_64 processors (4 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000003"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUE4Editor-Core.so!FGenericPlatformMisc::RaiseException(unsigned int) [/opt/unreal-engine/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformMisc.cpp:404]
+libUE4Editor-Core.so!FUnixErrorOutputDevice::Serialize(char16_t const*, ELogVerbosity::Type, FName const&) [/opt/unreal-engine/Engine/Source/Runtime/Core/Private/Unix/UnixErrorOutputDevice.cpp:56]
+libUE4Editor-Core.so!FOutputDevice::LogfImpl(char16_t const*, ...) [/opt/unreal-engine/Engine/Source/Runtime/Core/Private/Misc/OutputDevice.cpp:71]
+libUE4Editor-Core.so!FDebug::AssertFailed(char const*, char const*, int, char16_t const*, ...) [/opt/unreal-engine/Engine/Source/Runtime/Core/Private/Misc/AssertionMacros.cpp:417]
+libUE4Editor-EdenUniverseBuilder-6667.so!AWorldFileManager::OnResponseReceived(TSharedPtr<IHttpRequest, (ESPMode)0>, TSharedPtr<IHttpResponse, (ESPMode)1>, bool) [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:50]
+libUE4Editor-EdenUniverseBuilder-6667.so!TMemberFunctionCaller<AWorldFileManager, void (AWorldFileManager::*)(TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>::operator()<TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe> &, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe> &, bool &> [/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstanceInterface.h:156]
+libUE4Editor-EdenUniverseBuilder-6667.so!TBaseUObjectMethodDelegateInstance<false, AWorldFileManager, void (TSharedPtr<IHttpRequest, (ESPMode)0>, TSharedPtr<IHttpResponse, (ESPMode)1>, bool)>::ExecuteIfSafe(TSharedPtr<IHttpRequest, (ESPMode)0>, TSharedPtr<IHttpResponse, (ESPMode)1>, bool) const [/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:677]
+libUE4Editor-HTTP.so!TBaseDelegate<void, TSharedPtr<IHttpRequest, (ESPMode)0>, TSharedPtr<IHttpResponse, (ESPMode)1>, bool>::ExecuteIfBound(TSharedPtr<IHttpRequest, (ESPMode)0>, TSharedPtr<IHttpResponse, (ESPMode)1>, bool) const [/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:648]
+libUE4Editor-HTTP.so!FCurlHttpRequest::FinishedRequest() [/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP/Private/Curl/CurlHttp.cpp:1106]
+libUE4Editor-HTTP.so!FHttpManager::Tick(float) [/opt/unreal-engine/Engine/Source/Runtime/Online/HTTP/Private/HttpManager.cpp:199]
+libUE4Editor-Core.so!FTicker::Tick(float) [/opt/unreal-engine/Engine/Source/Runtime/Core/Private/Containers/Ticker.cpp:92]
+UE4Editor!FEngineLoop::Tick() [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp:3893]
+UE4Editor!GuardedMain(char16_t const*) [/opt/unreal-engine/Engine/Source/Runtime/Launch/Private/Launch.cpp:176]
+libUE4Editor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*)) [/opt/unreal-engine/Engine/Source/Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:245]
+libc.so.6!__libc_start_main(+0xf2)
+UE4Editor!_start(+0x2d)
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

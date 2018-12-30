@@ -184,8 +184,6 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
 
         //int chunk = chunkAddress[i];
 
-        UE_LOG(LogTemp,Log,TEXT("Loading chunk %d..."), chunk);
-
         // Gets the staring point for placing blocks in the chunk
         int baseX = (ChunkLocations[chunk].X - worldAreaX) * 16;
         int baseY = (ChunkLocations[chunk].Y - worldAreaY) * 16;

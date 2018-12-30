@@ -1,0 +1,1534 @@
+﻿Log file open, 12/24/18 06:18:38
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine without a game
+LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: Loading recent project file: ../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.094253
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +10:00, Platform Override: ''
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin Firebase
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogStreaming: Display: Took  0.665s to configure plugins.
+LogInit: Using libcurl 7.48.0-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: Build: ++UE4+Release-4.21-CL-0
+LogInit: Engine Version: 4.21.0-0+++UE4+Release-4.21
+LogInit: Compatible Engine Version: 4.21.0-0+++UE4+Release-4.21
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Dec 17 2018 14:33:08
+LogInit: Compiled with Clang: 7.0.0 (tags/RELEASE_700/final)
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.21
+LogInit: Command Line: 
+LogInit: Base Directory: /opt/unreal-engine/Engine/Binaries/Linux/
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 22
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 26
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 27
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 17
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 4
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogStreaming: Display: Took  0.000s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2018.12.23-20.18.40:944][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2018.12.23-20.18.40:944][  0]LogConfig: Setting CVar [[r.RHICmdBypass:1]]
+[2018.12.23-20.18.40:944][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Engine.ini]
+[2018.12.23-20.18.40:944][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2018.12.23-20.18.40:944][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.Mobile.AllowDitheredLODTransition:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.Mobile.AllowSoftwareOcclusion:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DOF.Algorithm:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.UsePreExposure:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultFeature.LightUnits:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.EarlyZPassMovable:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[vr.MultiView:0]]
+[2018.12.23-20.18.40:945][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[vr.MobileMultiView.Direct:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[vr.MonoscopicFarField:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[vr.RoundRobinOcclusion:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Engine.ini]
+[2018.12.23-20.18.40:946][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Engine.ini]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Engine.ini]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2018.12.23-20.18.40:946][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Engine.ini]
+[2018.12.23-20.18.40:946][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Engine.ini]
+[2018.12.23-20.18.40:946][  0]LogInit: Initializing SDL.
+[2018.12.23-20.18.41:013][  0]LogInit: Initialized SDL 2.0.8 revision: 11184 (hg-12121:4358e537000a with EpicExtensions) (compiled against 2.0.8)
+[2018.12.23-20.18.41:013][  0]LogInit: Using SDL video driver 'x11'
+[2018.12.23-20.18.41:013][  0]LogInit: Display metrics:
+[2018.12.23-20.18.41:013][  0]LogInit:   PrimaryDisplayWidth: 1920
+[2018.12.23-20.18.41:013][  0]LogInit:   PrimaryDisplayHeight: 1080
+[2018.12.23-20.18.41:013][  0]LogInit:   PrimaryDisplayWorkAreaRect:
+[2018.12.23-20.18.41:013][  0]LogInit:     Left=0, Top=0, Right=1920, Bottom=1080
+[2018.12.23-20.18.41:013][  0]LogInit:   VirtualDisplayRect:
+[2018.12.23-20.18.41:013][  0]LogInit:     Left=0, Top=0, Right=1920, Bottom=1080
+[2018.12.23-20.18.41:013][  0]LogInit:   TitleSafePaddingSize: X=0.000 Y=0.000 Z=0.000 W=0.000
+[2018.12.23-20.18.41:013][  0]LogInit:   ActionSafePaddingSize: X=0.000 Y=0.000 Z=0.000 W=0.000
+[2018.12.23-20.18.41:013][  0]LogInit:   Number of monitors: 1
+[2018.12.23-20.18.41:013][  0]LogInit:     Monitor 0
+[2018.12.23-20.18.41:013][  0]LogInit:       Name: 0
+[2018.12.23-20.18.41:013][  0]LogInit:       ID: display0
+[2018.12.23-20.18.41:013][  0]LogInit:       NativeWidth: 1920
+[2018.12.23-20.18.41:013][  0]LogInit:       NativeHeight: 1080
+[2018.12.23-20.18.41:013][  0]LogInit:       bIsPrimary: true
+[2018.12.23-20.18.41:013][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.12.23-20.18.41:013][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2018.12.23-20.18.41:014][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2018.12.23-20.18.41:014][  0]LogLinux: Selected Device Profile: [Linux]
+[2018.12.23-20.18.41:015][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Linux]
+[2018.12.23-20.18.41:030][  0]LogHAL: Display: Platform has ~ 4 GB [8241414144 / 4294967296 / 8], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.12.23-20.18.41:030][  0]LogInit: Going up to parent DeviceProfile []
+[2018.12.23-20.18.41:030][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@2] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:0.8]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@2] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:3]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@2] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:4]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:1024]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.04]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.85]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0.8]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.12.23-20.18.41:030][  0]LogConfig: Setting CVar [[r.AOQuality:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:16]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:64]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@2] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:3]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.6]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.5]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:3]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Upscale.Quality:2]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:0.8]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:0        ; lower gathering accumulator quality]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:2          ; Max3x3 postfilering method]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:1    ; no background occlusion]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:0      ; no bokeh simulation when scattering]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.04        ; only a maximum of 4% of scattered bokeh]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:0                ; no slight out of focus]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:0                ; faster temporal accumulation]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.012   ; required because of AccumulatorQuality=0]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Applying CVar settings from Section [TextureQuality@2] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:4]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:800]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@2] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:48]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.SSR.Quality:2]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.SceneColorFormat:3]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.DetailMode:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.SSS.Quality:-1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:0.5]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:1]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@2] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Scalability.ini]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[foliage.DensityScale:0.8]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Setting CVar [[grass.DensityScale:0.8]]
+[2018.12.23-20.18.41:031][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2018.12.23-20.18.41:032][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2018.12.23-20.18.41:032][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Config/Linux/Engine.ini]
+[2018.12.23-20.18.41:032][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2018.12.23-20.18.41:032][  0]LogInit: Unix hardware info:
+[2018.12.23-20.18.41:032][  0]LogInit:  - we are the first instance of this executable
+[2018.12.23-20.18.41:032][  0]LogInit:  - this process' id (pid) is 14906, parent process' id (ppid) is 868
+[2018.12.23-20.18.41:032][  0]LogInit:  - we are not running under debugger
+[2018.12.23-20.18.41:032][  0]LogInit:  - machine network name is 'Yoshi'
+[2018.12.23-20.18.41:032][  0]LogInit:  - user name is 'josephtheengineer' (josephtheengineer)
+[2018.12.23-20.18.41:032][  0]LogInit:  - we're logged in locally
+[2018.12.23-20.18.41:032][  0]LogInit:  - we're running with rendering
+[2018.12.23-20.18.41:032][  0]LogInit:  - CPU: GenuineIntel 'Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz' (signature: 0x406E3)
+[2018.12.23-20.18.41:032][  0]LogInit:  - Number of physical cores available for the process: 2
+[2018.12.23-20.18.41:032][  0]LogInit:  - Number of logical cores available for the process: 4
+[2018.12.23-20.18.41:032][  0]LogInit:  - Cache line size: 64
+[2018.12.23-20.18.41:032][  0]LogInit:  - Memory allocator used: binned2
+[2018.12.23-20.18.41:032][  0]LogCore: Benchmarking clocks:
+[2018.12.23-20.18.41:032][  0]LogCore:  - CLOCK_REALTIME (id=0) can sustain 40421493 (40421K, 40M) calls per second without zero deltas.
+[2018.12.23-20.18.41:032][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 37986416 (37986K, 38M) calls per second without zero deltas.
+[2018.12.23-20.18.41:032][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 2654668 (2655K, 3M) calls per second without zero deltas.
+[2018.12.23-20.18.41:032][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 136180167 (136180K, 136M) calls per second with 99.999772% zero deltas.
+[2018.12.23-20.18.41:032][  0]LogCore: Selected clock_id 0 (CLOCK_REALTIME) since it is the fastest support clock without zero deltas.
+[2018.12.23-20.18.41:032][  0]LogInit: Unix-specific commandline switches:
+[2018.12.23-20.18.41:032][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2018.12.23-20.18.41:032][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2018.12.23-20.18.41:032][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2018.12.23-20.18.41:032][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2018.12.23-20.18.41:032][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2018.12.23-20.18.41:032][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2018.12.23-20.18.41:032][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2018.12.23-20.18.41:032][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2018.12.23-20.18.41:032][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2018.12.23-20.18.41:033][  0]LogInit:  - Physical RAM available (not considering process quota): 8 GB (7859 MB, 8048256 KB, 8241414144 bytes)
+[2018.12.23-20.18.41:033][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2018.12.23-20.18.41:033][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2018.12.23-20.18.41:291][  0]LogInit: Using OS detected language (en-AU).
+[2018.12.23-20.18.41:291][  0]LogInit: Using OS detected locale (en-AU).
+[2018.12.23-20.18.41:291][  0]LogTextLocalizationManager: No specific localization for 'en-AU' exists, so the 'en' localization will be used.
+[2018.12.23-20.18.41:859][  0]LogStreaming: Display: Took  0.568s to InitEngineTextLocalization.
+[2018.12.23-20.18.56:227][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.12.23-20.18.56:227][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.12.23-20.18.57:455][  0]LogInit: Using SDL_WINDOW_OPENGL
+[2018.12.23-20.18.57:462][  0]LogRHI: Initializing OpenGL RHI
+[2018.12.23-20.18.57:462][  0]LogRHI:   GL_VENDOR: Intel Open Source Technology Center
+[2018.12.23-20.18.57:462][  0]LogRHI:   GL_RENDERER: Mesa DRI Intel(R) HD Graphics 520 (Skylake GT2) 
+[2018.12.23-20.18.57:462][  0]LogRHI:   GL_VERSION: 4.5 (Core Profile) Mesa 18.2.5
+[2018.12.23-20.18.57:462][  0]LogRHI:   GL_SHADING_LANGUAGE_VERSION: 4.50
+[2018.12.23-20.18.57:463][  0]LogRHI: OpenGL Extensions:
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_3DFX_texture_compression_FXT1
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_AMD_conservative_depth
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_AMD_draw_buffers_blend
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_AMD_seamless_cubemap_per_texture
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_AMD_shader_stencil_export
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_AMD_shader_trinary_minmax
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_AMD_vertex_shader_layer
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_AMD_vertex_shader_viewport_index
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ANGLE_texture_compression_dxt3
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ANGLE_texture_compression_dxt5
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_APPLE_object_purgeable
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_ES2_compatibility
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_ES3_1_compatibility
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_ES3_2_compatibility
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_ES3_compatibility
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_arrays_of_arrays
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_base_instance
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_blend_func_extended
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_buffer_storage
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_clear_buffer_object
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_clear_texture
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_clip_control
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_compressed_texture_pixel_storage
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_compute_shader
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_conditional_render_inverted
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_conservative_depth
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_copy_buffer
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_copy_image
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_cull_distance
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_debug_output
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_depth_buffer_float
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_depth_clamp
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_derivative_control
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_direct_state_access
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_draw_buffers
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_draw_buffers_blend
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_draw_elements_base_vertex
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_draw_indirect
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_draw_instanced
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_enhanced_layouts
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_explicit_attrib_location
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_explicit_uniform_location
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_fragment_coord_conventions
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_fragment_layer_viewport
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_fragment_shader
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_fragment_shader_interlock
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_framebuffer_no_attachments
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_framebuffer_object
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_framebuffer_sRGB
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_get_program_binary
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_get_texture_sub_image
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_gpu_shader5
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_gpu_shader_fp64
+[2018.12.23-20.18.57:463][  0]LogRHI:   GL_ARB_gpu_shader_int64
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_half_float_pixel
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_half_float_vertex
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_indirect_parameters
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_instanced_arrays
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_internalformat_query
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_internalformat_query2
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_invalidate_subdata
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_map_buffer_alignment
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_map_buffer_range
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_multi_bind
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_multi_draw_indirect
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_occlusion_query2
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_pipeline_statistics_query
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_pixel_buffer_object
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_point_sprite
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_polygon_offset_clamp
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_post_depth_coverage
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_program_interface_query
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_provoking_vertex
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_query_buffer_object
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_robust_buffer_access_behavior
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_robustness
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_sample_shading
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_sampler_objects
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_seamless_cube_map
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_seamless_cubemap_per_texture
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_separate_shader_objects
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_atomic_counter_ops
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_atomic_counters
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_ballot
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_bit_encoding
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_clock
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_draw_parameters
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_group_vote
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_image_load_store
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_image_size
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_objects
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_precision
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_stencil_export
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_storage_buffer_object
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_subroutine
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_texture_image_samples
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_texture_lod
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shader_viewport_layer_array
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shading_language_420pack
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_shading_language_packing
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_stencil_texturing
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_sync
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_tessellation_shader
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_barrier
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_buffer_object
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_buffer_object_rgb32
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_buffer_range
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_compression_bptc
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_compression_rgtc
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_cube_map_array
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_filter_anisotropic
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_float
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_gather
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_mirror_clamp_to_edge
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_multisample
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_non_power_of_two
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_query_levels
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_query_lod
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_rectangle
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_rg
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_rgb10_a2ui
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_stencil8
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_storage
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_storage_multisample
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_swizzle
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_texture_view
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_timer_query
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_transform_feedback2
+[2018.12.23-20.18.57:464][  0]LogRHI:   GL_ARB_transform_feedback3
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_transform_feedback_instanced
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_transform_feedback_overflow_query
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_uniform_buffer_object
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_vertex_array_bgra
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_vertex_array_object
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_vertex_attrib_64bit
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_vertex_attrib_binding
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_vertex_shader
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_vertex_type_10f_11f_11f_rev
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_vertex_type_2_10_10_10_rev
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ARB_viewport_array
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ATI_blend_equation_separate
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_ATI_texture_float
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_abgr
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_blend_equation_separate
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_draw_buffers2
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_draw_instanced
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_framebuffer_blit
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_framebuffer_multisample
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_framebuffer_multisample_blit_scaled
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_framebuffer_sRGB
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_packed_depth_stencil
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_packed_float
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_pixel_buffer_object
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_polygon_offset_clamp
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_provoking_vertex
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_shader_framebuffer_fetch
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_shader_framebuffer_fetch_non_coherent
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_shader_integer_mix
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_shader_samples_identical
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_array
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_compression_dxt1
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_compression_rgtc
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_compression_s3tc
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_filter_anisotropic
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_integer
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_sRGB
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_sRGB_decode
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_shared_exponent
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_snorm
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_texture_swizzle
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_timer_query
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_transform_feedback
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_EXT_vertex_array_bgra
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_IBM_multimode_draw_arrays
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_INTEL_conservative_rasterization
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_INTEL_performance_query
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_KHR_blend_equation_advanced
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_KHR_blend_equation_advanced_coherent
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_KHR_context_flush_control
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_KHR_debug
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_KHR_no_error
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_KHR_robust_buffer_access_behavior
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_KHR_robustness
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_KHR_texture_compression_astc_ldr
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_KHR_texture_compression_astc_sliced_3d
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_MESA_pack_invert
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_MESA_shader_integer_functions
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_MESA_texture_signed_rgba
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_NV_conditional_render
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_NV_depth_clamp
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_NV_packed_depth_stencil
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_NV_texture_barrier
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_OES_EGL_image
+[2018.12.23-20.18.57:465][  0]LogRHI:   GL_S3_s3tc
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_TEXTURE_SIZE: 16384
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_CUBE_MAP_TEXTURE_SIZE: 16384
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_ARRAY_TEXTURE_LAYERS: 2048
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_3D_TEXTURE_SIZE: 2048
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_RENDERBUFFER_SIZE: 16384
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_DRAW_BUFFERS: 8
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_COLOR_ATTACHMENTS: 8
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_SAMPLES: 16
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_COLOR_TEXTURE_SAMPLES: 16
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_DEPTH_TEXTURE_SAMPLES: 16
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_INTEGER_SAMPLES: 16
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 192
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_VERTEX_ATTRIBS: 16
+[2018.12.23-20.18.57:495][  0]LogRHI:   GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16
+[2018.12.23-20.18.57:495][  0]LogRHI: OpenGL MajorVersion = 4, MinorVersion = 5, ShaderPlatform = GLSL_430, FeatureLevel = SM5
+[2018.12.23-20.18.57:495][  0]LogRHI: FOpenGLProgramBinaryCache disabled by r.ProgramBinaryCache.Enable=0
+[2018.12.23-20.18.58:378][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.12.23-20.18.58:578][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.12.23-20.18.58:782][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.12.23-20.18.58:986][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.12.23-20.18.59:194][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.12.23-20.18.59:392][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:654][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.23-20.18.59:664][  0]LogTargetPlatformManager: Display: Building Assets For Linux
+[2018.12.23-20.19.00:222][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Shaders/WorkingDirectory/14906/).
+[2018.12.23-20.19.00:222][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Shaders/tmp/00036F3908D66967B1A1A55C30D3391A/'.
+[2018.12.23-20.19.00:222][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.12.23-20.19.01:468][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.12.23-20.19.01:559][  0]LogDerivedDataCache: Loaded boot cache 0.09s 88MB ../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/DerivedDataCache/Boot.ddc.
+[2018.12.23-20.19.01:559][  0]LogDerivedDataCache: Display: Loaded Boot cache: ../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/DerivedDataCache/Boot.ddc
+[2018.12.23-20.19.01:559][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.12.23-20.19.01:559][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.12.23-20.19.01:560][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnginePak pak cache file ../../../Engine/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.12.23-20.19.01:560][  0]LogDerivedDataCache: Unable to find inner node EnginePak for hierarchical cache Hierarchy.
+[2018.12.23-20.19.01:566][  0]LogDerivedDataCache: Using Local data cache path ../../../Engine/DerivedDataCache: Writable
+[2018.12.23-20.19.01:567][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.12.23-20.19.01:567][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.12.23-20.19.01:608][  0]LogMaterial: Verifying Global Shaders for GLSL_430
+[2018.12.23-20.19.01:619][  0]LogSlate: Using FreeType 2.6.0
+[2018.12.23-20.19.01:621][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 0
+[2018.12.23-20.19.01:762][  0]LogAssetRegistry: FAssetRegistry took 0.0042 seconds to start up
+[2018.12.23-20.19.02:197][  0]LogLinux: Selected Device Profile: [Linux]
+[2018.12.23-20.19.02:847][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.12.23-20.19.02:847][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.12.23-20.19.02:847][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.12.23-20.19.02:847][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2018.12.23-20.19.02:847][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.12.23-20.19.02:847][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2018.12.23-20.19.02:882][  0]LogNetVersion: EdenUniverseBuilder 1.0.0, NetCL: 0, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2067940845)
+[2018.12.23-20.19.03:815][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.062787 seconds
+[2018.12.23-20.19.03:822][  0]LogUObjectArray: 38832 objects as part of root set at end of initial load.
+[2018.12.23-20.19.03:822][  0]LogUObjectAllocator: 6741128 out of 0 bytes used by permanent object pool.
+[2018.12.23-20.19.03:822][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.12.23-20.19.04:153][  0]LogHAL: Linux SourceCodeAccessSettings: NullSourceCodeAccessor
+[2018.12.23-20.19.05:304][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.12.23-20.19.05:304][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.12.23-20.19.05:304][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.12.23-20.19.05:304][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.12.23-20.19.05:304][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.12.23-20.19.05:304][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.12.23-20.19.05:305][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.12.23-20.19.05:305][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.12.23-20.19.05:305][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.12.23-20.19.05:305][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.12.23-20.19.05:305][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.12.23-20.19.05:305][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.12.23-20.19.05:305][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.12.23-20.19.05:305][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.12.23-20.19.05:306][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.12.23-20.19.05:306][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.12.23-20.19.05:306][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.12.23-20.19.05:306][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.12.23-20.19.05:306][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png' error.
+[2018.12.23-20.19.05:306][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_24x.png
+[2018.12.23-20.19.05:306][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.12.23-20.19.05:306][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.12.23-20.19.05:307][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png' error.
+[2018.12.23-20.19.05:307][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Mac/Platform_Mac_128x.png
+[2018.12.23-20.19.05:311][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.12.23-20.19.05:311][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.12.23-20.19.05:311][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:311][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:311][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:311][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:311][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.12.23-20.19.05:311][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.12.23-20.19.05:312][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:312][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:312][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:312][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:312][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png' error.
+[2018.12.23-20.19.05:312][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png
+[2018.12.23-20.19.05:312][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:312][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:312][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:312][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:313][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png' error.
+[2018.12.23-20.19.05:313][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png
+[2018.12.23-20.19.05:313][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:313][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:313][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:313][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:313][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.12.23-20.19.05:313][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.12.23-20.19.05:314][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:314][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:314][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:314][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:314][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.12.23-20.19.05:314][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.12.23-20.19.05:314][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:314][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:315][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:315][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:315][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.12.23-20.19.05:315][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.12.23-20.19.05:315][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:315][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:315][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:315][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:316][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png' error.
+[2018.12.23-20.19.05:316][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png
+[2018.12.23-20.19.05:316][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:316][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:316][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:316][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:316][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png' error.
+[2018.12.23-20.19.05:316][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png
+[2018.12.23-20.19.05:317][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:317][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:317][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:317][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:317][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.12.23-20.19.05:317][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.12.23-20.19.05:317][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:317][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:317][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:317][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:318][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png' error.
+[2018.12.23-20.19.05:318][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_24x.png
+[2018.12.23-20.19.05:318][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:318][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:318][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:318][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:318][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png' error.
+[2018.12.23-20.19.05:318][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ATC_24x.png
+[2018.12.23-20.19.05:319][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:319][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:319][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:319][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:319][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png' error.
+[2018.12.23-20.19.05:319][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_DXT_24x.png
+[2018.12.23-20.19.05:319][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:319][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:320][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:320][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:320][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.12.23-20.19.05:320][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.12.23-20.19.05:320][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:320][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:320][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:320][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:320][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png' error.
+[2018.12.23-20.19.05:320][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC1_24x.png
+[2018.12.23-20.19.05:321][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:321][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:321][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:321][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:321][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png' error.
+[2018.12.23-20.19.05:321][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ETC2_24x.png
+[2018.12.23-20.19.05:321][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:321][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:321][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:321][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:322][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png' error.
+[2018.12.23-20.19.05:322][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_PVRTC_24x.png
+[2018.12.23-20.19.05:322][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:322][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:322][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:322][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:322][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png' error.
+[2018.12.23-20.19.05:322][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_ASTC_24x.png
+[2018.12.23-20.19.05:322][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:322][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.05:323][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png' error.
+[2018.12.23-20.19.05:323][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Launcher/Android/Platform_Android_128x.png
+[2018.12.23-20.19.08:874][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.12.23-20.19.08:880][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.12.23-20.19.18:281][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.12.23-20.19.19:506][  0]SourceControl: Source control is disabled
+[2018.12.23-20.19.19:506][  0]SourceControl: Source control is disabled
+[2018.12.23-20.19.20:269][  0]SourceControl: Source control is disabled
+[2018.12.23-20.19.20:787][  0]SourceControl: Source control is disabled
+[2018.12.23-20.19.21:222][  0]LogEngine: Initializing Engine...
+[2018.12.23-20.19.21:222][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.23-20.19.21:224][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.23-20.19.21:224][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.23-20.19.21:224][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.23-20.19.21:224][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.23-20.19.21:683][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.12.23-20.19.22:310][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.12.23-20.19.22:321][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2018.12.23-20.19.22:321][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2018.12.23-20.19.22:321][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2018.12.23-20.19.22:321][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2018.12.23-20.19.22:321][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2018.12.23-20.19.22:321][  0]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2018.12.23-20.19.22:321][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2018.12.23-20.19.22:322][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2018.12.23-20.19.22:344][  0]LogAudioMixerSDL: Display: Initialized SDL using dsp platform API backend.
+[2018.12.23-20.19.22:344][  0]LogAudioMixerSDL: Error: No such audio device
+[2018.12.23-20.19.22:344][  0]LogAudioMixerSDL: Error: No such audio device
+[2018.12.23-20.19.22:344][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.12.23-20.19.22:426][  0]LogDerivedDataCache: Saved boot cache 0.08s 88MB ../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/DerivedDataCache/Boot.ddc.
+[2018.12.23-20.19.22:453][  0]LogInit: Texture streaming: Enabled
+[2018.12.23-20.19.22:790][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.12.23-20.19.22:790][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={0D9711ED-08D6-6967-7498-9152EA1619F0}
+[2018.12.23-20.19.23:400][  0]LogInit: Transaction tracking system initialized
+[2018.12.23-20.19.24:498][  0]BlueprintLog: New page: Editor Load
+[2018.12.23-20.19.27:693][  0]LocalizationService: Localization service is disabled
+[2018.12.23-20.19.30:106][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/' took 0.01s
+[2018.12.23-20.19.30:106][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.12.23-20.19.30:106][  0]LogCook: Display: Mobile HDR setting 1
+[2018.12.23-20.19.30:106][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.12.23-20.19.30:106][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.23-20.19.30:106][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.23-20.19.30:106][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.23-20.19.30:106][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.23-20.19.34:583][  0]SourceControl: Source control is disabled
+[2018.12.23-20.19.34:583][  0]Cmd: MAP LOAD FILE="../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.12.23-20.19.34:593][  0]LightingResults: New page: Lighting Build
+[2018.12.23-20.19.34:718][  0]MapCheck: New page: Map Check
+[2018.12.23-20.19.34:718][  0]LightingResults: New page: Lighting Build
+[2018.12.23-20.19.34:939][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.12.23-20.19.34:961][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.12.23-20.19.34:994][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.12.23-20.19.34:994][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.161ms to complete.
+[2018.12.23-20.19.34:994][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.411
+[2018.12.23-20.19.35:005][  0]LogLinux: Scale at X=10.000000, Y=10.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.35:006][  0]LogLinux: Scale at X=960.000000, Y=529.500000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.35:017][  0]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.35:057][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.23-20.19.35:066][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.23-20.19.35:077][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.23-20.19.35:085][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.23-20.19.35:097][  0]LogCollectionManager: Loaded 0 collections in 0.002871 seconds
+[2018.12.23-20.19.35:112][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved/Collections/' took 0.00s
+[2018.12.23-20.19.35:112][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/Developers/josephtheengineer/Collections/' took 0.00s
+[2018.12.23-20.19.35:112][  0]LogFileCache: Scanning file cache for directory '/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/Collections/' took 0.00s
+[2018.12.23-20.19.35:112][  0]LogContentBrowser: Native class hierarchy populated in 0.0123 seconds. Added 2625 classes and 585 folders.
+[2018.12.23-20.19.35:115][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2018.12.23-20.19.35:421][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.12.23-20.19.35:423][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:423][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:424][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:425][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:425][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:426][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:426][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:426][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:427][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:427][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:427][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:427][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:428][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:428][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:428][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:429][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:429][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:429][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:430][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:430][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:430][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:431][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:431][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:431][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:431][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:432][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.23-20.19.35:454][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2018.12.23-20.19.35:608][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2018.12.23-20.19.35:811][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2018.12.23-20.19.35:811][  0]LogLoad: (Engine Initialization) Total time: 58.70 seconds
+[2018.12.23-20.19.35:811][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.12.23-20.19.35:822][  0]LogRHI: Using OpenGL program LRU cache: 0
+[2018.12.23-20.19.35:822][  0]LogSlate: Took 0.000119 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.12.23-20.19.35:827][  0]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.12.23-20.19.35:834][  0]LogSlate: Took 0.000113 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.12.23-20.19.35:834][  0]LogSlate: Took 0.000040 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2018.12.23-20.19.36:030][  0]LogInit: Adding external input plugin.
+[2018.12.23-20.19.36:076][  0]LogContentStreaming: Texture pool size now 800 MB
+[2018.12.23-20.19.37:238][  2]LogRenderer: Reallocating scene render targets to support 672x140 Format 9 NumSamples 1 (Frame:1).
+[2018.12.23-20.19.38:033][  2]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.19.38:084][  2]LogAssetRegistry: Asset discovery search completed in 36.3218 seconds
+[2018.12.23-20.19.38:086][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.12.23-20.19.38:086][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000341 seconds (updated 0 objects)
+[2018.12.23-20.19.38:260][  3]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.38:261][  3]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.38:261][  3]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.38:283][  3]LogSlate: Took 0.000087 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.23-20.19.38:322][  6]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.19.41:556][206]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.23-20.19.41:690][206]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.41:691][206]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.41:704][206]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.41:824][206]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/Blueprints/MainMenuWidget.MainMenuWidget
+[2018.12.23-20.19.41:826][206]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.19.42:650][206]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 117 classes and 0 folders.
+[2018.12.23-20.19.43:471][206]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.43:472][206]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.43:473][206]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.43:583][206]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/PlayHUD.PlayHUD
+[2018.12.23-20.19.43:586][206]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.19.43:611][206]LogLinux: Scale at X=485.000000, Y=10.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.43:611][206]LogLinux: Scale at X=1435.000000, Y=529.500000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.44:083][206]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.44:084][206]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.44:086][206]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.44:195][206]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/PlayMode.PlayMode
+[2018.12.23-20.19.44:198][206]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.19.44:516][206]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.44:517][206]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.44:519][206]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.44:628][206]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/Blueprints/PlayWidget.PlayWidget
+[2018.12.23-20.19.44:631][206]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.19.45:008][206]LogSlate: Took 0.000082 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.12.23-20.19.45:109][208]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.19.46:006][270]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.46:045][271]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.19.47:413][345]LogSlate: Took 0.000071 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.12.23-20.19.47:473][349]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.47:474][349]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.47:474][349]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.47:616][350]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.19.49:561][454]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.49:561][454]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.49:562][454]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.49:600][454]LogLinux: Scale at X=970.000000, Y=20.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.50:722][534]LogSlate: Window 'PlayWidget' being destroyed
+[2018.12.23-20.19.54:008][784]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.54:010][784]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.54:012][784]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.19.54:023][784]Candidate modules for hot reload:
+[2018.12.23-20.19.54:024][784]  EdenUniverseBuilder
+[2018.12.23-20.19.54:024][784]Building UnrealBuildTool...
+[2018.12.23-20.19.54:024][784]Building UnrealBuildTool in /opt/unreal-engine/...
+[2018.12.23-20.19.54:025][784]Running: /bin/bash "/opt/unreal-engine/Engine/Build/BatchFiles/Linux/RunXBuild.sh" /property:Configuration=Development /property:TargetFrameworkVersion=v4.0 /opt/unreal-engine/Engine/Source/Programs/UnrealBuildTool/UnrealBuildTool.csproj
+[2018.12.23-20.19.55:707][784]Launching UnrealBuildTool... [/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=EdenUniverseBuilder,5312 Linux Development -TargetType=Editor -Project="../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -canskiplink "/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"  -progress]
+[2018.12.23-20.19.55:708][784]Warning: Starting HotReload took  1.7s.
+[2018.12.23-20.19.55:741][784]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.20.23:727][625]CompilerResultsLog: New page: Compilation - 24 Dec 2018 4:20:23 pm
+[2018.12.23-20.20.23:728][625]CompilerResultsLog: 
+[2018.12.23-20.20.23:728][625]CompilerResultsLog: Running Mono...
+[2018.12.23-20.20.23:728][625]CompilerResultsLog: 
+[2018.12.23-20.20.23:728][625]CompilerResultsLog: Fixing inconsistent case in filenames.
+[2018.12.23-20.20.23:729][625]CompilerResultsLog: /opt/unreal-engine/Engine /opt/unreal-engine/Engine/Binaries/Linux
+[2018.12.23-20.20.23:729][625]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.23-20.20.23:730][625]CompilerResultsLog: @progress push 5%
+[2018.12.23-20.20.23:730][625]CompilerResultsLog: @progress 'Generating code...' 0%
+[2018.12.23-20.20.23:730][625]CompilerResultsLog: @progress 'Generating code...' 67%
+[2018.12.23-20.20.23:730][625]CompilerResultsLog: @progress 'Generating code...' 100%
+[2018.12.23-20.20.23:730][625]CompilerResultsLog: @progress pop
+[2018.12.23-20.20.23:731][625]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.12.23-20.20.23:732][625]CompilerResultsLog: @progress 'Compiling C++ source code...' 0%
+[2018.12.23-20.20.23:733][625]CompilerResultsLog: [2/3] Compile WorldFileManager.gen.cpp
+[2018.12.23-20.20.23:733][625]CompilerResultsLog: [1/3] Compile WorldFileManager.cpp
+[2018.12.23-20.20.23:734][625]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:4:
+[2018.12.23-20.20.23:734][625]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.h:27:2: error: static_assert failed "You have to define AWorldFileManager::AWorldFileManager() or AWorldFileManager::AWorldFileManager(const FObjectInitializer&). This is required by UObject system to work correctly."
+[2018.12.23-20.20.23:736][625]CompilerResultsLog:         GENERATED_BODY()
+[2018.12.23-20.20.23:737][625]CompilerResultsLog:         ^~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:737][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:600:29: note: expanded from macro 'GENERATED_BODY'
+[2018.12.23-20.20.23:738][625]CompilerResultsLog: #define GENERATED_BODY(...) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+[2018.12.23-20.20.23:738][625]CompilerResultsLog:                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:739][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:595:37: note: expanded from macro 'BODY_MACRO_COMBINE'
+[2018.12.23-20.20.23:739][625]CompilerResultsLog: #define BODY_MACRO_COMBINE(A,B,C,D) BODY_MACRO_COMBINE_INNER(A,B,C,D)
+[2018.12.23-20.20.23:740][625]CompilerResultsLog:                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:740][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:594:43: note: expanded from macro 'BODY_MACRO_COMBINE_INNER'
+[2018.12.23-20.20.23:741][625]CompilerResultsLog: #define BODY_MACRO_COMBINE_INNER(A,B,C,D) A##B##C##D
+[2018.12.23-20.20.23:741][625]CompilerResultsLog:                                           ^~~~~~~~~~
+[2018.12.23-20.20.23:741][625]CompilerResultsLog: note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+[2018.12.23-20.20.23:741][625]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.generated.h:110:2: note: expanded from macro 'EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_GENERATED_BODY'
+[2018.12.23-20.20.23:742][625]CompilerResultsLog:         EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_ENHANCED_CONSTRUCTORS \
+[2018.12.23-20.20.23:743][625]CompilerResultsLog:         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:743][625]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.generated.h:88:2: note: expanded from macro 'EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_ENHANCED_CONSTRUCTORS'
+[2018.12.23-20.20.23:744][625]CompilerResultsLog:         DEFINE_FORBIDDEN_DEFAULT_CONSTRUCTOR_CALL(AWorldFileManager)
+[2018.12.23-20.20.23:744][625]CompilerResultsLog:         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:744][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:1455:2: note: expanded from macro 'DEFINE_FORBIDDEN_DEFAULT_CONSTRUCTOR_CALL'
+[2018.12.23-20.20.23:745][625]CompilerResultsLog:         static_assert(false, "You have to define " #TClass "::" #TClass "() or " #TClass "::" #TClass "(const FObjectInitializer&). This is required by UObject system to work correctly.");
+[2018.12.23-20.20.23:746][625]CompilerResultsLog:         ^             ~~~~~
+[2018.12.23-20.20.23:746][625]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.gen.cpp:8:
+[2018.12.23-20.20.23:746][625]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.h:27:2: error: static_assert failed "You have to define AWorldFileManager::AWorldFileManager() or AWorldFileManager::AWorldFileManager(const FObjectInitializer&). This is required by UObject system to work correctly."
+[2018.12.23-20.20.23:747][625]CompilerResultsLog:         GENERATED_BODY()
+[2018.12.23-20.20.23:747][625]CompilerResultsLog:         ^~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:748][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:600:29: note: expanded from macro 'GENERATED_BODY'
+[2018.12.23-20.20.23:748][625]CompilerResultsLog: #define GENERATED_BODY(...) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+[2018.12.23-20.20.23:748][625]CompilerResultsLog:                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:749][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:595:37: note: expanded from macro 'BODY_MACRO_COMBINE'
+[2018.12.23-20.20.23:749][625]CompilerResultsLog: #define BODY_MACRO_COMBINE(A,B,C,D) BODY_MACRO_COMBINE_INNER(A,B,C,D)
+[2018.12.23-20.20.23:749][625]CompilerResultsLog:                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:750][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:594:43: note: expanded from macro 'BODY_MACRO_COMBINE_INNER'
+[2018.12.23-20.20.23:750][625]CompilerResultsLog: #define BODY_MACRO_COMBINE_INNER(A,B,C,D) A##B##C##D
+[2018.12.23-20.20.23:751][625]CompilerResultsLog:                                           ^~~~~~~~~~
+[2018.12.23-20.20.23:751][625]CompilerResultsLog: note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+[2018.12.23-20.20.23:751][625]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.generated.h:110:2: note: expanded from macro 'EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_GENERATED_BODY'
+[2018.12.23-20.20.23:752][625]CompilerResultsLog:         EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_ENHANCED_CONSTRUCTORS \
+[2018.12.23-20.20.23:752][625]CompilerResultsLog:         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:752][625]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.generated.h:88:2: note: expanded from macro 'EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_ENHANCED_CONSTRUCTORS'
+[2018.12.23-20.20.23:753][625]CompilerResultsLog:         DEFINE_FORBIDDEN_DEFAULT_CONSTRUCTOR_CALL(AWorldFileManager)
+[2018.12.23-20.20.23:753][625]CompilerResultsLog:         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:753][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:1455:2: note: expanded from macro 'DEFINE_FORBIDDEN_DEFAULT_CONSTRUCTOR_CALL'
+[2018.12.23-20.20.23:754][625]CompilerResultsLog:         static_assert(false, "You have to define " #TClass "::" #TClass "() or " #TClass "::" #TClass "(const FObjectInitializer&). This is required by UObject system to work correctly.");
+[2018.12.23-20.20.23:754][625]CompilerResultsLog:         ^             ~~~~~
+[2018.12.23-20.20.23:754][625]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:1:
+[2018.12.23-20.20.23:755][625]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Engine/SharedPCH.Engine.h:200:
+[2018.12.23-20.20.23:755][625]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h:90:
+[2018.12.23-20.20.23:755][625]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h:420:
+[2018.12.23-20.20.23:756][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:378:2: error: static_assert failed due to requirement '!TPointerIsConvertibleFromTo<AWorldFileManager, const UObjectBase>::Value' "You cannot use raw method delegates with UObjects."
+[2018.12.23-20.20.23:757][625]CompilerResultsLog:         static_assert(!TPointerIsConvertibleFromTo<UserClass, const UObjectBase>::Value, "You cannot use raw method delegates with UObjects.");
+[2018.12.23-20.20.23:757][625]CompilerResultsLog:         ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.20.23:757][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:496:101: note: in instantiation of template class 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, TTypeWrapper<void> (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>' requested here
+[2018.12.23-20.20.23:758][625]CompilerResultsLog: class TBaseRawMethodDelegateInstance<bConst, UserClass, void (ParamTypes...), VarTypes...> : public TBaseRawMethodDelegateInstance<bConst, UserClass, TTypeWrapper<void> (ParamTypes...), VarTypes...>
+[2018.12.23-20.20.23:759][625]CompilerResultsLog:                                                                                                     ^
+[2018.12.23-20.20.23:759][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:162:3: note: in instantiation of template class 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, void (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>' requested here
+[2018.12.23-20.20.23:759][625]CompilerResultsLog:                 TBaseRawMethodDelegateInstance<false, UserClass, TFuncType, VarTypes...>::Create(Result, InUserObject, InFunc, Vars...);
+[2018.12.23-20.20.23:760][625]CompilerResultsLog:                 ^
+[2018.12.23-20.20.23:760][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:442:11: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::CreateRaw<AWorldFileManager>' requested here
+[2018.12.23-20.20.23:761][625]CompilerResultsLog:                 *this = CreateRaw(InUserObject, InFunc, Vars...);
+[2018.12.23-20.20.23:761][625]CompilerResultsLog:                         ^
+[2018.12.23-20.20.23:761][625]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:46:39: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::BindRaw<AWorldFileManager>' requested here
+[2018.12.23-20.20.23:762][625]CompilerResultsLog:                 Request->OnProcessRequestComplete().BindRaw(this, &AWorldFileManager::RequestComplete);
+[2018.12.23-20.20.23:762][625]CompilerResultsLog:                                                     ^
+[2018.12.23-20.20.23:762][625]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:1:
+[2018.12.23-20.20.23:762][625]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Engine/SharedPCH.Engine.h:200:
+[2018.12.23-20.20.23:763][625]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h:90:
+[2018.12.23-20.20.23:763][625]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h:420:
+[2018.12.23-20.20.23:763][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:507:74: error: no type named 'FMethodPtr' in 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, TTypeWrapper<void> (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>'
+[2018.12.23-20.20.23:764][625]CompilerResultsLog:         TBaseRawMethodDelegateInstance(UserClass* InUserObject, typename Super::FMethodPtr InMethodPtr, VarTypes... Vars)
+[2018.12.23-20.20.23:764][625]CompilerResultsLog:                                                                 ~~~~~~~~~~~~~~~~^~~~~~~~~~
+[2018.12.23-20.20.23:764][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:162:3: note: in instantiation of template class 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, void (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>' requested here
+[2018.12.23-20.20.23:765][625]CompilerResultsLog:                 TBaseRawMethodDelegateInstance<false, UserClass, TFuncType, VarTypes...>::Create(Result, InUserObject, InFunc, Vars...);
+[2018.12.23-20.20.23:765][625]CompilerResultsLog:                 ^
+[2018.12.23-20.20.23:765][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:442:11: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::CreateRaw<AWorldFileManager>' requested here
+[2018.12.23-20.20.23:766][625]CompilerResultsLog:                 *this = CreateRaw(InUserObject, InFunc, Vars...);
+[2018.12.23-20.20.23:766][625]CompilerResultsLog:                         ^
+[2018.12.23-20.20.23:766][625]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:46:39: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::BindRaw<AWorldFileManager>' requested here
+[2018.12.23-20.20.23:767][625]CompilerResultsLog:                 Request->OnProcessRequestComplete().BindRaw(this, &AWorldFileManager::RequestComplete);
+[2018.12.23-20.20.23:768][625]CompilerResultsLog:                                                     ^
+[2018.12.23-20.20.23:768][625]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:1:
+[2018.12.23-20.20.23:768][625]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Engine/SharedPCH.Engine.h:200:
+[2018.12.23-20.20.23:768][625]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h:90:
+[2018.12.23-20.20.23:768][625]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h:420:
+[2018.12.23-20.20.23:769][625]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:512:15: error: 'ExecuteIfSafe' marked 'override' but does not override any member functions
+[2018.12.23-20.20.23:769][625]CompilerResultsLog:         virtual bool ExecuteIfSafe(ParamTypes... Params) const override final
+[2018.12.23-20.20.23:769][625]CompilerResultsLog:                      ^
+[2018.12.23-20.20.23:769][625]CompilerResultsLog: 4 errors generated.
+[2018.12.23-20.20.23:770][625]CompilerResultsLog: @progress 'Compiling C++ source code...' 25%
+[2018.12.23-20.20.23:770][625]CompilerResultsLog: 1 error generated.
+[2018.12.23-20.20.23:770][625]CompilerResultsLog: @progress 'Compiling C++ source code...' 50%
+[2018.12.23-20.20.23:770][625]CompilerResultsLog: @progress 'Compiling C++ source code...' 75%
+[2018.12.23-20.20.23:770][625]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Binaries/Linux/libUE4Editor-EdenUniverseBuilder-5312.so
+[2018.12.23-20.20.23:770][625]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.12.23-20.20.23:771][625]CompilerResultsLog: Total build time: 26.20 seconds (Local executor: 0.00 seconds)
+[2018.12.23-20.20.23:771][625]LogMainFrame: MainFrame: Module compiling took 29.764 seconds
+[2018.12.23-20.20.23:771][625]Warning: HotReload failed, recompile failed
+[2018.12.23-20.21.04:090][967]LogHttp: Warning: 0x7fd91f9a1140: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.12.23-20.21.04:091][967]LogHttp: Warning: 0x7fd91f9a1140: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.12.23-20.21.04:093][967]LogHttp: Warning: 0x7fd91f9a1140: libcurl info message cache 1 (Closing connection 0)
+[2018.12.23-20.21.04:417][968]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B0D9784B8-08D6-6967-BEEA-307632274706%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.21.0-0%2B%2B%2BUE4%2BRelease-4.21&UserID=0002410708d664194027fe60c5fe2ce8%7C%7C7daceff08d604cb9b02ec7fe1665c840&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2018.12.23-20.21.29:125][120]LogRenderer: Reallocating scene render targets to support 676x160 Format 9 NumSamples 1 (Frame:320).
+[2018.12.23-20.21.30:127][169]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.21.30:127][169]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.21.30:128][169]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.21.30:144][169]Candidate modules for hot reload:
+[2018.12.23-20.21.30:144][169]  EdenUniverseBuilder
+[2018.12.23-20.21.30:145][169]Launching UnrealBuildTool... [/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=EdenUniverseBuilder,4434 Linux Development -TargetType=Editor -Project="../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -canskiplink "/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"  -progress]
+[2018.12.23-20.21.30:146][169]Warning: Starting HotReload took  0.0s.
+[2018.12.23-20.21.30:383][176]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.22.43:145][265]CompilerResultsLog: New page: Compilation - 24 Dec 2018 4:22:43 pm
+[2018.12.23-20.22.43:146][265]CompilerResultsLog: 
+[2018.12.23-20.22.43:147][265]CompilerResultsLog: Running Mono...
+[2018.12.23-20.22.43:147][265]CompilerResultsLog: 
+[2018.12.23-20.22.43:147][265]CompilerResultsLog: Fixing inconsistent case in filenames.
+[2018.12.23-20.22.43:147][265]CompilerResultsLog: /opt/unreal-engine/Engine /opt/unreal-engine/Engine/Binaries/Linux
+[2018.12.23-20.22.43:148][265]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.23-20.22.43:148][265]CompilerResultsLog: @progress push 5%
+[2018.12.23-20.22.43:148][265]CompilerResultsLog: @progress 'Generating code...' 0%
+[2018.12.23-20.22.43:148][265]CompilerResultsLog: @progress 'Generating code...' 33%
+[2018.12.23-20.22.43:149][265]CompilerResultsLog: Parsing headers for EdenUniverseBuilderEditor
+[2018.12.23-20.22.43:149][265]CompilerResultsLog:   Running UnrealHeaderTool "/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" "/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Development/EdenUniverseBuilderEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors
+[2018.12.23-20.22.43:152][265]CompilerResultsLog: Reflection code generated for EdenUniverseBuilderEditor in 48.1199605 seconds
+[2018.12.23-20.22.43:153][265]CompilerResultsLog: @progress 'Generating code...' 67%
+[2018.12.23-20.22.43:154][265]CompilerResultsLog: @progress 'Generating code...' 100%
+[2018.12.23-20.22.43:155][265]CompilerResultsLog: @progress pop
+[2018.12.23-20.22.43:156][265]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.12.23-20.22.43:156][265]CompilerResultsLog: @progress 'Compiling C++ source code...' 0%
+[2018.12.23-20.22.43:157][265]CompilerResultsLog: [1/3] Compile WorldFileManager.cpp
+[2018.12.23-20.22.43:157][265]CompilerResultsLog: [2/3] Compile WorldFileManager.gen.cpp
+[2018.12.23-20.22.43:157][265]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.gen.cpp:8:
+[2018.12.23-20.22.43:157][265]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.h:27:2: error: static_assert failed "You have to define AWorldFileManager::AWorldFileManager() or AWorldFileManager::AWorldFileManager(const FObjectInitializer&). This is required by UObject system to work correctly."
+[2018.12.23-20.22.43:159][265]CompilerResultsLog:         GENERATED_BODY()
+[2018.12.23-20.22.43:159][265]CompilerResultsLog:         ^~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:159][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:600:29: note: expanded from macro 'GENERATED_BODY'
+[2018.12.23-20.22.43:160][265]CompilerResultsLog: #define GENERATED_BODY(...) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+[2018.12.23-20.22.43:160][265]CompilerResultsLog:                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:160][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:595:37: note: expanded from macro 'BODY_MACRO_COMBINE'
+[2018.12.23-20.22.43:161][265]CompilerResultsLog: #define BODY_MACRO_COMBINE(A,B,C,D) BODY_MACRO_COMBINE_INNER(A,B,C,D)
+[2018.12.23-20.22.43:161][265]CompilerResultsLog:                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:161][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:594:43: note: expanded from macro 'BODY_MACRO_COMBINE_INNER'
+[2018.12.23-20.22.43:162][265]CompilerResultsLog: #define BODY_MACRO_COMBINE_INNER(A,B,C,D) A##B##C##D
+[2018.12.23-20.22.43:162][265]CompilerResultsLog:                                           ^~~~~~~~~~
+[2018.12.23-20.22.43:162][265]CompilerResultsLog: note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+[2018.12.23-20.22.43:162][265]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.generated.h:110:2: note: expanded from macro 'EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_GENERATED_BODY'
+[2018.12.23-20.22.43:163][265]CompilerResultsLog:         EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_ENHANCED_CONSTRUCTORS \
+[2018.12.23-20.22.43:164][265]CompilerResultsLog:         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:164][265]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.generated.h:88:2: note: expanded from macro 'EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_ENHANCED_CONSTRUCTORS'
+[2018.12.23-20.22.43:165][265]CompilerResultsLog:         DEFINE_FORBIDDEN_DEFAULT_CONSTRUCTOR_CALL(AWorldFileManager)
+[2018.12.23-20.22.43:166][265]CompilerResultsLog:         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:167][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:1455:2: note: expanded from macro 'DEFINE_FORBIDDEN_DEFAULT_CONSTRUCTOR_CALL'
+[2018.12.23-20.22.43:168][265]CompilerResultsLog:         static_assert(false, "You have to define " #TClass "::" #TClass "() or " #TClass "::" #TClass "(const FObjectInitializer&). This is required by UObject system to work correctly.");
+[2018.12.23-20.22.43:168][265]CompilerResultsLog:         ^             ~~~~~
+[2018.12.23-20.22.43:169][265]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:4:
+[2018.12.23-20.22.43:169][265]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.h:27:2: error: static_assert failed "You have to define AWorldFileManager::AWorldFileManager() or AWorldFileManager::AWorldFileManager(const FObjectInitializer&). This is required by UObject system to work correctly."
+[2018.12.23-20.22.43:170][265]CompilerResultsLog:         GENERATED_BODY()
+[2018.12.23-20.22.43:170][265]CompilerResultsLog:         ^~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:170][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:600:29: note: expanded from macro 'GENERATED_BODY'
+[2018.12.23-20.22.43:171][265]CompilerResultsLog: #define GENERATED_BODY(...) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+[2018.12.23-20.22.43:171][265]CompilerResultsLog:                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:171][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:595:37: note: expanded from macro 'BODY_MACRO_COMBINE'
+[2018.12.23-20.22.43:172][265]CompilerResultsLog: #define BODY_MACRO_COMBINE(A,B,C,D) BODY_MACRO_COMBINE_INNER(A,B,C,D)
+[2018.12.23-20.22.43:172][265]CompilerResultsLog:                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:172][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:594:43: note: expanded from macro 'BODY_MACRO_COMBINE_INNER'
+[2018.12.23-20.22.43:172][265]CompilerResultsLog: #define BODY_MACRO_COMBINE_INNER(A,B,C,D) A##B##C##D
+[2018.12.23-20.22.43:173][265]CompilerResultsLog:                                           ^~~~~~~~~~
+[2018.12.23-20.22.43:173][265]CompilerResultsLog: note: (skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+[2018.12.23-20.22.43:173][265]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.generated.h:110:2: note: expanded from macro 'EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_GENERATED_BODY'
+[2018.12.23-20.22.43:174][265]CompilerResultsLog:         EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_ENHANCED_CONSTRUCTORS \
+[2018.12.23-20.22.43:174][265]CompilerResultsLog:         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:174][265]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/EdenUniverseBuilder/WorldFileManager.generated.h:88:2: note: expanded from macro 'EdenUniverseBuilder_Source_EdenUniverseBuilder_WorldFileManager_h_27_ENHANCED_CONSTRUCTORS'
+[2018.12.23-20.22.43:175][265]CompilerResultsLog:         DEFINE_FORBIDDEN_DEFAULT_CONSTRUCTOR_CALL(AWorldFileManager)
+[2018.12.23-20.22.43:175][265]CompilerResultsLog:         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:175][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:1455:2: note: expanded from macro 'DEFINE_FORBIDDEN_DEFAULT_CONSTRUCTOR_CALL'
+[2018.12.23-20.22.43:176][265]CompilerResultsLog:         static_assert(false, "You have to define " #TClass "::" #TClass "() or " #TClass "::" #TClass "(const FObjectInitializer&). This is required by UObject system to work correctly.");
+[2018.12.23-20.22.43:176][265]CompilerResultsLog:         ^             ~~~~~
+[2018.12.23-20.22.43:177][265]CompilerResultsLog: 1 error generated.
+[2018.12.23-20.22.43:177][265]CompilerResultsLog: @progress 'Compiling C++ source code...' 25%
+[2018.12.23-20.22.43:177][265]CompilerResultsLog: @progress 'Compiling C++ source code...' 50%
+[2018.12.23-20.22.43:177][265]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:1:
+[2018.12.23-20.22.43:177][265]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Engine/SharedPCH.Engine.h:200:
+[2018.12.23-20.22.43:178][265]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h:90:
+[2018.12.23-20.22.43:178][265]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h:420:
+[2018.12.23-20.22.43:178][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:378:2: error: static_assert failed due to requirement '!TPointerIsConvertibleFromTo<AWorldFileManager, const UObjectBase>::Value' "You cannot use raw method delegates with UObjects."
+[2018.12.23-20.22.43:179][265]CompilerResultsLog:         static_assert(!TPointerIsConvertibleFromTo<UserClass, const UObjectBase>::Value, "You cannot use raw method delegates with UObjects.");
+[2018.12.23-20.22.43:179][265]CompilerResultsLog:         ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.22.43:179][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:496:101: note: in instantiation of template class 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, TTypeWrapper<void> (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>' requested here
+[2018.12.23-20.22.43:180][265]CompilerResultsLog: class TBaseRawMethodDelegateInstance<bConst, UserClass, void (ParamTypes...), VarTypes...> : public TBaseRawMethodDelegateInstance<bConst, UserClass, TTypeWrapper<void> (ParamTypes...), VarTypes...>
+[2018.12.23-20.22.43:181][265]CompilerResultsLog:                                                                                                     ^
+[2018.12.23-20.22.43:181][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:162:3: note: in instantiation of template class 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, void (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>' requested here
+[2018.12.23-20.22.43:182][265]CompilerResultsLog:                 TBaseRawMethodDelegateInstance<false, UserClass, TFuncType, VarTypes...>::Create(Result, InUserObject, InFunc, Vars...);
+[2018.12.23-20.22.43:182][265]CompilerResultsLog:                 ^
+[2018.12.23-20.22.43:182][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:442:11: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::CreateRaw<AWorldFileManager>' requested here
+[2018.12.23-20.22.43:183][265]CompilerResultsLog:                 *this = CreateRaw(InUserObject, InFunc, Vars...);
+[2018.12.23-20.22.43:184][265]CompilerResultsLog:                         ^
+[2018.12.23-20.22.43:184][265]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:46:39: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::BindRaw<AWorldFileManager>' requested here
+[2018.12.23-20.22.43:185][265]CompilerResultsLog:                 Request->OnProcessRequestComplete().BindRaw(this, &AWorldFileManager::RequestComplete);
+[2018.12.23-20.22.43:185][265]CompilerResultsLog:                                                     ^
+[2018.12.23-20.22.43:185][265]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:1:
+[2018.12.23-20.22.43:185][265]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Engine/SharedPCH.Engine.h:200:
+[2018.12.23-20.22.43:186][265]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h:90:
+[2018.12.23-20.22.43:186][265]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h:420:
+[2018.12.23-20.22.43:186][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:507:74: error: no type named 'FMethodPtr' in 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, TTypeWrapper<void> (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>'
+[2018.12.23-20.22.43:187][265]CompilerResultsLog:         TBaseRawMethodDelegateInstance(UserClass* InUserObject, typename Super::FMethodPtr InMethodPtr, VarTypes... Vars)
+[2018.12.23-20.22.43:187][265]CompilerResultsLog:                                                                 ~~~~~~~~~~~~~~~~^~~~~~~~~~
+[2018.12.23-20.22.43:187][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:162:3: note: in instantiation of template class 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, void (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>' requested here
+[2018.12.23-20.22.43:188][265]CompilerResultsLog:                 TBaseRawMethodDelegateInstance<false, UserClass, TFuncType, VarTypes...>::Create(Result, InUserObject, InFunc, Vars...);
+[2018.12.23-20.22.43:188][265]CompilerResultsLog:                 ^
+[2018.12.23-20.22.43:188][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:442:11: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::CreateRaw<AWorldFileManager>' requested here
+[2018.12.23-20.22.43:189][265]CompilerResultsLog:                 *this = CreateRaw(InUserObject, InFunc, Vars...);
+[2018.12.23-20.22.43:189][265]CompilerResultsLog:                         ^
+[2018.12.23-20.22.43:189][265]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:46:39: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::BindRaw<AWorldFileManager>' requested here
+[2018.12.23-20.22.43:190][265]CompilerResultsLog:                 Request->OnProcessRequestComplete().BindRaw(this, &AWorldFileManager::RequestComplete);
+[2018.12.23-20.22.43:190][265]CompilerResultsLog:                                                     ^
+[2018.12.23-20.22.43:190][265]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:1:
+[2018.12.23-20.22.43:191][265]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Engine/SharedPCH.Engine.h:200:
+[2018.12.23-20.22.43:191][265]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h:90:
+[2018.12.23-20.22.43:191][265]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h:420:
+[2018.12.23-20.22.43:191][265]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:512:15: error: 'ExecuteIfSafe' marked 'override' but does not override any member functions
+[2018.12.23-20.22.43:192][265]CompilerResultsLog:         virtual bool ExecuteIfSafe(ParamTypes... Params) const override final
+[2018.12.23-20.22.43:192][265]CompilerResultsLog:                      ^
+[2018.12.23-20.22.43:192][265]CompilerResultsLog: 4 errors generated.
+[2018.12.23-20.22.43:192][265]CompilerResultsLog: @progress 'Compiling C++ source code...' 75%
+[2018.12.23-20.22.43:192][265]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Binaries/Linux/libUE4Editor-EdenUniverseBuilder-4434.so
+[2018.12.23-20.22.43:193][265]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.12.23-20.22.43:193][265]CompilerResultsLog: Total build time: 71.10 seconds (Local executor: 0.00 seconds)
+[2018.12.23-20.22.43:193][265]LogMainFrame: MainFrame: Module compiling took 73.066 seconds
+[2018.12.23-20.22.43:193][265]Warning: HotReload failed, recompile failed
+[2018.12.23-20.23.32:916][113]LogHttp: Warning: 0x7fd91f9a13c0: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.12.23-20.23.32:917][113]LogHttp: Warning: 0x7fd91f9a13c0: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.12.23-20.23.32:919][113]LogHttp: Warning: 0x7fd91f9a13c0: libcurl info message cache 1 (Closing connection 1)
+[2018.12.23-20.23.33:248][114]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B0D9784B8-08D6-6967-BEEA-307632274706%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.21.0-0%2B%2B%2BUE4%2BRelease-4.21&UserID=0002410708d664194027fe60c5fe2ce8%7C%7C7daceff08d604cb9b02ec7fe1665c840&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2018.12.23-20.23.49:280][363]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.23.49:281][363]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.23.49:282][363]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.23.49:297][363]Candidate modules for hot reload:
+[2018.12.23-20.23.49:297][363]  EdenUniverseBuilder
+[2018.12.23-20.23.49:297][363]Launching UnrealBuildTool... [/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=EdenUniverseBuilder,3505 Linux Development -TargetType=Editor -Project="../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -canskiplink "/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"  -progress]
+[2018.12.23-20.23.49:299][363]Warning: Starting HotReload took  0.0s.
+[2018.12.23-20.23.49:537][371]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.24.51:692][350]CompilerResultsLog: New page: Compilation - 24 Dec 2018 4:24:51 pm
+[2018.12.23-20.24.51:693][350]CompilerResultsLog: 
+[2018.12.23-20.24.51:693][350]CompilerResultsLog: Running Mono...
+[2018.12.23-20.24.51:693][350]CompilerResultsLog: 
+[2018.12.23-20.24.51:693][350]CompilerResultsLog: Fixing inconsistent case in filenames.
+[2018.12.23-20.24.51:694][350]CompilerResultsLog: /opt/unreal-engine/Engine /opt/unreal-engine/Engine/Binaries/Linux
+[2018.12.23-20.24.51:694][350]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.23-20.24.51:696][350]CompilerResultsLog: @progress push 5%
+[2018.12.23-20.24.51:697][350]CompilerResultsLog: @progress 'Generating code...' 0%
+[2018.12.23-20.24.51:697][350]CompilerResultsLog: @progress 'Generating code...' 33%
+[2018.12.23-20.24.51:698][350]CompilerResultsLog: Parsing headers for EdenUniverseBuilderEditor
+[2018.12.23-20.24.51:699][350]CompilerResultsLog:   Running UnrealHeaderTool "/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" "/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Development/EdenUniverseBuilderEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors
+[2018.12.23-20.24.51:701][350]CompilerResultsLog: Reflection code generated for EdenUniverseBuilderEditor in 36.4999903 seconds
+[2018.12.23-20.24.51:702][350]CompilerResultsLog: @progress 'Generating code...' 67%
+[2018.12.23-20.24.51:703][350]CompilerResultsLog: @progress 'Generating code...' 100%
+[2018.12.23-20.24.51:704][350]CompilerResultsLog: @progress pop
+[2018.12.23-20.24.51:704][350]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.12.23-20.24.51:704][350]CompilerResultsLog: @progress 'Compiling C++ source code...' 0%
+[2018.12.23-20.24.51:704][350]CompilerResultsLog: [1/3] Compile WorldFileManager.cpp
+[2018.12.23-20.24.51:705][350]CompilerResultsLog: [2/3] Compile WorldFileManager.gen.cpp
+[2018.12.23-20.24.51:705][350]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:1:
+[2018.12.23-20.24.51:705][350]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Engine/SharedPCH.Engine.h:200:
+[2018.12.23-20.24.51:706][350]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h:90:
+[2018.12.23-20.24.51:706][350]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h:420:
+[2018.12.23-20.24.51:706][350]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:378:2: error: static_assert failed due to requirement '!TPointerIsConvertibleFromTo<AWorldFileManager, const UObjectBase>::Value' "You cannot use raw method delegates with UObjects."
+[2018.12.23-20.24.51:707][350]CompilerResultsLog:         static_assert(!TPointerIsConvertibleFromTo<UserClass, const UObjectBase>::Value, "You cannot use raw method delegates with UObjects.");
+[2018.12.23-20.24.51:708][350]CompilerResultsLog:         ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2018.12.23-20.24.51:708][350]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:496:101: note: in instantiation of template class 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, TTypeWrapper<void> (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>' requested here
+[2018.12.23-20.24.51:709][350]CompilerResultsLog: class TBaseRawMethodDelegateInstance<bConst, UserClass, void (ParamTypes...), VarTypes...> : public TBaseRawMethodDelegateInstance<bConst, UserClass, TTypeWrapper<void> (ParamTypes...), VarTypes...>
+[2018.12.23-20.24.51:709][350]CompilerResultsLog:                                                                                                     ^
+[2018.12.23-20.24.51:710][350]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:162:3: note: in instantiation of template class 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, void (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>' requested here
+[2018.12.23-20.24.51:711][350]CompilerResultsLog:                 TBaseRawMethodDelegateInstance<false, UserClass, TFuncType, VarTypes...>::Create(Result, InUserObject, InFunc, Vars...);
+[2018.12.23-20.24.51:712][350]CompilerResultsLog:                 ^
+[2018.12.23-20.24.51:712][350]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:442:11: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::CreateRaw<AWorldFileManager>' requested here
+[2018.12.23-20.24.51:713][350]CompilerResultsLog:                 *this = CreateRaw(InUserObject, InFunc, Vars...);
+[2018.12.23-20.24.51:713][350]CompilerResultsLog:                         ^
+[2018.12.23-20.24.51:713][350]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:37:39: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::BindRaw<AWorldFileManager>' requested here
+[2018.12.23-20.24.51:715][350]CompilerResultsLog:                 Request->OnProcessRequestComplete().BindRaw(this, &AWorldFileManager::RequestComplete);
+[2018.12.23-20.24.51:716][350]CompilerResultsLog:                                                     ^
+[2018.12.23-20.24.51:716][350]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:1:
+[2018.12.23-20.24.51:717][350]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Engine/SharedPCH.Engine.h:200:
+[2018.12.23-20.24.51:717][350]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h:90:
+[2018.12.23-20.24.51:718][350]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h:420:
+[2018.12.23-20.24.51:718][350]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:507:74: error: no type named 'FMethodPtr' in 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, TTypeWrapper<void> (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>'
+[2018.12.23-20.24.51:719][350]CompilerResultsLog:         TBaseRawMethodDelegateInstance(UserClass* InUserObject, typename Super::FMethodPtr InMethodPtr, VarTypes... Vars)
+[2018.12.23-20.24.51:719][350]CompilerResultsLog:                                                                 ~~~~~~~~~~~~~~~~^~~~~~~~~~
+[2018.12.23-20.24.51:719][350]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:162:3: note: in instantiation of template class 'TBaseRawMethodDelegateInstance<false, AWorldFileManager, void (TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool)>' requested here
+[2018.12.23-20.24.51:720][350]CompilerResultsLog:                 TBaseRawMethodDelegateInstance<false, UserClass, TFuncType, VarTypes...>::Create(Result, InUserObject, InFunc, Vars...);
+[2018.12.23-20.24.51:721][350]CompilerResultsLog:                 ^
+[2018.12.23-20.24.51:721][350]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:442:11: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::CreateRaw<AWorldFileManager>' requested here
+[2018.12.23-20.24.51:721][350]CompilerResultsLog:                 *this = CreateRaw(InUserObject, InFunc, Vars...);
+[2018.12.23-20.24.51:722][350]CompilerResultsLog:                         ^
+[2018.12.23-20.24.51:722][350]CompilerResultsLog: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:37:39: note: in instantiation of function template specialization 'TBaseDelegate<TTypeWrapper<void>, TSharedPtr<IHttpRequest, ESPMode::NotThreadSafe>, TSharedPtr<IHttpResponse, ESPMode::ThreadSafe>, bool>::BindRaw<AWorldFileManager>' requested here
+[2018.12.23-20.24.51:723][350]CompilerResultsLog:                 Request->OnProcessRequestComplete().BindRaw(this, &AWorldFileManager::RequestComplete);
+[2018.12.23-20.24.51:723][350]CompilerResultsLog:                                                     ^
+[2018.12.23-20.24.51:723][350]CompilerResultsLog: In file included from /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Source/EdenUniverseBuilder/WorldFileManager.cpp:1:
+[2018.12.23-20.24.51:724][350]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Engine/SharedPCH.Engine.h:200:
+[2018.12.23-20.24.51:724][350]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h:90:
+[2018.12.23-20.24.51:724][350]CompilerResultsLog: In file included from /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h:420:
+[2018.12.23-20.24.51:724][350]CompilerResultsLog: /opt/unreal-engine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:512:15: error: 'ExecuteIfSafe' marked 'override' but does not override any member functions
+[2018.12.23-20.24.51:725][350]CompilerResultsLog:         virtual bool ExecuteIfSafe(ParamTypes... Params) const override final
+[2018.12.23-20.24.51:725][350]CompilerResultsLog:                      ^
+[2018.12.23-20.24.51:725][350]CompilerResultsLog: 3 errors generated.
+[2018.12.23-20.24.51:725][350]CompilerResultsLog: @progress 'Compiling C++ source code...' 25%
+[2018.12.23-20.24.51:725][350]CompilerResultsLog: @progress 'Compiling C++ source code...' 50%
+[2018.12.23-20.24.51:726][350]CompilerResultsLog: @progress 'Compiling C++ source code...' 75%
+[2018.12.23-20.24.51:726][350]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Binaries/Linux/libUE4Editor-EdenUniverseBuilder-3505.so
+[2018.12.23-20.24.51:726][350]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.12.23-20.24.51:726][350]CompilerResultsLog: Total build time: 60.73 seconds (Local executor: 0.00 seconds)
+[2018.12.23-20.24.51:727][350]LogMainFrame: MainFrame: Module compiling took 62.447 seconds
+[2018.12.23-20.24.51:727][350]Warning: HotReload failed, recompile failed
+[2018.12.23-20.29.02:501][104]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.29.02:502][104]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.29.02:502][104]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.29.02:517][104]Candidate modules for hot reload:
+[2018.12.23-20.29.02:517][104]  EdenUniverseBuilder
+[2018.12.23-20.29.02:517][104]Launching UnrealBuildTool... [/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=EdenUniverseBuilder,2230 Linux Development -TargetType=Editor -Project="../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -canskiplink "/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"  -progress]
+[2018.12.23-20.29.02:519][104]Warning: Starting HotReload took  0.0s.
+[2018.12.23-20.29.02:734][112]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.29.49:396][894]CompilerResultsLog: New page: Compilation - 24 Dec 2018 4:29:49 pm
+[2018.12.23-20.29.49:397][894]CompilerResultsLog: 
+[2018.12.23-20.29.49:397][894]CompilerResultsLog: Running Mono...
+[2018.12.23-20.29.49:397][894]CompilerResultsLog: 
+[2018.12.23-20.29.49:397][894]CompilerResultsLog: Fixing inconsistent case in filenames.
+[2018.12.23-20.29.49:398][894]CompilerResultsLog: /opt/unreal-engine/Engine /opt/unreal-engine/Engine/Binaries/Linux
+[2018.12.23-20.29.49:398][894]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.23-20.29.49:398][894]CompilerResultsLog: @progress push 5%
+[2018.12.23-20.29.49:398][894]CompilerResultsLog: @progress 'Generating code...' 0%
+[2018.12.23-20.29.49:399][894]CompilerResultsLog: @progress 'Generating code...' 67%
+[2018.12.23-20.29.49:399][894]CompilerResultsLog: @progress 'Generating code...' 100%
+[2018.12.23-20.29.49:399][894]CompilerResultsLog: @progress pop
+[2018.12.23-20.29.49:400][894]CompilerResultsLog: Performing 2 actions (4 in parallel)
+[2018.12.23-20.29.49:400][894]CompilerResultsLog: @progress 'Compiling C++ source code...' 0%
+[2018.12.23-20.29.49:401][894]CompilerResultsLog: [1/2] Compile WorldFileManager.cpp
+[2018.12.23-20.29.49:401][894]CompilerResultsLog: @progress 'Compiling C++ source code...' 33%
+[2018.12.23-20.29.49:402][894]CompilerResultsLog: [2/2] Link (ld) libUE4Editor-EdenUniverseBuilder-2230.so
+[2018.12.23-20.29.49:403][894]CompilerResultsLog: @progress 'Compiling C++ source code...' 67%
+[2018.12.23-20.29.49:404][894]CompilerResultsLog: Total build time: 45.31 seconds (Local executor: 42.67 seconds)
+[2018.12.23-20.29.49:404][894]LogMainFrame: MainFrame: Module compiling took 46.904 seconds
+[2018.12.23-20.29.49:608][894]LogClass: Could not find existing class WorldFileManager in package /Script/EdenUniverseBuilder for HotReload, assuming new class
+[2018.12.23-20.29.49:608][894]LogClass: EDownloadResult HotReload.
+[2018.12.23-20.29.49:608][894]LogClass: BlockData HotReload.
+[2018.12.23-20.29.49:622][894]LogHotReload: Re-instancing WorldFileManager after hot-reload.
+[2018.12.23-20.29.49:751][894]LogContentBrowser: Native class hierarchy updated for 'EdenUniverseBuilder' in 0.0004 seconds. Added 6 classes and 2 folders.
+[2018.12.23-20.29.49:755][894]Display: HotReload successful (1 functions remapped  1 scriptstructs remapped)
+[2018.12.23-20.29.50:202][894]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 2626 classes and 587 folders.
+[2018.12.23-20.29.50:209][894]Display: HotReload took 47.7s.
+[2018.12.23-20.29.59:405][337]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.23-20.29.59:443][337]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.12.23-20.29.59:444][337]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.23-20.29.59:444][337]PIE: New page: PIE session: FirstPersonExampleMap (24 Dec 2018 4:29:59 pm)
+[2018.12.23-20.29.59:446][337]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2018.12.23-20.29.59:483][337]LogPlayLevel: PIE: StaticDuplicateObject took: (0.036376s)
+[2018.12.23-20.29.59:484][337]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2018.12.23-20.29.59:485][337]LogPlayLevel: PIE: World Init took: (0.001521s)
+[2018.12.23-20.29.59:485][337]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.039604s)
+[2018.12.23-20.29.59:558][337]LogLoad: Game class is 'PlayMode_C'
+[2018.12.23-20.29.59:561][337]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2018.12.24-06.29.59
+[2018.12.23-20.29.59:562][337]LogWorld: Bringing up level for play took: 0.003591
+[2018.12.23-20.29.59:744][337]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2018.12.23-20.29.59:746][337]LogTemp: We are online. Starting world convertion...
+[2018.12.23-20.29.59:746][337]LogTemp: Loading file: 栯浯⽥潪敳桰桴敥杮湩敥⽲潷歲灳捡⽥摥湥牰橯捥⽴摅湥湕癩牥敳畂汩敤⽲潃瑮湥⽴潗汲獤琯獥坴牯摬攮敤n楡r敢牤捯k瑳湯e楤瑲猀湡d敬癡獥琀畲歮眀潯d牧獡s乔T敷摥s汦睯牥s牢捩k汳瑡e捩e慷汬慰数r潢湵祣氀摡敤r汣畯d慷整r敦据e癩y慬慶猀楨杮敬s汧獡s楦敲潷歲s牴湡捳扵e楬桧t敮晷潬敷r瑳敥lStarting test [%s] Url=[%s]
+[2018.12.23-20.29.59:762][337]LogSlate: Took 0.015465 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2018.12.23-20.29.59:779][337]LogSlate: Took 0.012228 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2018.12.23-20.29.59:785][337]LogTemp: World file is vaid. All systems are go for launch.
+[2018.12.23-20.29.59:785][337]LogTemp: Fetching world name...
+[2018.12.23-20.29.59:786][337]LogTemp: World name is: JTE's beta 2 test world????????g￨;????XTUMX
+[2018.12.23-20.29.59:786][337]LogTemp: Fetching player position...
+[2018.12.23-20.29.59:787][337]LogTemp: Player position x: 406.000000
+[2018.12.23-20.29.59:787][337]LogTemp: Player position y: 314.000000
+[2018.12.23-20.29.59:787][337]LogTemp: Player position z: 321.000000
+[2018.12.23-20.29.59:787][337]LogTemp: Chunks size: 5
+[2018.12.23-20.29.59:787][337]LogTemp: Loading mesh 0... 
+[2018.12.23-20.29.59:788][337]LogTemp: Converting chunk 192...
+[2018.12.23-20.29.59:806][337]LogTemp: Loading mesh 1... 
+[2018.12.23-20.29.59:807][337]LogTemp: Converting chunk 65728...
+[2018.12.23-20.29.59:827][337]LogTemp: Loading mesh 2... 
+[2018.12.23-20.29.59:827][337]LogTemp: Converting chunk 98496...
+[2018.12.23-20.29.59:848][337]LogTemp: Loading mesh 3... 
+[2018.12.23-20.29.59:849][337]LogTemp: Converting chunk 131264...
+[2018.12.23-20.29.59:870][337]LogTemp: Done!
+[2018.12.23-20.29.59:870][337]LogTemp: 4 chunks loaded!
+[2018.12.23-20.29.59:870][337]LogTemp: CHUNK X: 57
+[2018.12.23-20.29.59:870][337]LogTemp: CHUNK Y: 16
+[2018.12.23-20.29.59:871][337]LogTemp:  
+[2018.12.23-20.29.59:871][337]LogTemp: CHUNK X: 58
+[2018.12.23-20.29.59:871][337]LogTemp: CHUNK Y: 16
+[2018.12.23-20.29.59:871][337]LogTemp:  
+[2018.12.23-20.29.59:871][337]LogTemp: CHUNK X: 59
+[2018.12.23-20.29.59:871][337]LogTemp: CHUNK Y: 15
+[2018.12.23-20.29.59:871][337]LogTemp:  
+[2018.12.23-20.29.59:871][337]LogTemp: CHUNK X: 59
+[2018.12.23-20.29.59:871][337]LogTemp: CHUNK Y: 16
+[2018.12.23-20.29.59:871][337]LogTemp:  
+[2018.12.23-20.29.59:871][337]LogTemp: Creating chunk mesh...
+[2018.12.23-20.30.00:367][337]LogTemp: Warning: Loaded 33833 blocks!
+[2018.12.23-20.30.00:379][337]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -55.62
+[2018.12.23-20.30.00:380][337]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.12.23-20.30.03:277][392]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.12.23-20.30.03:280][392]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.23-20.30.03:412][392]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.23-20.30.03:413][392]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2018.12.23-20.30.03:458][392]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.23-20.30.03:478][393]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2018.12.23-20.30.04:297][433]LogSlate: Took 0.000122 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.23-20.30.05:862][510]LogLinux: Scale at X=0.000000, Y=0.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.30.05:863][510]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.30.05:868][510]LogLinux: Scale at X=960.000000, Y=540.000000: 2.000000 (monitor=#0, HDPI=174.171432 (horz scale: 1.814286), VDPI=171.449997 (vert scale: 1.785937))
+[2018.12.23-20.30.05:988][510]LogLinux: Setting swap interval to 'Immediate'
+[2018.12.23-20.30.06:007][510]LogAIModule: Creating AISystem for world MainMenu
+[2018.12.23-20.30.06:015][510]LogAssetEditorManager: Opening Asset editor for World /Game/MainMenu.MainMenu
+[2018.12.23-20.30.06:056][510]Cmd: MAP LOAD FILE="../../../../../home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.12.23-20.30.06:056][510]LightingResults: New page: Lighting Build
+[2018.12.23-20.30.06:057][510]LoadErrors: New page: Loading map: MainMenu.umap
+[2018.12.23-20.30.06:058][510]MapCheck: New page: Map Check
+[2018.12.23-20.30.06:058][510]LightingResults: New page: Lighting Build
+[2018.12.23-20.30.06:105][510]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.12.23-20.30.06:173][510]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.12.23-20.30.06:174][510]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.099ms to complete.
+[2018.12.23-20.30.06:174][510]LogFileHelpers: Loading map 'MainMenu' took 0.119
+[2018.12.23-20.30.09:052][661]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.23-20.30.09:088][661]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.23-20.30.09:089][661]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.23-20.30.09:089][661]PIE: New page: PIE session: MainMenu (24 Dec 2018 4:30:09 pm)
+[2018.12.23-20.30.09:089][661]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MainMenu
+[2018.12.23-20.30.09:092][661]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001509s)
+[2018.12.23-20.30.09:092][661]LogAIModule: Creating AISystem for world MainMenu
+[2018.12.23-20.30.09:093][661]LogPlayLevel: PIE: World Init took: (0.000923s)
+[2018.12.23-20.30.09:093][661]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MainMenu.MainMenu to /Game/UEDPIE_0_MainMenu.MainMenu (0.003795s)
+[2018.12.23-20.30.09:150][661]LogLoad: Game class is 'MainMenuMode_C'
+[2018.12.23-20.30.09:151][661]LogWorld: Bringing World /Game/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2018.12.24-06.30.09
+[2018.12.23-20.30.09:152][661]LogWorld: Bringing up level for play took: 0.000726
+[2018.12.23-20.30.09:157][661]PIE: Play in editor start time for /Game/UEDPIE_0_MainMenu -46.843
+[2018.12.23-20.30.09:157][661]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.23-20.30.12:007][835]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.23-20.30.12:009][835]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.23-20.30.12:029][835]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.23-20.30.12:030][835]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.23-20.30.12:098][835]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.23-20.30.12:113][836]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2018.12.23-20.31.17:612][175]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.23-20.31.17:648][175]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.23-20.31.17:649][175]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.23-20.31.17:650][175]PIE: New page: PIE session: MainMenu (24 Dec 2018 4:31:17 pm)
+[2018.12.23-20.31.17:650][175]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_MainMenu
+[2018.12.23-20.31.17:653][175]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002506s)
+[2018.12.23-20.31.17:654][175]LogAIModule: Creating AISystem for world MainMenu
+[2018.12.23-20.31.17:655][175]LogPlayLevel: PIE: World Init took: (0.001328s)
+[2018.12.23-20.31.17:655][175]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MainMenu.MainMenu to /Game/UEDPIE_0_MainMenu.MainMenu (0.004887s)
+[2018.12.23-20.31.17:720][175]LogLoad: Game class is 'MainMenuMode_C'
+[2018.12.23-20.31.17:721][175]LogWorld: Bringing World /Game/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2018.12.24-06.31.17
+[2018.12.23-20.31.17:721][175]LogWorld: Bringing up level for play took: 0.000785
+[2018.12.23-20.31.17:726][175]PIE: Play in editor start time for /Game/UEDPIE_0_MainMenu 21.726
+[2018.12.23-20.31.17:726][175]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/MainMenu.MainMenu:PersistentLevel.MainMenu'

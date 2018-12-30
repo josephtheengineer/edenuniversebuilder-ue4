@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="BlankProgram">
+  <File Name="/opt/unreal-engine/Engine/Source/Programs/BlankProgram/BlankProgram.Target.cs" />
+  <File Name="/opt/unreal-engine/Engine/Source/Programs/BlankProgram/BlankProgram.Build.cs" />
+  <VirtualDirectory Name="Private">
+    <File Name="/opt/unreal-engine/Engine/Source/Programs/BlankProgram/Private/BlankProgram.cpp" />
+    <File Name="/opt/unreal-engine/Engine/Source/Programs/BlankProgram/Private/BlankProgram.h" />
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram-Linux-Debug" />
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BlankProgram Linux Debug -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BlankProgram Linux Debug -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BlankProgram Linux Debug -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe BlankProgram Linux Debug -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram-Linux-DebugGame" />
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram-Linux-DebugGame" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BlankProgram Linux DebugGame -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BlankProgram Linux DebugGame -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BlankProgram Linux DebugGame -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe BlankProgram Linux DebugGame -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram" />
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BlankProgram Linux Development -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BlankProgram Linux Development -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BlankProgram Linux Development -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe BlankProgram Linux Development -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram-Linux-Shipping" />
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BlankProgram Linux Shipping -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BlankProgram Linux Shipping -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BlankProgram Linux Shipping -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe BlankProgram Linux Shipping -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram-Linux-Test" />
+      <General WorkingDirectory="/opt/unreal-engine/Engine/Binaries/Linux" Command="./BlankProgram-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/opt/unreal-engine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe BlankProgram Linux Test -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe BlankProgram Linux Test -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe BlankProgram Linux Test -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject" -clean
+mono UnrealBuildTool.exe BlankProgram Linux Test -project="/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/EdenUniverseBuilder.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>

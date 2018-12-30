@@ -2,6 +2,7 @@
 #include "VoxelIndexer.h"
 #include "EdenWorldDecoder.h"
 #include "EdenGameInstance.h"
+#include "WorldFileManager.h"
 
 //==============================================================================
 // Constructor
@@ -119,6 +120,8 @@ AVoxelTerrainActor::AVoxelTerrainActor()
 //==============================================================================
 void AVoxelTerrainActor::BeginPlay()
 {
+        CreateChunk(0, 0, 0, 0); // Debug chunk
+
         UEdenGameInstance* GameInstance = Cast<UEdenGameInstance>(GetGameInstance());
         if(GameInstance)
         {
@@ -144,16 +147,13 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
 
         Indexer.RegisterChunks(ChunkMetadata);
 
-        UE_LOG(LogTemp, Warning, TEXT("ChunkLocations: %d"), ChunkLocations.Num());
         UE_LOG(LogTemp, Warning, TEXT("ChunkMetadata: %d"), ChunkMetadata.Num());
+
         int LoadedBlocks = 0;
+        int Status = 0;
 
         for (int i = 0; i < ChunkLocations.Num(); i++)
         {
-                UE_LOG(LogTemp, Warning, TEXT("=== Address: %d ==="), ChunkMetadata[i].Address);
-                UE_LOG(LogTemp, Warning, TEXT("Position X: %d"), ChunkMetadata[i].X);
-                UE_LOG(LogTemp, Warning, TEXT("Position Y: %d"), ChunkMetadata[i].Y);
-
                 float pX = 0.f;
                 float pY = 0.f;
                 float pZ = 0.f;
@@ -162,23 +162,45 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                 float y = (ChunkMetadata[i].Y*16) * 100;
                 float z = 0.0;
 
+                UE_LOG(LogTemp, Warning, TEXT("=== Address: %d ==="), ChunkMetadata[i].Address);
+                UE_LOG(LogTemp, Warning, TEXT("Position X: %f"), x);
+                UE_LOG(LogTemp, Warning, TEXT("Position Y: %f"), y);
+
                 // Get distance from player
                 float Distance = sqrtf( powf( (x-pX), 2.f )  +  powf( (y-pY), 2.f )  +  powf( (z-pZ), 2.f ) );
 
-                UE_LOG(LogTemp, Warning, TEXT("Distance is: %f"), Distance);
+                UE_LOG(LogTemp, Warning, TEXT("Distance: %f"), Distance);
 
                 if (Distance < RenderDistance)
                 {
-                        UE_LOG(LogTemp, Warning, TEXT("^ Chunk is in bounds!"));
+                        if (Status > 10)
+                        {
+                                UE_LOG(LogTemp, Warning, TEXT("Loading... %d"), i);
+                                Status = 0;
+                        }
+
                         TArray<EdenChunkData> ChunkData = WorldDecoder.GetChunkData(ChunkMetadata[i].Address);
 
                         CreateChunk(ChunkMetadata[i].Address, x, y, z);
 
                         for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
                         {
-                                CreateBlock(ChunkData[Blocks].Id, ChunkMetadata[i].Address, ChunkData[Blocks].Position.X, ChunkData[Blocks].Position.Y, ChunkData[Blocks].Position.Z);
-                                LoadedBlocks++;
+                                Indexer.RegisterBlock(ChunkData[Blocks].Id, ChunkData[Blocks].Position.X, ChunkData[Blocks].Position.Y, ChunkData[Blocks].Position.Z, ChunkMetadata[i].Address, 0);
                         }
+
+                        for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
+                        {
+                                float X = ChunkData[Blocks].Position.X;
+                                float Y = ChunkData[Blocks].Position.Y;
+                                float Z = ChunkData[Blocks].Position.Z;
+
+                                if (!(Indexer.CheckBlock(X, Y+100, Z) && Indexer.CheckBlock(X, Y-100, Z) && Indexer.CheckBlock(X+100,Y, Z) && Indexer.CheckBlock(X-100, Y, Z) && Indexer.CheckBlock(X, Y, Z+100) && Indexer.CheckBlock(X, Y, Z-100)))
+                                {
+                                        CreateBlock(ChunkData[Blocks].Id, ChunkMetadata[i].Address, X, Y, Z);
+                                        LoadedBlocks++;
+                                }
+                        }
+                        Status++;
                 }
         }
         UE_LOG(LogTemp, Warning, TEXT("Done! Loaded %d blocks!"), LoadedBlocks);
@@ -293,12 +315,12 @@ void AVoxelTerrainActor::CreateChunk(int chunk, float x, float y, float z)
         {  79, "pT portal top", MAT_Rock,    	    MAT_Rock,            MAT_Rock,             MAT_Rock,            MAT_Rock,           MAT_Rock          }
         };
 
-        UE_LOG(LogTemp,Log,TEXT("Creating chunk mesh..."));
+        //UE_LOG(LogTemp,Log,TEXT("Creating chunk mesh..."));
         FTransform newT = GetTransform();
         newT.SetLocation(FVector(0,0,0));
 
         for (int BlockId = 1; BlockId <= 79; BlockId++){
-                UE_LOG(LogTemp,Log,TEXT("Creating mesh %d"), BlockId);
+                //UE_LOG(LogTemp,Log,TEXT("Creating mesh %d"), BlockId);
                 MeshArray[BlockId][chunk] = NewObject<UInstancedStaticMeshComponent>(this);
                 MeshArray[BlockId][chunk]->RegisterComponent();
                 MeshArray[BlockId][chunk]->SetStaticMesh(Cube);
@@ -314,7 +336,7 @@ void AVoxelTerrainActor::CreateChunk(int chunk, float x, float y, float z)
                 this->AddInstanceComponent(MeshArray[BlockId][chunk]);
         }
         MeshArray[1][chunk]->AddInstance(newT);
-        UE_LOG(LogTemp,Log,TEXT("Added instance"));
+        //UE_LOG(LogTemp,Log,TEXT("Added instance"));
         //VoxelIndexer Indexer;
         //Indexer.RegisterChunk(chunk, x, y, z);
 }

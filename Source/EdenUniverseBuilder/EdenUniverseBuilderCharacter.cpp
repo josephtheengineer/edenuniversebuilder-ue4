@@ -11,7 +11,7 @@
 #include "Kismet/GameplayStatics.h"
 
 #include "DrawDebugHelpers.h"
-#include "VoxelTerrainActor.h"
+#include "EdenGameInstance.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -36,6 +36,11 @@ AEdenUniverseBuilderCharacter::AEdenUniverseBuilderCharacter()
 
 void AEdenUniverseBuilderCharacter::BeginPlay()
 {
+        FVector Location = FVector(0.0f, 0.0f, 0.0f);
+        FRotator Rotation = FRotator(0.0f, 0.0f, 0.0f);
+        FActorSpawnParameters SpawnInfo;
+        TerrainActor = GetWorld()->SpawnActor<AVoxelTerrainActor>(Location, Rotation, SpawnInfo);
+
 	// Call the base class
 	Super::BeginPlay();
 }
@@ -206,24 +211,56 @@ void AEdenUniverseBuilderCharacter::Raycast()
 
                 if(HitResult->GetActor() != NULL)
                 {
-                        int index = HitResult->Item;
-                        FVector location = HitResult->Location;
-			UE_LOG(LogTemp,Warning,TEXT("Hit result: %d"), index);
+                        int Index = HitResult->Item;
+                        //FVector BlockLocation = HitResult->GetActor()->GetActorLocation();
+                        FTransform BlockLocation;
+                        FVector Normal = HitResult->ImpactNormal;
 
-                        UE_LOG(LogTemp,Warning,TEXT("X: %f"), location.X);
-                        UE_LOG(LogTemp,Warning,TEXT("Y: %f"), location.Y);
-                        UE_LOG(LogTemp,Warning,TEXT("Z: %f"), location.Z);
+                        TArray<UActorComponent*> StaticMeshComps;
+                        StaticMeshComps = HitResult->GetActor()->GetComponentsByClass(UInstancedStaticMeshComponent::StaticClass());//->GetInstanceTransform(Index);
 
-                        //AVoxelTerrainActor TerrainActor;
-                        FVector Location(0.0f, 0.0f, 0.0f);
-                        FRotator Rotation(0.0f, 0.0f, 0.0f);
-                        FActorSpawnParameters SpawnInfo;
-                        AVoxelTerrainActor* TerrainActor = GetWorld()->SpawnActor<AVoxelTerrainActor>(Location, Rotation, SpawnInfo);
-                        TerrainActor->CreateBlock(13, 0, location.X, location.Y, location.Z);
-                        //AVoxelTerrainActor TerrainActor = SpawnActor<AActor>(AVoxelTerrainActor, this, Instigator);
-                        //TerrainActor.RemoveBlock(8, 0, index);
+                        for (int y = 0; y < StaticMeshComps.Num(); y++)
+                        {
+                                UInstancedStaticMeshComponent* MeshComp = Cast<UInstancedStaticMeshComponent>(StaticMeshComps[y]);
 
-                        //HitResult->GetActor()->Destroy();
+                                MeshComp->GetInstanceTransform(Index, BlockLocation);
+
+                                UE_LOG(LogTemp,Warning,TEXT("Hit result: %d"), Index);
+                                UE_LOG(LogTemp,Warning,TEXT("X: %f"), BlockLocation.GetTranslation().X);
+                                UE_LOG(LogTemp,Warning,TEXT("Y: %f"), BlockLocation.GetTranslation().Y);
+                                UE_LOG(LogTemp,Warning,TEXT("Z: %f"), BlockLocation.GetTranslation().Z);
+
+                                UE_LOG(LogTemp,Warning,TEXT("Normal of hit:"));
+                                UE_LOG(LogTemp,Warning,TEXT("X: %f"), Normal.X);
+                                UE_LOG(LogTemp,Warning,TEXT("Y: %f"), Normal.Y);
+                                UE_LOG(LogTemp,Warning,TEXT("Z: %f"), Normal.Z);
+                        }
+
+                        UEdenGameInstance* GameInstance = Cast<UEdenGameInstance>(GetGameInstance());
+                        if(GameInstance)
+                        {
+                                switch(GameInstance->Tool) {
+                                        case 1 : // Burn
+                                                break;
+
+                                        case 2 : // Pickaxe
+                                                TerrainActor->RemoveBlock(8, 0, Index);
+                                                break;
+
+                                        case 3 : // Build
+                                                TerrainActor->CreateBlock(13, 0,
+                                                        BlockLocation.GetTranslation().X + (Normal.X * 100),
+                                                        BlockLocation.GetTranslation().Y + (Normal.Y * 100),
+                                                        BlockLocation.GetTranslation().Z + (Normal.Z * 100));
+                                                break;
+
+                                        case 4 : // Paint
+                                                break;
+
+                                        default: // None
+                                                break;
+                                }
+                        }
                 }
         }
 }
