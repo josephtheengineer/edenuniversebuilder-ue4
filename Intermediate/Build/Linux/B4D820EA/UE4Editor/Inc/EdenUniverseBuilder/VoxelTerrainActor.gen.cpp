@@ -273,6 +273,15 @@ static struct FScriptStruct_EdenUniverseBuilder_StaticRegisterNativesFBlockData
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MAT_Bedrock;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DisplayChunkPositions_MetaData[];
+#endif
+		static void NewProp_DisplayChunkPositions_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_DisplayChunkPositions;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ChunkLimit_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ChunkLimit;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_heightLimit_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_heightLimit;
@@ -546,6 +555,24 @@ static struct FScriptStruct_EdenUniverseBuilder_StaticRegisterNativesFBlockData
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_MAT_Bedrock = { UE4CodeGen_Private::EPropertyClass::Object, "MAT_Bedrock", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AVoxelTerrainActor, MAT_Bedrock), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_MAT_Bedrock_MetaData, ARRAY_COUNT(Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_MAT_Bedrock_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_DisplayChunkPositions_MetaData[] = {
+		{ "Category", "VoxelTerrainActor" },
+		{ "ModuleRelativePath", "VoxelTerrainActor.h" },
+	};
+#endif
+	void Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_DisplayChunkPositions_SetBit(void* Obj)
+	{
+		((AVoxelTerrainActor*)Obj)->DisplayChunkPositions = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_DisplayChunkPositions = { UE4CodeGen_Private::EPropertyClass::Bool, "DisplayChunkPositions", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AVoxelTerrainActor), &Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_DisplayChunkPositions_SetBit, METADATA_PARAMS(Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_DisplayChunkPositions_MetaData, ARRAY_COUNT(Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_DisplayChunkPositions_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_ChunkLimit_MetaData[] = {
+		{ "Category", "VoxelTerrainActor" },
+		{ "ModuleRelativePath", "VoxelTerrainActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_ChunkLimit = { UE4CodeGen_Private::EPropertyClass::Int, "ChunkLimit", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000001, 1, nullptr, STRUCT_OFFSET(AVoxelTerrainActor, ChunkLimit), METADATA_PARAMS(Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_ChunkLimit_MetaData, ARRAY_COUNT(Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_ChunkLimit_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_heightLimit_MetaData[] = {
 		{ "Category", "VoxelTerrainActor" },
 		{ "ModuleRelativePath", "VoxelTerrainActor.h" },
@@ -610,6 +637,8 @@ static struct FScriptStruct_EdenUniverseBuilder_StaticRegisterNativesFBlockData
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_MAT_Brick,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_MAT_BlockTNTSide,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_MAT_Bedrock,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_DisplayChunkPositions,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_ChunkLimit,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_heightLimit,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_Cube,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AVoxelTerrainActor_Statics::NewProp_TerrainMaterials,
@@ -639,7 +668,7 @@ static struct FScriptStruct_EdenUniverseBuilder_StaticRegisterNativesFBlockData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AVoxelTerrainActor, 2951465735);
+	IMPLEMENT_CLASS(AVoxelTerrainActor, 2853664643);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AVoxelTerrainActor(Z_Construct_UClass_AVoxelTerrainActor, &AVoxelTerrainActor::StaticClass, TEXT("/Script/EdenUniverseBuilder"), TEXT("AVoxelTerrainActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AVoxelTerrainActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,0 +1,14 @@
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/FoliageInstancedStaticMeshComponent.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/FoliageStatistics.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/FoliageType.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/FoliageTypeObject.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/FoliageType_InstancedStaticMesh.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/InstancedFoliageActor.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/InteractiveFoliageActor.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/ProceduralFoliageBlockingVolume.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/ProceduralFoliageComponent.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/ProceduralFoliageInstance.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/ProceduralFoliageSpawner.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/ProceduralFoliageTile.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Public/ProceduralFoliageVolume.h
+/opt/unreal-engine/Engine/Source/Runtime/Foliage/Private/InteractiveFoliageComponent.h

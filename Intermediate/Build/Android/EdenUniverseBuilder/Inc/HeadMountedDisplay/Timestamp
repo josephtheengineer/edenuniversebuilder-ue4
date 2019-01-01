@@ -1,0 +1,8 @@
+/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Public/HeadMountedDisplayFunctionLibrary.h
+/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Public/HeadMountedDisplayTypes.h
+/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Public/IIdentifiableXRDevice.h
+/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Public/IMotionController.h
+/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Public/MotionControllerComponent.h
+/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Public/MotionTrackedDeviceFunctionLibrary.h
+/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Public/VRNotificationsComponent.h
+/opt/unreal-engine/Engine/Source/Runtime/HeadMountedDisplay/Public/XRAssetFunctionLibrary.h

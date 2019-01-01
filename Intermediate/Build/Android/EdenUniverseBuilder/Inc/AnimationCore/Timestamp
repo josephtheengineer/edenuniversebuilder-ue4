@@ -1,0 +1,5 @@
+/opt/unreal-engine/Engine/Source/Runtime/AnimationCore/Public/CommonAnimTypes.h
+/opt/unreal-engine/Engine/Source/Runtime/AnimationCore/Public/Constraint.h
+/opt/unreal-engine/Engine/Source/Runtime/AnimationCore/Public/EulerTransform.h
+/opt/unreal-engine/Engine/Source/Runtime/AnimationCore/Public/NodeChain.h
+/opt/unreal-engine/Engine/Source/Runtime/AnimationCore/Public/NodeHierarchy.h

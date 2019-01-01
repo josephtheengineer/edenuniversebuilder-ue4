@@ -1,0 +1,6 @@
+/opt/unreal-engine/Engine/Source/Runtime/AssetRegistry/Public/ARFilter.h
+/opt/unreal-engine/Engine/Source/Runtime/AssetRegistry/Public/AssetBundleData.h
+/opt/unreal-engine/Engine/Source/Runtime/AssetRegistry/Public/AssetData.h
+/opt/unreal-engine/Engine/Source/Runtime/AssetRegistry/Public/AssetRegistryHelpers.h
+/opt/unreal-engine/Engine/Source/Runtime/AssetRegistry/Public/IAssetRegistry.h
+/opt/unreal-engine/Engine/Source/Runtime/AssetRegistry/Private/AssetRegistry.h

@@ -1,0 +1,11 @@
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/Misc/MediaBlueprintFunctionLibrary.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/BaseMediaSource.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/FileMediaSource.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/MediaPlayer.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/MediaPlaylist.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/MediaSoundComponent.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/MediaSource.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/MediaTexture.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/PlatformMediaSource.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/StreamMediaSource.h
+/opt/unreal-engine/Engine/Source/Runtime/MediaAssets/Public/TimeSynchronizableMediaSource.h

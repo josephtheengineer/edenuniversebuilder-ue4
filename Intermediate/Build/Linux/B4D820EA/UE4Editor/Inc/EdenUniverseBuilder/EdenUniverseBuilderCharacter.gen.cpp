@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeEdenUniverseBuilderCharacter() {}
 	EDENUNIVERSEBUILDER_API UClass* Z_Construct_UClass_AEdenUniverseBuilderCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_EdenUniverseBuilder();
+	EDENUNIVERSEBUILDER_API UClass* Z_Construct_UClass_AVoxelTerrainActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	EDENUNIVERSEBUILDER_API UClass* Z_Construct_UClass_AEdenUniverseBuilderProjectile_NoRegister();
@@ -39,6 +40,10 @@ void EmptyLinkFunctionForGeneratedCodeEdenUniverseBuilderCharacter() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TerrainActor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TerrainActor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FireAnimation_MetaData[];
 #endif
@@ -102,6 +107,13 @@ void EmptyLinkFunctionForGeneratedCodeEdenUniverseBuilderCharacter() {}
 		{ "ModuleRelativePath", "EdenUniverseBuilderCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_TerrainActor_MetaData[] = {
+		{ "Category", "Eden" },
+		{ "ModuleRelativePath", "EdenUniverseBuilderCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_TerrainActor = { UE4CodeGen_Private::EPropertyClass::Object, "TerrainActor", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0040000000000001, 1, nullptr, STRUCT_OFFSET(AEdenUniverseBuilderCharacter, TerrainActor), Z_Construct_UClass_AVoxelTerrainActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_TerrainActor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_TerrainActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_FireAnimation_MetaData[] = {
 		{ "Category", "Gameplay" },
@@ -206,6 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeEdenUniverseBuilderCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_Mesh1P = { UE4CodeGen_Private::EPropertyClass::Object, "Mesh1P", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(AEdenUniverseBuilderCharacter, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_Mesh1P_MetaData, ARRAY_COUNT(Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_Mesh1P_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_TerrainActor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_FireAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_FireSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEdenUniverseBuilderCharacter_Statics::NewProp_ProjectileClass,
@@ -242,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeEdenUniverseBuilderCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEdenUniverseBuilderCharacter, 990912973);
+	IMPLEMENT_CLASS(AEdenUniverseBuilderCharacter, 886529075);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AEdenUniverseBuilderCharacter(Z_Construct_UClass_AEdenUniverseBuilderCharacter, &AEdenUniverseBuilderCharacter::StaticClass, TEXT("/Script/EdenUniverseBuilder"), TEXT("AEdenUniverseBuilderCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AEdenUniverseBuilderCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

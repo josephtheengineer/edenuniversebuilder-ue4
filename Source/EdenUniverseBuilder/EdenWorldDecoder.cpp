@@ -66,6 +66,21 @@ std::vector <int> EdenWorldDecoder::OpenFile(const char *filename)
 	return worldData;
 }
 
+std::vector <int> EdenWorldDecoder::WriteFile(const char *Filename)
+{
+        std::vector <int> Data;
+/*
+        unsigned char X;
+	std::ofstream Input(Filename, std::ios::binary);
+        Input >> std::noskipws;
+        while (Input >> X)
+        {
+                // We'll store the hex symbol in decimal format
+                Data.push_back((int)X);
+        }*/
+        return Data;
+}
+
 //==============================================================================
 // Returns the world name
 //==============================================================================
@@ -228,6 +243,51 @@ TMap<int, FVector2D> EdenWorldDecoder::GetChunkLocations()
 {
         return ChunkLocations;
 }
+/*
+void EdenWorldDecoder::SaveWorld(FString path)
+{
+        using (FileStream stream = new FileStream(path, FileMode.CreateNew))
+        {
+                //Write header
+                for (int i = 0; i < 192; i++)
+                {
+                    stream.WriteByte(otherBytes[i]);
+                }
+
+                //Write block data
+                for (int i = 0; i < ChunkLocations.Num(); i++)
+                {
+                        // Gets the staring point for placing blocks in the chunk
+                        int baseX = (ChunkLocations[chunk].X - worldAreaX) * 16;
+                        int baseY = (ChunkLocations[chunk].Y - worldAreaY) * 16;
+                        for (int baseHeight = 0; baseHeight < 4; baseHeight++)
+                        {
+                                for (int mode = 0; mode < 2; mode++) //0 = block types, 1 = colors
+                                {
+                                        for (int x = 0; x < 16; x++)
+                                        {
+                                                for (int y = 0; y < 16; y++)
+                                                {
+                                                        for (int z = 0; z < 16; z++)
+                                                        {
+                                                                if(mode == 0) //block type
+                                                                        stream.WriteByte((byte)this.Map[baseX + x, baseY + y, baseHeight * 16 + z, 0]);
+                                                                else //color
+                                                                        stream.WriteByte((byte)this.Map[baseX + x, baseY + y, baseHeight * 16 + z, 1]);
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
+
+                //Write creature bytes + chunk pointers
+                for (int i = 192; i < otherBytes.Length; i++)
+                {
+                    stream.WriteByte(otherBytes[i]);
+                }
+        }
+}*/
 
 //==============================================================================
 // Destructor

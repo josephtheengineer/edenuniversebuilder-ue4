@@ -63,7 +63,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEdenUniverseBuilderCharacter); \
 	FORCEINLINE static uint32 __PPO__FP_MuzzleLocation() { return STRUCT_OFFSET(AEdenUniverseBuilderCharacter, FP_MuzzleLocation); } \
 	FORCEINLINE static uint32 __PPO__VR_Gun() { return STRUCT_OFFSET(AEdenUniverseBuilderCharacter, VR_Gun); } \
 	FORCEINLINE static uint32 __PPO__VR_MuzzleLocation() { return STRUCT_OFFSET(AEdenUniverseBuilderCharacter, VR_MuzzleLocation); } \
-	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AEdenUniverseBuilderCharacter, FirstPersonCameraComponent); }
+	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AEdenUniverseBuilderCharacter, FirstPersonCameraComponent); } \
+	FORCEINLINE static uint32 __PPO__TerrainActor() { return STRUCT_OFFSET(AEdenUniverseBuilderCharacter, TerrainActor); }
 
 
 #define EdenUniverseBuilder_Source_EdenUniverseBuilder_EdenUniverseBuilderCharacter_h_12_PROLOG

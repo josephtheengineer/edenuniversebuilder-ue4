@@ -39,7 +39,7 @@ void AEdenUniverseBuilderCharacter::BeginPlay()
         FVector Location = FVector(0.0f, 0.0f, 0.0f);
         FRotator Rotation = FRotator(0.0f, 0.0f, 0.0f);
         FActorSpawnParameters SpawnInfo;
-        TerrainActor = GetWorld()->SpawnActor<AVoxelTerrainActor>(Location, Rotation, SpawnInfo);
+        //TerrainActor = GetWorld()->SpawnActor<AVoxelTerrainActor>(Location, Rotation, SpawnInfo);
 
 	// Call the base class
 	Super::BeginPlay();
@@ -221,19 +221,22 @@ void AEdenUniverseBuilderCharacter::Raycast()
 
                         for (int y = 0; y < StaticMeshComps.Num(); y++)
                         {
-                                UInstancedStaticMeshComponent* MeshComp = Cast<UInstancedStaticMeshComponent>(StaticMeshComps[y]);
+                                //if()
+                                //{
+                                        UInstancedStaticMeshComponent* MeshComp = Cast<UInstancedStaticMeshComponent>(StaticMeshComps[y]);
 
-                                MeshComp->GetInstanceTransform(Index, BlockLocation);
+                                        MeshComp->GetInstanceTransform(Index, BlockLocation);
 
-                                UE_LOG(LogTemp,Warning,TEXT("Hit result: %d"), Index);
-                                UE_LOG(LogTemp,Warning,TEXT("X: %f"), BlockLocation.GetTranslation().X);
-                                UE_LOG(LogTemp,Warning,TEXT("Y: %f"), BlockLocation.GetTranslation().Y);
-                                UE_LOG(LogTemp,Warning,TEXT("Z: %f"), BlockLocation.GetTranslation().Z);
+                                        UE_LOG(LogTemp,Warning,TEXT("Hit result: %d"), Index);
+                                        UE_LOG(LogTemp,Warning,TEXT("X: %f"), BlockLocation.GetTranslation().X);
+                                        UE_LOG(LogTemp,Warning,TEXT("Y: %f"), BlockLocation.GetTranslation().Y);
+                                        UE_LOG(LogTemp,Warning,TEXT("Z: %f"), BlockLocation.GetTranslation().Z);
 
-                                UE_LOG(LogTemp,Warning,TEXT("Normal of hit:"));
-                                UE_LOG(LogTemp,Warning,TEXT("X: %f"), Normal.X);
-                                UE_LOG(LogTemp,Warning,TEXT("Y: %f"), Normal.Y);
-                                UE_LOG(LogTemp,Warning,TEXT("Z: %f"), Normal.Z);
+                                        UE_LOG(LogTemp,Warning,TEXT("Normal of hit:"));
+                                        UE_LOG(LogTemp,Warning,TEXT("X: %f"), Normal.X);
+                                        UE_LOG(LogTemp,Warning,TEXT("Y: %f"), Normal.Y);
+                                        UE_LOG(LogTemp,Warning,TEXT("Z: %f"), Normal.Z);
+                                //}
                         }
 
                         UEdenGameInstance* GameInstance = Cast<UEdenGameInstance>(GetGameInstance());

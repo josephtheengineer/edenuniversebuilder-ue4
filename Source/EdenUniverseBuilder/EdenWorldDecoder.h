@@ -32,6 +32,7 @@ public:
 	//============================================================================
 	void LoadWorld(const char *path);
 	std::vector <int> OpenFile(const char *filename);
+        std::vector <int> WriteFile(const char *Filename);
 	FString GetWorldName(std::vector <int> bytes);
 	void GetWorldMetadata(std::vector <int> worldData, int chunkPointer);
 	TArray<EdenChunkData> GetChunkData(int chunk);

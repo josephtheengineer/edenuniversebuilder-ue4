@@ -142,5 +142,7 @@ public:
 private:
 
         void Raycast();
+
+        UPROPERTY(EditAnywhere, Category = Eden)
         AVoxelTerrainActor* TerrainActor;
 };

@@ -30,6 +30,9 @@ public:
 
         TMap<FVector, FVector> BlockLocationIndex;
 
+        UPROPERTY(EditAnywhere)
+        bool WorldLoaded = false;
+
 	//============================================================================
 	// Functions
 	//============================================================================

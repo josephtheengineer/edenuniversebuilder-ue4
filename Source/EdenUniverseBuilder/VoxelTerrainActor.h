@@ -65,6 +65,12 @@ public:
         UPROPERTY(EditAnywhere)
         int heightLimit;
 
+        UPROPERTY(EditAnywhere)
+        int ChunkLimit;
+
+        UPROPERTY(EditAnywhere)
+        bool DisplayChunkPositions = false;
+
         //============================================================================
         // Materials
         //============================================================================

@@ -139,71 +139,86 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
         EdenWorldDecoder WorldDecoder;
         VoxelIndexer Indexer;
 
-        WorldDecoder.LoadWorld(TCHAR_TO_UTF8(*Path));
-
-        TMap<int, FVector2D> ChunkLocations = WorldDecoder.GetChunkLocations();
-
-        TArray<EdenChunkMetadata> ChunkMetadata = WorldDecoder.GetChunkMetadata();
-
-        Indexer.RegisterChunks(ChunkMetadata);
-
-        UE_LOG(LogTemp, Warning, TEXT("ChunkMetadata: %d"), ChunkMetadata.Num());
-
-        int LoadedBlocks = 0;
-        int Status = 0;
-
-        for (int i = 0; i < ChunkLocations.Num(); i++)
+        if (Indexer.WorldLoaded == false)
         {
-                float pX = 0.f;
-                float pY = 0.f;
-                float pZ = 0.f;
+                WorldDecoder.LoadWorld(TCHAR_TO_UTF8(*Path));
 
-                float x = (ChunkMetadata[i].X*16) * 100;
-                float y = (ChunkMetadata[i].Y*16) * 100;
-                float z = 0.0;
+                TMap<int, FVector2D> ChunkLocations = WorldDecoder.GetChunkLocations();
 
-                UE_LOG(LogTemp, Warning, TEXT("=== Address: %d ==="), ChunkMetadata[i].Address);
-                UE_LOG(LogTemp, Warning, TEXT("Position X: %f"), x);
-                UE_LOG(LogTemp, Warning, TEXT("Position Y: %f"), y);
+                TArray<EdenChunkMetadata> ChunkMetadata = WorldDecoder.GetChunkMetadata();
 
-                // Get distance from player
-                float Distance = sqrtf( powf( (x-pX), 2.f )  +  powf( (y-pY), 2.f )  +  powf( (z-pZ), 2.f ) );
+                Indexer.RegisterChunks(ChunkMetadata);
 
-                UE_LOG(LogTemp, Warning, TEXT("Distance: %f"), Distance);
+                UE_LOG(LogTemp, Warning, TEXT("ChunkMetadata: %d"), ChunkMetadata.Num());
+                FVector PlayerPosition = WorldDecoder.GetPlayerPosition(WorldDecoder.OpenFile(TCHAR_TO_UTF8(*Path)));
+                //FVector PlayerPosition = FVector(0, 0, 0);
 
-                if (Distance < RenderDistance)
+                int LoadedBlocks = 0;
+                int LoadedChunks = 0;
+                int Status = 0;
+
+                for (int i = 0; i < ChunkLocations.Num(); i++)
                 {
-                        if (Status > 10)
+                        float pX = PlayerPosition.X * 100;
+                        float pY = PlayerPosition.Y * 100;
+                        float pZ = PlayerPosition.Z * 100;
+
+                        float x = (ChunkMetadata[i].X*16) * 100;
+                        float y = (ChunkMetadata[i].Y*16) * 100;
+                        float z = 0.0;
+
+                        if (DisplayChunkPositions)
                         {
-                                UE_LOG(LogTemp, Warning, TEXT("Loading... %d"), i);
-                                Status = 0;
+                                UE_LOG(LogTemp, Warning, TEXT("=== Address: %d ==="), ChunkMetadata[i].Address);
+                                UE_LOG(LogTemp, Warning, TEXT("Position X: %f"), x);
+                                UE_LOG(LogTemp, Warning, TEXT("Position Y: %f"), y);
                         }
 
-                        TArray<EdenChunkData> ChunkData = WorldDecoder.GetChunkData(ChunkMetadata[i].Address);
+                        // Get distance from player
+                        float Distance = sqrtf( powf( (x-pX), 2.f )  +  powf( (y-pY), 2.f )  +  powf( (z-pZ), 2.f ) );
 
-                        CreateChunk(ChunkMetadata[i].Address, x, y, z);
+                        UE_LOG(LogTemp, Warning, TEXT("Distance: %f"), Distance);
 
-                        for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
+                        if (Distance < RenderDistance)
                         {
-                                Indexer.RegisterBlock(ChunkData[Blocks].Id, ChunkData[Blocks].Position.X, ChunkData[Blocks].Position.Y, ChunkData[Blocks].Position.Z, ChunkMetadata[i].Address, 0);
-                        }
-
-                        for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
-                        {
-                                float X = ChunkData[Blocks].Position.X;
-                                float Y = ChunkData[Blocks].Position.Y;
-                                float Z = ChunkData[Blocks].Position.Z;
-
-                                if (!(Indexer.CheckBlock(X, Y+100, Z) && Indexer.CheckBlock(X, Y-100, Z) && Indexer.CheckBlock(X+100,Y, Z) && Indexer.CheckBlock(X-100, Y, Z) && Indexer.CheckBlock(X, Y, Z+100) && Indexer.CheckBlock(X, Y, Z-100)))
+                                if (Status > 10)
                                 {
-                                        CreateBlock(ChunkData[Blocks].Id, ChunkMetadata[i].Address, X, Y, Z);
-                                        LoadedBlocks++;
+                                        UE_LOG(LogTemp, Warning, TEXT("Loading... %d"), i);
+                                        Status = 0;
                                 }
+
+                                TArray<EdenChunkData> ChunkData = WorldDecoder.GetChunkData(ChunkMetadata[i].Address);
+
+                                CreateChunk(ChunkMetadata[i].Address, x, y, z);
+
+                                for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
+                                {
+                                        Indexer.RegisterBlock(ChunkData[Blocks].Id, ChunkData[Blocks].Position.X, ChunkData[Blocks].Position.Y, ChunkData[Blocks].Position.Z, ChunkMetadata[i].Address, 0);
+                                }
+
+                                for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
+                                {
+                                        float X = ChunkData[Blocks].Position.X;
+                                        float Y = ChunkData[Blocks].Position.Y;
+                                        float Z = ChunkData[Blocks].Position.Z;
+
+                                        if (!(Indexer.CheckBlock(X, Y+100, Z) && Indexer.CheckBlock(X, Y-100, Z) && Indexer.CheckBlock(X+100,Y, Z) && Indexer.CheckBlock(X-100, Y, Z) && Indexer.CheckBlock(X, Y, Z+100) && Indexer.CheckBlock(X, Y, Z-100)))
+                                        {
+                                                CreateBlock(ChunkData[Blocks].Id, ChunkMetadata[i].Address, X, Y, Z);
+                                                LoadedBlocks++;
+                                        }
+                                }
+                                Status++;
+                                LoadedChunks++;
                         }
-                        Status++;
+                        if (LoadedChunks > ChunkLimit)
+                        {
+                                return;
+                        }
                 }
+                UE_LOG(LogTemp, Warning, TEXT("Done! Loaded %d blocks!"), LoadedBlocks);
+                Indexer.WorldLoaded = true;
         }
-        UE_LOG(LogTemp, Warning, TEXT("Done! Loaded %d blocks!"), LoadedBlocks);
 }
 
 void AVoxelTerrainActor::GetBlockMaterials()
