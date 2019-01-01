@@ -1,5 +1,0 @@
-/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Classes/SubmixEffects/AudioMixerSubmixEffectDynamicsProcessor.h
-/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Classes/SubmixEffects/AudioMixerSubmixEffectEQ.h
-/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Classes/SubmixEffects/AudioMixerSubmixEffectReverb.h
-/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Public/Components/SynthComponent.h
-/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Public/AudioMixerBlueprintLibrary.h
