@@ -221,22 +221,21 @@ void AEdenUniverseBuilderCharacter::Raycast()
 
                         for (int y = 0; y < StaticMeshComps.Num(); y++)
                         {
-                                //if()
-                                //{
-                                        UInstancedStaticMeshComponent* MeshComp = Cast<UInstancedStaticMeshComponent>(StaticMeshComps[y]);
+                                UInstancedStaticMeshComponent* MeshComp = Cast<UInstancedStaticMeshComponent>(StaticMeshComps[y]);
 
-                                        MeshComp->GetInstanceTransform(Index, BlockLocation);
+                                MeshComp->GetInstanceTransform(Index, BlockLocation);
 
-                                        UE_LOG(LogTemp,Warning,TEXT("Hit result: %d"), Index);
-                                        UE_LOG(LogTemp,Warning,TEXT("X: %f"), BlockLocation.GetTranslation().X);
-                                        UE_LOG(LogTemp,Warning,TEXT("Y: %f"), BlockLocation.GetTranslation().Y);
-                                        UE_LOG(LogTemp,Warning,TEXT("Z: %f"), BlockLocation.GetTranslation().Z);
+				if (MeshComp->GetInstanceTransform(Index, BlockLocation)){
+					UE_LOG(LogTemp,Warning,TEXT("Hit result: %d"), Index);
+					UE_LOG(LogTemp,Warning,TEXT("X: %f"), BlockLocation.GetTranslation().X);
+					UE_LOG(LogTemp,Warning,TEXT("Y: %f"), BlockLocation.GetTranslation().Y);
+					UE_LOG(LogTemp,Warning,TEXT("Z: %f"), BlockLocation.GetTranslation().Z);
 
-                                        UE_LOG(LogTemp,Warning,TEXT("Normal of hit:"));
-                                        UE_LOG(LogTemp,Warning,TEXT("X: %f"), Normal.X);
-                                        UE_LOG(LogTemp,Warning,TEXT("Y: %f"), Normal.Y);
-                                        UE_LOG(LogTemp,Warning,TEXT("Z: %f"), Normal.Z);
-                                //}
+					UE_LOG(LogTemp,Warning,TEXT("Normal of hit:"));
+					UE_LOG(LogTemp,Warning,TEXT("X: %f"), Normal.X);
+					UE_LOG(LogTemp,Warning,TEXT("Y: %f"), Normal.Y);
+					UE_LOG(LogTemp,Warning,TEXT("Z: %f"), Normal.Z);
+				}
                         }
 
                         UEdenGameInstance* GameInstance = Cast<UEdenGameInstance>(GetGameInstance());
@@ -251,7 +250,7 @@ void AEdenUniverseBuilderCharacter::Raycast()
                                                 break;
 
                                         case 3 : // Build
-                                                TerrainActor->CreateBlock(13, 0,
+                                                TerrainActor->CreateBlock(GameInstance->BlockToPlace, 0,
                                                         BlockLocation.GetTranslation().X + (Normal.X * 100),
                                                         BlockLocation.GetTranslation().Y + (Normal.Y * 100),
                                                         BlockLocation.GetTranslation().Z + (Normal.Z * 100));

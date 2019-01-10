@@ -9,109 +9,109 @@
 //==============================================================================
 AVoxelTerrainActor::AVoxelTerrainActor()
 {
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_BedrockAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Bedrock.MAT_Bedrock'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_BedrockAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Bedrock.MAT_Bedrock'"));
         MAT_Bedrock = MAT_BedrockAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_BlockTNTSideAsset(TEXT("Material'/Game/Materials/Blocks/MAT_BlockTNTSide.MAT_BlockTNTSide'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_BlockTNTSideAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_BlockTNTSide.MAT_BlockTNTSide'"));
         MAT_BlockTNTSide = MAT_BlockTNTSideAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_BrickAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Brick.MAT_Brick'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_BrickAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Brick.MAT_Brick'"));
         MAT_Brick = MAT_BrickAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_CloudAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Cloud.MAT_Cloud'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_CloudAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Cloud.MAT_Cloud'"));
         MAT_Cloud = MAT_CloudAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_DirtAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Dirt.MAT_Dirt'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_DirtAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Dirt.MAT_Dirt'"));
         MAT_Dirt = MAT_DirtAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_FenceAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Fence.MAT_Fence'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_FenceAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Fence.MAT_Fence'"));
         MAT_Fence = MAT_FenceAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_FireworksSideAsset(TEXT("Material'/Game/Materials/Blocks/MAT_FireworksSide.MAT_FireworksSide'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_FireworksSideAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_FireworksSide.MAT_FireworksSide'"));
         MAT_FireworksSide = MAT_FireworksSideAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_FlowersTopAsset(TEXT("Material'/Game/Materials/Blocks/MAT_FlowersTop.MAT_FlowersTop'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_FlowersTopAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_FlowersTop.MAT_FlowersTop'"));
         MAT_FlowersTop = MAT_FlowersTopAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_GlassAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Glass.MAT_Glass'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_GlassAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Glass.MAT_Glass'"));
         MAT_Glass = MAT_GlassAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_GrassSideAsset(TEXT("Material'/Game/Materials/Blocks/MAT_GrassSide.MAT_GrassSide'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_GrassSideAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_GrassSide.MAT_GrassSide'"));
         MAT_GrassSide = MAT_GrassSideAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_GrassTopAsset(TEXT("Material'/Game/Materials/Blocks/MAT_GrassTop.MAT_GrassTop'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_GrassTopAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_GrassTop.MAT_GrassTop'"));
         MAT_GrassTop = MAT_GrassTopAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_IceAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Ice.MAT_Ice'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_IceAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Ice.MAT_Ice'"));
         MAT_Ice = MAT_IceAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_LadderSideAsset(TEXT("Material'/Game/Materials/Blocks/MAT_LadderSide.MAT_LadderSide'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_LadderSideAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_LadderSide.MAT_LadderSide'"));
         MAT_LadderSide = MAT_LadderSideAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_LavaAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Lava.MAT_Lava'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_LavaAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Lava.MAT_Lava'"));
         MAT_Lava = MAT_LavaAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_LeavesAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Leaves.MAT_Leaves'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_LeavesAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Leaves.MAT_Leaves'"));
         MAT_Leaves = MAT_LeavesAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_LightAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Light.MAT_Light'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_LightAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Light.MAT_Light'"));
         MAT_Light = MAT_LightAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_NeonAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Neon.MAT_Neon'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_NeonAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Neon.MAT_Neon'"));
         MAT_Neon = MAT_NeonAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_RockAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Rock.MAT_Rock'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_RockAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Rock.MAT_Rock'"));
         MAT_Rock = MAT_RockAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_RoofAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Roof.MAT_Roof'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_RoofAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Roof.MAT_Roof'"));
         MAT_Roof = MAT_RoofAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_SandAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Sand.MAT_Sand'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_SandAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Sand.MAT_Sand'"));
         MAT_Sand = MAT_SandAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_SteelAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Steel.MAT_Steel'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_SteelAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Steel.MAT_Steel'"));
         MAT_Steel = MAT_SteelAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_StoneAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Stone.MAT_Stone'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_StoneAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Stone.MAT_Stone'"));
         MAT_Stone = MAT_StoneAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TilesAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Tiles.MAT_Tiles'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TilesAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Tiles.MAT_Tiles'"));
         MAT_Tiles = MAT_TilesAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TNTSideAsset(TEXT("Material'/Game/Materials/Blocks/MAT_TNTSide.MAT_TNTSide'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TNTSideAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_TNTSide.MAT_TNTSide'"));
         MAT_TNTSide = MAT_TNTSideAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TNTTopAsset(TEXT("Material'/Game/Materials/Blocks/MAT_TNTTop.MAT_TNTTop'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TNTTopAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_TNTTop.MAT_TNTTop'"));
         MAT_TNTTop = MAT_TNTTopAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TrampolineAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Trampoline.MAT_Trampoline'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TrampolineAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Trampoline.MAT_Trampoline'"));
         MAT_Trampoline = MAT_TrampolineAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TrunkSideAsset(TEXT("Material'/Game/Materials/Blocks/MAT_TrunkSide.MAT_TrunkSide'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TrunkSideAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_TrunkSide.MAT_TrunkSide'"));
         MAT_TrunkSide = MAT_TrunkSideAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TrunkTopAsset(TEXT("Material'/Game/Materials/Blocks/MAT_TrunkTop.MAT_TrunkTop'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_TrunkTopAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_TrunkTop.MAT_TrunkTop'"));
         MAT_TrunkTop = MAT_TrunkTopAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_VinesAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Vines.MAT_Vines'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_VinesAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Vines.MAT_Vines'"));
         MAT_Vines = MAT_VinesAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WallpaperAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Wallpaper.MAT_Wallpaper'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WallpaperAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Wallpaper.MAT_Wallpaper'"));
         MAT_Wallpaper = MAT_WallpaperAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WaterAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Water.MAT_Water'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WaterAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Water.MAT_Water'"));
         MAT_Water = MAT_WaterAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WeedsSideAsset(TEXT("Material'/Game/Materials/Blocks/MAT_WeedsSide.MAT_WeedsSide'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WeedsSideAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_WeedsSide.MAT_WeedsSide'"));
         MAT_WeedsSide = MAT_WeedsSideAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WeedsTopAsset(TEXT("Material'/Game/Materials/Blocks/MAT_WeedsTop.MAT_WeedsTop'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WeedsTopAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_WeedsTop.MAT_WeedsTop'"));
         MAT_WeedsTop = MAT_WeedsTopAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WoodAsset(TEXT("Material'/Game/Materials/Blocks/MAT_Wood.MAT_Wood'"));
+        static ConstructorHelpers::FObjectFinder<UMaterialInterface> MAT_WoodAsset(TEXT("Material'/Game/EdenUniverseBuilder/Art/Blocks/MAT_Wood.MAT_Wood'"));
         MAT_Wood = MAT_WoodAsset.Object;
 
-        static ConstructorHelpers::FObjectFinder<UStaticMesh> CubeAsset(TEXT("Mesh'/Game/Mesh/cube.cube'"));
+        static ConstructorHelpers::FObjectFinder<UStaticMesh> CubeAsset(TEXT("Mesh'/Game/EdenUniverseBuilder/Core/Placeables/cube.cube'"));
         Cube = CubeAsset.Object;
 }
 
@@ -141,17 +141,19 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
 
         if (Indexer.WorldLoaded == false)
         {
+                //==============================================================================
+                // Load variables into the indexer from the world file.
+                // This excludes memory heavy operations such as block data.
                 WorldDecoder.LoadWorld(TCHAR_TO_UTF8(*Path));
 
                 TMap<int, FVector2D> ChunkLocations = WorldDecoder.GetChunkLocations();
-
                 TArray<EdenChunkMetadata> ChunkMetadata = WorldDecoder.GetChunkMetadata();
 
                 Indexer.RegisterChunks(ChunkMetadata);
+                //==============================================================================
 
                 UE_LOG(LogTemp, Warning, TEXT("ChunkMetadata: %d"), ChunkMetadata.Num());
-                FVector PlayerPosition = WorldDecoder.GetPlayerPosition(WorldDecoder.OpenFile(TCHAR_TO_UTF8(*Path)));
-                //FVector PlayerPosition = FVector(0, 0, 0);
+                FVector PlayerPosition = Indexer.GetStartingPlayerPosition();
 
                 int LoadedBlocks = 0;
                 int LoadedChunks = 0;
@@ -159,6 +161,8 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
 
                 for (int i = 0; i < ChunkLocations.Num(); i++)
                 {
+                        //==============================================================================
+                        // Break apart the FVectors
                         float pX = PlayerPosition.X * 100;
                         float pY = PlayerPosition.Y * 100;
                         float pZ = PlayerPosition.Z * 100;
@@ -166,6 +170,7 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                         float x = (ChunkMetadata[i].X*16) * 100;
                         float y = (ChunkMetadata[i].Y*16) * 100;
                         float z = 0.0;
+                        //==============================================================================
 
                         if (DisplayChunkPositions)
                         {
@@ -186,8 +191,9 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                                         UE_LOG(LogTemp, Warning, TEXT("Loading... %d"), i);
                                         Status = 0;
                                 }
-
-                                TArray<EdenChunkData> ChunkData = WorldDecoder.GetChunkData(ChunkMetadata[i].Address);
+                                //==============================================================================
+                                // Get the chunk data from the WORLD FILE.
+                                TArray<EdenChunkData> ChunkData = WorldDecoder.GetChunkData(ChunkMetadata[i].Address, Path);
 
                                 CreateChunk(ChunkMetadata[i].Address, x, y, z);
 
@@ -196,6 +202,8 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                                         Indexer.RegisterBlock(ChunkData[Blocks].Id, ChunkData[Blocks].Position.X, ChunkData[Blocks].Position.Y, ChunkData[Blocks].Position.Z, ChunkMetadata[i].Address, 0);
                                 }
 
+                                //==============================================================================
+                                // Place all the blocks contained in the chunk data.
                                 for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
                                 {
                                         float X = ChunkData[Blocks].Position.X;
@@ -208,6 +216,7 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                                                 LoadedBlocks++;
                                         }
                                 }
+                                //==============================================================================
                                 Status++;
                                 LoadedChunks++;
                         }

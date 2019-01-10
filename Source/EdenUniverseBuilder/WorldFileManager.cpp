@@ -4,7 +4,7 @@
 #include "WorldFileManager.h"
 
 #include <stdio.h>
-#include <curl/curl.h>
+//#include <curl/curl.h>
 
 using namespace std;
 
@@ -15,7 +15,7 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
 }
 
 void UWorldFileManager::DownloadFile(FString url, FString outfilename)
-{
+{/*
         CURL *curl;
         FILE *fp;
         CURLcode res;
@@ -31,7 +31,7 @@ void UWorldFileManager::DownloadFile(FString url, FString outfilename)
                 res = curl_easy_perform(curl);
                 curl_easy_cleanup(curl);
                 fclose(fp);
-        }
+        }*/
 }
 
 void UWorldFileManager::Search(FString Query)

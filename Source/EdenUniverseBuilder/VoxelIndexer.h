@@ -12,9 +12,6 @@ struct LocationStruct {
         int index;
 };
 
-/**
- *
- */
 class EDENUNIVERSEBUILDER_API VoxelIndexer
 {
 public:
@@ -33,6 +30,12 @@ public:
         UPROPERTY(EditAnywhere)
         bool WorldLoaded = false;
 
+        FString WorldPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir()) + "/Worlds/testWorld.eden";
+
+        FString WorldName = "Error";
+
+        FVector StartingPlayerPosition  = FVector(0, 0, 0);
+
 	//============================================================================
 	// Functions
 	//============================================================================
@@ -44,4 +47,10 @@ public:
         void RegisterChunks(TArray<EdenChunkMetadata> Metadata);
         bool CheckBlock(float x, float y, float z);
         bool CheckChunk(int chunk);
+        void SetWorldPath(FString Path);
+        FString GetWorldPath();
+        void SetWorldName(FString Path);
+        FString GetWorldName();
+        void SetStartingPlayerPosition(FVector Position);
+        FVector GetStartingPlayerPosition();
 };

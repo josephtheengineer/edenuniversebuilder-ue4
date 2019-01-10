@@ -84,3 +84,33 @@ bool VoxelIndexer::CheckChunk(int chunk)
 {
         return false; //chunkIndex.Contains(chunk);
 }
+
+void VoxelIndexer::SetWorldPath(FString Path)
+{
+        WorldPath = Path;
+}
+
+FString VoxelIndexer::GetWorldPath()
+{
+        return WorldPath;
+}
+
+void VoxelIndexer::SetWorldName(FString Name)
+{
+        WorldName = Name;
+}
+
+FString VoxelIndexer::GetWorldName()
+{
+        return WorldName;
+}
+
+void VoxelIndexer::SetStartingPlayerPosition(FVector Position)
+{
+        StartingPlayerPosition = Position;
+}
+
+FVector VoxelIndexer::GetStartingPlayerPosition()
+{
+        return StartingPlayerPosition;
+}

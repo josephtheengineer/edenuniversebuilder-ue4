@@ -4,6 +4,7 @@
 #include "EdenWorldDecoder.h"
 
 #include "VoxelTerrainActor.h"
+#include "VoxelIndexer.h"
 
 //==============================================================================
 // Constructor
@@ -14,59 +15,47 @@ EdenWorldDecoder::EdenWorldDecoder()
 }
 
 //==============================================================================
-// Main code for the class
+// This function sets up the Indexer and must be run
 //==============================================================================
-void EdenWorldDecoder::LoadWorld(const char *path)
+void EdenWorldDecoder::LoadWorld(FString Path)
 {
 	UE_LOG(LogTemp,Log,TEXT("We are online. Starting world convertion..."));
 
-	UE_LOG(LogTemp,Verbose,TEXT("Opening file..."));
-	//bytes = OpenFile("/home/josephtheengineer/workspace/EdenProject/Engine/Converter/DirectCity.eden");
-	bytes = OpenFile(path);
-
-	GetWorldName(bytes);
-
-        GetPlayerPosition(bytes);
-
-	// Nobody really knows how this works
-	int chunkPointer = bytes[35] * 256 * 256 * 256 + bytes[34] * 256 * 256 + bytes[33] * 256 + bytes[32];
-
-	GetWorldMetadata(bytes, chunkPointer);
+	// Setup Indexer
+	VoxelIndexer Indexer;
+	Indexer.SetWorldPath(Path);
+	//Indexer.SetWorldName(GetWorldName(Path));
+	//Indexer.SetStartingPlayerPosition(GetPlayerPosition(Path));
+	GetWorldMetadata(Path);
 }
 
 //==============================================================================
 // Returns a hex world file to a decimal array
 //==============================================================================
-std::vector <int> EdenWorldDecoder::OpenFile(const char *filename)
+std::vector <int> EdenWorldDecoder::OpenFile(FString Path)
 {
-	UE_LOG(LogTemp,Log,TEXT("Loading file: %s"), filename);
 	std::vector <int> worldData;
-
-	unsigned char x;
-	std::ifstream input(filename, std::ios::binary);
-	input >> std::noskipws;
-	while (input >> x)
+	UE_LOG(LogTemp,Log,TEXT("Loading file %s"), *Path);
+	if(FPaths::FileExists(Path))
 	{
-		// We'll store the hex symbol in decimal format
-		worldData.push_back((int)x);
+		const char *filename = TCHAR_TO_UTF8(*Path);
+		unsigned char x;
+		std::ifstream input(filename, std::ios::binary);
+		input >> std::noskipws;
+		while (input >> x)
+		{
+			// We'll store the hex symbol in decimal format
+			worldData.push_back((int)x);
+		}
+
+		UE_LOG(LogTemp,Log,TEXT("World file path is vaid. All systems are go for launch."));
+	} else {
+		UE_LOG(LogTemp,Log,TEXT("World file path is invalid!"));
 	}
-
-	UE_LOG(LogTemp,Log,TEXT("World file is vaid. All systems are go for launch."));
-
-        ////////////////////////////////////////////////////////
-/*
-        std::ifstream in(filename, ::std::ios::binary);
-        while (in) {
-                char c;
-                in.get(c);
-                if (in) {
-                        UE_LOG(LogTemp,Log,TEXT("New int: %d"), int(c));
-                }
-        }*/
 	return worldData;
 }
 
-std::vector <int> EdenWorldDecoder::WriteFile(const char *Filename)
+void EdenWorldDecoder::WriteFile(std::vector <int> WorldData, FString Path)
 {
         std::vector <int> Data;
 /*
@@ -78,15 +67,16 @@ std::vector <int> EdenWorldDecoder::WriteFile(const char *Filename)
                 // We'll store the hex symbol in decimal format
                 Data.push_back((int)X);
         }*/
-        return Data;
+        //return Data;
 }
 
 //==============================================================================
 // Returns the world name
 //==============================================================================
-FString EdenWorldDecoder::GetWorldName(std::vector <int> worldData)
+FString EdenWorldDecoder::GetWorldName(FString Path)
 {
 	UE_LOG(LogTemp,Log,TEXT("Fetching world name..."));
+	std::vector <int> worldData = OpenFile(Path);
 	FString worldName;
 
 	for (int i = 35; i < 35+50; i++)
@@ -102,8 +92,9 @@ FString EdenWorldDecoder::GetWorldName(std::vector <int> worldData)
 //==============================================================================
 // Returns the world name
 //==============================================================================
-FVector EdenWorldDecoder::GetPlayerPosition(std::vector <int> worldData)
+FVector EdenWorldDecoder::GetPlayerPosition(FString Path)
 {
+	std::vector <int> worldData = OpenFile(Path);
 	UE_LOG(LogTemp,Log,TEXT("Fetching player position..."));
 
         float y = 0.f;
@@ -138,8 +129,10 @@ FVector EdenWorldDecoder::GetPlayerPosition(std::vector <int> worldData)
 //==============================================================================
 // Associate the chunk pos with the address + get world area
 //==============================================================================
-void EdenWorldDecoder::GetWorldMetadata(std::vector <int> worldData, int chunkPointer)
+void EdenWorldDecoder::GetWorldMetadata(FString Path)
 {
+	std::vector <int> worldData = OpenFile(Path);
+	int chunkPointer = worldData[35] * 256 * 256 * 256 + worldData[34] * 256 * 256 + worldData[33] * 256 + worldData[32];
 	do
 	{
 		// Find chunk address
@@ -186,9 +179,11 @@ void EdenWorldDecoder::GetWorldMetadata(std::vector <int> worldData, int chunkPo
 //==============================================================================
 // Creates the mesh for the current chunk
 //==============================================================================
-TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
+TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk, FString Path)
 {
         TArray<EdenChunkData> ChunkData;
+	//VoxelIndexer Indexer;
+	std::vector <int> worldData = OpenFile(Path);
 
 	// Grabbing the chunk position
 	int32 globalChunkPosX = ChunkLocations[chunk].X;
@@ -211,8 +206,8 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
         		{
         			for (int z = 0; z < 16; z++)
         			{
-                			int Id = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-                                        int Color = bytes[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
+                			int Id = worldData[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
+                                        int Color = worldData[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
 
                 			float RealX = (x + (globalChunkPosX*16)) * 100;
                 			float RealY = (y + (globalChunkPosY*16)) * 100;
@@ -220,7 +215,7 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
 
                                         FVector Position = FVector(RealX, RealY, RealZ);
 
-                			if (Id != 0 && Id <= 79){
+                			if (Id != 0 && Id <= 79 && Id > 0){
                                                 EdenChunkData BlockData {Position, Id, Color, chunk};
                                                 ChunkData.Add(BlockData);
                 			}

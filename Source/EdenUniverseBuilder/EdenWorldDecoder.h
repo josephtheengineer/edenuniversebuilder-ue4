@@ -21,6 +21,8 @@ struct EdenChunkData {
     int Address;
 };
 
+// The WorldDecoder's job is to read from the world file
+// NOT TO STORE IT that is the Indexer's job.
 class EDENUNIVERSEBUILDER_API EdenWorldDecoder
 {
 public:
@@ -28,15 +30,19 @@ public:
 	~EdenWorldDecoder();
 
 	//============================================================================
-	// Functions
+	// Primary Functions
 	//============================================================================
-	void LoadWorld(const char *path);
-	std::vector <int> OpenFile(const char *filename);
-        std::vector <int> WriteFile(const char *Filename);
-	FString GetWorldName(std::vector <int> bytes);
-	void GetWorldMetadata(std::vector <int> worldData, int chunkPointer);
-	TArray<EdenChunkData> GetChunkData(int chunk);
-        FVector GetPlayerPosition(std::vector <int> worldData);
+	void LoadWorld(FString Path);
+	std::vector <int> OpenFile(FString Path);
+        void WriteFile(std::vector <int> WorldData, FString Path);
+	FString GetWorldName(FString Path);
+	void GetWorldMetadata(FString Path);
+        FVector GetPlayerPosition(FString Path);
+	TArray<EdenChunkData> GetChunkData(int chunk, FString Path);
+
+        //============================================================================
+        // Secondary Functions
+        //============================================================================
         TArray<EdenChunkMetadata> GetChunkMetadata();
         TMap<int, FVector2D> GetChunkLocations();
 
@@ -57,29 +63,4 @@ public:
 	TArray<int32> chunkAddress;
 	TArray<int32> chunkPositionX;
 	TArray<int32> chunkPositionY;
-
-	std::vector <int> bytes;
-
-	UPROPERTY()
-	USceneComponent* Root;
-
-	UPROPERTY(EditAnywhere)
-	float render_distance = 2.0;
-
-	UPROPERTY(VisibleAnywhere)
-	class UInstancedStaticMeshComponent* Mesh;
-
-	//============================================================================
-	// Materials
-	//============================================================================
-
-	UPROPERTY(EditAnywhere)
-	class UBoxComponent* ChunkBoundary;
-
-	std::map<int32, std::map<int32, UInstancedStaticMeshComponent*>> mesh_array;
-
-	UPROPERTY(EditAnywhere)
-	UStaticMesh* SMAsset_Cube;
-
-	TArray<int32> chunks_to_load;
 };
