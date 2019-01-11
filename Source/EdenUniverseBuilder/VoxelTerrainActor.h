@@ -38,7 +38,7 @@ public:
 
         int activePlanes = 0;
 
-        UPROPERTY(Category = "Voxel Terrain", BlueprintReadWrite, EditAnywhere) float RenderDistance;
+        UPROPERTY(Category = "Voxel Terrain", BlueprintReadWrite, EditAnywhere) bool DebugWorldLoad = false;
 
         // The material to apply to our voxel terrain
         UPROPERTY(Category = "Voxel Terrain", BlueprintReadWrite, EditAnywhere) TArray<UMaterialInterface*> TerrainMaterials;
@@ -54,6 +54,8 @@ public:
         void CreateChunk(int chunk, float x, float y, float z);
         void GetBlockMaterials();
 
+        FVector2D ChunkPositionFromUnrealUnits(FVector UnrealUnits, TArray<EdenChunkMetadata> ChunkMetadata);
+
         UFUNCTION(BlueprintCallable)
         void LoadWorld(FString Path);
 
@@ -64,9 +66,6 @@ public:
 
         UPROPERTY(EditAnywhere)
         int heightLimit;
-
-        UPROPERTY(EditAnywhere)
-        int ChunkLimit;
 
         UPROPERTY(EditAnywhere)
         bool DisplayChunkPositions = false;

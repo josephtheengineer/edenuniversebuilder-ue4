@@ -12,6 +12,8 @@ struct LocationStruct {
         int index;
 };
 
+// The Indexers's job is to store world data in memory so that it can be easily
+// accessed and is not used for options, that is the GameInstance's job.
 class EDENUNIVERSEBUILDER_API VoxelIndexer
 {
 public:

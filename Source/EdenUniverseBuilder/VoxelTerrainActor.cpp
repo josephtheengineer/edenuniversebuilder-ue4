@@ -146,6 +146,9 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                 // This excludes memory heavy operations such as block data.
                 WorldDecoder.LoadWorld(TCHAR_TO_UTF8(*Path));
 
+                UEdenGameInstance* GameInstance = Cast<UEdenGameInstance>(GetGameInstance());
+                GameInstance->StartingPlayerPosition = WorldDecoder.GetPlayerPosition();
+
                 TMap<int, FVector2D> ChunkLocations = WorldDecoder.GetChunkLocations();
                 TArray<EdenChunkMetadata> ChunkMetadata = WorldDecoder.GetChunkMetadata();
 
@@ -153,23 +156,40 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                 //==============================================================================
 
                 UE_LOG(LogTemp, Warning, TEXT("ChunkMetadata: %d"), ChunkMetadata.Num());
-                FVector PlayerPosition = Indexer.GetStartingPlayerPosition();
+                FVector PlayerPosition = FVector(0, 0, 0);
 
+                float RenderDistance = 60;
+                int ChunkLimit = 10;
                 int LoadedBlocks = 0;
                 int LoadedChunks = 0;
                 int Status = 0;
 
+                RenderDistance = GameInstance->RenderDistance;
+                ChunkLimit = GameInstance->ChunkLimit;
+                PlayerPosition = GameInstance->StartingPlayerPosition;
+
+                FVector2D ChunkPlayerPosition = ChunkPositionFromUnrealUnits(PlayerPosition, ChunkMetadata);
+
                 for (int i = 0; i < ChunkLocations.Num(); i++)
                 {
                         //==============================================================================
-                        // Break apart the FVectors
-                        float pX = PlayerPosition.X * 100;
-                        float pY = PlayerPosition.Y * 100;
-                        float pZ = PlayerPosition.Z * 100;
 
-                        float x = (ChunkMetadata[i].X*16) * 100;
-                        float y = (ChunkMetadata[i].Y*16) * 100;
-                        float z = 0.0;
+                        // Break apart the FVectors
+                        //float pX = PlayerPosition.X * 100;
+                        //float pY = PlayerPosition.Y * 100;
+                        //float pZ = PlayerPosition.Z * 100;
+
+                        float pX = ChunkPlayerPosition.X;
+                        float pY = ChunkPlayerPosition.Y;
+
+                        //float x = (ChunkMetadata[i].X*16) * 100;
+                        //float y = (ChunkMetadata[i].Y*16) * 100;
+                        //float z = 0.0;
+
+                        float x = ChunkMetadata[i].X;
+                        float y = ChunkMetadata[i].Y;
+                        float z = 0;
+
                         //==============================================================================
 
                         if (DisplayChunkPositions)
@@ -180,54 +200,89 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                         }
 
                         // Get distance from player
-                        float Distance = sqrtf( powf( (x-pX), 2.f )  +  powf( (y-pY), 2.f )  +  powf( (z-pZ), 2.f ) );
+                        float Distance = sqrtf( powf( (x-pX), 2.f )  +  powf( (y-pY), 2.f ) );
 
                         UE_LOG(LogTemp, Warning, TEXT("Distance: %f"), Distance);
 
-                        if (Distance < RenderDistance)
+                        if (Distance < RenderDistance && LoadedChunks < ChunkLimit)
                         {
                                 if (Status > 10)
                                 {
                                         UE_LOG(LogTemp, Warning, TEXT("Loading... %d"), i);
                                         Status = 0;
                                 }
-                                //==============================================================================
-                                // Get the chunk data from the WORLD FILE.
-                                TArray<EdenChunkData> ChunkData = WorldDecoder.GetChunkData(ChunkMetadata[i].Address, Path);
-
-                                CreateChunk(ChunkMetadata[i].Address, x, y, z);
-
-                                for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
+                                if (DebugWorldLoad == false)
                                 {
-                                        Indexer.RegisterBlock(ChunkData[Blocks].Id, ChunkData[Blocks].Position.X, ChunkData[Blocks].Position.Y, ChunkData[Blocks].Position.Z, ChunkMetadata[i].Address, 0);
-                                }
+                                        //==============================================================================
+                                        // Get the chunk data from the WORLD FILE.
+                                        TArray<EdenChunkData> ChunkData = WorldDecoder.GetChunkData(ChunkMetadata[i].Address);
 
-                                //==============================================================================
-                                // Place all the blocks contained in the chunk data.
-                                for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
-                                {
-                                        float X = ChunkData[Blocks].Position.X;
-                                        float Y = ChunkData[Blocks].Position.Y;
-                                        float Z = ChunkData[Blocks].Position.Z;
+                                        CreateChunk(ChunkMetadata[i].Address, x, y, z);
 
-                                        if (!(Indexer.CheckBlock(X, Y+100, Z) && Indexer.CheckBlock(X, Y-100, Z) && Indexer.CheckBlock(X+100,Y, Z) && Indexer.CheckBlock(X-100, Y, Z) && Indexer.CheckBlock(X, Y, Z+100) && Indexer.CheckBlock(X, Y, Z-100)))
+                                        for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
                                         {
-                                                CreateBlock(ChunkData[Blocks].Id, ChunkMetadata[i].Address, X, Y, Z);
-                                                LoadedBlocks++;
+                                                Indexer.RegisterBlock(ChunkData[Blocks].Id, ChunkData[Blocks].Position.X, ChunkData[Blocks].Position.Y, ChunkData[Blocks].Position.Z, ChunkMetadata[i].Address, 0);
                                         }
+
+                                        //==============================================================================
+                                        // Place all the blocks contained in the chunk data.
+                                        for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
+                                        {
+                                                float X = ChunkData[Blocks].Position.X;
+                                                float Y = ChunkData[Blocks].Position.Y;
+                                                float Z = ChunkData[Blocks].Position.Z;
+
+                                                if (!(Indexer.CheckBlock(X, Y+100, Z) && Indexer.CheckBlock(X, Y-100, Z) && Indexer.CheckBlock(X+100,Y, Z) && Indexer.CheckBlock(X-100, Y, Z) && Indexer.CheckBlock(X, Y, Z+100) && Indexer.CheckBlock(X, Y, Z-100)))
+                                                {
+                                                        CreateBlock(ChunkData[Blocks].Id, ChunkMetadata[i].Address, X, Y, Z);
+                                                        LoadedBlocks++;
+                                                }
+                                        }
+                                        //==============================================================================
+                                        Status++;
+                                        LoadedChunks++;
                                 }
-                                //==============================================================================
-                                Status++;
-                                LoadedChunks++;
-                        }
-                        if (LoadedChunks > ChunkLimit)
-                        {
-                                return;
                         }
                 }
                 UE_LOG(LogTemp, Warning, TEXT("Done! Loaded %d blocks!"), LoadedBlocks);
+                UE_LOG(LogTemp, Warning, TEXT("      Loaded %d chunks!"), LoadedChunks);
+                UE_LOG(LogTemp, Warning, TEXT("Render distance was %f"), RenderDistance);
+                UE_LOG(LogTemp, Warning, TEXT("Chunk limit was %d"), ChunkLimit);
                 Indexer.WorldLoaded = true;
         }
+}
+
+FVector2D AVoxelTerrainActor::ChunkPositionFromUnrealUnits(FVector UnrealUnits, TArray<EdenChunkMetadata> ChunkMetadata)
+{
+
+        int X = int(UnrealUnits.X + 0.5);
+        int Y = int(UnrealUnits.Y + 0.5);
+
+        UE_LOG(LogTemp, Warning, TEXT("Player position converted to int: "));
+        UE_LOG(LogTemp, Warning, TEXT("   X: %d"), X);
+        UE_LOG(LogTemp, Warning, TEXT("   Y: %d"), Y);
+
+        for (int i = 0; i < ChunkMetadata.Num(); i++)
+        {
+                int ChunkX = (ChunkMetadata[i].X*16) * 100;
+                int ChunkY = (ChunkMetadata[i].Y*16) * 100;
+
+                UE_LOG(LogTemp, Warning, TEXT("Chunk position converted to unreal units: "));
+                UE_LOG(LogTemp, Warning, TEXT("   X: %d"), ChunkX);
+                UE_LOG(LogTemp, Warning, TEXT("   Y: %d"), ChunkY);
+
+                UE_LOG(LogTemp, Warning, TEXT("Checking... %d"), ChunkMetadata[i].X);
+                if (X > ChunkX && X < (ChunkX + 1600) && Y > ChunkY && Y < (ChunkY + 1600))
+                {
+                        UE_LOG(LogTemp, Warning, TEXT("Player is in chunk: "));
+                        UE_LOG(LogTemp, Warning, TEXT("   X: %d"), ChunkMetadata[i].X);
+                        UE_LOG(LogTemp, Warning, TEXT("   Y: %d"), ChunkMetadata[i].Y);
+
+                        return FVector2D(ChunkMetadata[i].X, ChunkMetadata[i].Y);
+                }
+        }
+        UE_LOG(LogTemp, Warning, TEXT("Error: Could not find the chunk that the player is in"));
+        return FVector2D(0, 0);
 }
 
 void AVoxelTerrainActor::GetBlockMaterials()

@@ -12,6 +12,7 @@
 
 #include "DrawDebugHelpers.h"
 #include "EdenGameInstance.h"
+#include "VoxelIndexer.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -36,10 +37,21 @@ AEdenUniverseBuilderCharacter::AEdenUniverseBuilderCharacter()
 
 void AEdenUniverseBuilderCharacter::BeginPlay()
 {
-        FVector Location = FVector(0.0f, 0.0f, 0.0f);
-        FRotator Rotation = FRotator(0.0f, 0.0f, 0.0f);
-        FActorSpawnParameters SpawnInfo;
-        //TerrainActor = GetWorld()->SpawnActor<AVoxelTerrainActor>(Location, Rotation, SpawnInfo);
+	FVector PlayerPosition = FVector(0, 0, 0);
+	UEdenGameInstance* GameInstance = Cast<UEdenGameInstance>(GetGameInstance());
+	if(GameInstance)
+	{
+		this->SetActorLocation(GameInstance->StartingPlayerPosition);
+		PlayerPosition = GameInstance->StartingPlayerPosition;
+	}
+	//VoxelIndexer Indexer;
+	//FVector PlayerPosition = Indexer.GetStartingPlayerPosition();
+	//UGameplayStatics::GetPlayerCharacter(GetWorld(),0)->SetActorLocation(PlayerPosition);
+
+	UE_LOG(LogTemp,Log,TEXT("Player positions:"));
+	UE_LOG(LogTemp,Log,TEXT("   x: %f"), PlayerPosition.X);
+	UE_LOG(LogTemp,Log,TEXT("   y: %f"), PlayerPosition.Y);
+	UE_LOG(LogTemp,Log,TEXT("   z: %f"), PlayerPosition.Z);
 
 	// Call the base class
 	Super::BeginPlay();

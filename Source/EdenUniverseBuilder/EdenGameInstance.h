@@ -26,4 +26,12 @@ public:
         UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
         int BlockToPlace = 13;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	float RenderDistance = 10;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	int ChunkLimit = 100;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	FVector StartingPlayerPosition = FVector(0, 0, 0);
 };
