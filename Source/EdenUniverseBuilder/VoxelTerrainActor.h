@@ -36,6 +36,9 @@ public:
         // Sets default values for this actor's properties
         AVoxelTerrainActor();
 
+        // Called every frame
+        virtual void Tick(float DeltaSeconds) override;
+
         int activePlanes = 0;
 
         UPROPERTY(Category = "Voxel Terrain", BlueprintReadWrite, EditAnywhere) bool DebugWorldLoad = false;

@@ -3,10 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include <iostream>
-#include <map>
-#include <fstream>
-#include <vector>
+#include "GenericPlatformFile.h"
+#include "PlatformFilemanager.h"
 
 struct EdenChunkMetadata {
     int Address;
@@ -33,8 +31,9 @@ public:
 	// Primary Functions
 	//============================================================================
 	void LoadWorld(FString Path);
-	std::vector <int32> OpenFile(FString Path);
-        void WriteFile(std::vector <int32> WorldData, FString Path);
+	TArray<int32> OpenFile(FString Path);
+        //std::vector <int32> LegacyOpenFile(FString Path);
+        void WriteFile(TArray<int32> WorldDataToWrite, FString Path);
 	FString GetWorldName();
 	void GetWorldMetadata();
         FVector GetPlayerPosition();
@@ -52,7 +51,7 @@ public:
         TArray<EdenChunkMetadata> ChunkMetadata;
         TMap<int, FVector2D> ChunkLocations;
 
-        std::vector <int32> WorldData;
+        TArray<int32> WorldData;
         FString WorldPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir()) + "/Worlds/testWorld.eden";
 
 	// Get the min X value by finding the last value in chunks
@@ -61,7 +60,6 @@ public:
 	int worldAreaY = 0;
 	int worldAreaWidthTemp = 0;
 	int worldAreaHeightTemp = 0;
-	std::map<std::vector<int32>, int> blocks;
 
 	TArray<int32> chunkAddress;
 	TArray<int32> chunkPositionX;

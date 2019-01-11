@@ -129,6 +129,13 @@ void AVoxelTerrainActor::BeginPlay()
         }
 }
 
+// Called every frame
+void AVoxelTerrainActor::Tick(float DeltaTime)
+{
+	Super::Tick( DeltaTime );
+        // If player has moved chunks
+}
+
 //==============================================================================
 // Load World
 //==============================================================================
@@ -136,6 +143,7 @@ void AVoxelTerrainActor::BeginPlay()
 // Direct City = /home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content/Worlds/DirectCity.eden
 void AVoxelTerrainActor::LoadWorld(FString Path)
 {
+        UE_LOG(LogTemp,Log,TEXT("VoxelTerrainActor: LoadWorld process started!"));
         EdenWorldDecoder WorldDecoder;
         VoxelIndexer Indexer;
 
@@ -267,11 +275,11 @@ FVector2D AVoxelTerrainActor::ChunkPositionFromUnrealUnits(FVector UnrealUnits, 
                 int ChunkX = (ChunkMetadata[i].X*16) * 100;
                 int ChunkY = (ChunkMetadata[i].Y*16) * 100;
 
-                UE_LOG(LogTemp, Warning, TEXT("Chunk position converted to unreal units: "));
-                UE_LOG(LogTemp, Warning, TEXT("   X: %d"), ChunkX);
-                UE_LOG(LogTemp, Warning, TEXT("   Y: %d"), ChunkY);
+                //UE_LOG(LogTemp, Warning, TEXT("Chunk position converted to unreal units: "));
+                //UE_LOG(LogTemp, Warning, TEXT("   X: %d"), ChunkX);
+                //UE_LOG(LogTemp, Warning, TEXT("   Y: %d"), ChunkY);
 
-                UE_LOG(LogTemp, Warning, TEXT("Checking... %d"), ChunkMetadata[i].X);
+                //UE_LOG(LogTemp, Warning, TEXT("Checking... %d"), ChunkMetadata[i].X);
                 if (X > ChunkX && X < (ChunkX + 1600) && Y > ChunkY && Y < (ChunkY + 1600))
                 {
                         UE_LOG(LogTemp, Warning, TEXT("Player is in chunk: "));

@@ -30,38 +30,45 @@ void EdenWorldDecoder::LoadWorld(FString Path)
 	Indexer.SetWorldPath(Path);
 	//Indexer.SetWorldName(GetWorldName(Path));
 	WorldData = OpenFile(Path);
+	UE_LOG(LogTemp,Log,TEXT("Geting world metadata..."));
 	GetWorldMetadata();
 }
 
-//==============================================================================
-// Returns a hex world file to a decimal array
-//==============================================================================
-std::vector <int32> EdenWorldDecoder::OpenFile(FString Path)
+TArray<int32> EdenWorldDecoder::OpenFile(FString Path)
 {
-	std::vector <int32> worldData;
-	UE_LOG(LogTemp,Log,TEXT("Loading file %s"), *Path);
-	if(FPaths::FileExists(Path))
+	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
+	TArray<int32> LWorldData;
+
+	IFileHandle* FileHandle = PlatformFile.OpenRead(*Path);
+	if(FileHandle)
 	{
-		const char *filename = TCHAR_TO_UTF8(*Path);
-		unsigned char x;
-		std::ifstream input(filename, std::ios::binary);
-		input >> std::noskipws;
-		while (input >> x)
+		// Create a pointer to MyInteger
+		int32 MyInteger;
+		int32* IntPointer = &MyInteger;
+		// Reinterpret the pointer for the Read function
+		uint8* ByteBuffer = reinterpret_cast<uint8*>(IntPointer);
+
+		for (int i = 0; i < FileHandle->Size(); i++)
 		{
-			// We'll store the hex symbol in decimal format
-			worldData.push_back((int)x);
+			FileHandle->Read(ByteBuffer, 1);
+			LWorldData.Add(MyInteger);
 		}
 
+		// Because ByteBuffer points directly to MyInteger, it's already been updated at this point
+		//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("Read integer is %d"), MyInteger);
+
+		// Close the file again
+		delete FileHandle;
 		UE_LOG(LogTemp,Log,TEXT("World file path is vaid. All systems are go for launch."));
 	} else {
 		UE_LOG(LogTemp,Log,TEXT("World file path is invalid!"));
 	}
-	return worldData;
+	return LWorldData;
 }
 
-void EdenWorldDecoder::WriteFile(std::vector <int32> WorldData, FString Path)
+void EdenWorldDecoder::WriteFile(TArray<int32> WorldDataToWrite, FString Path)
 {
-        std::vector <int32> Data;
+        //std::vector <int32> Data;
 /*
         unsigned char X;
 	std::ofstream Input(Filename, std::ios::binary);
@@ -93,7 +100,7 @@ FString EdenWorldDecoder::GetWorldName()
 }
 
 //==============================================================================
-// Returns the world name
+// Returns the player position
 //==============================================================================
 FVector EdenWorldDecoder::GetPlayerPosition()
 {
@@ -105,40 +112,42 @@ FVector EdenWorldDecoder::GetPlayerPosition()
 		UE_LOG(LogTemp,Log,TEXT("%d"), WorldData[i]);
 	}
 
-	std::vector <unsigned char> RawWorldData;
-	std::vector <float> WorldPositionData;
+	// We need to read the world file again.
+	// This is because a float is 4 times as big as a char.
+
+	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
 	FString Path = WorldPath;
-	UE_LOG(LogTemp,Log,TEXT("Loading file %s"), *Path);
-	if(FPaths::FileExists(Path))
+	TArray<float> FWorldData;
+
+	IFileHandle* FileHandle = PlatformFile.OpenRead(*Path);
+	if(FileHandle)
 	{
-		const char *filename = TCHAR_TO_UTF8(*Path);
-		unsigned char x;
-		std::ifstream input(filename, std::ios::binary);
-		input >> std::noskipws;
-		while (input >> x)
+		// Create a pointer to MyInteger
+		float MyInteger;
+		float* IntPointer = &MyInteger;
+		// Reinterpret the pointer for the Read function
+		uint8* ByteBuffer = reinterpret_cast<uint8*>(IntPointer);
+
+		for (int i = 0; i < 30; i++)
 		{
-			// We'll store the hex symbol in decimal format
-			RawWorldData.push_back(x);
+
+			FileHandle->Read(ByteBuffer, 4);
+			FWorldData.Add(MyInteger);
 		}
 
-		for(int i = 0; i < 30; i += sizeof(float))
-		{
-			float f = *((float*)&RawWorldData[i]);
-			UE_LOG(LogTemp,Log,TEXT("Float: %f"), f);
-			WorldPositionData.push_back(f);
-		}
+		// Because ByteBuffer points directly to MyInteger, it's already been updated at this point
+		//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("Read integer is %d"), MyInteger);
 
-
-
+		// Close the file again
+		delete FileHandle;
 		UE_LOG(LogTemp,Log,TEXT("World file path is vaid. All systems are go for launch."));
 	} else {
 		UE_LOG(LogTemp,Log,TEXT("World file path is invalid!"));
 	}
 
-
-        float x = (WorldPositionData[1] - 64000) * 100;
-	float y = (WorldPositionData[3] - 64000) * 100;
-	float z = WorldPositionData[2] * 100;
+        float x = (FWorldData[1] - 64000) * 100;
+	float y = (FWorldData[3] - 64000) * 100;
+	float z = FWorldData[2] * 100;
 
 	UE_LOG(LogTemp,Log,TEXT("Spawning player at..."));
 	UE_LOG(LogTemp,Log,TEXT("   x: %f"), x);
@@ -155,40 +164,57 @@ FVector EdenWorldDecoder::GetPlayerPosition()
 //==============================================================================
 void EdenWorldDecoder::GetWorldMetadata()
 {
+	UE_LOG(LogTemp,Log,TEXT("Line 1"));
+	UE_LOG(LogTemp,Log,TEXT("WorldData[35]: %d"), WorldData[35]);
+	UE_LOG(LogTemp,Log,TEXT("WorldData[34]: %d"), WorldData[34]);
+	UE_LOG(LogTemp,Log,TEXT("WorldData[33]: %d"), WorldData[33]);
+	UE_LOG(LogTemp,Log,TEXT("WorldData[32]: %d"), WorldData[32]);
 	int chunkPointer = WorldData[35] * 256 * 256 * 256 + WorldData[34] * 256 * 256 + WorldData[33] * 256 + WorldData[32];
+	UE_LOG(LogTemp,Log,TEXT("chunkPointer: %d"), chunkPointer);
 	do
 	{
+		UE_LOG(LogTemp,Log,TEXT("Line 2"));
 		// Find chunk address
 		int address = WorldData[chunkPointer + 11] * 256 * 256 * 256 + WorldData[chunkPointer + 10] * 256 * 256 + WorldData[chunkPointer + 9] * 256 + WorldData[chunkPointer + 8];
 
 		// Find the position of the chunk
                 int x = (WorldData[chunkPointer + 1] * 256 + WorldData[chunkPointer]) - 4000;     // Minus 4000 to center the world around 0, 0
+
 		int y = (WorldData[chunkPointer + 5] * 256 + WorldData[chunkPointer + 4]) - 4000; // This shouldn't brake anything
 
+		UE_LOG(LogTemp,Log,TEXT("Line 5"));
 		if (worldAreaX > x){
 			worldAreaX = x;
 		}
+		UE_LOG(LogTemp,Log,TEXT("Line 6"));
 		if (worldAreaY > y){
 			worldAreaY = y;
 		}
 
+		UE_LOG(LogTemp,Log,TEXT("Line 7"));
 		if (worldAreaWidthTemp < x){
 			worldAreaWidthTemp = x;
 		}
+		UE_LOG(LogTemp,Log,TEXT("Line 8"));
 		if (worldAreaHeightTemp < y){
 			worldAreaHeightTemp = y;
 		}
 
+		UE_LOG(LogTemp,Log,TEXT("Line 9"));
 		chunkAddress.Add(address);
+		UE_LOG(LogTemp,Log,TEXT("Line 9.5"));
 		chunkPositionX.Add(x);
 		chunkPositionY.Add(y);
 
+		UE_LOG(LogTemp,Log,TEXT("Line 10"));
                 ChunkLocations.Add(address, FVector2D(x, y));
 
+		UE_LOG(LogTemp,Log,TEXT("Line 11"));
                 EdenChunkMetadata TempChunkData {address, x, y};
+		UE_LOG(LogTemp,Log,TEXT("Line 12"));
                 ChunkMetadata.Add(TempChunkData);
 
-	} while ((chunkPointer += 16) < WorldData.size());
+	} while ((chunkPointer += 16) < WorldData.Num());
 
 	UE_LOG(LogTemp,Log,TEXT("Chunks size: %d"), ChunkLocations.Num());
 
