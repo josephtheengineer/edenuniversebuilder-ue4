@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GenericPlatformFile.h"
 #include "PlatformFilemanager.h"
+#include "Kismet/GameplayStatics.h"
+#include "Debug.h"
 
 struct EdenChunkMetadata {
     int Address;
@@ -32,6 +34,8 @@ public:
 	//============================================================================
 	void LoadWorld(FString Path);
 	TArray<int32> OpenFile(FString Path);
+        int32 ReadIntFromFile(int Position);
+        int GetFileSize();
         //std::vector <int32> LegacyOpenFile(FString Path);
         void WriteFile(TArray<int32> WorldDataToWrite, FString Path);
 	FString GetWorldName();
@@ -51,7 +55,6 @@ public:
         TArray<EdenChunkMetadata> ChunkMetadata;
         TMap<int, FVector2D> ChunkLocations;
 
-        TArray<int32> WorldData;
         FString WorldPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir()) + "/Worlds/testWorld.eden";
 
 	// Get the min X value by finding the last value in chunks
@@ -64,4 +67,6 @@ public:
 	TArray<int32> chunkAddress;
 	TArray<int32> chunkPositionX;
 	TArray<int32> chunkPositionY;
+private:
+        Debug Logger;
 };

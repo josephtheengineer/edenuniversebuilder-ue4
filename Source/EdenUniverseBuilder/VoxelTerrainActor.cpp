@@ -256,6 +256,9 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                 UE_LOG(LogTemp, Warning, TEXT("      Loaded %d chunks!"), LoadedChunks);
                 UE_LOG(LogTemp, Warning, TEXT("Render distance was %f"), RenderDistance);
                 UE_LOG(LogTemp, Warning, TEXT("Chunk limit was %d"), ChunkLimit);
+                ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+                //myCharacter->GetActorLocation();
+                myCharacter->SetActorLocation(PlayerPosition);
                 Indexer.WorldLoaded = true;
         }
 }

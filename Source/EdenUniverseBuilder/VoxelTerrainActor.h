@@ -4,7 +4,9 @@
 
 #include "ProceduralMeshComponent.h"
 #include "Components/InstancedStaticMeshComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "ConstructorHelpers.h"
+#include "GameFramework/Character.h"
 #include <map>
 
 #include "EdenWorldDecoder.h"

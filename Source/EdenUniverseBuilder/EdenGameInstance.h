@@ -34,4 +34,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
 	FVector StartingPlayerPosition = FVector(0, 0, 0);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Logging)
+	FString LogLevel = "Warning";
 };
