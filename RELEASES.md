@@ -5,7 +5,7 @@
 - Fixed issue where the player was unable to get past
 the loading screen
 
-# EdenUniverseBuilder v3.0.0 beta2.2
+# EdenUniverseBuilder v3.0.0 beta2.2 || 16-01-2018
 - Fixes issue that prevented players from loading worlds
 - Optimized world loading
 - Added moveable main menu UI

@@ -23,6 +23,9 @@ class EDENUNIVERSEBUILDER_API UWorldFileManager : public UBlueprintFunctionLibra
         UFUNCTION(BlueprintCallable, Category = "FileManager")
         static bool FileSaveString(FString SaveTextB, FString FileNameB);
 
+	UFUNCTION(BlueprintCallable, Category = "FileManager")
+	static bool FileSaveStringArray(TArray<FString> SaveTextB, FString FileNameB);
+
         UFUNCTION(BlueprintPure, Category = "FileManager")
         static bool FileLoadString(FString FileNameA, FString& SaveTextA);
 

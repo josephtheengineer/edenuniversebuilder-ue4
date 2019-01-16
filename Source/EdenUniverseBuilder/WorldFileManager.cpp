@@ -53,3 +53,8 @@ bool UWorldFileManager::FileLoadArray(FString FileNameA, TArray<FString>& SaveTe
 {
     return FFileHelper::LoadFileToStringArray(SaveTextA, *(FileNameA));
 }
+
+bool UWorldFileManager::FileSaveStringArray(TArray<FString> SaveTextB, FString FileNameB)
+{
+    return FFileHelper::SaveStringArrayToFile(SaveTextB, *(FileNameB));
+}

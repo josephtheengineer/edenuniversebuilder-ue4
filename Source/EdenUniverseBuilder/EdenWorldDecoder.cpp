@@ -60,6 +60,35 @@ TArray<int32> EdenWorldDecoder::OpenFile(FString Path)
 }
 
 //==============================================================================
+// Writes to a file
+//==============================================================================
+void EdenWorldDecoder::WriteFile(TArray<int32> WorldDataToWrite, FString Path)
+{
+	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
+	TArray<int32> LWorldData;
+
+	IFileHandle* FileHandle = PlatformFile.OpenRead(*Path);
+	if(FileHandle)
+	{
+		int32 MyInteger;
+		int32* IntPointer = &MyInteger;
+		// Reinterpret the pointer f.or the Read function
+		uint8* ByteBuffer = reinterpret_cast<uint8*>(IntPointer);
+
+		for (int i = 0; i < WorldDataToWrite.Num(); i++)
+		{
+			FileHandle->Write(ByteBuffer, 1);
+			LWorldData.Add(MyInteger);
+		}
+		delete FileHandle;
+		Logger.Log(TEXT("World file path is vaid."), "Info");
+	} else {
+		Logger.Log(TEXT("World file path is invalid!"), "Error");
+	}
+	return LWorldData;
+}
+
+//==============================================================================
 // Reads an binary file at a position into a int32 given a path
 //==============================================================================
 int32 EdenWorldDecoder::ReadIntFromFile(int Position)
@@ -102,13 +131,6 @@ int EdenWorldDecoder::GetFileSize()
 		Logger.Log(TEXT("World file path is invalid!"), "Error");
 		return 0;
 	}
-}
-
-//==============================================================================
-// Writes to a file
-//==============================================================================
-void EdenWorldDecoder::WriteFile(TArray<int32> WorldDataToWrite, FString Path)
-{
 }
 
 //==============================================================================
