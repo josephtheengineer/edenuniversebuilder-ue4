@@ -48,10 +48,10 @@ void AEdenUniverseBuilderCharacter::BeginPlay()
 	//FVector PlayerPosition = Indexer.GetStartingPlayerPosition();
 	//UGameplayStatics::GetPlayerCharacter(GetWorld(),0)->SetActorLocation(PlayerPosition);
 
-	UE_LOG(LogTemp,Log,TEXT("Player positions:"));
-	UE_LOG(LogTemp,Log,TEXT("   x: %f"), PlayerPosition.X);
-	UE_LOG(LogTemp,Log,TEXT("   y: %f"), PlayerPosition.Y);
-	UE_LOG(LogTemp,Log,TEXT("   z: %f"), PlayerPosition.Z);
+	Logger.Log("Player position:", "Info");
+	Logger.LogFloat("   X: ", PlayerPosition.X, "", "Info");
+	Logger.LogFloat("   Y: ", PlayerPosition.Y, "", "Info");
+	Logger.LogFloat("   Z: ", PlayerPosition.Z, "", "Info");
 
 	// Call the base class
 	Super::BeginPlay();
@@ -238,15 +238,15 @@ void AEdenUniverseBuilderCharacter::Raycast()
                                 MeshComp->GetInstanceTransform(Index, BlockLocation);
 
 				if (MeshComp->GetInstanceTransform(Index, BlockLocation)){
-					UE_LOG(LogTemp,Warning,TEXT("Hit result: %d"), Index);
-					UE_LOG(LogTemp,Warning,TEXT("X: %f"), BlockLocation.GetTranslation().X);
-					UE_LOG(LogTemp,Warning,TEXT("Y: %f"), BlockLocation.GetTranslation().Y);
-					UE_LOG(LogTemp,Warning,TEXT("Z: %f"), BlockLocation.GetTranslation().Z);
+					Logger.LogInt("Hit result: ", Index, "", "Info");
+					Logger.LogFloat("X: ", BlockLocation.GetTranslation().X, "", "Info");
+					Logger.LogFloat("Y: ", BlockLocation.GetTranslation().Y, "", "Info");
+					Logger.LogFloat("Z: ", BlockLocation.GetTranslation().Z, "", "Info");
 
-					UE_LOG(LogTemp,Warning,TEXT("Normal of hit:"));
-					UE_LOG(LogTemp,Warning,TEXT("X: %f"), Normal.X);
-					UE_LOG(LogTemp,Warning,TEXT("Y: %f"), Normal.Y);
-					UE_LOG(LogTemp,Warning,TEXT("Z: %f"), Normal.Z);
+					Logger.Log("Normal of hit:", "Info");
+					Logger.LogFloat("X: ", Normal.X, "", "Info");
+					Logger.LogFloat("Y: ", Normal.Y, "", "Info");
+					Logger.LogFloat("Z: ", Normal.Z, "", "Info");
 				}
                         }
 

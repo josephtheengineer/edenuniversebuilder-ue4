@@ -10,7 +10,7 @@
 #include <map>
 
 #include "EdenWorldDecoder.h"
-
+#include "Debug.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "VoxelTerrainActor.generated.h"
@@ -180,4 +180,7 @@ public:
 
         UPROPERTY(EditAnywhere)
         class UMaterialInterface* MAT_Wood;
+
+private:
+        Debug Logger;
 };

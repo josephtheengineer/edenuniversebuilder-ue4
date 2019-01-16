@@ -33,6 +33,9 @@ public:
 	int ChunkLimit = 100;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	int WidgetToDisplay = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
 	FVector StartingPlayerPosition = FVector(0, 0, 0);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Logging)

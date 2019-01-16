@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "VoxelTerrainActor.h"
+#include "Debug.h"
 #include "EdenUniverseBuilderCharacter.generated.h"
 
 class UInputComponent;
@@ -141,6 +142,7 @@ public:
 
 private:
 
+	Debug Logger;
         void Raycast();
 
         UPROPERTY(EditAnywhere, Category = Eden)

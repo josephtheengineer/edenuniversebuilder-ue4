@@ -81,8 +81,54 @@ bool Debug::Log(FString Message, FString Level)
 
         if (IntLevel >= IntLogLevel)
         {
-                GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("%s"), *Message));
-                UE_LOG(LogTemp, Log, TEXT("%s"), *Message);
+                GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("%s: %s"), *Level, *Message));
+                UE_LOG(LogTemp, Log, TEXT("%s: %s"), *Level, *Message);
+                return true;
+        }
+        else
+        {
+                return false;
+        }
+}
+
+//==============================================================================
+// Log
+//==============================================================================
+bool Debug::LogFloat(FString MessageBefore, float Variable, FString MessageAfter, FString Level)
+{
+        int IntLevel = 0;
+        int IntLogLevel = 0;
+
+        GetLogLevelFromString(Level, IntLevel);
+        GetLogLevelFromString(LogLevel, IntLogLevel);
+
+        if (IntLevel >= IntLogLevel)
+        {
+                GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("%s: %s %f %s"), *Level, *MessageBefore, Variable, *MessageAfter));
+                UE_LOG(LogTemp, Log, TEXT("%s: %s %f %s"), *Level, *MessageBefore, Variable, *MessageAfter);
+                return true;
+        }
+        else
+        {
+                return false;
+        }
+}
+
+//==============================================================================
+// Log
+//==============================================================================
+bool Debug::LogInt(FString MessageBefore, int Variable, FString MessageAfter, FString Level)
+{
+        int IntLevel = 0;
+        int IntLogLevel = 0;
+
+        GetLogLevelFromString(Level, IntLevel);
+        GetLogLevelFromString(LogLevel, IntLogLevel);
+
+        if (IntLevel >= IntLogLevel)
+        {
+                GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("%s: %s %d %s"), *Level, *MessageBefore, Variable, *MessageAfter));
+                UE_LOG(LogTemp, Log, TEXT("%s: %s %d %s"), *Level, *MessageBefore, Variable, *MessageAfter);
                 return true;
         }
         else

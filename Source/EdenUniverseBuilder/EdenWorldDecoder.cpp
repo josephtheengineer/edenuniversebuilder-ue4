@@ -27,7 +27,7 @@ void EdenWorldDecoder::LoadWorld(FString Path)
 	Indexer.SetWorldPath(Path);
 	//Indexer.SetWorldName(GetWorldName(Path));
 	Logger.Log(TEXT("Geting world metadata..."), "Info");
-	//GetWorldMetadata();
+	GetWorldMetadata();
 }
 
 //==============================================================================
@@ -123,7 +123,7 @@ FString EdenWorldDecoder::GetWorldName()
 	{
 		worldName += static_cast<char>(ReadIntFromFile(i));
 	}
-	Logger.Log((TEXT("World name is: %s"), *worldName), "Info");
+	Logger.Log("World name is:" + worldName, "Info");
 
 	return worldName;
 }
@@ -133,12 +133,11 @@ FString EdenWorldDecoder::GetWorldName()
 //==============================================================================
 FVector EdenWorldDecoder::GetPlayerPosition()
 {
-	UE_LOG(LogTemp,Log,TEXT("Fetching player position..."));
-	UE_LOG(LogTemp,Log,TEXT("====== World File Header ======"));
-	//for (int i = 0; i < WorldData.size(); i++)
+	Logger.Log((TEXT("Fetching player position...")), "Info");
+	Logger.Log((TEXT("====== World File Header ======")), "Debug");
 	for (int i = 0; i < 30; i++)
 	{
-		UE_LOG(LogTemp,Log,TEXT("%d"), ReadIntFromFile(i));
+		Logger.LogInt("", ReadIntFromFile(i), "", "Debug");
 	}
 
 	// We need to read the world file again.
@@ -151,7 +150,6 @@ FVector EdenWorldDecoder::GetPlayerPosition()
 	IFileHandle* FileHandle = PlatformFile.OpenRead(*Path);
 	if(FileHandle)
 	{
-		// Create a pointer to MyInteger
 		float MyInteger;
 		float* IntPointer = &MyInteger;
 		// Reinterpret the pointer for the Read function
@@ -163,24 +161,20 @@ FVector EdenWorldDecoder::GetPlayerPosition()
 			FWorldData.Add(MyInteger);
 		}
 
-		// Because ByteBuffer points directly to MyInteger, it's already been updated at this point
-		//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("Read integer is %d"), MyInteger);
-
 		// Close the file again
 		delete FileHandle;
-		UE_LOG(LogTemp,Log,TEXT("World file path is vaid. All systems are go for launch."));
 	} else {
-		UE_LOG(LogTemp,Log,TEXT("World file path is invalid!"));
+		Logger.Log(TEXT("World file path is invalid!"), "Error");
 	}
 
         float x = (FWorldData[1] - 64000) * 100;
 	float y = (FWorldData[3] - 64000) * 100;
 	float z = FWorldData[2] * 100;
 
-	UE_LOG(LogTemp,Log,TEXT("Spawning player at..."));
-	UE_LOG(LogTemp,Log,TEXT("   x: %f"), x);
-        UE_LOG(LogTemp,Log,TEXT("   y: %f"), y);
-        UE_LOG(LogTemp,Log,TEXT("   z: %f"), z);
+	Logger.Log("Spawning player at...", "Info");
+	Logger.LogFloat("   x: ", x, "", "Info");
+	Logger.LogFloat("   y: ", y, "", "Info");
+	Logger.LogFloat("   z: ", z, "", "Info");
 
 	FVector Position = FVector(x, y, z);
 
@@ -192,12 +186,12 @@ FVector EdenWorldDecoder::GetPlayerPosition()
 //==============================================================================
 void EdenWorldDecoder::GetWorldMetadata()
 {
-	//Logger.Log((TEXT("WorldData[35]: %d!"), ReadIntFromFile(35)), "Trace");
-	//Logger.Log((TEXT("WorldData[34]: %d!"), ReadIntFromFile(34)), "Trace");
-	//Logger.Log((TEXT("WorldData[33]: %d!"), ReadIntFromFile(33)), "Trace");
-	//Logger.Log((TEXT("WorldData[32]: %d!"), ReadIntFromFile(32)), "Trace");
+	Logger.LogInt("WorldData[35]: ", ReadIntFromFile(35), "!", "Debug");
+	Logger.LogInt("WorldData[34]: ", ReadIntFromFile(34), "!", "Debug");
+	Logger.LogInt("WorldData[33]: ", ReadIntFromFile(33), "!", "Debug");
+	Logger.LogInt("WorldData[32]: ", ReadIntFromFile(32), "!", "Debug");
 	int chunkPointer = ReadIntFromFile(35) * 256 * 256 * 256 + ReadIntFromFile(34) * 256 * 256 + ReadIntFromFile(33) * 256 + ReadIntFromFile(32);
-	//Logger.Log((TEXT("chunkPointer: %d"), chunkPointer), "Debug");
+	Logger.LogInt("chunkPointer: ", chunkPointer, "", "Debug");
 	Logger.Log(TEXT("World file path is vaid. All systems are go for launch."), "Info");
 	do
 	{
@@ -234,7 +228,7 @@ void EdenWorldDecoder::GetWorldMetadata()
 
 	} while ((chunkPointer += 16) < GetFileSize());
 
-	UE_LOG(LogTemp,Log,TEXT("Chunks size: %d"), ChunkLocations.Num());
+	Logger.LogInt("Found %d chunks", ChunkLocations.Num(), "", "Info");
 
 	// Get the total world width | max - min + 1
 	int worldAreaWidth = worldAreaWidthTemp - worldAreaX + 1;
@@ -281,14 +275,24 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
 
                                         FVector Position = FVector(RealX, RealY, RealZ);
 
+					//Logger.LogInt("=== Id: ", Id, " ===", "Debug");
+					//Logger.LogInt("Color: ", Color, "", "Debug");
+					//Logger.LogFloat("X: ", (x + (globalChunkPosX*16)) * 100, "", "Debug");
+					//Logger.LogFloat("Y: ", (y + (globalChunkPosY*16)) * 100, "", "Debug");
+					//Logger.LogFloat("Z: ", (z + (16 * baseHeight)) * 100, "", "Debug");
+
                 			if (Id != 0 && Id <= 79 && Id > 0){
+						//Logger.Log("Block is valid", "Debug");
                                                 EdenChunkData BlockData {Position, Id, Color, chunk};
                                                 ChunkData.Add(BlockData);
+						Logger.LogInt("Adding Block ", ChunkData.Num(), "", "Debug");
                 			}
+					Logger.LogInt("Chunk data tmp: ", ChunkData.Num(), " blocks", "Debug");
         			}
         		}
         	}
         }
+	Logger.LogInt("Chunk data contains ", ChunkData.Num(), " blocks", "Debug");
         return ChunkData;
 }
 
