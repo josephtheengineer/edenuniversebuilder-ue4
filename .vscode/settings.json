@@ -1,12 +1,7 @@
 {
 	"files.exclude": {
-		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/.git": true,
-		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/.idea": true,
-		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/.kdev4": true,
 		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/.vscode": true,
 		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Content": true,
-		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/DerivedDataCache": true,
-		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate": true,
-		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Saved": true
+		"/home/josephtheengineer/workspace/edenproject/EdenUniverseBuilder/Intermediate": true
 	}
 }

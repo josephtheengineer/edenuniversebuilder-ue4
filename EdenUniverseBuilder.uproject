@@ -1,16 +1,13 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.21",
+	"EngineAssociation": "{1CA10BE5-08D6-5CCC-7648-CB7277B0BA2A}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "EdenUniverseBuilder",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
+			"LoadingPhase": "Default"
 		}
 	]
 }

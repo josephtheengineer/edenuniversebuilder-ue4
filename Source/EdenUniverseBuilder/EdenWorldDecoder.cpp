@@ -63,7 +63,7 @@ TArray<int32> EdenWorldDecoder::OpenFile(FString Path)
 // Writes to a file
 //==============================================================================
 void EdenWorldDecoder::WriteFile(TArray<int32> WorldDataToWrite, FString Path)
-{
+{/*
 	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
 	TArray<int32> LWorldData;
 
@@ -85,7 +85,7 @@ void EdenWorldDecoder::WriteFile(TArray<int32> WorldDataToWrite, FString Path)
 	} else {
 		Logger.Log(TEXT("World file path is invalid!"), "Error");
 	}
-	return LWorldData;
+	return LWorldData;*/
 }
 
 //==============================================================================

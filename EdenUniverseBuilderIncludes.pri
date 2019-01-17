@@ -1,29 +1,10 @@
 INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source \
-	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Engine \
-	/opt/unreal-engine/Engine/Source/Runtime \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Classes \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/AI \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/AI/Navigation \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Analytics \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Animation \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Curves \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EdGraph \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Internationalization \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Net \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/PacketHandlers \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Performance \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Physics \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Physics/Experimental \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Physics/ImmediatePhysics \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/ProfilingDebugging \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Rendering \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Slate \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Tests \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/VisualLogger \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/EdenUniverseBuilder \
+	Source \
+	Source/EdenUniverseBuilder \
 	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Core \
+	/opt/unreal-engine/Engine/Source/Runtime \
 	/opt/unreal-engine/Engine/Source/Runtime/Core/Public/Linux \
 	/opt/unreal-engine/Engine/Source/Runtime/Core/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/Core \
@@ -64,6 +45,28 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Serialization/Formatters \
 	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/Templates \
 	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public/UObject \
+	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/Engine \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Classes \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/AI \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/AI/Navigation \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Analytics \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Animation \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Curves \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/EdGraph \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Internationalization \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Net \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/PacketHandlers \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Performance \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Physics \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Physics/Experimental \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Physics/ImmediatePhysics \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/ProfilingDebugging \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Rendering \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Slate \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/Tests \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public/VisualLogger \
 	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ApplicationCore \
 	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/ApplicationCore \
@@ -420,16 +423,6 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer \
 	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Public/Components \
 	/opt/unreal-engine/Engine/Source/Runtime/AudioMixer/Public/DSP \
-	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/EdenUniverseBuilder \
-	Source \
-	Source/EdenUniverseBuilder \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/ProceduralMeshComponent \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Public \
-	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent \
-	Intermediate/Build/Linux/B4D820EA/EdenUniverseBuilderEditor/Inc/JsonUtilities \
-	/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Public \
-	/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities \
 	/opt/unreal-engine/Engine/Source/Runtime/Launch/Private \
 	/opt/unreal-engine/Engine/Source/Programs/BlankProgram/Private \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/BlankProgram/Inc/Core \
@@ -1167,6 +1160,8 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Plugins/Experimental/CharacterAI/Source/CharacterAI/Public \
 	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Private \
 	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProceduralMeshComponent \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source \
+	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Public \
 	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponentEditor/Private \
 	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ProceduralMeshComponentEditor \
 	/opt/unreal-engine/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponentEditor/Public \
@@ -1295,6 +1290,7 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ImageCore \
 	/opt/unreal-engine/Engine/Source/Runtime/ImageCore/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/JsonUtilities \
+	/opt/unreal-engine/Engine/Source/Runtime/JsonUtilities/Public \
 	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/OnlineSubsystem \
 	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem \
 	/opt/unreal-engine/Engine/Plugins/Online/OnlineSubsystem/Source \

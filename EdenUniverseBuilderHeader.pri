@@ -10904,15 +10904,7 @@ HEADERS += \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Public/RuntimeTests.h" \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Public/ShaderComparisonTests.h" \
 	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Public/ScreenshotTools.h" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenGameInstance.h" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilder.h" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderCharacter.h" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderGameMode.h" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderHUD.h" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderProjectile.h" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenWorldDecoder.h" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/VoxelIndexer.h" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/VoxelTerrainActor.h" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/WorldFileManager.h" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderGameModeBase.h" \
  
 

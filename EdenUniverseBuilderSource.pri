@@ -8412,15 +8412,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private/Shaders/ShaderComparisonTests.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private/Slate/RichTextMarkupProcessingTest.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Private/ScreenshotTools.cpp" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenGameInstance.cpp" \
 	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilder.cpp" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderCharacter.cpp" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderGameMode.cpp" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderHUD.cpp" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderProjectile.cpp" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenWorldDecoder.cpp" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/VoxelIndexer.cpp" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/VoxelTerrainActor.cpp" \
-	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/WorldFileManager.cpp" \
+	"$$EdenUniverseBuilderRootPath/Source/EdenUniverseBuilder/EdenUniverseBuilderGameModeBase.cpp" \
  
 
