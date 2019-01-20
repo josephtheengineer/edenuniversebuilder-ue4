@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "GenericPlatformFile.h"
+#include "PlatformFilemanager.h"
 #include "WorldFileManager.generated.h"
 
 /**
@@ -13,12 +15,6 @@ UCLASS()
 class EDENUNIVERSEBUILDER_API UWorldFileManager : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-
-        UFUNCTION(BlueprintCallable, Category="FileManager")
-        static void DownloadFile(FString url, FString outfilename);
-
-        UFUNCTION(BlueprintCallable, Category="FileManager")
-        static void Search(FString Query);
 
         UFUNCTION(BlueprintCallable, Category = "FileManager")
         static bool FileSaveString(FString SaveTextB, FString FileNameB);
@@ -31,4 +27,7 @@ class EDENUNIVERSEBUILDER_API UWorldFileManager : public UBlueprintFunctionLibra
 
         UFUNCTION(BlueprintPure, Category = "FileManager")
         static bool FileLoadArray(FString FileNameA, TArray<FString>& SaveTextA);
+
+	UFUNCTION(BlueprintCallable, Category = "FileManager")
+	static bool DeleteFile(FString FileName);
 };

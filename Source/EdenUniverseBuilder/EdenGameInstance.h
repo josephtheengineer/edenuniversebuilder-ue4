@@ -17,6 +17,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=MainMenu)
 	FString WorldPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir()) + "/Worlds/testWorld.eden";
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	FString SearchPath;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	FString SearchName;
+
         UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=MainMenu)
         TMap<FString, bool> Options;
 
@@ -26,16 +32,16 @@ public:
         UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
         int BlockToPlace = 13;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WorldDecoder)
 	float RenderDistance = 10;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WorldDecoder)
 	int ChunkLimit = 100;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
 	int WidgetToDisplay = 0;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WorldDecoder)
 	FVector StartingPlayerPosition = FVector(0, 0, 0);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Logging)

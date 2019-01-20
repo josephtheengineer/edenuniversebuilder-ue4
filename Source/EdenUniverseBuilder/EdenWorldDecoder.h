@@ -40,8 +40,10 @@ public:
         void WriteFile(TArray<int32> WorldDataToWrite, FString Path);
 	FString GetWorldName();
 	void GetWorldMetadata();
+        void CreateWorldMetadata();
         FVector GetPlayerPosition();
 	TArray<EdenChunkData> GetChunkData(int chunk);
+        bool DecompressGZip(const TArray<int32>& CompressedContent, TArray<int32>& UncompressedContent);
 
         //============================================================================
         // Secondary Functions

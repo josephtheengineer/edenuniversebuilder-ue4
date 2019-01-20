@@ -16,6 +16,9 @@ public class EdenUniverseBuilder : ModuleRules
                                                                     "ProceduralMeshComponent",
                                                                     "Http",
                                                                     "Json",
-                                                                    "JsonUtilities" });
+                                                                    "JsonUtilities",
+								    "ImageWrapper",
+								    "RenderCore",
+								    "zlib" });
 	}
 }

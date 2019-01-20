@@ -8,6 +8,7 @@
 #include "VoxelTerrainActor.h"
 #include "EdenGameInstance.h"
 #include "VoxelIndexer.h"
+#include "TerrainGenerator.h"
 
 //==============================================================================
 // Constructor
@@ -22,10 +23,17 @@ EdenWorldDecoder::EdenWorldDecoder()
 void EdenWorldDecoder::LoadWorld(FString Path)
 {
 	VoxelIndexer Indexer;
+	TerrainGenerator Generator;
 	Logger.Log(TEXT("We are online. Starting world convertion..."), "Info");
 	WorldPath = Path;
 	Indexer.SetWorldPath(Path);
 	//Indexer.SetWorldName(GetWorldName(Path));
+	if (FPlatformFileManager::Get().GetPlatformFile().FileExists(*Path) == false)
+	{
+		Logger.Log(TEXT("Creating file " + Path), "Info");
+		Generator.CreateDebugChunk();
+		//CreateWorldMetadata();
+	}
 	Logger.Log(TEXT("Geting world metadata..."), "Info");
 	GetWorldMetadata();
 }
@@ -203,6 +211,11 @@ FVector EdenWorldDecoder::GetPlayerPosition()
 	return Position;
 }
 
+void EdenWorldDecoder::CreateWorldMetadata()
+{
+	// Write header
+}
+
 //==============================================================================
 // Associate the chunk pos with the address + get world area
 //==============================================================================
@@ -375,6 +388,11 @@ void EdenWorldDecoder::SaveWorld(FString path)
                 }
         }
 }*/
+
+bool EdenWorldDecoder::DecompressGZip(const TArray<int32>& CompressedContent, TArray<int32>& UncompressedContent)
+{
+	return FCompression::UncompressMemory(COMPRESS_ZLIB, (void*)UncompressedContent.GetData(), UncompressedContent.Num(), (const void*)CompressedContent.GetData(), CompressedContent.Num(), false, DEFAULT_ZLIB_BIT_WINDOW | 16);
+}
 
 //==============================================================================
 // Destructor

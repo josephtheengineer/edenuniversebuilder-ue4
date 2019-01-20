@@ -9,3 +9,8 @@ TerrainGenerator::TerrainGenerator()
 TerrainGenerator::~TerrainGenerator()
 {
 }
+
+void TerrainGenerator::CreateDebugChunk()
+{
+
+}

@@ -5,11 +5,12 @@
 #include "CoreMinimal.h"
 
 /**
- * 
+ *
  */
 class EDENUNIVERSEBUILDER_API TerrainGenerator
 {
 public:
 	TerrainGenerator();
 	~TerrainGenerator();
+	void CreateDebugChunk();
 };
