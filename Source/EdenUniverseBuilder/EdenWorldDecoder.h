@@ -44,6 +44,9 @@ public:
         FVector GetPlayerPosition();
 	TArray<EdenChunkData> GetChunkData(int chunk);
         bool DecompressGZip(const TArray<int32>& CompressedContent, TArray<int32>& UncompressedContent);
+        TArray<int32> DecompressBytes(TArray<int32> CompressedBinaryArray);
+        int32 DecompressIntFromFile(int Position);
+        float DecompressFloatFromFile(int Position);
 
         //============================================================================
         // Secondary Functions

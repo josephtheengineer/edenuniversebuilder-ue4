@@ -246,8 +246,8 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                                 }
                         }
                 }
-                Logger.LogInt("Done! Loaded %d blocks!", LoadedBlocks, "", "Info");
-                Logger.LogInt("      Loaded %d chunks!", LoadedChunks, "", "Info");
+                Logger.LogInt("Done! Loaded ", LoadedBlocks, " blocks!", "Info");
+                Logger.LogInt("      Loaded ", LoadedChunks, " chunks!", "Info");
                 Logger.LogInt("Render distance was ", RenderDistance, "", "Info");
                 Logger.LogInt("Chunk limit was ", ChunkLimit, "", "Info");
                 ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
@@ -263,7 +263,7 @@ FVector2D AVoxelTerrainActor::ChunkPositionFromUnrealUnits(FVector UnrealUnits, 
         int X = int(UnrealUnits.X + 0.5);
         int Y = int(UnrealUnits.Y + 0.5);
 
-        Logger.Log((TEXT("Player position converted to int: ")), "Debug");
+        Logger.Log((TEXT("Player position converted to chunk units: ")), "Debug");
         Logger.LogInt("   X: ", X, "", "Debug");
         Logger.LogInt("   X: ", Y, "", "Debug");
 
