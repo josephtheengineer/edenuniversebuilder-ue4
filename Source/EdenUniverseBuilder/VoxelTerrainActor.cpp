@@ -1,3 +1,5 @@
+// Licensed under the Apache License, Version 2.0 (www.apache.org/licenses/LICENSE-2.0)
+
 #include "VoxelTerrainActor.h"
 #include "VoxelIndexer.h"
 #include "EdenWorldDecoder.h"
@@ -228,14 +230,14 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                                                 float Y = ChunkData[Blocks].Position.Y;
                                                 float Z = ChunkData[Blocks].Position.Z;
 
-                                                Logger.Log("Checking block...", "Debug");
-                                                Logger.LogFloat("X: ", X, "", "Debug");
-                                                Logger.LogFloat("Y: ", Y, "", "Debug");
-                                                Logger.LogFloat("Z: ", Z, "", "Debug");
+                                                //Logger.Log("Checking block...", "Debug");
+                                                //Logger.LogFloat("X: ", X, "", "Debug");
+                                                //Logger.LogFloat("Y: ", Y, "", "Debug");
+                                                //Logger.LogFloat("Z: ", Z, "", "Debug");
 
                                                 if (!(Indexer.CheckBlock(X, Y+100, Z) && Indexer.CheckBlock(X, Y-100, Z) && Indexer.CheckBlock(X+100,Y, Z) && Indexer.CheckBlock(X-100, Y, Z) && Indexer.CheckBlock(X, Y, Z+100) && Indexer.CheckBlock(X, Y, Z-100)))
                                                 {
-                                                        Logger.LogInt("Placing block ", ChunkData[Blocks].Id, "...", "Debug");
+                                                        //Logger.LogInt("Placing block ", ChunkData[Blocks].Id, "...", "Debug");
                                                         CreateBlock(ChunkData[Blocks].Id, ChunkMetadata[i].Address, X, Y, Z);
                                                         LoadedBlocks++;
                                                 }

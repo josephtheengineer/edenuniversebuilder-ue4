@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Licensed under the Apache License, Version 2.0 (www.apache.org/licenses/LICENSE-2.0)
 
 #pragma once
 
@@ -40,6 +40,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
 	int WidgetToDisplay = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
+	int CurrentPanel = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=WorldDecoder)
 	FVector StartingPlayerPosition = FVector(0, 0, 0);

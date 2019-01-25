@@ -1,10 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings. ¯\_(ツ)_/¯
+// Licensed under the Apache License, Version 2.0 (www.apache.org/licenses/LICENSE-2.0) ¯\_(ツ)_/¯
 
 // Based on code from Vuenctools for Eden || http://forum.edengame.net/index.php?/topic/295-vuenctools-for-eden-eden-world-manipulation-tool/
 // with help from Robert Munafo || http://www.mrob.com/pub/vidgames/eden-file-format.html
 
 #include "EdenWorldDecoder.h"
-
 #include "VoxelTerrainActor.h"
 #include "EdenGameInstance.h"
 #include "VoxelIndexer.h"
@@ -29,14 +28,6 @@ void EdenWorldDecoder::LoadWorld(FString Path)
 	WorldPath = Path;
 	Logger.Log(TEXT("WorldPath: " + WorldPath), "Info");
 	Indexer.SetWorldPath(Path);
-	//Indexer.SetWorldName(GetWorldName(Path));
-	//TArray<int32> UncompressedContent = DecompressBytes(OpenFile(Path));
-	//Logger.Log("== UNCOMPRESSED HEADER ==", "Debug");
-	//for (int i = 0; i < 20; i++)
-	//{
-	//	Logger.LogInt("", UncompressedContent[i], "", "Debug");
-	//}
-	//DecompressFile(Path);
 	if (FPlatformFileManager::Get().GetPlatformFile().FileExists(*Path) == false)
 	{
 		Logger.Log(TEXT("Creating file " + Path), "Info");
@@ -392,9 +383,9 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
 						//Logger.Log("Block is valid", "Debug");
                                                 EdenChunkData BlockData {Position, Id, Color, chunk};
                                                 ChunkData.Add(BlockData);
-						Logger.LogInt("Adding Block ", ChunkData.Num(), "", "Debug");
+						//Logger.LogInt("Adding Block ", ChunkData.Num(), "", "Debug");
                 			}
-					Logger.LogInt("Chunk data tmp: ", ChunkData.Num(), " blocks", "Debug");
+					//Logger.LogInt("Chunk data tmp: ", ChunkData.Num(), " blocks", "Debug");
         			}
         		}
         	}

@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Licensed under the Apache License, Version 2.0 (www.apache.org/licenses/LICENSE-2.0)
 
 
 #include "VoxelIndexer.h"
