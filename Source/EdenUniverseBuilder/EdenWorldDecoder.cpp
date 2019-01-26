@@ -8,126 +8,99 @@
 #include "EdenGameInstance.h"
 #include "VoxelIndexer.h"
 #include "TerrainGenerator.h"
+//#include "ThirdParty/zlib/zlib-1.2.5/Inc/zlib.h"
 #include "zlib.h"
 
-//==============================================================================
-// Constructor
-//==============================================================================
+/** ==============================================================================
+  * @desc constructor
+  * @param void
+  * @return void
+  */// ===========================================================================
 EdenWorldDecoder::EdenWorldDecoder()
 {
 }
 
-//==============================================================================
-// This function sets up the Indexer and must be run
-//==============================================================================
-void EdenWorldDecoder::LoadWorld(FString Path)
+/** ==============================================================================
+  * @desc constructor
+  * @param void
+  * @return void
+  */// ===========================================================================
+EdenWorldDecoder::~EdenWorldDecoder()
 {
-	VoxelIndexer Indexer;
-	TerrainGenerator Generator;
+}
+
+/** ==============================================================================
+  * @desc sets up the Indexer and must be run
+  * @param void
+  * @return bool - success or failure
+  */// ===========================================================================
+bool EdenWorldDecoder::InitializeWorld()
+{
 	Logger.Log(TEXT("We are online. Starting world convertion..."), "Info");
-	WorldPath = Path;
 	Logger.Log(TEXT("WorldPath: " + WorldPath), "Info");
-	Indexer.SetWorldPath(Path);
-	if (FPlatformFileManager::Get().GetPlatformFile().FileExists(*Path) == false)
+
+	VoxelIndexer Indexer;
+	Indexer.SetWorldPath(WorldPath);
+
+	if (FPlatformFileManager::Get().GetPlatformFile().FileExists(*WorldPath) == false)
 	{
-		Logger.Log(TEXT("Creating file " + Path), "Info");
+		Logger.Log(TEXT("Creating file " + WorldPath), "Info");
+		TerrainGenerator Generator;
 		Generator.CreateDebugChunk();
-		//CreateWorldMetadata();
+		CreateWorldMetadata();
 	}
+	Logger.Log(TEXT("Loading world data..."), "Info");
+	LoadWorldData();
 	Logger.Log(TEXT("Geting world metadata..."), "Info");
 	GetWorldMetadata();
+	return true;
 }
 
-//==============================================================================
-// Reads an entire binary file into a TArray (int32) given a path
-//==============================================================================
-TArray<int32> EdenWorldDecoder::OpenFile(FString Path)
+/** ==============================================================================
+  * @desc sets the current world
+  * @param FString $Path - the path to the world file
+  * @return bool - success or failure
+  */// ===========================================================================
+bool EdenWorldDecoder::SetWorldPath(FString Path)
 {
-	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
-	TArray<int32> LWorldData;
-
-	IFileHandle* FileHandle = PlatformFile.OpenRead(*Path);
-	if(FileHandle)
-	{
-		int32 MyInteger;
-		int32* IntPointer = &MyInteger;
-		// Reinterpret the pointer for the Read function
-		uint8* ByteBuffer = reinterpret_cast<uint8*>(IntPointer);
-
-		for (int i = 0; i < FileHandle->Size(); i++)
-		{
-			FileHandle->Read(ByteBuffer, 1);
-			LWorldData.Add(MyInteger);
-		}
-		delete FileHandle;
-		Logger.Log(TEXT("World file path is vaid."), "Info");
-	} else {
-		Logger.Log(TEXT("World file path is invalid!"), "Error");
-	}
-	return LWorldData;
+	WorldPath = Path;
+	return true;
 }
 
-//==============================================================================
-// Writes to a file
-//==============================================================================
-void EdenWorldDecoder::WriteFile(TArray<int32> WorldDataToWrite, FString Path)
-{/*
-	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
-	TArray<int32> LWorldData;
-
-	IFileHandle* FileHandle = PlatformFile.OpenRead(*Path);
-	if(FileHandle)
-	{
-		int32 MyInteger;
-		int32* IntPointer = &MyInteger;
-		// Reinterpret the pointer f.or the Read function
-		uint8* ByteBuffer = reinterpret_cast<uint8*>(IntPointer);
-
-		for (int i = 0; i < WorldDataToWrite.Num(); i++)
-		{
-			FileHandle->Write(ByteBuffer, 1);
-			LWorldData.Add(MyInteger);
-		}
-		delete FileHandle;
-		Logger.Log(TEXT("World file path is vaid."), "Info");
-	} else {
-		Logger.Log(TEXT("World file path is invalid!"), "Error");
-	}
-	return LWorldData;*/
-}
-
-//==============================================================================
-// Reads an binary file at a position into a int32 given a path
-//==============================================================================
+/** ==============================================================================
+  * @desc reads an binary file at a position into a int32
+  * @param int $Position - the position in the file
+  * @return TArray<int32> - binary array
+  */// ===========================================================================
 int32 EdenWorldDecoder::ReadIntFromFile(int Position)
 {
-	//Logger.Log(TEXT("World file is " + WorldPath), "Debug");
-	/*
-	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
-	IFileHandle* FileHandle = PlatformFile.OpenRead(*WorldPath);
-	if(FileHandle)
+	gzFile File;
+	File = gzopen(TCHAR_TO_UTF8(*WorldPath), "rb");
+	if(File == NULL)
 	{
-		int32 MyInteger;
-		int32* IntPointer = &MyInteger;
-		// Reinterpret the pointer for the Read function
-		uint8* ByteBuffer = reinterpret_cast<uint8*>(IntPointer);
-
-		FileHandle->Seek(Position);
-		FileHandle->Read(ByteBuffer, 1);
-		return MyInteger;
-		delete FileHandle;
+		Logger.Log("Couldn't open input file for reading", "Error");
 	}
-	else
-	{
-		Logger.Log(TEXT("World file path is invalid!"), "Error");
-		return 0;
-	}*/
-	return DecompressIntFromFile(Position);
+
+	gzseek(File, Position, SEEK_SET);
+
+	//void *VoidPointer = nullptr;
+	int* IntPointer = new int(0);
+	gzread(File, IntPointer, 1);
+	//Logger.LogInt("Uncompressed Value: ", *IntPointer, "", "Debug");
+
+	gzclose(File);
+
+	//free( dataReadInCompressed );
+	//free( dataUncompressed );
+
+	return *IntPointer;
 }
 
-//==============================================================================
-// Gets the file size of the world
-//==============================================================================
+/** ==============================================================================
+  * @desc gets the size of the world
+  * @param void
+  * @return int - file size in bytes
+  */// ===========================================================================
 int EdenWorldDecoder::GetFileSize()
 {
 	gzFile File;
@@ -180,34 +153,8 @@ FVector EdenWorldDecoder::GetPlayerPosition()
 	Logger.Log((TEXT("====== World File Header ======")), "Debug");
 	for (int i = 0; i < 30; i++)
 	{
-		Logger.LogInt("", ReadIntFromFile(i), "", "Debug");
+		Logger.LogInt("", WorldData[i], "", "Debug");
 	}
-
-	// We need to read the world file again.
-	// This is because a float is 4 times as big as a char.
-/*
-	IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
-	TArray<float> FWorldData;
-
-	IFileHandle* FileHandle = PlatformFile.OpenRead(*WorldPath);
-	if(FileHandle)
-	{
-		float MyInteger;
-		float* IntPointer = &MyInteger;
-		// Reinterpret the pointer for the Read function
-		uint8* ByteBuffer = reinterpret_cast<uint8*>(IntPointer);
-
-		for (int i = 0; i < 30; i++)
-		{
-			FileHandle->Read(ByteBuffer, 4);
-			FWorldData.Add(MyInteger);
-		}
-
-		// Close the file again
-		delete FileHandle;
-	} else {
-		Logger.Log(TEXT("World file path is invalid!"), "Error");
-	}*/
 
 	TArray<float> FWorldData;
 	//////////////!!!!!!!!!!IMPORTANT:  note "rb" NOT just "r".
@@ -233,25 +180,6 @@ FVector EdenWorldDecoder::GetPlayerPosition()
 		gzread(File, ByteBuffer, 4);
 		FWorldData.Add(MyInteger);
 	}
-/*
-	gzFile inFileZ = gzopen("data4.txt", "rb");
-
-	unsigned char unzipBuffer[4];
-	gzread(inFileZ, unzipBuffer, 4);
-	std::cout<<std::hex<<unzipBuffer<<std::endl;
-
-	stream.next_in = unzipBuffer;
-	inflate(&stream, 1);
-	float *f = (float *) unzipBuffer;
-	printf("%f\n", f);
-
-	z_stream stream;
-	gzread(inFileZ, unzipBuffer, 4);
-	stream.next_in = unzipBuffer;
-	inflate(&stream, 1);
-	f = (float *) unzipBuffer;
-	printf("%f\n", f);
-	gzclose(inFileZ);*/
 
 	gzclose(File);
 
@@ -277,17 +205,23 @@ void EdenWorldDecoder::CreateWorldMetadata()
 	// Write header
 }
 
-//==============================================================================
-// Associate the chunk pos with the address + get world area
-//==============================================================================
+/** ==============================================================================
+  * @desc associate the chunk pos with the address + get world area
+  * @param void
+  * @return void
+  */// ===========================================================================
 void EdenWorldDecoder::GetWorldMetadata()
 {
-	Logger.LogInt("WorldData[35]: ", ReadIntFromFile(35), "!", "Debug");
-	Logger.LogInt("WorldData[34]: ", ReadIntFromFile(34), "!", "Debug");
-	Logger.LogInt("WorldData[33]: ", ReadIntFromFile(33), "!", "Debug");
-	Logger.LogInt("WorldData[32]: ", ReadIntFromFile(32), "!", "Debug");
-	// This might be incorrect
+
+	Logger.LogInt("WorldData[35]: ", WorldData[35], "!", "Debug");
+	Logger.LogInt("WorldData[34]: ", WorldData[34], "!", "Debug");
+	Logger.LogInt("WorldData[33]: ", WorldData[33], "!", "Debug");
+	Logger.LogInt("WorldData[32]: ", WorldData[32], "!", "Debug");
+
 	int chunkPointer = ReadIntFromFile(35) * 256 * 256 * 256 + ReadIntFromFile(34) * 256 * 256 + ReadIntFromFile(33) * 256 + ReadIntFromFile(32);
+	int worldAreaWidthTemp = 0;
+	int worldAreaHeightTemp = 0;
+
 	Logger.LogInt("chunkPointer: ", chunkPointer, "", "Debug");
 	Logger.Log(TEXT("World file path is vaid. All systems are go for launch."), "Info");
 	do
@@ -315,10 +249,6 @@ void EdenWorldDecoder::GetWorldMetadata()
 			worldAreaHeightTemp = y;
 		}
 
-		chunkAddress.Add(address);
-		chunkPositionX.Add(x);
-		chunkPositionY.Add(y);
-
                 ChunkLocations.Add(address, FVector2D(x, y));
 
                 EdenChunkMetadata TempChunkData {address, x, y};
@@ -329,10 +259,10 @@ void EdenWorldDecoder::GetWorldMetadata()
 	Logger.LogInt("Found ", ChunkLocations.Num(), " chunks", "Info");
 
 	// Get the total world width | max - min + 1
-	int worldAreaWidth = worldAreaWidthTemp - worldAreaX + 1;
+	worldAreaWidth = worldAreaWidthTemp - worldAreaX + 1;
 
 	// Get the total world height | max - min + 1
-	int worldAreaHeight = worldAreaHeightTemp - worldAreaY + 1;
+	worldAreaHeight = worldAreaHeightTemp - worldAreaY + 1;
 }
 
 //==============================================================================
@@ -350,8 +280,6 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
 	int realChunkPosX = (globalChunkPosX*16) * 100;
 	int realChunkPosY = (globalChunkPosY*16) * 100;
 
-        //int chunk = chunkAddress[i];
-
         // Gets the staring point for placing blocks in the chunk
         int baseX = (ChunkLocations[chunk].X - worldAreaX) * 16;
         int baseY = (ChunkLocations[chunk].Y - worldAreaY) * 16;
@@ -364,8 +292,8 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
         		{
         			for (int z = 0; z < 16; z++)
         			{
-                			int Id = ReadIntFromFile(chunk + baseHeight * 8192 + x * 256 + y * 16 + z);
-                                        int Color = ReadIntFromFile(chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096);
+                			int Id = WorldData[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
+                                        int Color = WorldData[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
 
                 			float RealX = (x + (globalChunkPosX*16)) * 100;
                 			float RealY = (y + (globalChunkPosY*16)) * 100;
@@ -406,9 +334,9 @@ TMap<int, FVector2D> EdenWorldDecoder::GetChunkLocations()
 {
         return ChunkLocations;
 }
-/*
-void EdenWorldDecoder::SaveWorld(FString path)
-{
+
+void EdenWorldDecoder::SaveWorld()
+{/*
         using (FileStream stream = new FileStream(path, FileMode.CreateNew))
         {
                 //Write header
@@ -449,80 +377,11 @@ void EdenWorldDecoder::SaveWorld(FString path)
                 {
                     stream.WriteByte(otherBytes[i]);
                 }
-        }
-}*/
-
-//==============================================================================
-// Attempt 1 - returns empty array
-//==============================================================================
-bool EdenWorldDecoder::DecompressGZip(const TArray<int32>& CompressedContent, TArray<int32>& UncompressedContent)
-{
-	return FCompression::UncompressMemory(COMPRESS_ZLIB, (void*)UncompressedContent.GetData(), UncompressedContent.Num(), (const void*)CompressedContent.GetData(), CompressedContent.Num(), false, DEFAULT_ZLIB_BIT_WINDOW | 16);
+        }*/
 }
 
-//==============================================================================
-// Attempt 2 - returns an array with 0's
-//==============================================================================
-TArray<int32> EdenWorldDecoder::DecompressBytes(TArray<int32> CompressedBinaryArray)
+bool EdenWorldDecoder::LoadWorldData()
 {
-	TArray<int32> UncompressedBinaryArray;
-	UncompressedBinaryArray.SetNum(CompressedBinaryArray.Num() * 1032);
-
-	//int ret;
-	z_stream strm;
-	strm.zalloc = Z_NULL;
-	strm.zfree = Z_NULL;
-	strm.opaque = Z_NULL;
-
-	strm.avail_in = CompressedBinaryArray.Num();
-	strm.next_in = (Bytef *)CompressedBinaryArray.GetData();
-	strm.avail_out = UncompressedBinaryArray.Num();
-	strm.next_out = (Bytef *)UncompressedBinaryArray.GetData();
-
-	// the actual DE-compression work.
-	inflateInit(&strm);
-	inflate(&strm, Z_FINISH);
-	inflateEnd(&strm);
-
-	return UncompressedBinaryArray;
-	//return BinaryArrayToFString(UncompressedBinaryArray);
-}
-/*
-//==============================================================================
-// Decompresses a file
-//==============================================================================
-TArray<int32> EdenWorldDecoder::DecompressFile(FString filename)
-{
-	std::ifstream file;
-	file.exceptions(std::ios::failbit | std::ios::badbit);
-	file.open(std::string(TCHAR_TO_UTF8(*filename), std::ios_base::in | std::ios_base::binary);
-
-	boost::iostreams::filtering_stream<boost::iostreams::input> decompressor;
-	decompressor.push(boost::iostreams::gzip_decompressor());
-	decompressor.push(file);
-
-	//And then to decompress line by line:
-
-	for(std::string line; getline(decompressor, line);) {
-		// decompressed a line
-	}
-
-	//Or entire file into an array:
-
-	//std::vector<char> data(
-	//	std::istreambuf_iterator<char>(decompressor)
-	//	, std::istreambuf_iterator<char>()
-	//);
-	TArray<int32> test;
-	return test;
-}*/
-
-//==============================================================================
-// Decompresses a int from a file
-//==============================================================================
-int32 EdenWorldDecoder::DecompressIntFromFile(int Position)
-{
-	//////////////!!!!!!!!!!IMPORTANT:  note "rb" NOT just "r".
 	gzFile File;
 	File = gzopen(TCHAR_TO_UTF8(*WorldPath), "rb");
 	if(File == NULL)
@@ -530,51 +389,17 @@ int32 EdenWorldDecoder::DecompressIntFromFile(int Position)
 		Logger.Log("Couldn't open input file for reading", "Error");
 	}
 
-	gzseek(File, Position, SEEK_SET);
-
-	//void *VoidPointer = nullptr;
-	int* IntPointer = new int(0);
-	gzread(File, IntPointer, 1);
-	//Logger.LogInt("Uncompressed Value: ", *IntPointer, "", "Debug");
-
-	gzclose(File);
-
-	//free( dataReadInCompressed );
-	//free( dataUncompressed );
-
-	return *IntPointer;
-}
-
-//==============================================================================
-// Decompresses a float from a file
-//==============================================================================
-float EdenWorldDecoder::DecompressFloatFromFile(int Position)
-{
-	//////////////!!!!!!!!!!IMPORTANT:  note "rb" NOT just "r".
-	gzFile File;
-	File = gzopen(TCHAR_TO_UTF8(*WorldPath), "rb");
-	if(File == NULL)
+	while (!(gzeof(File)))
 	{
-		Logger.Log("Couldn't open input file for reading", "Error");
+		int* IntPointer = new int(0);
+		gzread(File, IntPointer, 1);
+		WorldData.Add(*IntPointer);
 	}
 
-	gzseek(File, Position, SEEK_SET);
-
-	//void *VoidPointer = nullptr;
-	float* FloatPointer = new float(0.f);
-	gzread(File, FloatPointer, 4);
-
 	gzclose(File);
 
 	//free( dataReadInCompressed );
 	//free( dataUncompressed );
 
-	return *FloatPointer;
-}
-
-//==============================================================================
-// Destructor
-//==============================================================================
-EdenWorldDecoder::~EdenWorldDecoder()
-{
+	return true;
 }
