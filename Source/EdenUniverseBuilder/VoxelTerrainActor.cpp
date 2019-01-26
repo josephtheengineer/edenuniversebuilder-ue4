@@ -1,3 +1,5 @@
+// Licensed under the Apache License, Version 2.0 (www.apache.org/licenses/LICENSE-2.0)
+
 #include "VoxelTerrainActor.h"
 #include "VoxelIndexer.h"
 #include "EdenWorldDecoder.h"
@@ -152,7 +154,8 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                 //==============================================================================
                 // Load variables into the indexer from the world file.
                 // This excludes memory heavy operations such as block data.
-                WorldDecoder.LoadWorld(TCHAR_TO_UTF8(*Path));
+                WorldDecoder.SetWorldPath(Path);
+                WorldDecoder.InitializeWorld();
 
                 UEdenGameInstance* GameInstance = Cast<UEdenGameInstance>(GetGameInstance());
                 GameInstance->StartingPlayerPosition = WorldDecoder.GetPlayerPosition();
@@ -199,7 +202,7 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
 
                         Logger.LogFloat("Distance to chunk: ", Distance, "", "Debug");
 
-                        if (Distance < RenderDistance && LoadedChunks < ChunkLimit)
+                        if (Distance < RenderDistance && LoadedChunks < ChunkLimit) // PREFORMANCE HEAVY FUNCTION!!!!
                         {
                                 if (Status > 10)
                                 {
@@ -210,10 +213,13 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                                 {
                                         //==============================================================================
                                         // Get the chunk data from the WORLD FILE.
+                                        Logger.LogFloat("Running GetChunkData on chunk ", ChunkMetadata[i].Address, "...", "Debug");
                                         TArray<EdenChunkData> ChunkData = WorldDecoder.GetChunkData(ChunkMetadata[i].Address);
 
+                                        Logger.Log("Creating the chunk mesh... ", "Debug");
                                         CreateChunk(ChunkMetadata[i].Address, x, y, z);
 
+                                        Logger.Log("Registering blocks... ", "Debug");
                                         for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
                                         {
                                                 Indexer.RegisterBlock(ChunkData[Blocks].Id, ChunkData[Blocks].Position.X, ChunkData[Blocks].Position.Y, ChunkData[Blocks].Position.Z, ChunkMetadata[i].Address, 0);
@@ -221,6 +227,7 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
 
                                         //==============================================================================
                                         Logger.LogInt("Chunk data contains ", ChunkData.Num(), " blocks", "Debug");
+                                        Logger.Log("Placing blocks... ", "Debug");
                                         // Place all the blocks contained in the chunk data.
                                         for (int Blocks = 0; Blocks < ChunkData.Num(); Blocks++)
                                         {
@@ -228,14 +235,14 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                                                 float Y = ChunkData[Blocks].Position.Y;
                                                 float Z = ChunkData[Blocks].Position.Z;
 
-                                                Logger.Log("Checking block...", "Debug");
-                                                Logger.LogFloat("X: ", X, "", "Debug");
-                                                Logger.LogFloat("Y: ", Y, "", "Debug");
-                                                Logger.LogFloat("Z: ", Z, "", "Debug");
+                                                //Logger.Log("Checking block...", "Debug");
+                                                //Logger.LogFloat("X: ", X, "", "Debug");
+                                                //Logger.LogFloat("Y: ", Y, "", "Debug");
+                                                //Logger.LogFloat("Z: ", Z, "", "Debug");
 
                                                 if (!(Indexer.CheckBlock(X, Y+100, Z) && Indexer.CheckBlock(X, Y-100, Z) && Indexer.CheckBlock(X+100,Y, Z) && Indexer.CheckBlock(X-100, Y, Z) && Indexer.CheckBlock(X, Y, Z+100) && Indexer.CheckBlock(X, Y, Z-100)))
                                                 {
-                                                        Logger.LogInt("Placing block ", ChunkData[Blocks].Id, "...", "Debug");
+                                                        //Logger.LogInt("Placing block ", ChunkData[Blocks].Id, "...", "Debug");
                                                         CreateBlock(ChunkData[Blocks].Id, ChunkMetadata[i].Address, X, Y, Z);
                                                         LoadedBlocks++;
                                                 }
@@ -246,8 +253,8 @@ void AVoxelTerrainActor::LoadWorld(FString Path)
                                 }
                         }
                 }
-                Logger.LogInt("Done! Loaded %d blocks!", LoadedBlocks, "", "Info");
-                Logger.LogInt("      Loaded %d chunks!", LoadedChunks, "", "Info");
+                Logger.LogInt("Done! Loaded ", LoadedBlocks, " blocks!", "Info");
+                Logger.LogInt("      Loaded ", LoadedChunks, " chunks!", "Info");
                 Logger.LogInt("Render distance was ", RenderDistance, "", "Info");
                 Logger.LogInt("Chunk limit was ", ChunkLimit, "", "Info");
                 ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
@@ -263,7 +270,7 @@ FVector2D AVoxelTerrainActor::ChunkPositionFromUnrealUnits(FVector UnrealUnits, 
         int X = int(UnrealUnits.X + 0.5);
         int Y = int(UnrealUnits.Y + 0.5);
 
-        Logger.Log((TEXT("Player position converted to int: ")), "Debug");
+        Logger.Log((TEXT("Player position converted to chunk units: ")), "Debug");
         Logger.LogInt("   X: ", X, "", "Debug");
         Logger.LogInt("   X: ", Y, "", "Debug");
 

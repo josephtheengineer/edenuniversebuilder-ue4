@@ -18,11 +18,17 @@ at the same time
 - Fixes for missing textures in options menu
 - Main menu now loops background image forever
 
-# EdenUniverseBuilder v3.0.0 beta2.3
+# EdenUniverseBuilder v3.0.0 beta3
+- Added the ability to download worlds from the world server
+- Added search
+- Added world image preview
+- Fixed android filesystem bugs causing worlds to load incorrectly
+- Added jump button
+- Added new UI (developer mode)
+- Added a way to view logs in-game
+- Fixed main menu background bugs
+
+# EdenUniverseBuilder v3.0.0 beta3.1
 - Added terrain generator for flat worlds
 - Optimized world loading
 - Added the ability to create and delete worlds
-- Added jump button
-- Added a way to view logs in-game
-- Added new UI (developer mode)
-- Fixed main menu background bugs

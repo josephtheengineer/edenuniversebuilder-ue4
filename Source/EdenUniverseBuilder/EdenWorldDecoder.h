@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Licensed under the Apache License, Version 2.0 (www.apache.org/licenses/LICENSE-2.0)
 
 #pragma once
 
@@ -32,18 +32,18 @@ public:
 	//============================================================================
 	// Primary Functions
 	//============================================================================
-	void LoadWorld(FString Path);
-	TArray<int32> OpenFile(FString Path);
+	bool InitializeWorld();
+        bool SetWorldPath(FString Path);
         int32 ReadIntFromFile(int Position);
         int GetFileSize();
-        //std::vector <int32> LegacyOpenFile(FString Path);
         void WriteFile(TArray<int32> WorldDataToWrite, FString Path);
 	FString GetWorldName();
 	void GetWorldMetadata();
         void CreateWorldMetadata();
         FVector GetPlayerPosition();
 	TArray<EdenChunkData> GetChunkData(int chunk);
-        bool DecompressGZip(const TArray<int32>& CompressedContent, TArray<int32>& UncompressedContent);
+        bool LoadWorldData();
+        void SaveWorld();
 
         //============================================================================
         // Secondary Functions
@@ -57,18 +57,15 @@ public:
         TArray<EdenChunkMetadata> ChunkMetadata;
         TMap<int, FVector2D> ChunkLocations;
 
+        TArray<int32> WorldData;
+        int WorldFileSize = 0;
+
         FString WorldPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir()) + "/Worlds/testWorld.eden";
 
-	// Get the min X value by finding the last value in chunks
 	int worldAreaX = 0;
-	// Get the min Y value by finding the last value in chunks
 	int worldAreaY = 0;
-	int worldAreaWidthTemp = 0;
-	int worldAreaHeightTemp = 0;
-
-	TArray<int32> chunkAddress;
-	TArray<int32> chunkPositionX;
-	TArray<int32> chunkPositionY;
+        int worldAreaWidth = 0;
+        int worldAreaHeight = 0;
 private:
         Debug Logger;
 };
