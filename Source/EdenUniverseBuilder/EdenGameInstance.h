@@ -15,7 +15,7 @@ public:
         UEdenGameInstance(const FObjectInitializer& ObjectInitializer);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=MainMenu)
-	FString WorldPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir()) + "/Worlds/testWorld.eden";
+	FString WorldPath = "";
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=UserInterface)
 	FString SearchPath;

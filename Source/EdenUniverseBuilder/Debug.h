@@ -18,4 +18,5 @@ public:
 	bool Log(FString Message, FString Level);
 	bool LogFloat(FString MessageBefore, float Variable, FString MessageAfter, FString Level);
 	bool LogInt(FString MessageBefore, int Variable, FString MessageAfter, FString Level);
+	bool SaveLogToFile(FString Message);
 };
