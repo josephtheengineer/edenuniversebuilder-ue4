@@ -24,16 +24,21 @@ at the same time
 - Added world image preview
 - Fixed android filesystem bugs causing worlds to load incorrectly
 
-# EdenUniverseBuilder v3.0.0 beta3.1 || 27-01-2018
+# EdenUniverseBuilder v3.0.0 beta3.1 || 28-01-2018
 - Added the ability to view logs in-game
 - Options are now saved to a file
 - Fixes for main menu bugs
 
-# EdenUniverseBuilder v3.0.0 beta3.2
-- Added terrain generator for flat worlds
+# EdenUniverseBuilder v3.0.0 beta3.2 || 29-01-2018
 - Optimized world loading
+
+# EdenUniverseBuilder v3.0.0 beta3.3 || 29-01-2018
+- Added new UI (developer mode)
+- Fixed main menu background bugs
+- Added jump button
+
+# EdenUniverseBuilder v3.0.0 beta3.3
+- Optimized world loading
+- Added terrain generator for flat worlds
 - Added the ability to create and delete worlds
 - Added jump button
-- Added new UI (developer mode)
-- Added a way to view logs in-game
-- Fixed main menu background bugs

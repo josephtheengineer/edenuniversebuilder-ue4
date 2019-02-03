@@ -7,6 +7,7 @@
 #include "PlatformFilemanager.h"
 #include "Kismet/GameplayStatics.h"
 #include "Debug.h"
+#include "zlib.h"
 
 struct EdenChunkMetadata {
     int Address;
@@ -38,12 +39,13 @@ public:
         int GetFileSize();
         void WriteFile(TArray<int32> WorldDataToWrite, FString Path);
 	FString GetWorldName();
-	void GetWorldMetadata();
+	bool GetWorldMetadata();
         void CreateWorldMetadata();
         FVector GetPlayerPosition();
 	TArray<EdenChunkData> GetChunkData(int chunk);
-        bool LoadWorldData();
+        //bool LoadWorldData();
         void SaveWorld();
+        int GetIntFromStream(gzFile File, int Position);
 
         //============================================================================
         // Secondary Functions
@@ -57,8 +59,8 @@ public:
         TArray<EdenChunkMetadata> ChunkMetadata;
         TMap<int, FVector2D> ChunkLocations;
 
-        TArray<int32> WorldData;
-        int WorldFileSize = 0;
+        //TArray<int32> WorldData;
+        //int WorldFileSize = 0;
 
         FString WorldPath = FPaths::ConvertRelativePathToFull(FPaths::ProjectContentDir()) + "/Worlds/testWorld.eden";
 
