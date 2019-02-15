@@ -83,6 +83,7 @@ bool Debug::Log(FString Message, FString Level)
         {
                 GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("%s: %s"), *Level, *Message));
                 UE_LOG(LogTemp, Log, TEXT("%s: %s"), *Level, *Message);
+                SaveLogToFile(Level + ": " + Message);
                 return true;
         }
         else
@@ -106,6 +107,7 @@ bool Debug::LogFloat(FString MessageBefore, float Variable, FString MessageAfter
         {
                 GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("%s: %s %f %s"), *Level, *MessageBefore, Variable, *MessageAfter));
                 UE_LOG(LogTemp, Log, TEXT("%s: %s %f %s"), *Level, *MessageBefore, Variable, *MessageAfter);
+                SaveLogToFile(Level + ": " + MessageBefore + FString::SanitizeFloat(Variable) + MessageAfter);
                 return true;
         }
         else
@@ -129,10 +131,22 @@ bool Debug::LogInt(FString MessageBefore, int Variable, FString MessageAfter, FS
         {
                 GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Yellow, FString::Printf(TEXT("%s: %s %d %s"), *Level, *MessageBefore, Variable, *MessageAfter));
                 UE_LOG(LogTemp, Log, TEXT("%s: %s %d %s"), *Level, *MessageBefore, Variable, *MessageAfter);
+                SaveLogToFile(Level + ": " + MessageBefore + FString::FromInt(Variable) + MessageAfter);
                 return true;
         }
         else
         {
                 return false;
         }
+}
+
+bool Debug::SaveLogToFile(FString Message)
+{
+        FString LogDir = FPaths::ProjectSavedDir() + "log.txt";
+
+        TArray<FString> LogArray;
+        FFileHelper::LoadFileToStringArray(LogArray, *LogDir);
+        LogArray.Add(Message);
+        FFileHelper::SaveStringArrayToFile(LogArray, *LogDir);
+        return true;
 }

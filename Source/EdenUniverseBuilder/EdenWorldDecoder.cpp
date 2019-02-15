@@ -9,7 +9,6 @@
 #include "VoxelIndexer.h"
 #include "TerrainGenerator.h"
 //#include "ThirdParty/zlib/zlib-1.2.5/Inc/zlib.h"
-#include "zlib.h"
 
 /** ==============================================================================
   * @desc constructor
@@ -36,8 +35,14 @@ EdenWorldDecoder::~EdenWorldDecoder()
   */// ===========================================================================
 bool EdenWorldDecoder::InitializeWorld()
 {
-	Logger.Log(TEXT("We are online. Starting world convertion..."), "Info");
-	Logger.Log(TEXT("WorldPath: " + WorldPath), "Info");
+	Logger.Log("We are online. Starting world convertion...", "Info");
+	if (WorldPath == "")
+	{
+		Logger.Log("InitializeWorld: WorldPath is null", "Error");
+		return false;
+	}
+
+	Logger.Log(TEXT("WorldPath is: " + WorldPath), "Info");
 
 	VoxelIndexer Indexer;
 	Indexer.SetWorldPath(WorldPath);
@@ -49,11 +54,9 @@ bool EdenWorldDecoder::InitializeWorld()
 		Generator.CreateDebugChunk();
 		CreateWorldMetadata();
 	}
-	Logger.Log(TEXT("Loading world data..."), "Info");
-	LoadWorldData();
+
 	Logger.Log(TEXT("Geting world metadata..."), "Info");
-	GetWorldMetadata();
-	return true;
+	return GetWorldMetadata();
 }
 
 /** ==============================================================================
@@ -120,10 +123,6 @@ int EdenWorldDecoder::GetFileSize()
 	}
 
 	gzclose(File);
-
-	//free( dataReadInCompressed );
-	//free( dataUncompressed );
-
 	return i;
 }
 
@@ -150,11 +149,11 @@ FString EdenWorldDecoder::GetWorldName()
 FVector EdenWorldDecoder::GetPlayerPosition()
 {
 	Logger.Log((TEXT("Fetching player position...")), "Info");
-	Logger.Log((TEXT("====== World File Header ======")), "Debug");
+	/*Logger.Log((TEXT("====== World File Header ======")), "Debug");
 	for (int i = 0; i < 30; i++)
 	{
 		Logger.LogInt("", WorldData[i], "", "Debug");
-	}
+	}*/
 
 	TArray<float> FWorldData;
 	//////////////!!!!!!!!!!IMPORTANT:  note "rb" NOT just "r".
@@ -208,17 +207,26 @@ void EdenWorldDecoder::CreateWorldMetadata()
 /** ==============================================================================
   * @desc associate the chunk pos with the address + get world area
   * @param void
-  * @return void
+  * @return bool
   */// ===========================================================================
-void EdenWorldDecoder::GetWorldMetadata()
+bool EdenWorldDecoder::GetWorldMetadata()
 {
+	gzFile File;
+	File = gzopen(TCHAR_TO_UTF8(*WorldPath), "rb");
+	if(File == NULL)
+	{
+		Logger.Log("Couldn't open input file for reading", "Error");
+		gzseek(File, 0, SEEK_END);
+		z_off_t FileSize = gztell(File);
+		Logger.LogInt("World file length is ", FileSize, "", "Error");
+	}
 
-	Logger.LogInt("WorldData[35]: ", WorldData[35], "!", "Debug");
-	Logger.LogInt("WorldData[34]: ", WorldData[34], "!", "Debug");
-	Logger.LogInt("WorldData[33]: ", WorldData[33], "!", "Debug");
-	Logger.LogInt("WorldData[32]: ", WorldData[32], "!", "Debug");
+	//Logger.LogInt("WorldData[35]: ", WorldData[35], "!", "Debug");
+	//Logger.LogInt("WorldData[34]: ", WorldData[34], "!", "Debug");
+	//Logger.LogInt("WorldData[33]: ", WorldData[33], "!", "Debug");
+	//Logger.LogInt("WorldData[32]: ", WorldData[32], "!", "Debug");
 
-	int chunkPointer = ReadIntFromFile(35) * 256 * 256 * 256 + ReadIntFromFile(34) * 256 * 256 + ReadIntFromFile(33) * 256 + ReadIntFromFile(32);
+	int chunkPointer = GetIntFromStream(File, 35) * 256 * 256 * 256 + GetIntFromStream(File, 34) * 256 * 256 + GetIntFromStream(File, 33) * 256 + GetIntFromStream(File, 32);
 	int worldAreaWidthTemp = 0;
 	int worldAreaHeightTemp = 0;
 
@@ -227,13 +235,12 @@ void EdenWorldDecoder::GetWorldMetadata()
 	do
 	{
 		// Find chunk address
-		// Crashes on this line
-		int address = ReadIntFromFile(chunkPointer + 11) * 256 * 256 * 256 + ReadIntFromFile(chunkPointer + 10) * 256 * 256 + ReadIntFromFile(chunkPointer + 9) * 256 + ReadIntFromFile(chunkPointer + 8);
+		int address = GetIntFromStream(File, chunkPointer + 11) * 256 * 256 * 256 + GetIntFromStream(File, chunkPointer + 10) * 256 * 256 + GetIntFromStream(File, chunkPointer + 9) * 256 + GetIntFromStream(File, chunkPointer + 8);
 
 		// Find the position of the chunk
-                int x = (ReadIntFromFile(chunkPointer + 1) * 256 + ReadIntFromFile(chunkPointer)) - 4000;     // Minus 4000 to center the world around 0, 0
+                int x = (GetIntFromStream(File, chunkPointer + 1) * 256 + GetIntFromStream(File, chunkPointer)) - 4000;     // Minus 4000 to center the world around 0, 0
 
-		int y = (ReadIntFromFile(chunkPointer + 5) * 256 + ReadIntFromFile(chunkPointer + 4)) - 4000; // This shouldn't brake anything
+		int y = (GetIntFromStream(File, chunkPointer + 5) * 256 + GetIntFromStream(File, chunkPointer + 4)) - 4000; // This shouldn't brake anything
 
 		if (worldAreaX > x){
 			worldAreaX = x;
@@ -263,6 +270,13 @@ void EdenWorldDecoder::GetWorldMetadata()
 
 	// Get the total world height | max - min + 1
 	worldAreaHeight = worldAreaHeightTemp - worldAreaY + 1;
+
+	if (ChunkLocations.Num() < 1)
+	{
+		Logger.Log("GetWorldMetadata: ChunkLocations was null!", "error");
+		return false;
+	}
+	return true;
 }
 
 //==============================================================================
@@ -272,6 +286,16 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
 {
         TArray<EdenChunkData> ChunkData;
 	//VoxelIndexer Indexer;
+
+	gzFile File;
+	File = gzopen(TCHAR_TO_UTF8(*WorldPath), "rb");
+	if(File == NULL)
+	{
+		Logger.Log("Couldn't open input file for reading", "Error");
+	}
+
+	//free( dataReadInCompressed );
+	//free( dataUncompressed );
 
 	// Grabbing the chunk position
 	int32 globalChunkPosX = ChunkLocations[chunk].X;
@@ -292,8 +316,8 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
         		{
         			for (int z = 0; z < 16; z++)
         			{
-                			int Id = WorldData[chunk + baseHeight * 8192 + x * 256 + y * 16 + z];
-                                        int Color = WorldData[chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096];
+					int Id = GetIntFromStream(File, chunk + baseHeight * 8192 + x * 256 + y * 16 + z);
+					int Color = GetIntFromStream(File, chunk + baseHeight * 8192 + x * 256 + y * 16 + z + 4096);
 
                 			float RealX = (x + (globalChunkPosX*16)) * 100;
                 			float RealY = (y + (globalChunkPosY*16)) * 100;
@@ -319,6 +343,7 @@ TArray<EdenChunkData> EdenWorldDecoder::GetChunkData(int chunk)
         	}
         }
 	Logger.LogInt("Chunk data contains ", ChunkData.Num(), " blocks", "Debug");
+	gzclose(File);
         return ChunkData;
 }
 
@@ -333,6 +358,15 @@ TArray<EdenChunkMetadata> EdenWorldDecoder::GetChunkMetadata()
 TMap<int, FVector2D> EdenWorldDecoder::GetChunkLocations()
 {
         return ChunkLocations;
+}
+
+int EdenWorldDecoder::GetIntFromStream(gzFile File, int Position)
+{
+	gzseek(File, Position, SEEK_SET);
+	int* X = new int(0);
+	gzread(File, X, 1);
+
+	return *X;
 }
 
 void EdenWorldDecoder::SaveWorld()
@@ -379,7 +413,7 @@ void EdenWorldDecoder::SaveWorld()
                 }
         }*/
 }
-
+/*
 bool EdenWorldDecoder::LoadWorldData()
 {
 	gzFile File;
@@ -387,6 +421,7 @@ bool EdenWorldDecoder::LoadWorldData()
 	if(File == NULL)
 	{
 		Logger.Log("Couldn't open input file for reading", "Error");
+		return false;
 	}
 
 	while (!(gzeof(File)))
@@ -402,4 +437,4 @@ bool EdenWorldDecoder::LoadWorldData()
 	//free( dataUncompressed );
 
 	return true;
-}
+}*/
